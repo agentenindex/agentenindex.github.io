@@ -216,3 +216,142 @@ linear-gradient(180deg,#f8f5ec 0%,#f5f3ed 100%);overflow:hidden}
 @media(max-width:1040px){.v7home-hero-grid,.v7home-check-grid{grid-template-columns:1fr}.v7home-ecosystem{max-width:760px}.v7home-agent-grid{grid-template-columns:repeat(2,1fr)}.v7home-stat-grid{grid-template-columns:repeat(2,1fr)}.v7home-stat-grid a:nth-child(3){border-top:1px solid var(--line)}.v7home-stat-grid a:nth-child(4){border-top:1px solid var(--line)}}
 @media(max-width:840px){.v7home-section-head,.v7home-knowledge-grid,.v7home-audience-grid,.v7home-method-grid{grid-template-columns:1fr}.v7home-paths{grid-template-columns:1fr}.v7home-path{min-height:260px}.v7home-category-grid{grid-template-columns:repeat(2,1fr)}.v7home-method-list>div{grid-template-columns:36px 1fr}.v7home-method-list p{grid-column:2}.v7home-knowledge-lead{grid-template-columns:1fr}.v7home-mini-diagram{display:none}}
 @media(max-width:620px){.v7home-hero{padding:46px 0 42px}.v7home-hero h1{font-size:clamp(3.05rem,15vw,4.6rem)}.v7home-agent-grid,.v7home-category-grid,.v7home-stat-grid{grid-template-columns:1fr}.v7home-stat-grid a{border-right:1px solid var(--line);border-top:1px solid var(--line)}.v7home-stat-grid a:first-child{border-top:0}.v7home-ecosystem{min-height:470px;padding:22px}.v7home-eco-map{height:330px}.v7home-node{width:115px;padding:9px}.v7home-node span{display:none}.node-modelle{left:0}.node-tools{right:0}.node-data{right:0}.node-control{left:0}.node-knowledge{left:32%}.v7home-core{width:88px;height:88px}.v7home-check{padding:62px 0}.v7home-section{padding:68px 0}.v7home-agent-card{min-height:315px}}
+
+
+
+/* AgentenIndex mobile stability / anchor fix
+   Verhindert horizontales Verschieben auf iOS/Safari und stabilisiert Sprungmarken. */
+html{
+  overflow-x:clip;
+  scroll-padding-top:112px;
+}
+body{
+  width:100%;
+  max-width:100%;
+  overflow-x:clip;
+}
+.container,
+.narrow,
+.article-grid,
+.article-grid > *,
+article,
+aside{
+  min-width:0;
+}
+.article [id],
+.article h2[id],
+.article h3[id],
+.anchor-offset{
+  scroll-margin-top:112px;
+}
+
+/* Lange Inhalte dürfen die Seite nicht breiter als den Viewport machen. */
+.article img,
+.article video,
+.article iframe,
+.article svg{
+  max-width:100%;
+  height:auto;
+}
+.article pre,
+.article code{
+  max-width:100%;
+}
+.article pre{
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.source-list a,
+.article a{
+  overflow-wrap:anywhere;
+}
+
+/* Die schwarze Statusleiste war auf kleinen Displays eine mögliche
+   Quelle für horizontales Overflow: beide langen Texte lagen nebeneinander. */
+.topnote .container{
+  min-width:0;
+}
+.topnote .container > span{
+  min-width:0;
+}
+
+@media(max-width:900px){
+  html{
+    scroll-padding-top:92px;
+  }
+  .article [id],
+  .article h2[id],
+  .article h3[id],
+  .anchor-offset{
+    scroll-margin-top:92px;
+  }
+
+  .topnote .container{
+    display:block;
+    padding:7px 0;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .topnote .container span:first-child{
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .topnote .container span:last-child{
+    display:none;
+  }
+
+  .article-grid{
+    width:100%;
+    max-width:100%;
+    overflow:visible;
+  }
+  .toc{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+  }
+  .toc a{
+    width:100%;
+    overflow-wrap:anywhere;
+  }
+
+  /* Grid-/Flex-Kinder dürfen auf iOS nicht durch ihren Inhalt den Viewport verbreitern. */
+  .grid2 > *,
+  .grid3 > *,
+  .grid4 > *,
+  .factbox > *,
+  .v7p-fact-grid > *,
+  .v7p-cap-grid > *,
+  .v7p-privacy-grid > *,
+  .v7home-agent-grid > *,
+  .v7home-category-grid > *,
+  .v7home-stat-grid > *{
+    min-width:0;
+  }
+}
+
+@media(max-width:600px){
+  .container,
+  .narrow{
+    width:min(calc(100% - 30px),var(--max));
+  }
+
+  /* Inhaltsverzeichnis bleibt vollständig im Viewport und löst beim
+     Antippen keine seitliche Browser-Korrektur aus. */
+  .toc{
+    padding:20px 21px;
+  }
+  .toc a{
+    padding:7px 0;
+  }
+
+  /* Breite Vergleichstabellen scrollen ausschließlich in ihrem Container. */
+  .compare-wrap{
+    width:100%;
+    max-width:100%;
+    overscroll-behavior-x:contain;
+    -webkit-overflow-scrolling:touch;
+  }
+}
