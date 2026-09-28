@@ -32,3 +32,11 @@ Den vollständigen Inhalt dieses Ordners in den Root des `main`-Branches von `ag
 Alle 57 Agentenprofile enthalten jetzt standardisierte Agenten-Passports mit Profil-ID, Anbieter, Kategorie, Produkttyp, Zielgruppe, Zugang, Quellenstatus, Prüfstatus, Prüfdatum und Profilversion. Der strukturierte Datensatz unter `data/agents.json` enthält zusätzlich Filterdaten und einen Changelog pro Profil.
 
 Stand: 28. September 2026
+
+
+## v6 Branding & Konsistenz
+- Einheitliches AgentenIndex-Logo auf der Website
+- Open-Graph-Banner 1200×630
+- Profilbild für GitHub/Hugging Face im Ordner `brand/`
+- alle sichtbaren Bestandsangaben auf 57 Agenten harmonisiert
+- Kategorien entsprechen nun vollständig dem 57-Agenten-Datensatz
