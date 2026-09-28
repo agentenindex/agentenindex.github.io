@@ -132,3 +132,35 @@
   .agentencheck-meta{display:grid;grid-template-columns:1fr}
   .agentencheck-button{width:100%}
 }
+
+
+/* AgentenIndex v7 Premium */
+.container{max-width:1200px;margin:auto;padding-left:28px;padding-right:28px}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:28px;font-weight:850;color:#171a18;text-decoration:none}.brand span{color:#b58b35}
+.v7-hero{padding:80px 0;background:#faf8f1}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.eyebrow{letter-spacing:2.5px;font-size:.78rem;font-weight:800;color:#a57d32}
+.v7-hero h1{font-size:clamp(3rem,6vw,5.3rem);line-height:1.02;margin:18px 0}
+.v7-hero h1 span{color:#b58b35}
+.hero-text{font-size:1.2rem;line-height:1.65;color:#555;max-width:650px}
+.hero-actions{display:flex;gap:14px;margin-top:32px}
+.btn-primary,.btn-dark,.btn-light{display:inline-flex;padding:15px 24px;border-radius:14px;text-decoration:none;font-weight:800}
+.btn-primary{background:#b58b35;color:#fff}.btn-dark{background:#171a18;color:#fff}.btn-light{background:#fff;color:#171a18}
+.ecosystem{height:430px;background:#171a18;border-radius:36px;position:relative;box-shadow:0 20px 60px #0002}
+.node{position:absolute;background:#fff;color:#171a18;border-radius:18px;padding:15px 22px;font-weight:800}
+.node.main{top:180px;left:150px;background:#b58b35;color:#fff;font-size:1.4rem}
+.n1{top:70px;left:70px}.n2{top:70px;right:70px}.n3{bottom:80px;left:70px}.n4{bottom:80px;right:70px}.n5{bottom:25px;left:150px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:35px}
+.stats-grid div,.agent-cards a,.knowledge-grid a{background:#fff;border-radius:22px;padding:28px;text-decoration:none;color:#171a18;box-shadow:0 10px 30px #00000010}
+.stats-grid strong{display:block;font-size:2rem}.stats-grid span{color:#666}
+.section{padding-top:80px;padding-bottom:30px}
+.section h2,.enterprise h2,.knowledge h2{font-size:2.7rem}
+.agent-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.agent-cards span,.agent-cards small{display:block;margin-top:12px;color:#666}
+.enterprise{margin-top:80px;background:#171a18;color:#fff;border-radius:32px;padding:50px}
+.enterprise p{color:#d7d7d7;max-width:700px}
+.knowledge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.site-footer{margin-top:80px;background:#171a18;color:#fff;padding:40px}
+@media(max-width:900px){.hero-grid,.stats-grid,.agent-cards,.knowledge-grid{grid-template-columns:1fr}.nav{display:none}.ecosystem{height:320px}.node.main{left:90px}.v7-hero{padding:40px 0}}
