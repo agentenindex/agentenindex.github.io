@@ -27,3 +27,108 @@
 .hero-card{position:relative;overflow:hidden}
 .hero-card:after{content:"";position:absolute;right:-28px;bottom:-34px;width:180px;height:180px;background:url('/assets/agentenindex-symbol.png') center/contain no-repeat;opacity:.075;pointer-events:none}
 @media(max-width:720px){.brand-showcase{grid-template-columns:1fr}.brand-showcase img{max-width:300px;margin:auto}}
+
+
+/* AgentenCheck integration */
+.nav a.nav-check{
+  background:var(--dark);
+  color:#fff;
+  border-radius:999px;
+  padding:7px 12px;
+  font-weight:760;
+  transition:transform .16s ease,background .16s ease,color .16s ease;
+}
+.nav a.nav-check:hover{
+  background:var(--accent);
+  color:#fff;
+  transform:translateY(-1px);
+}
+.footer-check{font-weight:750}
+.agentencheck-cta{
+  margin:0 0 54px;
+  padding:34px 36px;
+  border-radius:24px;
+  background:var(--dark);
+  color:#fff;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:36px;
+  align-items:center;
+  box-shadow:var(--shadow);
+  position:relative;
+  overflow:hidden;
+}
+.agentencheck-cta:after{
+  content:"";
+  position:absolute;
+  right:-70px;
+  bottom:-95px;
+  width:260px;
+  height:260px;
+  background:url('/assets/agentenindex-symbol.png') center/contain no-repeat;
+  opacity:.06;
+  pointer-events:none;
+}
+.agentencheck-cta .kicker{color:#d7c797;margin-bottom:9px}
+.agentencheck-cta h2{
+  color:#fff;
+  font-size:clamp(1.85rem,3vw,2.65rem);
+  margin-bottom:14px;
+  max-width:760px;
+}
+.agentencheck-cta p{
+  color:#d5dad3;
+  max-width:780px;
+  margin-bottom:17px;
+}
+.agentencheck-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 18px;
+  font-size:.82rem;
+  color:#c9d0c6;
+}
+.agentencheck-meta span{white-space:nowrap}
+.agentencheck-cta-action{
+  position:relative;
+  z-index:1;
+  min-width:225px;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:9px;
+  text-align:center;
+}
+.agentencheck-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:0 20px;
+  border-radius:12px;
+  background:#fff;
+  color:var(--dark);
+  text-decoration:none;
+  font-weight:820;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+.agentencheck-button:hover{background:var(--accent2)}
+.agentencheck-cta-action small{color:#aeb6ab;font-size:.74rem}
+@media(max-width:1040px){
+  .nav{gap:14px}
+  .nav a,.github{font-size:.84rem}
+  .nav a.nav-check{padding:6px 9px}
+}
+@media(max-width:900px){
+  .nav.nav-open a.nav-check{
+    text-align:center;
+    margin-top:4px;
+  }
+  .agentencheck-cta{grid-template-columns:1fr;gap:22px;padding:28px}
+  .agentencheck-cta-action{min-width:0;max-width:330px}
+}
+@media(max-width:560px){
+  .agentencheck-cta{padding:23px 20px;border-radius:18px}
+  .agentencheck-meta{display:grid;grid-template-columns:1fr}
+  .agentencheck-button{width:100%}
+}
