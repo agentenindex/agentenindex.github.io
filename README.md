@@ -1,31 +1,22 @@
-# AgentenIndex.de – Referenz-Website v2
+# AgentenIndex Reference v3
 
-Vollständige statische Website für GitHub Pages.
+Ready-to-upload static GitHub Pages site for **https://agentenindex.de/**.
 
-## Enthalten
-- Startseite als Referenz-Hub
-- Agentenverzeichnis und Recherche-Kategorie
-- vier verifizierte Recherche-Agentenprofile
-- ausführliche Wissensseiten: KI-Agent, Agent vs. Chatbot, Agentic AI, Recherche-Agenten, MCP, A2A
-- Bereiche für Privatpersonen, Unternehmen und Anwendungen
-- Vergleichsseite für Recherche-Agenten
-- Methodik, Über-Seite und Glossar
-- responsive CSS, mobile Navigation
-- Canonical URLs, Open Graph, JSON-LD, Breadcrumbs
-- robots.txt, sitemap.xml, llms.txt, 404
-- maschinenlesbare `data/agents.json` + JSON Schema
+## Umfang
+- 50 ausführliche Agenten-/Plattformprofile
+- 6 Agentenkategorien
+- 16+ Wissens- und Erklärseiten
+- Impressum und Datenschutz
+- Footer-Links auf jeder Seite
+- Source-first Methodik
+- Sitemap, robots.txt, llms.txt
+- Maschinenlesbare `data/agents.json`
+- Responsive statische Website ohne eigene Analyse- oder Marketingtracker
 
 ## Upload
-Alle Dateien und Ordner in den Root des `main`-Branches von `agentenindex/agentenindex.github.io` hochladen.
+Den **gesamten Inhalt dieses Ordners** in den Root des `main`-Branches von `agentenindex/agentenindex.github.io` hochladen. Vorhandene Dateien dürfen ersetzt werden. `CNAME` muss `agentenindex.de` enthalten.
 
-Die vorhandenen Dateien `CNAME` und `README.md` dürfen durch die Versionen aus diesem Paket ersetzt werden. `CNAME` enthält weiterhin nur `agentenindex.de`.
+## Rechtliches
+Impressumsdaten wurden auf Wunsch aus ostwestfalen.nrw übernommen; E-Mail wurde auf `agenten@magenta.de` geändert. Die Datenschutzerklärung wurde auf die aktuelle statische GitHub-Pages-Implementierung von AgentenIndex angepasst. Bei späteren Formularen, Newslettern, Analytics, eingebetteten Medien oder zusätzlichen Diensten muss sie erneut angepasst werden.
 
-## Nach dem Upload
-1. GitHub Actions / Pages-Deployment abwarten.
-2. https://agentenindex.de/ im privaten Browserfenster testen.
-3. https://agentenindex.de/sitemap.xml prüfen.
-4. Google Search Console verbinden und Sitemap einreichen.
-5. Rich Results Test / URL Inspection für exemplarische Seiten durchführen.
-
-## Vor aktiver Vermarktung
-Impressum und Datenschutz müssen mit den tatsächlichen Betreiberangaben ergänzt werden. Diese Dateien wurden bewusst nicht mit erfundenen Angaben erzeugt.
+Stand: 28. September 2026

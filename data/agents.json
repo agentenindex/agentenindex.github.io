@@ -1,58 +1,1815 @@
 {
-  "schema_version": "1.0",
-  "generated": "2026-09-28",
+  "schema_version": "3.0",
+  "updated": "2026-09-28",
+  "count": 50,
   "agents": [
     {
-      "id": "chatgpt-deep-research",
       "name": "ChatGPT Deep Research",
+      "slug": "chatgpt-deep-research",
       "provider": "OpenAI",
-      "category": "research",
-      "verified": "2026-09-28",
-      "url": "/agenten/chatgpt-deep-research/",
-      "sources": [
-        "https://help.openai.com/de-de/articles/10500283-deep-research"
+      "category": "recherche",
+      "category_name": "Recherche",
+      "type": "Integrierter Recherche-Agent",
+      "audience_short": "Privat & Unternehmen",
+      "summary": "Mehrstufige Recherche in ChatGPT mit Web, Dateien, steuerbaren Quellen und zitiertem Bericht.",
+      "access": "In ChatGPT; Umfang und Limits tarifabhängig",
+      "uses": [
+        "Kaufrecherche",
+        "Produktvergleich",
+        "Reiseplanung",
+        "Hintergrundrecherche"
       ],
-      "consumer": true,
-      "enterprise": true
+      "strengths": [
+        "Editierbarer Rechercheplan",
+        "Quellenangaben und Links",
+        "Eigene Dateien und verbundene Quellen",
+        "Geeignet für komplexe Vergleiche"
+      ],
+      "checks": [
+        "Quellenqualität bei wichtigen Aussagen selbst prüfen",
+        "Tarifabhängige Nutzungslimits beachten",
+        "Zeitkritische Preise und Verfügbarkeiten an der Originalquelle kontrollieren"
+      ],
+      "sources": [
+        [
+          "OpenAI Help – Deep Research in ChatGPT",
+          "https://help.openai.com/de-de/articles/10500283-deep-research"
+        ],
+        [
+          "OpenAI – Introducing Deep Research",
+          "https://openai.com/index/introducing-deep-research/"
+        ]
+      ]
     },
     {
-      "id": "gemini-deep-research",
       "name": "Gemini Deep Research",
+      "slug": "gemini-deep-research",
       "provider": "Google",
-      "category": "research",
-      "verified": "2026-09-28",
-      "url": "/agenten/gemini-deep-research/",
-      "sources": [
-        "https://support.google.com/gemini/answer/15719111?hl=de-DE"
+      "category": "recherche",
+      "category_name": "Recherche",
+      "type": "Integrierter Recherche-Agent",
+      "audience_short": "Privat & Unternehmen",
+      "summary": "Agentische Recherche in Gemini mit Google Search und optional eigenen Google-Datenquellen.",
+      "access": "In Gemini; Funktionen und Limits abhängig von Plan und Konto",
+      "uses": [
+        "Reiseplanung",
+        "Kaufrecherche",
+        "Lernen",
+        "Recherche mit eigenen Unterlagen"
       ],
-      "consumer": true,
-      "enterprise": true
+      "strengths": [
+        "Google Search als zentrale Webquelle",
+        "Verbindung mit Google-Diensten möglich",
+        "Rechercheplan und strukturierte Berichte",
+        "Export in Google-Umgebungen möglich"
+      ],
+      "checks": [
+        "Verbundene Datenquellen nur mit passenden Berechtigungen verwenden",
+        "Plan- und regionsabhängige Funktionen prüfen",
+        "Quellen vor wichtigen Entscheidungen öffnen"
+      ],
+      "sources": [
+        [
+          "Google Help – Use Deep Research in Gemini Apps",
+          "https://support.google.com/gemini/answer/15719111?hl=en"
+        ],
+        [
+          "Google Workspace Help – Deep Research",
+          "https://support.google.com/mail/answer/17127708?hl=en"
+        ]
+      ]
     },
     {
-      "id": "claude-research",
       "name": "Claude Research",
+      "slug": "claude-research",
       "provider": "Anthropic",
-      "category": "research",
-      "verified": "2026-09-28",
-      "url": "/agenten/claude-research/",
-      "sources": [
-        "https://support.claude.com/en/articles/11088861-use-research-on-claude"
+      "category": "recherche",
+      "category_name": "Recherche",
+      "type": "Integrierter Recherche-Agent",
+      "audience_short": "Privat & Unternehmen",
+      "summary": "Mehrstufige Recherche in Claude mit Websuche, verbundenem Kontext und überprüfbaren Zitaten.",
+      "access": "Claude Research in unterstützten bezahlten Plänen",
+      "uses": [
+        "Themenanalyse",
+        "Hintergrundrecherche",
+        "Recherche mit Arbeitskontext",
+        "Vergleich komplexer Optionen"
       ],
-      "consumer": true,
-      "enterprise": true
+      "strengths": [
+        "Mehrstufige Suchstrategie",
+        "Zitate zur Nachprüfung",
+        "Verbundene Quellen möglich",
+        "Gut für längere analytische Berichte"
+      ],
+      "checks": [
+        "Research ist an geeignete Claude-Pläne gebunden",
+        "Websuche und Connectors müssen passend freigeschaltet sein",
+        "Zitate nicht mit automatischer Richtigkeit gleichsetzen"
+      ],
+      "sources": [
+        [
+          "Anthropic Help – Use Research on Claude",
+          "https://support.claude.com/en/articles/11088861-use-research-on-claude"
+        ],
+        [
+          "Anthropic Help – Google Workspace connectors",
+          "https://support.claude.com/en/articles/10166901-use-google-workspace-connectors"
+        ]
+      ]
     },
     {
-      "id": "perplexity-deep-research",
       "name": "Perplexity Deep Research",
+      "slug": "perplexity-deep-research",
       "provider": "Perplexity",
-      "category": "research",
-      "verified": "2026-09-28",
-      "url": "/agenten/perplexity-deep-research/",
-      "sources": [
-        "https://www.perplexity.ai/de/hub/products/deep-research"
+      "category": "recherche",
+      "category_name": "Recherche",
+      "type": "Recherchemodus / Agent",
+      "audience_short": "Privat & Unternehmen",
+      "summary": "Webzentrierte Tiefenrecherche, die komplexe Fragen in Teilaufgaben zerlegt und zitierte Berichte erstellt.",
+      "access": "Perplexity; kostenloser und erweiterter planabhängiger Zugang",
+      "uses": [
+        "Marktrecherche",
+        "Produktvergleich",
+        "Lernen",
+        "Schnelle Tiefenrecherche"
       ],
-      "consumer": true,
-      "enterprise": true
+      "strengths": [
+        "Starker Fokus auf Webquellen",
+        "Zitierte Berichte",
+        "Niedrige Einstiegshürde",
+        "In Perplexity-Umgebungen weiterverarbeitbare Ergebnisse"
+      ],
+      "checks": [
+        "Research Mode und andere Perplexity-Modi unterscheiden",
+        "Planabhängige Limits und Datenquellen prüfen",
+        "Primärquellen bei wichtigen Entscheidungen bevorzugen"
+      ],
+      "sources": [
+        [
+          "Perplexity – Deep Research",
+          "https://www.perplexity.ai/de/hub/products/deep-research"
+        ],
+        [
+          "Perplexity Help – Subscription Plans",
+          "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"
+        ]
+      ]
+    },
+    {
+      "name": "Microsoft Copilot Researcher",
+      "slug": "microsoft-copilot-researcher",
+      "provider": "Microsoft",
+      "category": "recherche",
+      "category_name": "Recherche",
+      "type": "Enterprise-Recherche-Agent",
+      "audience_short": "Unternehmen",
+      "summary": "Recherche-Agent in Microsoft 365 Copilot für mehrstufige Analysen aus Web und autorisierten Arbeitsdaten.",
+      "access": "Microsoft 365 Copilot; lizenz- und tenantabhängig",
+      "uses": [
+        "Marktanalyse",
+        "Strategierecherche",
+        "Interne Wissensrecherche",
+        "Vorbereitung von Berichten"
+      ],
+      "strengths": [
+        "Microsoft-365-Kontext",
+        "Strukturierte Berichte mit Quellen",
+        "Unternehmensberechtigungen werden berücksichtigt",
+        "Geeignet für wissensintensive Aufgaben"
+      ],
+      "checks": [
+        "Erfordert passenden Microsoft-365-Copilot-Zugang",
+        "Berechtigungen für interne Quellen prüfen",
+        "Ergebnisse bei rechtlich oder finanziell relevanten Fragen verifizieren"
+      ],
+      "sources": [
+        [
+          "Microsoft Support – Researcher in Microsoft 365 Copilot",
+          "https://support.microsoft.com/de-de/microsoft-365-copilot/get-started-with-researcher-in-microsoft-365-copilot"
+        ],
+        [
+          "Microsoft Learn – Researcher Agent",
+          "https://learn.microsoft.com/de-de/microsoft-365/copilot/researcher-agent"
+        ]
+      ]
+    },
+    {
+      "name": "OpenAI Codex",
+      "slug": "openai-codex",
+      "provider": "OpenAI",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "Coding-Agent",
+      "audience_short": "Entwickler & Teams",
+      "summary": "Coding-Agent für Softwareaufgaben in ChatGPT, Editor und Terminal mit mehrstufiger Ausführung.",
+      "access": "Über OpenAI-Produkte; Zugriff abhängig von Plan und Oberfläche",
+      "uses": [
+        "Features implementieren",
+        "Bugs beheben",
+        "Code verstehen",
+        "Tests und Refactoring"
+      ],
+      "strengths": [
+        "Mehrstufige Softwareaufgaben",
+        "Arbeit mit bestehenden Repositories",
+        "Editor- und Terminalnähe",
+        "Delegierbare Aufgaben"
+      ],
+      "checks": [
+        "Codeänderungen vor Merge überprüfen",
+        "Secrets und produktive Zugangsdaten schützen",
+        "Tests und Security-Checks nicht überspringen"
+      ],
+      "sources": [
+        [
+          "OpenAI – Codex",
+          "https://openai.com/de-DE/codex/"
+        ]
+      ]
+    },
+    {
+      "name": "Claude Code",
+      "slug": "claude-code",
+      "provider": "Anthropic",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "Coding-Agent",
+      "audience_short": "Entwickler & Teams",
+      "summary": "Agentischer Coding-Assistent für Terminal und Entwicklungsumgebung, der Code lesen, ändern und Befehle ausführen kann.",
+      "access": "Claude Code für unterstützte Anthropic-Zugänge",
+      "uses": [
+        "Codebasis analysieren",
+        "Implementieren",
+        "Debugging",
+        "Terminal-Automation"
+      ],
+      "strengths": [
+        "Terminalnahes Arbeiten",
+        "Großer Arbeitskontext",
+        "Subagents und Hooks",
+        "Geeignet für bestehende Repositories"
+      ],
+      "checks": [
+        "Shell-Befehle und Dateiänderungen kontrollieren",
+        "Berechtigungen minimal halten",
+        "Produktionszugänge nicht unnötig freigeben"
+      ],
+      "sources": [
+        [
+          "Anthropic Docs – Claude Code",
+          "https://docs.anthropic.com/en/docs/claude-code/getting-started"
+        ],
+        [
+          "Anthropic – Claude Code autonomy",
+          "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously"
+        ]
+      ]
+    },
+    {
+      "name": "GitHub Copilot Coding Agent",
+      "slug": "github-copilot-coding-agent",
+      "provider": "GitHub",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "Coding-Agent",
+      "audience_short": "Entwickler & Teams",
+      "summary": "Asynchroner GitHub-Coding-Agent, der Aufgaben aus dem Repository übernehmen und Änderungen als Pull Request vorbereiten kann.",
+      "access": "GitHub Copilot; plan- und repositoryabhängig",
+      "uses": [
+        "Issues umsetzen",
+        "Kleine Features",
+        "Bugfixes",
+        "Pull-Request-Vorbereitung"
+      ],
+      "strengths": [
+        "Direkte GitHub-Integration",
+        "Asynchron delegierbar",
+        "Review über Pull Requests",
+        "Repository-Kontext"
+      ],
+      "checks": [
+        "Branch- und Repository-Berechtigungen prüfen",
+        "Pull Requests immer reviewen",
+        "CI- und Security-Checks beibehalten"
+      ],
+      "sources": [
+        [
+          "GitHub – Copilot Agents",
+          "https://github.com/features/copilot/agents"
+        ]
+      ]
+    },
+    {
+      "name": "Cursor Agent",
+      "slug": "cursor-agent",
+      "provider": "Cursor",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "IDE-Coding-Agent",
+      "audience_short": "Entwickler",
+      "summary": "Coding-Agent in Cursor, der Codebasen durchsuchen, mehrere Dateien ändern und Terminalbefehle ausführen kann.",
+      "access": "Cursor IDE; Planabhängige Agent-Funktionen",
+      "uses": [
+        "Feature-Entwicklung",
+        "Refactoring",
+        "Debugging",
+        "Codebase-Navigation"
+      ],
+      "strengths": [
+        "Direkt in der IDE",
+        "Mehrdatei-Änderungen",
+        "Terminalnutzung",
+        "Schnelle Interaktion mit Code"
+      ],
+      "checks": [
+        "Automatische Änderungen diff-basiert prüfen",
+        "Terminalaktionen beobachten",
+        "Projektgeheimnisse schützen"
+      ],
+      "sources": [
+        [
+          "Cursor Docs – Agent",
+          "https://cursor.com/docs/agent/overview"
+        ]
+      ]
+    },
+    {
+      "name": "Windsurf Cascade",
+      "slug": "windsurf-cascade",
+      "provider": "Windsurf",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "IDE-Coding-Agent",
+      "audience_short": "Entwickler",
+      "summary": "Agentische Entwicklungsumgebung in Windsurf für Codeverständnis, Änderungen und mehrstufige Softwarearbeit.",
+      "access": "Windsurf IDE; Funktionsumfang planabhängig",
+      "uses": [
+        "Code schreiben",
+        "Repository verstehen",
+        "Fehler beheben",
+        "Entwicklungsabläufe beschleunigen"
+      ],
+      "strengths": [
+        "IDE-zentrierter Agent",
+        "Kontext über Codebasis",
+        "Werkzeug- und Terminalnutzung",
+        "Agentische Workflows"
+      ],
+      "checks": [
+        "Agentenaktionen vor Commit prüfen",
+        "MCP- oder Tool-Zugänge bewusst begrenzen",
+        "Tests lokal oder in CI bestätigen"
+      ],
+      "sources": [
+        [
+          "Windsurf Docs – Cascade",
+          "https://docs.windsurf.com/windsurf/cascade"
+        ]
+      ]
+    },
+    {
+      "name": "Replit Agent",
+      "slug": "replit-agent",
+      "provider": "Replit",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "App-Building-Agent",
+      "audience_short": "Privat & Teams",
+      "summary": "Agent zum Erstellen und Weiterentwickeln von Apps und Websites aus natürlicher Sprache in Replit.",
+      "access": "Replit; Plan und Nutzung abhängig vom Produktzugang",
+      "uses": [
+        "Prototypen",
+        "Web-Apps",
+        "Interne Tools",
+        "MVPs"
+      ],
+      "strengths": [
+        "Niedrige Einstiegshürde",
+        "Code, Laufzeit und Deployment in einer Umgebung",
+        "Gut für schnelle Prototypen",
+        "Dialogbasierte Weiterentwicklung"
+      ],
+      "checks": [
+        "Generierten Code vor produktivem Einsatz prüfen",
+        "Kosten und Ressourcenverbrauch beobachten",
+        "Security und Authentifizierung explizit testen"
+      ],
+      "sources": [
+        [
+          "Replit – Agent",
+          "https://replit.com/products/agent"
+        ]
+      ]
+    },
+    {
+      "name": "Devin",
+      "slug": "devin",
+      "provider": "Cognition",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "Autonomer Software-Agent",
+      "audience_short": "Teams & Unternehmen",
+      "summary": "Software-Engineering-Agent für delegierbare Entwicklungsaufgaben wie Änderungen, Migrationen und Wartungsarbeiten.",
+      "access": "Cognition Devin; kommerzieller Zugang",
+      "uses": [
+        "Backlog-Aufgaben",
+        "Migrationen",
+        "Bugfixes",
+        "Engineering-Automation"
+      ],
+      "strengths": [
+        "Stark delegierbares Arbeiten",
+        "Eigene Entwicklungsumgebung",
+        "Mehrstufige Aufgaben",
+        "Für Team-Backlogs gedacht"
+      ],
+      "checks": [
+        "Aufgaben klar abgrenzen",
+        "Repository- und Systemzugänge minimal halten",
+        "Ergebnisse und Tests menschlich abnehmen"
+      ],
+      "sources": [
+        [
+          "Cognition – Devin",
+          "https://devin.ai/"
+        ]
+      ]
+    },
+    {
+      "name": "Amazon Q Developer",
+      "slug": "amazon-q-developer",
+      "provider": "AWS",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "Coding-Agent / Entwicklerassistent",
+      "audience_short": "Entwickler & Unternehmen",
+      "summary": "AWS-Entwicklerassistent mit agentischen Funktionen für Code, Tests, Refactoring und Cloud-nahe Entwicklungsaufgaben.",
+      "access": "AWS / IDE / CLI; Tarif und Funktionen abhängig vom Zugang",
+      "uses": [
+        "AWS-Entwicklung",
+        "Codegenerierung",
+        "Refactoring",
+        "Tests und Fehlersuche"
+      ],
+      "strengths": [
+        "Starke AWS-Nähe",
+        "IDE- und CLI-Integration",
+        "Agentische Entwicklungsaufgaben",
+        "Unternehmenskontext"
+      ],
+      "checks": [
+        "Cloud-Berechtigungen nach Least Privilege vergeben",
+        "Infrastrukturänderungen reviewen",
+        "Kostenwirksame AWS-Aktionen kontrollieren"
+      ],
+      "sources": [
+        [
+          "AWS – Amazon Q Developer",
+          "https://aws.amazon.com/q/developer/"
+        ]
+      ]
+    },
+    {
+      "name": "Google Jules",
+      "slug": "google-jules",
+      "provider": "Google",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "Asynchroner Coding-Agent",
+      "audience_short": "Entwickler",
+      "summary": "Asynchroner Coding-Agent von Google, der GitHub-Repositories in einer eigenen Umgebung bearbeiten und Änderungen vorbereiten kann.",
+      "access": "Jules mit GitHub-Anbindung; Zugang abhängig vom Google-Angebot",
+      "uses": [
+        "Bugfixes",
+        "Features",
+        "Tests",
+        "Repository-Wartung"
+      ],
+      "strengths": [
+        "Asynchron delegierbar",
+        "GitHub-Workflow",
+        "Isolierte Arbeitsumgebung",
+        "Planbasierte Ausführung"
+      ],
+      "checks": [
+        "Repository-Zugriffe begrenzen",
+        "Plan vor Ausführung prüfen",
+        "Änderungen und Testergebnisse reviewen"
+      ],
+      "sources": [
+        [
+          "Google – Jules",
+          "https://jules.google/"
+        ],
+        [
+          "Jules Docs",
+          "https://jules.google/docs"
+        ]
+      ]
+    },
+    {
+      "name": "Kiro",
+      "slug": "kiro",
+      "provider": "AWS",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "Agentische Entwicklungsumgebung",
+      "audience_short": "Entwickler & Teams",
+      "summary": "Agentische Entwicklungsumgebung mit Specs, automatisierten Workflows, Tools und mehreren Agentenoberflächen.",
+      "access": "Kiro IDE/CLI; Zugang und Kontingente abhängig vom Angebot",
+      "uses": [
+        "Spec-getriebene Entwicklung",
+        "Feature-Umsetzung",
+        "Automatisierung",
+        "Codebase-Arbeit"
+      ],
+      "strengths": [
+        "Specs als Arbeitsgrundlage",
+        "IDE und CLI",
+        "MCP und Tool-Erweiterung",
+        "Agentische Automatisierung"
+      ],
+      "checks": [
+        "Autopilot- und Tool-Rechte bewusst konfigurieren",
+        "Generierte Änderungen prüfen",
+        "Teamstandards in Specs und Reviews verankern"
+      ],
+      "sources": [
+        [
+          "Kiro – IDE",
+          "https://kiro.dev/ide/"
+        ]
+      ]
+    },
+    {
+      "name": "Cline",
+      "slug": "cline",
+      "provider": "Cline",
+      "category": "coding",
+      "category_name": "Coding",
+      "type": "Open-Source Coding-Agent",
+      "audience_short": "Entwickler",
+      "summary": "Open-Source Coding-Agent für IDE und Terminal mit Plan/Act-Arbeitsweise, Tool-Nutzung und MCP-Erweiterungen.",
+      "access": "Open Source; Nutzung mit unterstützten Modellen und APIs",
+      "uses": [
+        "Coding",
+        "Debugging",
+        "Repository-Arbeit",
+        "Tool-gestützte Entwicklung"
+      ],
+      "strengths": [
+        "Open Source",
+        "Hohe Transparenz und Erweiterbarkeit",
+        "MCP-Unterstützung",
+        "Lokale Entwicklungsnähe"
+      ],
+      "checks": [
+        "Externe Modellanbieter und deren Datenschutz prüfen",
+        "Shell- und Tool-Rechte kontrollieren",
+        "API-Kosten beobachten"
+      ],
+      "sources": [
+        [
+          "Cline – Official Site",
+          "https://cline.bot/"
+        ]
+      ]
+    },
+    {
+      "name": "Make AI Agents",
+      "slug": "make-ai-agents",
+      "provider": "Make",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Agentenplattform / Builder",
+      "audience_short": "Teams & Unternehmen",
+      "summary": "Visuelle Plattform zum Bauen von KI-Agenten, die Tools und Automationen über zahlreiche Apps orchestrieren.",
+      "access": "Make; Agentenfunktionen je nach Produktstatus und Plan",
+      "uses": [
+        "Business-Automation",
+        "App-übergreifende Aufgaben",
+        "Operations",
+        "Interne Assistenten"
+      ],
+      "strengths": [
+        "Visuelle Automationslogik",
+        "Großes Integrationsökosystem",
+        "Agenten und klassische Workflows kombinierbar",
+        "Nachvollziehbare Tool-Nutzung"
+      ],
+      "checks": [
+        "Tool-Berechtigungen begrenzen",
+        "Kosten durch Agentenläufe beobachten",
+        "Kritische Aktionen mit Freigaben absichern"
+      ],
+      "sources": [
+        [
+          "Make – AI Agents",
+          "https://www.make.com/en/ai-agents"
+        ],
+        [
+          "Make Help – AI Agents",
+          "https://help.make.com/introduction-to-make-ai-agent-new"
+        ]
+      ]
+    },
+    {
+      "name": "n8n Agents",
+      "slug": "n8n-agents",
+      "provider": "n8n",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Agentenplattform / Workflow-Agenten",
+      "audience_short": "Teams & Entwickler",
+      "summary": "Agenten in n8n, die Modelle, Tools und bestehende Workflows zu wiederverwendbaren autonomen Arbeitseinheiten verbinden.",
+      "access": "n8n Cloud oder Self-hosted; Agentenfunktionen abhängig vom Produktstand",
+      "uses": [
+        "Interne Workflows",
+        "Datenverarbeitung",
+        "Support-Automation",
+        "Tool-Orchestrierung"
+      ],
+      "strengths": [
+        "Workflow- und Agentenlogik in einer Plattform",
+        "Self-hosting-Optionen im n8n-Ökosystem",
+        "Viele Integrationen",
+        "Technisch flexibel"
+      ],
+      "checks": [
+        "Self-hosting und Cloud getrennt bewerten",
+        "Credential-Rechte begrenzen",
+        "Fehlerpfade und menschliche Freigaben definieren"
+      ],
+      "sources": [
+        [
+          "n8n – Introducing n8n Agents",
+          "https://blog.n8n.io/introducing-n8n-agents/"
+        ],
+        [
+          "n8n – AI Agents",
+          "https://n8n.io/ai-agents/"
+        ]
+      ]
+    },
+    {
+      "name": "AI by Zapier (ehemals Zapier Agents)",
+      "slug": "ai-by-zapier",
+      "provider": "Zapier",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Agentische Automation",
+      "audience_short": "Privat & Unternehmen",
+      "summary": "Zapier bündelt agentische Tool-Nutzung zunehmend in AI by Zapier; das frühere eigenständige Agents-Produkt wird migriert.",
+      "access": "Zapier; Produkt und Migration ändern sich aktuell",
+      "uses": [
+        "SaaS-Automation",
+        "E-Mail- und CRM-Aktionen",
+        "Datenübergaben",
+        "KI-gestützte Workflows"
+      ],
+      "strengths": [
+        "Breites Zapier-App-Ökosystem",
+        "Tool Calling in Automationen",
+        "Niedrige Einstiegshürde",
+        "Gut für SaaS-Prozesse"
+      ],
+      "checks": [
+        "Migration vom alten Agents-Produkt berücksichtigen",
+        "Aktionen mit Schreibrechten absichern",
+        "Plan- und Task-Kosten prüfen"
+      ],
+      "sources": [
+        [
+          "Zapier Help – Migrating from Agents to AI by Zapier",
+          "https://help.zapier.com/hc/en-us/articles/47402591569805-Migrating-from-Agents-to-AI-by-Zapier"
+        ],
+        [
+          "Zapier Help – Add tools to AI by Zapier",
+          "https://help.zapier.com/hc/en-us/articles/45863491098893-Add-tools-to-your-AI-by-Zapier-step"
+        ]
+      ]
+    },
+    {
+      "name": "Lindy",
+      "slug": "lindy",
+      "provider": "Lindy",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Agentenplattform",
+      "audience_short": "Privat & Unternehmen",
+      "summary": "Plattform für digitale KI-Mitarbeiter, die Aufgaben wie Terminplanung, Support, Kommunikation und Workflows übernehmen können.",
+      "access": "Lindy Plattform; planabhängig",
+      "uses": [
+        "Terminplanung",
+        "E-Mail-Arbeit",
+        "Support",
+        "Business-Prozesse"
+      ],
+      "strengths": [
+        "No-/Low-Code-Ausrichtung",
+        "Viele vorgefertigte Use Cases",
+        "App-Verbindungen",
+        "Agenten für wiederkehrende Arbeit"
+      ],
+      "checks": [
+        "Berechtigungen für E-Mail und Kalender eng halten",
+        "Automatische Außenkommunikation testen",
+        "Kosten pro Nutzung und Umfang prüfen"
+      ],
+      "sources": [
+        [
+          "Lindy – AI Tools",
+          "https://www.lindy.ai/tools"
+        ],
+        [
+          "Lindy – Use Cases",
+          "https://www.lindy.ai/use-cases"
+        ]
+      ]
+    },
+    {
+      "name": "Relevance AI Agents",
+      "slug": "relevance-ai-agents",
+      "provider": "Relevance AI",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Agentenplattform / Workforce",
+      "audience_short": "Teams & Unternehmen",
+      "summary": "Plattform zum Bauen und Orchestrieren spezialisierter KI-Agenten und Agenten-Teams für Geschäftsprozesse.",
+      "access": "Relevance AI Plattform; planabhängig",
+      "uses": [
+        "Sales Ops",
+        "Research",
+        "Support",
+        "Multi-Agent-Workflows"
+      ],
+      "strengths": [
+        "Agenten-Teams und Handoffs",
+        "Visueller Builder",
+        "Tool- und Integrationsunterstützung",
+        "Unternehmensprozesse im Fokus"
+      ],
+      "checks": [
+        "Agentenrollen klar abgrenzen",
+        "Handoffs und Fehlerpfade testen",
+        "Datenzugriff pro Agent minimieren"
+      ],
+      "sources": [
+        [
+          "Relevance AI – Agents",
+          "https://relevanceai.com/agents"
+        ],
+        [
+          "Relevance AI – Workforce",
+          "https://relevanceai.com/workforce"
+        ]
+      ]
+    },
+    {
+      "name": "Relay.app",
+      "slug": "relay-app",
+      "provider": "Relay.app",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Agenten- und Workflow-Plattform",
+      "audience_short": "Teams & KMU",
+      "summary": "Plattform für KI-gestützte Workflows und Agenten mit Fokus auf nachvollziehbare Business-Automation.",
+      "access": "Relay.app; planabhängig",
+      "uses": [
+        "Operations",
+        "CRM-Prozesse",
+        "Kommunikation",
+        "Freigabe-Workflows"
+      ],
+      "strengths": [
+        "Klare Workflow-Struktur",
+        "Human-in-the-loop gut integrierbar",
+        "SaaS-Verbindungen",
+        "Geeignet für kleine Teams"
+      ],
+      "checks": [
+        "Agentische und deterministische Schritte bewusst trennen",
+        "Schreibaktionen mit Freigaben versehen",
+        "Integrationsrechte prüfen"
+      ],
+      "sources": [
+        [
+          "Relay.app Docs – Getting Started",
+          "https://docs.relay.app/getting-started/readme"
+        ]
+      ]
+    },
+    {
+      "name": "Gumloop Agents",
+      "slug": "gumloop-agents",
+      "provider": "Gumloop",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Agentenplattform",
+      "audience_short": "Teams & Unternehmen",
+      "summary": "Gumloop-Agenten verbinden Kontext, Tools, MCP und bestehende Automationsflows zu dialog- oder ereignisgesteuerten Agenten.",
+      "access": "Gumloop; planabhängig",
+      "uses": [
+        "Research-Automation",
+        "Operations",
+        "Interne Tools",
+        "App-übergreifende Workflows"
+      ],
+      "strengths": [
+        "MCP- und Tool-Anbindung",
+        "Verknüpfung mit bestehenden Flows",
+        "Subagenten möglich",
+        "Business-Automation"
+      ],
+      "checks": [
+        "Tool- und MCP-Berechtigungen auditieren",
+        "Automatische Aktionen in Testumgebung prüfen",
+        "Fehler- und Eskalationswege definieren"
+      ],
+      "sources": [
+        [
+          "Gumloop – Announcing Agents",
+          "https://www.gumloop.com/blog/announcing-gumloop-agents"
+        ],
+        [
+          "Gumloop – Subagents",
+          "https://www.gumloop.com/blog/subagents"
+        ]
+      ]
+    },
+    {
+      "name": "Gumball",
+      "slug": "gumball",
+      "provider": "Gumloop",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Persönlicher Arbeits-Agent",
+      "audience_short": "Privat & Teams",
+      "summary": "Persönlicher KI-Agent von Gumloop, der verbundene Apps und spezialisierte Skills oder Agenten zur Aufgabenerledigung nutzen kann.",
+      "access": "Gumloop/Gumball; Verfügbarkeit abhängig vom Produktzugang",
+      "uses": [
+        "Persönliche Arbeitsorganisation",
+        "Delegation",
+        "App-übergreifende Aufgaben",
+        "Kommunikation"
+      ],
+      "strengths": [
+        "Eine zentrale Agentenoberfläche",
+        "Nutzung verbundener Apps",
+        "Delegation an Skills",
+        "Für alltägliche Wissensarbeit gedacht"
+      ],
+      "checks": [
+        "Persönliche Konten nur gezielt verbinden",
+        "Schreib- und Sendeaktionen überprüfen",
+        "Datenschutz der verbundenen Dienste beachten"
+      ],
+      "sources": [
+        [
+          "Gumloop – Meet Gumball",
+          "https://www.gumloop.com/blog/meet-gumball"
+        ]
+      ]
+    },
+    {
+      "name": "Microsoft Copilot Studio",
+      "slug": "microsoft-copilot-studio",
+      "provider": "Microsoft",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Enterprise Agent Builder",
+      "audience_short": "Unternehmen",
+      "summary": "Microsoft-Plattform zum Erstellen, Verbinden, Veröffentlichen und Verwalten von Copilot- und autonomen Agenten.",
+      "access": "Microsoft Copilot Studio; kommerzielle Lizenzierung",
+      "uses": [
+        "Interne Assistenten",
+        "Customer Service",
+        "Business-Prozesse",
+        "Microsoft-365-Automation"
+      ],
+      "strengths": [
+        "Microsoft-Ökosystem",
+        "Low-Code plus Erweiterbarkeit",
+        "Connectoren und Aktionen",
+        "Governance-orientierte Bereitstellung"
+      ],
+      "checks": [
+        "Dataverse- und Connector-Rechte prüfen",
+        "Autonome Trigger kontrollieren",
+        "Lizenzierung und Verbrauchsmodelle kalkulieren"
+      ],
+      "sources": [
+        [
+          "Microsoft – Copilot Studio",
+          "https://www.microsoft.com/de-de/microsoft-copilot/microsoft-copilot-studio"
+        ],
+        [
+          "Microsoft Learn – Agents overview",
+          "https://learn.microsoft.com/de-de/microsoft-copilot-studio/agents-overview"
+        ]
+      ]
+    },
+    {
+      "name": "IBM watsonx Orchestrate",
+      "slug": "ibm-watsonx-orchestrate",
+      "provider": "IBM",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Enterprise Agent Orchestration",
+      "audience_short": "Unternehmen",
+      "summary": "Enterprise-Plattform zum Erstellen, Orchestrieren und Governieren von KI-Agenten mit Tools, APIs und Frameworks.",
+      "access": "IBM watsonx Orchestrate; Enterprise-Angebot",
+      "uses": [
+        "Unternehmensprozesse",
+        "Agenten-Orchestrierung",
+        "HR und Operations",
+        "Tool-Integration"
+      ],
+      "strengths": [
+        "No-Code und Pro-Code",
+        "Enterprise-Governance",
+        "Breite Tool- und API-Anbindung",
+        "Orchestrierung mehrerer Agenten"
+      ],
+      "checks": [
+        "Governance-Rollen definieren",
+        "Toolzugriffe und Credentials auditieren",
+        "Observability und Eskalation konfigurieren"
+      ],
+      "sources": [
+        [
+          "IBM – watsonx Orchestrate AI Agent Builder",
+          "https://www.ibm.com/de-de/products/watsonx-orchestrate/ai-agent-builder"
+        ],
+        [
+          "IBM – watsonx Orchestrate",
+          "https://www.ibm.com/de-de/products/watsonx-orchestrate"
+        ]
+      ]
+    },
+    {
+      "name": "Oracle AI Agent Studio",
+      "slug": "oracle-ai-agent-studio",
+      "provider": "Oracle",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Enterprise Agent Builder",
+      "audience_short": "Unternehmen",
+      "summary": "Agentenstudio für Oracle Fusion Applications zum Erstellen, Erweitern und Orchestrieren von KI-Agenten in Geschäftsprozessen.",
+      "access": "Oracle Fusion Applications / Enterprise-Angebot",
+      "uses": [
+        "ERP-Prozesse",
+        "HR",
+        "Finance",
+        "Supply Chain"
+      ],
+      "strengths": [
+        "Tiefe Oracle-Fusion-Integration",
+        "Business-Kontext",
+        "Multi-Agent- und Tool-Funktionen",
+        "Governance im Enterprise-Umfeld"
+      ],
+      "checks": [
+        "Fusion-Berechtigungen prüfen",
+        "kritische Finanz- oder HR-Aktionen mit Human-in-the-loop absichern",
+        "MCP/A2A-Verbindungen kontrollieren"
+      ],
+      "sources": [
+        [
+          "Oracle Docs – AI Agent Studio overview",
+          "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/overview.html"
+        ],
+        [
+          "Oracle – Fusion AI",
+          "https://www.oracle.com/de/applications/fusion-ai/"
+        ]
+      ]
+    },
+    {
+      "name": "UiPath Agents",
+      "slug": "uipath-agents",
+      "provider": "UiPath",
+      "category": "automatisierung",
+      "category_name": "Automatisierung",
+      "type": "Enterprise Agents / Agentic Automation",
+      "audience_short": "Unternehmen",
+      "summary": "KI-Agenten in UiPath, die planen und handeln und dabei RPA-Roboter, Menschen und Unternehmenswerkzeuge einbeziehen können.",
+      "access": "UiPath Platform; Enterprise-Zugang",
+      "uses": [
+        "Backoffice",
+        "Dokumentenprozesse",
+        "Operations",
+        "Agentic Automation"
+      ],
+      "strengths": [
+        "Verbindung von Agenten und RPA",
+        "Human-in-the-loop",
+        "Enterprise-Automation",
+        "Bestehendes UiPath-Ökosystem"
+      ],
+      "checks": [
+        "Agentische Entscheidungen von deterministischen RPA-Schritten trennen",
+        "Eskalationen definieren",
+        "Zugriffe auf produktive Systeme begrenzen"
+      ],
+      "sources": [
+        [
+          "UiPath Docs – About Agents",
+          "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/about-uipath-agents"
+        ],
+        [
+          "UiPath – Agentic Automation",
+          "https://www.uipath.com/automation/agentic-automation"
+        ]
+      ]
+    },
+    {
+      "name": "Salesforce Agentforce",
+      "slug": "salesforce-agentforce",
+      "provider": "Salesforce",
+      "category": "unternehmen",
+      "category_name": "Enterprise",
+      "type": "Enterprise Agent Platform",
+      "audience_short": "Unternehmen",
+      "summary": "Salesforce-Plattform zum Bauen und Betreiben von Agenten, die CRM-Daten, Geschäftslogik und Aktionen nutzen.",
+      "access": "Salesforce Agentforce; kommerzielles Enterprise-Angebot",
+      "uses": [
+        "Customer Service",
+        "Sales",
+        "CRM-Automation",
+        "Mitarbeiterprozesse"
+      ],
+      "strengths": [
+        "Tiefe Salesforce-Integration",
+        "CRM- und Datenkontext",
+        "Agent Builder und Governance",
+        "Breites Enterprise-Einsatzfeld"
+      ],
+      "checks": [
+        "CRM-Datenzugriffe nach Rolle begrenzen",
+        "Autonome Aktionen testen",
+        "Kosten- und Verbrauchsmodell prüfen"
+      ],
+      "sources": [
+        [
+          "Salesforce – Agentforce",
+          "https://www.salesforce.com/de/agentforce/"
+        ],
+        [
+          "Salesforce – How Agentforce works",
+          "https://www.salesforce.com/agentforce/how-it-works/"
+        ]
+      ]
+    },
+    {
+      "name": "SAP Joule Agents",
+      "slug": "sap-joule-agents",
+      "provider": "SAP",
+      "category": "unternehmen",
+      "category_name": "Enterprise",
+      "type": "Business Agents",
+      "audience_short": "Unternehmen",
+      "summary": "SAP-Geschäftsagenten, die auf Unternehmenskontext, SAP-Daten und Geschäftsprozesse zugeschnitten sind.",
+      "access": "SAP Joule / unterstützte SAP-Lösungen; lizenzabhängig",
+      "uses": [
+        "Finance",
+        "HR",
+        "Supply Chain",
+        "SAP-Prozessautomation"
+      ],
+      "strengths": [
+        "SAP-Geschäftskontext",
+        "Integration in Kernprozesse",
+        "Unternehmensdaten und semantischer Kontext",
+        "Agenten-Zusammenarbeit"
+      ],
+      "checks": [
+        "Geschäftsrollen und Datenrechte prüfen",
+        "Kritische Buchungen oder Entscheidungen menschlich freigeben",
+        "Verfügbarkeit je SAP-Produkt kontrollieren"
+      ],
+      "sources": [
+        [
+          "SAP – AI Agents",
+          "https://www.sap.com/germany/products/artificial-intelligence/ai-agents.html"
+        ],
+        [
+          "SAP Help – Joule Agents overview",
+          "https://help.sap.com/docs/joule/capabilities-guide/joule-agents-overview"
+        ]
+      ]
+    },
+    {
+      "name": "Atlassian Rovo Agents",
+      "slug": "atlassian-rovo-agents",
+      "provider": "Atlassian",
+      "category": "unternehmen",
+      "category_name": "Enterprise",
+      "type": "Workplace Agents",
+      "audience_short": "Teams & Unternehmen",
+      "summary": "Konfigurierbare KI-Teamkollegen in Atlassian Rovo für Jira-, Confluence- und verbundene Arbeitsprozesse.",
+      "access": "Atlassian Rovo; produkt- und planabhängig",
+      "uses": [
+        "Projektarbeit",
+        "Wissensmanagement",
+        "Ticket- und Dokumentenarbeit",
+        "Team-Automation"
+      ],
+      "strengths": [
+        "Jira- und Confluence-Kontext",
+        "Konfigurierbare Agentenrollen",
+        "Atlassian-Berechtigungen",
+        "Integration in Teamworkflows"
+      ],
+      "checks": [
+        "Agentenrechte an bestehende Berechtigungen koppeln",
+        "Automationsaktionen testen",
+        "Verbundene Apps separat absichern"
+      ],
+      "sources": [
+        [
+          "Atlassian Support – Rovo Agents",
+          "https://support.atlassian.com/rovo/docs/agents/"
+        ]
+      ]
+    },
+    {
+      "name": "Glean Agents",
+      "slug": "glean-agents",
+      "provider": "Glean",
+      "category": "unternehmen",
+      "category_name": "Enterprise",
+      "type": "Enterprise Knowledge Agents",
+      "audience_short": "Unternehmen",
+      "summary": "Unternehmensagenten auf Basis des Glean-Wissens- und Berechtigungskontexts für Recherche und Arbeitsabläufe.",
+      "access": "Glean Enterprise; kommerzieller Zugang",
+      "uses": [
+        "Enterprise Search",
+        "Wissensarbeit",
+        "Interne Workflows",
+        "Mitarbeiterassistenz"
+      ],
+      "strengths": [
+        "Unternehmensweiter Wissenskontext",
+        "Berechtigungsorientiert",
+        "Auto- und Workflow-Modi",
+        "Tools und Aktionen"
+      ],
+      "checks": [
+        "Datenquellen und Indizierung prüfen",
+        "Berechtigungsmodell regelmäßig auditieren",
+        "Agentische Aktionen separat freigeben"
+      ],
+      "sources": [
+        [
+          "Glean Docs – Agents",
+          "https://docs.glean.com/agents"
+        ],
+        [
+          "Glean Docs – Agents Introduction",
+          "https://docs.glean.com/agents/introduction"
+        ]
+      ]
+    },
+    {
+      "name": "Notion Agent",
+      "slug": "notion-agent",
+      "provider": "Notion",
+      "category": "unternehmen",
+      "category_name": "Produktivität",
+      "type": "Workspace Agent",
+      "audience_short": "Privat & Teams",
+      "summary": "In Notion integrierter Agent, der Seiten und Datenbanken mit dem Kontext des eigenen Workspace bearbeiten kann.",
+      "access": "Notion; KI-/Agentenzugang planabhängig",
+      "uses": [
+        "Dokumente erstellen",
+        "Datenbanken pflegen",
+        "Workspace-Recherche",
+        "Wissensorganisation"
+      ],
+      "strengths": [
+        "Direkt im Notion-Workspace",
+        "Nutzt bestehenden Kontext",
+        "Kann Inhalte bearbeiten",
+        "Niedrige Einstiegshürde"
+      ],
+      "checks": [
+        "Änderungen an wichtigen Datenbanken kontrollieren",
+        "Berechtigungen des eigenen Notion-Kontos beachten",
+        "Sensible Inhalte nur im vorgesehenen Workspace verarbeiten"
+      ],
+      "sources": [
+        [
+          "Notion Help – Notion Agent",
+          "https://www.notion.com/de/help/notion-agent"
+        ]
+      ]
+    },
+    {
+      "name": "Notion Custom Agents",
+      "slug": "notion-custom-agents",
+      "provider": "Notion",
+      "category": "unternehmen",
+      "category_name": "Produktivität",
+      "type": "Custom Workplace Agents",
+      "audience_short": "Teams & Unternehmen",
+      "summary": "Anpassbare Notion-Agenten für wiederkehrende Aufgaben mit eigenen Berechtigungen, Zeitplänen und verbundenen Quellen.",
+      "access": "Notion Custom Agents; plan- und rolloutabhängig",
+      "uses": [
+        "Wiederkehrende Reports",
+        "Wissenspflege",
+        "Team-Automation",
+        "Informationssynthese"
+      ],
+      "strengths": [
+        "Agenten mit klarer Rolle",
+        "Wiederkehrende Ausführung",
+        "Notion-Kontext",
+        "Verbundene Dienste möglich"
+      ],
+      "checks": [
+        "Agentenberechtigungen separat prüfen",
+        "Zeitpläne und automatische Änderungen überwachen",
+        "Externe Connectors auf Datenscope begrenzen"
+      ],
+      "sources": [
+        [
+          "Notion – Custom Agents",
+          "https://www.notion.com/de/product/agents"
+        ]
+      ]
+    },
+    {
+      "name": "ServiceNow AI Agents",
+      "slug": "servicenow-ai-agents",
+      "provider": "ServiceNow",
+      "category": "unternehmen",
+      "category_name": "Enterprise",
+      "type": "Enterprise AI Agents",
+      "audience_short": "Unternehmen",
+      "summary": "ServiceNow-Agenten für IT-, HR- und Kundenprozesse innerhalb der Now Platform mit zentraler Steuerung und Governance.",
+      "access": "ServiceNow; Enterprise-Produkt und Lizenzierung",
+      "uses": [
+        "IT Service Management",
+        "HR",
+        "Customer Service",
+        "Workflow-Automation"
+      ],
+      "strengths": [
+        "Tiefe Now-Platform-Integration",
+        "Enterprise-Workflows",
+        "Zentrale Agentensteuerung",
+        "Geschäftsprozessnähe"
+      ],
+      "checks": [
+        "Produktive Aktionen mit Governance absichern",
+        "Rollen und ACLs prüfen",
+        "Agentenleistung und Eskalation überwachen"
+      ],
+      "sources": [
+        [
+          "ServiceNow – AI Agents",
+          "https://www.servicenow.com/products/ai-agents.html"
+        ]
+      ]
+    },
+    {
+      "name": "ServiceNow Otto",
+      "slug": "servicenow-otto",
+      "provider": "ServiceNow",
+      "category": "unternehmen",
+      "category_name": "Enterprise",
+      "type": "Enterprise AI Experience / Agent",
+      "audience_short": "Unternehmen",
+      "summary": "ServiceNow Otto ist eine einheitliche KI-Arbeitsoberfläche, die Anfragen über Agenten, Systeme und Workflows hinweg orchestriert.",
+      "access": "ServiceNow Otto; Enterprise-Angebot",
+      "uses": [
+        "Mitarbeiterassistenz",
+        "Serviceprozesse",
+        "Workflow-Orchestrierung",
+        "Unternehmenssuche"
+      ],
+      "strengths": [
+        "Einheitliche Oberfläche",
+        "ServiceNow-Prozessnähe",
+        "Routing über Systeme und Agenten",
+        "Für End-to-End-Aufgaben gedacht"
+      ],
+      "checks": [
+        "Verfügbare Aktionen je Rolle prüfen",
+        "Datenzugriffe und Identität sauber konfigurieren",
+        "Autonome Prozessschritte testen"
+      ],
+      "sources": [
+        [
+          "ServiceNow – Otto",
+          "https://www.servicenow.com/de/platform/otto.html"
+        ]
+      ]
+    },
+    {
+      "name": "Microsoft Copilot Analyst",
+      "slug": "microsoft-copilot-analyst",
+      "provider": "Microsoft",
+      "category": "unternehmen",
+      "category_name": "Analyse",
+      "type": "Datenanalyse-Agent",
+      "audience_short": "Unternehmen",
+      "summary": "Analyse-Agent in Microsoft 365 Copilot für Daten, Trends, Ausreißer, Berichte und Visualisierungen.",
+      "access": "Microsoft 365 Copilot; lizenzabhängig",
+      "uses": [
+        "Datenanalyse",
+        "Trendprüfung",
+        "Reporting",
+        "Entscheidungsvorbereitung"
+      ],
+      "strengths": [
+        "Microsoft-365-Arbeitskontext",
+        "Geeignet für Tabellen und Geschäftsdaten",
+        "Berichte und Visualisierungen",
+        "Agentischer Analyseablauf"
+      ],
+      "checks": [
+        "Datenqualität vor Analyse prüfen",
+        "Statistische Schlussfolgerungen fachlich validieren",
+        "Sensible Daten nur in freigegebenen Tenants verwenden"
+      ],
+      "sources": [
+        [
+          "Microsoft Support – Analyst in Microsoft 365 Copilot",
+          "https://support.microsoft.com/de-de/microsoft-365-copilot/get-started-with-analyst-in-microsoft-365-copilot"
+        ]
+      ]
+    },
+    {
+      "name": "Perplexity Computer",
+      "slug": "perplexity-computer",
+      "provider": "Perplexity",
+      "category": "unternehmen",
+      "category_name": "Produktivität",
+      "type": "General-Purpose Digital Worker",
+      "audience_short": "Privat & Unternehmen",
+      "summary": "Allgemeiner digitaler Arbeitsagent von Perplexity für Recherche, Browseraufgaben, wiederkehrende Jobs und Artefakterstellung.",
+      "access": "Perplexity Computer; planabhängig",
+      "uses": [
+        "Recherche",
+        "Browser-Automation",
+        "Reports",
+        "Wiederkehrende Beobachtung"
+      ],
+      "strengths": [
+        "Generalistische Aufgabenbearbeitung",
+        "Subagenten",
+        "Hintergrund- und wiederkehrende Aufgaben",
+        "Erzeugung verschiedener Arbeitsartefakte"
+      ],
+      "checks": [
+        "Autonome Webaktionen kontrollieren",
+        "Verbundene Konten minimal berechtigen",
+        "Ergebnisse und externe Aktionen nachvollziehen"
+      ],
+      "sources": [
+        [
+          "Perplexity – Computer",
+          "https://www.perplexity.ai/de/products/computer"
+        ]
+      ]
+    },
+    {
+      "name": "Intercom Fin",
+      "slug": "intercom-fin",
+      "provider": "Intercom",
+      "category": "service-sales",
+      "category_name": "Kundenservice",
+      "type": "Customer Service Agent",
+      "audience_short": "Unternehmen",
+      "summary": "KI-Agent von Intercom für Kundenservice, der Fragen beantwortet und definierte Aktionen oder Übergaben ausführen kann.",
+      "access": "Intercom Fin; kommerzielles Service-Angebot",
+      "uses": [
+        "Kundenservice",
+        "FAQ-Automation",
+        "Support-Triage",
+        "Service-Aktionen"
+      ],
+      "strengths": [
+        "Customer-Service-Fokus",
+        "Mehrkanalfähigkeit",
+        "Handover an Menschen",
+        "Wissen und Aktionen kombinierbar"
+      ],
+      "checks": [
+        "Supportwissen aktuell halten",
+        "Eskalationsregeln testen",
+        "Kundenbezogene Aktionen und Datenschutz prüfen"
+      ],
+      "sources": [
+        [
+          "Intercom Help – Was ist Fin?",
+          "https://www.intercom.com/help/de/articles/9515824-was-ist-fin"
+        ],
+        [
+          "Intercom Help – Fin AI Agent erklärt",
+          "https://www.intercom.com/help/de/articles/7120684-fin-ai-agent-erklart"
+        ]
+      ]
+    },
+    {
+      "name": "Zendesk AI Agents",
+      "slug": "zendesk-ai-agents",
+      "provider": "Zendesk",
+      "category": "service-sales",
+      "category_name": "Kundenservice",
+      "type": "Customer Service Agents",
+      "audience_short": "Unternehmen",
+      "summary": "Zendesk-Agenten für automatisierte Kundenkommunikation über Servicekanäle mit generativen Abläufen und Aktionen.",
+      "access": "Zendesk AI Agents; plan- und produktabhängig",
+      "uses": [
+        "Ticket-Automation",
+        "Messaging",
+        "E-Mail-Support",
+        "Serviceaktionen"
+      ],
+      "strengths": [
+        "Direkte Zendesk-Integration",
+        "Mehrere Servicekanäle",
+        "Generative Flows",
+        "Handover in bestehende Supportprozesse"
+      ],
+      "checks": [
+        "Wissensbasis und Aktionen testen",
+        "Kanalabhängige Funktionen prüfen",
+        "Automatisierte Antworten regelmäßig qualitativ auditieren"
+      ],
+      "sources": [
+        [
+          "Zendesk Help – Überblick über AI Agents",
+          "https://support.zendesk.com/hc/de/articles/6970583409690-%C3%9Cberblick-%C3%BCber-AI-Agents"
+        ],
+        [
+          "Zendesk – AI Agents",
+          "https://www.zendesk.com/service/ai/ai-agents/"
+        ]
+      ]
+    },
+    {
+      "name": "Forethought AI Agents by Zendesk",
+      "slug": "forethought-ai-agents-zendesk",
+      "provider": "Zendesk / Forethought",
+      "category": "service-sales",
+      "category_name": "Kundenservice",
+      "type": "Customer Service Agents",
+      "audience_short": "Unternehmen",
+      "summary": "Nach der Forethought-Übernahme in Zendesk integrierte Agenten für Supportautomation, Assistenz und Serviceanalyse.",
+      "access": "Zendesk Add-on / Angebot; Verfügbarkeit prüfen",
+      "uses": [
+        "Support-Automation",
+        "Intent-Erkennung",
+        "Agent Assist",
+        "Service-Insights"
+      ],
+      "strengths": [
+        "Erprobter Servicefokus",
+        "Zendesk-Integration",
+        "Mehrere Supportfunktionen",
+        "Auch für unterstützte andere Umgebungen vorgesehen"
+      ],
+      "checks": [
+        "Produktintegration und Branding nach der Übernahme aktuell prüfen",
+        "Kanal- und Plattformunterstützung verifizieren",
+        "Automatisierte Entscheidungen überwachen"
+      ],
+      "sources": [
+        [
+          "Zendesk – Forethought AI agents announcement",
+          "https://support.zendesk.com/hc/en-us/articles/10850639885082-Announcing-Forethought-AI-agents-by-Zendesk-for-customers"
+        ]
+      ]
+    },
+    {
+      "name": "HubSpot Breeze Customer Agent",
+      "slug": "hubspot-breeze-customer-agent",
+      "provider": "HubSpot",
+      "category": "service-sales",
+      "category_name": "Kundenservice",
+      "type": "Customer Service Agent",
+      "audience_short": "Unternehmen",
+      "summary": "HubSpot-Agent für Kundenkommunikation, der vorhandene Inhalte nutzt, Fragen beantwortet und an Menschen übergeben kann.",
+      "access": "HubSpot Breeze; Produktzugang und Credits/Plan prüfen",
+      "uses": [
+        "Website-Support",
+        "FAQ",
+        "Customer Service",
+        "Lead- und Servicekommunikation"
+      ],
+      "strengths": [
+        "Direkte HubSpot-Integration",
+        "Nutzt bestehende Inhalte",
+        "Handover möglich",
+        "Kontext und Ton konfigurierbar"
+      ],
+      "checks": [
+        "Wissensquellen aktuell halten",
+        "Handover-Regeln testen",
+        "Kunden- und CRM-Datenzugriff prüfen"
+      ],
+      "sources": [
+        [
+          "HubSpot Marketplace – Customer Agent",
+          "https://ecosystem.hubspot.com/marketplace/listing/customer-agent"
+        ],
+        [
+          "HubSpot Knowledge Base – Customer Agent",
+          "https://knowledge.hubspot.com/de/customer-agent/set-up-the-customer-agent"
+        ]
+      ]
+    },
+    {
+      "name": "Sierra Agent",
+      "slug": "sierra-agent",
+      "provider": "Sierra",
+      "category": "service-sales",
+      "category_name": "Kundenservice",
+      "type": "Customer Experience Agent",
+      "audience_short": "Unternehmen",
+      "summary": "Enterprise-Customer-Experience-Agent von Sierra für dialogbasierte Kundeninteraktion und action-orientierte Serviceprozesse.",
+      "access": "Sierra; Enterprise-Angebot",
+      "uses": [
+        "Customer Experience",
+        "Support",
+        "Kundenaktionen",
+        "Serviceautomatisierung"
+      ],
+      "strengths": [
+        "Customer-Experience-Fokus",
+        "Action-orientierte Agenten",
+        "Marken- und Richtlinienkontext",
+        "Enterprise-Ausrichtung"
+      ],
+      "checks": [
+        "Erlaubte Kundenaktionen klar definieren",
+        "Policy- und Markenvorgaben testen",
+        "Integrationen und Datenschutz vor Rollout prüfen"
+      ],
+      "sources": [
+        [
+          "Sierra – Official Site",
+          "https://sierra.ai/"
+        ]
+      ]
+    },
+    {
+      "name": "Gorgias AI Agent",
+      "slug": "gorgias-ai-agent",
+      "provider": "Gorgias",
+      "category": "service-sales",
+      "category_name": "E-Commerce Service",
+      "type": "E-Commerce Customer Agent",
+      "audience_short": "Unternehmen",
+      "summary": "E-Commerce-Agent für Support und Shopping-Unterstützung mit Shopdaten, Richtlinien und Kundenaktionen.",
+      "access": "Gorgias AI Agent; kommerzielles Angebot",
+      "uses": [
+        "Shop-Support",
+        "Bestellfragen",
+        "Shopping Assistance",
+        "E-Commerce-Service"
+      ],
+      "strengths": [
+        "E-Commerce-Spezialisierung",
+        "Shopify-nahe Workflows",
+        "Support plus Verkaufsassistenz",
+        "Viele Integrationen"
+      ],
+      "checks": [
+        "Bestellaktionen und Rückerstattungen mit Limits versehen",
+        "Shopdatenrechte kontrollieren",
+        "Markenrichtlinien testen"
+      ],
+      "sources": [
+        [
+          "Gorgias – AI Agent",
+          "https://www.gorgias.com/ai-agent"
+        ],
+        [
+          "Gorgias Docs – AI Agent Explained",
+          "https://docs.gorgias.com/en-US/ai-agent-explained-497772"
+        ]
+      ]
+    },
+    {
+      "name": "HubSpot Breeze Prospecting Agent",
+      "slug": "hubspot-breeze-prospecting-agent",
+      "provider": "HubSpot",
+      "category": "service-sales",
+      "category_name": "Sales",
+      "type": "Prospecting Agent",
+      "audience_short": "Unternehmen",
+      "summary": "HubSpot-Sales-Agent für Prospect Research, Kaufsignale und personalisierte Ansprache potenzieller Kunden.",
+      "access": "HubSpot Breeze; Produktzugang/Plan prüfen",
+      "uses": [
+        "Prospecting",
+        "Lead Research",
+        "Sales Outreach",
+        "Account Priorisierung"
+      ],
+      "strengths": [
+        "Direkter CRM-Kontext",
+        "Research und Outreach verbunden",
+        "HubSpot-Signale",
+        "Für Sales-Teams gedacht"
+      ],
+      "checks": [
+        "Automatische E-Mails mit Compliance-Regeln absichern",
+        "Datenquellen und Kontaktdatenqualität prüfen",
+        "Outreach menschlich kontrollieren"
+      ],
+      "sources": [
+        [
+          "HubSpot Marketplace – Prospecting Agent",
+          "https://ecosystem.hubspot.com/marketplace/listing/prospecting-agent"
+        ],
+        [
+          "HubSpot Knowledge Base – Prospecting Agent",
+          "https://knowledge.hubspot.com/de/prospecting/use-the-prospecting-agent"
+        ]
+      ]
+    },
+    {
+      "name": "Salesforce Prospecting Agent",
+      "slug": "salesforce-prospecting-agent",
+      "provider": "Salesforce",
+      "category": "service-sales",
+      "category_name": "Sales",
+      "type": "Prospecting Agent",
+      "audience_short": "Unternehmen",
+      "summary": "Salesforce-Agent für priorisierte Prospect-Recherche, Kaufsignale und vorbereitete Vertriebsansprache.",
+      "access": "Salesforce Sales/Agentforce; Produktverfügbarkeit prüfen",
+      "uses": [
+        "Account Research",
+        "Lead Priorisierung",
+        "Sales Outreach",
+        "Meeting-Vorbereitung"
+      ],
+      "strengths": [
+        "Salesforce-CRM-Kontext",
+        "Signalbasierte Priorisierung",
+        "Research plus Nachrichtenvorbereitung",
+        "Für Sales-Workflows"
+      ],
+      "checks": [
+        "Externe Datenlizenzen prüfen",
+        "Automatisierte Ansprache freigeben",
+        "DSGVO und Werberecht im Outreach beachten"
+      ],
+      "sources": [
+        [
+          "Salesforce – Sales product release",
+          "https://www.salesforce.com/blog/sales/sales-cloud-product-release/"
+        ]
+      ]
+    },
+    {
+      "name": "HubSpot Data Agent",
+      "slug": "hubspot-data-agent",
+      "provider": "HubSpot",
+      "category": "service-sales",
+      "category_name": "Daten",
+      "type": "CRM Data Agent",
+      "audience_short": "Unternehmen",
+      "summary": "HubSpot-Agent zum Recherchieren, Ergänzen und Strukturieren von CRM-Daten aus Web und bereitgestellten Dokumenten.",
+      "access": "HubSpot Breeze/Data Agent; Plan und Credits prüfen",
+      "uses": [
+        "CRM-Enrichment",
+        "Datenrecherche",
+        "Smart Properties",
+        "Datenqualität"
+      ],
+      "strengths": [
+        "Direkt im HubSpot-Datenmodell",
+        "Web und Dokumente",
+        "Strukturierte CRM-Ergebnisse",
+        "Reduziert manuelle Recherche"
+      ],
+      "checks": [
+        "Automatisch ergänzte Daten stichprobenartig prüfen",
+        "Quellen und Aktualität dokumentieren",
+        "Personenbezogene Daten nur rechtmäßig verarbeiten"
+      ],
+      "sources": [
+        [
+          "HubSpot Marketplace – Data Agent",
+          "https://ecosystem.hubspot.com/marketplace/listing/data-agent"
+        ]
+      ]
+    },
+    {
+      "name": "HubSpot Company Research Agent",
+      "slug": "hubspot-company-research-agent",
+      "provider": "HubSpot",
+      "category": "service-sales",
+      "category_name": "Sales Research",
+      "type": "Company Research Agent",
+      "audience_short": "Unternehmen",
+      "summary": "HubSpot-Agent für Unternehmensrecherche und Hintergrundinformationen vor Vertriebs- oder Kundenansprache.",
+      "access": "HubSpot Breeze; Produktzugang prüfen",
+      "uses": [
+        "Account Research",
+        "Sales Preparation",
+        "Company Intelligence",
+        "CRM-Kontext"
+      ],
+      "strengths": [
+        "Unternehmensrecherche direkt im HubSpot-Kontext",
+        "Vorbereitung von Sales-Gesprächen",
+        "Reduziert manuelle Recherche",
+        "CRM-nahe Ergebnisse"
+      ],
+      "checks": [
+        "Unternehmensdaten auf Aktualität prüfen",
+        "Recherche nicht mit Due Diligence gleichsetzen",
+        "Personenbezogene Informationen sparsam verwenden"
+      ],
+      "sources": [
+        [
+          "HubSpot Marketplace – Company Research Agent",
+          "https://ecosystem.hubspot.com/marketplace/listing/company-research-agent"
+        ],
+        [
+          "HubSpot Marketplace – Breeze Agents",
+          "https://ecosystem.hubspot.com/de/marketplace/breeze-agents/all"
+        ]
+      ]
+    },
+    {
+      "name": "Harvey Agents",
+      "slug": "harvey-agents",
+      "provider": "Harvey",
+      "category": "recht",
+      "category_name": "Recht & Professional Services",
+      "type": "Professional Services Agents",
+      "audience_short": "Unternehmen & Kanzleien",
+      "summary": "Agentische KI von Harvey für juristische und professionelle Wissensarbeit mit Quellen, Kontext und überprüfbaren Arbeitsergebnissen.",
+      "access": "Harvey Platform; Enterprise/Professional Services",
+      "uses": [
+        "Legal Research",
+        "Dokumentenanalyse",
+        "Drafting",
+        "Professional Services"
+      ],
+      "strengths": [
+        "Juristischer und professioneller Fokus",
+        "Quellenorientierte Ergebnisse",
+        "Unternehmenskontext",
+        "Für reviewpflichtige Wissensarbeit"
+      ],
+      "checks": [
+        "Keine Rechtsberatung ohne qualifizierte menschliche Prüfung",
+        "Mandats- und Vertraulichkeitsregeln beachten",
+        "Jurisdiktion und Quellenstand verifizieren"
+      ],
+      "sources": [
+        [
+          "Harvey – Platform",
+          "https://www.harvey.ai/platform"
+        ],
+        [
+          "Harvey – Official Site",
+          "https://www.harvey.ai/"
+        ]
+      ]
+    },
+    {
+      "name": "CoCounsel Legal",
+      "slug": "cocounsel-legal",
+      "provider": "Thomson Reuters",
+      "category": "recht",
+      "category_name": "Recht & Professional Services",
+      "type": "Legal AI Agent",
+      "audience_short": "Kanzleien & Rechtsabteilungen",
+      "summary": "Agentische Rechts-KI von Thomson Reuters für Recherche, Analyse und Entwurf auf Basis professioneller Rechtsquellen und Organisationswissen.",
+      "access": "Thomson Reuters CoCounsel Legal; professionelles Angebot",
+      "uses": [
+        "Legal Research",
+        "Case Analysis",
+        "Drafting",
+        "Rechtsabteilungsarbeit"
+      ],
+      "strengths": [
+        "Anbindung an professionelle Thomson-Reuters-Rechtsquellen",
+        "Agentischer Mehrschrittprozess",
+        "Zitierbare Ergebnisse",
+        "Für juristische Workflows gebaut"
+      ],
+      "checks": [
+        "Ergebnisse durch qualifizierte Juristen prüfen",
+        "Jurisdiktion und Aktualität der Quellen bestätigen",
+        "Vertrauliche Mandatsdaten nach Organisationsrichtlinien behandeln"
+      ],
+      "sources": [
+        [
+          "Thomson Reuters – CoCounsel Legal",
+          "https://legal.thomsonreuters.com/en/products/cocounsel-legal"
+        ]
+      ]
     }
   ]
 }

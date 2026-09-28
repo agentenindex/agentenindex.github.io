@@ -1,50 +1,46 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AgentenIndex Agent",
+  "title": "AgentenIndex Agent Record v3",
   "type": "object",
   "required": [
-    "id",
     "name",
+    "slug",
     "provider",
     "category",
-    "verified",
-    "url",
+    "type",
+    "summary",
     "sources"
   ],
   "properties": {
-    "id": {
-      "type": "string",
-      "pattern": "^[a-z0-9-]+$"
-    },
     "name": {
       "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
     },
     "provider": {
       "type": "string"
     },
     "category": {
+      "enum": [
+        "recherche",
+        "coding",
+        "automatisierung",
+        "unternehmen",
+        "service-sales",
+        "recht"
+      ]
+    },
+    "type": {
       "type": "string"
     },
-    "verified": {
-      "type": "string",
-      "format": "date"
-    },
-    "url": {
+    "summary": {
       "type": "string"
     },
     "sources": {
       "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string",
-        "format": "uri"
-      }
-    },
-    "consumer": {
-      "type": "boolean"
-    },
-    "enterprise": {
-      "type": "boolean"
+      "minItems": 1
     }
   }
 }

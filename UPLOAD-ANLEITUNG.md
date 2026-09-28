@@ -1,11 +1,9 @@
-# Upload in GitHub – kurz
+# Upload in GitHub
 
-1. ZIP lokal entpacken.
-2. Repository `agentenindex/agentenindex.github.io` öffnen.
-3. **Add file → Upload files**.
-4. Den gesamten Inhalt des entpackten Ordners hochladen (Ordnerstruktur beibehalten).
-5. Commit-Nachricht: `Publish AgentenIndex reference v2`
+1. ZIP entpacken.
+2. Im Repository `agentenindex/agentenindex.github.io` auf **Add file → Upload files**.
+3. Den gesamten Inhalt des entpackten Ordners hochladen, inklusive Unterordnern.
+4. Vorhandene Dateien ersetzen.
+5. Commit-Nachricht: `Publish AgentenIndex reference v3`
 6. Direkt in `main` committen.
-7. Unter **Actions** bzw. **Settings → Pages** warten, bis das Deployment grün ist.
-
-Wichtig: `CNAME` muss im Root liegen und exakt `agentenindex.de` enthalten.
+7. Nach dem Pages-Deployment prüfen: `/`, `/agenten/`, `/wissen/was-ist-ein-ki-agent/`, `/impressum/`, `/datenschutz/`.
