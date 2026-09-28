@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentenIndex Agent",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "provider",
+    "category",
+    "verified",
+    "url",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "string",
+      "format": "date"
+    },
+    "url": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "consumer": {
+      "type": "boolean"
+    },
+    "enterprise": {
+      "type": "boolean"
+    }
+  }
+}
