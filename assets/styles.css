@@ -449,3 +449,34 @@ html{scroll-padding-top:112px;overflow-x:clip}body{overflow-x:clip}.container,.n
 .footer-check{
   white-space:nowrap;
 }
+
+
+
+/* AgentenIndex v7.4.1 visual wordmark
+   Brand remains "AgentenIndex" semantically; visible wordmark is split for readability. */
+.brand .brand-wordmark{
+  display:inline-flex;
+  align-items:baseline;
+  gap:.10em;
+  white-space:nowrap;
+  font-weight:850;
+  letter-spacing:-.035em;
+  line-height:1;
+}
+.brand .brand-main{
+  color:var(--text);
+}
+.brand .brand-accent{
+  color:#a9802d;
+}
+.footer .brand .brand-main{
+  color:var(--text);
+}
+.footer .brand .brand-accent{
+  color:#a9802d;
+}
+@media(max-width:760px){
+  .brand .brand-wordmark{
+    gap:.08em;
+  }
+}
