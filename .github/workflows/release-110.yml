@@ -1,0 +1,70 @@
+name: AgentenIndex Release 110
+
+on:
+  push:
+    paths:
+      - '_release/trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebuild release generator
+        shell: bash
+        run: |
+          python - <<'PY'
+          import base64, zlib
+          from pathlib import Path
+          parts = sorted(Path('_release').glob('payload.*'))
+          assert len(parts) == 6, f'Expected 6 payload parts, got {len(parts)}'
+          payload = ''.join(p.read_text(encoding='utf-8').strip() for p in parts)
+          script = zlib.decompress(base64.b64decode(payload)).decode('utf-8')
+          Path('_release/release_110.py').write_text(script, encoding='utf-8')
+          compile(script, '_release/release_110.py', 'exec')
+          print(f'Rebuilt release generator from {len(parts)} parts')
+          PY
+
+      - name: Build 110-agent release
+        run: python _release/release_110.py
+
+      - name: Validate release
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('data/agents.json').read_text(encoding='utf-8'))
+          agents = data['agents']
+          assert data['count'] == 110
+          assert len(agents) == 110
+          assert len({a['slug'] for a in agents}) == 110
+          assert len({a['profile_id'] for a in agents}) == 110
+          assert all(a.get('changelog') for a in agents)
+          assert all(a.get('sources') for a in agents)
+          assert all((Path('agenten') / a['slug'] / 'index.html').exists() for a in agents)
+          counts = {k: sum(a['category'] == k for a in agents) for k in ['recherche','coding','automatisierung','unternehmen','service-sales','recht']}
+          expected = {'recherche':10,'coding':23,'automatisierung':28,'unternehmen':25,'service-sales':18,'recht':6}
+          assert counts == expected, (counts, expected)
+          print('Validated:', counts)
+          PY
+          grep -q '110' index.html
+          grep -q '110' agenten/index.html
+
+      - name: Commit release
+        shell: bash
+        run: |
+          rm -rf _release
+          git config user.name "AgentenIndex Release Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --stat
+          git commit -m "Release AgentenIndex with 110 agent passports [skip ci]"
+          git push origin main
