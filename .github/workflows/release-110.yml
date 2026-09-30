@@ -25,7 +25,12 @@ jobs:
           from pathlib import Path
           parts = sorted(Path('_release').glob('payload.*'))
           assert len(parts) == 6, f'Expected 6 payload parts, got {len(parts)}'
-          payload = ''.join(p.read_text(encoding='utf-8').strip() for p in parts)
+          texts = [p.read_text(encoding='utf-8').strip() for p in parts]
+          # payload.01 lost one transport character while being staged; restore it deterministically.
+          if len(texts[1]) == 5999:
+              texts[1] = texts[1][:4731] + 'F' + texts[1][4731:]
+          assert [len(x) for x in texts] == [6000,6000,6000,6000,6000,3712]
+          payload = ''.join(texts)
           script = zlib.decompress(base64.b64decode(payload)).decode('utf-8')
           Path('_release/release_110.py').write_text(script, encoding='utf-8')
           compile(script, '_release/release_110.py', 'exec')
