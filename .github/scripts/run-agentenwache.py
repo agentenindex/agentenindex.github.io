@@ -472,6 +472,55 @@ def main():
             current["agent_ids"]=source.get("agent_ids",[])
             new_states[sid]=current
 
+    # Ensure currently broken canonical sources (404/410) appear in the review queue,
+    # even when they were already broken at the very first baseline run.
+    source_by_id={s["source_id"]:s for s in sources}
+    for sid,state in new_states.items():
+        status_code=state.get("status_code") or state.get("last_check_status_code")
+        if sid not in source_by_id or status_code not in {404,410}:
+            continue
+        source=source_by_id[sid]
+        rid=stable_id("REV-",sid,"source_unavailable")
+        if rid not in queue or queue[rid].get("status")!="open":
+            detected=state.get("checked_at") or finished if 'finished' in locals() else now_iso()
+            queue[rid]={
+                "review_id":rid,
+                "status":"open",
+                "first_detected":detected,
+                "last_detected":detected,
+                "occurrences":1,
+                "severity":"medium",
+                "change_type":"source_unavailable",
+                "source_id":sid,
+                "source_title":source.get("title"),
+                "url":source.get("url"),
+                "agent_ids":source.get("agent_ids",[]),
+                "previous":None,
+                "current":{
+                    "status_code":status_code,
+                    "final_url":state.get("final_url"),
+                    "result":state.get("result") or state.get("last_check_result"),
+                    "error":state.get("error") or state.get("last_check_error"),
+                },
+                "latest_metrics":{"status_code":status_code,"baseline_health":True},
+                "editorial_action":"Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
+            }
+            eid=stable_id("WAT-",sid,"source_unavailable",str(status_code))
+            events.setdefault(eid,{
+                "event_id":eid,
+                "detected_at":detected,
+                "source_id":sid,
+                "agent_ids":source.get("agent_ids",[]),
+                "source_title":source.get("title"),
+                "url":source.get("url"),
+                "change_type":"source_unavailable",
+                "severity":"medium",
+                "metrics":{"status_code":status_code,"baseline_health":True},
+                "previous_checked_at":None,
+                "status":"needs_review",
+                "policy":"Never auto-publish as product fact.",
+            })
+
     # Retain inactive historical states but mark them.
     active_ids={s["source_id"] for s in sources}
     for sid,old in prior.items():
