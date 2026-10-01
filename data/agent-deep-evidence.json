@@ -2952,6 +2952,60 @@
             }
           ],
           "note": "ServiceNow explicitly documents action logging and governance for Otto."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2",
+          "scope": "servicenow_otto_now_assist_ai_workloads",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – User data usage policy",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/user-data-usage-policy-now-assist.html?contentId=30BXSb9eeIvaC5CPPsPhIQ",
+              "note": "ServiceNow documents AI workloads being sent from the ServiceNow instance to compute hubs using TLS 1.2; the current page also uses ServiceNow Otto naming for affected AI features.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "ServiceNow documents TLS 1.2 transport protection for the AI workload path used by Otto/Now Assist capabilities."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "ServiceNow Field Encryption for protected instance fields",
+          "scope": "sensitive_instance_fields_accessed_by_otto_and_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Data protection",
+              "url": "https://www.servicenow.com/docs/r/platform-security/naai-data-protection.html",
+              "note": "ServiceNow documents Field Encryption for sensitive data at rest and explicitly states AI agents require appropriate permissions to access encrypted fields; the same data-protection section includes ServiceNow Otto for Vault.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Sensitive ServiceNow instance fields accessible to Otto/AI agents can be protected at rest with Field Encryption."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "servicenow_platform_data_accessed_by_otto_where_cloud_encryption_is_licensed",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Data protection",
+              "url": "https://www.servicenow.com/docs/r/platform-security/naai-data-protection.html",
+              "note": "ServiceNow documents Key Management Framework and encryption-key controls for sensitive data used by AI agents and agentic workflows.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "ServiceNow Docs – Cloud Encryption with Key Management",
+              "url": "https://www.servicenow.com/docs/r/platform-security/cloud-encryption/dare-overview.html",
+              "note": "ServiceNow documents customer-managed keys/BYOK for platform data, including customer rotation and key-withdrawal controls.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Where the relevant ServiceNow encryption option is licensed, platform data used by Otto can be protected with customer-managed/BYOK keys."
         }
       ]
     },
@@ -4962,6 +5016,70 @@
             }
           ],
           "note": "ASOR exposes agent monitoring and analytics."
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "asor_registered_agents_and_workday_agent_gateway",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – Connect External Agents to Workday Using A2A",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/external-agents/connect-external-agent-to-workday-using-a2a.html?toc=0.8.2",
+              "note": "Workday documents registering third-party agents in ASOR and enabling them to discover and call Workday Self-Service Agent through the industry A2A protocol.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ASOR and Agent Gateway support A2A-based interoperability between registered external agents and Workday agents."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "workday_agents_managed_in_asor_exposed_via_agent_gateway",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – Connect External Agents to Workday Using A2A",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/external-agents/connect-external-agent-to-workday-using-a2a.html?toc=0.8.2",
+              "note": "Workday documents external A2A clients retrieving the Workday agent card and invoking Self-Service Agent through regional Agent Gateway A2A endpoints.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Workday agents registered/managed through ASOR can be exposed to external A2A clients via Agent Gateway."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "workday_agent_system_of_record",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – About Workday Agents",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/setup-considerations--agent-system-of-record.html?toc=0",
+              "note": "Workday documents ASOR as a centralized Workday framework/control center for registering, configuring, monitoring, securing and auditing agents in Workday tenants.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ASOR is delivered and operated as part of the Workday platform."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "HTTPS/TLS",
+          "scope": "asor_and_agent_gateway_api_traffic",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – Authenticate Agents to Agent Gateway",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/onboard-partner-agent-to-agent-gateway.html",
+              "note": "Workday documents HTTPS authorization and OAuth token endpoints for Agent Gateway and routes requests to the tenant's Workday data center.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "ASOR/Agent Gateway authentication and agent API traffic use HTTPS endpoints."
         }
       ]
     },
