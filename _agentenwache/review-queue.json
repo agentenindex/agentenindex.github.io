@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T13:16:19Z",
-  "open_count": 29,
+  "updated_at": "2026-10-01T13:21:10Z",
+  "open_count": 19,
   "items": [
     {
       "review_id": "REV-0165DB21E9A6DBB929",
@@ -43,7 +43,7 @@
     },
     {
       "review_id": "REV-0E528BB51ED396EA2E",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T11:44:34Z",
       "last_detected": "2026-10-01T11:44:34Z",
       "occurrences": 1,
@@ -66,11 +66,13 @@
         "status_code": 404,
         "baseline_health": true
       },
-      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
       "review_id": "REV-19E755BE20CCF1EEFE",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T11:44:34Z",
       "last_detected": "2026-10-01T11:44:34Z",
       "occurrences": 1,
@@ -93,7 +95,9 @@
         "status_code": 404,
         "baseline_health": true
       },
-      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
       "review_id": "REV-1A89FB2AC95BA30BDA",
@@ -135,7 +139,7 @@
     },
     {
       "review_id": "REV-22CE71D67D9C131BAD",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T13:16:13Z",
       "last_detected": "2026-10-01T13:16:13Z",
       "occurrences": 1,
@@ -169,15 +173,17 @@
         "old_status": null,
         "new_status": 403
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
       "review_id": "REV-256AEB12C3612F2E4F",
       "status": "open",
       "first_detected": "2026-10-01T13:16:08Z",
-      "last_detected": "2026-10-01T13:16:08Z",
-      "occurrences": 1,
-      "severity": "medium",
+      "last_detected": "2026-10-01T13:20:59Z",
+      "occurrences": 2,
+      "severity": "high",
       "change_type": "status_change",
       "source_id": "SRC-3918ED07C8729B",
       "source_title": "OpenAI Help – ChatGPT Arbeit und Codex",
@@ -194,24 +200,24 @@
         "text_sample": null
       },
       "current": {
-        "status_code": 200,
+        "status_code": 403,
         "final_url": "https://help.openai.com/de-de/articles/20001275-chatgpt-work-and-codex",
-        "text_hash": "40603116042135ea3b6cc5981814fac6c9ccda4a87914ab2492b00e3ff10254d",
-        "simhash64": "5c7e425462d12ce0",
-        "token_count": 2738,
-        "text_sample": "ChatGPT Arbeit und Codex Nutze Chat oder Arbeit in ChatGPT oder wechsle für Softwareentwicklung zu Codex. Aktualisiert: 7 hours ago GPT‑6 Pro basiert auf GPT‑6 Astra und ist in ChatGPT mit den Tarifen Pro für 100 USD, Pro für 200 USD, Business und Enterprise verfügbar. Der Zugriff bei Enterprise hängt außerdem von den Modellzugriffsberechtigungen deines Workspaces ab. Plus-Tarife enthalten GPT‑6 Astra in ChatGPT Work und Codex. Hinweis : Astra erfordert die Codex-CLI-Version 0.153.0 oder neuer . Aktualisiere außerdem auf die neueste verfügbare Version der ChatGPT-Desktop-App. Wenn Astra in der Desktop-App in Chat, Work oder Codex nicht verfügbar ist, stelle sicher, dass du deine App über Menü > Nach Updates suchen, aktualisierst, auch wenn du die App kürzlich aufgrund einer automatischen Update-Benachrichtigung oder durch Klicken auf das Update-Symbol in der Seitenleiste aktualisiert hast. ChatGPT umfasst Chat und Work sowie Codex in der Desktop-App. Chat bietet schnelle Unterstützung im Gespräch und Antworten auf Alltagsfragen. Work ist ein Agent für längere, mehrstufige Aufgaben und fertige Arbeitsergebnisse. Codex bleibt auf Softwareentwicklung und technische Aufgaben spezialisi",
-        "result": "fetched",
-        "error": null
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 403: Forbidden"
       },
       "latest_metrics": {
-        "old_status": 403,
-        "new_status": 200
+        "old_status": 200,
+        "new_status": 403
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-258E895041302A70DD",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T13:16:12Z",
       "last_detected": "2026-10-01T13:16:12Z",
       "occurrences": 1,
@@ -245,7 +251,9 @@
         "old_status": null,
         "new_status": 403
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
       "review_id": "REV-4695D13505A3BA8C5D",
@@ -486,7 +494,7 @@
     },
     {
       "review_id": "REV-95E664B028E0749FC5",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T11:44:34Z",
       "last_detected": "2026-10-01T11:44:34Z",
       "occurrences": 1,
@@ -509,7 +517,9 @@
         "status_code": 404,
         "baseline_health": true
       },
-      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
       "review_id": "REV-9CE41958612622F644",
@@ -551,7 +561,7 @@
     },
     {
       "review_id": "REV-A09FB1ABF27A30C6EA",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T11:44:34Z",
       "last_detected": "2026-10-01T11:44:34Z",
       "occurrences": 1,
@@ -574,11 +584,13 @@
         "status_code": 404,
         "baseline_health": true
       },
-      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
       "review_id": "REV-A966C5A91D2E3C060C",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T13:16:13Z",
       "last_detected": "2026-10-01T13:16:13Z",
       "occurrences": 1,
@@ -612,7 +624,9 @@
         "old_status": null,
         "new_status": 403
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
       "review_id": "REV-AD6F59ECA3A74FA288",
@@ -730,7 +744,7 @@
     },
     {
       "review_id": "REV-AFC3D8846CC65D7593",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T13:00:58Z",
       "last_detected": "2026-10-01T13:00:58Z",
       "occurrences": 1,
@@ -753,7 +767,9 @@
         "status_code": 404,
         "baseline_health": true
       },
-      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
       "review_id": "REV-B4AF2DB2F1B3282B72",
@@ -801,9 +817,9 @@
       "review_id": "REV-BD391EEDBB06EBBBBE",
       "status": "open",
       "first_detected": "2026-10-01T13:16:09Z",
-      "last_detected": "2026-10-01T13:16:09Z",
-      "occurrences": 1,
-      "severity": "medium",
+      "last_detected": "2026-10-01T13:21:00Z",
+      "occurrences": 2,
+      "severity": "high",
       "change_type": "status_change",
       "source_id": "SRC-D53562C9899562",
       "source_title": "OpenAI Help – Deep Research in ChatGPT",
@@ -820,18 +836,18 @@
         "text_sample": null
       },
       "current": {
-        "status_code": 200,
-        "final_url": "https://help.openai.com/de-de/articles/10500283-deep-research-in-chatgpt",
-        "text_hash": "d173ba4802e1e18c8fb7a3017ed68edc8c2b8176b4c111c71be88f26fdfa34c4",
-        "simhash64": "b4964fd5ddd5153c",
-        "token_count": 1171,
-        "text_sample": "Deep Research in ChatGPT Komplexe Fragen planen, recherchieren und in einem mit Quellen belegten Bericht zusammenführen. Aktualisiert: 10 days ago Überblick Deep Research unterstützt dich bei komplexen Online-Aufgaben, indem es Schlussfolgerungen zieht, recherchiert und Informationen in einem mit Quellen belegten Bericht zusammenführt. Es kann hochgeladene Dateien verarbeiten, das öffentliche Internet oder bestimmte Websites durchsuchen und aktivierte ChatGPT-Apps verwenden. So funktioniert Deep Research Du beschreibst das gewünschte Ergebnis. Wähle bei Bedarf Websites oder hochgeladene Dateien aus. Geeignete verbundene Apps sind automatisch verfügbar, sofern ihre Berechtigungen und die Workspace-Einstellungen dies zulassen. ChatGPT erstellt einen vorgeschlagenen Rechercheplan. Du kannst ihn prüfen und ändern, bevor die Recherche beginnt. Du kannst den Fortschritt verfolgen und die Recherche jederzeit unterbrechen, um den Schwerpunkt genauer festzulegen. Dabei kannst du auch anpassen, auf welche Quellen sie zugreifen kann. Du erhältst einen strukturierten Bericht mit Quellenangaben oder -links, anhand derer du die Informationen überprüfen kannst. Deep Research verwendet die neueste",
-        "result": "fetched",
-        "error": null
+        "status_code": 403,
+        "final_url": "https://help.openai.com/de-de/articles/10500283-deep-research",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 403: Forbidden"
       },
       "latest_metrics": {
-        "old_status": 403,
-        "new_status": 200
+        "old_status": 200,
+        "new_status": 403
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -839,9 +855,9 @@
       "review_id": "REV-C56824BA5F983001EF",
       "status": "open",
       "first_detected": "2026-10-01T13:16:09Z",
-      "last_detected": "2026-10-01T13:16:09Z",
-      "occurrences": 1,
-      "severity": "medium",
+      "last_detected": "2026-10-01T13:21:01Z",
+      "occurrences": 2,
+      "severity": "high",
       "change_type": "status_change",
       "source_id": "SRC-34E2FF53D66D85",
       "source_title": "OpenAI – ChatGPT ist jetzt ein Partner für deine anspruchsvollste Arbeit",
@@ -858,18 +874,18 @@
         "text_sample": null
       },
       "current": {
-        "status_code": 200,
+        "status_code": 403,
         "final_url": "https://openai.com/de-DE/index/chatgpt-for-your-most-ambitious-work/",
-        "text_hash": "c2fc41a64d127e56fa71f474bca196aeb4395d30ae092332fef91b99eb2f69b3",
-        "simhash64": "b4f045337bd86328",
-        "token_count": 2329,
-        "text_sample": "OpenAI 9. Juli 2026 Produkt ChatGPT ist jetzt ein Partner für deine anspruchsvollste Arbeit ChatGPT Work ist ein Agent, der Aktionen in deinen Apps und Dateien ausführen kann, bei Bedarf stundenlang an einem Projekt bleibt und aus einem Ziel fertige Arbeit macht. ChatGPT-Desktop-App herunterladen (wird in einem neuen Fenster geöffnet) Vertrieb kontaktieren Explore more ways to work together Create and collaborate on pages with your team and ChatGPT in ChatGPT Space ⁠ (wird in einem neuen Fenster geöffnet) . Build interactive tools with Sites ⁠ (wird in einem neuen Fenster geöffnet) . Bring ChatGPT into team conversations with ChatGPT in Slack and Microsoft Teams ⁠ (wird in einem neuen Fenster geöffnet) . Laden … Teilen Wir führen ChatGPT Work ein, einen Agenten in ChatGPT, der dir hilft, anspruchsvollere Aufgaben zu bewältigen. ChatGPT Work kann Informationen aus deinen Apps und Workflows zusammentragen, um fertige Materialien wie Tabellen, Präsentationen, Dokumente und Web-Apps zu erstellen. Bei komplexen Projekten bleibt es bei Bedarf stundenlang am Ball, indem es sie in kleinere Schritte unterteilt und diese eigenständig erledigt. Mit integrierter Codex-Technologie kann ChatGPT ",
-        "result": "fetched",
-        "error": null
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 403: Forbidden"
       },
       "latest_metrics": {
-        "old_status": 403,
-        "new_status": 200
+        "old_status": 200,
+        "new_status": 403
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -877,9 +893,9 @@
       "review_id": "REV-DFAFF968254C2EA248",
       "status": "open",
       "first_detected": "2026-10-01T13:16:10Z",
-      "last_detected": "2026-10-01T13:16:10Z",
-      "occurrences": 1,
-      "severity": "medium",
+      "last_detected": "2026-10-01T13:21:02Z",
+      "occurrences": 2,
+      "severity": "high",
       "change_type": "status_change",
       "source_id": "SRC-CA1CF85B724008",
       "source_title": "OpenAI – ChatGPT Work für jedes Team",
@@ -896,18 +912,18 @@
         "text_sample": null
       },
       "current": {
-        "status_code": 200,
+        "status_code": 403,
         "final_url": "https://openai.com/de-DE/chatgpt-work/",
-        "text_hash": "a835ae6049b3fe93ff3babca3b2e60322255abbfa209a8a04559e5833484d292",
-        "simhash64": "5dd67cabe5a8e327",
-        "token_count": 757,
-        "text_sample": "OpenAI ChatGPT Work Mach aus den Ambitionen deines Teams fertige Ergebnisse. Das auf GPT‑6 basierende ChatGPT Work führt den Kontext deines Teams zusammen, um komplexe Aufgaben zu bewältigen – vom Abwägen von Vor- und Nachteilen bis zum Erstellen hochwertiger Präsentationen, Berichte und Analysen –, während dein Team die volle Kontrolle behält. Vertrieb kontaktieren Auf macOS- und Windows-Desktops für alle Pläne und im Web sowie auf Mobilgeräten für die Pläne Plus, Pro, Business, Enterprise und Edu verfügbar. ChatGPT Work Anwendungsfälle GPT-6 ChatGPT mit GPT-5 Ideen in die Tat umsetzen ChatGPT Work bündelt deine Tools, Dateien und deinen Kontext, damit du Inhalte erstellen, zusammenarbeiten und Arbeit automatisieren kannst. Entwickle mit ChatGPT einen ersten Entwurf, baue ihn mit deinem Team aus und bringe wiederkehrende Arbeit voran. Erweitern, was jedes Team leisten kann Erfahre, wie ChatGPT Work Teams helfen kann, mehr zu erreichen. Mit GPT‑6 GPT‑6 stellt Astra vor, eine neue Stufe der Intelligenz für Arbeit, die ein tieferes Urteilsvermögen erfordert. Research lesen Von führenden Teams genutzt Sieh dir an, wie Organisationen ChatGPT Work nutzen, um schneller voranzukommen und ",
-        "result": "fetched",
-        "error": null
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 403: Forbidden"
       },
       "latest_metrics": {
-        "old_status": 403,
-        "new_status": 200
+        "old_status": 200,
+        "new_status": 403
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -915,8 +931,8 @@
       "review_id": "REV-E5D74BB58A9399C244",
       "status": "open",
       "first_detected": "2026-10-01T11:41:55Z",
-      "last_detected": "2026-10-01T13:16:11Z",
-      "occurrences": 4,
+      "last_detected": "2026-10-01T13:21:04Z",
+      "occurrences": 5,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-15C5A1E3CDD01B",
@@ -936,26 +952,26 @@
       "current": {
         "status_code": 200,
         "final_url": "https://www.lindy.ai/",
-        "text_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
-        "simhash64": "2cdb69d5dea09872",
-        "token_count": 2649,
-        "text_sample": "The AI teammate that will 3x your output . Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo 7-day free trial • Cancel anytime 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is normal vol",
+        "text_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "simhash64": "acd329c5dea49872",
+        "token_count": 2659,
+        "text_sample": "The AI teammate that will 3x your output. Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo $50 in free credits • No credit card required 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
-        "new_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "old_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "new_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
         "simhash_distance": 5,
-        "old_token_count": 2659,
-        "new_token_count": 2649,
-        "token_delta_pct": -0.38
+        "old_token_count": 2649,
+        "new_token_count": 2659,
+        "token_delta_pct": 0.38
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-EAE8D697875A437E7D",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T13:16:13Z",
       "last_detected": "2026-10-01T13:16:13Z",
       "occurrences": 1,
@@ -989,7 +1005,9 @@
         "old_status": null,
         "new_status": 403
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
       "review_id": "REV-F187A1A9D6790D68CC",
@@ -1031,7 +1049,7 @@
     },
     {
       "review_id": "REV-FCE2FF2F1439740BD2",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-01T13:16:12Z",
       "last_detected": "2026-10-01T13:16:12Z",
       "occurrences": 1,
@@ -1065,7 +1083,9 @@
         "old_status": null,
         "new_status": 403
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "acknowledged_at": "2026-10-01T13:21:10Z",
+      "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     }
   ]
 }
