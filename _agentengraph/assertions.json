@@ -9244,6 +9244,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-567DE95582735C40B6",
+      "agent_id": "AI-0011",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BB069C52115758"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_enterprise_agent",
+        "note": "Replit Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BB069C52115758",
+            "note": "Replit documents full organization audit logging.",
+            "evidence_type": "official_product_page",
+            "source_section": "Audit Logging"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A4D7E472C86807401B",
+      "agent_id": "AI-0011",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BB069C52115758"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_enterprise_agent",
+        "note": "Replit Enterprise provides RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BB069C52115758",
+            "note": "Replit documents granular role-based permissions across enterprise organizations.",
+            "evidence_type": "official_product_page",
+            "source_section": "Role-Based Access Control"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4DA3D4C4071090D71B",
+      "agent_id": "AI-0011",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BB069C52115758"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_enterprise_agent",
+        "note": "Replit Enterprise supports SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BB069C52115758",
+            "note": "Replit documents SCIM provisioning and deprovisioning.",
+            "evidence_type": "official_product_page",
+            "source_section": "SCIM"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-46CBFFCE8DE8861499",
+      "agent_id": "AI-0011",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BB069C52115758"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_enterprise_agent",
+        "note": "Replit Enterprise supports OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BB069C52115758",
+            "note": "Replit explicitly documents OIDC Enterprise SSO.",
+            "evidence_type": "official_product_page",
+            "source_section": "SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E0F663EF052BF57976",
+      "agent_id": "AI-0011",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BB069C52115758"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_enterprise_agent",
+        "note": "Replit Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BB069C52115758",
+            "note": "Replit explicitly documents SAML Enterprise SSO.",
+            "evidence_type": "official_product_page",
+            "source_section": "SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-39D8DAFC1A5A8E8588",
       "agent_id": "AI-0011",
       "path": "hosting.managed",
@@ -9373,6 +9548,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-18D8155EB97F2B13B2",
+      "agent_id": "AI-0011",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BB069C52115758"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_enterprise_agent",
+        "note": "Replit Enterprise Agent can use MCP-enabled connectors on the Replit platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BB069C52115758",
+            "note": "Replit lists connectors and MCP together with Agent 4 as included Enterprise platform capabilities.",
+            "evidence_type": "official_product_page",
+            "source_section": "Self-Serve Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F3E37FB37455DD0466",
+      "agent_id": "AI-0011",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F82692A118D413"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_platform_agent",
+        "note": "Replit documents SOC 2 Type II certification.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F82692A118D413",
+            "note": "Replit states it holds SOC 2 Type II certification.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliant and certified"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-107D400DE53123F8DE",
@@ -13723,6 +13968,251 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-4C4D488E70F4BEE934",
+      "agent_id": "AI-0017",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-65F23DD9C26503"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_enterprise_including_ai_agents",
+        "note": "Make Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-65F23DD9C26503",
+            "note": "Make documents Enterprise organization/team audit logs covering user and configuration activity.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5D41A3567E626075F6",
+      "agent_id": "AI-0017",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-65F23DD9C26503"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_enterprise_audit_logs",
+        "note": "Make Enterprise audit logs are retained for 12 months (365 days).",
+        "evidence_items": [
+          {
+            "source_id": "SRC-65F23DD9C26503",
+            "note": "Make states Enterprise audit logs are stored for 12 months.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-78CC33F8FC7986175A",
+      "agent_id": "AI-0017",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-88F7414DA169BF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_enterprise",
+        "note": "Make Enterprise supports custom roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-88F7414DA169BF",
+            "note": "Make documents Enterprise Custom Roles with administrator-defined permissions at organization or team level.",
+            "evidence_type": "official_release",
+            "source_section": "Custom roles for every team"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-51CD3AF77A5F6DE33B",
+      "agent_id": "AI-0017",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E63AAFD8F961F2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_enterprise_including_ai_agents",
+        "note": "Make Enterprise provides role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E63AAFD8F961F2",
+            "note": "Make documents role-based access as an Enterprise security and governance capability.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise-ready security and governance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AE943D93EA89647B84",
+      "agent_id": "AI-0017",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-12E04DB534EF49"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_enterprise_including_ai_agents",
+        "note": "Make Enterprise supports OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-12E04DB534EF49",
+            "note": "Make documents OpenID Connect as a supported Enterprise SSO protocol.",
+            "evidence_type": "technical_docs",
+            "source_section": "Supported protocols"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-87ED0D9074CEABC884",
+      "agent_id": "AI-0017",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-12E04DB534EF49"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_enterprise_including_ai_agents",
+        "note": "Make Enterprise supports SAML 2.0 SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-12E04DB534EF49",
+            "note": "Make documents SAML 2.0 as a supported Enterprise SSO protocol.",
+            "evidence_type": "technical_docs",
+            "source_section": "Supported protocols"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-262A655C6C42303B06",
+      "agent_id": "AI-0017",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E63AAFD8F961F2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_ai_agents_cloud",
+        "note": "Make AI Agents run within Make's managed cloud platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E63AAFD8F961F2",
+            "note": "Make documents Make AI Agents as part of the cloud-first Make Enterprise automation platform.",
+            "evidence_type": "official_product_page",
+            "source_section": "AI Automation / Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-9B55F6CB3799DD4AC4",
       "agent_id": "AI-0017",
       "path": "identity.name",
@@ -13842,6 +14332,111 @@
             "note": "Make documents adding MCP servers and selecting MCP tools for Make AI Agent (New), which then uses those tools during tasks.",
             "evidence_type": "technical_docs",
             "source_section": "Add MCP servers"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DE793A06DDDD517CEB",
+      "agent_id": "AI-0017",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5CA8EBEA970E0E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_platform_including_ai_agents",
+        "note": "Make documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5CA8EBEA970E0E",
+            "note": "Make documents full-disk AES-256 encryption and AWS KMS for cryptographic key management.",
+            "evidence_type": "security_trust",
+            "source_section": "Data at rest"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9D7774E92E2631DE7F",
+      "agent_id": "AI-0017",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2/1.3",
+      "value_hash": "2b505355c822de38",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5CA8EBEA970E0E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_platform_including_ai_agents",
+        "note": "Make documents TLS 1.2/1.3 encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5CA8EBEA970E0E",
+            "note": "Make documents TLS 1.2 and 1.3 for network communication.",
+            "evidence_type": "security_trust",
+            "source_section": "Data in transit"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-624C745E8E5E434F59",
+      "agent_id": "AI-0017",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5CA8EBEA970E0E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_platform_including_ai_agents",
+        "note": "Make documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5CA8EBEA970E0E",
+            "note": "Make states it has completed SOC 2 Type II audits.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance"
           }
         ]
       },
@@ -75897,6 +76492,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-7BA5A8ED01443766C0",
+      "agent_id": "AI-0085",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3E91A8A3CED1FF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "strands_agents_sdk",
+        "note": "Strands Agents can act as MCP clients.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3E91A8A3CED1FF",
+            "note": "Strands documents MCPClient loading tools from external MCP servers and handing them to the agent.",
+            "evidence_type": "technical_docs",
+            "source_section": "Quick Start"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-66E1A5E34AF3EA1B72",
       "agent_id": "AI-0085",
       "path": "use_case",
@@ -93539,6 +94169,146 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-96DDAE3C6E59CFF77E",
+      "agent_id": "AI-0106",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6069CDD4F7E62D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fabric_data_agent",
+        "note": "Fabric Data Agent interactions are auditable through Microsoft Purview/Microsoft 365 audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6069CDD4F7E62D",
+            "note": "Microsoft documents a Copilot Interaction audit record for each Data Agent request and response, stored in the Microsoft 365 unified audit log.",
+            "evidence_type": "technical_docs",
+            "source_section": "Viewing Data Agent Audit Logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-96B157C81A6E9635E6",
+      "agent_id": "AI-0106",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C1A76995E59EE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fabric_data_agent",
+        "note": "Fabric Data Agent honors Fabric workspace/data role permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9C1A76995E59EE",
+            "note": "Microsoft states Data Agent data access runs under the user's Entra identity and Fabric workspace/data permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Authentication and tokens"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7E5E3A7E1B63C096F7",
+      "agent_id": "AI-0106",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C1A76995E59EE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fabric_data_agent",
+        "note": "Fabric Data Agent runs as a managed Microsoft Fabric service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9C1A76995E59EE",
+            "note": "Microsoft documents Fabric Data Agent as a managed Fabric experience using Microsoft-managed Azure OpenAI services and Fabric workspaces.",
+            "evidence_type": "technical_docs",
+            "source_section": "Authentication and tokens"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-307B8A56528A74527B",
+      "agent_id": "AI-0106",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F6583EFDCC561F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fabric_workspace_data_agent",
+        "note": "Fabric supports private-link network access for workspaces hosting data-agent data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F6583EFDCC561F",
+            "note": "Fabric documents private links and restricted network access for OneLake/Fabric workspaces used by Fabric workloads.",
+            "evidence_type": "security_trust",
+            "source_section": "Secure OneLake access by using private links"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-701AC1EA68B10CB276",
       "agent_id": "AI-0106",
       "path": "identity.name",
@@ -93658,6 +94428,111 @@
             "note": "Microsoft documents a published Fabric data agent acting as an MCP server with an MCP endpoint that exposes enterprise data and queries to MCP clients.",
             "evidence_type": "official_github",
             "source_section": "Data agent as Model Context Protocol server"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F92011E942E89E83A8",
+      "agent_id": "AI-0106",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4F44115F732EBB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fabric_workspace_data_agent_data",
+        "note": "Fabric supports workspace-level customer-managed encryption keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4F44115F732EBB",
+            "note": "Microsoft documents workspace-level customer-managed keys controlling encryption of Fabric customer content.",
+            "evidence_type": "security_trust",
+            "source_section": "How customer-managed keys work"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7562F371822D30C8F6",
+      "agent_id": "AI-0106",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F6583EFDCC561F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fabric_workspace_data_agent_data",
+        "note": "Fabric encrypts workspace data at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F6583EFDCC561F",
+            "note": "Microsoft states OneLake/Fabric data is encrypted at rest by default.",
+            "evidence_type": "security_trust",
+            "source_section": "Encrypt data at rest"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9ED7DACF1BBC78D2B1",
+      "agent_id": "AI-0106",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F6583EFDCC561F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fabric_workspace_data_agent_data",
+        "note": "Fabric documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F6583EFDCC561F",
+            "note": "Microsoft documents at least TLS 1.2 for data in transit across public internet endpoints.",
+            "evidence_type": "security_trust",
+            "source_section": "Encrypt data in transit by using TLS"
           }
         ]
       },
