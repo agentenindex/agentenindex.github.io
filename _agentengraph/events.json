@@ -1532,6 +1532,31 @@
       "origin": "profile_changelog"
     },
     {
+      "event_id": "EVT-166EAC83952CB7CC35",
+      "agent_id": "AI-0001",
+      "date": "2026-10-01",
+      "event_type": "source_set_change",
+      "scope": "evidence",
+      "before": [
+        "SRC-8729D0DB57FF55",
+        "SRC-D53562C9899562"
+      ],
+      "after": [
+        "SRC-8729D0DB57FF55"
+      ],
+      "description": "Das Quellen-Set des AgentenProfils hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-97EA7F4319EAFA77B8",
+      "agent_id": "AI-0001",
+      "date": "2026-10-01",
+      "event_type": "source_maintenance",
+      "scope": "profile",
+      "description": "Intermittierend 403-blockierte ChatGPT-Help-Quelle entfernt; die stabil überwachte offizielle Developers-Dokumentation bleibt als Primärquelle.",
+      "origin": "profile_changelog"
+    },
+    {
       "event_id": "EVT-863AE762AA911BD6A8",
       "agent_id": "AI-0002",
       "date": "2026-10-01",
@@ -2058,6 +2083,32 @@
       "scope": "profile",
       "description": "Robots-blockierte Salesforce-Blogquelle durch die aktuelle offizielle Hilfe zu Agentforce Prospecting ersetzt.",
       "origin": "profile_changelog"
+    },
+    {
+      "event_id": "EVT-9437FE6C99F819EA4D",
+      "agent_id": "AI-0051",
+      "date": "2026-10-01",
+      "event_type": "source_maintenance",
+      "scope": "profile",
+      "description": "Drei intermittierend 403-blockierte OpenAI-Quellen auf die kanonische ChatGPT-Work-Produktseite konsolidiert; Monitoring wird als manual_only geführt.",
+      "origin": "profile_changelog"
+    },
+    {
+      "event_id": "EVT-C0A749A1433686E326",
+      "agent_id": "AI-0051",
+      "date": "2026-10-01",
+      "event_type": "source_set_change",
+      "scope": "evidence",
+      "before": [
+        "SRC-34E2FF53D66D85",
+        "SRC-3918ED07C8729B",
+        "SRC-CA1CF85B724008"
+      ],
+      "after": [
+        "SRC-CA1CF85B724008"
+      ],
+      "description": "Das Quellen-Set des AgentenProfils hat sich geändert.",
+      "origin": "graph_diff"
     },
     {
       "event_id": "EVT-5BED337B350D197567",
