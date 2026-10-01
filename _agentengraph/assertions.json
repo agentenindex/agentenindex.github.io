@@ -45243,6 +45243,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-36333B3208E526FC40",
+      "agent_id": "AI-0050",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9117EC7C4AA8A6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cocounsel_legal",
+        "note": "CoCounsel Legal is delivered as a managed Thomson Reuters service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9117EC7C4AA8A6",
+            "note": "Thomson Reuters documents CoCounsel Legal as its hosted legal AI product with secure access across web and Microsoft integrations.",
+            "evidence_type": "official_product_page",
+            "source_section": "CoCounsel Legal"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4232EA528C76CA06A5",
       "agent_id": "AI-0050",
       "path": "identity.name",
@@ -45337,6 +45372,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-144B4C1B1F0E71C9F6",
+      "agent_id": "AI-0050",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-547953529EFE91"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cocounsel_legal_user_content",
+        "note": "CoCounsel documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-547953529EFE91",
+            "note": "Thomson Reuters states symmetric AES-256 encryption protects CoCounsel user data at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "How does Thomson Reuters protect user privacy and data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A7097DA6A80CAF9FBD",
+      "agent_id": "AI-0050",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2",
+      "value_hash": "a080d1f9d6a8ac35",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-547953529EFE91"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cocounsel_legal_user_content",
+        "note": "CoCounsel documents TLS 1.2 encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-547953529EFE91",
+            "note": "Thomson Reuters states CoCounsel data in transit is secured using TLS 1.2.",
+            "evidence_type": "security_trust",
+            "source_section": "How does Thomson Reuters protect user privacy and data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-FD1A419AA33441A326",
@@ -95014,6 +95119,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-77A1D1696EAB9BB8C0",
+      "agent_id": "AI-0107",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3A2D2B60D2F057"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lexis_plus_with_protege",
+        "note": "Lexis+ with Protégé is delivered as a managed LexisNexis cloud service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3A2D2B60D2F057",
+            "note": "LexisNexis documents Protégé as a cloud-based Lexis+ legal AI service operated on enterprise-grade cloud providers.",
+            "evidence_type": "official_product_page",
+            "source_section": "Data Security, Privacy, and Governance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-32EE166807A4569F9C",
       "agent_id": "AI-0107",
       "path": "identity.name",
@@ -95064,6 +95204,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-13B45F6A5008EF9C4B",
+      "agent_id": "AI-0107",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3D21288E00B224"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lexis_plus_with_protege_france_mistral",
+        "note": "A documented EU-hosted Protégé deployment is available in the France/Mistral offering.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3D21288E00B224",
+            "note": "LexisNexis documents the France Mistral integration as operating in an encrypted framework hosted within the European Union.",
+            "evidence_type": "official_release",
+            "source_section": "EU hosting"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-267B3153A7BE6692DC",
       "agent_id": "AI-0107",
       "path": "profile.depth",
@@ -95112,6 +95287,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-51A2A5AA0431CD80EA",
+      "agent_id": "AI-0107",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-19664BAFF0009A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lexis_plus_with_protege",
+        "note": "LexisNexis documents AES-256 encryption for Lexis+ AI/Protégé.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-19664BAFF0009A",
+            "note": "LexisNexis states Lexis+ AI/Protégé uses AES-256 encryption.",
+            "evidence_type": "security_trust",
+            "source_section": "Security Certifications"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-97A377E9AB798483CF",
+      "agent_id": "AI-0107",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2",
+      "value_hash": "a080d1f9d6a8ac35",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-19664BAFF0009A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lexis_plus_with_protege",
+        "note": "LexisNexis documents TLS 1.2 encryption for Lexis+ AI/Protégé.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-19664BAFF0009A",
+            "note": "LexisNexis states Lexis+ AI/Protégé uses TLS 1.2 encryption.",
+            "evidence_type": "security_trust",
+            "source_section": "Security Certifications"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-061A0CE3B841C2F74F",
@@ -95624,6 +95869,111 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-5ADA23EA397937A70B",
+      "agent_id": "AI-0108",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3D0DDAB3E2E1D6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "vlex_vincent",
+        "note": "Vincent provides detailed audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3D0DDAB3E2E1D6",
+            "note": "vLex documents detailed third-party-managed audit logs of all access to data.",
+            "evidence_type": "security_trust",
+            "source_section": "Operational Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C5E19EF4EE10BF12F9",
+      "agent_id": "AI-0108",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3D0DDAB3E2E1D6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "vlex_vincent_conversation_logs_and_files_default",
+        "note": "Vincent's documented default retention for conversation logs and files is one year (365 days).",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3D0DDAB3E2E1D6",
+            "note": "vLex states customer-configurable retention for conversation logs and files defaults to one year.",
+            "evidence_type": "security_trust",
+            "source_section": "Customizable Data Retention"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-227219107362D6AD6E",
+      "agent_id": "AI-0108",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3D0DDAB3E2E1D6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "vlex_vincent",
+        "note": "Vincent uses role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3D0DDAB3E2E1D6",
+            "note": "vLex explicitly documents role-based access control protecting systems and data.",
+            "evidence_type": "security_trust",
+            "source_section": "Operational Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-661EF6F40E23DEB0D3",
       "agent_id": "AI-0108",
       "path": "hosting.managed",
@@ -95709,6 +96059,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-5748FE38D2ADE305EF",
+      "agent_id": "AI-0108",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3D0DDAB3E2E1D6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "vlex_vincent_enterprise",
+        "note": "Vincent supports regional data residency.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3D0DDAB3E2E1D6",
+            "note": "vLex documents configurable Vincent data residency in US, AU, or EU regions.",
+            "evidence_type": "security_trust",
+            "source_section": "Data Protection & Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-82E92B909F3D661403",
+      "agent_id": "AI-0108",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3D0DDAB3E2E1D6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "vlex_vincent_enterprise",
+        "note": "Vincent customers can select a supported data region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3D0DDAB3E2E1D6",
+            "note": "vLex states customers can configure their account so data and encryption keys are hosted in a selected US, AU, or EU region.",
+            "evidence_type": "security_trust",
+            "source_section": "You Control Your Data's Location"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-C3CB2E38F87B64A5EB",
       "agent_id": "AI-0108",
       "path": "profile.depth",
@@ -95757,6 +96177,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-BDE27A3044F31F1B0E",
+      "agent_id": "AI-0108",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3D0DDAB3E2E1D6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "vlex_vincent_customer_data",
+        "note": "Vincent encrypts customer data at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3D0DDAB3E2E1D6",
+            "note": "vLex states Vincent customer data is continuously encrypted at rest using a FIPS 140-2 compliant cryptographic suite.",
+            "evidence_type": "security_trust",
+            "source_section": "Data Protection & Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7D8C24E9E4D9808640",
+      "agent_id": "AI-0108",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3D0DDAB3E2E1D6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "vlex_vincent_customer_data",
+        "note": "Vincent encrypts customer data in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3D0DDAB3E2E1D6",
+            "note": "vLex states Vincent customer data is continuously encrypted in transit using a FIPS 140-2 compliant cryptographic suite.",
+            "evidence_type": "security_trust",
+            "source_section": "Data Protection & Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-8EC74873DC10F91456",
@@ -96221,6 +96711,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-291A258DB9E0C70BDC",
+      "agent_id": "AI-0109",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AAB800E8A93997"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "luminance_platform_including_lumi",
+        "note": "Luminance provides audit logging.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AAB800E8A93997",
+            "note": "Luminance explicitly lists audit logging among configurable enterprise access/security controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Granular access, controlled by you"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3DC0E36F64D21DDF37",
+      "agent_id": "AI-0109",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AAB800E8A93997"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "luminance_platform_including_lumi",
+        "note": "Luminance provides role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AAB800E8A93997",
+            "note": "Luminance documents configurable role-based access and granular controls for customer access.",
+            "evidence_type": "security_trust",
+            "source_section": "Granular access, controlled by you"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-E40CEFD08FB53C4F3A",
       "agent_id": "AI-0109",
       "path": "hosting.managed",
@@ -96350,6 +96910,111 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-A9002961CFC22795E9",
+      "agent_id": "AI-0109",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AAB800E8A93997"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "luminance_platform_including_lumi",
+        "note": "Luminance documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AAB800E8A93997",
+            "note": "Luminance states AWS-hosted data at rest is encrypted using AES-256 with AWS KMS.",
+            "evidence_type": "security_trust",
+            "source_section": "Encrypted at every stage"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-66BF410E0A34B09F3C",
+      "agent_id": "AI-0109",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AAB800E8A93997"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "luminance_platform_including_lumi",
+        "note": "Luminance documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AAB800E8A93997",
+            "note": "Luminance states data in transit uses TLS 1.2 or higher.",
+            "evidence_type": "security_trust",
+            "source_section": "Encrypted at every stage"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5D7E1F92562711C2B8",
+      "agent_id": "AI-0109",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AAB800E8A93997"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "luminance_platform_including_lumi",
+        "note": "Luminance documents SOC 2 Type II assurance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AAB800E8A93997",
+            "note": "Luminance states it undergoes regular SOC 2 Type II examinations.",
+            "evidence_type": "security_trust",
+            "source_section": "Independently assessed security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0AC38CA9A62811EF20",

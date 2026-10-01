@@ -72,9 +72,9 @@
     },
     {
       "path": "governance.audit_logs.retention_days",
-      "documented_agents": 19,
-      "unknown_agents": 91,
-      "coverage_pct": 17.27
+      "documented_agents": 20,
+      "unknown_agents": 90,
+      "coverage_pct": 18.18
     },
     {
       "path": "governance.audit_logs.api",
@@ -114,9 +114,9 @@
     },
     {
       "path": "privacy.residency.customer_region_selectable",
-      "documented_agents": 36,
-      "unknown_agents": 74,
-      "coverage_pct": 32.73
+      "documented_agents": 37,
+      "unknown_agents": 73,
+      "coverage_pct": 33.64
     },
     {
       "path": "governance.scim",
@@ -131,22 +131,10 @@
       "coverage_pct": 38.18
     },
     {
-      "path": "security.encryption.in_transit",
-      "documented_agents": 49,
-      "unknown_agents": 61,
-      "coverage_pct": 44.55
-    },
-    {
       "path": "privacy.residency.available",
-      "documented_agents": 50,
-      "unknown_agents": 60,
-      "coverage_pct": 45.45
-    },
-    {
-      "path": "security.encryption.at_rest",
-      "documented_agents": 50,
-      "unknown_agents": 60,
-      "coverage_pct": 45.45
+      "documented_agents": 52,
+      "unknown_agents": 58,
+      "coverage_pct": 47.27
     },
     {
       "path": "governance.sso.saml",
@@ -155,28 +143,40 @@
       "coverage_pct": 48.18
     },
     {
+      "path": "security.encryption.in_transit",
+      "documented_agents": 53,
+      "unknown_agents": 57,
+      "coverage_pct": 48.18
+    },
+    {
+      "path": "security.encryption.at_rest",
+      "documented_agents": 54,
+      "unknown_agents": 56,
+      "coverage_pct": 49.09
+    },
+    {
       "path": "security.soc2_type2",
-      "documented_agents": 57,
-      "unknown_agents": 53,
-      "coverage_pct": 51.82
+      "documented_agents": 58,
+      "unknown_agents": 52,
+      "coverage_pct": 52.73
     },
     {
       "path": "governance.rbac",
-      "documented_agents": 71,
-      "unknown_agents": 39,
-      "coverage_pct": 64.55
+      "documented_agents": 73,
+      "unknown_agents": 37,
+      "coverage_pct": 66.36
     },
     {
       "path": "governance.audit_logs.available",
-      "documented_agents": 72,
-      "unknown_agents": 38,
-      "coverage_pct": 65.45
+      "documented_agents": 74,
+      "unknown_agents": 36,
+      "coverage_pct": 67.27
     },
     {
       "path": "hosting.managed",
-      "documented_agents": 81,
-      "unknown_agents": 29,
-      "coverage_pct": 73.64
+      "documented_agents": 83,
+      "unknown_agents": 27,
+      "coverage_pct": 75.45
     }
   ],
   "agents": [
@@ -282,8 +282,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Gemini Deep Research official documentation governance audit_logs retention_days"
         }
       ]
@@ -378,8 +378,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "You.com You.com ARI official documentation governance audit_logs retention_days"
         }
       ]
@@ -474,201 +474,9 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Qualified Qualified Piper official documentation governance audit_logs retention_days"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0107",
-      "name": "Lexis+ with Protégé",
-      "provider_id": "PROV-LEXISNEXIS",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 96.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 9.0,
-        "unknown_share": 4.8,
-        "source_readiness": 3.0
-      },
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
-      "fields_needed_for_40pct": 9,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "LexisNexis – Protégé General AI privacy and security",
-          "url": "https://www.lexisnexis.com/blogs/amppage/136/inside-the-innovation-how-protege-general-ai-was-built-to-balance-power-privacy-and-choice",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "LexisNexis – Agentic productivity",
-          "url": "https://www.lexisnexis.com/community/pressroom/b/news/posts/lexis-with-protege-accelerates-frictionless-agentic-productivity-from-first-idea-to-review-ready-legal-work-product",
-          "origin": "profile_source"
-        },
-        {
-          "title": "LexisNexis – Lexis+ with Protégé",
-          "url": "https://www.lexisnexis.com/en-us/products/lexis-plus-protege.page",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation governance sso oidc"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation hosting private_network"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
-          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation governance audit_logs retention_days"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0108",
-      "name": "Vincent AI",
-      "provider_id": "PROV-VLEX",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 96.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 9.0,
-        "unknown_share": 4.8,
-        "source_readiness": 3.0
-      },
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
-      "fields_needed_for_40pct": 9,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "vLex – Technical & Infrastructure Security",
-          "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-technical-and-infrastructure-security",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "vLex – Vincent",
-          "url": "https://law.vlex.com/vincent",
-          "origin": "profile_source"
-        },
-        {
-          "title": "vLex – Vincent features",
-          "url": "https://knowledge.vlex.com/en/features/vincent/find-related-documents",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "vLex Vincent AI official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "vLex Vincent AI official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "vLex Vincent AI official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "vLex Vincent AI official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "vLex Vincent AI official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "vLex Vincent AI official documentation governance sso oidc"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "vLex Vincent AI official documentation hosting private_network"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
-          "suggested_query": "vLex Vincent AI official documentation governance audit_logs retention_days"
         }
       ]
     },
@@ -786,8 +594,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Google Jules official documentation governance audit_logs retention_days"
         }
       ]
@@ -877,8 +685,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Windsurf Windsurf Cascade official documentation governance audit_logs retention_days"
         }
       ]
@@ -968,8 +776,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Gemini Spark official documentation governance audit_logs retention_days"
         }
       ]
@@ -1059,8 +867,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "JetBrains JetBrains Junie official documentation governance audit_logs retention_days"
         }
       ]
@@ -1150,8 +958,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Genspark Genspark Code official documentation governance audit_logs retention_days"
         }
       ]
@@ -1241,8 +1049,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Genspark Genspark Super Agent official documentation governance audit_logs retention_days"
         }
       ]
@@ -1332,8 +1140,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs retention_days"
         }
       ]
@@ -1429,8 +1237,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "AWS Strands Agents official documentation governance audit_logs retention_days"
         }
       ]
@@ -1515,8 +1323,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance audit_logs retention_days"
         }
       ]
@@ -1601,8 +1409,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Cognition Devin official documentation governance audit_logs retention_days"
         }
       ]
@@ -1687,8 +1495,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Gumloop Gumball official documentation governance audit_logs retention_days"
         }
       ]
@@ -1773,8 +1581,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance audit_logs retention_days"
         }
       ]
@@ -1859,95 +1667,9 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation governance audit_logs retention_days"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0050",
-      "name": "CoCounsel Legal",
-      "provider_id": "PROV-THOMSON-REUTERS",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 94.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 9.0,
-        "unknown_share": 4.8,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
-      "fields_needed_for_40pct": 9,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Thomson Reuters – CoCounsel Legal",
-          "url": "https://legal.thomsonreuters.com/en/products/cocounsel-legal",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance sso oidc"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation hosting private_network"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance audit_logs retention_days"
         }
       ]
     },
@@ -2031,8 +1753,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google NotebookLM Deep Research official documentation governance audit_logs retention_days"
         }
       ]
@@ -2117,8 +1839,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "xAI Grok DeepSearch official documentation governance audit_logs retention_days"
         }
       ]
@@ -2203,8 +1925,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Elicit Elicit Research Agent official documentation governance audit_logs retention_days"
         }
       ]
@@ -2289,8 +2011,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Consensus Consensus Research Agent official documentation governance audit_logs retention_days"
         }
       ]
@@ -2375,8 +2097,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "OpenCode OpenCode official documentation governance audit_logs retention_days"
         }
       ]
@@ -2461,8 +2183,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "xAI Grok Bot official documentation governance audit_logs retention_days"
         }
       ]
@@ -2547,8 +2269,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Decagon Decagon AI Concierge official documentation governance audit_logs retention_days"
         }
       ]
@@ -2633,95 +2355,9 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Clay Claygent official documentation governance audit_logs retention_days"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0109",
-      "name": "Luminance Agent Lumi",
-      "provider_id": "PROV-LUMINANCE",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 94.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 9.0,
-        "unknown_share": 4.8,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
-      "fields_needed_for_40pct": 9,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Luminance – Legal",
-          "url": "https://www.luminance.com/solutions/legal/",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance sso oidc"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation hosting private_network"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance audit_logs retention_days"
         }
       ]
     },
@@ -2828,9 +2464,118 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "AWS Kiro official documentation governance audit_logs retention_days"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0107",
+      "name": "Lexis+ with Protégé",
+      "provider_id": "PROV-LEXISNEXIS",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.0,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 5.0,
+        "unknown_share": 4.0,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 5,
+      "unknown_fields": 20,
+      "coverage_pct": 20.0,
+      "fields_needed_for_40pct": 5,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "hosting.private_network",
+        "governance.audit_logs.retention_days"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Lexis+ with Protégé",
+          "url": "https://www.lexisnexis.com/en-us/products/lexis-plus-protege.page",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "LexisNexis – Mistral integration in Lexis+ with Protégé in France",
+          "url": "https://www.lexisnexis.com/community/pressroom/b/news/posts/lexisnexis-announces-the-integration-of-mistral-in-lexis-with-protege-in-france",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "LexisNexis – Protégé General AI privacy and security",
+          "url": "https://www.lexisnexis.com/blogs/amppage/136/inside-the-innovation-how-protege-general-ai-was-built-to-balance-power-privacy-and-choice",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "LexisNexis – Protégé comparison/security guide",
+          "url": "https://www.lexisnexis.com/supportandtraining/cfs-file/__key/telligent-evolution-components-attachments/01-88-00-00-00-00-13-49/protege_2D00_comparison_2D00_chatgpt.PDF",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "LexisNexis – Agentic productivity",
+          "url": "https://www.lexisnexis.com/community/pressroom/b/news/posts/lexis-with-protege-accelerates-frictionless-agentic-productivity-from-first-idea-to-review-ready-legal-work-product",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation governance sso oidc"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation hosting private_network"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
+          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation governance audit_logs retention_days"
         }
       ]
     },
@@ -2924,8 +2669,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Rogo Rogo AI Analyst official documentation governance audit_logs retention_days"
         }
       ]
@@ -3045,8 +2790,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Manus Manus Agent official documentation governance audit_logs retention_days"
         },
         {
@@ -3154,8 +2899,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Gemini CLI official documentation governance audit_logs retention_days"
         },
         {
@@ -3169,6 +2914,98 @@
           "documented_agents": 24,
           "global_coverage_pct": 21.82,
           "suggested_query": "Google Gemini CLI official documentation security customer_managed_key"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0050",
+      "name": "CoCounsel Legal",
+      "provider_id": "PROV-THOMSON-REUTERS",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 92.2,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 6.0,
+        "unknown_share": 4.2,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 4,
+      "unknown_fields": 21,
+      "coverage_pct": 16.0,
+      "fields_needed_for_40pct": 6,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "hosting.private_network",
+        "governance.audit_logs.retention_days"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Thomson Reuters – CoCounsel",
+          "url": "https://www.thomsonreuters.com/en/cocounsel",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Thomson Reuters – CoCounsel Legal",
+          "url": "https://legal.thomsonreuters.com/en/products/cocounsel-legal",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance sso oidc"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation hosting private_network"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance audit_logs retention_days"
         }
       ]
     },
@@ -3264,8 +3101,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Zoom ZoomMate official documentation governance audit_logs retention_days"
         }
       ]
@@ -3361,8 +3198,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "OpenHands OpenHands official documentation governance audit_logs retention_days"
         },
         {
@@ -3470,8 +3307,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Warp Warp Agent CLI official documentation governance audit_logs retention_days"
         },
         {
@@ -3584,8 +3421,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "11x 11x Alice official documentation governance audit_logs retention_days"
         },
         {
@@ -3820,8 +3657,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Qodo Qodo Git official documentation governance audit_logs retention_days"
         },
         {
@@ -3929,8 +3766,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs retention_days"
         },
         {
@@ -3944,6 +3781,98 @@
           "documented_agents": 28,
           "global_coverage_pct": 25.45,
           "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs siem_export"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0109",
+      "name": "Luminance Agent Lumi",
+      "provider_id": "PROV-LUMINANCE",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 89.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 4.0,
+        "unknown_share": 3.8,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 6,
+      "unknown_fields": 19,
+      "coverage_pct": 24.0,
+      "fields_needed_for_40pct": 4,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "hosting.private_network",
+        "governance.audit_logs.retention_days"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Luminance – Legal",
+          "url": "https://www.luminance.com/solutions/legal/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "Luminance – Security",
+          "url": "https://www.luminance.com/security",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance sso oidc"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation hosting private_network"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance audit_logs retention_days"
         }
       ]
     },
@@ -4045,8 +3974,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Perplexity Perplexity Deep Research official documentation governance audit_logs retention_days"
         }
       ]
@@ -4149,9 +4078,111 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Perplexity Perplexity Comet Assistant official documentation governance audit_logs retention_days"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0108",
+      "name": "Vincent AI",
+      "provider_id": "PROV-VLEX",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 89.4,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 2.0,
+        "unknown_share": 3.4,
+        "source_readiness": 4.0
+      },
+      "documented_fields": 8,
+      "unknown_fields": 17,
+      "coverage_pct": 32.0,
+      "fields_needed_for_40pct": 2,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "hosting.private_network",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "vLex – Core Security Measures",
+          "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "vLex – Technical & Infrastructure Security",
+          "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-technical-and-infrastructure-security",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "vLex – Vincent",
+          "url": "https://law.vlex.com/vincent",
+          "origin": "profile_source"
+        },
+        {
+          "title": "vLex – Vincent features",
+          "url": "https://knowledge.vlex.com/en/features/vincent/find-related-documents",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "vLex Vincent AI official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "vLex Vincent AI official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "vLex Vincent AI official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "vLex Vincent AI official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "vLex Vincent AI official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "vLex Vincent AI official documentation governance sso oidc"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "vLex Vincent AI official documentation hosting private_network"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 21,
+          "global_coverage_pct": 19.09,
+          "suggested_query": "vLex Vincent AI official documentation governance audit_logs api"
         }
       ]
     },
@@ -4264,8 +4295,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Perplexity Perplexity Computer official documentation governance audit_logs retention_days"
         }
       ]
@@ -4356,8 +4387,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Replit Replit Agent official documentation governance audit_logs retention_days"
         },
         {
@@ -4459,8 +4490,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Sierra Sierra Agent official documentation governance audit_logs retention_days"
         }
       ]
@@ -4587,8 +4618,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Anthropic Claude Research official documentation governance audit_logs retention_days"
         }
       ]
@@ -4837,8 +4868,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "AWS Amazon Q Developer official documentation governance audit_logs retention_days"
         },
         {
@@ -4952,8 +4983,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Cline Cline official documentation governance audit_logs retention_days"
         },
         {
@@ -5074,8 +5105,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "n8n n8n Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -5334,8 +5365,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Lindy Lindy official documentation governance audit_logs retention_days"
         },
         {
@@ -5448,8 +5479,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Gumloop Gumloop Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -5588,8 +5619,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Copilot Studio official documentation governance audit_logs retention_days"
         }
       ]
@@ -5698,8 +5729,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "IBM IBM watsonx Orchestrate official documentation governance audit_logs retention_days"
         },
         {
@@ -5826,8 +5857,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Oracle Oracle AI Agent Studio official documentation governance audit_logs retention_days"
         },
         {
@@ -6100,8 +6131,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Salesforce Salesforce Agentforce official documentation governance audit_logs retention_days"
         }
       ]
@@ -6216,8 +6247,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "SAP SAP Joule Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -6569,8 +6600,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -6715,8 +6746,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "ServiceNow ServiceNow Otto official documentation governance audit_logs retention_days"
         },
         {
@@ -6977,8 +7008,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Anthropic Claude Cowork official documentation governance audit_logs retention_days"
         }
       ]
@@ -7093,8 +7124,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Browser Use Browser Use Agent official documentation governance audit_logs retention_days"
         },
         {
@@ -7227,8 +7258,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "GitLab GitLab Duo Agent Platform official documentation governance audit_logs retention_days"
         },
         {
@@ -7361,8 +7392,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Mistral AI Mistral Vibe Code official documentation governance audit_logs retention_days"
         }
       ]
@@ -7471,8 +7502,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Google Agent Development Kit official documentation governance audit_logs retention_days"
         },
         {
@@ -7617,8 +7648,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Boomi Boomi Agentstudio official documentation governance audit_logs retention_days"
         }
       ]
@@ -7721,8 +7752,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs retention_days"
         },
         {
@@ -7819,8 +7850,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance audit_logs retention_days"
         },
         {
@@ -7849,8 +7880,8 @@
         },
         {
           "path": "privacy.residency.customer_region_selectable",
-          "documented_agents": 36,
-          "global_coverage_pct": 32.73,
+          "documented_agents": 37,
+          "global_coverage_pct": 33.64,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation privacy residency customer_region_selectable"
         },
         {
@@ -7983,8 +8014,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Mistral AI Mistral Vibe Work official documentation governance audit_logs retention_days"
         }
       ]
@@ -8099,8 +8130,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Workday Workday Agent System of Record official documentation governance audit_logs retention_days"
         },
         {
@@ -8225,8 +8256,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation governance audit_logs retention_days"
         },
         {
@@ -8475,8 +8506,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "NiCE Cognigy NiCE Cognigy AI Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -8603,8 +8634,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Snowflake Snowflake Cortex Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -8730,8 +8761,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Cursor Cursor Agent official documentation governance audit_logs retention_days"
         },
         {
@@ -8985,8 +9016,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Atlassian Atlassian Rovo Agents official documentation governance audit_logs retention_days"
         }
       ]
@@ -9229,8 +9260,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation governance audit_logs retention_days"
         }
       ]
@@ -9345,8 +9376,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "HubSpot HubSpot Breeze Prospecting Agent official documentation governance audit_logs retention_days"
         }
       ]
@@ -9461,8 +9492,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "HubSpot HubSpot Data Agent official documentation governance audit_logs retention_days"
         }
       ]
@@ -9587,8 +9618,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "HubSpot HubSpot Company Research Agent official documentation governance audit_logs retention_days"
         }
       ]
@@ -9695,8 +9726,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Harvey Harvey Agents official documentation governance audit_logs retention_days"
         }
       ]
@@ -9798,8 +9829,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance audit_logs retention_days"
         },
         {
@@ -9944,8 +9975,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "LangChain LangSmith Deployment official documentation governance audit_logs retention_days"
         },
         {
@@ -10188,8 +10219,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Box Box Agent official documentation governance audit_logs retention_days"
         }
       ]
@@ -10437,8 +10468,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "monday.com monday.com AI Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -10564,8 +10595,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Relevance AI Relevance AI Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -10679,8 +10710,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Factory Factory Droids official documentation governance audit_logs retention_days"
         },
         {
@@ -10800,8 +10831,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "CrewAI CrewAI AMP official documentation governance audit_logs retention_days"
         },
         {
@@ -11053,8 +11084,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Anthropic Claude Code official documentation governance audit_logs retention_days"
         },
         {
@@ -11169,8 +11200,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance audit_logs retention_days"
         },
         {
@@ -11431,8 +11462,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Zendesk Zendesk AI Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -11905,8 +11936,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Dropbox Dropbox Dash official documentation governance audit_logs retention_days"
         }
       ]
@@ -12125,8 +12156,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "CodeRabbit CodeRabbit Agent official documentation governance audit_logs retention_days"
         },
         {
@@ -12337,8 +12368,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Augment Code Augment Code Agent official documentation governance audit_logs retention_days"
         },
         {
@@ -12456,8 +12487,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Workato Workato Agentic official documentation governance audit_logs retention_days"
         },
         {

@@ -4583,6 +4583,9 @@
           "Für juristische Workflows gebaut",
           "Zitierbare Ergebnisse"
         ],
+        "hosting.managed": [
+          true
+        ],
         "identity.name": [
           "CoCounsel Legal"
         ],
@@ -4594,6 +4597,12 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2"
         ],
         "security.soc2_type2": [
           true
@@ -9650,17 +9659,29 @@
           "Professionelle Rechtsquellen",
           "Recherche und Drafting in einer Plattform"
         ],
+        "hosting.managed": [
+          true
+        ],
         "identity.name": [
           "Lexis+ with Protégé"
         ],
         "identity.provider": [
           "LexisNexis"
         ],
+        "privacy.residency.available": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2"
         ],
         "security.soc2_type2": [
           true
@@ -9717,6 +9738,15 @@
           "Internationale Recherche",
           "Quellenbezogene juristische Arbeit"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          365
+        ],
+        "governance.rbac": [
+          true
+        ],
         "hosting.managed": [
           true
         ],
@@ -9726,11 +9756,23 @@
         "identity.provider": [
           "vLex"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          true
+        ],
+        "security.encryption.in_transit": [
+          true
         ],
         "use_case": [
           "Dokumentanalyse",
@@ -9783,6 +9825,12 @@
           "Legal-spezifisches Modell und Tools",
           "Memory und Kontext"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
         "hosting.managed": [
           true
         ],
@@ -9797,6 +9845,15 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Dokumentenarbeit",

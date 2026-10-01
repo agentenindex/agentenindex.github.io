@@ -9067,6 +9067,34 @@
       "origin": "graph_diff"
     },
     {
+      "event_id": "EVT-2C3F806C927F8D27C1",
+      "agent_id": "AI-0050",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.in_transit",
+      "before": [],
+      "after": [
+        "TLS 1.2"
+      ],
+      "description": "Strukturierter Wert für security.encryption.in_transit hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-9FB4794735323D3311",
+      "agent_id": "AI-0050",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.at_rest",
+      "before": [],
+      "after": [
+        "AES-256"
+      ],
+      "description": "Strukturierter Wert für security.encryption.at_rest hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
       "event_id": "EVT-B190740FFD527D76B7",
       "agent_id": "AI-0050",
       "date": "2026-10-01",
@@ -9078,6 +9106,20 @@
         true
       ],
       "description": "Strukturierter Wert für security.soc2_type2 hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-D46E67138ABA7B5C9C",
+      "agent_id": "AI-0050",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "hosting.managed",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für hosting.managed hat sich geändert.",
       "origin": "graph_diff"
     },
     {
@@ -16328,6 +16370,34 @@
       "origin": "graph_diff"
     },
     {
+      "event_id": "EVT-16CDCC74BA8A1DA616",
+      "agent_id": "AI-0107",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.in_transit",
+      "before": [],
+      "after": [
+        "TLS 1.2"
+      ],
+      "description": "Strukturierter Wert für security.encryption.in_transit hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-2F3C48B42945B15E7D",
+      "agent_id": "AI-0107",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "hosting.managed",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für hosting.managed hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
       "event_id": "EVT-47FE7BE6E444D6800C",
       "agent_id": "AI-0107",
       "date": "2026-10-01",
@@ -16342,6 +16412,90 @@
       "origin": "graph_diff"
     },
     {
+      "event_id": "EVT-8606BE7DE334898A35",
+      "agent_id": "AI-0107",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.at_rest",
+      "before": [],
+      "after": [
+        "AES-256"
+      ],
+      "description": "Strukturierter Wert für security.encryption.at_rest hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-C4ECFD6C73A9EC767C",
+      "agent_id": "AI-0107",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "privacy.residency.available",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für privacy.residency.available hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-2F28A91E7082FB3CF1",
+      "agent_id": "AI-0108",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.audit_logs.retention_days",
+      "before": [],
+      "after": [
+        365
+      ],
+      "description": "Strukturierter Wert für governance.audit_logs.retention_days hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-5921AFCBD8D16A84F7",
+      "agent_id": "AI-0108",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.rbac",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für governance.rbac hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-617DBBFA095EA87511",
+      "agent_id": "AI-0108",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "privacy.residency.available",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für privacy.residency.available hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-81E0D3E111FFAEAD7A",
+      "agent_id": "AI-0108",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.audit_logs.available",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für governance.audit_logs.available hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
       "event_id": "EVT-A88CF0B775F5B6AB3A",
       "agent_id": "AI-0108",
       "date": "2026-10-01",
@@ -16353,6 +16507,76 @@
         true
       ],
       "description": "Strukturierter Wert für hosting.managed hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-AF011522AD65909028",
+      "agent_id": "AI-0108",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.in_transit",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für security.encryption.in_transit hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-CE5A26BC81F00BCBAA",
+      "agent_id": "AI-0108",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "privacy.residency.customer_region_selectable",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für privacy.residency.customer_region_selectable hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-FD851149D32048E331",
+      "agent_id": "AI-0108",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.at_rest",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für security.encryption.at_rest hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-029742148F617805CE",
+      "agent_id": "AI-0109",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.soc2_type2",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für security.soc2_type2 hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-28C704E9E6376DAB5E",
+      "agent_id": "AI-0109",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.at_rest",
+      "before": [],
+      "after": [
+        "AES-256"
+      ],
+      "description": "Strukturierter Wert für security.encryption.at_rest hat sich geändert.",
       "origin": "graph_diff"
     },
     {
@@ -16390,6 +16614,34 @@
       "origin": "profile_changelog"
     },
     {
+      "event_id": "EVT-7BC003B0876C65C260",
+      "agent_id": "AI-0109",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.rbac",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für governance.rbac hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-B369C78AAEEF104B49",
+      "agent_id": "AI-0109",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.in_transit",
+      "before": [],
+      "after": [
+        "TLS 1.2+"
+      ],
+      "description": "Strukturierter Wert für security.encryption.in_transit hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
       "event_id": "EVT-D9FD29673424D5EF8F",
       "agent_id": "AI-0109",
       "date": "2026-10-01",
@@ -16418,6 +16670,20 @@
         true
       ],
       "description": "Strukturierter Wert für hosting.managed hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-F6F6D253B30F78BD3D",
+      "agent_id": "AI-0109",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.audit_logs.available",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für governance.audit_logs.available hat sich geändert.",
       "origin": "graph_diff"
     },
     {
