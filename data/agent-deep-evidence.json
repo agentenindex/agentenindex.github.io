@@ -1581,6 +1581,91 @@
       "agent_id": "AI-0011",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "replit_enterprise_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit Enterprise",
+              "url": "https://replit.com/enterprise",
+              "note": "Replit documents full organization audit logging.",
+              "evidence_type": "official_product_page",
+              "source_section": "Audit Logging"
+            }
+          ],
+          "note": "Replit Enterprise provides audit logs."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "replit_enterprise_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit Enterprise",
+              "url": "https://replit.com/enterprise",
+              "note": "Replit documents granular role-based permissions across enterprise organizations.",
+              "evidence_type": "official_product_page",
+              "source_section": "Role-Based Access Control"
+            }
+          ],
+          "note": "Replit Enterprise provides RBAC."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "replit_enterprise_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit Enterprise",
+              "url": "https://replit.com/enterprise",
+              "note": "Replit documents SCIM provisioning and deprovisioning.",
+              "evidence_type": "official_product_page",
+              "source_section": "SCIM"
+            }
+          ],
+          "note": "Replit Enterprise supports SCIM."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "replit_enterprise_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit Enterprise",
+              "url": "https://replit.com/enterprise",
+              "note": "Replit explicitly documents OIDC Enterprise SSO.",
+              "evidence_type": "official_product_page",
+              "source_section": "SSO"
+            }
+          ],
+          "note": "Replit Enterprise supports OIDC SSO."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "replit_enterprise_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit Enterprise",
+              "url": "https://replit.com/enterprise",
+              "note": "Replit explicitly documents SAML Enterprise SSO.",
+              "evidence_type": "official_product_page",
+              "source_section": "SSO"
+            }
+          ],
+          "note": "Replit Enterprise supports SAML SSO."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "replit_agent",
@@ -1596,6 +1681,40 @@
             }
           ],
           "note": "Replit Agent is delivered within Replit's managed application platform."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "replit_enterprise_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit Enterprise",
+              "url": "https://replit.com/enterprise",
+              "note": "Replit lists connectors and MCP together with Agent 4 as included Enterprise platform capabilities.",
+              "evidence_type": "official_product_page",
+              "source_section": "Self-Serve Enterprise"
+            }
+          ],
+          "note": "Replit Enterprise Agent can use MCP-enabled connectors on the Replit platform."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "replit_platform_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit – Security",
+              "url": "https://replit.com/security",
+              "note": "Replit states it holds SOC 2 Type II certification.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliant and certified"
+            }
+          ],
+          "note": "Replit documents SOC 2 Type II certification."
         }
       ]
     },
@@ -2167,6 +2286,125 @@
       "agent_id": "AI-0017",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "make_enterprise_including_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make Help – Audit logs",
+              "url": "https://help.make.com/audit-logs",
+              "note": "Make documents Enterprise organization/team audit logs covering user and configuration activity.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit logs"
+            }
+          ],
+          "note": "Make Enterprise provides audit logs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "make_enterprise_audit_logs",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make Help – Audit logs",
+              "url": "https://help.make.com/audit-logs",
+              "note": "Make states Enterprise audit logs are stored for 12 months.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit logs"
+            }
+          ],
+          "note": "Make Enterprise audit logs are retained for 12 months (365 days)."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "make_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make – Governance updates",
+              "url": "https://www.make.com/en/blog/governance-in-make",
+              "note": "Make documents Enterprise Custom Roles with administrator-defined permissions at organization or team level.",
+              "evidence_type": "official_release",
+              "source_section": "Custom roles for every team"
+            }
+          ],
+          "note": "Make Enterprise supports custom roles."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "make_enterprise_including_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make – Enterprise",
+              "url": "https://www.make.com/en/enterprise",
+              "note": "Make documents role-based access as an Enterprise security and governance capability.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise-ready security and governance"
+            }
+          ],
+          "note": "Make Enterprise provides role-based access control."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "make_enterprise_including_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make Help – Single Sign-on",
+              "url": "https://help.make.com/single-sign-on",
+              "note": "Make documents OpenID Connect as a supported Enterprise SSO protocol.",
+              "evidence_type": "technical_docs",
+              "source_section": "Supported protocols"
+            }
+          ],
+          "note": "Make Enterprise supports OIDC SSO."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "make_enterprise_including_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make Help – Single Sign-on",
+              "url": "https://help.make.com/single-sign-on",
+              "note": "Make documents SAML 2.0 as a supported Enterprise SSO protocol.",
+              "evidence_type": "technical_docs",
+              "source_section": "Supported protocols"
+            }
+          ],
+          "note": "Make Enterprise supports SAML 2.0 SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "make_ai_agents_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make – Enterprise",
+              "url": "https://www.make.com/en/enterprise",
+              "note": "Make documents Make AI Agents as part of the cloud-first Make Enterprise automation platform.",
+              "evidence_type": "official_product_page",
+              "source_section": "AI Automation / Enterprise"
+            }
+          ],
+          "note": "Make AI Agents run within Make's managed cloud platform."
+        },
+        {
           "path": "protocols.mcp.client",
           "value": true,
           "scope": "make_ai_agent_new",
@@ -2182,6 +2420,57 @@
             }
           ],
           "note": "Make AI Agent (New) can act as an MCP client for configured MCP servers."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "make_platform_including_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make – Security and Compliance",
+              "url": "https://www.make.com/en/security",
+              "note": "Make documents full-disk AES-256 encryption and AWS KMS for cryptographic key management.",
+              "evidence_type": "security_trust",
+              "source_section": "Data at rest"
+            }
+          ],
+          "note": "Make documents AES-256 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2/1.3",
+          "scope": "make_platform_including_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make – Security and Compliance",
+              "url": "https://www.make.com/en/security",
+              "note": "Make documents TLS 1.2 and 1.3 for network communication.",
+              "evidence_type": "security_trust",
+              "source_section": "Data in transit"
+            }
+          ],
+          "note": "Make documents TLS 1.2/1.3 encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "make_platform_including_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make – Security and Compliance",
+              "url": "https://www.make.com/en/security",
+              "note": "Make states it has completed SOC 2 Type II audits.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance"
+            }
+          ],
+          "note": "Make documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -13659,6 +13948,23 @@
             }
           ],
           "note": "Strands Agents is an open-source SDK intended to run in developer/customer-managed environments."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "strands_agents_sdk",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Strands Agents – Connect your agent to MCP tools",
+              "url": "https://strandsagents.com/docs/user-guide/sdk/tools/mcp-tools/",
+              "note": "Strands documents MCPClient loading tools from external MCP servers and handing them to the agent.",
+              "evidence_type": "technical_docs",
+              "source_section": "Quick Start"
+            }
+          ],
+          "note": "Strands Agents can act as MCP clients."
         }
       ]
     },
@@ -16625,6 +16931,74 @@
       "agent_id": "AI-0106",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "fabric_data_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Auditing data agent interactions in Microsoft Purview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-purview-governance",
+              "note": "Microsoft documents a Copilot Interaction audit record for each Data Agent request and response, stored in the Microsoft 365 unified audit log.",
+              "evidence_type": "technical_docs",
+              "source_section": "Viewing Data Agent Audit Logs"
+            }
+          ],
+          "note": "Fabric Data Agent interactions are auditable through Microsoft Purview/Microsoft 365 audit logs."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "fabric_data_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Create a Fabric data agent",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-science/how-to-create-data-agent",
+              "note": "Microsoft states Data Agent data access runs under the user's Entra identity and Fabric workspace/data permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Authentication and tokens"
+            }
+          ],
+          "note": "Fabric Data Agent honors Fabric workspace/data role permissions."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "fabric_data_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Create a Fabric data agent",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-science/how-to-create-data-agent",
+              "note": "Microsoft documents Fabric Data Agent as a managed Fabric experience using Microsoft-managed Azure OpenAI services and Fabric workspaces.",
+              "evidence_type": "technical_docs",
+              "source_section": "Authentication and tokens"
+            }
+          ],
+          "note": "Fabric Data Agent runs as a managed Microsoft Fabric service."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "fabric_workspace_data_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Data security overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/fabric-onelake-security",
+              "note": "Fabric documents private links and restricted network access for OneLake/Fabric workspaces used by Fabric workloads.",
+              "evidence_type": "security_trust",
+              "source_section": "Secure OneLake access by using private links"
+            }
+          ],
+          "note": "Fabric supports private-link network access for workspaces hosting data-agent data."
+        },
+        {
           "path": "protocols.mcp.server",
           "value": true,
           "scope": "microsoft_fabric_data_agent_published",
@@ -16640,6 +17014,57 @@
             }
           ],
           "note": "Published Microsoft Fabric Data Agents can expose an MCP server endpoint."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "fabric_workspace_data_agent_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Customer-managed keys for Fabric workspaces",
+              "url": "https://learn.microsoft.com/en-us/fabric/security/workspace-customer-managed-keys",
+              "note": "Microsoft documents workspace-level customer-managed keys controlling encryption of Fabric customer content.",
+              "evidence_type": "security_trust",
+              "source_section": "How customer-managed keys work"
+            }
+          ],
+          "note": "Fabric supports workspace-level customer-managed encryption keys."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "fabric_workspace_data_agent_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Data security overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/fabric-onelake-security",
+              "note": "Microsoft states OneLake/Fabric data is encrypted at rest by default.",
+              "evidence_type": "security_trust",
+              "source_section": "Encrypt data at rest"
+            }
+          ],
+          "note": "Fabric encrypts workspace data at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "fabric_workspace_data_agent_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Data security overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/fabric-onelake-security",
+              "note": "Microsoft documents at least TLS 1.2 for data in transit across public internet endpoints.",
+              "evidence_type": "security_trust",
+              "source_section": "Encrypt data in transit by using TLS"
+            }
+          ],
+          "note": "Fabric documents TLS 1.2+ encryption in transit."
         }
       ]
     },
