@@ -185,3 +185,59 @@ jobs:
                   text_only=re.sub(r'\s+',' ',text_only)
                   print("SAMPLE",sample,"chars",len(text_only),"has_sources",('Quelle' in text_only or 'Primärquelle' in text_only),"has_updated",('Stand:' in text_only or 'Prüfdatum' in text_only),"has_faq",('FAQ' in text_only or 'Häufige Fragen' in text_only))
           PY
+
+      - name: Check AgentenIndex primary source URLs
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, ssl, urllib.request, urllib.error, concurrent.futures
+          from collections import Counter
+
+          data=json.load(open('data/agents.json',encoding='utf-8'))
+          urls=[]
+          for a in data.get('agents',[]):
+              for s in a.get('sources',[]):
+                  u=s.get('url') if isinstance(s,dict) else None
+                  if u and u.startswith(('http://','https://')):
+                      urls.append((a.get('slug','?'),u))
+          seen={}
+          for slug,u in urls: seen.setdefault(u,slug)
+          ctx=ssl.create_default_context()
+          headers={'User-Agent':'Mozilla/5.0 (compatible; AgentenIndexSourceAudit/1.0; +https://agentenindex.de/)'}
+
+          def check(item):
+              u,slug=item
+              req=urllib.request.Request(u,headers=headers,method='HEAD')
+              try:
+                  with urllib.request.urlopen(req,timeout=12,context=ctx) as r:
+                      return (slug,u,r.status,r.geturl(),'HEAD')
+              except urllib.error.HTTPError as e:
+                  if e.code in (403,405,429):
+                      req=urllib.request.Request(u,headers={**headers,'Range':'bytes=0-1024'})
+                      try:
+                          with urllib.request.urlopen(req,timeout=15,context=ctx) as r:
+                              return (slug,u,r.status,r.geturl(),'GET')
+                      except urllib.error.HTTPError as e2:
+                          return (slug,u,e2.code,u,'GET')
+                      except Exception as e2:
+                          return (slug,u,'ERR:'+type(e2).__name__,u,'GET')
+                  return (slug,u,e.code,u,'HEAD')
+              except Exception as e:
+                  return (slug,u,'ERR:'+type(e).__name__,u,'HEAD')
+
+          items=[(u,slug) for u,slug in seen.items()]
+          with concurrent.futures.ThreadPoolExecutor(max_workers=16) as ex:
+              results=list(ex.map(check,items))
+          def bucket(status):
+              if isinstance(status,int):
+                  if 200<=status<400: return 'ok'
+                  if status in (401,403,429): return 'blocked'
+                  if status in (404,410): return 'dead'
+                  return 'other_http'
+              return 'network_error'
+          counts=Counter(bucket(x[2]) for x in results)
+          print('SOURCE_URL_SUMMARY',dict(counts),'unique_urls',len(results),'references',len(urls))
+          for row in results:
+              if bucket(row[2])!='ok':
+                  print('SOURCE_URL',bucket(row[2]),*row)
+          PY
