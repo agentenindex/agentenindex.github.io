@@ -61,6 +61,30 @@
       "mode": "manual_only",
       "reason": "Official ServiceNow Otto product page explicitly documents that Otto actions are logged and governed but returns HTTP 403 to AgentenIndex-Wache; retain as the field-level primary source for Otto action logging.",
       "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/joule/serviceguide/guidelines-for-capability-development",
+      "mode": "manual_only",
+      "reason": "Official SAP Joule service-guide source is editorially verified but robots.txt disallows automated monitoring of this path; retain as the primary source for managed BTP hosting.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/btp/btp-admin-guide/security-concepts?version=Cloud",
+      "mode": "manual_only",
+      "reason": "Official SAP BTP security documentation is editorially verified but robots.txt disallows automated monitoring of this path; retain as supporting evidence for Joule TLS transport protection.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule",
+      "mode": "manual_only",
+      "reason": "Official SAP Joule data-center documentation is editorially verified but robots.txt disallows automated monitoring; retain as the field-level primary source for Joule regional availability and customer data-center selection.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/joule/integrating-joule-with-sap/constraints-for-joule?locale=en-US&state=PRODUCTION&version=CLOUD",
+      "mode": "manual_only",
+      "reason": "Official SAP Joule constraints documentation is editorially verified but robots.txt disallows automated monitoring; retain as the primary source for required OIDC trust and the explicit SAML-not-supported negative claim.",
+      "verified_at": "2026-10-01"
     }
   ]
 }
