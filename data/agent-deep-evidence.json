@@ -142,12 +142,12 @@
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "OpenAI Help – Compliance Platform",
-              "url": "https://help.openai.com/en/articles/9261474",
-              "note": "Codex policy/configuration changes are recorded in workspace audit logs."
+              "title": "OpenAI Developers – ChatGPT and Codex pricing/features",
+              "url": "https://developers.openai.com/de-DE/docs/pricing",
+              "note": "The Enterprise/Edu feature matrix lists Compliance API and audit logs."
             }
           ],
-          "note": "Audit logs cover Codex policy changes."
+          "note": "Enterprise/Edu audit logs are documented in the Codex/ChatGPT feature matrix."
         },
         {
           "path": "governance.audit_logs.api",
@@ -157,42 +157,12 @@
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "OpenAI Help – Compliance Platform",
-              "url": "https://help.openai.com/en/articles/9261474",
-              "note": "Authorized admins can retrieve Codex-related workspace audit logs through the Compliance API."
+              "title": "OpenAI Developers – ChatGPT and Codex pricing/features",
+              "url": "https://developers.openai.com/de-DE/docs/pricing",
+              "note": "The Enterprise/Edu feature matrix lists the Compliance API alongside audit logs."
             }
           ],
-          "note": "Audit logs are retrievable via API."
-        },
-        {
-          "path": "api.admin",
-          "value": true,
-          "scope": "eligible_managed_workspaces",
-          "confidence": "high",
-          "verified_at": "2026-10-01",
-          "evidence": [
-            {
-              "title": "OpenAI Help – Managing your tenant in Admin Console",
-              "url": "https://help.openai.com/en/articles/12289294-managing-your-tenant-in-admin-console",
-              "note": "Workspace-scoped Admin keys support ChatGPT and Codex administration APIs."
-            }
-          ],
-          "note": "Admin APIs are documented for eligible managed workspaces."
-        },
-        {
-          "path": "identity.service_accounts",
-          "value": true,
-          "scope": "eligible_managed_workspaces",
-          "confidence": "high",
-          "verified_at": "2026-10-01",
-          "evidence": [
-            {
-              "title": "OpenAI Help – Managing your tenant in Admin Console",
-              "url": "https://help.openai.com/en/articles/12289294-managing-your-tenant-in-admin-console",
-              "note": "OpenAI documents separate Codex service-account credentials for automation."
-            }
-          ],
-          "note": "Non-human Codex service-account credentials are documented."
+          "note": "Compliance API access is documented in the enterprise feature matrix."
         }
       ]
     },
@@ -560,21 +530,6 @@
           "note": "Remote MCP integrations are documented."
         },
         {
-          "path": "protocols.mcp.server",
-          "value": true,
-          "scope": "agentforce_agents_built_with_agent_script_builder",
-          "confidence": "high",
-          "verified_at": "2026-10-01",
-          "evidence": [
-            {
-              "title": "Salesforce Developers – Expose Agentforce through hosted MCP servers",
-              "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/agentforce.html",
-              "note": "Salesforce documents exposing Agentforce agents as MCP tools through hosted MCP servers."
-            }
-          ],
-          "note": "Agentforce can be exposed through an MCP server."
-        },
-        {
           "path": "identity.agent_user",
           "value": true,
           "scope": "external_service_agents",
@@ -618,6 +573,21 @@
             }
           ],
           "note": "Agent action attribution is documented."
+        },
+        {
+          "path": "protocols.mcp.registry",
+          "value": true,
+          "scope": "agentforce_registry",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Register an MCP Server in Agentforce Registry",
+              "url": "https://help.salesforce.com/s/articleView?id=ai.agent_mcp_connect_register.htm&language=en_US&type=5",
+              "note": "Salesforce documents registering Salesforce-hosted and external MCP servers in Agentforce Registry and allowlisting tools."
+            }
+          ],
+          "note": "Agentforce provides an MCP server registry and governed tool allowlisting."
         }
       ]
     },
@@ -632,12 +602,12 @@
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "SAP Help – Integrating a service with Joule Studio",
-              "url": "https://help.sap.com/docs/automation-pilot/automation-pilot/integrating-service-with-joule-studio?version=Cloud",
-              "note": "SAP documents adding MCP servers to a Joule agent and exposing their tools to the agent."
+              "title": "SAP Samples – Joule Studio MCP agent configuration",
+              "url": "https://github.com/SAP-samples/btp-agentic-ai-use-cases/blob/main/10-escalation-assistant-joule-studio/agent-builder/WEB_SEARCHER.md",
+              "note": "SAP's official sample shows a Joule Studio Agent Builder configuration using Tavily and Exa MCP server tools."
             }
           ],
-          "note": "Joule Studio agents can consume MCP servers."
+          "note": "SAP's official Joule Studio sample demonstrates MCP server tools used by a Joule agent."
         },
         {
           "path": "protocols.a2a",
@@ -742,9 +712,9 @@
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "ServiceNow – AI Control Tower",
-              "url": "https://www.servicenow.com/products/ai-control-tower.html",
-              "note": "AI Control Tower is positioned as the central governance layer for AI assets."
+              "title": "ServiceNow Community – AI Control Tower Welcome Guide",
+              "url": "https://www.servicenow.com/community/ai-control-tower-articles/ai-control-tower-welcome-guide/ta-p/3560221",
+              "note": "ServiceNow's employee-authored guide describes AI Control Tower as the central platform for discover, govern, secure, observe and measure."
             }
           ],
           "note": "Centralized AI governance is documented."
@@ -757,9 +727,9 @@
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "ServiceNow – AI Control Tower",
-              "url": "https://www.servicenow.com/products/ai-control-tower.html",
-              "note": "AI Control Tower continuously monitors AI-agent performance through metrics and log traces."
+              "title": "ServiceNow Community – AI Control Tower Welcome Guide",
+              "url": "https://www.servicenow.com/community/ai-control-tower-articles/ai-control-tower-welcome-guide/ta-p/3560221",
+              "note": "The guide describes monitoring agent/model performance through metrics and log traces."
             }
           ],
           "note": "Agent observability is documented."
@@ -772,9 +742,9 @@
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "ServiceNow – AI Control Tower",
-              "url": "https://www.servicenow.com/products/ai-control-tower.html",
-              "note": "AI Control Tower describes lifecycle governance, integrated controls and compliance gates."
+              "title": "ServiceNow Community – AI Control Tower Welcome Guide",
+              "url": "https://www.servicenow.com/community/ai-control-tower-articles/ai-control-tower-welcome-guide/ta-p/3560221",
+              "note": "The guide describes risk assessments, lifecycle management, compliance frameworks, playbooks and inline guardrails."
             }
           ],
           "note": "Policy/governance controls are documented."
