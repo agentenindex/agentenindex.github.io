@@ -18707,6 +18707,74 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-F663BF59AEDC0D1708",
+      "agent_id": "AI-0028",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-270F051112222F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "uipath_automation_cloud_org_access",
+        "note": "Automation Cloud organization identities used to access Agents can be provisioned with SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-270F051112222F",
+            "note": "UiPath documents SCIM user synchronization/provisioning for Automation Cloud organizations.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AFBDEBFB691C1AC945",
+      "agent_id": "AI-0028",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EA83EF2C6C3A99"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "uipath_automation_cloud_org_access",
+        "note": "UiPath Agents running in Automation Cloud inherit organization SAML SSO access controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EA83EF2C6C3A99",
+            "note": "UiPath documents SAML 2.0 SSO for Automation Cloud organizations; the feature is available with Enterprise licensing.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4A8D39937ABE0E8FD6",
       "agent_id": "AI-0028",
       "path": "governance.tracing",
@@ -18892,6 +18960,86 @@
           {
             "source_id": "SRC-A2105280418C73",
             "note": "UiPath documents optional Customer-Managed Key encryption for Agent trace data.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9780088DBE6A6FE1AA",
+      "agent_id": "AI-0028",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DDB3F3D32253A6",
+          "SRC-E67966CA85AF10"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "uipath_agents_traces_and_ai_trust_layer",
+        "note": "UiPath explicitly documents AES-256 at-rest encryption for Agents trace data and AI Trust Layer data flows.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E67966CA85AF10",
+            "note": "UiPath's encryption matrix explicitly lists Agents traces with AES-256 TDE at rest.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-DDB3F3D32253A6",
+            "note": "UiPath states data flowing through AI Trust Layer is encrypted with AES-256 at rest.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-557284226DEE88AD53",
+      "agent_id": "AI-0028",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DDB3F3D32253A6",
+          "SRC-E67966CA85AF10"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "uipath_agents_traces_and_ai_trust_layer",
+        "note": "UiPath explicitly documents TLS 1.2+ for Agents trace and AI Trust Layer traffic.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E67966CA85AF10",
+            "note": "UiPath's encryption matrix explicitly lists Agents traces with TLS 1.2 or higher in transit.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-DDB3F3D32253A6",
+            "note": "UiPath states all data flowing through AI Trust Layer uses TLS 1.2 or higher in transit.",
             "evidence_type": "security_trust"
           }
         ]
@@ -49382,6 +49530,46 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-C51AB82312668590DB",
+      "agent_id": "AI-0077",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0623E799D8E369",
+          "SRC-856A2E4BB0832A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_local_or_customer_managed_runtime",
+        "note": "ADK supports local/customer-managed runtime execution in addition to managed Agent Runtime deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0623E799D8E369",
+            "note": "Google documents local ADK agent execution via a local server and deployment targets including GKE in addition to managed Agent Runtime.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-856A2E4BB0832A",
+            "note": "Google states an ADK agent can run locally or with other services and need not be deployed to Agent Runtime.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-AAB7D9EFE27296DA02",
       "agent_id": "AI-0077",
       "path": "identity.name",
@@ -67976,6 +68164,126 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-00B47BED12E94700D9",
+      "agent_id": "AI-0105",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B0355671BE4C22",
+          "SRC-CB65D039526A65"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_users_and_roles_for_cortex_agents",
+        "note": "Users and roles that govern Cortex Agent access can be provisioned through Snowflake SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CB65D039526A65",
+            "note": "Snowflake supports SCIM 2.0 provisioning of users and groups/roles from identity providers.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-B0355671BE4C22",
+            "note": "Cortex Agents access is granted through Snowflake roles and user identities.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-68639AFB5931196A5A",
+      "agent_id": "AI-0105",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-61CAB655413813",
+          "SRC-B0355671BE4C22"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_access_to_cortex_agents",
+        "note": "Cortex Agent users can authenticate through Snowflake's OIDC federation controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-61CAB655413813",
+            "note": "Snowflake documents OIDC federated authentication with managed or custom identity providers.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-B0355671BE4C22",
+            "note": "Cortex Agents permissions are resolved from the authenticated Snowflake user and default role.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4D89639E868C794F87",
+      "agent_id": "AI-0105",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-61CAB655413813",
+          "SRC-B0355671BE4C22"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_access_to_cortex_agents",
+        "note": "Cortex Agent users can authenticate through Snowflake's SAML SSO controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-61CAB655413813",
+            "note": "Snowflake documents SAML 2.0 federated authentication for account users; Cortex Agents execute under the querying user's Snowflake role.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-B0355671BE4C22",
+            "note": "Cortex Agents uses the querying user's Snowflake identity and default role for permissions.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D1880BE2420A504E1C",
       "agent_id": "AI-0105",
       "path": "governance.tracing",
@@ -68058,6 +68366,80 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-05329C51450E9F5FA2",
+      "agent_id": "AI-0105",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-28DED1339B9460"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cortex_agents_account_data_and_inference_controls",
+        "note": "Cortex AI supports an account-home-region residency posture by disabling cross-region inference.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-28DED1339B9460",
+            "note": "Snowflake states customer data remains stored only in the account region and cross-region inference can be disabled for strict residency.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-CE90D86BA824BB67EF",
+      "agent_id": "AI-0105",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-28DED1339B9460",
+          "SRC-8A66997AA652CC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_hosting_cortex_agents",
+        "note": "Organizations choose the Snowflake account region that hosts Cortex Agents and can restrict inference to the home region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8A66997AA652CC",
+            "note": "Snowflake states organizations can choose the region where an account is located and data is geographically stored.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-28DED1339B9460",
+            "note": "Snowflake documents controls to keep Cortex inference in the account home region when required.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-2C30D95F70EC75BFF4",

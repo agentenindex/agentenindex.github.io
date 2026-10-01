@@ -2014,6 +2014,12 @@
         "governance.rbac": [
           true
         ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "governance.tracing": [
           true
         ],
@@ -2034,6 +2040,12 @@
         ],
         "security.customer_managed_key": [
           true
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
         ],
         "use_case": [
           "Agentic Automation",
@@ -5350,6 +5362,9 @@
         "hosting.private_network": [
           true
         ],
+        "hosting.self_hosted": [
+          true
+        ],
         "identity.name": [
           "Google Agent Development Kit"
         ],
@@ -7363,6 +7378,15 @@
         "governance.rbac": [
           true
         ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "governance.tracing": [
           true
         ],
@@ -7371,6 +7395,12 @@
         ],
         "identity.provider": [
           "Snowflake"
+        ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
         ],
         "profile.depth": [
           "reference"
