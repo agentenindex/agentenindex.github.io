@@ -594,10 +594,24 @@ def main():
         if item.get("status")!="open" or item.get("change_type") not in technical_change_types:
             continue
         sid=item.get("source_id")
-        if sid in manual_source_ids or sid not in active_ids:
+        state=new_states.get(sid) or {}
+        current_healthy=(
+            state.get("ok") is True
+            and state.get("last_check_result") not in {"http_error","network_error","error","robots_disallowed"}
+        )
+        recovered_technical_status=(
+            item.get("change_type") in {"status_change","availability_restored"}
+            and current_healthy
+        )
+        if sid in manual_source_ids or sid not in active_ids or recovered_technical_status:
             item["status"]="acknowledged"
             item["acknowledged_at"]=acknowledged_at
-            item["resolution"]="Source is inactive or explicitly manual_only; no automated availability action remains."
+            if sid in manual_source_ids:
+                item["resolution"]="Source is explicitly manual_only; automated availability review is not actionable."
+            elif sid not in active_ids:
+                item["resolution"]="Source is inactive; automated availability review is no longer actionable."
+            else:
+                item["resolution"]="Source is healthy again; technical recovery acknowledged without asserting a product change."
 
     open_items=[i for i in queue.values() if i.get("status")=="open"]
     open_items.sort(key=lambda x:({"high":0,"medium":1,"low":2}.get(x.get("severity"),3),x.get("first_detected","")))
