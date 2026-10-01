@@ -3,6 +3,18 @@
   "updated": "2026-10-01",
   "overrides": [
     {
+      "url": "https://openai.com/de-DE/chatgpt-work/",
+      "mode": "manual_only",
+      "reason": "Official ChatGPT Work source is publicly available but intermittently returns HTTP 403 to AgentenIndex-Wache; retain as the canonical editorial/manual source.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://www.perplexity.ai/comet/de",
+      "mode": "manual_only",
+      "reason": "Official Perplexity source is publicly available but returns HTTP 403 to AgentenIndex-Wache; retain for editorial/manual verification.",
+      "verified_at": "2026-10-01"
+    },
+    {
       "url": "https://www.perplexity.ai/de/hub/products/deep-research",
       "mode": "manual_only",
       "reason": "Official Perplexity source is publicly available but returns HTTP 403 to AgentenIndex-Wache; retain for editorial/manual verification.",
@@ -10,12 +22,6 @@
     },
     {
       "url": "https://www.perplexity.ai/de/products/computer",
-      "mode": "manual_only",
-      "reason": "Official Perplexity source is publicly available but returns HTTP 403 to AgentenIndex-Wache; retain for editorial/manual verification.",
-      "verified_at": "2026-10-01"
-    },
-    {
-      "url": "https://www.perplexity.ai/comet/de",
       "mode": "manual_only",
       "reason": "Official Perplexity source is publicly available but returns HTTP 403 to AgentenIndex-Wache; retain for editorial/manual verification.",
       "verified_at": "2026-10-01"
