@@ -15382,6 +15382,30 @@
           "note": "Dropbox Dash uses role-based access controls."
         },
         {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "dropbox_dash_via_core_dropbox_identity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox Dash – Security Architecture Overview",
+              "url": "https://www.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
+              "note": "Dropbox documents Dash using the core Dropbox Identity platform for authentication and account identity.",
+              "evidence_type": "security_trust",
+              "source_section": "Identity and authentication"
+            },
+            {
+              "title": "Dropbox Security Whitepaper",
+              "url": "https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/business/solutions/solutions/dfb_security_whitepaper.pdf",
+              "note": "Dropbox documents SCIM integration for provisioning and managing users and groups in Dropbox team accounts.",
+              "evidence_type": "security_trust",
+              "source_section": "System for Cross-domain Identity Management (SCIM)"
+            }
+          ],
+          "note": "Dash uses core Dropbox Identity, whose team identity layer supports SCIM provisioning."
+        },
+        {
           "path": "governance.sso.saml",
           "value": true,
           "scope": "dropbox_dash_enterprise",
@@ -15414,6 +15438,23 @@
             }
           ],
           "note": "Dropbox Dash is delivered as a managed Dropbox workspace service."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": false,
+          "scope": "dropbox_dash_storage",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox Dash – Security Architecture Overview",
+              "url": "https://www.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
+              "note": "Dropbox explicitly states Dash is a multi-tenant SaaS service and currently does not offer data storage outside the United States.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency / architecture"
+            }
+          ],
+          "note": "Official Dash security documentation explicitly states that storage outside the US is not currently offered."
         },
         {
           "path": "security.encryption.at_rest",
