@@ -4974,6 +4974,192 @@
       ]
     },
     {
+      "agent_id": "AI-0056",
+      "claims": [
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "browser_use_cloud_and_local_mcp",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – MCP server for browser automation",
+              "url": "https://browser-use.com/mcp",
+              "note": "Browser Use documents a hosted HTTP MCP server plus a local stdio MCP server that expose browser-agent tools to MCP clients.",
+              "evidence_type": "technical_docs",
+              "source_section": "Cloud, or your own Chrome / The six tools"
+            },
+            {
+              "title": "Browser Use – MCP Server changelog",
+              "url": "https://browser-use.com/changelog/21-11-2025",
+              "note": "Browser Use documents the hosted MCP server endpoint and free open-source local stdio MCP server.",
+              "evidence_type": "official_release",
+              "source_section": "Cloud MCP Server"
+            }
+          ],
+          "note": "Browser Use exposes both hosted and local MCP servers."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "browser_use_cloud_api_v4",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – Developers",
+              "url": "https://browser-use.com/developers",
+              "note": "Browser Use documents its API V4 REST interface for fully managed hosted web agents.",
+              "evidence_type": "api_docs",
+              "source_section": "Hosted Web Agents / API V4"
+            },
+            {
+              "title": "Browser Use – Web Agent API",
+              "url": "https://browser-use.com/web-agent-api",
+              "note": "Browser Use documents REST and SDK access to create and manage agent runs.",
+              "evidence_type": "api_docs",
+              "source_section": "Web agent API"
+            }
+          ],
+          "note": "Browser Use provides a documented REST API for hosted agents."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "browser_use_cloud_events",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – Developers",
+              "url": "https://browser-use.com/developers",
+              "note": "Browser Use lists Webhooks as a first-party developer interface alongside API V4, SDK, MCP, and OpenAPI.",
+              "evidence_type": "api_docs",
+              "source_section": "Developer toolkit"
+            },
+            {
+              "title": "Browser Use – Web Agent API",
+              "url": "https://browser-use.com/web-agent-api",
+              "note": "Browser Use states webhooks deliver agent events to customer backends.",
+              "evidence_type": "api_docs",
+              "source_section": "MCP, n8n, webhooks?"
+            }
+          ],
+          "note": "Browser Use Cloud supports webhook delivery of agent events."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "browser_use_cloud_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – Developers",
+              "url": "https://browser-use.com/developers",
+              "note": "Browser Use describes Hosted Web Agents as fully managed and running on managed browser infrastructure.",
+              "evidence_type": "official_product_page",
+              "source_section": "Hosted Web Agents"
+            },
+            {
+              "title": "Browser Use GitHub – CLOUD.md",
+              "url": "https://github.com/browser-use/browser-use/blob/main/CLOUD.md",
+              "note": "The official Browser Use repository describes Cloud as the fully hosted product where remote browsers and agents are spun up on demand.",
+              "evidence_type": "official_github",
+              "source_section": "What is Browser Use Cloud?"
+            }
+          ],
+          "note": "Browser Use offers fully managed hosted agents and browser infrastructure."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "browser_use_open_source_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use GitHub – README",
+              "url": "https://github.com/browser-use/browser-use/blob/main/README.md",
+              "note": "The official Browser Use repository documents running the open-source Browser Use agent locally from Python and states the Python library and browsers can be hosted on customer infrastructure.",
+              "evidence_type": "official_github",
+              "source_section": "Path 3: Python Library / FAQ"
+            }
+          ],
+          "note": "Browser Use's open-source agent can run on customer-managed local or server infrastructure."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "browser_use_enterprise_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – Enterprise",
+              "url": "https://browser-use.com/enterprise",
+              "note": "Browser Use states EU data residency for browsers and agents is available to enterprise customers on request.",
+              "evidence_type": "security_trust",
+              "source_section": "Data control"
+            }
+          ],
+          "note": "Browser Use Enterprise offers an EU data-residency option for agents and browsers."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "browser_use_enterprise_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – Vesta customer security case study",
+              "url": "https://browser-use.com/posts/vesta",
+              "note": "Browser Use states its enterprise security terms include encryption at rest for the Browser Use service used in production.",
+              "evidence_type": "official_release",
+              "source_section": "Why a mortgage LOS chose Browser Use"
+            }
+          ],
+          "note": "Browser Use documents encryption at rest in its enterprise security commitments."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "browser_use_enterprise_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – Vesta customer security case study",
+              "url": "https://browser-use.com/posts/vesta",
+              "note": "Browser Use states its enterprise security terms include encryption in transit for the Browser Use service used in production.",
+              "evidence_type": "official_release",
+              "source_section": "Why a mortgage LOS chose Browser Use"
+            }
+          ],
+          "note": "Browser Use documents encryption in transit in its enterprise security commitments."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "browser_use_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – SOC 2 Compliance",
+              "url": "https://browser-use.com/security/soc2",
+              "note": "Browser Use states it is SOC 2 Type II compliant and provides the audit period and report-access details.",
+              "evidence_type": "security_trust",
+              "source_section": "SOC 2 Type II compliant"
+            }
+          ],
+          "note": "Browser Use documents SOC 2 Type II compliance."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0057",
       "claims": [
         {
