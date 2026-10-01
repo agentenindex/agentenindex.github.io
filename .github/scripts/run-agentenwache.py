@@ -170,6 +170,21 @@ def registrableish(host: str) -> str:
     common_second_level={"co.uk","org.uk","ac.uk","com.au","net.au","co.jp","co.nz","com.br"}
     return ".".join(parts[-3:]) if two in common_second_level and len(parts)>=3 else two
 
+def robots_rule_matches(target: str, rule: str) -> bool:
+    """Match Google-style robots patterns with * wildcards and optional trailing $."""
+    if not rule:
+        return False
+    anchored = rule.endswith("$")
+    body = rule[:-1] if anchored else rule
+    pattern = "^" + re.escape(body).replace(r"\\*", ".*")
+    if anchored:
+        pattern += "$"
+    return re.search(pattern, target) is not None
+
+def robots_rule_specificity(rule: str) -> int:
+    """Approximate robots specificity by non-wildcard rule length."""
+    return len(rule.rstrip("$").replace("*",""))
+
 def robots_allows(url: str, cache: dict[str, list[tuple[str, str]]]) -> bool:
     host = urlparse(url).netloc.lower()
     # Cache parsed rules per host, never a path-specific allow/deny decision.
@@ -208,19 +223,20 @@ def robots_allows(url: str, cache: dict[str, list[tuple[str, str]]]) -> bool:
         except Exception:
             cache[host]=[]
 
-    path = urlparse(url).path or "/"
+    parsed = urlparse(url)
+    target = parsed.path or "/"
+    if parsed.query:
+        target += "?" + parsed.query
     matched=None
     for kind,rule in cache[host]:
-        if not rule:
+        if not rule or not robots_rule_matches(target, rule):
             continue
-        rule_path=rule.split("*",1)[0].rstrip("$")
-        if path.startswith(rule_path):
-            candidate=(len(rule_path),kind)
-            if matched is None or candidate[0] > matched[0] or (candidate[0]==matched[0] and kind=="allow"):
-                matched=candidate
+        candidate=(robots_rule_specificity(rule),kind)
+        if matched is None or candidate[0] > matched[0] or (candidate[0]==matched[0] and kind=="allow"):
+            matched=candidate
     return not (matched and matched[1]=="disallow")
 
-def fetch_source(source: dict, previous: dict | None, robots_cache: dict[str,bool]) -> dict:
+def fetch_source(source: dict, previous: dict | None, robots_cache: dict[str, list[tuple[str, str]]]) -> dict:
     url=source["url"]
     checked=now_iso()
     if not robots_allows(url, robots_cache):
