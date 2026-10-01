@@ -540,6 +540,70 @@ def main():
         "agents": completeness_agents,
     }
 
+    target_documented_fields = max(1, math.ceil(len(completeness_fields) * 0.40)) if completeness_fields else 0
+    field_priority = []
+    for path in completeness_fields:
+        documented_agents = sum(1 for report in completeness_agents.values() if (report.get("states") or {}).get(path) != "unknown")
+        unknown_agents = len(completeness_agents) - documented_agents
+        field_priority.append({
+            "path": path,
+            "documented_agents": documented_agents,
+            "unknown_agents": unknown_agents,
+            "coverage_pct": round((documented_agents / len(completeness_agents) * 100), 2) if completeness_agents else 0.0,
+        })
+    field_priority.sort(key=lambda item: (item["documented_agents"], item["path"]))
+
+    research_agents = []
+    deep_agent_ids = set(deep_by_agent)
+    entity_by_id = {entity["agent_id"]: entity for entity in agent_entities}
+    for aid in sorted(known_agent_ids):
+        report = completeness_agents[aid]
+        documented = report["documented_fields"]
+        if aid in deep_agent_ids and documented < target_documented_fields:
+            tier = "P0_raise_existing_to_40pct"
+        elif aid not in deep_agent_ids:
+            tier = "P1_start_zero_coverage"
+        else:
+            tier = "P2_maintain_or_deepen"
+        unknown_paths = [path for path, state in report["states"].items() if state == "unknown"]
+        scarcity = {item["path"]: item["documented_agents"] for item in field_priority}
+        unknown_paths.sort(key=lambda path: (scarcity.get(path, 9999), path))
+        entity = entity_by_id.get(aid, {})
+        research_agents.append({
+            "agent_id": aid,
+            "name": entity.get("name"),
+            "provider_id": entity.get("provider_id"),
+            "priority": tier,
+            "documented_fields": documented,
+            "unknown_fields": report["unknown_fields"],
+            "coverage_pct": report["coverage_pct"],
+            "fields_needed_for_40pct": max(0, target_documented_fields - documented),
+            "recommended_unknown_paths": unknown_paths[:8],
+        })
+    priority_order = {"P0_raise_existing_to_40pct": 0, "P1_start_zero_coverage": 1, "P2_maintain_or_deepen": 2}
+    research_agents.sort(key=lambda item: (
+        priority_order.get(item["priority"], 9),
+        item["documented_fields"],
+        item["agent_id"],
+    ))
+    research_priority = {
+        "graph_version": GRAPH_VERSION,
+        "as_of": as_of,
+        "principle": "Research priority ranks missing evidence only. Unknown is not false, and no product fact is inferred from priority.",
+        "target": {
+            "minimum_core_coverage_pct": 40,
+            "minimum_documented_fields": target_documented_fields,
+            "core_fields": len(completeness_fields),
+        },
+        "summary": {
+            "agents_below_target_with_deep_evidence": sum(1 for item in research_agents if item["priority"] == "P0_raise_existing_to_40pct"),
+            "agents_without_deep_evidence": sum(1 for item in research_agents if item["priority"] == "P1_start_zero_coverage"),
+            "agents_at_or_above_target": sum(1 for item in research_agents if item["priority"] == "P2_maintain_or_deepen"),
+        },
+        "field_priorities": field_priority,
+        "agents": research_agents,
+    }
+
     coverage = {
         "graph_version": GRAPH_VERSION,
         "as_of": as_of,
@@ -662,6 +726,8 @@ manuelle Zuordnung bei späteren Builds.
 - assertions.json — aktuelle und historische strukturierte Aussagen
 - events.json — Profil-Changelog plus automatisch erkannte Feldänderungen
 - coverage.json — Abdeckung und Evidenz-Reife
+- deep-coverage.json — explizite Kernfeld-Matrix mit documented/false/unknown
+- research-priority.json — automatisch priorisierte Recherche-Lücken pro Agent und Feld
 - schema.json — Schema für Assertions
 - snapshots/YYYY-MM-DD.json — beobachteter Datenzustand
 - snapshots/current.json — letzter Datenzustand
@@ -686,6 +752,7 @@ Infrastruktur, aber kein vertraulicher Datenspeicher.
     dump(OUT / "events.json", {"graph_version":GRAPH_VERSION,"as_of":as_of,"events":sorted(event_map.values(),key=lambda x:(x.get("date") or "",x["agent_id"],x["event_id"]))})
     dump(OUT / "coverage.json", coverage)
     dump(OUT / "deep-coverage.json", deep_coverage)
+    dump(OUT / "research-priority.json", research_priority)
     dump(OUT / "schema.json", schema)
     dump(SNAP / f"{as_of}.json", current_snapshot)
     dump(SNAP / "current.json", current_snapshot)
