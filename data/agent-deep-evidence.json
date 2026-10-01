@@ -10456,6 +10456,23 @@
             }
           ],
           "note": "Junie supports a fully local user-managed runtime."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "jetbrains_junie_ide_cli",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Junie Documentation – Add and configure MCP servers",
+              "url": "https://junie.jetbrains.com/docs/junie-cli-mcp-configuration.html",
+              "note": "JetBrains documents Junie CLI connecting to local or remote MCP servers and using their tools.",
+              "evidence_type": "technical_docs",
+              "source_section": "Add an MCP server"
+            }
+          ],
+          "note": "Junie acts as an MCP client for configured local and remote servers."
         }
       ]
     },
@@ -11882,6 +11899,57 @@
       "agent_id": "AI-0072",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "genspark_enterprise_admin_activity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark Enterprise documents Usage Logs and Login History for security audit and incident investigation.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enterprise-only admin features"
+            }
+          ],
+          "note": "Genspark Enterprise provides administrative usage/login logs for audit and investigation."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "genspark_team_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark documents Admin/Member roles and Enterprise agent-level permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Admin Controls & Governance"
+            }
+          ],
+          "note": "Genspark organizations provide role-based access and agent-level permissions."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "genspark_team_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark documents SAML 2.0 SSO with Entra ID, Google Workspace, Okta, and generic SAML providers.",
+              "evidence_type": "technical_docs",
+              "source_section": "SSO setup"
+            }
+          ],
+          "note": "Genspark Team and Enterprise support SAML 2.0 SSO."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "genspark_code",
@@ -11897,12 +11965,131 @@
             }
           ],
           "note": "Genspark Code is delivered as a managed Genspark workspace and agent service."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "genspark_enterprise_dedicated_vpc",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark documents an Enterprise dedicated VPC option for network isolation.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enterprise additions"
+            }
+          ],
+          "note": "Genspark Enterprise offers a dedicated VPC option."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "genspark_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark documents configurable Enterprise data residency in US, EU, or APAC.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise additions"
+            }
+          ],
+          "note": "Genspark Enterprise supports configurable data residency."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "genspark_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Enterprise customers can configure data residency among US, EU, or APAC.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise additions"
+            }
+          ],
+          "note": "Genspark Enterprise customers can select among documented regions."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256-GCM",
+          "scope": "genspark_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark states data is encrypted at rest using AES-256-GCM.",
+              "evidence_type": "security_trust",
+              "source_section": "Security"
+            }
+          ],
+          "note": "Genspark documents AES-256-GCM encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "genspark_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark states TLS 1.3 is preferred and TLS 1.2+ supported in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Security"
+            }
+          ],
+          "note": "Genspark documents TLS 1.2+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "genspark_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark states Team and Enterprise plans are SOC 2 Type II certified.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance & Certifications"
+            }
+          ],
+          "note": "Genspark documents SOC 2 Type II certification."
         }
       ]
     },
     {
       "agent_id": "AI-0073",
       "claims": [
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "opencode_local_server",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenCode Docs – Server",
+              "url": "https://dev.opencode.ai/docs/server/",
+              "note": "OpenCode documents a headless HTTP server with an OpenAPI 3.1 specification and GET/POST/PATCH endpoints for projects, sessions, configuration, files, and commands.",
+              "evidence_type": "api_docs",
+              "source_section": "Server / APIs"
+            }
+          ],
+          "note": "OpenCode exposes a documented HTTP/OpenAPI server API."
+        },
         {
           "path": "hosting.self_hosted",
           "value": true,
@@ -11919,6 +12106,23 @@
             }
           ],
           "note": "OpenCode supports a local user-managed agent runtime."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "opencode_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenCode Docs – MCP servers",
+              "url": "https://opencode.ai/docs/en/mcp-servers/",
+              "note": "OpenCode documents adding local and remote MCP servers whose tools become available to the agent.",
+              "evidence_type": "technical_docs",
+              "source_section": "MCP servers"
+            }
+          ],
+          "note": "OpenCode acts as an MCP client."
         }
       ]
     },
@@ -12118,6 +12322,57 @@
       "agent_id": "AI-0075",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "genspark_enterprise_admin_activity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark Enterprise documents Usage Logs and Login History for security audit and incident investigation.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enterprise-only admin features"
+            }
+          ],
+          "note": "Genspark Enterprise provides administrative usage/login logs for audit and investigation."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "genspark_team_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark documents Admin/Member roles and Enterprise agent-level permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Admin Controls & Governance"
+            }
+          ],
+          "note": "Genspark organizations provide role-based access and agent-level permissions."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "genspark_team_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark documents SAML 2.0 SSO with Entra ID, Google Workspace, Okta, and generic SAML providers.",
+              "evidence_type": "technical_docs",
+              "source_section": "SSO setup"
+            }
+          ],
+          "note": "Genspark Team and Enterprise support SAML 2.0 SSO."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "genspark_super_agent",
@@ -12133,6 +12388,108 @@
             }
           ],
           "note": "Genspark Super Agent is delivered as a managed Genspark workspace service."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "genspark_enterprise_dedicated_vpc",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark documents an Enterprise dedicated VPC option for network isolation.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enterprise additions"
+            }
+          ],
+          "note": "Genspark Enterprise offers a dedicated VPC option."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "genspark_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark documents configurable Enterprise data residency in US, EU, or APAC.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise additions"
+            }
+          ],
+          "note": "Genspark Enterprise supports configurable data residency."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "genspark_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Enterprise customers can configure data residency among US, EU, or APAC.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise additions"
+            }
+          ],
+          "note": "Genspark Enterprise customers can select among documented regions."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256-GCM",
+          "scope": "genspark_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark states data is encrypted at rest using AES-256-GCM.",
+              "evidence_type": "security_trust",
+              "source_section": "Security"
+            }
+          ],
+          "note": "Genspark documents AES-256-GCM encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "genspark_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark states TLS 1.3 is preferred and TLS 1.2+ supported in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Security"
+            }
+          ],
+          "note": "Genspark documents TLS 1.2+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "genspark_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Team & Enterprise Plans",
+              "url": "https://www.genspark.ai/helpcenter/team-enterprise-plans",
+              "note": "Genspark states Team and Enterprise plans are SOC 2 Type II certified.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance & Certifications"
+            }
+          ],
+          "note": "Genspark documents SOC 2 Type II certification."
         }
       ]
     },
