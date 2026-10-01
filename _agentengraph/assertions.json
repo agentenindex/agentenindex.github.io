@@ -14226,6 +14226,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-DA37490F46BBEE6BE3",
+      "agent_id": "AI-0020",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D0EB113467D261"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_webhook_trigger",
+        "note": "Lindy agents support inbound webhook/API-call triggers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D0EB113467D261",
+            "note": "Lindy documents a Webhook Trigger that lets a Lindy be triggered by an API call.",
+            "evidence_type": "official_release",
+            "source_section": "Lindy Webhooks"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D15BDD6028A4968722",
       "agent_id": "AI-0020",
       "path": "audience",
@@ -14551,6 +14586,174 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-17383C9AB2A391291F",
+      "agent_id": "AI-0020",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C6C2CEDF1B5B88",
+          "SRC-FEA6E98594B255"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_enterprise",
+        "note": "Lindy Enterprise provides action-level audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6C2CEDF1B5B88",
+            "note": "Lindy states every action Lindy takes is logged with what happened, when, and why.",
+            "evidence_type": "official_product_page",
+            "source_section": "Audit visibility"
+          },
+          {
+            "source_id": "SRC-FEA6E98594B255",
+            "note": "Lindy lists audit logs as an Enterprise capability.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3530A367CF9B4D013E",
+      "agent_id": "AI-0020",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-96196B7AB4B28D",
+          "SRC-C6C2CEDF1B5B88"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_enterprise",
+        "note": "Lindy Enterprise uses role-based permissions for workspace and agent governance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6C2CEDF1B5B88",
+            "note": "Lindy documents workspace roles and seats with distinct permissions, including who can approve external actions.",
+            "evidence_type": "official_product_page",
+            "source_section": "Roles and seats"
+          },
+          {
+            "source_id": "SRC-96196B7AB4B28D",
+            "note": "Lindy documents centralized agent management and precise per-user app permissions controlled by admins.",
+            "evidence_type": "official_release",
+            "source_section": "Security & Governance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-01878AF244466BB4C8",
+      "agent_id": "AI-0020",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-96196B7AB4B28D",
+          "SRC-C6C2CEDF1B5B88"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_enterprise",
+        "note": "Lindy Enterprise supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6C2CEDF1B5B88",
+            "note": "Lindy explicitly documents SCIM user provisioning through the enterprise identity provider.",
+            "evidence_type": "official_product_page",
+            "source_section": "SSO & SCIM"
+          },
+          {
+            "source_id": "SRC-96196B7AB4B28D",
+            "note": "Lindy documents SCIM as an Enterprise access-management capability.",
+            "evidence_type": "official_release",
+            "source_section": "Security & Governance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-87E8B475F9E7784A88",
+      "agent_id": "AI-0020",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-96196B7AB4B28D",
+          "SRC-C6C2CEDF1B5B88"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_platform_agents",
+        "note": "Lindy provides a managed platform for deploying and operating agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6C2CEDF1B5B88",
+            "note": "Lindy documents a centralized hosted workspace for deploying and managing agents, integrations, guardrails, roles, memory, and team sources.",
+            "evidence_type": "official_product_page",
+            "source_section": "Centralized management"
+          },
+          {
+            "source_id": "SRC-96196B7AB4B28D",
+            "note": "Lindy documents centrally managed agents deployed and governed through Lindy Enterprise.",
+            "evidence_type": "official_release",
+            "source_section": "Centrally Managed Agents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F1F65A75566012BDC9",
       "agent_id": "AI-0020",
       "path": "identity.name",
@@ -14601,6 +14804,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-98909D7778D2B917EC",
+      "agent_id": "AI-0020",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5BB9CE2E013AA8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_enterprise",
+        "note": "Lindy supports enterprise data-residency requirements.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5BB9CE2E013AA8",
+            "note": "Lindy explicitly states that data residency requirements are supported as part of its privacy controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Privacy Controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-AAFE7AB14BC40FB20E",
       "agent_id": "AI-0020",
       "path": "profile.depth",
@@ -14649,6 +14887,153 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-07066F7C4778B9F19A",
+      "agent_id": "AI-0020",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6E25654B1985F2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_hosted_mcp_integrations",
+        "note": "Lindy can consume tools/services exposed through hosted MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6E25654B1985F2",
+            "note": "Lindy states that hosted MCP servers can plug into Lindy as integrations.",
+            "evidence_type": "official_product_page",
+            "source_section": "What does Lindy connect to?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7F8AB486744A88F31D",
+      "agent_id": "AI-0020",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C6C2CEDF1B5B88"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_platform_data",
+        "note": "Lindy documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6C2CEDF1B5B88",
+            "note": "Lindy states data is encrypted at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B35393D99088CEE473",
+      "agent_id": "AI-0020",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C6C2CEDF1B5B88"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_platform_data",
+        "note": "Lindy documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6C2CEDF1B5B88",
+            "note": "Lindy states data is encrypted in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9E34D04796C259905F",
+      "agent_id": "AI-0020",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5BB9CE2E013AA8",
+          "SRC-C6C2CEDF1B5B88"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lindy_platform",
+        "note": "Lindy documents SOC 2 Type II certification.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5BB9CE2E013AA8",
+            "note": "Lindy states it is SOC 2 Type II certified and independently audited.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance & Certifications"
+          },
+          {
+            "source_id": "SRC-C6C2CEDF1B5B88",
+            "note": "Lindy lists SOC 2 Type II as independently audited enterprise security compliance.",
+            "evidence_type": "security_trust",
+            "source_section": "Security by design"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-1BE5BE22E748299D93",
