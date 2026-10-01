@@ -2619,6 +2619,66 @@
             }
           ],
           "note": "Agent activity logs are documented for Now Assist AI agents."
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "servicenow_ai_agents_external_agent_protocols",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Integrating external AI agents",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/external-agent-protocols.html",
+              "note": "ServiceNow documents bidirectional Agent2Agent integration for ServiceNow AI agents and external agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ServiceNow AI agents support A2A interoperability with external agents."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "ServiceNow Field Encryption for protected instance fields",
+          "scope": "sensitive_instance_fields_accessed_by_now_assist_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Data protection",
+              "url": "https://www.servicenow.com/docs/r/platform-security/naai-data-protection.html",
+              "note": "ServiceNow documents Field Encryption for sensitive data at rest and explicitly states AI agents require appropriate permissions to access encrypted fields.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "ServiceNow Docs – Agentic AI security and governance",
+              "url": "https://www.servicenow.com/docs/r/platform-security/now-assist-security.html",
+              "note": "ServiceNow states Now Assist AI agents inherit the ServiceNow AI Platform security model and its data-protection controls.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Sensitive ServiceNow instance fields used by AI agents can be protected at rest with ServiceNow Field Encryption."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "servicenow_platform_encryption_for_ai_agent_accessible_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Data protection",
+              "url": "https://www.servicenow.com/docs/r/platform-security/naai-data-protection.html",
+              "note": "ServiceNow documents Key Management Framework and Field Encryption as data-protection controls for Now Assist and AI-agent workflows.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "ServiceNow Docs – Cloud Encryption with Key Management",
+              "url": "https://www.servicenow.com/docs/r/platform-security/cloud-encryption/dare-overview.html",
+              "note": "ServiceNow documents customer-managed keys/BYOK for ServiceNow Cloud Encryption, including customer key rotation and withdrawal controls.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "ServiceNow platform data used by AI agents can be protected with the platform's customer-managed-key/BYOK encryption option where licensed."
         }
       ]
     },
