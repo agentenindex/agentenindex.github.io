@@ -3012,6 +3012,324 @@
       ]
     },
     {
+      "agent_id": "AI-0032",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "glean_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Connect remote MCP servers to Glean",
+              "url": "https://docs.glean.com/administration/actions/connect-remote-mcp-servers-to-glean",
+              "note": "Glean documents itself as an MCP host that connects to remote MCP-compliant servers and exposes those tools to Assistant and Glean Agents.",
+              "evidence_type": "technical_docs",
+              "source_section": "Connect remote MCP servers / Security and hosting considerations"
+            }
+          ],
+          "note": "Glean Agents can consume tools from remote MCP servers through Glean's MCP host integration."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "glean_agents_platform_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – API Tokens",
+              "url": "https://docs.glean.com/administration/developer/api-tokens",
+              "note": "Glean documents REST API tokens for the Client API, including agents and other user-facing functionality.",
+              "evidence_type": "api_docs",
+              "source_section": "API Tokens"
+            },
+            {
+              "title": "Glean Developer Platform",
+              "url": "https://developers.glean.com/",
+              "note": "Glean documents Agents as a generally available Platform API capability.",
+              "evidence_type": "api_docs",
+              "source_section": "Glean Platform APIs / Agents"
+            }
+          ],
+          "note": "Glean exposes programmatic REST/Platform API access for agent functionality."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "glean_platform_including_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Glean Deployment Models",
+              "url": "https://docs.glean.com/get-started/build/about-self-hosted",
+              "note": "Glean documents a Glean Hosted deployment model equivalent to a SaaS service with no customer infrastructure responsibility.",
+              "evidence_type": "technical_docs",
+              "source_section": "Glean Hosted"
+            }
+          ],
+          "note": "Glean Agents can run on Glean's managed SaaS deployment."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "glean_platform_including_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Customer-hosted deployment",
+              "url": "https://docs.glean.com/security/cloud-prem",
+              "note": "Glean documents customer-hosted deployment in the customer's own GCP or AWS account.",
+              "evidence_type": "technical_docs",
+              "source_section": "Customer-hosted deployment"
+            }
+          ],
+          "note": "Glean supports customer-hosted deployment of the platform that provides Glean Agents."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "glean_customer_managed_deployment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean – AWARE and customer-managed deployment",
+              "url": "https://www.glean.com/blog/agentic-security-aware",
+              "note": "Glean documents customer-managed deployment with private connectivity where requests, responses, and logs can remain on the customer's private network.",
+              "evidence_type": "official_release",
+              "source_section": "Customer-managed deployment"
+            }
+          ],
+          "note": "Glean supports private-network/VPC deployment for customer-managed environments."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "glean_platform_including_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Glean Deployment Models",
+              "url": "https://docs.glean.com/get-started/build/about-self-hosted",
+              "note": "Glean documents deployment choices for organizations with strict data residency requirements and notes alternative geographic regions for SaaS.",
+              "evidence_type": "technical_docs",
+              "source_section": "When should you choose this?"
+            }
+          ],
+          "note": "Glean provides deployment options intended to satisfy data-residency requirements."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "glean_tenant_deployment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Supported GCP Regions",
+              "url": "https://docs.glean.com/get-started/build/gcp/supported-gcp-regions",
+              "note": "Glean lists supported tenant deployment regions and instructs customers to advise Glean when they want a tenant deployed in a different region.",
+              "evidence_type": "technical_docs",
+              "source_section": "Considerations for Region Selection"
+            }
+          ],
+          "note": "Customers can select among supported deployment regions for their Glean tenant."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "glean_platform_users_and_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – About OIDC and SAML",
+              "url": "https://docs.glean.com/administration/identity/sso/oidc-saml",
+              "note": "Glean documents SAML as a supported SSO protocol.",
+              "evidence_type": "technical_docs",
+              "source_section": "About OIDC and SAML"
+            }
+          ],
+          "note": "Glean supports SAML SSO for platform access."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "glean_platform_users_and_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Entra ID (OIDC)",
+              "url": "https://docs.glean.com/administration/identity/sso/configuration/entra-id-oidc",
+              "note": "Glean documents OpenID Connect SSO using Microsoft Entra ID and states OIDC is a supported/preferred SSO method.",
+              "evidence_type": "technical_docs",
+              "source_section": "Entra ID (OIDC)"
+            }
+          ],
+          "note": "Glean supports OIDC SSO for platform access."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "glean_identity_provisioning",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Okta (SAML)",
+              "url": "https://docs.glean.com/administration/identity/sso/configuration/okta-saml",
+              "note": "Glean documents SCIM 2.0 provisioning and deprovisioning for users.",
+              "evidence_type": "technical_docs",
+              "source_section": "Optional SCIM provisioning"
+            }
+          ],
+          "note": "Glean supports SCIM 2.0 user provisioning/deprovisioning."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "glean_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Manage agent access",
+              "url": "https://docs.glean.com/administration/managing-agents/agent-access",
+              "note": "Glean documents agent-specific roles, access tiers, publishing permissions, and RBAC-controlled administration.",
+              "evidence_type": "technical_docs",
+              "source_section": "Agent access tiers / Agent roles"
+            }
+          ],
+          "note": "Glean Agents have explicit role-based access and publishing controls."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "glean_platform_including_agent_governance",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Audit Logs",
+              "url": "https://docs.glean.com/administration/management/audit-logs/admin-audit-logs",
+              "note": "Glean documents administrative audit logs and export/reporting in the Admin Console.",
+              "evidence_type": "technical_docs",
+              "source_section": "Access Audit Logs / Export and Reporting"
+            }
+          ],
+          "note": "Glean provides administrative audit logs for platform governance."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 30,
+          "scope": "glean_admin_audit_logs_default",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Audit Logs",
+              "url": "https://docs.glean.com/administration/management/audit-logs/admin-audit-logs",
+              "note": "Glean states the default audit-log retention period is 30 days, with custom longer retention available by request.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit Log Retention"
+            }
+          ],
+          "note": "Glean's documented default audit-log retention is 30 days."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "glean_customer_hosted_aws",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Log monitoring for AWS environments",
+              "url": "https://docs.glean.com/security/cloud-prem/aws/log-monitoring",
+              "note": "Glean documents an audit-log CloudWatch log group and explicitly instructs customers to integrate it with their SIEM.",
+              "evidence_type": "security_trust",
+              "source_section": "Audit log"
+            }
+          ],
+          "note": "Customer-hosted AWS deployments can export Glean audit logs to SIEM tooling."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "glean_customer_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean – Legal and Security Commitments",
+              "url": "https://www.glean.com/legal",
+              "note": "Glean states customer data is encrypted at rest using AES-256 with FIPS 140-2 validated cryptography.",
+              "evidence_type": "security_trust",
+              "source_section": "Secure Encryption"
+            }
+          ],
+          "note": "Glean documents AES-256 encryption for customer data at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "glean_customer_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean – Legal and Security Commitments",
+              "url": "https://www.glean.com/legal",
+              "note": "Glean states all data in transit is encrypted using TLS 1.2 or later.",
+              "evidence_type": "security_trust",
+              "source_section": "Secure Encryption"
+            }
+          ],
+          "note": "Glean documents TLS 1.2+ encryption for data in transit."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "glean_customer_hosted_aws",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – AWS account access and deployment model",
+              "url": "https://docs.glean.com/security/cloud-prem/aws/account-access-and-deployment-model",
+              "note": "Glean documents customer-managed AWS KMS keys and states customers own and control the keys used to encrypt data at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Customer controls"
+            }
+          ],
+          "note": "Glean supports customer-managed KMS keys in customer-hosted AWS deployments."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "glean_platform_including_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Glean Docs – Upgrade model and SDLC",
+              "url": "https://docs.glean.com/security/architecture/sdlc",
+              "note": "Glean states it maintains SOC 2 Type II compliance and makes detailed reports available through the account team.",
+              "evidence_type": "security_trust",
+              "source_section": "Security testing and compliance"
+            }
+          ],
+          "note": "Glean documents SOC 2 Type II compliance for its platform."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0035",
       "claims": [
         {
