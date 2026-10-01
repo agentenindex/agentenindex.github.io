@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T14:17:05Z",
+  "updated_at": "2026-10-01T14:19:34Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -1137,6 +1137,48 @@
         "token_delta_pct": 0.0
       },
       "previous_checked_at": "2026-10-01T14:10:19Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-950D64E280D3D89A6E",
+      "detected_at": "2026-10-01T14:19:17Z",
+      "source_id": "SRC-F01113D0D2514F",
+      "agent_ids": [
+        "AI-0044"
+      ],
+      "source_title": "Gorgias Docs – AI Agent Explained",
+      "url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772",
+      "change_type": "redirect_change",
+      "severity": "medium",
+      "metrics": {
+        "old_final_url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772",
+        "new_final_url": "https://helpcenter.gorgias.com/en-US/ai-agent-explained-497772"
+      },
+      "previous_checked_at": "2026-10-01T14:16:47Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-017DC998C2CE64E1A1",
+      "detected_at": "2026-10-01T14:19:26Z",
+      "source_id": "SRC-15C5A1E3CDD01B",
+      "agent_ids": [
+        "AI-0020"
+      ],
+      "source_title": "Lindy – AI Tools",
+      "url": "https://www.lindy.ai/tools",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "new_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "simhash_distance": 5,
+        "old_token_count": 2659,
+        "new_token_count": 2649,
+        "token_delta_pct": -0.38
+      },
+      "previous_checked_at": "2026-10-01T14:16:58Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
