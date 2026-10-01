@@ -1638,6 +1638,188 @@
       ]
     },
     {
+      "agent_id": "AI-0019",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "zapier_platform_including_ai_by_zapier",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier – Security & Compliance",
+              "url": "https://zapier.com/security-compliance",
+              "note": "Zapier states its products are hosted on Amazon Web Services and describes AI-powered automation as part of the managed Zapier platform.",
+              "evidence_type": "security_trust",
+              "source_section": "FAQs / Cloud service provider"
+            }
+          ],
+          "note": "AI by Zapier runs within Zapier's managed cloud platform."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "zapier_enterprise_including_ai_by_zapier",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier Help – Set up single sign-on with SAML",
+              "url": "https://help.zapier.com/hc/en-us/articles/8496279747085-Set-up-single-sign-on-with-SAML",
+              "note": "Zapier documents SAML SSO configuration for Enterprise accounts.",
+              "evidence_type": "technical_docs",
+              "source_section": "Manually configure SSO with SAML"
+            }
+          ],
+          "note": "Zapier Enterprise supports SAML SSO."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "zapier_enterprise_including_ai_by_zapier",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier Help – Domain verification in workspaces and organizations",
+              "url": "https://help.zapier.com/hc/en-us/articles/36605430464269-Domain-verification-in-workspaces-and-organizations",
+              "note": "Zapier documents organization-level SCIM provisioning for Enterprise workspaces.",
+              "evidence_type": "technical_docs",
+              "source_section": "SAML and SCIM configuration"
+            }
+          ],
+          "note": "Zapier Enterprise supports SCIM provisioning."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "zapier_team_enterprise_including_ai_by_zapier",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier Help – User roles and permissions in Team and Enterprise accounts",
+              "url": "https://help.zapier.com/hc/en-us/articles/39698983334797-User-roles-and-permissions-in-Team-and-Enterprise-accounts",
+              "note": "Zapier documents Owner, Super Admin, Admin, and Member roles with distinct permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Account user roles / Account permissions by role"
+            }
+          ],
+          "note": "Zapier uses documented role-based permissions."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "zapier_team_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier Help – Use the audit log to review your account activity",
+              "url": "https://help.zapier.com/hc/en-us/articles/13295074298125-Use-the-audit-log-to-review-your-account-activity",
+              "note": "Zapier documents account-wide audit logs for Team and Enterprise plans.",
+              "evidence_type": "technical_docs",
+              "source_section": "View account activity"
+            }
+          ],
+          "note": "Zapier provides account-wide audit logs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "zapier_enterprise_audit_log",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier Help – Use the audit log to review your account activity",
+              "url": "https://help.zapier.com/hc/en-us/articles/13295074298125-Use-the-audit-log-to-review-your-account-activity",
+              "note": "Zapier states Enterprise audit-log access covers the past 12 months.",
+              "evidence_type": "technical_docs",
+              "source_section": "Limitations"
+            }
+          ],
+          "note": "Enterprise audit-log history is documented as 12 months (365 days)."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "zapier_enterprise_log_streams",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier Help – Set up log streams to monitor Zap activity",
+              "url": "https://help.zapier.com/hc/en-us/articles/43732241361421-Set-up-log-streams-to-monitor-Zap-activity",
+              "note": "Zapier documents Enterprise log streams that send real-time account and execution events to customer HTTPS endpoints for monitoring and alerting.",
+              "evidence_type": "technical_docs",
+              "source_section": "Log streams / Available event types"
+            },
+            {
+              "title": "Zapier – Security & Compliance",
+              "url": "https://zapier.com/security-compliance",
+              "note": "Zapier describes real-time activity data being sent to monitoring tools through Log Streaming.",
+              "evidence_type": "security_trust",
+              "source_section": "Governance and observability"
+            }
+          ],
+          "note": "Zapier Enterprise can stream audit/operational activity to external monitoring or SIEM tooling."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "zapier_platform_including_ai_by_zapier",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier – Security & Compliance",
+              "url": "https://zapier.com/security-compliance",
+              "note": "Zapier states data at rest is encrypted with AES-256.",
+              "evidence_type": "security_trust",
+              "source_section": "Data security / FAQ"
+            }
+          ],
+          "note": "Zapier documents AES-256 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "zapier_platform_including_ai_by_zapier",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier – Security & Compliance",
+              "url": "https://zapier.com/security-compliance",
+              "note": "Zapier states web application communications use TLS 1.2 and above.",
+              "evidence_type": "security_trust",
+              "source_section": "FAQ"
+            }
+          ],
+          "note": "Zapier documents TLS 1.2+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "zapier_platform_including_ai_by_zapier",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zapier Help – Security and Compliance",
+              "url": "https://help.zapier.com/hc/en-us/articles/8496181993613-Security-and-Compliance",
+              "note": "Zapier documents independent SOC 2 Type II certification and annual audits.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and Compliance"
+            }
+          ],
+          "note": "Zapier documents SOC 2 Type II compliance."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0020",
       "claims": [
         {
@@ -2074,6 +2256,181 @@
             }
           ],
           "note": "Relevance AI documents SOC 2 Type II compliance."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0023",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "gumloop_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop Docs – Gamma MCP",
+              "url": "https://docs.gumloop.com/nodes/mcp/gamma",
+              "note": "Gumloop documents adding MCP tools to an agent via Add tools → Connect an app with MCP.",
+              "evidence_type": "technical_docs",
+              "source_section": "In Agents (Recommended)"
+            }
+          ],
+          "note": "Gumloop Agents can consume tools from MCP servers."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "gumloop_agents_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop Support – How to Find and Generate Your Gumloop API Key",
+              "url": "https://support.gumloop.com/articles/9675038509-how-to-find-and-generate-your-gumloop-api-key",
+              "note": "Gumloop documents API keys for triggering workflows and agents programmatically and links to its API Reference.",
+              "evidence_type": "api_docs",
+              "source_section": "API key / Related Docs"
+            }
+          ],
+          "note": "Gumloop provides programmatic API access for agents and workflows."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "gumloop_agent_workflow_triggers",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop Support – How to Find and Generate Your Gumloop API Key",
+              "url": "https://support.gumloop.com/articles/9675038509-how-to-find-and-generate-your-gumloop-api-key",
+              "note": "Gumloop documents ready-to-use webhook URLs for triggering workflows that can contain agents.",
+              "evidence_type": "api_docs",
+              "source_section": "Webhook Button"
+            }
+          ],
+          "note": "Gumloop provides webhook endpoints for agent-containing workflows."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "gumloop_enterprise_vpc_deployment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop – Enterprise",
+              "url": "https://www.gumloop.com/enterprise",
+              "note": "Gumloop states Enterprise customers can deploy Gumloop inside their own AWS, Azure, or Google Cloud environment.",
+              "evidence_type": "official_product_page",
+              "source_section": "VPC deployments"
+            }
+          ],
+          "note": "Gumloop Enterprise supports customer-cloud deployment."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "gumloop_enterprise_vpc_deployment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop – Enterprise",
+              "url": "https://www.gumloop.com/enterprise",
+              "note": "Gumloop documents VPC deployments in the customer's own cloud to keep data in the customer's network.",
+              "evidence_type": "official_product_page",
+              "source_section": "VPC deployments"
+            }
+          ],
+          "note": "Gumloop supports private-network/VPC deployment."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "gumloop_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop – Enterprise",
+              "url": "https://www.gumloop.com/enterprise",
+              "note": "Gumloop explicitly lists SAML SSO for Enterprise identity management.",
+              "evidence_type": "official_product_page",
+              "source_section": "SAML SSO and SCIM"
+            }
+          ],
+          "note": "Gumloop Enterprise supports SAML SSO."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "gumloop_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop – Enterprise",
+              "url": "https://www.gumloop.com/enterprise",
+              "note": "Gumloop explicitly lists SCIM for Enterprise identity and access management.",
+              "evidence_type": "official_product_page",
+              "source_section": "SAML SSO and SCIM"
+            }
+          ],
+          "note": "Gumloop Enterprise supports SCIM."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "gumloop_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop – Enterprise",
+              "url": "https://www.gumloop.com/enterprise",
+              "note": "Gumloop documents reusable roles, permissions, credentials, and secrets with scoped access.",
+              "evidence_type": "official_product_page",
+              "source_section": "Roles and permissions"
+            }
+          ],
+          "note": "Gumloop Enterprise provides role-based permissions."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "gumloop_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop Support – Roll out an Agent to your team or company",
+              "url": "https://support.gumloop.com/articles/4970577938-how-do-i-roll-out-an-agent-to-my-whole-team-or-company",
+              "note": "Gumloop documents enterprise audit logging for company-wide agent activity oversight.",
+              "evidence_type": "technical_docs",
+              "source_section": "Oversight and Audit Logs"
+            }
+          ],
+          "note": "Gumloop Enterprise provides organization-wide audit logging."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "gumloop_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop – AI support agent",
+              "url": "https://www.gumloop.com/use-cases/support-agent",
+              "note": "Gumloop states it is SOC 2 Type II certified.",
+              "evidence_type": "security_trust",
+              "source_section": "SOC 2 Type II Certified"
+            }
+          ],
+          "note": "Gumloop documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -4603,6 +4960,198 @@
       ]
     },
     {
+      "agent_id": "AI-0039",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "intercom_fin_ai_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – Fin AI Agent FAQs",
+              "url": "https://www.intercom.com/help/en/articles/7837535-fin-ai-agent-faqs",
+              "note": "Intercom documents Fin AI Agent as a hosted Intercom service available on US, EU, and AU workspaces.",
+              "evidence_type": "technical_docs",
+              "source_section": "Setup / Regional hosting"
+            }
+          ],
+          "note": "Fin is delivered as a managed Intercom service."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "intercom_fin_ai_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – The Fin AI Engine",
+              "url": "https://www.intercom.com/help/en/articles/9929230-the-fin-ai-engine",
+              "note": "Intercom states Fin AI Agent is available on US-, EU-, and AU-hosted workspaces.",
+              "evidence_type": "security_trust",
+              "source_section": "Regional hosting"
+            }
+          ],
+          "note": "Fin supports regional hosting options."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "intercom_workspace_including_fin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – Integrate with an identity provider and log in with SAML SSO",
+              "url": "https://www.intercom.com/help/en/articles/3974587-integrate-with-an-identity-provider-and-log-in-with-saml-sso",
+              "note": "Intercom documents SAML SSO for workspace access.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enable SAML SSO"
+            }
+          ],
+          "note": "Intercom workspaces using Fin support SAML SSO."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "intercom_workspace_including_fin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – SCIM Provisioning",
+              "url": "https://www.intercom.com/help/en/articles/5798401-system-for-cross-domain-identity-management-scim-provisioning",
+              "note": "Intercom documents SCIM provisioning for teammates through an identity provider.",
+              "evidence_type": "technical_docs",
+              "source_section": "SCIM Provisioning"
+            }
+          ],
+          "note": "Intercom supports SCIM provisioning."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "intercom_workspace_including_fin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – Your workspace settings",
+              "url": "https://www.intercom.com/help/en/articles/15432088-your-workspace-settings",
+              "note": "Intercom documents roles, permissions, and workspace access controls for teammates.",
+              "evidence_type": "technical_docs",
+              "source_section": "Teammates / Security"
+            }
+          ],
+          "note": "Intercom uses role- and permission-based workspace access."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "intercom_workspace_including_fin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – Set up custom roles with recommended permissions",
+              "url": "https://www.intercom.com/help/en/articles/7054403-set-up-custom-roles-with-recommended-permissions",
+              "note": "Intercom explicitly documents custom roles with configurable permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Custom roles"
+            }
+          ],
+          "note": "Intercom supports custom roles."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "intercom_workspace_including_fin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – Teammate activity logs",
+              "url": "https://www.intercom.com/help/en/articles/4667982-review-actions-taken-in-your-workspace-with-teammate-activity-logs",
+              "note": "Intercom documents teammate activity logs for auditing and troubleshooting workspace actions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Viewing activity logs"
+            }
+          ],
+          "note": "Intercom provides workspace activity/audit logs."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "intercom_workspace_activity_logs",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – Teammate activity logs",
+              "url": "https://www.intercom.com/help/en/articles/4667982-review-actions-taken-in-your-workspace-with-teammate-activity-logs",
+              "note": "Intercom explicitly documents programmatic retrieval through the Activity Logs API.",
+              "evidence_type": "api_docs",
+              "source_section": "Accessing activity logs via API"
+            }
+          ],
+          "note": "Intercom exposes activity logs via API."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "intercom_teammate_activity_logs_ui",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – Teammate activity logs",
+              "url": "https://www.intercom.com/help/en/articles/4667982-review-actions-taken-in-your-workspace-with-teammate-activity-logs",
+              "note": "Intercom states Teammate Activity Logs are available for one year in the UI.",
+              "evidence_type": "technical_docs",
+              "source_section": "Viewing activity logs"
+            }
+          ],
+          "note": "Intercom documents one year (365 days) of activity logs in the UI."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "intercom_workspace_activity_logs",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – Export teammate and activity log data to cloud storage",
+              "url": "https://www.intercom.com/help/en/articles/16528353-export-teammate-and-activity-log-data-to-cloud-storage",
+              "note": "Intercom documents scheduled export of teammate/activity logs to S3, GCS, or Azure Blob for security monitoring and SIEM workflows.",
+              "evidence_type": "technical_docs",
+              "source_section": "Use cases / scheduled cloud storage exports"
+            }
+          ],
+          "note": "Intercom activity logs can be exported for SIEM/security monitoring."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "intercom_platform_including_fin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Intercom Help – The Fin AI Engine",
+              "url": "https://www.intercom.com/help/en/articles/9929230-the-fin-ai-engine",
+              "note": "Intercom states Fin's service is covered by a SOC 2 Type II audit report.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance"
+            }
+          ],
+          "note": "Intercom documents SOC 2 Type II coverage for Fin-related service controls."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0040",
       "claims": [
         {
@@ -4849,6 +5398,205 @@
             }
           ],
           "note": "Zendesk documents SOC 2 Type II compliance."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0049",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "harvey_platform_and_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey – Security Addendum",
+              "url": "https://www.harvey.ai/legal/security-addendum",
+              "note": "Harvey states the computing services used to provide the Service are cloud-based and supplied through cloud service providers.",
+              "evidence_type": "security_trust",
+              "source_section": "Cloud Environment"
+            }
+          ],
+          "note": "Harvey is delivered through a managed cloud environment."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "harvey_customer_data_and_content",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey – Security Addendum",
+              "url": "https://www.harvey.ai/legal/security-addendum",
+              "note": "Harvey documents regional storage and processing commitments for Customer Data and Content.",
+              "evidence_type": "security_trust",
+              "source_section": "Hosting Location of Customer Data and Content"
+            }
+          ],
+          "note": "Harvey provides regional data-residency controls."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "harvey_customer_data_and_content",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey – Security Addendum",
+              "url": "https://www.harvey.ai/legal/security-addendum",
+              "note": "Harvey states the geographic region is specified in the order form and customers may request a separate specific geographic region where supported.",
+              "evidence_type": "security_trust",
+              "source_section": "Hosting Location of Customer Data and Content"
+            }
+          ],
+          "note": "Harvey customers can select/request a supported geographic region."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "harvey_platform_and_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey – Security",
+              "url": "https://www.harvey.ai/security",
+              "note": "Harvey explicitly lists SAML SSO among enterprise-grade controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Purpose-Built Security"
+            }
+          ],
+          "note": "Harvey supports SAML SSO."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "harvey_workspace",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey Help – Admin Guides",
+              "url": "https://help.harvey.ai/topics/admin-guides",
+              "note": "Harvey documents SCIM integration for automated user provisioning, deprovisioning, and group-based access management.",
+              "evidence_type": "technical_docs",
+              "source_section": "User & Access Management"
+            }
+          ],
+          "note": "Harvey supports SCIM provisioning."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "harvey_workspace",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey Help – Admin Guides",
+              "url": "https://help.harvey.ai/topics/admin-guides",
+              "note": "Harvey documents user roles, permissions, and access controls in workspace administration.",
+              "evidence_type": "technical_docs",
+              "source_section": "Access Control & Permission Management"
+            }
+          ],
+          "note": "Harvey provides role-based access control."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "harvey_workspace",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey Help – Admin Guides",
+              "url": "https://help.harvey.ai/topics/admin-guides",
+              "note": "Harvey explicitly documents custom roles in Access Control & Permission Management.",
+              "evidence_type": "technical_docs",
+              "source_section": "Access Control & Permission Management"
+            }
+          ],
+          "note": "Harvey supports custom roles."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "harvey_platform_and_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey – Security",
+              "url": "https://www.harvey.ai/security",
+              "note": "Harvey explicitly lists audit logs among enterprise-grade controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Purpose-Built Security"
+            },
+            {
+              "title": "Harvey – Security Addendum",
+              "url": "https://www.harvey.ai/legal/security-addendum",
+              "note": "Harvey contractually documents audit logging sufficient for monitoring, analysis, investigation, and reporting.",
+              "evidence_type": "security_trust",
+              "source_section": "Audit Logging"
+            }
+          ],
+          "note": "Harvey provides platform audit logging."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "harvey_customer_data_and_content",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey – Security Addendum",
+              "url": "https://www.harvey.ai/legal/security-addendum",
+              "note": "Harvey states Customer Data and Content are encrypted at rest using AES 256-bit or better.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption"
+            }
+          ],
+          "note": "Harvey documents AES-256-or-better encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "harvey_customer_data_and_content",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey – Security Addendum",
+              "url": "https://www.harvey.ai/legal/security-addendum",
+              "note": "Harvey states Customer Data and Content in transit over public or untrusted networks use TLS 1.2 or better.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption"
+            }
+          ],
+          "note": "Harvey documents TLS 1.2+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "harvey_platform_and_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Harvey – Security Addendum",
+              "url": "https://www.harvey.ai/legal/security-addendum",
+              "note": "Harvey contractually states its information security management system is assessed under SOC 2 Type II at least annually.",
+              "evidence_type": "security_trust",
+              "source_section": "Harvey Audits and Certifications"
+            }
+          ],
+          "note": "Harvey documents annual SOC 2 Type II assessment."
         }
       ]
     },
