@@ -141,13 +141,13 @@
       "coverage_pct": 15.45
     },
     {
-      "path": "hosting.managed",
-      "documented_agents": 18,
-      "unknown_agents": 92,
-      "coverage_pct": 16.36
+      "path": "api.rest",
+      "documented_agents": 19,
+      "unknown_agents": 91,
+      "coverage_pct": 17.27
     },
     {
-      "path": "api.rest",
+      "path": "hosting.managed",
       "documented_agents": 19,
       "unknown_agents": 91,
       "coverage_pct": 17.27
@@ -172,9 +172,9 @@
     },
     {
       "path": "governance.rbac",
-      "documented_agents": 28,
-      "unknown_agents": 82,
-      "coverage_pct": 25.45
+      "documented_agents": 29,
+      "unknown_agents": 81,
+      "coverage_pct": 26.36
     }
   ],
   "agents": [
@@ -183,17 +183,17 @@
       "name": "Manus Agent",
       "provider_id": "PROV-MANUS",
       "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 95.2,
+      "priority_score": 92.8,
       "score_components": {
         "tier_base": 80.0,
-        "gap_to_40pct": 6.0,
-        "unknown_share": 4.2,
+        "gap_to_40pct": 4.0,
+        "unknown_share": 3.8,
         "source_readiness": 5.0
       },
-      "documented_fields": 4,
-      "unknown_fields": 21,
-      "coverage_pct": 16.0,
-      "fields_needed_for_40pct": 6,
+      "documented_fields": 6,
+      "unknown_fields": 19,
+      "coverage_pct": 24.0,
+      "fields_needed_for_40pct": 4,
       "recommended_unknown_paths": [
         "governance.audit_logs.retention_days",
         "governance.sso.oidc",
@@ -224,6 +224,18 @@
           "evidence_type": "api_docs"
         },
         {
+          "title": "Manus Help – Team roles and functions",
+          "url": "https://help.manus.im/en/articles/11711764-what-roles-are-in-the-team-version-and-what-are-the-functions-of-each-role",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Manus Help – What is the Cloud Computer?",
+          "url": "https://help.manus.im/en/articles/15392111-what-is-the-cloud-computer",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
           "title": "Manus – Security",
           "url": "https://manus.im/security",
           "origin": "field_level_evidence",
@@ -238,11 +250,6 @@
         {
           "title": "Manus Help – My Computer",
           "url": "https://help.manus.im/en/articles/14178443-what-is-the-my-computer-feature-capable-of",
-          "origin": "profile_source"
-        },
-        {
-          "title": "Manus Help – Unterschiede zwischen Chat-Modus und Agent-Modus",
-          "url": "https://help.manus.im/de/articles/11711128-was-sind-die-unterschiede-zwischen-dem-chat-modus-und-dem-agent-modus",
           "origin": "profile_source"
         }
       ],

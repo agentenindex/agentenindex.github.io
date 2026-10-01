@@ -37308,6 +37308,76 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-C0A977DE78DE002506",
+      "agent_id": "AI-0052",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9FF9AF1657D21D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "manus_team",
+        "note": "Manus Team uses documented role-based permissions for team administration and access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9FF9AF1657D21D",
+            "note": "Manus documents distinct Team roles—Owner, Super Admin, Admin, and Member—with different access and management permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Team roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-71E044EB6D5A7DD92A",
+      "agent_id": "AI-0052",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-80E6B59FC42D95"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "manus_standard_sandbox_and_cloud_computer",
+        "note": "Manus provides managed cloud execution environments for agent tasks.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-80E6B59FC42D95",
+            "note": "Manus documents its standard temporary sandbox and a fully isolated cloud-hosted persistent virtual machine used by Manus for execution.",
+            "evidence_type": "technical_docs",
+            "source_section": "How It Differs from the Temporary Sandbox / Cloud Computer vs. Manus Desktop"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-702C259D0EF0266FFC",
       "agent_id": "AI-0052",
       "path": "identity.name",
