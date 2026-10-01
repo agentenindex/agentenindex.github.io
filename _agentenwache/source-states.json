@@ -1,10 +1,10 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T11:47:57Z",
+  "updated_at": "2026-10-01T13:00:58Z",
   "states": [
     {
       "source_id": "SRC-045EC3D7A7090E",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://www.notion.com/de/product/agents",
       "result": "fetched",
       "ok": true,
@@ -28,13 +28,27 @@
       "active": true
     },
     {
+      "source_id": "SRC-049665A316B3B9",
+      "checked_at": "2026-10-01T13:00:46Z",
+      "url": "https://azure.microsoft.com/de-de/products/ai-foundry/agent-service/",
+      "result": "robots_disallowed",
+      "ok": false,
+      "error": "robots.txt disallows monitoring path",
+      "consecutive_failures": 1,
+      "source_title": "Microsoft Azure – Foundry Agent Service",
+      "agent_ids": [
+        "AI-0078"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-05696F16512E74",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://www.perplexity.ai/de/hub/products/deep-research",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Perplexity – Deep Research",
       "agent_ids": [
         "AI-0004"
@@ -53,19 +67,19 @@
       "agent_ids": [
         "AI-0026"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-08D81CED1B13F2",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://dash.dropbox.com/ai-info-page",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://dash.dropbox.com/ai-info-page",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Fri, 25 Sep 2026 12:16:12 GMT",
+      "last_modified": "Fri, 25 Sep 2026 13:28:24 GMT",
       "bytes_read": 168286,
       "truncated": false,
       "text_hash": "8d385ff5d426304b5d77e6b79c2f804e1ed017c7dca143f301480f305dfd829e",
@@ -82,7 +96,7 @@
     },
     {
       "source_id": "SRC-09AD87427CF7FB",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://support.claude.com/de/articles/13364135-claude-cowork-sicher-nutzen",
       "result": "fetched",
       "ok": true,
@@ -107,7 +121,7 @@
     },
     {
       "source_id": "SRC-09EF9C9776616A",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform?hl=de",
       "result": "fetched",
       "ok": true,
@@ -116,7 +130,7 @@
       "content_type": "text/html; charset=utf-8",
       "etag": null,
       "last_modified": null,
-      "bytes_read": 2461528,
+      "bytes_read": 2461524,
       "truncated": false,
       "text_hash": "7a905a16259d7ef79334d3af197dc6839db1efa929ad702ee2f194ede60adcf3",
       "simhash64": "0a5b76632ae6fbc7",
@@ -144,11 +158,11 @@
       "agent_ids": [
         "AI-0027"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-0B0B36A69C0601",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://open.manus.im/docs/v2/introduction",
       "result": "not_modified",
       "ok": true,
@@ -183,7 +197,7 @@
       "agent_ids": [
         "AI-0063"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-0C6F2B9F491994",
@@ -197,11 +211,11 @@
       "agent_ids": [
         "AI-0099"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-0DD32BFAD26CDB",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:47Z",
       "url": "https://docs.aws.amazon.com/de_de/prescriptive-guidance/latest/agentic-ai-frameworks/strands-agents.html",
       "result": "not_modified",
       "ok": true,
@@ -226,15 +240,15 @@
     },
     {
       "source_id": "SRC-10EAE276FC8F2A",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:50Z",
       "url": "https://google.github.io/adk-docs/",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://adk.dev/",
       "content_type": "text/html; charset=utf-8",
-      "etag": "\"6abc8011-1f00d\"",
-      "last_modified": "Wed, 30 Sep 2026 03:20:49 GMT",
+      "etag": "\"6abe4d54-1f00d\"",
+      "last_modified": "Thu, 01 Oct 2026 12:08:52 GMT",
       "bytes_read": 126989,
       "truncated": false,
       "text_hash": "60d89b462d95cb5f7950c211250beaea0dde6fd1cf7720a18e7672b891f69d5a",
@@ -251,7 +265,7 @@
     },
     {
       "source_id": "SRC-120A3C4465D068",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://cursor.com/docs/agent/overview",
       "result": "not_modified",
       "ok": true,
@@ -276,16 +290,16 @@
     },
     {
       "source_id": "SRC-14F0B6490BE841",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://browser-use.com/web-agent-api",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://browser-use.com/web-agent-api",
       "content_type": "text/html; charset=utf-8",
-      "etag": "\"px1gdqjaud1zff\"",
+      "etag": "\"c483b9dd8dc1fd6ec080e2dfee39755c\"",
       "last_modified": null,
-      "bytes_read": 92583,
+      "bytes_read": 92622,
       "truncated": false,
       "text_hash": "6d9e062adf9b2ac620fa9c7db958c539889d58c059386926f8333555773de59a",
       "simhash64": "01847f83ae483efe",
@@ -311,11 +325,11 @@
       "agent_ids": [
         "AI-0005"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-15C5A1E3CDD01B",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.lindy.ai/tools",
       "result": "fetched",
       "ok": true,
@@ -324,13 +338,13 @@
       "content_type": "text/html; charset=utf-8",
       "etag": null,
       "last_modified": null,
-      "bytes_read": 185570,
+      "bytes_read": 185404,
       "truncated": false,
-      "text_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
-      "simhash64": "acd329c5dea49872",
-      "token_count": 2659,
-      "text_length": 15595,
-      "text_sample": "The AI teammate that will 3x your output. Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo $50 in free credits • No credit card required 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is",
+      "text_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+      "simhash64": "2cdb69d5dea09872",
+      "token_count": 2649,
+      "text_length": 15550,
+      "text_sample": "The AI teammate that will 3x your output . Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo 7-day free trial • Cancel anytime 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is normal vol",
       "consecutive_failures": 0,
       "source_title": "Lindy – AI Tools",
       "agent_ids": [
@@ -340,16 +354,16 @@
     },
     {
       "source_id": "SRC-17E489EE01699A",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://blog.n8n.io/introducing-n8n-agents/",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://blog.n8n.io/introducing-n8n-agents/",
       "content_type": "text/html; charset=utf-8",
-      "etag": "W/\"e76a-Dx0eLDQ7eJ4HAChBFSZsoAepC/w\"",
+      "etag": "W/\"e9ea-CUzYVeYO0NyThpnjYLkvJcJPiJc\"",
       "last_modified": null,
-      "bytes_read": 59242,
+      "bytes_read": 59882,
       "truncated": false,
       "text_hash": "fe0d5d6b35c81a7500860241153fd751ba97539e9ad39249495b25331cb75436",
       "simhash64": "61085a254b7ea425",
@@ -375,11 +389,11 @@
       "agent_ids": [
         "AI-0086"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-1C8D78B196C186",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://support.claude.com/en/articles/10166901-use-google-workspace-connectors",
       "result": "fetched",
       "ok": true,
@@ -404,15 +418,15 @@
     },
     {
       "source_id": "SRC-1EC095A4B31108",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.gumloop.com/blog/meet-gumball",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.gumloop.com/blog/meet-gumball",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Mon, 28 Sep 2026 22:56:49 GMT",
+      "last_modified": "Tue, 29 Sep 2026 01:49:44 GMT",
       "bytes_read": 95925,
       "truncated": false,
       "text_hash": "504c00fb3c03c3e97ffb09a3527a5a5867770d7e8a035df4274fdfb64b1962f5",
@@ -429,7 +443,7 @@
     },
     {
       "source_id": "SRC-1FA68F649F6E07",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:47Z",
       "url": "https://design.rogo.ai/",
       "result": "fetched",
       "ok": true,
@@ -454,14 +468,14 @@
     },
     {
       "source_id": "SRC-20975F305415B3",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:50Z",
       "url": "https://help.manus.im/de/articles/11711128-was-sind-die-unterschiede-zwischen-dem-chat-modus-und-dem-agent-modus",
       "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://help.manus.im/de/articles/11711128-was-sind-die-unterschiede-zwischen-dem-chat-modus-und-dem-agent-modus",
       "content_type": "text/html; charset=utf-8",
-      "etag": "W/\"1a4e144519c1ce03c73843231f1a281a\"",
+      "etag": "W/\"86e49a774c6010b9c50f8fc0f4680c9a\"",
       "last_modified": null,
       "bytes_read": 103803,
       "truncated": false,
@@ -478,6 +492,31 @@
       "active": true
     },
     {
+      "source_id": "SRC-22156262212796",
+      "checked_at": "2026-10-01T13:00:48Z",
+      "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html",
+      "content_type": "text/html",
+      "etag": "\"3OeAyP8SC79lfVAOZpYrei3IE5g=\"",
+      "last_modified": "Thu, 01 Oct 2026 09:06:39 GMT",
+      "bytes_read": 18132,
+      "truncated": false,
+      "text_hash": "c2bac092de757f35882506e84357306b0a450d0c122210b2ba96911dc25868bb",
+      "simhash64": "73df8b72a88e8ffd",
+      "token_count": 617,
+      "text_length": 3745,
+      "text_sample": "What is Amazon Q Developer? - Amazon Q Developer View a markdown version of this page What is Amazon Q Developer? - Amazon Q Developer Documentation Amazon Q User Guide Get started Amazon Q Developer pricing What is Amazon Q Developer? End of support notice On April 30, 2027, AWS will discontinue support for Amazon Q Developer IDE plugins. For capabilities similar to Amazon Q Developer IDE plugins, explore Kiro to access the latest models and features, including agentic coding, chat and MCP support. For more information, see Amazon Q Developer IDE plugins end of support . Note Powered by Amazon Bedrock: Amazon Q Developer is built on Amazon Bedrock and includes automated abuse detection implemented in Amazon Bedrock to enforce safety, security, and the responsible use of AI. Amazon Q Developer is a generative artificial intelligence (AI) powered conversational assistant that can help you understand, build, extend, and operate AWS applications. You can ask questions about AWS architecture, your AWS resources, best practices, documentation, support, and more. Amazon Q is constantly updating its capabilities so your questions get the most contextually relevant and actionable answers. ",
+      "consecutive_failures": 0,
+      "source_title": "AWS Docs – Amazon Q Developer",
+      "agent_ids": [
+        "AI-0013"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-22E86D7AF0F56A",
       "checked_at": "2026-10-01T11:47:51Z",
       "url": "https://www.clay.com/blog/open-weight-models-are-now-in-claygent",
@@ -489,18 +528,18 @@
       "agent_ids": [
         "AI-0104"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-2344D3C859BA38",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.intercom.com/help/de/articles/7120684-fin-ai-agent-erklart",
       "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.intercom.com/help/de/articles/7120684-fin-ai-agent-erklart",
       "content_type": "text/html; charset=utf-8",
-      "etag": "W/\"0f2e5bbc311d5468cfecde3d6b84ff38\"",
+      "etag": "W/\"a2c96da7c0d67f95f1044a9a1319ba4e\"",
       "last_modified": null,
       "bytes_read": 601577,
       "truncated": false,
@@ -518,16 +557,16 @@
     },
     {
       "source_id": "SRC-24684C1ECCA249",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://github.com/google-gemini/gemini-cli",
       "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://github.com/google-gemini/gemini-cli",
       "content_type": "text/html; charset=utf-8",
-      "etag": "W/\"a4cd1f42865af21adf37d91d8f8b3625\"",
+      "etag": "W/\"9d0c6df10084b0771048c44730a28278\"",
       "last_modified": null,
-      "bytes_read": 484699,
+      "bytes_read": 484661,
       "truncated": false,
       "text_hash": "a7bb8e9e7b28282912caf3cf452d7844f8ff0e08d8ecc07e4f93261e8de44e30",
       "simhash64": "2e85ccd0dc85fc54",
@@ -553,11 +592,11 @@
       "agent_ids": [
         "AI-0028"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-270C90D1457285",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
       "result": "fetched",
       "ok": true,
@@ -582,16 +621,16 @@
     },
     {
       "source_id": "SRC-292EBB486D31D8",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:57Z",
       "url": "https://www.zendesk.com/service/ai/ai-agents/",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.zendesk.com/service/ai/ai-agents/",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Thu, 01 Oct 2026 11:32:43 GMT",
-      "bytes_read": 944157,
+      "last_modified": "Thu, 01 Oct 2026 13:00:57 GMT",
+      "bytes_read": 944160,
       "truncated": false,
       "text_hash": "849ac69b5f12180b07840090d2afe3e5721ad8a360764e44f7f41ec05e0a8659",
       "simhash64": "43f47836a418e4de",
@@ -607,7 +646,7 @@
     },
     {
       "source_id": "SRC-2A40D519EE4084",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:47Z",
       "url": "https://devin.ai/",
       "result": "fetched",
       "ok": true,
@@ -642,11 +681,11 @@
       "agent_ids": [
         "AI-0013"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-2C2C9367591C42",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://www.augmentcode.com/blog/meet-augment-agent",
       "result": "fetched",
       "ok": true,
@@ -671,7 +710,7 @@
     },
     {
       "source_id": "SRC-2C403231ABF735",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:50Z",
       "url": "https://help.moveworks.com/agent-studio/overview",
       "result": "fetched",
       "ok": true,
@@ -696,12 +735,12 @@
     },
     {
       "source_id": "SRC-2D1D00F4555E5B",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://blog.google/intl/de-de/produkte/suchen-entdecken/gemini-app-io-2026/",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Google – Die Gemini-App bekommt agentische Fähigkeiten",
       "agent_ids": [
         "AI-0053"
@@ -710,7 +749,7 @@
     },
     {
       "source_id": "SRC-2F65198A56F38D",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://ecosystem.hubspot.com/marketplace/listing/customer-agent",
       "result": "not_modified",
       "ok": true,
@@ -735,14 +774,14 @@
     },
     {
       "source_id": "SRC-34E2FF53D66D85",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://openai.com/de-DE/index/chatgpt-for-your-most-ambitious-work/",
       "result": "http_error",
       "ok": false,
       "status_code": 403,
       "final_url": "https://openai.com/de-DE/index/chatgpt-for-your-most-ambitious-work/",
       "error": "HTTP Error 403: Forbidden",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "OpenAI – ChatGPT ist jetzt ein Partner für deine anspruchsvollste Arbeit",
       "agent_ids": [
         "AI-0051"
@@ -751,12 +790,12 @@
     },
     {
       "source_id": "SRC-34EAC6A2B5A5FB",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/notebooklm-deep-research-file-types/",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Google – NotebookLM Deep Research",
       "agent_ids": [
         "AI-0059"
@@ -765,7 +804,7 @@
     },
     {
       "source_id": "SRC-35684AF2D71298",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://blog.jetbrains.com/junie/2026/06/junie-coding-agent-out-of-beta/",
       "result": "fetched",
       "ok": true,
@@ -790,7 +829,7 @@
     },
     {
       "source_id": "SRC-3586155C866DCE",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://support.zendesk.com/hc/de/articles/6970583409690-%C3%9Cberblick-%C3%BCber-AI-Agents",
       "result": "fetched",
       "ok": true,
@@ -815,7 +854,7 @@
     },
     {
       "source_id": "SRC-36840E02B3374D",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:48Z",
       "url": "https://docs.crewai.com/enterprise/introduction",
       "result": "not_modified",
       "ok": true,
@@ -840,14 +879,14 @@
     },
     {
       "source_id": "SRC-3918ED07C8729B",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:50Z",
       "url": "https://help.openai.com/de-de/articles/20001275-chatgpt-work-and-codex",
       "result": "http_error",
       "ok": false,
       "status_code": 403,
       "final_url": "https://help.openai.com/de-de/articles/20001275-chatgpt-work-and-codex",
       "error": "HTTP Error 403: Forbidden",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "OpenAI Help – ChatGPT Arbeit und Codex",
       "agent_ids": [
         "AI-0051"
@@ -856,12 +895,12 @@
     },
     {
       "source_id": "SRC-3A2D2B60D2F057",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.lexisnexis.com/en-us/products/lexis-plus-protege.page",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "LexisNexis – Lexis+ with Protégé",
       "agent_ids": [
         "AI-0107"
@@ -870,7 +909,7 @@
     },
     {
       "source_id": "SRC-3C8C8700498452",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://tray.ai/documentation/platform/artificial-intelligence/agent-builder/overview",
       "result": "fetched",
       "ok": true,
@@ -905,11 +944,11 @@
       "agent_ids": [
         "AI-0029"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-409377A7420BBF",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://experienceleague.adobe.com/de/docs/cx-enterprise-ai/experience-cloud-ai/agents/agent-orchestrator",
       "result": "not_modified",
       "ok": true,
@@ -934,7 +973,7 @@
     },
     {
       "source_id": "SRC-40FD74B70F772F",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://sierra.ai/",
       "result": "fetched",
       "ok": true,
@@ -959,7 +998,7 @@
     },
     {
       "source_id": "SRC-40FE2A97D5AA0F",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.harvey.ai/",
       "result": "not_modified",
       "ok": true,
@@ -984,7 +1023,7 @@
     },
     {
       "source_id": "SRC-4271C275BA8FED",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://slack.com/blog/news/ai-powered-interface-for-work",
       "result": "fetched",
       "ok": true,
@@ -993,12 +1032,12 @@
       "content_type": "text/html; charset=utf-8",
       "etag": null,
       "last_modified": null,
-      "bytes_read": 152602,
+      "bytes_read": 164103,
       "truncated": false,
-      "text_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
-      "simhash64": "9a353ccdb4aa6e30",
-      "token_count": 1470,
-      "text_length": 10796,
+      "text_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+      "simhash64": "8a353cc5b4aa6e30",
+      "token_count": 1494,
+      "text_length": 10952,
       "text_sample": "6 Min. Lesezeit Diese Woche auf der Dreamforce haben wir Slack eines seiner bisher größten Upgrades verpasst: die vernetzte Oberfläche für KI und Salesforce, die für dein gesamtes Team funktioniert. Jedes Unternehmen investiert gerade in KI, doch es fehlen zwei entscheidende Dinge. Erstens: der Kontext aus Unterhaltungen, der ein langfristiges Gedächtnis und Einblicke liefert und KI damit präziser, handlungsfähiger und vertrauenswürdiger macht. Zweitens: eine kollaborative Oberfläche, die es Mitarbeitenden ermöglicht, diese KI-Tools gemeinsam zu nutzen und voneinander zu lernen. In Slack kommt beides zusammen. So ist Slack zum Betriebssystem für die Arbeit geworden, das alle Mitarbeitenden, Agenten und Plattformen miteinander vernetzt – mit Slackbot als KI-Teammitglied, das dich durch deinen Arbeitsalltag begleitet. Genau das macht Slack zum Einstieg in das agentbasierte Unternehmen – und für Salesforce-Kund:innen auch für Salesforce selbst. Vorhang auf für Slackforce: Der zentrale Einstieg in Salesforce Seit 25 Jahren bauen Salesforce-Kund:innen umfangreiche Kundendaten und Workflows auf, um ihr Geschäft zu steuern. Jetzt können diese Daten dort zum Einsatz kommen, wo Entscheidung",
       "consecutive_failures": 0,
       "source_title": "Slack – AI-powered interface for work",
@@ -1009,7 +1048,7 @@
     },
     {
       "source_id": "SRC-42A46FF8232742",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://kiro.dev/ide/",
       "result": "not_modified",
       "ok": true,
@@ -1034,7 +1073,7 @@
     },
     {
       "source_id": "SRC-4627DB7CE4408B",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:50Z",
       "url": "https://help.boomi.com/docs/Atomsphere/Platform/Agentstudio",
       "result": "fetched",
       "ok": true,
@@ -1059,7 +1098,7 @@
     },
     {
       "source_id": "SRC-463315DB73CF86",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://www.artisan.co/blog/artisan-launches-ava-2-0-first-autonomous-ai-bdr",
       "result": "not_modified",
       "ok": true,
@@ -1094,11 +1133,25 @@
       "agent_ids": [
         "AI-0089"
       ],
+      "active": false
+    },
+    {
+      "source_id": "SRC-4684D0521489FB",
+      "checked_at": "2026-10-01T13:00:47Z",
+      "url": "https://developers.sap.com/concepts/joule-skills-agents/",
+      "result": "robots_disallowed",
+      "ok": false,
+      "error": "robots.txt disallows monitoring path",
+      "consecutive_failures": 1,
+      "source_title": "SAP Developer – Building Joule Skills and Agents",
+      "agent_ids": [
+        "AI-0030"
+      ],
       "active": true
     },
     {
       "source_id": "SRC-47B86A30AB0ADD",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:48Z",
       "url": "https://docs.snowflake.com/de/en/user-guide/snowflake-cortex/cortex-agents",
       "result": "not_modified",
       "ok": true,
@@ -1123,16 +1176,16 @@
     },
     {
       "source_id": "SRC-4922FED9D3C577",
-      "checked_at": "2026-10-01T11:47:57Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://www.intercom.com/help/de/articles/9515824-was-ist-fin",
       "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.intercom.com/help/de/articles/9515824-was-ist-fin",
       "content_type": "text/html; charset=utf-8",
-      "etag": "W/\"8c5d6e4af4bbc980f44899dfcf6c2340\"",
+      "etag": "W/\"724769a54ed772181bb2a0a7138e7e25\"",
       "last_modified": null,
-      "bytes_read": 534194,
+      "bytes_read": 534182,
       "truncated": false,
       "text_hash": "ea94e693ee425ce24a222d1e43eaf1d381de2033f01edc0a7dbb5c906dbeaea4",
       "simhash64": "dcb3c50d6bab6608",
@@ -1160,7 +1213,7 @@
       "agent_ids": [
         "AI-0068"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-4B1EC7C597E6AC",
@@ -1174,11 +1227,11 @@
       "agent_ids": [
         "AI-0106"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-4C73906E2D2586",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:47Z",
       "url": "https://docs.anthropic.com/en/docs/claude-code/getting-started",
       "result": "not_modified",
       "ok": true,
@@ -1203,7 +1256,7 @@
     },
     {
       "source_id": "SRC-4E065D834897D1",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://support.claude.com/de/articles/13345190-erste-schritte-mit-claude-cowork",
       "result": "fetched",
       "ok": true,
@@ -1228,7 +1281,7 @@
     },
     {
       "source_id": "SRC-4EF5CBB631712E",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://www.snowflake.com/de/blog/snowflake-cowork-personal-work-agent/",
       "result": "not_modified",
       "ok": true,
@@ -1252,6 +1305,31 @@
       "active": true
     },
     {
+      "source_id": "SRC-4F3C7BA0964486",
+      "checked_at": "2026-10-01T13:00:49Z",
+      "url": "https://dust.tt/academy/agent-automation",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://dust.tt/academy/agent-automation",
+      "content_type": "text/html; charset=utf-8",
+      "etag": null,
+      "last_modified": null,
+      "bytes_read": 250193,
+      "truncated": false,
+      "text_hash": "9df4d79aa179c67253783a745f3b3188f619aabd27c932210303b054f0c93a93",
+      "simhash64": "8ab7f3bee25ad415",
+      "token_count": 169,
+      "text_length": 1113,
+      "text_sample": "Back to Academy Automate your agents Automate your agents Course Objectives In this course, you will learn : how to automate your Dust agents how to choose the appropriate tools from Dust's automation toolkit Prerequisites A functioning set of agents Chapters 1 Automation concepts Introduction 1. From reactive to proactive agents 2. The two types of triggers 5 min 2 Scheduled triggers 1. How scheduled triggers work 2. Common use cases for scheduled triggers 3. Hands-on: build your @CompetitorPulse agent 10 min 3 Webhook triggers 1. What's a webhook, exactly? 2. Setting up webhook triggers 3. Common use cases for webhook triggers 10 min 4 Viewing your triggered conversations Your triggered conversations Conclusion 5 min Previous Course ← Build your own agents Product Product Chrome Extension Pricing Security Developers Developer Platform Dust for Engineers Platform Documentation Github Repo Company About Us Jobs We're hiring Brand resources Support Become a Partner Connect Slack Community X LinkedIn YouTube Legal Terms & Policies Privacy Policy Trust Center Vulnerability Disclosure Cookie Settings",
+      "consecutive_failures": 0,
+      "source_title": "Dust Academy – Automate your agents",
+      "agent_ids": [
+        "AI-0057"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-4F93E98B2F89F3",
       "checked_at": "2026-10-01T11:47:54Z",
       "url": "https://www.servicenow.com/products/ai-agents.html",
@@ -1265,11 +1343,11 @@
       "agent_ids": [
         "AI-0035"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-50846F9A2C959C",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:51Z",
       "url": "https://ir.monday.com/news-and-events/news-releases/news-details/2026/monday-com-Goes-All-In-on-AI-From-Work-Management-Platform-to-AI-Work-Platform/default.aspx",
       "result": "fetched",
       "ok": true,
@@ -1294,7 +1372,7 @@
     },
     {
       "source_id": "SRC-521F25E144EA1E",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://relevanceai.com/workforce",
       "result": "not_modified",
       "ok": true,
@@ -1319,16 +1397,16 @@
     },
     {
       "source_id": "SRC-545DADAA110D1B",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:47Z",
       "url": "https://browser-use.com/changelog",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://browser-use.com/changelog",
       "content_type": "text/html; charset=utf-8",
-      "etag": "\"17ryydv68d6cmuw\"",
+      "etag": "\"c657ea400568b708bca5035afdc017d2\"",
       "last_modified": null,
-      "bytes_read": 589605,
+      "bytes_read": 589644,
       "truncated": false,
       "text_hash": "875b7ab43416d3f7ef42b9fb9296c6c0fb240c634a4e1e9ddd73a8a8001fa4b1",
       "simhash64": "7fe54dbb178b1715",
@@ -1344,7 +1422,7 @@
     },
     {
       "source_id": "SRC-54EBBFCB2F566A",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://blog.box.com/box-agent-launch",
       "result": "fetched",
       "ok": true,
@@ -1379,7 +1457,7 @@
       "agent_ids": [
         "AI-0096"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-5665C031D4BAD4",
@@ -1393,18 +1471,18 @@
       "agent_ids": [
         "AI-0030"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-578474CD295572",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:51Z",
       "url": "https://help.manus.im/en/articles/14178443-what-is-the-my-computer-feature-capable-of",
       "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://help.manus.im/en/articles/14178443-what-is-the-my-computer-feature-capable-of",
       "content_type": "text/html; charset=utf-8",
-      "etag": "W/\"83052f828609ddefe6ae958e3e6d7bd7\"",
+      "etag": "W/\"0aa3898b64d79f470c65a70911a9b955\"",
       "last_modified": null,
       "bytes_read": 101353,
       "truncated": false,
@@ -1421,8 +1499,24 @@
       "active": true
     },
     {
+      "source_id": "SRC-5A713F5BA417F8",
+      "checked_at": "2026-10-01T13:00:55Z",
+      "url": "https://www.luminance.com/resources/videos/agent-lumi-taking-ask-lumi-from-thought-to-action/",
+      "result": "http_error",
+      "ok": false,
+      "status_code": 404,
+      "final_url": "https://www.luminance.com/resources/videos/agent-lumi-taking-ask-lumi-from-thought-to-action/",
+      "error": "HTTP Error 404: Not Found",
+      "consecutive_failures": 1,
+      "source_title": "Luminance – Agent Lumi overview",
+      "agent_ids": [
+        "AI-0109"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-5B7FDD89BED69C",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:48Z",
       "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/overview.html",
       "result": "not_modified",
       "ok": true,
@@ -1447,15 +1541,15 @@
     },
     {
       "source_id": "SRC-5C012CC3C973FA",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://www.gumloop.com/blog/subagents-launch",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.gumloop.com/blog/subagents-launch",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Tue, 29 Sep 2026 00:01:36 GMT",
+      "last_modified": "Tue, 29 Sep 2026 13:01:22 GMT",
       "bytes_read": 93988,
       "truncated": false,
       "text_hash": "e044635383e188cba1a4d80e72062887903c8817a4097ab369dc688ab1c4efbb",
@@ -1472,7 +1566,7 @@
     },
     {
       "source_id": "SRC-5C06CB439A6890",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:47Z",
       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview",
       "result": "fetched",
       "ok": true,
@@ -1497,7 +1591,7 @@
     },
     {
       "source_id": "SRC-5C0784271CBBB0",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:50Z",
       "url": "https://ecosystem.hubspot.com/marketplace/listing/prospecting-agent",
       "result": "not_modified",
       "ok": true,
@@ -1522,7 +1616,7 @@
     },
     {
       "source_id": "SRC-5C639BC837A1B5",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:51Z",
       "url": "https://help.zapier.com/hc/en-us/articles/47402591569805-Migrating-from-Agents-to-AI-by-Zapier",
       "result": "fetched",
       "ok": true,
@@ -1547,7 +1641,7 @@
     },
     {
       "source_id": "SRC-5E2177C4A8D4C5",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:57Z",
       "url": "https://www.workday.com/de-de/artificial-intelligence/agent-system-of-record.html",
       "result": "fetched",
       "ok": true,
@@ -1572,7 +1666,7 @@
     },
     {
       "source_id": "SRC-5EFD9759FBAA57",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
       "result": "fetched",
       "ok": true,
@@ -1597,7 +1691,7 @@
     },
     {
       "source_id": "SRC-5F3D4C6F1087EF",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://design.rogo.ai/product/accordion",
       "result": "fetched",
       "ok": true,
@@ -1634,11 +1728,11 @@
       "agent_ids": [
         "AI-0057"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-61F8622F16D38D",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:57Z",
       "url": "https://x.ai/news/introducing-grok-bot",
       "result": "fetched",
       "ok": true,
@@ -1673,16 +1767,16 @@
       "agent_ids": [
         "AI-0082"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-6C348B777332B3",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://support.google.com/gemini/answer/15719111?hl=de-DE",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Google Hilfe – Deep Research in Gemini-Apps",
       "agent_ids": [
         "AI-0002"
@@ -1691,7 +1785,7 @@
     },
     {
       "source_id": "SRC-6C54C1B3B40845",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://support.atlassian.com/rovo/docs/agents/",
       "result": "not_modified",
       "ok": true,
@@ -1726,11 +1820,11 @@
       "agent_ids": [
         "AI-0046"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-6ED8D810CF3EE3",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:50Z",
       "url": "https://help.make.com/introduction-to-make-ai-agent-new",
       "result": "not_modified",
       "ok": true,
@@ -1755,7 +1849,7 @@
     },
     {
       "source_id": "SRC-6F1DFC8F00B015",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://www.qualified.com/pricing",
       "result": "not_modified",
       "ok": true,
@@ -1790,20 +1884,20 @@
       "agent_ids": [
         "AI-0026"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-7116A5CA057BD2",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.coderabbit.ai/",
       "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.coderabbit.ai/",
       "content_type": "text/html; charset=utf-8",
-      "etag": "\"44fc58aa8db8114bce699992e905a342\"",
+      "etag": "\"10058fa07b8bafa40a7be54d3f378eff\"",
       "last_modified": null,
-      "bytes_read": 544270,
+      "bytes_read": 544227,
       "truncated": false,
       "text_hash": "da108b44af721cdde99dd7f60e5f7857b2a91273f440a04431ad5c2583adf436",
       "simhash64": "39dd557da2da993e",
@@ -1819,7 +1913,7 @@
     },
     {
       "source_id": "SRC-7592BD11D7B240",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.artisan.co/",
       "result": "not_modified",
       "ok": true,
@@ -1843,23 +1937,48 @@
       "active": true
     },
     {
+      "source_id": "SRC-76DEF67AC893C6",
+      "checked_at": "2026-10-01T13:00:50Z",
+      "url": "https://dust.tt/home/enterprise",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://dust.tt/home/enterprise",
+      "content_type": "text/html; charset=utf-8",
+      "etag": null,
+      "last_modified": null,
+      "bytes_read": 97103,
+      "truncated": false,
+      "text_hash": "7565ea4a4a3be3478ba24d2f2fcb56bec1a50711ce01101042d7390ae2dc28f8",
+      "simhash64": "4b0a59d47303690a",
+      "token_count": 957,
+      "text_length": 6130,
+      "text_sample": "Enterprise AI agents that understand your company like you do AI agents that plug into your tools, learn your company inside out, and take boring work off your team's plate. Accurate and wildly connected. Get started Talk to us Accuracy and quality you trust to act on We're obsessive about getting it right, so your team doesn't just read answers. Teams trust Dust to do the work, to the highest degree of quality, with multi-model access. Humans, agents, tools, all wired together Your team builds agents. Those agents talk to your tools. And to each other. And back to your team. Sales builds something useful, Support's already using it by Tuesday. Knowledge compounds, everyone gets faster. Enterprise-ready, obviously Yes, it's secure. Yes, it's fast. All the table stakes, cleared. SOC 2 Type II. SSO. SCIM. Role-based permissions. Zero model training on your data. Audit logs. All the things you're about to ask about. You can't save time with agents you don't trust Dust is built to do things , not just find things. Update the CRM. Draft the report. Kick off the workflow. But none of that matters if you're double-checking every output. We made accuracy the foundation so that every connec",
+      "consecutive_failures": 0,
+      "source_title": "Dust – Enterprise AI Agents",
+      "agent_ids": [
+        "AI-0057"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-78C111BF205ABB",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://cline.bot/",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://cline.bot/",
       "content_type": "text/html; charset=utf-8",
-      "etag": "\"11tara7ncxo2fyj\"",
+      "etag": "\"tcqy19rcc72fyj\"",
       "last_modified": null,
       "bytes_read": 114000,
       "truncated": false,
-      "text_hash": "1dda2ccd9bcf7cb1676379dfffe01c33a642354a944367b450c0be5a876a3547",
+      "text_hash": "5ba1606f6f046aaca8fb32e70c25a28b7751c936d9906fab1bbd060ad7c957f0",
       "simhash64": "6a6f115e689954bf",
       "token_count": 448,
       "text_length": 2811,
-      "text_sample": "Cline - AI Coding, Open Source and Open Choice The Open Coding Agent Ship securely w/ Claude in VS Code One open source agent runtime. Use it in your editor, your terminal, or embed it in your own products. Trusted by 11M + developers . Desktop New CLI Terminal IDE Extension SDK Embed Cline for Desktop: the coding agent as a native desktop app. No editor required. Download for Mac Download for Windows Download for Linux v 0.0.40 · macOS, Windows & Linux Explore Cline for Desktop Ready to experience AI coding without limits? Get Started 11M + installs across all platforms marketplace + open vsx registry 69.6k stars Trusted by developers and leaders at See Cline at work One agent across your IDE, terminal, and SDK. Pick a task and watch it run. Understand Refactor Automate Your browser does not support the video tag. Understand your codebase See how a codebase is structured and ask Cline questions about files, dependencies, and behavior. Refactor large codebases Make coordinated changes across large codebases while Cline keeps imports, types, and behavior consistent. Automate with Cline CLI Use Cline CLI in scripts, cron jobs, and CI pipelines to run recurring checks, updates, and cu",
+      "text_sample": "Cline - AI Coding, Open Source and Open Choice The Open Coding Agent Ship securely w/ Claude in VS Code One open source agent runtime. Use it in your editor, your terminal, or embed it in your own products. Trusted by 11M + developers . Desktop New CLI Terminal IDE Extension SDK Embed Cline for Desktop: the coding agent as a native desktop app. No editor required. Download for Mac Download for Windows Download for Linux v 0.0.40 · macOS, Windows & Linux Explore Cline for Desktop Ready to experience AI coding without limits? Get Started 11M + installs across all platforms marketplace + open vsx registry 69.7k stars Trusted by developers and leaders at See Cline at work One agent across your IDE, terminal, and SDK. Pick a task and watch it run. Understand Refactor Automate Your browser does not support the video tag. Understand your codebase See how a codebase is structured and ask Cline questions about files, dependencies, and behavior. Refactor large codebases Make coordinated changes across large codebases while Cline keeps imports, types, and behavior consistent. Automate with Cline CLI Use Cline CLI in scripts, cron jobs, and CI pipelines to run recurring checks, updates, and cu",
       "consecutive_failures": 0,
       "source_title": "Cline – Official Site",
       "agent_ids": [
@@ -1879,11 +1998,11 @@
       "agent_ids": [
         "AI-0086"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-7F1DDAF30892F5",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:57Z",
       "url": "https://www.lindy.ai/use-cases",
       "result": "fetched",
       "ok": true,
@@ -1908,7 +2027,7 @@
     },
     {
       "source_id": "SRC-7F24130EF3928B",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://docs.warp.dev/agents/cli/",
       "result": "not_modified",
       "ok": true,
@@ -1943,19 +2062,19 @@
       "agent_ids": [
         "AI-0078"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-818021DB379904",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://about.you.com/resources/introducing-ari-the-first-professional-grade-research-agent-for-business",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://about.you.com/resources/introducing-ari-the-first-professional-grade-research-agent-for-business",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Thu, 01 Oct 2026 01:29:11 GMT",
+      "last_modified": "Thu, 01 Oct 2026 13:00:46 GMT",
       "bytes_read": 224015,
       "truncated": false,
       "text_hash": "59068deac881387b8825be9ecb6b437c2e2c46aa8d9270dae9824e9b4c4bbd73",
@@ -1972,14 +2091,14 @@
     },
     {
       "source_id": "SRC-8580A1FB2BB2D7",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://www.harvey.ai/platform",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.harvey.ai/platform",
       "content_type": "text/html; charset=utf-8",
-      "etag": "\"q03089ct6q8n38\"",
+      "etag": "\"16t4lt855da8n38\"",
       "last_modified": null,
       "bytes_read": 403462,
       "truncated": false,
@@ -1997,7 +2116,7 @@
     },
     {
       "source_id": "SRC-8629DEAFE479C6",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://www.microsoft.com/de-de/microsoft-copilot/microsoft-copilot-studio",
       "result": "fetched",
       "ok": true,
@@ -2006,7 +2125,7 @@
       "content_type": "text/html; charset=utf-8",
       "etag": null,
       "last_modified": null,
-      "bytes_read": 382071,
+      "bytes_read": 382169,
       "truncated": false,
       "text_hash": "0421fb6f56f85c66a67c09c9af3fad646f205e535a42d7efc630611ac5a95fff",
       "simhash64": "89616419a0a8526f",
@@ -2022,15 +2141,15 @@
     },
     {
       "source_id": "SRC-86920249D069D7",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://www.gumloop.com/blog/announcing-gumloop-agents",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.gumloop.com/blog/announcing-gumloop-agents",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Mon, 28 Sep 2026 23:06:44 GMT",
+      "last_modified": "Tue, 29 Sep 2026 10:17:02 GMT",
       "bytes_read": 95653,
       "truncated": false,
       "text_hash": "9e2de6780830b4ee0f21a3724858e377806b60a6db70ce939cd334de9202af65",
@@ -2047,12 +2166,12 @@
     },
     {
       "source_id": "SRC-86D33680387C2C",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://www.lexisnexis.com/community/pressroom/b/news/posts/lexis-with-protege-accelerates-frictionless-agentic-productivity-from-first-idea-to-review-ready-legal-work-product",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "LexisNexis – Agentic productivity",
       "agent_ids": [
         "AI-0107"
@@ -2060,8 +2179,33 @@
       "active": true
     },
     {
+      "source_id": "SRC-8729D0DB57FF55",
+      "checked_at": "2026-10-01T13:00:47Z",
+      "url": "https://developers.openai.com/api/docs/guides/deep-research",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://developers.openai.com/api/docs/guides/deep-research",
+      "content_type": "text/html; charset=utf-8",
+      "etag": "\"5ad157ba6b59fd3a4b3a928fdf298eae\"",
+      "last_modified": "Thu, 01 Oct 2026 05:17:41 GMT",
+      "bytes_read": 679626,
+      "truncated": false,
+      "text_hash": "2e39971ff811e795b503ade61ce88607f702a33ac563f7f335f1eee7cc013e52",
+      "simhash64": "618b6cd586d49d66",
+      "token_count": 7936,
+      "text_length": 55219,
+      "text_sample": "Copy Page The deprecation notice lists July 23, 2026 as the shutdown date for o3-deep-research and o4-mini-deep-research , with gpt-5.6-sol as the replacement. The examples below retain these model IDs and their tool configuration for reference. Migration For new research workflows, review the Responses API , web search , file search , and remote MCP tools . Review each tool’s configuration and evaluate your workflow before migrating; changing the model ID alone is not a complete migration. Deep research model workflows The o3-deep-research and o4-mini-deep-research models can find, analyze, and synthesize hundreds of sources to create a comprehensive report at the level of a research analyst. These models are optimized for browsing and data analysis, and can use web search , remote MCP servers, and file search over internal vector stores to generate detailed reports, ideal for use cases like: Legal or scientific research Market analysis Reporting on large bodies of internal company data To use deep research, use the Responses API with the model set to o3-deep-research or o4-mini-deep-research . You must include at least one data source: web search, remote MCP servers, or file sear",
+      "consecutive_failures": 0,
+      "source_title": "OpenAI Developers – Deep research",
+      "agent_ids": [
+        "AI-0001"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-8B382C103B95EA",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://n8n.io/ai-agents/",
       "result": "fetched",
       "ok": true,
@@ -2070,12 +2214,12 @@
       "content_type": "text/html; charset=utf-8",
       "etag": null,
       "last_modified": null,
-      "bytes_read": 418770,
+      "bytes_read": 419311,
       "truncated": false,
-      "text_hash": "86a379f500ea748c2e4795e3ed0670e3bfb47d7f282da31be8fc883faac46812",
-      "simhash64": "ddbfe32be54a36d0",
-      "token_count": 2103,
-      "text_length": 12508,
+      "text_hash": "e15e4409a6e3f0f7cc6992cf33b00337ce64a156b4e49aa89dda6ea9439fe633",
+      "simhash64": "ddb76123f1683640",
+      "token_count": 2154,
+      "text_length": 12774,
       "text_sample": "Build Custom AI Agents With Logic & Control | n8n Automation Platform See llms.txt for all machine-readable content. Source availability, 500+ integrations, and support for code give you the flexibility to connect AI models to your business systems at scale. Human-in-the-loop guardrails and the ability to add pre-defined logic give you the confidence they won’t fail. Start building AI agents* Talk to sales *14-day free trial. No credit card needed Over 200k GitHub stars Self host-able SOC2 compliant AI agents and workflows for technical teams at Multi-Agent Systems: For tasks that need a team Coordinate multiple specialized agents (e.g., research, writing, QA) to complete complex workflows. Deep Research Agents: For mining large amounts of data Perform multi-step research with API access and memory to surface clear, structured takeaways. RAG Agents: For when accuracy absolutely matters Retrieve real-time info from docs, wikis, or internal data to generate up-to-date, verified content. Planning Agents: For tasks too large to tackle straight on Break down processes into smaller steps. Decide what happens next – and which agent should execute. Click on image to go to the template AI a",
       "consecutive_failures": 0,
       "source_title": "n8n – AI Agents",
@@ -2086,16 +2230,16 @@
     },
     {
       "source_id": "SRC-8C47B9A9710123",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Thu, 01 Oct 2026 11:34:11 GMT",
-      "bytes_read": 231577,
+      "last_modified": "Thu, 01 Oct 2026 13:00:54 GMT",
+      "bytes_read": 232077,
       "truncated": false,
       "text_hash": "ae35c1ae3de63c5eec25e5bdefa2ba31833cbe98e342d97667b6839bc9c69874",
       "simhash64": "aabbd6bf0ed44007",
@@ -2111,7 +2255,7 @@
     },
     {
       "source_id": "SRC-8ED9306471FC27",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:51Z",
       "url": "https://jules.google/docs",
       "result": "not_modified",
       "ok": true,
@@ -2136,7 +2280,7 @@
     },
     {
       "source_id": "SRC-8FBE10EF8133E6",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:51Z",
       "url": "https://ecosystem.hubspot.com/marketplace/listing/data-agent",
       "result": "not_modified",
       "ok": true,
@@ -2173,19 +2317,19 @@
       "agent_ids": [
         "AI-0001"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-9117EC7C4AA8A6",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://legal.thomsonreuters.com/en/products/cocounsel-legal",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://legal.thomsonreuters.com/en/products/cocounsel-legal",
       "content_type": "text/html;charset=utf-8",
-      "etag": "\"69c17-65cc5e0557ae4\"",
-      "last_modified": "Thu, 01 Oct 2026 11:40:02 GMT",
+      "etag": "\"69c17-65cc6e3562be3\"",
+      "last_modified": "Thu, 01 Oct 2026 12:52:27 GMT",
       "bytes_read": 433175,
       "truncated": false,
       "text_hash": "56b531f31f27a4031e14efc5b3ec38f0aff8b6f1f762afcac36ecb1fc428e81c",
@@ -2214,7 +2358,7 @@
       "agent_ids": [
         "AI-0095"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-925286FF766474",
@@ -2228,11 +2372,36 @@
       "agent_ids": [
         "AI-0005"
       ],
+      "active": false
+    },
+    {
+      "source_id": "SRC-940CD43412DCF2",
+      "checked_at": "2026-10-01T13:00:51Z",
+      "url": "https://help.salesforce.com/s/articleView?id=sales.sales_agent_prospecting_learn_about.htm&language=de&type=5",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=sales.sales_agent_prospecting_learn_about.htm&language=de&type=5",
+      "content_type": "text/html;charset=UTF-8",
+      "etag": null,
+      "last_modified": "Wed, 01 Oct 2025 13:00:51 GMT",
+      "bytes_read": 204355,
+      "truncated": false,
+      "text_hash": "d85a7e6c93530ef549cdb49e124ee7e7759ddbbcc8fc512e93b1192e92a3d4ed",
+      "simhash64": "ffa7678a8b9cd433",
+      "token_count": 9,
+      "text_length": 62,
+      "text_sample": "Salesforce Help Loading × Sorry to interrupt CSS Error Refresh",
+      "consecutive_failures": 0,
+      "source_title": "Salesforce Help – Agentforce Prospecting",
+      "agent_ids": [
+        "AI-0046"
+      ],
       "active": true
     },
     {
       "source_id": "SRC-96D0C921F02E96",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:48Z",
       "url": "https://docs.mistral.ai/vibe/work/get-started",
       "result": "not_modified",
       "ok": true,
@@ -2257,7 +2426,7 @@
     },
     {
       "source_id": "SRC-974A16D902D5EF",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://replit.com/products/agent",
       "result": "fetched",
       "ok": true,
@@ -2282,7 +2451,7 @@
     },
     {
       "source_id": "SRC-97984709D7B3B7",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://relevanceai.com/agents",
       "result": "not_modified",
       "ok": true,
@@ -2307,7 +2476,7 @@
     },
     {
       "source_id": "SRC-9858FF9E41B0DA",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://docs.mistral.ai/vibe/code/overview",
       "result": "not_modified",
       "ok": true,
@@ -2332,7 +2501,7 @@
     },
     {
       "source_id": "SRC-98A7A4F1096DC7",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
       "result": "not_modified",
       "ok": true,
@@ -2357,7 +2526,7 @@
     },
     {
       "source_id": "SRC-9A3C9336803D41",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://about.gitlab.com/de-de/gitlab-duo-agent-platform/",
       "result": "not_modified",
       "ok": true,
@@ -2382,7 +2551,7 @@
     },
     {
       "source_id": "SRC-9B5C701800A854",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://support.zendesk.com/hc/en-us/articles/10850639885082-Announcing-Forethought-AI-agents-by-Zendesk-for-customers",
       "result": "fetched",
       "ok": true,
@@ -2407,15 +2576,15 @@
     },
     {
       "source_id": "SRC-9C04421DBB1F46",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.langchain.com/langsmith/deployment",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.langchain.com/langsmith/deployment",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Tue, 29 Sep 2026 22:26:24 GMT",
+      "last_modified": "Wed, 30 Sep 2026 23:54:46 GMT",
       "bytes_read": 191886,
       "truncated": false,
       "text_hash": "fda98dff7764a6775487e895576017c17496f32194efeb583eacd4b6ed14a6a2",
@@ -2432,7 +2601,7 @@
     },
     {
       "source_id": "SRC-9E8C6430D83420",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:58Z",
       "url": "https://x.ai/news/grok-3",
       "result": "fetched",
       "ok": true,
@@ -2457,7 +2626,7 @@
     },
     {
       "source_id": "SRC-9EC77E67A466F1",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:51Z",
       "url": "https://ecosystem.hubspot.com/marketplace/listing/company-research-agent",
       "result": "not_modified",
       "ok": true,
@@ -2482,12 +2651,12 @@
     },
     {
       "source_id": "SRC-A076947F623118",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:47Z",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Google – Introducing Deep Research and Deep Research Max",
       "agent_ids": [
         "AI-0002"
@@ -2506,16 +2675,16 @@
       "agent_ids": [
         "AI-0104"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-A41FE8F5934AC4",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://www.perplexity.ai/de/products/computer",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Perplexity – Computer",
       "agent_ids": [
         "AI-0038"
@@ -2524,7 +2693,7 @@
     },
     {
       "source_id": "SRC-A7A19FDF49D1D6",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://openhands.dev/",
       "result": "fetched",
       "ok": true,
@@ -2559,11 +2728,11 @@
       "agent_ids": [
         "AI-0029"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-A8FE98CEC0C4C8",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://www.notion.com/de/help/notion-agent",
       "result": "fetched",
       "ok": true,
@@ -2588,14 +2757,14 @@
     },
     {
       "source_id": "SRC-AB4C0E7A5144CC",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
       "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-08-28-cortex-analyst-transition-cortex-agents",
       "content_type": "text/html; charset=utf-8",
-      "etag": "\"nk9n6iramci3l9\"",
+      "etag": "\"6wxny8aq4li3l9\"",
       "last_modified": null,
       "bytes_read": 845309,
       "truncated": false,
@@ -2613,7 +2782,7 @@
     },
     {
       "source_id": "SRC-AC5875DE02CC09",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://docs.workato.com/agentic/agentic.html",
       "result": "fetched",
       "ok": true,
@@ -2638,7 +2807,7 @@
     },
     {
       "source_id": "SRC-ACD544A96FB2CA",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.factory.ai/",
       "result": "not_modified",
       "ok": true,
@@ -2662,8 +2831,49 @@
       "active": true
     },
     {
+      "source_id": "SRC-B1431F4DD8068F",
+      "checked_at": "2026-10-01T13:00:47Z",
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/get-started.html",
+      "result": "http_error",
+      "ok": false,
+      "status_code": 403,
+      "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/get-started.html",
+      "error": "HTTP Error 403: Forbidden",
+      "consecutive_failures": 1,
+      "source_title": "Salesforce Developers – Agentforce",
+      "agent_ids": [
+        "AI-0029"
+      ],
+      "active": true
+    },
+    {
+      "source_id": "SRC-B16BE381A4939B",
+      "checked_at": "2026-10-01T13:00:46Z",
+      "url": "https://cloud.ibm.com/catalog/services/watsonx-orchestrate",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://cloud.ibm.com/catalog/services/watsonx-orchestrate",
+      "content_type": "text/html",
+      "etag": null,
+      "last_modified": null,
+      "bytes_read": 2196444,
+      "truncated": false,
+      "text_hash": "318f24b8352b5c45009267608462391ac67fa592327f62ed125fabf7dba30a7e",
+      "simhash64": "079dfa96db0793c7",
+      "token_count": 20,
+      "text_length": 134,
+      "text_sample": "watsonx Orchestrate - IBM Cloud Summary watsonx Orchestrate Already have an account? Log in Zum Erstellen registrieren Add to estimate",
+      "consecutive_failures": 0,
+      "source_title": "IBM Cloud – watsonx Orchestrate",
+      "agent_ids": [
+        "AI-0026"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-B172502290090F",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://www.luminance.com/solutions/legal/",
       "result": "not_modified",
       "ok": true,
@@ -2688,7 +2898,7 @@
     },
     {
       "source_id": "SRC-B445BD56EF9A9B",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:48Z",
       "url": "https://docs.relay.app/getting-started/readme",
       "result": "not_modified",
       "ok": true,
@@ -2712,8 +2922,33 @@
       "active": true
     },
     {
+      "source_id": "SRC-B6A803A2C827C8",
+      "checked_at": "2026-10-01T13:00:51Z",
+      "url": "https://github.com/microsoft/agent-framework",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://github.com/microsoft/agent-framework",
+      "content_type": "text/html; charset=utf-8",
+      "etag": "W/\"0f85c259a25a9c1617de486d8d69672a\"",
+      "last_modified": null,
+      "bytes_read": 392643,
+      "truncated": false,
+      "text_hash": "f3a9f55cf4c832cd5e8acb23ab3a4b7b5703482e4e045cafa7d905f5201e88f3",
+      "simhash64": "c713a582a937a5c6",
+      "token_count": 1426,
+      "text_length": 10608,
+      "text_sample": "microsoft / agent-framework Public Notifications You must be signed in to change notification settings Fork 2.4k Star 13.9k main Branches Tags Go to file Code Open more actions menu Latest commit History 3,389 Commits 3,389 Commits Folders and files Name Name Last commit message Last commit date .devcontainer .devcontainer .github .github .vscode .vscode declarative-agents declarative-agents docs docs dotnet dotnet go go python python .gitattributes .gitattributes .gitignore .gitignore CODE_OF_CONDUCT.md CODE_OF_CONDUCT.md COMMUNITY.md COMMUNITY.md CONTRIBUTING.md CONTRIBUTING.md LICENSE LICENSE README.md README.md SECURITY.md SECURITY.md SUPPORT.md SUPPORT.md TRANSPARENCY_FAQ.md TRANSPARENCY_FAQ.md es-metadata.yml es-metadata.yml View all files Repository files navigation Welcome to Microsoft Agent Framework! Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python . Microsoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python, .NET and Go, while keepin",
+      "consecutive_failures": 0,
+      "source_title": "Microsoft GitHub – Agent Framework",
+      "agent_ids": [
+        "AI-0086"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-B759F07FEA0197",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:57Z",
       "url": "https://support.claude.com/de/articles/16761823-claude-cowork-und-chat-sind-ein-claude",
       "result": "fetched",
       "ok": true,
@@ -2748,7 +2983,7 @@
       "agent_ids": [
         "AI-0037"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-BA2CBBD2E17D4D",
@@ -2764,11 +2999,11 @@
       "agent_ids": [
         "AI-0006"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-BE8FF82BB035DD",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://crewai.com/agent-management-platform",
       "result": "fetched",
       "ok": true,
@@ -2793,12 +3028,12 @@
     },
     {
       "source_id": "SRC-BE966A5EB0C0A7",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:47Z",
       "url": "https://blog.google/intl/de-de/unternehmen/technologie/sundar-pichai-io-2026/",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Google – I/O 2026 Sundar Pichai Keynote",
       "agent_ids": [
         "AI-0053"
@@ -2819,19 +3054,19 @@
       "agent_ids": [
         "AI-0109"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-BFD7538ABBF2BD",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:48Z",
       "url": "https://docs.gitlab.com/user/get_started/get_started_agent_platform/",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://docs.gitlab.com/user/get_started/get_started_agent_platform/",
       "content_type": "text/html; charset=utf-8",
-      "etag": "W/\"d519f1283ef78deca83cae1293e4c61b671b8605af3e6f9559992ba830be4b94-br\"",
-      "last_modified": "Thu, 01 Oct 2026 11:15:56 GMT",
+      "etag": "W/\"0604108b773af970f00ea33c55ccc3377b177a995e7cbb8ecbf95458337be363-br\"",
+      "last_modified": "Thu, 01 Oct 2026 12:11:49 GMT",
       "bytes_read": 35039,
       "truncated": false,
       "text_hash": "73c7fdbeffcc327e28e3727a557ad39f6f79d0277ef65900b150110422464b42",
@@ -2860,16 +3095,16 @@
       "agent_ids": [
         "AI-0017"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-C0E7744B648035",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.genspark.ai/",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Genspark",
       "agent_ids": [
         "AI-0072",
@@ -2879,7 +3114,7 @@
     },
     {
       "source_id": "SRC-C2124F836BDEC4",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://ecosystem.hubspot.com/de/marketplace/breeze-agents/all",
       "result": "not_modified",
       "ok": true,
@@ -2914,11 +3149,11 @@
       "agent_ids": [
         "AI-0025"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-C3CA0E656398C2",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://elicit.com/blog/introducing-elicit-research-agent",
       "result": "fetched",
       "ok": true,
@@ -2943,7 +3178,7 @@
     },
     {
       "source_id": "SRC-C471958885FA30",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://www.warp.dev/agent-cli",
       "result": "fetched",
       "ok": true,
@@ -2968,7 +3203,7 @@
     },
     {
       "source_id": "SRC-C54E9C61FB54B5",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://tray.ai/documentation/platform/artificial-intelligence/agent-builder/getting-started",
       "result": "fetched",
       "ok": true,
@@ -3003,11 +3238,11 @@
       "agent_ids": [
         "AI-0030"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-C7E8D19AE92D0B",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://help.zapier.com/hc/en-us/articles/45863491098893-Add-tools-to-your-AI-by-Zapier-step",
       "result": "fetched",
       "ok": true,
@@ -3032,7 +3267,7 @@
     },
     {
       "source_id": "SRC-C8A2B8D94A2D87",
-      "checked_at": "2026-10-01T11:47:53Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://www.qualified.com/",
       "result": "not_modified",
       "ok": true,
@@ -3057,14 +3292,14 @@
     },
     {
       "source_id": "SRC-CA1CF85B724008",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://openai.com/de-DE/chatgpt-work/",
       "result": "http_error",
       "ok": false,
       "status_code": 403,
       "final_url": "https://openai.com/de-DE/chatgpt-work/",
       "error": "HTTP Error 403: Forbidden",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "OpenAI – ChatGPT Work für jedes Team",
       "agent_ids": [
         "AI-0051"
@@ -3073,15 +3308,41 @@
     },
     {
       "source_id": "SRC-CA52EC1BB01592",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://www.perplexity.ai/comet/de",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Perplexity – Comet Browser",
       "agent_ids": [
         "AI-0055"
+      ],
+      "active": true
+    },
+    {
+      "source_id": "SRC-CCF09CEC930C02",
+      "checked_at": "2026-10-01T13:00:56Z",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://www.microsoft.com/en-us/copilot/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
+      "content_type": "text/html; charset=UTF-8",
+      "etag": null,
+      "last_modified": null,
+      "bytes_read": 251970,
+      "truncated": false,
+      "text_hash": "c3eaa4acd9cd766991193708403d673dc2352686c1aee806c5e1bbf5917b1cb1",
+      "simhash64": "7727edeca4ff4b8e",
+      "token_count": 775,
+      "text_length": 4853,
+      "text_sample": "Today, we’re excited to announce the general availability of Researcher and Analyst, two first-of-their-kind reasoning agents designed specifically for work. Since these agents debuted in April through the Frontier program, early users are increasingly turning to them to complete complex, analytical work in minutes—saving time and resources. 1 Now, these powerful agents are available to everyone with a Microsoft 365 Copilot license . Researcher helps you tackle multi-step research at work—delivering insights with greater quality and accuracy than previously possible. It combines OpenAI’s deep research model with Microsoft 365 Copilot’s advanced orchestration and deep search capabilities. Early adopters have used Researcher to quickly assess the impact of tariffs on business lines, prepare for vendor negotiations, and gather client insights ahead of sales calls. Analyst thinks like a skilled data scientist, so you can go from raw data to insights in minutes. Built on OpenAI’s o3-mini reasoning model and optimized to do advanced data analysis at work, Analyst uses chain-of-thought reasoning to progress through problems iteratively, taking as many steps as necessary to refine its reas",
+      "consecutive_failures": 0,
+      "source_title": "Microsoft 365 Blog – Researcher and Analyst GA",
+      "agent_ids": [
+        "AI-0005",
+        "AI-0037"
       ],
       "active": true
     },
@@ -3097,11 +3358,61 @@
       "agent_ids": [
         "AI-0044"
       ],
+      "active": false
+    },
+    {
+      "source_id": "SRC-D152D80AE853AD",
+      "checked_at": "2026-10-01T13:00:56Z",
+      "url": "https://www.servicenow.com/docs/r/intelligent-experiences/ai-agent-landing-page.html",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://www.servicenow.com/docs/r/intelligent-experiences/ai-agent-landing-page.html",
+      "content_type": "text/html;charset=UTF-8",
+      "etag": null,
+      "last_modified": null,
+      "bytes_read": 8639,
+      "truncated": false,
+      "text_hash": "b59286232e649db41344d2d4dd63b929b94f6396c889ba5d86ad0d596209c0c7",
+      "simhash64": "0081f480faaa0caf",
+      "token_count": 5,
+      "text_length": 59,
+      "text_sample": "Produktdokumentation | ServiceNow Anwendung wird geladen...",
+      "consecutive_failures": 0,
+      "source_title": "ServiceNow Docs – Available AI agents",
+      "agent_ids": [
+        "AI-0035"
+      ],
+      "active": true
+    },
+    {
+      "source_id": "SRC-D17597AE7FE9DC",
+      "checked_at": "2026-10-01T13:00:48Z",
+      "url": "https://developers.openai.com/learn/codex",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://developers.openai.com/learn/codex",
+      "content_type": "text/html; charset=utf-8",
+      "etag": "\"98d17929a8d1deb4dbd8d4cb85cfa834\"",
+      "last_modified": "Thu, 01 Oct 2026 05:22:53 GMT",
+      "bytes_read": 371416,
+      "truncated": false,
+      "text_hash": "37cc28c173ddc44c303a54a7c1da9dfd413874f1ba5fb614bd2ba0cdd27c65cb",
+      "simhash64": "d5903e253b0d0913",
+      "token_count": 256,
+      "text_length": 1689,
+      "text_sample": "Codex OpenAI Developers plugin Install and use the OpenAI Developers plugin in Codex, Claude Code, or Cursor. guide Codex for (almost) everything See the latest Codex app updates for working across more of the software development lifecycle. video Codex Prompting Guide Codex models advance the frontier of intelligence and efficiency and our recommended agentic coding model. Follow this guide closely to ensure you’re getting th cookbook Introducing the Codex app See the Codex app in action and how it helps you build and ship faster. video Codex in JetBrains IDEs How to use Codex inside JetBrains IDEs like Rider, IntelliJ, PyCharm, and WebStorm. video Modernizing your Codebase with Codex Cookbook to modernize legacy codebases using the OpenAI Codex CLI. cookbook Codex code review Walkthrough of how Codex drives end-to-end pull request reviews with the new onboarding flow. video Build beautiful frontends with OpenAI Codex Learn how OpenAI Codex's multimodal abilities accelerate frontend development. video Context Engineering & Coding Agents with Cursor Session on structuring context for agent workflows inside the Cursor editor. video OpenAI Codex in your code editor Walkthrough of the",
+      "consecutive_failures": 0,
+      "source_title": "OpenAI Developers – Codex",
+      "agent_ids": [
+        "AI-0006"
+      ],
       "active": true
     },
     {
       "source_id": "SRC-D29DC3A8CA98DF",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://jules.google/",
       "result": "not_modified",
       "ok": true,
@@ -3126,7 +3437,7 @@
     },
     {
       "source_id": "SRC-D4108B708F7228",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://opencode.ai/",
       "result": "fetched",
       "ok": true,
@@ -3151,14 +3462,14 @@
     },
     {
       "source_id": "SRC-D53562C9899562",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:51Z",
       "url": "https://help.openai.com/de-de/articles/10500283-deep-research",
       "result": "http_error",
       "ok": false,
       "status_code": 403,
       "final_url": "https://help.openai.com/de-de/articles/10500283-deep-research",
       "error": "HTTP Error 403: Forbidden",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "OpenAI Help – Deep Research in ChatGPT",
       "agent_ids": [
         "AI-0001"
@@ -3166,16 +3477,41 @@
       "active": true
     },
     {
+      "source_id": "SRC-D61E92A7138D98",
+      "checked_at": "2026-10-01T13:00:55Z",
+      "url": "https://www.qodo.ai/ai-code-review-platform/",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://www.qodo.ai/ai-code-review-platform/",
+      "content_type": "text/html; charset=UTF-8",
+      "etag": null,
+      "last_modified": "Fri, 18 Sep 2026 13:56:56 GMT",
+      "bytes_read": 145327,
+      "truncated": false,
+      "text_hash": "3f304aff6abe98107285d5440c28e74bca428af46468073f5a16d1fb18a785b9",
+      "simhash64": "f7bef74ccacedc42",
+      "token_count": 529,
+      "text_length": 3743,
+      "text_sample": "The ai code governance platform The layer between “AI wrote it” and production. Maintain code quality, enforce standards, and govern code at AI velocity. Qodo is the AI Code Governance Platform. Book a Demo Start Trial 01 quality Catch issues before they compound Review capacity hasn’t scaled with AI-driven code volume. Qodo runs multi-agent code review across the SDLC, surfacing real issues with full codebase context and less noise. 02 control Enforce standards consistently Conventions in wikis can’t be enforced at AI velocity. Qodo applies your standards across every team, repo, and change. 03 visibility See where risk lives Leaders can’t see where standards are decaying. Qodo gives centralized visibility into quality, compliance, and rule adoption. for developers and reviewers for engineering leaders review across the sdlc Quality gateways across the SDLC High-precision reviews with specialized agents that reason over full organizational and codebase context. Real issues, less noise. Pull request review Agentic suggestions, issue findings, persona-specific reviews. Pre-PR review Local code review in the IDE before you commit. Review skills Structured fixes with evidence and clea",
+      "consecutive_failures": 0,
+      "source_title": "Qodo – AI Code Review Platform",
+      "agent_ids": [
+        "AI-0068"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-D77EDBC84F5A8C",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:55Z",
       "url": "https://www.langchain.com/blog/introducing-deploy-cli",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.langchain.com/blog/introducing-deploy-cli",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Wed, 30 Sep 2026 22:47:05 GMT",
+      "last_modified": "Thu, 01 Oct 2026 13:00:55 GMT",
       "bytes_read": 153743,
       "truncated": false,
       "text_hash": "6e8488c4fb78e9f8b56975e998bec2451a78de1051f63deebd1b209d488d6f45",
@@ -3202,19 +3538,19 @@
       "agent_ids": [
         "AI-0079"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-D8D95B116036A2",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:46Z",
       "url": "https://decagon.ai/",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://decagon.ai/",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Thu, 01 Oct 2026 11:40:29 GMT",
+      "last_modified": "Thu, 01 Oct 2026 13:00:47 GMT",
       "bytes_read": 395660,
       "truncated": false,
       "text_hash": "d959a1e0b63859f4288860d6f108daf1a4796255c9d2ef89a1bf4f310ca4ea28",
@@ -3231,7 +3567,7 @@
     },
     {
       "source_id": "SRC-DAF5D9FF6B9CFD",
-      "checked_at": "2026-10-01T11:47:52Z",
+      "checked_at": "2026-10-01T13:00:54Z",
       "url": "https://www.augmentcode.com/",
       "result": "not_modified",
       "ok": true,
@@ -3256,12 +3592,12 @@
     },
     {
       "source_id": "SRC-E17879D619AB68",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:56Z",
       "url": "https://www.perplexity.ai/de/hub/blog/the-new-comet-assistant",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Perplexity – Der neue Comet Assistant",
       "agent_ids": [
         "AI-0055"
@@ -3270,15 +3606,15 @@
     },
     {
       "source_id": "SRC-E2AB4BC34E6EF7",
-      "checked_at": "2026-10-01T11:47:50Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://news.zoom.com/zoom-launches-zoommate/",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://news.zoom.com/zoom-launches-zoommate/",
       "content_type": "text/html; charset=UTF-8",
       "etag": null,
-      "last_modified": "Thu, 01 Oct 2026 11:44:29 GMT",
+      "last_modified": "Thu, 01 Oct 2026 13:00:52 GMT",
       "bytes_read": 170725,
       "truncated": false,
       "text_hash": "5d38e23a39cb6957734e7de4188d46636e25fbede4006142fee89e1f9701d2c5",
@@ -3295,7 +3631,7 @@
     },
     {
       "source_id": "SRC-E2C9235A74DFE4",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:48Z",
       "url": "https://docs.glean.com/agents",
       "result": "not_modified",
       "ok": true,
@@ -3319,6 +3655,56 @@
       "active": true
     },
     {
+      "source_id": "SRC-E2E14FE94969E1",
+      "checked_at": "2026-10-01T13:00:47Z",
+      "url": "https://docs.cognigy.com/ai/agents/deploy/deploying-your-ai-agents",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://docs.cognigy.com/ai/agents/deploy/deploying-your-ai-agents",
+      "content_type": "text/html; charset=utf-8",
+      "etag": "W/\"xwaldsdj1zi9p\"",
+      "last_modified": null,
+      "bytes_read": 1657209,
+      "truncated": false,
+      "text_hash": "3f1722622f01cb6848d7a29fd13c5c64df7cc78e1f8c673a99c14ef229279711",
+      "simhash64": "8d96f245c602b717",
+      "token_count": 77,
+      "text_length": 521,
+      "text_sample": "Deploy AI Agents using Cognigy Endpoints such as Webchat, WhatsApp, Voice Gateway, Amazon, Twilio, and others. Learn how to use Snapshots to save and move AI Agents across different Projects and environments. Endpoints Learn how to connect your AI Agents to different third-party providers via Endpoints. Endpoint Reference Explore detailed documentation for configuring Endpoints. Snapshots See how to create and manage Snapshots to move AI Agents across Projects and environments. Last modified on September 3, 2026 ⌘ I",
+      "consecutive_failures": 0,
+      "source_title": "Cognigy Docs – Deploying your AI Agents",
+      "agent_ids": [
+        "AI-0099"
+      ],
+      "active": true
+    },
+    {
+      "source_id": "SRC-E4304DC7278134",
+      "checked_at": "2026-10-01T13:00:57Z",
+      "url": "https://www.servicenow.com/docs/r/zurich/delta-xanadu-zurich/zurich-xanadu-servicenowotto-release-notes.html",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://www.servicenow.com/docs/r/zurich/delta-xanadu-zurich/zurich-xanadu-servicenowotto-release-notes.html",
+      "content_type": "text/html;charset=UTF-8",
+      "etag": null,
+      "last_modified": null,
+      "bytes_read": 8639,
+      "truncated": false,
+      "text_hash": "b59286232e649db41344d2d4dd63b929b94f6396c889ba5d86ad0d596209c0c7",
+      "simhash64": "0081f480faaa0caf",
+      "token_count": 5,
+      "text_length": 59,
+      "text_sample": "Produktdokumentation | ServiceNow Anwendung wird geladen...",
+      "consecutive_failures": 0,
+      "source_title": "ServiceNow Docs – Otto release notes",
+      "agent_ids": [
+        "AI-0036"
+      ],
+      "active": true
+    },
+    {
       "source_id": "SRC-E478A6C04604AF",
       "checked_at": "2026-10-01T11:47:49Z",
       "url": "https://knowledge.hubspot.com/de/prospecting/use-the-prospecting-agent",
@@ -3330,11 +3716,11 @@
       "agent_ids": [
         "AI-0045"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-E785CAF26D5119",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/about-agents",
       "result": "fetched",
       "ok": true,
@@ -3359,7 +3745,7 @@
     },
     {
       "source_id": "SRC-E86872397AB0AE",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:51Z",
       "url": "https://dust.tt/",
       "result": "fetched",
       "ok": true,
@@ -3384,15 +3770,40 @@
     },
     {
       "source_id": "SRC-E99196D1B5A597",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://law.vlex.com/vincent",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "vLex – Vincent",
       "agent_ids": [
         "AI-0108"
+      ],
+      "active": true
+    },
+    {
+      "source_id": "SRC-EA5DC9B988E482",
+      "checked_at": "2026-10-01T13:00:52Z",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/how-to-create-data-agent.md",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/how-to-create-data-agent.md",
+      "content_type": "text/html; charset=utf-8",
+      "etag": "W/\"51f81c8d861cb453b8b13d4617307c52\"",
+      "last_modified": null,
+      "bytes_read": 376796,
+      "truncated": false,
+      "text_hash": "169288aa011c97241e8691a8ff32ed83467c1cce0266e806f6eb20a1d0d3b720",
+      "simhash64": "ae5e56c7abd5bafa",
+      "token_count": 3368,
+      "text_length": 22963,
+      "text_sample": "MicrosoftDocs / fabric-docs Public Notifications You must be signed in to change notification settings Fork 13 Star 11 Files Expand file tree main / how-to-create-data-agent.md Copy path Blame More file actions Blame More file actions Latest commit History History History 249 lines (143 loc) · 23.5 KB main / how-to-create-data-agent.md Copy path Top File metadata and controls Preview Code Blame 249 lines (143 loc) · 23.5 KB Raw Copy raw file Download raw file Outline Edit and raw actions title Create a Fabric data agent description Learn how to create a Fabric data agent. ms.author scottpolly author s-polly ms.reviewer amjafari ms.topic how-to ms.date 05/20/2026 ms.update-cycle 180-days ms.collection ce-skilling-ai-copilot ai-usage ai-assisted Create a Fabric data agent With a data agent in Microsoft Fabric, you can create conversational AI experiences that answer questions about data stored in lakehouses, warehouses, Power BI semantic models, KQL databases, ontologies, and Microsoft Graph in Fabric. Your colleagues can ask questions in plain English and receive data-driven answers, even if they aren't AI experts or deeply familiar with the data. [!INCLUDE data-agent-prerequisites ",
+      "consecutive_failures": 0,
+      "source_title": "MicrosoftDocs GitHub – Fabric Data Agent",
+      "agent_ids": [
+        "AI-0106"
       ],
       "active": true
     },
@@ -3410,11 +3821,11 @@
       "agent_ids": [
         "AI-0036"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-EDBC70D612C899",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:57Z",
       "url": "https://www.snowflake.com/de/product/snowflake-cowork/",
       "result": "not_modified",
       "ok": true,
@@ -3439,7 +3850,7 @@
     },
     {
       "source_id": "SRC-EDDCF57F040D37",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://docs.windsurf.com/windsurf/cascade",
       "result": "not_modified",
       "ok": true,
@@ -3464,7 +3875,7 @@
     },
     {
       "source_id": "SRC-EDF88A4AB7CC22",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:48Z",
       "url": "https://docs.glean.com/agents/introduction",
       "result": "not_modified",
       "ok": true,
@@ -3489,12 +3900,12 @@
     },
     {
       "source_id": "SRC-EE5CC1D6AD49AC",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:57Z",
       "url": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "Perplexity Help – Subscription Plans",
       "agent_ids": [
         "AI-0004"
@@ -3503,7 +3914,7 @@
     },
     {
       "source_id": "SRC-EEEB2D1D339F85",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:50Z",
       "url": "https://help.consensus.app/en/articles/12641232-research-agent",
       "result": "fetched",
       "ok": true,
@@ -3528,7 +3939,7 @@
     },
     {
       "source_id": "SRC-EF3FDCFF2E9447",
-      "checked_at": "2026-10-01T11:47:54Z",
+      "checked_at": "2026-10-01T13:00:57Z",
       "url": "https://you.com/",
       "result": "fetched",
       "ok": true,
@@ -3537,7 +3948,7 @@
       "content_type": "text/html; charset=utf-8",
       "etag": null,
       "last_modified": null,
-      "bytes_read": 395017,
+      "bytes_read": 395020,
       "truncated": false,
       "text_hash": "6c126479435024f9296344f75ca44014513260aa9714d441b3c1d52caac324fe",
       "simhash64": "e34432e80404084a",
@@ -3553,7 +3964,7 @@
     },
     {
       "source_id": "SRC-F01113D0D2514F",
-      "checked_at": "2026-10-01T11:47:47Z",
+      "checked_at": "2026-10-01T13:00:48Z",
       "url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772",
       "result": "fetched",
       "ok": true,
@@ -3578,12 +3989,12 @@
     },
     {
       "source_id": "SRC-F1EDCC027511E4",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:52Z",
       "url": "https://knowledge.vlex.com/en/features/vincent/find-related-documents",
       "result": "robots_disallowed",
       "ok": false,
       "error": "robots.txt disallows monitoring path",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "source_title": "vLex – Vincent features",
       "agent_ids": [
         "AI-0108"
@@ -3592,16 +4003,16 @@
     },
     {
       "source_id": "SRC-F3E6A34268E7EE",
-      "checked_at": "2026-10-01T11:47:46Z",
+      "checked_at": "2026-10-01T13:00:47Z",
       "url": "https://docs.11x.ai/alice/overview",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://docs.11x.ai/alice/overview",
       "content_type": "text/html; charset=utf-8",
-      "etag": "\"i2hogg41fw5re5\"",
+      "etag": "\"15qdkyw66v55ruw\"",
       "last_modified": null,
-      "bytes_read": 268935,
+      "bytes_read": 269538,
       "truncated": false,
       "text_hash": "2ae5c8f9db03610b25384bc4926e48956599c544fb5501ba01004f4782eac5a4",
       "simhash64": "d3d25eb0b2df32c1",
@@ -3617,7 +4028,7 @@
     },
     {
       "source_id": "SRC-F4A9B9DA5258C3",
-      "checked_at": "2026-10-01T11:47:48Z",
+      "checked_at": "2026-10-01T13:00:49Z",
       "url": "https://docs.mistral.ai/vibe",
       "result": "not_modified",
       "ok": true,
@@ -3654,6 +4065,56 @@
       "agent_ids": [
         "AI-0057"
       ],
+      "active": false
+    },
+    {
+      "source_id": "SRC-F66C4A661BF2D1",
+      "checked_at": "2026-10-01T13:00:47Z",
+      "url": "https://developer.monday.com/api-reference/reference/agents",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://developer.monday.com/api-reference/reference/agents",
+      "content_type": "text/html; charset=utf-8",
+      "etag": null,
+      "last_modified": null,
+      "bytes_read": 1436784,
+      "truncated": false,
+      "text_hash": "53ccbd9b82d55ef1594c824b79001215d9311f4b952a9d57d71dc8d397e444bf",
+      "simhash64": "93ad7bfcb56aef43",
+      "token_count": 3335,
+      "text_length": 23569,
+      "text_sample": "🚧 Pre-release feature. The agents API is currently available only in the dev (pre-release) API version. It is not included in any dated API version yet (including 2026-10 ). Signatures, types, and behavior can still change before this lands in a dated version. Send requests with the API-Version: dev header to use it. monday.com agents are AI work orchestrators that can be triggered to perform automated actions on monday.com boards, items, and updates. An agent has a profile (name, role, avatar), a goal, an execution plan, an optional set of skills, knowledge resources (boards and docs it can access), and triggers that start its runs. For an overview of the agent model and how to connect external agents, see Build on monday.com with AI . There are three kinds of agent: Personal — owned by a specific user and created from a prompt or built blank. Account-level — available to the entire account. External — brought into monday.com from an external provider (managed providers like a Claude-managed agent, or a custom agent reachable via a callback URL). See Connect external agents . Newly created agents start in the INACTIVE state and cannot be triggered until activated. Queries Get agen",
+      "consecutive_failures": 0,
+      "source_title": "monday.com Developer – Agents API",
+      "agent_ids": [
+        "AI-0095"
+      ],
+      "active": true
+    },
+    {
+      "source_id": "SRC-FA277DEE419CA4",
+      "checked_at": "2026-10-01T13:00:53Z",
+      "url": "https://university.clay.com/docs/claygent-builder",
+      "result": "fetched",
+      "ok": true,
+      "status_code": 200,
+      "final_url": "https://university.clay.com/docs/claygent-builder",
+      "content_type": "text/html; charset=utf-8",
+      "etag": null,
+      "last_modified": "Wed, 30 Sep 2026 22:43:42 GMT",
+      "bytes_read": 107892,
+      "truncated": false,
+      "text_hash": "e214e09c33f974b60d8d597cad3f869487dc9839376e59fcab6d2968c79f786f",
+      "simhash64": "6145fdafe3d82513",
+      "token_count": 2264,
+      "text_length": 13652,
+      "text_sample": "All docs / Gen AI / Claygent Builder Claygent Builder Build smarter agents faster Overview Claygent Builder is the centralized hub for building, testing, and deploying Claygents — Clay's AI agents designed for judgment-based GTM work like account research, lead scoring, outbound copywriting, and persona classification. With Claygent Builder, you can build agents conversationally using Sculptor, test for free on your production data, add business context and documents directly to your prompts, save reusable methodologies as skills, and deploy agents across all your workflows from one place. For example, you could create: Lead scoring agent : Evaluates prospects against your ICP and outputs a score (1-100) with rationale. Outbound email agent : Writes personalized cold emails using your ICP definition, tone guidelines, and enriched data. Account research agent : Summarizes what a company is doing right now, surfaces recent news, funding events, and hiring signals. Persona classification agent : Categorizes contacts by tier, buying role, or persona type. Getting to Claygent Builder Click Agents in the left-hand navigation bar. Three ways to start building: From scratch — blank canvas ",
+      "consecutive_failures": 0,
+      "source_title": "Clay Docs – Claygent Builder",
+      "agent_ids": [
+        "AI-0104"
+      ],
       "active": true
     },
     {
@@ -3668,7 +4129,7 @@
       "agent_ids": [
         "AI-0106"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-FB71ED86197B25",
@@ -3682,19 +4143,19 @@
       "agent_ids": [
         "AI-0042"
       ],
-      "active": true
+      "active": false
     },
     {
       "source_id": "SRC-FBD9724DD1A9DE",
-      "checked_at": "2026-10-01T11:47:51Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://www.11x.ai/worker/alice",
-      "result": "not_modified",
+      "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://www.11x.ai/worker/alice",
       "content_type": "text/html; charset=utf-8",
       "etag": null,
-      "last_modified": "Wed, 30 Sep 2026 03:33:28 GMT",
+      "last_modified": "Thu, 01 Oct 2026 13:00:53 GMT",
       "bytes_read": 249609,
       "truncated": false,
       "text_hash": "3c42b95b3dff4172211f89151a134b3b1335110bf2294dcd45ab929409e26896",
@@ -3711,16 +4172,16 @@
     },
     {
       "source_id": "SRC-FC6D48AE587B21",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:53Z",
       "url": "https://github.com/features/copilot/agents",
       "result": "fetched",
       "ok": true,
       "status_code": 200,
       "final_url": "https://github.com/features/copilot/agents",
       "content_type": "text/html; charset=utf-8",
-      "etag": "W/\"5ec3ada183f2c470fbe6c8d74747caf8\"",
+      "etag": "W/\"bf37d77255690c464212527c98c485a8\"",
       "last_modified": null,
-      "bytes_read": 308383,
+      "bytes_read": 308350,
       "truncated": false,
       "text_hash": "ae801202ec060e8be301abc88f5b7c9ac920e177acd7fdf37c93fb71c57acf6c",
       "simhash64": "58f4a52d523ae4f8",
@@ -3736,7 +4197,7 @@
     },
     {
       "source_id": "SRC-FDD2C49D215CAB",
-      "checked_at": "2026-10-01T11:47:49Z",
+      "checked_at": "2026-10-01T13:00:50Z",
       "url": "https://help.mistral.ai/en/articles/682992-le-chat-is-now-vibe",
       "result": "fetched",
       "ok": true,

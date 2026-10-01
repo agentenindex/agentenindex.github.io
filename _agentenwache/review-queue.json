@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T11:47:57Z",
-  "open_count": 7,
+  "updated_at": "2026-10-01T13:00:58Z",
+  "open_count": 10,
   "items": [
     {
       "review_id": "REV-0E528BB51ED396EA2E",
@@ -58,11 +58,53 @@
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
     },
     {
+      "review_id": "REV-5224C43C4FE1DC7E75",
+      "status": "open",
+      "first_detected": "2026-10-01T13:00:46Z",
+      "last_detected": "2026-10-01T13:00:46Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-78C111BF205ABB",
+      "source_title": "Cline – Official Site",
+      "url": "https://cline.bot/",
+      "agent_ids": [
+        "AI-0016"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://cline.bot/",
+        "text_hash": "1dda2ccd9bcf7cb1676379dfffe01c33a642354a944367b450c0be5a876a3547",
+        "simhash64": "6a6f115e689954bf",
+        "token_count": 448,
+        "text_sample": "Cline - AI Coding, Open Source and Open Choice The Open Coding Agent Ship securely w/ Claude in VS Code One open source agent runtime. Use it in your editor, your terminal, or embed it in your own products. Trusted by 11M + developers . Desktop New CLI Terminal IDE Extension SDK Embed Cline for Desktop: the coding agent as a native desktop app. No editor required. Download for Mac Download for Windows Download for Linux v 0.0.40 · macOS, Windows & Linux Explore Cline for Desktop Ready to experience AI coding without limits? Get Started 11M + installs across all platforms marketplace + open vsx registry 69.6k stars Trusted by developers and leaders at See Cline at work One agent across your IDE, terminal, and SDK. Pick a task and watch it run. Understand Refactor Automate Your browser does not support the video tag. Understand your codebase See how a codebase is structured and ask Cline questions about files, dependencies, and behavior. Refactor large codebases Make coordinated changes across large codebases while Cline keeps imports, types, and behavior consistent. Automate with Cline CLI Use Cline CLI in scripts, cron jobs, and CI pipelines to run recurring checks, updates, and cu"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://cline.bot/",
+        "text_hash": "5ba1606f6f046aaca8fb32e70c25a28b7751c936d9906fab1bbd060ad7c957f0",
+        "simhash64": "6a6f115e689954bf",
+        "token_count": 448,
+        "text_sample": "Cline - AI Coding, Open Source and Open Choice The Open Coding Agent Ship securely w/ Claude in VS Code One open source agent runtime. Use it in your editor, your terminal, or embed it in your own products. Trusted by 11M + developers . Desktop New CLI Terminal IDE Extension SDK Embed Cline for Desktop: the coding agent as a native desktop app. No editor required. Download for Mac Download for Windows Download for Linux v 0.0.40 · macOS, Windows & Linux Explore Cline for Desktop Ready to experience AI coding without limits? Get Started 11M + installs across all platforms marketplace + open vsx registry 69.7k stars Trusted by developers and leaders at See Cline at work One agent across your IDE, terminal, and SDK. Pick a task and watch it run. Understand Refactor Automate Your browser does not support the video tag. Understand your codebase See how a codebase is structured and ask Cline questions about files, dependencies, and behavior. Refactor large codebases Make coordinated changes across large codebases while Cline keeps imports, types, and behavior consistent. Automate with Cline CLI Use Cline CLI in scripts, cron jobs, and CI pipelines to run recurring checks, updates, and cu",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "1dda2ccd9bcf7cb1676379dfffe01c33a642354a944367b450c0be5a876a3547",
+        "new_hash": "5ba1606f6f046aaca8fb32e70c25a28b7751c936d9906fab1bbd060ad7c957f0",
+        "simhash_distance": 0,
+        "old_token_count": 448,
+        "new_token_count": 448,
+        "token_delta_pct": 0.0
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-66484F39574C8E3200",
       "status": "open",
       "first_detected": "2026-10-01T11:47:50Z",
-      "last_detected": "2026-10-01T11:47:50Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-01T13:00:52Z",
+      "occurrences": 2,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-4271C275BA8FED",
@@ -82,20 +124,20 @@
       "current": {
         "status_code": 200,
         "final_url": "https://slack.com/intl/de-de/blog/news/ai-powered-interface-for-work",
-        "text_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
-        "simhash64": "9a353ccdb4aa6e30",
-        "token_count": 1470,
+        "text_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "simhash64": "8a353cc5b4aa6e30",
+        "token_count": 1494,
         "text_sample": "6 Min. Lesezeit Diese Woche auf der Dreamforce haben wir Slack eines seiner bisher größten Upgrades verpasst: die vernetzte Oberfläche für KI und Salesforce, die für dein gesamtes Team funktioniert. Jedes Unternehmen investiert gerade in KI, doch es fehlen zwei entscheidende Dinge. Erstens: der Kontext aus Unterhaltungen, der ein langfristiges Gedächtnis und Einblicke liefert und KI damit präziser, handlungsfähiger und vertrauenswürdiger macht. Zweitens: eine kollaborative Oberfläche, die es Mitarbeitenden ermöglicht, diese KI-Tools gemeinsam zu nutzen und voneinander zu lernen. In Slack kommt beides zusammen. So ist Slack zum Betriebssystem für die Arbeit geworden, das alle Mitarbeitenden, Agenten und Plattformen miteinander vernetzt – mit Slackbot als KI-Teammitglied, das dich durch deinen Arbeitsalltag begleitet. Genau das macht Slack zum Einstieg in das agentbasierte Unternehmen – und für Salesforce-Kund:innen auch für Salesforce selbst. Vorhang auf für Slackforce: Der zentrale Einstieg in Salesforce Seit 25 Jahren bauen Salesforce-Kund:innen umfangreiche Kundendaten und Workflows auf, um ihr Geschäft zu steuern. Jetzt können diese Daten dort zum Einsatz kommen, wo Entscheidung",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
-        "new_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "old_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "new_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
         "simhash_distance": 2,
-        "old_token_count": 1494,
-        "new_token_count": 1470,
-        "token_delta_pct": -1.61
+        "old_token_count": 1470,
+        "new_token_count": 1494,
+        "token_delta_pct": 1.63
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -154,11 +196,80 @@
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
     },
     {
+      "review_id": "REV-AFC3D8846CC65D7593",
+      "status": "open",
+      "first_detected": "2026-10-01T13:00:58Z",
+      "last_detected": "2026-10-01T13:00:58Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "source_unavailable",
+      "source_id": "SRC-5A713F5BA417F8",
+      "source_title": "Luminance – Agent Lumi overview",
+      "url": "https://www.luminance.com/resources/videos/agent-lumi-taking-ask-lumi-from-thought-to-action/",
+      "agent_ids": [
+        "AI-0109"
+      ],
+      "previous": null,
+      "current": {
+        "status_code": 404,
+        "final_url": "https://www.luminance.com/resources/videos/agent-lumi-taking-ask-lumi-from-thought-to-action/",
+        "result": "http_error",
+        "error": "HTTP Error 404: Not Found"
+      },
+      "latest_metrics": {
+        "status_code": 404,
+        "baseline_health": true
+      },
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+    },
+    {
+      "review_id": "REV-B4AF2DB2F1B3282B72",
+      "status": "open",
+      "first_detected": "2026-10-01T13:00:52Z",
+      "last_detected": "2026-10-01T13:00:52Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "content_change",
+      "source_id": "SRC-8B382C103B95EA",
+      "source_title": "n8n – AI Agents",
+      "url": "https://n8n.io/ai-agents/",
+      "agent_ids": [
+        "AI-0018"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://n8n.io/ai-agents/",
+        "text_hash": "86a379f500ea748c2e4795e3ed0670e3bfb47d7f282da31be8fc883faac46812",
+        "simhash64": "ddbfe32be54a36d0",
+        "token_count": 2103,
+        "text_sample": "Build Custom AI Agents With Logic & Control | n8n Automation Platform See llms.txt for all machine-readable content. Source availability, 500+ integrations, and support for code give you the flexibility to connect AI models to your business systems at scale. Human-in-the-loop guardrails and the ability to add pre-defined logic give you the confidence they won’t fail. Start building AI agents* Talk to sales *14-day free trial. No credit card needed Over 200k GitHub stars Self host-able SOC2 compliant AI agents and workflows for technical teams at Multi-Agent Systems: For tasks that need a team Coordinate multiple specialized agents (e.g., research, writing, QA) to complete complex workflows. Deep Research Agents: For mining large amounts of data Perform multi-step research with API access and memory to surface clear, structured takeaways. RAG Agents: For when accuracy absolutely matters Retrieve real-time info from docs, wikis, or internal data to generate up-to-date, verified content. Planning Agents: For tasks too large to tackle straight on Break down processes into smaller steps. Decide what happens next – and which agent should execute. Click on image to go to the template AI a"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://n8n.io/ai-agents/",
+        "text_hash": "e15e4409a6e3f0f7cc6992cf33b00337ce64a156b4e49aa89dda6ea9439fe633",
+        "simhash64": "ddb76123f1683640",
+        "token_count": 2154,
+        "text_sample": "Build Custom AI Agents With Logic & Control | n8n Automation Platform See llms.txt for all machine-readable content. Source availability, 500+ integrations, and support for code give you the flexibility to connect AI models to your business systems at scale. Human-in-the-loop guardrails and the ability to add pre-defined logic give you the confidence they won’t fail. Start building AI agents* Talk to sales *14-day free trial. No credit card needed Over 200k GitHub stars Self host-able SOC2 compliant AI agents and workflows for technical teams at Multi-Agent Systems: For tasks that need a team Coordinate multiple specialized agents (e.g., research, writing, QA) to complete complex workflows. Deep Research Agents: For mining large amounts of data Perform multi-step research with API access and memory to surface clear, structured takeaways. RAG Agents: For when accuracy absolutely matters Retrieve real-time info from docs, wikis, or internal data to generate up-to-date, verified content. Planning Agents: For tasks too large to tackle straight on Break down processes into smaller steps. Decide what happens next – and which agent should execute. Click on image to go to the template AI a",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "86a379f500ea748c2e4795e3ed0670e3bfb47d7f282da31be8fc883faac46812",
+        "new_hash": "e15e4409a6e3f0f7cc6992cf33b00337ce64a156b4e49aa89dda6ea9439fe633",
+        "simhash_distance": 10,
+        "old_token_count": 2103,
+        "new_token_count": 2154,
+        "token_delta_pct": 2.43
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-E5D74BB58A9399C244",
       "status": "open",
       "first_detected": "2026-10-01T11:41:55Z",
-      "last_detected": "2026-10-01T11:41:55Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-01T13:00:54Z",
+      "occurrences": 2,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-15C5A1E3CDD01B",
@@ -178,20 +289,20 @@
       "current": {
         "status_code": 200,
         "final_url": "https://www.lindy.ai/",
-        "text_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
-        "simhash64": "acd329c5dea49872",
-        "token_count": 2659,
-        "text_sample": "The AI teammate that will 3x your output. Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo $50 in free credits • No credit card required 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is",
+        "text_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "simhash64": "2cdb69d5dea09872",
+        "token_count": 2649,
+        "text_sample": "The AI teammate that will 3x your output . Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo 7-day free trial • Cancel anytime 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is normal vol",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
-        "new_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "old_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "new_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
         "simhash_distance": 5,
-        "old_token_count": 2649,
-        "new_token_count": 2659,
-        "token_delta_pct": 0.38
+        "old_token_count": 2659,
+        "new_token_count": 2649,
+        "token_delta_pct": -0.38
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },

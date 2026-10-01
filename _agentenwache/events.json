@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T11:47:57Z",
+  "updated_at": "2026-10-01T13:00:58Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -159,6 +159,117 @@
         "token_delta_pct": -1.61
       },
       "previous_checked_at": "2026-10-01T11:44:29Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-1205881E6964FB3063",
+      "detected_at": "2026-10-01T13:00:46Z",
+      "source_id": "SRC-78C111BF205ABB",
+      "agent_ids": [
+        "AI-0016"
+      ],
+      "source_title": "Cline – Official Site",
+      "url": "https://cline.bot/",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "1dda2ccd9bcf7cb1676379dfffe01c33a642354a944367b450c0be5a876a3547",
+        "new_hash": "5ba1606f6f046aaca8fb32e70c25a28b7751c936d9906fab1bbd060ad7c957f0",
+        "simhash_distance": 0,
+        "old_token_count": 448,
+        "new_token_count": 448,
+        "token_delta_pct": 0.0
+      },
+      "previous_checked_at": "2026-10-01T11:47:46Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-5BDF1C6B9D853F73FC",
+      "detected_at": "2026-10-01T13:00:52Z",
+      "source_id": "SRC-8B382C103B95EA",
+      "agent_ids": [
+        "AI-0018"
+      ],
+      "source_title": "n8n – AI Agents",
+      "url": "https://n8n.io/ai-agents/",
+      "change_type": "content_change",
+      "severity": "medium",
+      "metrics": {
+        "old_hash": "86a379f500ea748c2e4795e3ed0670e3bfb47d7f282da31be8fc883faac46812",
+        "new_hash": "e15e4409a6e3f0f7cc6992cf33b00337ce64a156b4e49aa89dda6ea9439fe633",
+        "simhash_distance": 10,
+        "old_token_count": 2103,
+        "new_token_count": 2154,
+        "token_delta_pct": 2.43
+      },
+      "previous_checked_at": "2026-10-01T11:47:50Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-8C1F25DA9D172FE3B6",
+      "detected_at": "2026-10-01T13:00:52Z",
+      "source_id": "SRC-4271C275BA8FED",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – AI-powered interface for work",
+      "url": "https://slack.com/blog/news/ai-powered-interface-for-work",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "new_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "simhash_distance": 2,
+        "old_token_count": 1470,
+        "new_token_count": 1494,
+        "token_delta_pct": 1.63
+      },
+      "previous_checked_at": "2026-10-01T11:47:50Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-44EC2042BBF39D1561",
+      "detected_at": "2026-10-01T13:00:54Z",
+      "source_id": "SRC-15C5A1E3CDD01B",
+      "agent_ids": [
+        "AI-0020"
+      ],
+      "source_title": "Lindy – AI Tools",
+      "url": "https://www.lindy.ai/tools",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "new_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "simhash_distance": 5,
+        "old_token_count": 2659,
+        "new_token_count": 2649,
+        "token_delta_pct": -0.38
+      },
+      "previous_checked_at": "2026-10-01T11:47:52Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-2DFC26590CDC3CE58B",
+      "detected_at": "2026-10-01T13:00:58Z",
+      "source_id": "SRC-5A713F5BA417F8",
+      "agent_ids": [
+        "AI-0109"
+      ],
+      "source_title": "Luminance – Agent Lumi overview",
+      "url": "https://www.luminance.com/resources/videos/agent-lumi-taking-ask-lumi-from-thought-to-action/",
+      "change_type": "source_unavailable",
+      "severity": "medium",
+      "metrics": {
+        "status_code": 404,
+        "baseline_health": true
+      },
+      "previous_checked_at": null,
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
