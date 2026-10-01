@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T13:37:49Z",
+  "updated_at": "2026-10-01T13:39:50Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -907,6 +907,52 @@
         "baseline_health": true
       },
       "previous_checked_at": null,
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-ABB332410C044B1C43",
+      "detected_at": "2026-10-01T13:39:37Z",
+      "source_id": "SRC-4271C275BA8FED",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – AI-powered interface for work",
+      "url": "https://slack.com/blog/news/ai-powered-interface-for-work",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "new_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "simhash_distance": 2,
+        "old_token_count": 1494,
+        "new_token_count": 1470,
+        "token_delta_pct": -1.61
+      },
+      "previous_checked_at": "2026-10-01T13:37:44Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-F15F73B606F660E65F",
+      "detected_at": "2026-10-01T13:39:38Z",
+      "source_id": "SRC-15C5A1E3CDD01B",
+      "agent_ids": [
+        "AI-0020"
+      ],
+      "source_title": "Lindy – AI Tools",
+      "url": "https://www.lindy.ai/tools",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "new_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "simhash_distance": 5,
+        "old_token_count": 2659,
+        "new_token_count": 2649,
+        "token_delta_pct": -0.38
+      },
+      "previous_checked_at": "2026-10-01T13:37:46Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
