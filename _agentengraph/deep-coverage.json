@@ -32,23 +32,23 @@
     "security.soc2_type2"
   ],
   "state_totals": {
-    "unknown": 1839,
-    "documented_true_or_value": 909,
+    "unknown": 1827,
+    "documented_true_or_value": 921,
     "documented_false": 2
   },
   "domain_totals": {
     "api": {
-      "documented_true_or_value": 46,
-      "unknown": 174
+      "documented_true_or_value": 47,
+      "unknown": 173
     },
     "governance": {
-      "documented_true_or_value": 362,
-      "unknown": 627,
+      "documented_true_or_value": 368,
+      "unknown": 621,
       "documented_false": 1
     },
     "hosting": {
-      "documented_true_or_value": 131,
-      "unknown": 199
+      "documented_true_or_value": 132,
+      "unknown": 198
     },
     "privacy": {
       "documented_true_or_value": 94,
@@ -60,8 +60,8 @@
       "documented_true_or_value": 80
     },
     "security": {
-      "documented_true_or_value": 196,
-      "unknown": 244
+      "documented_true_or_value": 200,
+      "unknown": 240
     }
   },
   "agents": {
@@ -194,9 +194,9 @@
       }
     },
     "AI-0005": {
-      "documented_fields": 7,
-      "unknown_fields": 18,
-      "coverage_pct": 28.0,
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -216,9 +216,9 @@
         "governance.rbac": "documented_true_or_value",
         "governance.custom_roles": "unknown",
         "governance.audit_logs.available": "documented_true_or_value",
-        "governance.audit_logs.api": "unknown",
-        "governance.audit_logs.retention_days": "unknown",
-        "governance.audit_logs.siem_export": "unknown",
+        "governance.audit_logs.api": "documented_true_or_value",
+        "governance.audit_logs.retention_days": "documented_true_or_value",
+        "governance.audit_logs.siem_export": "documented_true_or_value",
         "security.encryption.at_rest": "documented_true_or_value",
         "security.encryption.in_transit": "documented_true_or_value",
         "security.customer_managed_key": "unknown",
@@ -514,20 +514,20 @@
       }
     },
     "AI-0015": {
-      "documented_fields": 5,
-      "unknown_fields": 20,
-      "coverage_pct": 20.0,
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
       "states": {
         "protocols.mcp.client": "documented_true_or_value",
         "protocols.mcp.server": "unknown",
         "protocols.a2a.supported": "unknown",
         "protocols.a2a.client": "unknown",
         "protocols.a2a.server": "unknown",
-        "api.rest": "unknown",
+        "api.rest": "documented_true_or_value",
         "api.webhooks": "unknown",
         "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "documented_true_or_value",
-        "hosting.private_network": "unknown",
+        "hosting.private_network": "documented_true_or_value",
         "privacy.residency.available": "unknown",
         "privacy.residency.customer_region_selectable": "unknown",
         "governance.sso.saml": "unknown",
@@ -539,9 +539,9 @@
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",
         "governance.audit_logs.siem_export": "documented_true_or_value",
-        "security.encryption.at_rest": "unknown",
-        "security.encryption.in_transit": "unknown",
-        "security.customer_managed_key": "unknown",
+        "security.encryption.at_rest": "documented_true_or_value",
+        "security.encryption.in_transit": "documented_true_or_value",
+        "security.customer_managed_key": "documented_true_or_value",
         "security.soc2_type2": "unknown"
       }
     },
@@ -1218,9 +1218,9 @@
       }
     },
     "AI-0037": {
-      "documented_fields": 7,
-      "unknown_fields": 18,
-      "coverage_pct": 28.0,
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1240,9 +1240,9 @@
         "governance.rbac": "documented_true_or_value",
         "governance.custom_roles": "unknown",
         "governance.audit_logs.available": "documented_true_or_value",
-        "governance.audit_logs.api": "unknown",
-        "governance.audit_logs.retention_days": "unknown",
-        "governance.audit_logs.siem_export": "unknown",
+        "governance.audit_logs.api": "documented_true_or_value",
+        "governance.audit_logs.retention_days": "documented_true_or_value",
+        "governance.audit_logs.siem_export": "documented_true_or_value",
         "security.encryption.at_rest": "documented_true_or_value",
         "security.encryption.in_transit": "documented_true_or_value",
         "security.customer_managed_key": "unknown",
@@ -2210,9 +2210,9 @@
       }
     },
     "AI-0068": {
-      "documented_fields": 8,
-      "unknown_fields": 17,
-      "coverage_pct": 32.0,
+      "documented_fields": 9,
+      "unknown_fields": 16,
+      "coverage_pct": 36.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -2235,7 +2235,7 @@
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",
         "governance.audit_logs.siem_export": "unknown",
-        "security.encryption.at_rest": "unknown",
+        "security.encryption.at_rest": "documented_true_or_value",
         "security.encryption.in_transit": "documented_true_or_value",
         "security.customer_managed_key": "unknown",
         "security.soc2_type2": "documented_true_or_value"

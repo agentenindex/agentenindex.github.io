@@ -404,7 +404,16 @@
           "Strukturierte Berichte mit Quellen",
           "Unternehmensberechtigungen werden berücksichtigt"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
         "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          180
+        ],
+        "governance.audit_logs.siem_export": [
           true
         ],
         "governance.rbac": [
@@ -1261,6 +1270,9 @@
         "access.description": [
           "Kiro IDE/CLI; Zugang und Kontingente abhängig vom Angebot"
         ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -1297,6 +1309,9 @@
         "hosting.managed": [
           true
         ],
+        "hosting.private_network": [
+          true
+        ],
         "hosting.self_hosted": [
           true
         ],
@@ -1314,6 +1329,15 @@
         ],
         "protocols.mcp.client": [
           true
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          true
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
         ],
         "use_case": [
           "Automatisierung",
@@ -3432,7 +3456,16 @@
           "Geeignet für Tabellen und Geschäftsdaten",
           "Microsoft-365-Arbeitskontext"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
         "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          180
+        ],
+        "governance.audit_logs.siem_export": [
           true
         ],
         "governance.rbac": [
@@ -6162,6 +6195,9 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          true
         ],
         "security.encryption.in_transit": [
           true

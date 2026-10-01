@@ -2176,6 +2176,20 @@
       "origin": "graph_diff"
     },
     {
+      "event_id": "EVT-56E753BA9D0956DC85",
+      "agent_id": "AI-0005",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.audit_logs.siem_export",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für governance.audit_logs.siem_export hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
       "event_id": "EVT-6214B2D3DAAF5D02C3",
       "agent_id": "AI-0005",
       "date": "2026-10-01",
@@ -2201,6 +2215,34 @@
         true
       ],
       "description": "Strukturierter Wert für governance.audit_logs.available hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-9C775473CF4177898B",
+      "agent_id": "AI-0005",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.audit_logs.api",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für governance.audit_logs.api hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-FCC6394513E5261A9C",
+      "agent_id": "AI-0005",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.audit_logs.retention_days",
+      "before": [],
+      "after": [
+        180
+      ],
+      "description": "Strukturierter Wert für governance.audit_logs.retention_days hat sich geändert.",
       "origin": "graph_diff"
     },
     {
@@ -3397,6 +3439,76 @@
         true
       ],
       "description": "Strukturierter Wert für hosting.self_hosted hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-47C8F4A74A6A58CE3E",
+      "agent_id": "AI-0015",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "hosting.private_network",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für hosting.private_network hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-674BE943FE7DBF79E9",
+      "agent_id": "AI-0015",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.at_rest",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für security.encryption.at_rest hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-89A8F4A49B3D21BB54",
+      "agent_id": "AI-0015",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.customer_managed_key",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für security.customer_managed_key hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-91709935F64DEA87A4",
+      "agent_id": "AI-0015",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.in_transit",
+      "before": [],
+      "after": [
+        "TLS 1.2+"
+      ],
+      "description": "Strukturierter Wert für security.encryption.in_transit hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-B64CB0B3316EC468F2",
+      "agent_id": "AI-0015",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "api.rest",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für api.rest hat sich geändert.",
       "origin": "graph_diff"
     },
     {
@@ -7450,6 +7562,34 @@
       "origin": "graph_diff"
     },
     {
+      "event_id": "EVT-73D486F4E8AED498C3",
+      "agent_id": "AI-0037",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.audit_logs.api",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für governance.audit_logs.api hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-8D362557FB72C4F8FD",
+      "agent_id": "AI-0037",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.audit_logs.retention_days",
+      "before": [],
+      "after": [
+        180
+      ],
+      "description": "Strukturierter Wert für governance.audit_logs.retention_days hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
       "event_id": "EVT-AEB5FFF8C73FB337DE",
       "agent_id": "AI-0037",
       "date": "2026-10-01",
@@ -7490,6 +7630,20 @@
         "SRC-CCF09CEC930C02"
       ],
       "description": "Das Quellen-Set des AgentenProfils hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-E0FAAC71D57F2A70F6",
+      "agent_id": "AI-0037",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.audit_logs.siem_export",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für governance.audit_logs.siem_export hat sich geändert.",
       "origin": "graph_diff"
     },
     {
@@ -11115,6 +11269,20 @@
         "SRC-D61E92A7138D98"
       ],
       "description": "Das Quellen-Set des AgentenProfils hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-6B86ACE7F768A3BD46",
+      "agent_id": "AI-0068",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.at_rest",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für security.encryption.at_rest hat sich geändert.",
       "origin": "graph_diff"
     },
     {

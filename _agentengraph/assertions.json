@@ -3941,6 +3941,48 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-5DBD81ACC53984D3DC",
+      "agent_id": "AI-0005",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-98069F865AF1D3",
+          "SRC-9B852870EB7F68"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_unified_audit_log",
+        "note": "Microsoft 365 Copilot audit events can be retrieved programmatically through the Management Activity API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-98069F865AF1D3",
+            "note": "Microsoft documents the CopilotInteraction audit schema and Copilot events in the Microsoft 365 unified audit log.",
+            "evidence_type": "api_docs",
+            "source_section": "Copilot interaction events overview"
+          },
+          {
+            "source_id": "SRC-9B852870EB7F68",
+            "note": "Microsoft documents the Office 365 Management Activity API as a REST web service for retrieving audit actions and events.",
+            "evidence_type": "api_docs",
+            "source_section": "Overview"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F187ADF198284EA789",
       "agent_id": "AI-0005",
       "path": "governance.audit_logs.available",
@@ -3964,6 +4006,83 @@
             "note": "Microsoft documents audit records for Microsoft 365 Copilot user interactions and AI activities in Microsoft Purview Audit.",
             "evidence_type": "technical_docs",
             "source_section": "Copilot audit events"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-90DC244EC91D3764EE",
+      "agent_id": "AI-0005",
+      "path": "governance.audit_logs.retention_days",
+      "value": 180,
+      "value_hash": "7b69759630f869f2",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1FE381150F8164",
+          "SRC-CC3082A67883F1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_purview_audit_standard_copilot",
+        "note": "Microsoft 365 Copilot audit records are in Audit Standard, whose documented default retention is 180 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CC3082A67883F1",
+            "note": "Microsoft states Microsoft applications and Microsoft Copilots are included in Audit Standard.",
+            "evidence_type": "technical_docs",
+            "source_section": "Billing / Microsoft applications"
+          },
+          {
+            "source_id": "SRC-1FE381150F8164",
+            "note": "Microsoft states Audit Standard logs generated after October 17, 2023 have a default retention of 180 days.",
+            "evidence_type": "technical_docs",
+            "source_section": "Retention"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0D48AF660BB8CC8AE9",
+      "agent_id": "AI-0005",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BAF3A44A80265A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_audit",
+        "note": "Microsoft documents SIEM integration for Copilot/agent audit telemetry.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BAF3A44A80265A",
+            "note": "Microsoft documents SIEM integration paths for Copilot/agent auditing through Microsoft security/telemetry services.",
+            "evidence_type": "technical_docs",
+            "source_section": "Security information and event management (SIEM)"
           }
         ]
       },
@@ -12279,6 +12398,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9F9B2BCF8C87E05CE8",
+      "agent_id": "AI-0015",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CB5776E465A601"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_crew_gateway",
+        "note": "Kiro Crew exposes documented REST endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CB5776E465A601",
+            "note": "Kiro documents direct Gateway REST endpoints using GET/POST/PUT/PATCH/DELETE for Crew applications and services.",
+            "evidence_type": "api_docs",
+            "source_section": "Gateway REST endpoints"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-427262B71CEA0A1903",
       "agent_id": "AI-0015",
       "path": "audience",
@@ -12696,6 +12850,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-2D54F42917EDD16AEC",
+      "agent_id": "AI-0015",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1A3F4755AE6447"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_api_private_connectivity",
+        "note": "Kiro supports private VPC connectivity via AWS PrivateLink.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1A3F4755AE6447",
+            "note": "Kiro documents interface VPC endpoints via AWS PrivateLink so traffic to Kiro APIs stays on the Amazon network without public internet.",
+            "evidence_type": "security_trust",
+            "source_section": "Kiro and interface endpoints"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4887E3241E7BA1C24C",
       "agent_id": "AI-0015",
       "path": "hosting.self_hosted",
@@ -12850,6 +13039,111 @@
             "note": "Kiro documents configuring MCP servers whose tools become available to the Kiro agent.",
             "evidence_type": "technical_docs",
             "source_section": "MCP / Configuration"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3C50A24312A6565E64",
+      "agent_id": "AI-0015",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1B5E1C583B858F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_enterprise",
+        "note": "Kiro Enterprise supports customer-managed KMS keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1B5E1C583B858F",
+            "note": "Kiro Enterprise administrators can create and use customer-managed AWS KMS keys to encrypt their data.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption at rest / customer managed keys"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1D21D09B1DB3D5EE25",
+      "agent_id": "AI-0015",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1B5E1C583B858F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_data",
+        "note": "Kiro encrypts service data at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1B5E1C583B858F",
+            "note": "Kiro documents encryption at rest using AWS KMS-owned encryption keys.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption at rest"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5095D6C336866BACCF",
+      "agent_id": "AI-0015",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1B5E1C583B858F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_data",
+        "note": "Kiro documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1B5E1C583B858F",
+            "note": "Kiro states all communication between customers, Kiro, and downstream dependencies uses TLS 1.2 or higher.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption in transit"
           }
         ]
       },
@@ -34115,6 +34409,48 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-2F40EC5C737B4F0096",
+      "agent_id": "AI-0037",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-98069F865AF1D3",
+          "SRC-9B852870EB7F68"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_unified_audit_log",
+        "note": "Microsoft 365 Copilot audit events can be retrieved programmatically through the Management Activity API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-98069F865AF1D3",
+            "note": "Microsoft documents the CopilotInteraction audit schema and Copilot events in the Microsoft 365 unified audit log.",
+            "evidence_type": "api_docs",
+            "source_section": "Copilot interaction events overview"
+          },
+          {
+            "source_id": "SRC-9B852870EB7F68",
+            "note": "Microsoft documents the Office 365 Management Activity API as a REST web service for retrieving audit actions and events.",
+            "evidence_type": "api_docs",
+            "source_section": "Overview"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-22505EC1892A9C2636",
       "agent_id": "AI-0037",
       "path": "governance.audit_logs.available",
@@ -34138,6 +34474,83 @@
             "note": "Microsoft documents audit records for Microsoft 365 Copilot user interactions and AI activities in Microsoft Purview Audit.",
             "evidence_type": "technical_docs",
             "source_section": "Copilot audit events"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EDFCC8F04B128ACC40",
+      "agent_id": "AI-0037",
+      "path": "governance.audit_logs.retention_days",
+      "value": 180,
+      "value_hash": "7b69759630f869f2",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1FE381150F8164",
+          "SRC-CC3082A67883F1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_purview_audit_standard_copilot",
+        "note": "Microsoft 365 Copilot audit records are in Audit Standard, whose documented default retention is 180 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CC3082A67883F1",
+            "note": "Microsoft states Microsoft applications and Microsoft Copilots are included in Audit Standard.",
+            "evidence_type": "technical_docs",
+            "source_section": "Billing / Microsoft applications"
+          },
+          {
+            "source_id": "SRC-1FE381150F8164",
+            "note": "Microsoft states Audit Standard logs generated after October 17, 2023 have a default retention of 180 days.",
+            "evidence_type": "technical_docs",
+            "source_section": "Retention"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B9BA1BDF8EDC9CFD2D",
+      "agent_id": "AI-0037",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BAF3A44A80265A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_audit",
+        "note": "Microsoft documents SIEM integration for Copilot/agent audit telemetry.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BAF3A44A80265A",
+            "note": "Microsoft documents SIEM integration paths for Copilot/agent auditing through Microsoft security/telemetry services.",
+            "evidence_type": "technical_docs",
+            "source_section": "Security information and event management (SIEM)"
           }
         ]
       },
@@ -60900,6 +61313,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-C427436196A8094BB0",
+      "agent_id": "AI-0068",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F39CF8355E4218"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qodo_service_personal_data",
+        "note": "Qodo documents encryption at rest for service personal data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F39CF8355E4218",
+            "note": "Qodo's DPA explicitly requires encryption of processed personal data at rest as part of its additional safeguards.",
+            "evidence_type": "security_trust",
+            "source_section": "Part 3 – Additional Safeguards"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-33FB16EC7118074B5B",
