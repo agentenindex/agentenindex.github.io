@@ -32,8 +32,8 @@
     "security.soc2_type2"
   ],
   "state_totals": {
-    "unknown": 2535,
-    "documented_true_or_value": 215
+    "unknown": 2532,
+    "documented_true_or_value": 218
   },
   "domain_totals": {
     "api": {
@@ -49,16 +49,16 @@
       "documented_true_or_value": 21
     },
     "privacy": {
-      "unknown": 198,
-      "documented_true_or_value": 22
+      "unknown": 197,
+      "documented_true_or_value": 23
     },
     "protocols": {
       "unknown": 506,
       "documented_true_or_value": 44
     },
     "security": {
-      "unknown": 409,
-      "documented_true_or_value": 31
+      "unknown": 407,
+      "documented_true_or_value": 33
     }
   },
   "agents": {
@@ -2655,9 +2655,9 @@
       }
     },
     "AI-0082": {
-      "documented_fields": 6,
-      "unknown_fields": 19,
-      "coverage_pct": 24.0,
+      "documented_fields": 9,
+      "unknown_fields": 16,
+      "coverage_pct": 36.0,
       "states": {
         "protocols.mcp.client": "documented_true_or_value",
         "protocols.mcp.server": "unknown",
@@ -2670,7 +2670,7 @@
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "documented_true_or_value",
-        "privacy.residency.customer_region_selectable": "unknown",
+        "privacy.residency.customer_region_selectable": "documented_true_or_value",
         "governance.sso.saml": "unknown",
         "governance.sso.oidc": "unknown",
         "governance.scim": "unknown",
@@ -2680,8 +2680,8 @@
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",
         "governance.audit_logs.siem_export": "unknown",
-        "security.encryption.at_rest": "unknown",
-        "security.encryption.in_transit": "unknown",
+        "security.encryption.at_rest": "documented_true_or_value",
+        "security.encryption.in_transit": "documented_true_or_value",
         "security.customer_managed_key": "unknown",
         "security.soc2_type2": "unknown"
       }

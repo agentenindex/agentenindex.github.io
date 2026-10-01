@@ -56024,6 +56024,40 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-DC9FD97AEC8AC4162D",
+      "agent_id": "AI-0082",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-43212B54D3A4D0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "boomi_agent_garden_runtime_cloud",
+        "note": "Agentstudio users select supported regional runtime clouds when deploying agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-43212B54D3A4D0",
+            "note": "Boomi documents deploying Agentstudio agents to runtime clouds in the US, UK, Japan, and Australia and states regional deployment keeps data within regional boundaries for compliance.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7CD03543545EE0B875",
       "agent_id": "AI-0082",
       "path": "privacy.residency.region",
@@ -56332,6 +56366,74 @@
             "source_id": "SRC-6AA6691B5DA430",
             "note": "Agent Designer can connect to third-party remote MCP servers.",
             "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-57EAE53DFCC4D8098C",
+      "agent_id": "AI-0082",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-723BFD77C97116"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "boomi_ai_including_agentstudio",
+        "note": "Boomi documents at-rest encryption for all Boomi AI data, including Agentstudio.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-723BFD77C97116",
+            "note": "Boomi explicitly states all Boomi AI data is encrypted at rest and that Agentstudio sensitive data also uses a customer account-specific encryption key.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-70245E2EE9F449C657",
+      "agent_id": "AI-0082",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-723BFD77C97116"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "boomi_ai_including_agentstudio",
+        "note": "Boomi documents in-transit encryption for all Boomi AI data, including Agentstudio.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-723BFD77C97116",
+            "note": "Boomi explicitly states all Boomi AI data is encrypted in transit.",
+            "evidence_type": "security_trust"
           }
         ]
       },

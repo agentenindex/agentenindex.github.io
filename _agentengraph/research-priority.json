@@ -80,12 +80,6 @@
       "coverage_pct": 6.36
     },
     {
-      "path": "security.encryption.in_transit",
-      "documented_agents": 7,
-      "unknown_agents": 103,
-      "coverage_pct": 6.36
-    },
-    {
       "path": "governance.custom_roles",
       "documented_agents": 8,
       "unknown_agents": 102,
@@ -98,19 +92,25 @@
       "coverage_pct": 7.27
     },
     {
-      "path": "privacy.residency.customer_region_selectable",
-      "documented_agents": 8,
-      "unknown_agents": 102,
-      "coverage_pct": 7.27
-    },
-    {
       "path": "protocols.mcp.server",
       "documented_agents": 8,
       "unknown_agents": 102,
       "coverage_pct": 7.27
     },
     {
+      "path": "security.encryption.in_transit",
+      "documented_agents": 8,
+      "unknown_agents": 102,
+      "coverage_pct": 7.27
+    },
+    {
       "path": "governance.sso.saml",
+      "documented_agents": 9,
+      "unknown_agents": 101,
+      "coverage_pct": 8.18
+    },
+    {
+      "path": "privacy.residency.customer_region_selectable",
       "documented_agents": 9,
       "unknown_agents": 101,
       "coverage_pct": 8.18
@@ -129,9 +129,9 @@
     },
     {
       "path": "security.encryption.at_rest",
-      "documented_agents": 11,
-      "unknown_agents": 99,
-      "coverage_pct": 10.0
+      "documented_agents": 12,
+      "unknown_agents": 98,
+      "coverage_pct": 10.91
     },
     {
       "path": "api.rest",
@@ -250,10 +250,10 @@
       "name": "Boomi Agentstudio",
       "provider_id": "PROV-BOOMI",
       "priority": "P0_raise_existing_to_40pct",
-      "documented_fields": 6,
-      "unknown_fields": 19,
-      "coverage_pct": 24.0,
-      "fields_needed_for_40pct": 4,
+      "documented_fields": 9,
+      "unknown_fields": 16,
+      "coverage_pct": 36.0,
+      "fields_needed_for_40pct": 1,
       "recommended_unknown_paths": [
         "api.webhooks",
         "governance.sso.oidc",
@@ -2082,7 +2082,7 @@
         "protocols.a2a.client",
         "security.soc2_type2",
         "governance.audit_logs.api",
-        "security.encryption.in_transit"
+        "governance.custom_roles"
       ]
     },
     {
@@ -2202,7 +2202,7 @@
         "protocols.a2a.client",
         "security.soc2_type2",
         "governance.audit_logs.api",
-        "security.encryption.in_transit"
+        "governance.custom_roles"
       ]
     },
     {
