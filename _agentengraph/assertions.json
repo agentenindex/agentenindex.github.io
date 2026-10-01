@@ -26349,6 +26349,48 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-0F19CDBB31C083978A",
+      "agent_id": "AI-0036",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5A202EE0371DFC",
+          "SRC-E0C5D1D25878DE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_instance_logs_including_otto_actions",
+        "note": "Otto actions are logged, and ServiceNow platform log/audit tables can be accessed through web services for export.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5A202EE0371DFC",
+            "note": "ServiceNow states every Otto action is logged and governed.",
+            "evidence_type": "official_product_page",
+            "source_section": "ServiceNow Otto"
+          },
+          {
+            "source_id": "SRC-E0C5D1D25878DE",
+            "note": "ServiceNow documents direct web-service access to log tables as a supported method for exporting platform log and audit data.",
+            "evidence_type": "security_trust",
+            "source_section": "Logging and monitoring"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-5788D1CC4B37720071",
       "agent_id": "AI-0036",
       "path": "governance.audit_logs.available",
@@ -26371,6 +26413,48 @@
             "source_id": "SRC-615BCC99B5B019",
             "note": "ServiceNow states that every Otto action is logged and governed.",
             "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6CEBD65641CA308E9C",
+      "agent_id": "AI-0036",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5A202EE0371DFC",
+          "SRC-E0C5D1D25878DE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_instance_logs_including_otto_actions",
+        "note": "ServiceNow platform logs that include governed Otto activity can be exported to external SIEM/logging systems.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5A202EE0371DFC",
+            "note": "ServiceNow states every Otto action is logged and governed.",
+            "evidence_type": "official_product_page",
+            "source_section": "ServiceNow Otto"
+          },
+          {
+            "source_id": "SRC-E0C5D1D25878DE",
+            "note": "ServiceNow documents forwarding logs/events to customer logging or SIEM systems via syslog probe, MID Server, web-service calls, or Log Export Service.",
+            "evidence_type": "security_trust",
+            "source_section": "Logging and monitoring"
           }
         ]
       },
@@ -26473,6 +26557,90 @@
             "source_id": "SRC-0EAE25D9AB6D6F",
             "note": "ServiceNow identifies sn_aia.viewer as the read-only AI Agent viewer role.",
             "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-CA4FB7C115E277F44E",
+      "agent_id": "AI-0036",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5A202EE0371DFC",
+          "SRC-ACFEAF63F7E231"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_ai_platform_users_accessing_otto",
+        "note": "Users accessing Otto through the ServiceNow AI Platform can use the platform's documented OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-ACFEAF63F7E231",
+            "note": "ServiceNow documents OpenID Connect SSO for users logging in to ServiceNow applications.",
+            "evidence_type": "technical_docs",
+            "source_section": "OpenID Connect SSO"
+          },
+          {
+            "source_id": "SRC-5A202EE0371DFC",
+            "note": "ServiceNow states Otto is built on and operates through the ServiceNow AI Platform.",
+            "evidence_type": "official_product_page",
+            "source_section": "ServiceNow Otto"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1F998E28474AD97A28",
+      "agent_id": "AI-0036",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-03ABBCD262D71A",
+          "SRC-5A202EE0371DFC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_ai_platform_users_accessing_otto",
+        "note": "Users accessing Otto through the ServiceNow AI Platform can use the platform's documented SAML 2.0 SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-03ABBCD262D71A",
+            "note": "ServiceNow documents SAML 2.0 as a supported SSO method for access to ServiceNow instances.",
+            "evidence_type": "technical_docs",
+            "source_section": "Supported SSO methods"
+          },
+          {
+            "source_id": "SRC-5A202EE0371DFC",
+            "note": "ServiceNow states Otto is built on and operates through the ServiceNow AI Platform.",
+            "evidence_type": "official_product_page",
+            "source_section": "ServiceNow Otto"
           }
         ]
       },
@@ -26677,6 +26845,48 @@
             "source_id": "SRC-7C49F326BB33FF",
             "note": "ServiceNow documents AI workloads being sent from the ServiceNow instance to compute hubs using TLS 1.2; the current page also uses ServiceNow Otto naming for affected AI features.",
             "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-72F1003D5041249142",
+      "agent_id": "AI-0036",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-615BCC99B5B019",
+          "SRC-E0C5D1D25878DE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_ai_environment_including_otto_ai_workloads",
+        "note": "Otto AI workloads run on ServiceNow's attested AI environment, which ServiceNow documents as SOC 2 Type 2.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E0C5D1D25878DE",
+            "note": "ServiceNow states its Artificial Intelligence services environment has a SOC 2 Type 2 attestation covering the GenAI stack, AI/ML stack, and DART environment.",
+            "evidence_type": "security_trust",
+            "source_section": "Artificial Intelligence (AI) Products"
+          },
+          {
+            "source_id": "SRC-615BCC99B5B019",
+            "note": "ServiceNow documents Otto as the AI experience operating on the ServiceNow AI Platform.",
+            "evidence_type": "official_product_page",
+            "source_section": "What is ServiceNow Otto?"
           }
         ]
       },
@@ -58685,6 +58895,76 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-D63721B39B7D360DC4",
+      "agent_id": "AI-0086",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-806E8DE58A5860"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_framework_openai_compatible_http_endpoints",
+        "note": "Agent Framework can expose agents through documented HTTP/REST-style API endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-806E8DE58A5860",
+            "note": "Microsoft documents exposing Agent Framework agents through OpenAI-compatible HTTP Chat Completions and Responses endpoints, including POST examples and custom API paths.",
+            "evidence_type": "api_docs",
+            "source_section": "Hosting Agents as OpenAI Endpoints"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FEFC168FF8FF31D41E",
+      "agent_id": "AI-0086",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3274A36EC7C833"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_framework_durable_extension_event_driven_hosts",
+        "note": "The Durable Extension supports webhook-driven Agent Framework orchestration.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3274A36EC7C833",
+            "note": "Microsoft lists webhooks alongside triggers, queues, timers, and application events as supported event-driven orchestration inputs for durable Agent Framework agents.",
+            "evidence_type": "technical_docs",
+            "source_section": "When to use durable agents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F6AD77E1ED263E8B4F",
       "agent_id": "AI-0086",
       "path": "audience",
@@ -59053,6 +59333,48 @@
             "source_id": "SRC-18F91232A2BFC2",
             "note": "Foundry Hosted Agents are the documented managed hosting option.",
             "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4D3172B3623003ABE6",
+      "agent_id": "AI-0086",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3274A36EC7C833",
+          "SRC-73AB981C1513D1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_framework_on_azure_functions_supported_host",
+        "note": "Agent Framework deployments on the supported Azure Functions host can be placed behind private endpoints and VNet integration.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3274A36EC7C833",
+            "note": "Microsoft documents Azure Functions as a supported hosting model for Agent Framework durable agents.",
+            "evidence_type": "technical_docs",
+            "source_section": "Azure Functions hosting"
+          },
+          {
+            "source_id": "SRC-73AB981C1513D1",
+            "note": "Microsoft documents Azure Functions hosting plans with private endpoints, inbound access restrictions, and outbound virtual-network connectivity.",
+            "evidence_type": "technical_docs",
+            "source_section": "Compare hosting options"
           }
         ]
       },
@@ -62463,6 +62785,90 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-66DD39B0D8D4795211",
+      "agent_id": "AI-0091",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-439FF53C668934",
+          "SRC-9F4352BB860ED2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workday_cloud_tenant_hosting_asor",
+        "note": "ASOR resides in the Workday tenant and can benefit from Workday regional hosting options designed for data residency.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-439FF53C668934",
+            "note": "Workday documents regional deployment flexibility specifically to address data-residency requirements.",
+            "evidence_type": "security_trust",
+            "source_section": "Why run Workday on AWS?"
+          },
+          {
+            "source_id": "SRC-9F4352BB860ED2",
+            "note": "Workday documents ASOR as a tenant-level functional area configured in each Workday tenant.",
+            "evidence_type": "technical_docs",
+            "source_section": "Set Up Agent System of Record"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B733934EE7B3DB005F",
+      "agent_id": "AI-0091",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-439FF53C668934",
+          "SRC-9F4352BB860ED2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workday_cloud_tenant_hosting_asor",
+        "note": "Workday customers can choose supported regional deployment for the tenant in which ASOR is configured.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-439FF53C668934",
+            "note": "Workday states customers have flexibility to choose a deployment region to meet data-residency requirements.",
+            "evidence_type": "security_trust",
+            "source_section": "Workday and AWS"
+          },
+          {
+            "source_id": "SRC-9F4352BB860ED2",
+            "note": "Workday documents ASOR as tenant-local configuration and states it must be configured separately in each tenant.",
+            "evidence_type": "technical_docs",
+            "source_section": "Set Up Agent System of Record"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-C8172A040E7A4CA7E1",
       "agent_id": "AI-0091",
       "path": "profile.depth",
@@ -62601,6 +63007,48 @@
             "source_id": "SRC-4427FC26D2DBEB",
             "note": "Workday documents HTTPS authorization and OAuth token endpoints for Agent Gateway and routes requests to the tenant's Workday data center.",
             "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-259A511C97FC03001A",
+      "agent_id": "AI-0091",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0B2B05C45CC3F4",
+          "SRC-AF02879EDE2698"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workday_enterprise_products_including_asor",
+        "note": "ASOR is part of the Workday enterprise tenant environment covered by Workday's Enterprise Products SOC 2 Type II program.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0B2B05C45CC3F4",
+            "note": "Workday documents an annual SOC 2 Type II report applying to Workday Enterprise Products and assessing controls for systems containing customer data.",
+            "evidence_type": "security_trust",
+            "source_section": "SOC 2"
+          },
+          {
+            "source_id": "SRC-AF02879EDE2698",
+            "note": "Workday documents ASOR as a centralized framework delivered within Workday tenants for governance, security, auditing, and agent management.",
+            "evidence_type": "technical_docs",
+            "source_section": "Workday Agent System of Record (ASOR)"
           }
         ]
       },

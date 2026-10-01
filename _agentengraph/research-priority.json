@@ -8,22 +8,16 @@
     "core_fields": 25
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 3,
+    "agents_below_target_with_deep_evidence": 0,
     "agents_without_deep_evidence": 87,
-    "agents_at_or_above_target": 20
+    "agents_at_or_above_target": 23
   },
   "field_priorities": [
     {
       "path": "api.webhooks",
-      "documented_agents": 3,
-      "unknown_agents": 107,
-      "coverage_pct": 2.73
-    },
-    {
-      "path": "hosting.private_network",
-      "documented_agents": 3,
-      "unknown_agents": 107,
-      "coverage_pct": 2.73
+      "documented_agents": 4,
+      "unknown_agents": 106,
+      "coverage_pct": 3.64
     },
     {
       "path": "governance.audit_logs.retention_days",
@@ -32,22 +26,22 @@
       "coverage_pct": 3.64
     },
     {
-      "path": "governance.audit_logs.siem_export",
+      "path": "hosting.private_network",
       "documented_agents": 4,
       "unknown_agents": 106,
       "coverage_pct": 3.64
+    },
+    {
+      "path": "governance.audit_logs.siem_export",
+      "documented_agents": 5,
+      "unknown_agents": 105,
+      "coverage_pct": 4.55
     },
     {
       "path": "governance.sso.oidc",
-      "documented_agents": 4,
-      "unknown_agents": 106,
-      "coverage_pct": 3.64
-    },
-    {
-      "path": "security.soc2_type2",
-      "documented_agents": 4,
-      "unknown_agents": 106,
-      "coverage_pct": 3.64
+      "documented_agents": 5,
+      "unknown_agents": 105,
+      "coverage_pct": 4.55
     },
     {
       "path": "protocols.a2a.client",
@@ -56,10 +50,16 @@
       "coverage_pct": 4.55
     },
     {
-      "path": "governance.audit_logs.api",
+      "path": "security.soc2_type2",
       "documented_agents": 6,
       "unknown_agents": 104,
       "coverage_pct": 5.45
+    },
+    {
+      "path": "governance.audit_logs.api",
+      "documented_agents": 7,
+      "unknown_agents": 103,
+      "coverage_pct": 6.36
     },
     {
       "path": "hosting.self_hosted",
@@ -98,19 +98,13 @@
       "coverage_pct": 7.27
     },
     {
-      "path": "privacy.residency.customer_region_selectable",
-      "documented_agents": 10,
-      "unknown_agents": 100,
-      "coverage_pct": 9.09
-    },
-    {
       "path": "security.customer_managed_key",
       "documented_agents": 10,
       "unknown_agents": 100,
       "coverage_pct": 9.09
     },
     {
-      "path": "governance.sso.saml",
+      "path": "privacy.residency.customer_region_selectable",
       "documented_agents": 11,
       "unknown_agents": 99,
       "coverage_pct": 10.0
@@ -122,10 +116,10 @@
       "coverage_pct": 10.0
     },
     {
-      "path": "api.rest",
-      "documented_agents": 13,
-      "unknown_agents": 97,
-      "coverage_pct": 11.82
+      "path": "governance.sso.saml",
+      "documented_agents": 12,
+      "unknown_agents": 98,
+      "coverage_pct": 10.91
     },
     {
       "path": "hosting.managed",
@@ -140,10 +134,16 @@
       "coverage_pct": 11.82
     },
     {
+      "path": "api.rest",
+      "documented_agents": 14,
+      "unknown_agents": 96,
+      "coverage_pct": 12.73
+    },
+    {
       "path": "privacy.residency.available",
-      "documented_agents": 15,
-      "unknown_agents": 95,
-      "coverage_pct": 13.64
+      "documented_agents": 16,
+      "unknown_agents": 94,
+      "coverage_pct": 14.55
     },
     {
       "path": "governance.audit_logs.available",
@@ -166,66 +166,6 @@
   ],
   "agents": [
     {
-      "agent_id": "AI-0036",
-      "name": "ServiceNow Otto",
-      "provider_id": "PROV-SERVICENOW",
-      "priority": "P0_raise_existing_to_40pct",
-      "documented_fields": 5,
-      "unknown_fields": 20,
-      "coverage_pct": 20.0,
-      "fields_needed_for_40pct": 5,
-      "recommended_unknown_paths": [
-        "api.webhooks",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.siem_export",
-        "governance.sso.oidc",
-        "security.soc2_type2",
-        "protocols.a2a.client",
-        "governance.audit_logs.api"
-      ]
-    },
-    {
-      "agent_id": "AI-0086",
-      "name": "Microsoft Agent Framework",
-      "provider_id": "PROV-MICROSOFT",
-      "priority": "P0_raise_existing_to_40pct",
-      "documented_fields": 7,
-      "unknown_fields": 18,
-      "coverage_pct": 28.0,
-      "fields_needed_for_40pct": 3,
-      "recommended_unknown_paths": [
-        "api.webhooks",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.siem_export",
-        "governance.sso.oidc",
-        "security.soc2_type2",
-        "governance.audit_logs.api",
-        "governance.custom_roles"
-      ]
-    },
-    {
-      "agent_id": "AI-0091",
-      "name": "Workday Agent System of Record",
-      "provider_id": "PROV-WORKDAY",
-      "priority": "P0_raise_existing_to_40pct",
-      "documented_fields": 7,
-      "unknown_fields": 18,
-      "coverage_pct": 28.0,
-      "fields_needed_for_40pct": 3,
-      "recommended_unknown_paths": [
-        "api.webhooks",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.siem_export",
-        "governance.sso.oidc",
-        "security.soc2_type2",
-        "protocols.a2a.client",
-        "governance.audit_logs.api"
-      ]
-    },
-    {
       "agent_id": "AI-0001",
       "name": "ChatGPT Deep Research",
       "provider_id": "PROV-OPENAI",
@@ -236,12 +176,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -256,12 +196,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -276,12 +216,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -296,12 +236,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -316,12 +256,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -336,12 +276,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -356,12 +296,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -376,12 +316,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -396,12 +336,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -416,12 +356,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -436,12 +376,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -456,12 +396,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -476,12 +416,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -496,12 +436,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -516,12 +456,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -536,12 +476,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -556,12 +496,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -576,12 +516,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -596,12 +536,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -616,12 +556,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -636,12 +576,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -656,12 +596,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -676,12 +616,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -696,12 +636,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -716,12 +656,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -736,12 +676,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -756,12 +696,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -776,12 +716,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -796,12 +736,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -816,12 +756,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -836,12 +776,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -856,12 +796,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -876,12 +816,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -896,12 +836,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -916,12 +856,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -936,12 +876,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -956,12 +896,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -976,12 +916,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -996,12 +936,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1016,12 +956,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1036,12 +976,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1056,12 +996,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1076,12 +1016,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1096,12 +1036,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1116,12 +1056,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1136,12 +1076,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1156,12 +1096,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1176,12 +1116,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1196,12 +1136,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1216,12 +1156,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1236,12 +1176,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1256,12 +1196,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1276,12 +1216,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1296,12 +1236,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1316,12 +1256,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1336,12 +1276,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1356,12 +1296,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1376,12 +1316,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1396,12 +1336,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1416,12 +1356,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1436,12 +1376,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1456,12 +1396,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1476,12 +1416,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1496,12 +1436,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1516,12 +1456,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1536,12 +1476,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1556,12 +1496,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1576,12 +1516,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1596,12 +1536,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1616,12 +1556,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1636,12 +1576,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1656,12 +1596,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1676,12 +1616,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1696,12 +1636,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1716,12 +1656,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1736,12 +1676,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1756,12 +1696,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1776,12 +1716,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1796,12 +1736,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1816,12 +1756,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1836,12 +1776,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1856,12 +1796,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1876,12 +1816,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1896,12 +1836,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1916,12 +1856,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1936,12 +1876,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1956,12 +1896,12 @@
       "fields_needed_for_40pct": 10,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api"
       ]
     },
@@ -1978,8 +1918,8 @@
         "api.webhooks",
         "hosting.private_network",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api",
         "hosting.self_hosted",
         "governance.custom_roles"
@@ -1995,11 +1935,11 @@
       "coverage_pct": 40.0,
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api",
         "governance.scim",
         "protocols.a2a.server"
@@ -2016,12 +1956,12 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "hosting.self_hosted"
       ]
     },
@@ -2035,12 +1975,12 @@
       "coverage_pct": 40.0,
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api",
         "governance.custom_roles"
       ]
@@ -2056,8 +1996,8 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
         "security.soc2_type2",
@@ -2079,8 +2019,8 @@
         "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "hosting.self_hosted",
         "governance.custom_roles"
       ]
@@ -2096,8 +2036,8 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
         "protocols.a2a.client",
@@ -2116,11 +2056,11 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api",
         "hosting.self_hosted"
       ]
@@ -2136,13 +2076,33 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
         "security.soc2_type2",
         "governance.audit_logs.api",
         "hosting.self_hosted"
+      ]
+    },
+    {
+      "agent_id": "AI-0036",
+      "name": "ServiceNow Otto",
+      "provider_id": "PROV-SERVICENOW",
+      "priority": "P2_maintain_or_deepen",
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "api.webhooks",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network",
+        "protocols.a2a.client",
+        "hosting.self_hosted",
+        "governance.custom_roles",
+        "governance.scim",
+        "protocols.a2a.server"
       ]
     },
     {
@@ -2156,11 +2116,11 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.custom_roles",
         "protocols.a2a.server"
       ]
@@ -2179,8 +2139,8 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api",
         "governance.custom_roles"
       ]
@@ -2196,13 +2156,53 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
+        "governance.audit_logs.retention_days",
         "hosting.private_network",
+        "governance.audit_logs.siem_export",
+        "governance.sso.oidc",
+        "protocols.a2a.client",
+        "security.soc2_type2",
+        "governance.audit_logs.api"
+      ]
+    },
+    {
+      "agent_id": "AI-0086",
+      "name": "Microsoft Agent Framework",
+      "provider_id": "PROV-MICROSOFT",
+      "priority": "P2_maintain_or_deepen",
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
         "security.soc2_type2",
+        "governance.audit_logs.api",
+        "governance.custom_roles",
+        "governance.scim",
+        "security.customer_managed_key"
+      ]
+    },
+    {
+      "agent_id": "AI-0091",
+      "name": "Workday Agent System of Record",
+      "provider_id": "PROV-WORKDAY",
+      "priority": "P2_maintain_or_deepen",
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "api.webhooks",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network",
+        "governance.audit_logs.siem_export",
+        "governance.sso.oidc",
         "protocols.a2a.client",
-        "governance.audit_logs.api"
+        "governance.audit_logs.api",
+        "hosting.self_hosted"
       ]
     },
     {
@@ -2216,8 +2216,8 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
         "security.soc2_type2",
@@ -2236,11 +2236,11 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api",
         "hosting.self_hosted"
       ]
@@ -2256,8 +2256,8 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
         "protocols.a2a.client",
@@ -2298,8 +2298,8 @@
         "api.webhooks",
         "hosting.private_network",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "hosting.self_hosted",
         "protocols.a2a.server",
         "protocols.a2a.supported"
@@ -2316,8 +2316,8 @@
       "fields_needed_for_40pct": 0,
       "recommended_unknown_paths": [
         "api.webhooks",
-        "hosting.private_network",
         "governance.audit_logs.retention_days",
+        "hosting.private_network",
         "governance.sso.oidc",
         "protocols.a2a.client",
         "protocols.a2a.server",
@@ -2339,8 +2339,8 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
         "governance.sso.oidc",
-        "security.soc2_type2",
         "protocols.a2a.client",
+        "security.soc2_type2",
         "governance.audit_logs.api",
         "governance.custom_roles"
       ]

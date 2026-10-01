@@ -2778,7 +2778,13 @@
           "Routing über Systeme und Agenten",
           "ServiceNow-Prozessnähe"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
         "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.siem_export": [
           true
         ],
         "governance.rbac": [
@@ -2789,6 +2795,12 @@
         ],
         "governance.roles.viewer": [
           "sn_aia.viewer"
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
         ],
         "identity.name": [
           "ServiceNow Otto"
@@ -2810,6 +2822,9 @@
         ],
         "security.encryption.in_transit": [
           "TLS 1.2"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Mitarbeiterassistenz",
@@ -6277,6 +6292,12 @@
         "api.openai_compatible": [
           true
         ],
+        "api.rest": [
+          true
+        ],
+        "api.webhooks": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -6309,6 +6330,9 @@
         ],
         "hosting.managed_provider": [
           "Microsoft Foundry"
+        ],
+        "hosting.private_network": [
+          true
         ],
         "hosting.self_hosted": [
           true
@@ -6675,6 +6699,12 @@
         "identity.provider": [
           "Workday"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
@@ -6689,6 +6719,9 @@
         ],
         "security.encryption.in_transit": [
           "HTTPS/TLS"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Agenten-Inventar",
