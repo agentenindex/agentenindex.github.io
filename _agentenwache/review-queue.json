@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:55:00Z",
-  "open_count": 0,
+  "updated_at": "2026-10-01T15:55:36Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -617,6 +617,44 @@
       "resolution": "Source is inactive; automated availability review is no longer actionable."
     },
     {
+      "review_id": "REV-6014BE58D21349D58F",
+      "status": "open",
+      "first_detected": "2026-10-01T15:55:01Z",
+      "last_detected": "2026-10-01T15:55:01Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "availability_change",
+      "source_id": "SRC-6C348B777332B3",
+      "source_title": "Google Hilfe – Deep Research in Gemini-Apps",
+      "url": "https://support.google.com/gemini/answer/15719111?hl=de-DE",
+      "agent_ids": [
+        "AI-0002"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://support.google.com/gemini/answer/15719111?hl=de-DE",
+        "text_hash": "0ae28e81989609f5048f6984f4577c2b0e2f09e68b44ba2a46794e2a6930f25f",
+        "simhash64": "4e130561932005d2",
+        "token_count": 898,
+        "text_sample": "Deep Research in Gemini-Apps verwenden Wenn Sie mit Deep Research in Gemini-Apps arbeiten, können Sie fast jedes Thema ausführlich recherchieren und sich im Handumdrehen einen Bericht erstellen lassen. Gemini verwendet standardmäßig unter anderem die Google Suche als Quelle bei der Recherche. Sie können aber auch andere Quellen hinzufügen oder die Auswahl ändern und z. B. Ihr privates Gmail- oder Drive-Konto als Quelle angeben. Sie können auch Dateien hochladen und NotebookLM-Notebooks hinzufügen. Weitere Informationen zu Deep Research Tipp : Wenn Sie ein Google AI Ultra-Abo haben, können Deep Research-Berichte visuelles Material wie Diagramme, Schaubilder, Schemadarstellungen und interaktive Simulatoren enthalten. Weitere Informationen zu visuellem Material und Animationen Voraussetzungen Voraussetzungen für die Nutzung von Deep Research: Sie müssen mindestens 18 Jahre alt sein. Sie müssen in der mobilen Gemini App angemeldet sein. Informationen zum Anmelden in Gemini-Apps Informationen über die Modelle und Nutzungslimits für Deep Research Deep Research-Modelle Nutzer mit einem Abo für Google AI Pro oder Google AI Ultra können Berichte mit dem Modell „Pro“ erstellen, um noch besse"
+      },
+      "current": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "network_error",
+        "error": "The read operation timed out"
+      },
+      "latest_metrics": {
+        "previous_result": "fetched",
+        "current_result": "network_error"
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-66484F39574C8E3200",
       "status": "reviewed_no_product_change",
       "first_detected": "2026-10-01T14:49:26Z",
@@ -659,8 +697,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The current official Slack article still supports the indexed Slackbot capabilities; the observed render/content variants do not change an indexed product fact.",
       "reviewed_at": "2026-10-01T14:54:00Z",
-      "last_seen_after_review": "2026-10-01T15:11:27Z",
-      "suppressed_reoccurrences": 2
+      "last_seen_after_review": "2026-10-01T15:55:00Z",
+      "suppressed_reoccurrences": 3
     },
     {
       "review_id": "REV-6D8E1264AB85F24B94",

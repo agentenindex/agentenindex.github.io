@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:53:11Z",
+  "updated_at": "2026-10-01T15:55:36Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -1501,6 +1501,25 @@
         "token_delta_pct": -0.75
       },
       "previous_checked_at": "2026-10-01T15:26:01Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-626D115D23BB2160BC",
+      "detected_at": "2026-10-01T15:55:01Z",
+      "source_id": "SRC-6C348B777332B3",
+      "agent_ids": [
+        "AI-0002"
+      ],
+      "source_title": "Google Hilfe – Deep Research in Gemini-Apps",
+      "url": "https://support.google.com/gemini/answer/15719111?hl=de-DE",
+      "change_type": "availability_change",
+      "severity": "high",
+      "metrics": {
+        "previous_result": "fetched",
+        "current_result": "network_error"
+      },
+      "previous_checked_at": "2026-10-01T15:52:54Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
