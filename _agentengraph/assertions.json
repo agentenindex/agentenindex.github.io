@@ -23984,6 +23984,48 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-08D5AB256029FE90B0",
+      "agent_id": "AI-0032",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1B90F04F6686B2",
+          "SRC-C318641CA074B7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_agents_platform_api",
+        "note": "Glean exposes programmatic REST/Platform API access for agent functionality.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C318641CA074B7",
+            "note": "Glean documents REST API tokens for the Client API, including agents and other user-facing functionality.",
+            "evidence_type": "api_docs",
+            "source_section": "API Tokens"
+          },
+          {
+            "source_id": "SRC-1B90F04F6686B2",
+            "note": "Glean documents Agents as a generally available Platform API capability.",
+            "evidence_type": "api_docs",
+            "source_section": "Glean Platform APIs / Agents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-809A1CC27653FA39B3",
       "agent_id": "AI-0032",
       "path": "audience",
@@ -24284,6 +24326,356 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1575BB47349C5A583E",
+      "agent_id": "AI-0032",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-215C24640FF17E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_platform_including_agent_governance",
+        "note": "Glean provides administrative audit logs for platform governance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-215C24640FF17E",
+            "note": "Glean documents administrative audit logs and export/reporting in the Admin Console.",
+            "evidence_type": "technical_docs",
+            "source_section": "Access Audit Logs / Export and Reporting"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4E1A2BA078001736B8",
+      "agent_id": "AI-0032",
+      "path": "governance.audit_logs.retention_days",
+      "value": 30,
+      "value_hash": "624b60c58c9d8bfb",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-215C24640FF17E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_admin_audit_logs_default",
+        "note": "Glean's documented default audit-log retention is 30 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-215C24640FF17E",
+            "note": "Glean states the default audit-log retention period is 30 days, with custom longer retention available by request.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit Log Retention"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C144CD5DC6F6B4453E",
+      "agent_id": "AI-0032",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C5D868A2114837"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_customer_hosted_aws",
+        "note": "Customer-hosted AWS deployments can export Glean audit logs to SIEM tooling.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C5D868A2114837",
+            "note": "Glean documents an audit-log CloudWatch log group and explicitly instructs customers to integrate it with their SIEM.",
+            "evidence_type": "security_trust",
+            "source_section": "Audit log"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AF76EDEB520B2F88F4",
+      "agent_id": "AI-0032",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-87D902751D78E8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_agents",
+        "note": "Glean Agents have explicit role-based access and publishing controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-87D902751D78E8",
+            "note": "Glean documents agent-specific roles, access tiers, publishing permissions, and RBAC-controlled administration.",
+            "evidence_type": "technical_docs",
+            "source_section": "Agent access tiers / Agent roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C702AEB31EF3249B65",
+      "agent_id": "AI-0032",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F959B2960D0043"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_identity_provisioning",
+        "note": "Glean supports SCIM 2.0 user provisioning/deprovisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F959B2960D0043",
+            "note": "Glean documents SCIM 2.0 provisioning and deprovisioning for users.",
+            "evidence_type": "technical_docs",
+            "source_section": "Optional SCIM provisioning"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BFAFEB620448EC31ED",
+      "agent_id": "AI-0032",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9FD69E9B899FDB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_platform_users_and_agents",
+        "note": "Glean supports OIDC SSO for platform access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9FD69E9B899FDB",
+            "note": "Glean documents OpenID Connect SSO using Microsoft Entra ID and states OIDC is a supported/preferred SSO method.",
+            "evidence_type": "technical_docs",
+            "source_section": "Entra ID (OIDC)"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E5A61ECB799F4682EA",
+      "agent_id": "AI-0032",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D62C95A3FAB0EF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_platform_users_and_agents",
+        "note": "Glean supports SAML SSO for platform access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D62C95A3FAB0EF",
+            "note": "Glean documents SAML as a supported SSO protocol.",
+            "evidence_type": "technical_docs",
+            "source_section": "About OIDC and SAML"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C2D4D740FE2B84C347",
+      "agent_id": "AI-0032",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DC0DBD4BF5C750"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_platform_including_agents",
+        "note": "Glean Agents can run on Glean's managed SaaS deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DC0DBD4BF5C750",
+            "note": "Glean documents a Glean Hosted deployment model equivalent to a SaaS service with no customer infrastructure responsibility.",
+            "evidence_type": "technical_docs",
+            "source_section": "Glean Hosted"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-01241E7517E13426D1",
+      "agent_id": "AI-0032",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B44A83EE3D1422"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_customer_managed_deployment",
+        "note": "Glean supports private-network/VPC deployment for customer-managed environments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B44A83EE3D1422",
+            "note": "Glean documents customer-managed deployment with private connectivity where requests, responses, and logs can remain on the customer's private network.",
+            "evidence_type": "official_release",
+            "source_section": "Customer-managed deployment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7C95E7BB1D64185834",
+      "agent_id": "AI-0032",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-61C3E99D49D5A8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_platform_including_agents",
+        "note": "Glean supports customer-hosted deployment of the platform that provides Glean Agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-61C3E99D49D5A8",
+            "note": "Glean documents customer-hosted deployment in the customer's own GCP or AWS account.",
+            "evidence_type": "technical_docs",
+            "source_section": "Customer-hosted deployment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-ADFEA615FA1DD0BED2",
       "agent_id": "AI-0032",
       "path": "identity.name",
@@ -24334,6 +24726,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-F8179645BE02581E25",
+      "agent_id": "AI-0032",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DC0DBD4BF5C750"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_platform_including_agents",
+        "note": "Glean provides deployment options intended to satisfy data-residency requirements.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DC0DBD4BF5C750",
+            "note": "Glean documents deployment choices for organizations with strict data residency requirements and notes alternative geographic regions for SaaS.",
+            "evidence_type": "technical_docs",
+            "source_section": "When should you choose this?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-62C28C29BB55E772F7",
+      "agent_id": "AI-0032",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E17839680767C3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_tenant_deployment",
+        "note": "Customers can select among supported deployment regions for their Glean tenant.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E17839680767C3",
+            "note": "Glean lists supported tenant deployment regions and instructs customers to advise Glean when they want a tenant deployed in a different region.",
+            "evidence_type": "technical_docs",
+            "source_section": "Considerations for Region Selection"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-5B4B1E366015C37431",
       "agent_id": "AI-0032",
       "path": "profile.depth",
@@ -24382,6 +24844,181 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-66BBDBA3E6D73C7014",
+      "agent_id": "AI-0032",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BF0A898F0ABD40"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_agents",
+        "note": "Glean Agents can consume tools from remote MCP servers through Glean's MCP host integration.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BF0A898F0ABD40",
+            "note": "Glean documents itself as an MCP host that connects to remote MCP-compliant servers and exposes those tools to Assistant and Glean Agents.",
+            "evidence_type": "technical_docs",
+            "source_section": "Connect remote MCP servers / Security and hosting considerations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7B3738B5FD8FB67972",
+      "agent_id": "AI-0032",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AFD4A106A5F833"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_customer_hosted_aws",
+        "note": "Glean supports customer-managed KMS keys in customer-hosted AWS deployments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AFD4A106A5F833",
+            "note": "Glean documents customer-managed AWS KMS keys and states customers own and control the keys used to encrypt data at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Customer controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C2507129EA087D2E21",
+      "agent_id": "AI-0032",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-91392C9B21A2E3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_customer_data",
+        "note": "Glean documents AES-256 encryption for customer data at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-91392C9B21A2E3",
+            "note": "Glean states customer data is encrypted at rest using AES-256 with FIPS 140-2 validated cryptography.",
+            "evidence_type": "security_trust",
+            "source_section": "Secure Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B954114C3F992936E2",
+      "agent_id": "AI-0032",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-91392C9B21A2E3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_customer_data",
+        "note": "Glean documents TLS 1.2+ encryption for data in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-91392C9B21A2E3",
+            "note": "Glean states all data in transit is encrypted using TLS 1.2 or later.",
+            "evidence_type": "security_trust",
+            "source_section": "Secure Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C7A396DC49201829C2",
+      "agent_id": "AI-0032",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8FBD2E1DE61EFC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "glean_platform_including_agents",
+        "note": "Glean documents SOC 2 Type II compliance for its platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8FBD2E1DE61EFC",
+            "note": "Glean states it maintains SOC 2 Type II compliance and makes detailed reports available through the account team.",
+            "evidence_type": "security_trust",
+            "source_section": "Security testing and compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0EE0D9C68EE358860C",

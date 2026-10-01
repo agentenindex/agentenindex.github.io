@@ -2514,6 +2514,9 @@
         "access.description": [
           "Glean Enterprise; kommerzieller Zugang"
         ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -2540,17 +2543,68 @@
           "Tools und Aktionen",
           "Unternehmensweiter Wissenskontext"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          30
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
+        "hosting.private_network": [
+          true
+        ],
+        "hosting.self_hosted": [
+          true
+        ],
         "identity.name": [
           "Glean Agents"
         ],
         "identity.provider": [
           "Glean"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Enterprise Search",
