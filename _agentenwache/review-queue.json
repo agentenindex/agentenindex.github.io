@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:55:36Z",
-  "open_count": 1,
+  "updated_at": "2026-10-01T16:36:56Z",
+  "open_count": 3,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -545,6 +545,90 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:26:37Z",
       "resolution": "Source is healthy again; technical recovery acknowledged without asserting a product change."
+    },
+    {
+      "review_id": "REV-562C2C75FCB88FE160",
+      "status": "open",
+      "first_detected": "2026-10-01T16:36:36Z",
+      "last_detected": "2026-10-01T16:36:36Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-B172502290090F",
+      "source_title": "Luminance – Legal",
+      "url": "https://www.luminance.com/solutions/legal/",
+      "agent_ids": [
+        "AI-0109"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://www.luminance.com/solutions/department/legal",
+        "text_hash": "87e2b880539591e2b40396c741c544eb9aa67e57d9156f8027d76d06c2cd5c9c",
+        "simhash64": "ee87d2e20d7f2467",
+        "token_count": 939,
+        "text_sample": "Legal | Luminance Platform Solutions Security Customers Resources Company Request a Demo Discover the next chapter for Luminance ↗ Luminance for Legal Review less. Advise more. Reduce routine contract work, standardize legal decision-making, unlock institutional knowledge, and empower your business with trusted answers through Contract Intelligence. Book a demo Luminance for Legal Review less. Advise more. Reduce routine contract work, standardize legal decision-making, unlock institutional knowledge, and empower your business with trusted answers through Contract Intelligence. Book a demo Luminance for Legal Review less. Advise more. Reduce routine contract work, standardize legal decision-making, unlock institutional knowledge, and empower your business with trusted answers through Contract Intelligence. Book a demo Reduce routine work. Drive strategic impact. Replace clause chasing with judgment Standardize legal decision making Preserve institutional knowledge Enable governed business self-serve Reduce routine work. Drive strategic impact. Replace clause chasing with judgment Standardize legal decision making Preserve institutional knowledge Enable governed business self-serve "
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://www.luminance.com/solutions/department/legal",
+        "text_hash": "19b861087782eb4616fae79830f0308d841ed7de7be46ade7d8c7655522b9a73",
+        "simhash64": "ee87d2e30d7f2467",
+        "token_count": 933,
+        "text_sample": "Legal | Luminance Platform Solutions Security Customers Resources Company Request a Demo Discover the next chapter for Luminance ↗ Luminance for Legal Review less. Advise more. Reduce routine contract work, standardize legal decision-making, unlock institutional knowledge, and empower your business with trusted answers through Contract Intelligence. Book a demo Luminance for Legal Review less. Advise more. Reduce routine contract work, standardize legal decision-making, unlock institutional knowledge, and empower your business with trusted answers through Contract Intelligence. Book a demo Luminance for Legal Review less. Advise more. Reduce routine contract work, standardize legal decision-making, unlock institutional knowledge, and empower your business with trusted answers through Contract Intelligence. Book a demo Reduce routine work. Drive strategic impact. Replace clause chasing with judgment Standardize legal decision making Preserve institutional knowledge Enable governed business self-serve Reduce routine work. Drive strategic impact. Replace clause chasing with judgment Standardize legal decision making Preserve institutional knowledge Enable governed business self-serve ",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "87e2b880539591e2b40396c741c544eb9aa67e57d9156f8027d76d06c2cd5c9c",
+        "new_hash": "19b861087782eb4616fae79830f0308d841ed7de7be46ade7d8c7655522b9a73",
+        "simhash_distance": 1,
+        "old_token_count": 939,
+        "new_token_count": 933,
+        "token_delta_pct": -0.64
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-56D597CD8834F0D2CA",
+      "status": "open",
+      "first_detected": "2026-10-01T16:36:27Z",
+      "last_detected": "2026-10-01T16:36:27Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-42A46FF8232742",
+      "source_title": "Kiro – IDE",
+      "url": "https://kiro.dev/ide/",
+      "agent_ids": [
+        "AI-0015"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://kiro.dev/ide/",
+        "text_hash": "1ff1754df2213435887e138f56841d7c342aaf5d359367f11484b219de2a7cfb",
+        "simhash64": "7344dd6986e869e1",
+        "token_count": 1234,
+        "text_sample": "Bring structure to AI coding AI coding without structure produces code you can’t trust to match what you wanted. Kiro turns your prompts into structured requirements, architecture designs, and sequenced implementation tasks that agents execute in parallel. Kiro then uses deterministic tools such as property-based tests to verify that code is correct and matches your intent. Compatible with VS Code Kiro supports Open VSX plugins, themes, and VS Code settings in a streamlined AI-ready environment. Built for working with agents Control agent behavior through steering files, extend capabilities with hooks, and persist knowledge across sessions with memory. Built on familiar VS Code foundations, Kiro is not a plugin or a chat wrapper. Adapts to the way you work Jump straight into an agent session for quick fixes. Use quick spec to clarify your intent before you build. Or run a full spec-driven flow to surface architectural tradeoffs and define constraints before parallel agents build. Automate tasks with event-driven agents Delegate work to AI agents that trigger on events like file save. Agents run autonomously based on pre-defined prompts — generating documentation, writing unit tests"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://kiro.dev/ide/",
+        "text_hash": "29531ee39aea34537e791455a0c8976940e75b4837120d18da7f9348f34130d3",
+        "simhash64": "7344dd69c6e868e1",
+        "token_count": 1237,
+        "text_sample": "Bring structure to AI coding AI coding without structure produces code you can’t trust to match what you wanted. Kiro turns your prompts into structured requirements, architecture designs, and sequenced implementation tasks that agents execute in parallel. Kiro then uses deterministic tools such as property-based tests to verify that code is correct and matches your intent. Compatible with VS Code Kiro supports Open VSX plugins, themes, and VS Code settings in a streamlined AI-ready environment. Built for working with agents Control agent behavior through steering files, extend capabilities with hooks, and persist knowledge across sessions with memory. Built on familiar VS Code foundations, Kiro is not a plugin or a chat wrapper. Adapts to the way you work Jump straight into an agent session for quick fixes. Use quick spec to clarify your intent before you build. Or run a full spec-driven flow to surface architectural tradeoffs and define constraints before parallel agents build. Automate tasks with event-driven agents Delegate work to AI agents that trigger on events like file save. Agents run autonomously based on pre-defined prompts — generating documentation, writing unit tests",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "1ff1754df2213435887e138f56841d7c342aaf5d359367f11484b219de2a7cfb",
+        "new_hash": "29531ee39aea34537e791455a0c8976940e75b4837120d18da7f9348f34130d3",
+        "simhash_distance": 2,
+        "old_token_count": 1234,
+        "new_token_count": 1237,
+        "token_delta_pct": 0.24
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-5A56C2FCA586E63276",
@@ -1578,8 +1662,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Lindy homepage changed promotional trial wording, but the indexed profile only states platform access is plan-dependent; no indexed product fact changed.",
       "reviewed_at": "2026-10-01T15:18:00Z",
-      "last_seen_after_review": "2026-10-01T15:26:19Z",
-      "suppressed_reoccurrences": 3
+      "last_seen_after_review": "2026-10-01T16:36:36Z",
+      "suppressed_reoccurrences": 4
     },
     {
       "review_id": "REV-FCE2FF2F1439740BD2",

@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:55:36Z",
+  "updated_at": "2026-10-01T16:36:56Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -1520,6 +1520,52 @@
         "current_result": "network_error"
       },
       "previous_checked_at": "2026-10-01T15:52:54Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-4975D9D7A4CB0F4DB7",
+      "detected_at": "2026-10-01T16:36:27Z",
+      "source_id": "SRC-42A46FF8232742",
+      "agent_ids": [
+        "AI-0015"
+      ],
+      "source_title": "Kiro – IDE",
+      "url": "https://kiro.dev/ide/",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "1ff1754df2213435887e138f56841d7c342aaf5d359367f11484b219de2a7cfb",
+        "new_hash": "29531ee39aea34537e791455a0c8976940e75b4837120d18da7f9348f34130d3",
+        "simhash_distance": 2,
+        "old_token_count": 1234,
+        "new_token_count": 1237,
+        "token_delta_pct": 0.24
+      },
+      "previous_checked_at": "2026-10-01T15:54:59Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-DFE4FF689FCEB9D0EB",
+      "detected_at": "2026-10-01T16:36:36Z",
+      "source_id": "SRC-B172502290090F",
+      "agent_ids": [
+        "AI-0109"
+      ],
+      "source_title": "Luminance – Legal",
+      "url": "https://www.luminance.com/solutions/legal/",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "87e2b880539591e2b40396c741c544eb9aa67e57d9156f8027d76d06c2cd5c9c",
+        "new_hash": "19b861087782eb4616fae79830f0308d841ed7de7be46ade7d8c7655522b9a73",
+        "simhash_distance": 1,
+        "old_token_count": 939,
+        "new_token_count": 933,
+        "token_delta_pct": -0.64
+      },
+      "previous_checked_at": "2026-10-01T15:55:06Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
