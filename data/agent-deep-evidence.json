@@ -5554,6 +5554,400 @@
       ]
     },
     {
+      "agent_id": "AI-0081",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "workato_agent_studio_genies",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Genies as MCP clients",
+              "url": "https://docs.workato.com/en/mcp/genies-as-mcp-clients.html",
+              "note": "Workato documents Agent Studio genies consuming Workato-hosted and external MCP servers as tools.",
+              "evidence_type": "technical_docs",
+              "source_section": "Genies as MCP clients"
+            }
+          ],
+          "note": "Workato genies can act as MCP clients."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "workato_agentic_and_enterprise_mcp",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – MCP servers",
+              "url": "https://docs.workato.com/en/mcp/mcp-servers",
+              "note": "Workato documents authenticated remote MCP servers that expose Workato endpoints and tools to AI agents and clients.",
+              "evidence_type": "technical_docs",
+              "source_section": "MCP servers"
+            },
+            {
+              "title": "Workato Docs – Chat interface",
+              "url": "https://docs.workato.com/agentic/agent-studio/chat-interface/chat-interface",
+              "note": "Workato documents exposing a genie as an MCP server for external AI clients.",
+              "evidence_type": "technical_docs",
+              "source_section": "Using an external AI client?"
+            }
+          ],
+          "note": "Workato can expose Workato capabilities and genies through MCP servers."
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "workato_agentic",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Agentic",
+              "url": "https://docs.workato.com/agentic/agentic.html",
+              "note": "Workato documents Agent Studio genies collaborating with external agents using the Agent-to-Agent (A2A) protocol.",
+              "evidence_type": "technical_docs",
+              "source_section": "Workato Agent Registry"
+            }
+          ],
+          "note": "A2A is a documented interoperability protocol in Workato Agentic."
+        },
+        {
+          "path": "protocols.a2a.client",
+          "value": true,
+          "scope": "workato_agent_studio_genies",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Agentic",
+              "url": "https://docs.workato.com/agentic/agentic.html",
+              "note": "Workato states genies can call any A2A Protocol-compliant agent and delegate tasks to external agents.",
+              "evidence_type": "technical_docs",
+              "source_section": "Workato Agent Registry"
+            },
+            {
+              "title": "Workato Docs – A2A Protocol",
+              "url": "https://docs.workato.com/en/connectors/a2a",
+              "note": "Workato documents invoking compliant A2A agent servers synchronously or asynchronously over HTTP/JSON-RPC.",
+              "evidence_type": "technical_docs",
+              "source_section": "A2A Protocol"
+            }
+          ],
+          "note": "Workato genies can act as A2A clients when delegating tasks to external agents."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "workato_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Agent Studio API",
+              "url": "https://docs.workato.com/workato-api/agent-studio.html",
+              "note": "Workato documents REST endpoints to create, manage, start, and stop Agent Studio genies and related assets.",
+              "evidence_type": "api_docs",
+              "source_section": "Agent Studio APIs"
+            }
+          ],
+          "note": "Workato exposes Agent Studio resources through documented REST APIs."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "workato_agent_studio_genies",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Agentic FAQ",
+              "url": "https://docs.workato.com/en/agentic/faqs.html",
+              "note": "Workato states that genies are AI agents hosted and managed by Workato.",
+              "evidence_type": "technical_docs",
+              "source_section": "When should I use Workato genies vs. external AI clients with MCP?"
+            }
+          ],
+          "note": "Workato hosts and manages Agent Studio genies."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "workato_private_connectivity_and_vpw",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Private connectivity",
+              "url": "https://docs.workato.com/en/security/data-protection/private-connectivity.html",
+              "note": "Workato documents AWS PrivateLink, Azure Private Link, on-prem agent connectivity, and Virtual Private Workato for private network connectivity.",
+              "evidence_type": "security_trust",
+              "source_section": "Private connectivity"
+            },
+            {
+              "title": "Workato Docs – Virtual Private Workato",
+              "url": "https://docs.workato.com/en/cloud-hosting-editions/hosting-editions.html",
+              "note": "Workato documents dedicated isolated VPW environments in AWS VPCs with VPC peering/transit connectivity to customer private networks.",
+              "evidence_type": "security_trust",
+              "source_section": "Virtual Private Workato"
+            }
+          ],
+          "note": "Workato supports private connectivity and dedicated VPC deployment options."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "workato_agent_studio_genies",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Agent Studio data",
+              "url": "https://docs.workato.com/en/agentic/agent-studio/data.html",
+              "note": "Workato documents Agent Studio/genie availability across US, EU, AU, SG, and JP data centers and regional model hosting for data-residency requirements.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency"
+            }
+          ],
+          "note": "Agent Studio supports regional deployment/data-residency options."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "workato_workspace_region",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Data center overview",
+              "url": "https://docs.workato.com/datacenter/datacenter-overview",
+              "note": "Workato documents regional data centers and states each account is hosted in a single selected regional data center, with separate accounts used for multiple regions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Workato across regions"
+            },
+            {
+              "title": "Workato Docs – Agent Studio data",
+              "url": "https://docs.workato.com/en/agentic/agent-studio/data.html",
+              "note": "Workato lists the regional data centers in which genies are available.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency"
+            }
+          ],
+          "note": "Customers choose the regional Workato data center in which their Agent Studio workspace operates."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "workato_identity_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Workato Identity SAML-based SSO",
+              "url": "https://docs.workato.com/workato-identity/saml-sso",
+              "note": "Workato documents SAML-based SSO for Workato Identity, which is used by Agent Studio and other agentic features.",
+              "evidence_type": "technical_docs",
+              "source_section": "SAML-based SSO"
+            },
+            {
+              "title": "Workato Docs – Microsoft Entra ID SAML configuration",
+              "url": "https://docs.workato.com/en/workato-identity/microsoft-entra-id-saml-configuration",
+              "note": "Workato states Workato Identity is available for Agent Studio, Workato GO, MCP, and the API developer portal.",
+              "evidence_type": "technical_docs",
+              "source_section": "Prerequisites"
+            }
+          ],
+          "note": "Agent Studio supports SAML SSO through Workato Identity."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "workato_workspace_identity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Configure and use SCIM",
+              "url": "https://docs.workato.com/en/scim-workato.html",
+              "note": "Workato documents SCIM 2.0 provisioning, deprovisioning, and role/group synchronization.",
+              "evidence_type": "technical_docs",
+              "source_section": "Configure SCIM in Workato"
+            }
+          ],
+          "note": "Workato supports SCIM 2.0 provisioning and deprovisioning."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "workato_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Agent Studio",
+              "url": "https://docs.workato.com/agentic/agent-studio.html",
+              "note": "Workato documents RBAC for genies and knowledge bases, including collaborator privileges and access to test mode and conversation history.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enterprise-grade security features"
+            }
+          ],
+          "note": "Agent Studio has explicit role-based access control."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "workato_workspace_and_agentic_assets",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Security",
+              "url": "https://docs.workato.com/security.html",
+              "note": "Workato documents environment roles, project roles, and custom roles for granular access to platform assets.",
+              "evidence_type": "security_trust",
+              "source_section": "Controlling user access through RBAC"
+            }
+          ],
+          "note": "Workato supports custom roles for granular platform and asset permissions."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "workato_agent_studio_and_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Agent Studio",
+              "url": "https://docs.workato.com/agentic/agent-studio.html",
+              "note": "Workato documents audit trails for all actions taken in Agent Studio.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enterprise-grade security features"
+            },
+            {
+              "title": "Workato Docs – Agentic",
+              "url": "https://docs.workato.com/agentic/agentic.html",
+              "note": "Workato documents full genie conversation history and per-skill job history for observability.",
+              "evidence_type": "technical_docs",
+              "source_section": "Genie conversation observability"
+            }
+          ],
+          "note": "Workato Agentic provides audit trails and conversation/job history."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "workato_genie_conversation_history",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Agentic",
+              "url": "https://docs.workato.com/agentic/agentic.html",
+              "note": "Workato documents API access for querying genie conversation history programmatically on eligible plans.",
+              "evidence_type": "api_docs",
+              "source_section": "Genie conversation observability"
+            }
+          ],
+          "note": "Eligible Workato plans provide API access to query genie conversation history."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "workato_agentic_and_platform_logs",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Agentic",
+              "url": "https://docs.workato.com/agentic/agentic.html",
+              "note": "Workato documents genie conversation log streaming to destinations including Splunk and Datadog.",
+              "evidence_type": "technical_docs",
+              "source_section": "Genie conversation observability"
+            },
+            {
+              "title": "Workato Docs – MCP Gateway",
+              "url": "https://docs.workato.com/en/mcp/mcp-gateway",
+              "note": "Workato documents streaming MCP activity logs to any SIEM application.",
+              "evidence_type": "security_trust",
+              "source_section": "Observability / Server-level logs"
+            }
+          ],
+          "note": "Workato Agentic logs can be streamed to external SIEM/observability destinations."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "workato_platform_data_including_agentic_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Security",
+              "url": "https://docs.workato.com/security.html",
+              "note": "Workato documents AES-256 encryption for data at rest, including job history and audit logs.",
+              "evidence_type": "security_trust",
+              "source_section": "Data encryption"
+            }
+          ],
+          "note": "Workato encrypts platform data at rest with AES-256."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "workato_platform_data_including_agentic_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Security",
+              "url": "https://docs.workato.com/security.html",
+              "note": "Workato states all platform data is encrypted in transit and documents TLS 1.2/1.3 for API Platform endpoints.",
+              "evidence_type": "security_trust",
+              "source_section": "TLS and HTTP standards / Data encryption"
+            }
+          ],
+          "note": "Workato encrypts platform data in transit and supports TLS 1.2/1.3 for API endpoints."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "workato_enterprise_key_management",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Encryption key management",
+              "url": "https://docs.workato.com/security/data-protection/encryption-key-management/",
+              "note": "Workato documents customer-managed Customer Main Keys where customers own and manage the key supplied to Workato.",
+              "evidence_type": "security_trust",
+              "source_section": "Top level"
+            }
+          ],
+          "note": "Workato supports customer-managed/BYOK encryption keys."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "workato_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workato Docs – Virtual Private Workato",
+              "url": "https://docs.workato.com/en/cloud-hosting-editions/hosting-editions.html",
+              "note": "Workato lists SOC 2 Type II among supported compliance frameworks.",
+              "evidence_type": "security_trust",
+              "source_section": "VPW key features"
+            }
+          ],
+          "note": "Workato documents SOC 2 Type II compliance."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0082",
       "claims": [
         {
