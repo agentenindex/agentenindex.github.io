@@ -10816,6 +10816,40 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-F6BE049A54689363FB",
+      "agent_id": "AI-0018",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7B31C553D69E3B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "n8n_workflows",
+        "note": "Published n8n workflows can expose production webhooks.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7B31C553D69E3B",
+            "note": "n8n documents production webhook URLs that receive HTTP requests and trigger workflows.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3C4F661DD4C64ED97E",
       "agent_id": "AI-0018",
       "path": "audience",
@@ -11345,6 +11379,40 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-9E936C38CC76D4EFFF",
+      "agent_id": "AI-0018",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2D21CA203A9096"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "n8n_cloud",
+        "note": "n8n Cloud is an official fully managed deployment option.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2D21CA203A9096",
+            "note": "n8n explicitly describes n8n Cloud as fully managed, with hosting, updates and scaling handled by n8n.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-56120E91437262E304",
       "agent_id": "AI-0018",
       "path": "hosting.self_hosted",
@@ -11477,6 +11545,74 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-2C8BF7005E01218B2E",
+      "agent_id": "AI-0018",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-90CF7C650BC575"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "n8n_ai_agents",
+        "note": "n8n AI agents can consume tools from external MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-90CF7C650BC575",
+            "note": "n8n documents the MCP Client Tool as an MCP client that exposes external MCP server tools to n8n AI Agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A7F1EE482AC4A14D04",
+      "agent_id": "AI-0018",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-396B96E64A3945"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "n8n_workflows_and_tools",
+        "note": "n8n can expose workflows and tools as an MCP server.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-396B96E64A3945",
+            "note": "n8n documents an MCP Server Trigger that makes n8n tools and workflows available to MCP clients over SSE or streamable HTTP.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-F8BAE4B44E1E1BE221",
@@ -51685,6 +51821,46 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-B097959FE951DBCD6F",
+      "agent_id": "AI-0079",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-32402591445F03",
+          "SRC-C4919CAEE281B6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_resources_via_aws_iam",
+        "note": "AgentCore access is governed through AWS IAM roles and policies.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C4919CAEE281B6",
+            "note": "AWS documents IAM identities and policies as the mechanism for controlling authentication and authorization to AgentCore resources.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-32402591445F03",
+            "note": "AWS documents IAM user/role and execution-role permissions for AgentCore Runtime.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-37EC52789585B62293",
       "agent_id": "AI-0079",
       "path": "hosting.managed",
@@ -51753,6 +51929,40 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-BA009CA74798469A89",
+      "agent_id": "AI-0079",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0355F1BDDF6BCD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime_instances",
+        "note": "AgentCore Runtime Instances provide a customer-account/VPC deployment mode in addition to serverless managed Runtime.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0355F1BDDF6BCD",
+            "note": "AWS states Runtime Instances run on EC2 instances in the customer's own AWS account and VPC.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-511CC5D1F4E9804F0B",
       "agent_id": "AI-0079",
       "path": "identity.name",
@@ -51799,6 +52009,80 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-B014B188026CD51591",
+      "agent_id": "AI-0079",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0355F1BDDF6BCD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime_instances",
+        "note": "Runtime Instances provide explicit regional data-residency control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0355F1BDDF6BCD",
+            "note": "AWS explicitly states agents run in the Region the customer specifies and session data and EBS volumes remain in the customer's account.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-79C0F903BB21204791",
+      "agent_id": "AI-0079",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0355F1BDDF6BCD",
+          "SRC-54A6C09885830D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime_instances",
+        "note": "Customers select a supported AWS Region for AgentCore Runtime Instances.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0355F1BDDF6BCD",
+            "note": "AWS states agents run in the VPC, subnets, account, and Region specified by the customer.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-54A6C09885830D",
+            "note": "AWS lists the supported AgentCore regions customers can deploy into.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-3262A7B51E13A62C4E",

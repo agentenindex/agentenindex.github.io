@@ -1185,6 +1185,9 @@
         "api.public_access": [
           true
         ],
+        "api.webhooks": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -1230,6 +1233,9 @@
         "hosting.docker": [
           true
         ],
+        "hosting.managed": [
+          true
+        ],
         "hosting.self_hosted": [
           true
         ],
@@ -1244,6 +1250,12 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "protocols.mcp.server": [
+          true
         ],
         "security.security_audit": [
           true
@@ -5574,10 +5586,16 @@
         "governance.observability": [
           true
         ],
+        "governance.rbac": [
+          true
+        ],
         "hosting.managed": [
           true
         ],
         "hosting.private_network": [
+          true
+        ],
+        "hosting.self_hosted": [
           true
         ],
         "identity.name": [
@@ -5585,6 +5603,12 @@
         ],
         "identity.provider": [
           "AWS"
+        ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
         ],
         "profile.depth": [
           "reference"
