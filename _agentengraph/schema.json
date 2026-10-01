@@ -67,6 +67,44 @@
         },
         "note": {
           "type": "string"
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "scope": {
+          "type": [
+            "string",
+            "array"
+          ]
+        },
+        "evidence_items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "source_id"
+            ],
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^SRC-"
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
         }
       }
     },

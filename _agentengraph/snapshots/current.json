@@ -1101,6 +1101,12 @@
         "access.description": [
           "n8n Cloud oder Self-hosted; Agentenfunktionen abhängig vom Produktstand"
         ],
+        "api.auth.api_key": [
+          true
+        ],
+        "api.public": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -1128,6 +1134,27 @@
           "Viele Integrationen",
           "Workflow- und Agentenlogik in einer Plattform"
         ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
+        "hosting.cloud": [
+          true
+        ],
+        "hosting.docker": [
+          true
+        ],
+        "hosting.self_hosted": [
+          true
+        ],
         "identity.name": [
           "n8n Agents"
         ],
@@ -1139,6 +1166,9 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.security_audit": [
+          true
         ],
         "use_case": [
           "Datenverarbeitung",
@@ -3587,6 +3617,15 @@
         "access.description": [
           "Dust Workspace / kommerzielle Enterprise-Plattform"
         ],
+        "api.public": [
+          true
+        ],
+        "api.type": [
+          "REST"
+        ],
+        "api.webhooks": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -3613,17 +3652,66 @@
           "Spezialisierte Agenten für Teams",
           "Trigger für automatisierte Ausführung"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          365
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
+        "hosting.single_tenant": [
+          true
+        ],
         "identity.name": [
           "Dust Agents"
         ],
         "identity.provider": [
           "Dust"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.region": [
+          "EU",
+          "US"
+        ],
+        "privacy.training.customer_data": [
+          false
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "protocols.mcp.remote": [
+          true
+        ],
+        "protocols.mcp.server": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.3"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Automatisierte agentische Workflows",
@@ -5439,6 +5527,9 @@
         "access.description": [
           "Als Entwicklerframework verfügbar; Infrastruktur und Modelle abhängig von der gewählten Microsoft-/Cloud-Konfiguration."
         ],
+        "api.openai_compatible": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -5466,6 +5557,15 @@
           "Microsoft-Ökosystem",
           "Tool- und Middleware-Unterstützung"
         ],
+        "hosting.managed": [
+          true
+        ],
+        "hosting.managed_provider": [
+          "Microsoft Foundry"
+        ],
+        "hosting.self_hosted": [
+          true
+        ],
         "identity.name": [
           "Microsoft Agent Framework"
         ],
@@ -5477,6 +5577,21 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.a2a": [
+          true
+        ],
+        "protocols.mcp.auth.api_key": [
+          true
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "protocols.mcp.server": [
+          true
+        ],
+        "tools.mcp": [
+          true
         ],
         "use_case": [
           "Agenten entwickeln",

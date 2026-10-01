@@ -5,7 +5,7 @@ AgentenGraph ist der interne, versionierte Datenkern von AgentenIndex.
 ## Warum er existiert
 
 'data/agents.json' bleibt die kompakte, veröffentlichte Produkt- und Finder-Datenbasis.
-AgentenGraph ergänzt diese Daten um stabile Entitäten, Aussagen (assertions),
+AgentenGraph ergänzt diese Daten sowie `data/agent-deep-evidence.json` um stabile Entitäten, Aussagen (assertions),
 Quellen, Historie und Änderungsereignisse.
 
 Der wichtigste Unterschied: Ein Wert wird künftig nicht einfach überschrieben.
@@ -16,7 +16,7 @@ field_change-Event.
 ## Evidenz in v1
 
 Die bestehenden AgentenProfile besitzen Quellenlisten auf Profilebene. Deshalb
-werden importierte Assertions nicht künstlich als feldgenau verifiziert.
+werden Profil-Assertions nicht künstlich als feldgenau verifiziert. Kuratierte Deep-Evidence-Claims werden dagegen explizit feldgenau gebunden.
 Sie starten mit:
 
 - evidence.binding = "profile_source_set"

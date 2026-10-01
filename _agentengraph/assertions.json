@@ -9747,6 +9747,72 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-7D71A871EF94435525",
+      "agent_id": "AI-0018",
+      "path": "api.auth.api_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7A5074EDB87BD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "platform",
+        "note": "API-key authentication is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7A5074EDB87BD",
+            "note": "The official source-control tutorial authenticates an n8n API call with X-N8N-API-KEY."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9F7CA55E9C8CDF6A1F",
+      "agent_id": "AI-0018",
+      "path": "api.public",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9DC78DB62D363B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "platform",
+        "note": "A public API is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9DC78DB62D363B",
+            "note": "The security-audit documentation explicitly describes use through the public API."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3C4F661DD4C64ED97E",
       "agent_id": "AI-0018",
       "path": "audience",
@@ -10072,6 +10138,237 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BA0CFA4194504D0634",
+      "agent_id": "AI-0018",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC4F6F114C4C2B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "Custom roles are documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC4F6F114C4C2B",
+            "note": "The RBAC documentation includes custom roles."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4627337136A5761F37",
+      "agent_id": "AI-0018",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC4F6F114C4C2B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "platform",
+        "note": "Role-based access control is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC4F6F114C4C2B",
+            "note": "n8n documents role-based access control with instance and project roles."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2A4B213CD1B58A1973",
+      "agent_id": "AI-0018",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3B9424183C9B34"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "OIDC SSO is supported.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3B9424183C9B34",
+            "note": "Official n8n documentation demonstrates OIDC SSO setup."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-560B371D0365FD8C04",
+      "agent_id": "AI-0018",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E719A154D9A229"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "SAML SSO is supported.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E719A154D9A229",
+            "note": "Official n8n documentation demonstrates SAML 2.0 SSO setup."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AA0E65C4638CF3D898",
+      "agent_id": "AI-0018",
+      "path": "hosting.cloud",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3F323D00F032F8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "platform",
+        "note": "n8n Cloud is available.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3F323D00F032F8",
+            "note": "n8n documentation presents Cloud as a supported deployment option."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1975746FE167E5E724",
+      "agent_id": "AI-0018",
+      "path": "hosting.docker",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3F323D00F032F8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "self_hosted",
+        "note": "Docker deployment is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3F323D00F032F8",
+            "note": "n8n documentation lists Docker as an installation option."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-56120E91437262E304",
+      "agent_id": "AI-0018",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3F323D00F032F8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "platform",
+        "note": "Self-hosting is supported.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3F323D00F032F8",
+            "note": "n8n documentation explicitly presents self-hosting as an option."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-289CBECC10AFD0C634",
       "agent_id": "AI-0018",
       "path": "identity.name",
@@ -10170,6 +10467,39 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-F8BAE4B44E1E1BE221",
+      "agent_id": "AI-0018",
+      "path": "security.security_audit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9DC78DB62D363B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "platform",
+        "note": "A built-in security audit capability is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9DC78DB62D363B",
+            "note": "n8n provides a security audit via CLI, public API, or n8n node."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-196A5B017B8BB9F0CD",
@@ -31941,6 +32271,105 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1758F6802FB2E936D7",
+      "agent_id": "AI-0057",
+      "path": "api.public",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "business_and_enterprise",
+        "note": "A developer-facing API is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust lists an Open API and a RESTful API for custom integrations."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E376999A1239CE91F7",
+      "agent_id": "AI-0057",
+      "path": "api.type",
+      "value": "REST",
+      "value_hash": "e8322a4dba0f6157",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "business_and_enterprise",
+        "note": "REST is a documented API interface.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "The integration architecture explicitly lists a RESTful API."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-43A4AECB2FDD889893",
+      "agent_id": "AI-0057",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "business_and_enterprise",
+        "note": "Webhook-based integrations are supported.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust lists webhook support for event-driven workflows."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-C88AB2C13328017AB8",
       "agent_id": "AI-0057",
       "path": "audience",
@@ -32253,6 +32682,237 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-48D31268F5DC297BB3",
+      "agent_id": "AI-0057",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "Audit logs are documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust lists audit logs as an enterprise security capability."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6FD2B72CEA41494068",
+      "agent_id": "AI-0057",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "Audit-log retention is documented as 365 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust specifies 365-day audit-log retention."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DAF179D41C1382ECEE",
+      "agent_id": "AI-0057",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "RBAC is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust lists role-based access control/permissions."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F77E974D631FC7D917",
+      "agent_id": "AI-0057",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "SCIM provisioning is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust lists SCIM provisioning."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5CD564CC7CFC8E625E",
+      "agent_id": "AI-0057",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "OIDC SSO is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust explicitly lists SSO with OIDC."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-523FE771531A18178C",
+      "agent_id": "AI-0057",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "SAML SSO is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust explicitly lists SSO with SAML."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6BC058C30F6F91C8D6",
+      "agent_id": "AI-0057",
+      "path": "hosting.single_tenant",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C34422C10F2924"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "A single-tenant deployment option is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C34422C10F2924",
+            "note": "Enterprise includes single-tenant deployment."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-14B67AA74884D0C0AD",
       "agent_id": "AI-0057",
       "path": "identity.name",
@@ -32305,6 +32965,138 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BB88655350131DA6A3",
+      "agent_id": "AI-0057",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C34422C10F2924"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "business_and_enterprise",
+        "note": "Regional data residency is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C34422C10F2924",
+            "note": "Dust lists US and EU data residency."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-375EC3E7E6A7AE5050",
+      "agent_id": "AI-0057",
+      "path": "privacy.residency.region",
+      "value": "EU",
+      "value_hash": "0d7d676526f8d961",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C34422C10F2924"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "business_and_enterprise",
+        "note": "EU residency is available.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C34422C10F2924",
+            "note": "EU is listed as a supported data-residency region."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A38C3601049CE74A6F",
+      "agent_id": "AI-0057",
+      "path": "privacy.residency.region",
+      "value": "US",
+      "value_hash": "b5e86cefc9cfb8c9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C34422C10F2924"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "business_and_enterprise",
+        "note": "US residency is available.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C34422C10F2924",
+            "note": "US is listed as a supported data-residency region."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-44941C0F9299D98CB1",
+      "agent_id": "AI-0057",
+      "path": "privacy.training.customer_data",
+      "value": false,
+      "value_hash": "fcbcf165908dd18a",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "Customer data is documented as not used for model training.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust states zero model training on customer data."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-24642D2029BA62E4A8",
       "agent_id": "AI-0057",
       "path": "profile.depth",
@@ -32355,6 +33147,204 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-9902DB153E79660B0D",
+      "agent_id": "AI-0057",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "business_and_enterprise",
+        "note": "Dust acts as an MCP client for agent tool access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust states agents can connect to company tools through MCP servers."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BE8C0EA6A2A20CF912",
+      "agent_id": "AI-0057",
+      "path": "protocols.mcp.remote",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C34422C10F2924"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "business_and_enterprise",
+        "note": "Remote MCP servers are supported.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C34422C10F2924",
+            "note": "The plan comparison explicitly lists native and remote MCP servers."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5D25D90E683481FECA",
+      "agent_id": "AI-0057",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DF3854858BABBC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "platform",
+        "note": "Dust documents MCP server capability in addition to client use.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DF3854858BABBC",
+            "note": "Dust explicitly describes its approach as both an MCP client and server."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7279770EB9F9CB4727",
+      "agent_id": "AI-0057",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "Encryption at rest is documented as AES-256.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust specifies AES-256 encryption at rest."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A20ECEB8277892E976",
+      "agent_id": "AI-0057",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.3",
+      "value_hash": "fdb7abc7906b8335",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "Encryption in transit is documented as TLS 1.3.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust specifies TLS 1.3 in transit."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-78CBF028C361169C47",
+      "agent_id": "AI-0057",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise",
+        "note": "SOC 2 Type II is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust states SOC 2 Type II certification."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0E64BB0E250316F645",
@@ -48590,6 +49580,39 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-0B1827BA786DF140AE",
+      "agent_id": "AI-0086",
+      "path": "api.openai_compatible",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-18F91232A2BFC2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "self_hosted_and_managed",
+        "note": "OpenAI-compatible serving endpoints are documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-18F91232A2BFC2",
+            "note": "The hosting documentation describes OpenAI-compatible Responses and Chat Completions endpoints."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F6AD77E1ED263E8B4F",
       "agent_id": "AI-0086",
       "path": "audience",
@@ -48902,6 +49925,105 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-418F2B9D20B4408E09",
+      "agent_id": "AI-0086",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-18F91232A2BFC2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "framework",
+        "note": "Managed hosting through Microsoft Foundry is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-18F91232A2BFC2",
+            "note": "Microsoft documents Foundry Hosted Agents as a managed hosting path."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C254C3A570A3C2852C",
+      "agent_id": "AI-0086",
+      "path": "hosting.managed_provider",
+      "value": "Microsoft Foundry",
+      "value_hash": "cc4a025727332b77",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-18F91232A2BFC2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "framework",
+        "note": "Microsoft Foundry is a documented managed host.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-18F91232A2BFC2",
+            "note": "Foundry Hosted Agents are the documented managed hosting option."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B2D7735B523F7FC7E4",
+      "agent_id": "AI-0086",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-18F91232A2BFC2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "framework",
+        "note": "Self-hosting is supported.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-18F91232A2BFC2",
+            "note": "Microsoft documents self-hosting Agent Framework applications."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-969E1F7836BF2468D5",
       "agent_id": "AI-0086",
       "path": "identity.name",
@@ -48996,6 +50118,171 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-39731FC7B6964B21FC",
+      "agent_id": "AI-0086",
+      "path": "protocols.a2a",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-18F91232A2BFC2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "framework",
+        "note": "A2A integration/hosting is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-18F91232A2BFC2",
+            "note": "Microsoft documents A2A hosting and remote A2A agent services."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8612EDE5699C868756",
+      "agent_id": "AI-0086",
+      "path": "protocols.mcp.auth.api_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-01A94EF4AD89BD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "framework",
+        "note": "API-key authentication for MCP connections is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-01A94EF4AD89BD",
+            "note": "The official MCP examples include API-key authentication for MCP connections."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-69B8E34EAC3EB34DE7",
+      "agent_id": "AI-0086",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7A0A5C3EE30D90"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "framework",
+        "note": "Agent Framework includes MCP client integration.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7A0A5C3EE30D90",
+            "note": "Microsoft documents connecting Agent Framework agents to MCP servers and using their tools."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5715E01DC57189AC06",
+      "agent_id": "AI-0086",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-01A94EF4AD89BD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "framework",
+        "note": "Agents can be exposed as MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-01A94EF4AD89BD",
+            "note": "The official MCP examples include exposing an Agent Framework agent as an MCP server."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EB8130A3A3B40EF56D",
+      "agent_id": "AI-0086",
+      "path": "tools.mcp",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-05F7482FA320CB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "framework",
+        "note": "MCP tools are a first-class Agent Framework integration.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-05F7482FA320CB",
+            "note": "The framework overview lists MCP clients for tool integration."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-1A5FE5AB4C1F4CED8A",
