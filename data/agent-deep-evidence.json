@@ -163,6 +163,36 @@
             }
           ],
           "note": "Compliance API access is documented in the enterprise feature matrix."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 30,
+          "scope": "enterprise_and_edu",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-openai-compliance-platform-for-enterprise-and-edu-customers",
+              "note": "OpenAI states that Codex policy/configuration changes are recorded in workspace audit logs and that the Compliance Logs Platform retains data for 30 days."
+            }
+          ],
+          "note": "The documented Compliance Logs Platform retention window is 30 days."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "enterprise_and_edu",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-openai-compliance-platform-for-enterprise-and-edu-customers",
+              "note": "OpenAI documents connecting Compliance Platform logs and metadata to SIEM tools and retrieving Codex workspace audit logs through the Compliance API."
+            }
+          ],
+          "note": "Codex workspace audit data can be exported into SIEM/data-lake workflows through the compliance interfaces."
         }
       ]
     },
@@ -413,6 +443,66 @@
             }
           ],
           "note": "Microsoft Entra Agent ID is the documented identity provider."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "power_platform_environment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Secure your Copilot Studio projects",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase3",
+              "note": "Microsoft instructs organizations to assign Copilot Studio authoring permissions with Dataverse security roles."
+            }
+          ],
+          "note": "Copilot Studio authoring access is governed with environment security roles."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "power_platform_environment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Secure your Copilot Studio projects",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase3",
+              "note": "Microsoft explicitly documents assigning a custom role when predefined Copilot Studio authoring roles do not fit."
+            }
+          ],
+          "note": "Custom Dataverse security roles are supported for Copilot Studio permissions."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "copilot_studio_tenant",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Audit Copilot Studio activities in Microsoft Purview",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-logging-copilot-studio",
+              "note": "Microsoft documents Purview audit events for Copilot Studio administrative, maker, and user interactions."
+            }
+          ],
+          "note": "Copilot Studio activities are available as audit events in Microsoft Purview."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "office_365_management_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Audit Copilot Studio activities in Microsoft Purview",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-logging-copilot-studio",
+              "note": "Microsoft states that developers can access Copilot Studio audit logs through the Office 365 Management API."
+            }
+          ],
+          "note": "Programmatic audit-log access is documented through the Office 365 Management API."
         }
       ]
     },
@@ -493,6 +583,111 @@
             }
           ],
           "note": "Cross-instance import/export is documented."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "ai_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Add MCP Tool",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/add-mcp-tool.html",
+              "note": "Oracle documents adding an MCP tool that connects AI Agent Studio agents and nodes to external MCP servers."
+            }
+          ],
+          "note": "AI Agent Studio can consume external MCP servers."
+        },
+        {
+          "path": "protocols.mcp.remote",
+          "value": true,
+          "scope": "ai_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Add MCP Tool",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/add-mcp-tool.html",
+              "note": "Oracle requires an external MCP server endpoint URL when configuring an MCP tool."
+            }
+          ],
+          "note": "Remote MCP server connections are supported."
+        },
+        {
+          "path": "protocols.mcp.transport.sse",
+          "value": true,
+          "scope": "mcp_tools",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Add MCP Tool",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/add-mcp-tool.html",
+              "note": "Oracle lists Server Sent Events (SSE) as an MCP transport type."
+            }
+          ],
+          "note": "SSE is a documented MCP transport option."
+        },
+        {
+          "path": "protocols.mcp.transport.streamable_http",
+          "value": true,
+          "scope": "mcp_tools",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Add MCP Tool",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/add-mcp-tool.html",
+              "note": "Oracle lists StreamableHTTP as an MCP transport type."
+            }
+          ],
+          "note": "Streamable HTTP is a documented MCP transport option."
+        },
+        {
+          "path": "governance.observability",
+          "value": true,
+          "scope": "monitoring_and_evaluation",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Monitor Agents",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/monitor-agents.html",
+              "note": "Oracle documents aggregated metrics and per-session monitoring for all AI Agent Studio agent runs, including draft agents."
+            }
+          ],
+          "note": "AI Agent Studio includes run-level monitoring and metrics."
+        },
+        {
+          "path": "governance.tracing",
+          "value": true,
+          "scope": "monitoring_and_evaluation",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Monitor Agents",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/monitor-agents.html",
+              "note": "Oracle's detailed trace view shows the step-by-step conversation, tool calls, duration, and metrics for each step."
+            }
+          ],
+          "note": "Detailed per-session tracing is documented."
+        },
+        {
+          "path": "governance.human_approval",
+          "value": true,
+          "scope": "agent_actions_and_workflows",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Get Started with AI Agent Studio",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/get-started.html",
+              "note": "Oracle documents adding a human-in-the-loop approval step for selected agent actions."
+            }
+          ],
+          "note": "Human approval steps can be added for oversight of agent actions."
         }
       ]
     },
@@ -588,6 +783,81 @@
             }
           ],
           "note": "Agentforce provides an MCP server registry and governed tool allowlisting."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "supported_agent_types",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Developers – Get Started with the Agent API",
+              "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+              "note": "Salesforce documents direct communication with supported Agentforce agents through the REST Agent API; Agentforce (Default) agents are explicitly excluded."
+            }
+          ],
+          "note": "A REST Agent API is available for supported Agentforce agent types."
+        },
+        {
+          "path": "api.auth.oauth",
+          "value": true,
+          "scope": "agent_api_external_client_app",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Developers – Get Started with the Agent API",
+              "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+              "note": "Salesforce requires an external client app supporting the client-credentials flow for Agent API access."
+            }
+          ],
+          "note": "Agent API access uses an OAuth client-credentials application flow."
+        },
+        {
+          "path": "sdk.python",
+          "value": true,
+          "scope": "agentforce_development",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Developers – Agentforce APIs and SDKs",
+              "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/get-started-agents.html",
+              "note": "Salesforce lists the Agentforce Python SDK for programmatic agent creation and management."
+            }
+          ],
+          "note": "A first-party Agentforce Python SDK is documented."
+        },
+        {
+          "path": "governance.logs.otel_export",
+          "value": true,
+          "scope": "session_trace_beta",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Developers – Export Agentforce Session Tracing Data",
+              "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/otel-api.html",
+              "note": "The beta Session Trace OTel API exports unified trace, metric, and log data in OpenTelemetry/OTLP format for ingestion by observability tools."
+            }
+          ],
+          "note": "Session tracing can be exported in OTLP-compatible form through the beta API."
+        },
+        {
+          "path": "governance.logs.query_window_hours",
+          "value": 72,
+          "scope": "session_trace_beta",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Developers – Export Agentforce Session Tracing Data",
+              "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/otel-api.html",
+              "note": "Salesforce states that the beta OTel API returns data only for sessions that started within the previous 72 hours."
+            }
+          ],
+          "note": "The documented beta OTel API query window is 72 hours."
         }
       ]
     },
@@ -653,6 +923,36 @@
             }
           ],
           "note": "Low-code agent building is documented."
+        },
+        {
+          "path": "protocols.mcp.remote",
+          "value": true,
+          "scope": "joule_studio_classic",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – Add MCP Servers to Your Joule Agent",
+              "url": "https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/3d9dfad0bc39468292d508f0808a12fe.html",
+              "note": "SAP documents adding MCP servers to Joule agents to connect them with external applications."
+            }
+          ],
+          "note": "Joule Studio classic supports remote MCP server connections."
+        },
+        {
+          "path": "governance.mcp.control_tower_registration",
+          "value": true,
+          "scope": "joule_studio_classic",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – Add MCP Servers to Your Joule Agent",
+              "url": "https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/3d9dfad0bc39468292d508f0808a12fe.html",
+              "note": "SAP requires MCP destinations to be created in BTP Cockpit and registered in the control tower before use by a Joule agent."
+            }
+          ],
+          "note": "MCP destinations are governed through control-tower registration."
         }
       ]
     },
@@ -748,6 +1048,131 @@
             }
           ],
           "note": "Policy/governance controls are documented."
+        },
+        {
+          "path": "protocols.a2a.client",
+          "value": true,
+          "scope": "servicenow_ai_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Integrating external AI agents",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/external-agent-protocols.html",
+              "note": "ServiceNow documents allowing the ServiceNow AI Platform to access external agents through A2A."
+            }
+          ],
+          "note": "ServiceNow can consume external A2A agents."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "servicenow_ai_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Integrating external AI agents",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/external-agent-protocols.html",
+              "note": "ServiceNow documents allowing third parties to access ServiceNow AI agents through A2A."
+            }
+          ],
+          "note": "ServiceNow AI agents can be exposed to third-party A2A systems."
+        },
+        {
+          "path": "protocols.mcp.auth.required",
+          "value": true,
+          "scope": "ai_agent_studio_mcp_tools",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Add an MCP server tool to an AI agent",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/add-mcp-server-tool.html",
+              "note": "ServiceNow explicitly requires an MCP server to be authenticated before its tool can be added to an AI agent."
+            }
+          ],
+          "note": "Authenticated MCP servers are required for AI Agent Studio MCP tools."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "servicenow_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – ServiceNow Otto AI agents reference",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/na-aia-reference.html?contentId=4tS9w1m4NiMCL4HYrVaNfw",
+              "note": "ServiceNow documents distinct AI Agent admin, viewer, and role-configuration roles for Otto AI agents."
+            }
+          ],
+          "note": "AI agent configuration and monitoring access is role-based."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0036",
+      "claims": [
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "servicenow_otto_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – ServiceNow Otto AI agents reference",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/na-aia-reference.html?contentId=4tS9w1m4NiMCL4HYrVaNfw",
+              "note": "ServiceNow documents installed AI Agent admin, viewer, and role-configuration roles for ServiceNow Otto AI agents."
+            }
+          ],
+          "note": "ServiceNow Otto AI agents use role-based administration and viewing permissions."
+        },
+        {
+          "path": "governance.roles.admin",
+          "value": "sn_aia.admin",
+          "scope": "servicenow_otto_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – ServiceNow Otto AI agents reference",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/na-aia-reference.html?contentId=4tS9w1m4NiMCL4HYrVaNfw",
+              "note": "ServiceNow identifies sn_aia.admin as the AI Agent administrator role."
+            }
+          ],
+          "note": "The documented AI Agent administrator role is sn_aia.admin."
+        },
+        {
+          "path": "governance.roles.viewer",
+          "value": "sn_aia.viewer",
+          "scope": "servicenow_otto_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – ServiceNow Otto AI agents reference",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/na-aia-reference.html?contentId=4tS9w1m4NiMCL4HYrVaNfw",
+              "note": "ServiceNow identifies sn_aia.viewer as the read-only AI Agent viewer role."
+            }
+          ],
+          "note": "The documented read-only AI Agent viewer role is sn_aia.viewer."
+        },
+        {
+          "path": "deployment.license_requirement",
+          "value": "ServiceNow Otto Pro Plus or Enterprise entitlement",
+          "scope": "servicenow_otto_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Set up AI agents",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/set-up-na-aia.html",
+              "note": "ServiceNow lists ServiceNow Otto Pro Plus or Enterprise entitlement as a licensing requirement for AI agents."
+            }
+          ],
+          "note": "Otto AI agent setup requires the documented Pro Plus or Enterprise entitlement."
         }
       ]
     },
@@ -1223,6 +1648,81 @@
             }
           ],
           "note": "Azure RBAC is part of Agent Service access control."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "agent_endpoint_preview",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Configure and share your Foundry agent",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+              "note": "Microsoft lists an MCP (preview) protocol endpoint that a Foundry agent can expose."
+            }
+          ],
+          "note": "Foundry agents can expose an MCP endpoint in preview."
+        },
+        {
+          "path": "api.openai_responses",
+          "value": true,
+          "scope": "agent_endpoint",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Configure and share your Foundry agent",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+              "note": "Microsoft documents the agent endpoint's OpenAI Responses protocol URL and enables Responses by default."
+            }
+          ],
+          "note": "Foundry agents expose a Responses protocol endpoint."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "agent_management",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Configure and share your Foundry agent",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+              "note": "Microsoft documents configuring agent versions, protocols, authorization, and agent cards through the REST API."
+            }
+          ],
+          "note": "Agent endpoint configuration is available through a REST API."
+        },
+        {
+          "path": "api.auth.entra_id",
+          "value": true,
+          "scope": "agent_endpoint_inbound",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Configure and share your Foundry agent",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+              "note": "Microsoft documents Microsoft Entra ID authorization for inbound Foundry agent endpoint access."
+            }
+          ],
+          "note": "Microsoft Entra ID is a supported inbound authorization scheme."
+        },
+        {
+          "path": "api.auth.api_key",
+          "value": false,
+          "scope": "agent_endpoint_inbound",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Configure and share your Foundry agent",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+              "note": "Microsoft explicitly states that API key authentication is not supported for the Foundry agent endpoint and directs callers to Entra ID/Azure RBAC."
+            }
+          ],
+          "note": "This negative value is explicit and scoped only to inbound authentication on the agent endpoint."
         }
       ]
     },
@@ -1408,6 +1908,141 @@
             }
           ],
           "note": "Firehose log export is documented."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "agentcore_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Deploy A2A servers in AgentCore Runtime",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-a2a.html",
+              "note": "AWS documents deploying and running A2A servers in AgentCore Runtime."
+            }
+          ],
+          "note": "AgentCore Runtime can host A2A servers."
+        },
+        {
+          "path": "protocols.a2a.auth.iam",
+          "value": true,
+          "scope": "agentcore_runtime_a2a",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – A2A protocol contract",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-a2a-protocol-contract.html",
+              "note": "AWS documents SigV4 authentication for A2A server access."
+            }
+          ],
+          "note": "A2A endpoints support AWS SigV4 authentication."
+        },
+        {
+          "path": "protocols.a2a.auth.oauth",
+          "value": true,
+          "scope": "agentcore_runtime_a2a",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – A2A protocol contract",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-a2a-protocol-contract.html",
+              "note": "AWS documents OAuth 2.0 Bearer token authentication for A2A server access."
+            }
+          ],
+          "note": "A2A endpoints support OAuth 2.0 bearer-token authentication."
+        },
+        {
+          "path": "api.http",
+          "value": true,
+          "scope": "agentcore_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – AgentCore Runtime service contract",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-service-contract.html",
+              "note": "AWS lists HTTP REST endpoints as a supported AgentCore Runtime protocol surface."
+            }
+          ],
+          "note": "AgentCore Runtime supports direct HTTP/REST invocation."
+        },
+        {
+          "path": "api.websocket",
+          "value": true,
+          "scope": "agentcore_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – AgentCore Runtime service contract",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-service-contract.html",
+              "note": "AWS lists WebSocket endpoints for the HTTP and AG-UI protocol surfaces."
+            }
+          ],
+          "note": "WebSocket invocation is documented for supported runtime protocols."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "agentcore_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Security best practices for AgentCore Runtime",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-security-best-practices.html",
+              "note": "AWS states all client-to-Runtime and Runtime-to-dependency communication is protected with TLS 1.2 or higher."
+            }
+          ],
+          "note": "TLS 1.2 or higher is the documented minimum for Runtime communication."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AWS KMS (AWS owned keys)",
+          "scope": "agentcore_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Security best practices for AgentCore Runtime",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-security-best-practices.html",
+              "note": "AWS states Runtime data at rest is encrypted by default with AWS-owned keys in AWS KMS."
+            }
+          ],
+          "note": "Default Runtime at-rest encryption uses AWS-owned AWS KMS keys."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "supported_agentcore_resources",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Data encryption in Amazon Bedrock AgentCore",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/data-encryption.html",
+              "note": "AWS documents customer-managed KMS keys for supported AgentCore resources including Memories and Gateways."
+            }
+          ],
+          "note": "Customer-managed KMS keys are supported for documented AgentCore resource types."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "agentcore_runtime_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Security best practices for AgentCore Runtime",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-security-best-practices.html",
+              "note": "AWS documents CloudTrail recording Runtime invoke and control-plane API calls with caller identity, timestamp, source IP, and response status."
+            }
+          ],
+          "note": "AWS CloudTrail provides audit records for AgentCore Runtime API activity."
         }
       ]
     },
@@ -1578,6 +2213,51 @@
             }
           ],
           "note": "Agent monitoring and tracing are documented."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "agentstudio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Accessing Agentstudio and setting up permissions",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Accessing_agentstudio",
+              "note": "Boomi explicitly supports custom roles with granular Agent Garden privileges for building and managing agents."
+            }
+          ],
+          "note": "Custom roles with granular Agentstudio privileges are supported."
+        },
+        {
+          "path": "governance.session_logs.available",
+          "value": true,
+          "scope": "deployed_conversational_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Tracing sessions of Boomi Agent Garden agents",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Sessionlogs",
+              "note": "Boomi documents session logs for deployed conversational Agent Garden agents, including all executed sessions."
+            }
+          ],
+          "note": "Session logs are available for deployed conversational agents in Agent Garden."
+        },
+        {
+          "path": "governance.tracing",
+          "value": true,
+          "scope": "deployed_conversational_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Tracing sessions of Boomi Agent Garden agents",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Sessionlogs",
+              "note": "Boomi states session logs provide production reasoning visibility and detailed session traces for troubleshooting and optimization."
+            }
+          ],
+          "note": "Production session tracing is documented for deployed conversational agents."
         }
       ]
     },
