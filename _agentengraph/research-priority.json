@@ -81,16 +81,16 @@
       "coverage_pct": 8.18
     },
     {
-      "path": "protocols.a2a.supported",
+      "path": "security.soc2_type2",
       "documented_agents": 9,
       "unknown_agents": 101,
       "coverage_pct": 8.18
     },
     {
-      "path": "security.soc2_type2",
-      "documented_agents": 9,
-      "unknown_agents": 101,
-      "coverage_pct": 8.18
+      "path": "protocols.a2a.supported",
+      "documented_agents": 10,
+      "unknown_agents": 100,
+      "coverage_pct": 9.09
     },
     {
       "path": "protocols.mcp.server",
@@ -183,17 +183,17 @@
       "name": "Gemini CLI",
       "provider_id": "PROV-GOOGLE",
       "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 94.0,
+      "priority_score": 92.8,
       "score_components": {
         "tier_base": 80.0,
-        "gap_to_40pct": 5.0,
-        "unknown_share": 4.0,
+        "gap_to_40pct": 4.0,
+        "unknown_share": 3.8,
         "source_readiness": 5.0
       },
-      "documented_fields": 5,
-      "unknown_fields": 20,
-      "coverage_pct": 20.0,
-      "fields_needed_for_40pct": 5,
+      "documented_fields": 6,
+      "unknown_fields": 19,
+      "coverage_pct": 24.0,
+      "fields_needed_for_40pct": 4,
       "recommended_unknown_paths": [
         "api.webhooks",
         "governance.audit_logs.retention_days",
@@ -202,7 +202,7 @@
         "protocols.a2a.server",
         "governance.custom_roles",
         "hosting.private_network",
-        "protocols.a2a.supported"
+        "security.soc2_type2"
       ],
       "available_primary_sources": [
         {
@@ -285,10 +285,10 @@
           "suggested_query": "Google Gemini CLI official documentation hosting private_network"
         },
         {
-          "path": "protocols.a2a.supported",
+          "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
-          "suggested_query": "Google Gemini CLI official documentation protocols a2a supported"
+          "suggested_query": "Google Gemini CLI official documentation security soc2_type2"
         }
       ]
     },
@@ -7280,7 +7280,7 @@
         "protocols.a2a.server",
         "governance.custom_roles",
         "hosting.private_network",
-        "protocols.a2a.supported"
+        "security.soc2_type2"
       ],
       "available_primary_sources": [
         {
@@ -7376,10 +7376,10 @@
           "suggested_query": "GitHub GitHub Copilot Coding Agent official documentation hosting private_network"
         },
         {
-          "path": "protocols.a2a.supported",
+          "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
-          "suggested_query": "GitHub GitHub Copilot Coding Agent official documentation protocols a2a supported"
+          "suggested_query": "GitHub GitHub Copilot Coding Agent official documentation security soc2_type2"
         }
       ]
     },
@@ -7533,8 +7533,8 @@
         "governance.audit_logs.api",
         "protocols.a2a.server",
         "governance.custom_roles",
-        "protocols.a2a.supported",
-        "security.soc2_type2"
+        "security.soc2_type2",
+        "protocols.a2a.supported"
       ],
       "available_primary_sources": [
         {
@@ -7617,16 +7617,16 @@
           "suggested_query": "Cline Cline official documentation governance custom_roles"
         },
         {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "Cline Cline official documentation protocols a2a supported"
-        },
-        {
           "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
           "suggested_query": "Cline Cline official documentation security soc2_type2"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Cline Cline official documentation protocols a2a supported"
         }
       ]
     },
@@ -7653,8 +7653,8 @@
         "protocols.a2a.server",
         "governance.audit_logs.siem_export",
         "hosting.private_network",
-        "protocols.a2a.supported",
-        "security.soc2_type2"
+        "security.soc2_type2",
+        "protocols.a2a.supported"
       ],
       "available_primary_sources": [
         {
@@ -7744,16 +7744,16 @@
           "suggested_query": "n8n n8n Agents official documentation hosting private_network"
         },
         {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "n8n n8n Agents official documentation protocols a2a supported"
-        },
-        {
           "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
           "suggested_query": "n8n n8n Agents official documentation security soc2_type2"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "n8n n8n Agents official documentation protocols a2a supported"
         }
       ]
     },
@@ -7781,7 +7781,7 @@
         "protocols.a2a.server",
         "governance.audit_logs.siem_export",
         "hosting.private_network",
-        "protocols.a2a.supported"
+        "security.soc2_type2"
       ],
       "available_primary_sources": [
         {
@@ -7877,10 +7877,10 @@
           "suggested_query": "Microsoft Microsoft Copilot Studio official documentation hosting private_network"
         },
         {
-          "path": "protocols.a2a.supported",
+          "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
-          "suggested_query": "Microsoft Microsoft Copilot Studio official documentation protocols a2a supported"
+          "suggested_query": "Microsoft Microsoft Copilot Studio official documentation security soc2_type2"
         }
       ]
     },
@@ -8162,7 +8162,7 @@
         "governance.audit_logs.siem_export",
         "governance.custom_roles",
         "hosting.private_network",
-        "protocols.a2a.supported"
+        "security.soc2_type2"
       ],
       "available_primary_sources": [
         {
@@ -8258,10 +8258,10 @@
           "suggested_query": "UiPath UiPath Agents official documentation hosting private_network"
         },
         {
-          "path": "protocols.a2a.supported",
+          "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
-          "suggested_query": "UiPath UiPath Agents official documentation protocols a2a supported"
+          "suggested_query": "UiPath UiPath Agents official documentation security soc2_type2"
         }
       ]
     },
@@ -8761,8 +8761,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
           "suggested_query": "ServiceNow ServiceNow Otto official documentation protocols a2a supported"
         },
         {
@@ -8797,7 +8797,7 @@
         "protocols.a2a.server",
         "governance.custom_roles",
         "hosting.private_network",
-        "protocols.a2a.supported"
+        "security.soc2_type2"
       ],
       "available_primary_sources": [
         {
@@ -8893,10 +8893,10 @@
           "suggested_query": "GitLab GitLab Duo Agent Platform official documentation hosting private_network"
         },
         {
-          "path": "protocols.a2a.supported",
+          "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
-          "suggested_query": "GitLab GitLab Duo Agent Platform official documentation protocols a2a supported"
+          "suggested_query": "GitLab GitLab Duo Agent Platform official documentation security soc2_type2"
         }
       ]
     },
@@ -9557,7 +9557,7 @@
         "protocols.a2a.server",
         "governance.audit_logs.siem_export",
         "hosting.private_network",
-        "protocols.a2a.supported"
+        "security.soc2_type2"
       ],
       "available_primary_sources": [
         {
@@ -9653,10 +9653,10 @@
           "suggested_query": "Snowflake Snowflake Cortex Agents official documentation hosting private_network"
         },
         {
-          "path": "protocols.a2a.supported",
+          "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
-          "suggested_query": "Snowflake Snowflake Cortex Agents official documentation protocols a2a supported"
+          "suggested_query": "Snowflake Snowflake Cortex Agents official documentation security soc2_type2"
         }
       ]
     },
@@ -9810,8 +9810,8 @@
         "governance.audit_logs.api",
         "governance.audit_logs.siem_export",
         "governance.custom_roles",
-        "protocols.a2a.supported",
-        "security.soc2_type2"
+        "security.soc2_type2",
+        "protocols.a2a.supported"
       ],
       "available_primary_sources": [
         {
@@ -9900,16 +9900,16 @@
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
         },
         {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation protocols a2a supported"
-        },
-        {
           "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation security soc2_type2"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation protocols a2a supported"
         }
       ]
     },
@@ -10033,8 +10033,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
           "suggested_query": "CrewAI CrewAI AMP official documentation protocols a2a supported"
         }
       ]
@@ -10061,8 +10061,8 @@
         "protocols.a2a.client",
         "protocols.a2a.server",
         "hosting.private_network",
-        "protocols.a2a.supported",
         "security.soc2_type2",
+        "protocols.a2a.supported",
         "protocols.mcp.server"
       ],
       "available_primary_sources": [
@@ -10140,16 +10140,16 @@
           "suggested_query": "OpenAI OpenAI Codex official documentation hosting private_network"
         },
         {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "OpenAI OpenAI Codex official documentation protocols a2a supported"
-        },
-        {
           "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
           "suggested_query": "OpenAI OpenAI Codex official documentation security soc2_type2"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "OpenAI OpenAI Codex official documentation protocols a2a supported"
         },
         {
           "path": "protocols.mcp.server",
@@ -10266,8 +10266,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
           "suggested_query": "Anthropic Claude Code official documentation protocols a2a supported"
         },
         {
@@ -10302,7 +10302,7 @@
         "governance.audit_logs.api",
         "governance.audit_logs.siem_export",
         "governance.custom_roles",
-        "protocols.a2a.supported"
+        "security.soc2_type2"
       ],
       "available_primary_sources": [
         {
@@ -10398,10 +10398,10 @@
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance custom_roles"
         },
         {
-          "path": "protocols.a2a.supported",
+          "path": "security.soc2_type2",
           "documented_agents": 9,
           "global_coverage_pct": 8.18,
-          "suggested_query": "AWS Amazon Bedrock AgentCore official documentation protocols a2a supported"
+          "suggested_query": "AWS Amazon Bedrock AgentCore official documentation security soc2_type2"
         }
       ]
     },
@@ -10500,8 +10500,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
           "suggested_query": "Dust Dust Agents official documentation protocols a2a supported"
         },
         {
@@ -10620,8 +10620,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
           "suggested_query": "Glean Glean Agents official documentation protocols a2a supported"
         },
         {

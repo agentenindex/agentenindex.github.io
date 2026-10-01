@@ -45157,6 +45157,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-ABC9A020FF84650D3D",
+      "agent_id": "AI-0064",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D367C86B1C54A8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_cli_remote_subagents",
+        "note": "A2A is an explicitly supported interoperability protocol in Gemini CLI.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D367C86B1C54A8",
+            "note": "Google explicitly states Gemini CLI supports connecting to remote subagents using the Agent-to-Agent (A2A) protocol.",
+            "evidence_type": "technical_docs",
+            "source_section": "Remote Subagents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-24075230E34CC850A5",
       "agent_id": "AI-0064",
       "path": "protocols.mcp.client",
