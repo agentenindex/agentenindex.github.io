@@ -15,6 +15,28 @@
   },
   "agents": [
     {
+      "agent_id": "AI-0001",
+      "claims": [
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "openai_deep_research_responses_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Developers – Deep research",
+              "url": "https://developers.openai.com/api/docs/guides/deep-research",
+              "note": "OpenAI documents running deep-research workflows through the Responses API, including HTTPS requests to /v1/responses.",
+              "evidence_type": "api_docs",
+              "source_section": "Deep research / Kick off a deep research task"
+            }
+          ],
+          "note": "OpenAI deep research is programmatically available through the Responses API."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0002",
       "claims": [
         {
@@ -274,6 +296,50 @@
             }
           ],
           "note": "Claude Research used under Claude Enterprise inherits the Claude Enterprise SOC 2 Type 2 scope."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0004",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "perplexity_deep_research_in_computer",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Perplexity – Deep Research",
+              "url": "https://www.perplexity.ai/de/hub/products/deep-research",
+              "note": "Perplexity documents Deep Research as a capability inside its Computer product, launched and used through Perplexity's hosted product surface.",
+              "evidence_type": "official_product_page",
+              "source_section": "Deep Research – entwickelt für die schwierigsten Fragen / Erste Schritte"
+            }
+          ],
+          "note": "Perplexity Deep Research is delivered as a managed Perplexity Computer capability."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0005",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "microsoft_365_copilot_researcher",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft 365 Blog – Researcher and Analyst are now generally available",
+              "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
+              "note": "Microsoft documents Researcher as a built-in, pre-pinned reasoning agent in the Microsoft 365 Copilot app for licensed users.",
+              "evidence_type": "official_release",
+              "source_section": "How to get started with Researcher and Analyst"
+            }
+          ],
+          "note": "Researcher is delivered as a managed agent inside Microsoft 365 Copilot."
         }
       ]
     },
@@ -941,6 +1007,94 @@
       ]
     },
     {
+      "agent_id": "AI-0009",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "cursor_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cursor Docs – Model Context Protocol (MCP)",
+              "url": "https://cursor.com/docs/mcp",
+              "note": "Cursor documents that MCP enables Cursor to connect to external tools and data sources and that the Agent automatically uses available MCP tools.",
+              "evidence_type": "technical_docs",
+              "source_section": "What is MCP? / Using MCP in chat"
+            }
+          ],
+          "note": "Cursor Agent consumes tools and data from configured MCP servers."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0010",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "windsurf_cascade",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Docs – Cascade",
+              "url": "https://docs.devin.ai/desktop/cascade/cascade",
+              "note": "The current official Cascade documentation describes MCP servers as extensions to the agent's capabilities.",
+              "evidence_type": "technical_docs",
+              "source_section": "Cascade / MCP"
+            }
+          ],
+          "note": "Cascade can consume capabilities exposed through configured MCP servers."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0011",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "replit_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit – Agent",
+              "url": "https://replit.com/products/agent",
+              "note": "Replit documents Agent as part of the Replit platform where users build, refine, and launch production-ready apps from one workspace.",
+              "evidence_type": "official_product_page",
+              "source_section": "Build & refine your app with Agent / Turn your next idea into a working app"
+            }
+          ],
+          "note": "Replit Agent is delivered within Replit's managed application platform."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0012",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "devin_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin – Official Site",
+              "url": "https://devin.ai/",
+              "note": "Cognition presents Devin Cloud as the hosted environment where users delegate engineering work to Devin.",
+              "evidence_type": "official_product_page",
+              "source_section": "Devin Cloud"
+            }
+          ],
+          "note": "Devin is available as Cognition's managed Devin Cloud service."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0013",
       "claims": [
         {
@@ -1190,6 +1344,28 @@
       ]
     },
     {
+      "agent_id": "AI-0015",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "kiro_cloud_sessions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – How Kiro works",
+              "url": "https://kiro.dev/docs/how-kiro-works/",
+              "note": "Kiro documents Web and Mobile sessions running the agent harness in a managed cloud sandbox, and IDE/CLI sessions can also create and attach to cloud sessions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Where the agent runs"
+            }
+          ],
+          "note": "Kiro supports a managed cloud-sandbox runtime."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0016",
       "claims": [
         {
@@ -1389,6 +1565,28 @@
             }
           ],
           "note": "Cline Enterprise can export telemetry/audit data to external observability and SIEM tooling including Splunk."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0017",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "make_ai_agent_new",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Make Help – Create your first AI agent",
+              "url": "https://help.make.com/create-your-first-ai-agent",
+              "note": "Make documents adding MCP servers and selecting MCP tools for Make AI Agent (New), which then uses those tools during tasks.",
+              "evidence_type": "technical_docs",
+              "source_section": "Add MCP servers"
+            }
+          ],
+          "note": "Make AI Agent (New) can act as an MCP client for configured MCP servers."
         }
       ]
     },
@@ -2431,6 +2629,28 @@
             }
           ],
           "note": "Gumloop documents SOC 2 Type II compliance."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0024",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "gumloop_gumball_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gumloop – Meet Gumball",
+              "url": "https://www.gumloop.com/blog/meet-gumball",
+              "note": "Gumloop explicitly states Gumball works in the cloud and keeps working in the background when the user's laptop is closed.",
+              "evidence_type": "official_release",
+              "source_section": "An always-active agent for your own cloud"
+            }
+          ],
+          "note": "Gumball runs as a cloud-hosted agent."
         }
       ]
     },
@@ -4460,6 +4680,50 @@
       ]
     },
     {
+      "agent_id": "AI-0033",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "notion_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Notion Help – Notion Agent",
+              "url": "https://www.notion.com/de/help/notion-agent",
+              "note": "Notion documents Notion Agent as an AI teammate built into Notion and available as a Notion AI capability on Business and Enterprise plans.",
+              "evidence_type": "technical_docs",
+              "source_section": "Notion Agent"
+            }
+          ],
+          "note": "Notion Agent is delivered as a managed capability inside Notion."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0034",
+      "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "notion_custom_agents_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Notion Help – Workspace audit log",
+              "url": "https://www.notion.com/help/audit-log",
+              "note": "Notion documents dedicated Custom Agent audit-log events covering configuration, access, triggers, executions, and agent-attributed page actions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Custom Agent events"
+            }
+          ],
+          "note": "Notion Enterprise records Custom Agent governance and execution-related events in the workspace audit log."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0035",
       "claims": [
         {
@@ -4960,6 +5224,50 @@
       ]
     },
     {
+      "agent_id": "AI-0037",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "microsoft_365_copilot_analyst",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft 365 Blog – Researcher and Analyst are now generally available",
+              "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
+              "note": "Microsoft documents Analyst as a built-in, pre-pinned reasoning agent in the Microsoft 365 Copilot app for licensed users.",
+              "evidence_type": "official_release",
+              "source_section": "How to get started with Researcher and Analyst"
+            }
+          ],
+          "note": "Analyst is delivered as a managed agent inside Microsoft 365 Copilot."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0038",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "perplexity_computer",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Perplexity – Computer",
+              "url": "https://www.perplexity.ai/products/computer",
+              "note": "Perplexity documents Computer as its subscription digital-worker product available across desktop, mobile, Slack, and Microsoft 365 and capable of persistent background execution.",
+              "evidence_type": "official_product_page",
+              "source_section": "What Computer does for you / Put Computer to work"
+            }
+          ],
+          "note": "Perplexity Computer is delivered as a managed Perplexity service."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0039",
       "claims": [
         {
@@ -5398,6 +5706,50 @@
             }
           ],
           "note": "Zendesk documents SOC 2 Type II compliance."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0041",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "forethought_ai_agents_by_zendesk",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Help – Announcing Forethought AI agents by Zendesk for customers",
+              "url": "https://support.zendesk.com/hc/en-us/articles/10850639885082-Announcing-Forethought-AI-agents-by-Zendesk-for-customers",
+              "note": "Zendesk documents Forethought AI agents as a purchasable Zendesk add-on that autonomously responds to and resolves customer inquiries.",
+              "evidence_type": "official_release",
+              "source_section": "What's changing?"
+            }
+          ],
+          "note": "Forethought AI agents are delivered as a managed Zendesk add-on service."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0042",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "hubspot_breeze_customer_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "HubSpot Marketplace – Customer Agent",
+              "url": "https://ecosystem.hubspot.com/marketplace/listing/customer-agent",
+              "note": "HubSpot lists Customer Agent as a HubSpot-built Agent installed into the HubSpot environment and used across its supported channels.",
+              "evidence_type": "official_product_page",
+              "source_section": "Customer Agent / Overview"
+            }
+          ],
+          "note": "Breeze Customer Agent is delivered as a managed HubSpot agent."
         }
       ]
     },
