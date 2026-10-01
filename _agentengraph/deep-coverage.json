@@ -32,14 +32,14 @@
     "security.soc2_type2"
   ],
   "state_totals": {
-    "unknown": 2277,
-    "documented_true_or_value": 472,
+    "unknown": 2260,
+    "documented_true_or_value": 489,
     "documented_false": 1
   },
   "domain_totals": {
     "api": {
-      "documented_true_or_value": 38,
-      "unknown": 182
+      "documented_true_or_value": 39,
+      "unknown": 181
     },
     "governance": {
       "unknown": 823,
@@ -47,8 +47,8 @@
       "documented_false": 1
     },
     "hosting": {
-      "unknown": 259,
-      "documented_true_or_value": 71
+      "unknown": 246,
+      "documented_true_or_value": 84
     },
     "privacy": {
       "unknown": 178,
@@ -59,8 +59,8 @@
       "documented_true_or_value": 71
     },
     "security": {
-      "unknown": 356,
-      "documented_true_or_value": 84
+      "unknown": 353,
+      "documented_true_or_value": 87
     }
   },
   "agents": {
@@ -1409,9 +1409,9 @@
       }
     },
     "AI-0043": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1437,13 +1437,13 @@
         "security.encryption.at_rest": "unknown",
         "security.encryption.in_transit": "unknown",
         "security.customer_managed_key": "unknown",
-        "security.soc2_type2": "unknown"
+        "security.soc2_type2": "documented_true_or_value"
       }
     },
     "AI-0044": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1469,13 +1469,13 @@
         "security.encryption.at_rest": "unknown",
         "security.encryption.in_transit": "unknown",
         "security.customer_managed_key": "unknown",
-        "security.soc2_type2": "unknown"
+        "security.soc2_type2": "documented_true_or_value"
       }
     },
     "AI-0045": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1484,7 +1484,7 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
@@ -1505,9 +1505,9 @@
       }
     },
     "AI-0046": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1516,7 +1516,7 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
@@ -1537,9 +1537,9 @@
       }
     },
     "AI-0047": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1548,7 +1548,7 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
@@ -1633,9 +1633,9 @@
       }
     },
     "AI-0050": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1661,13 +1661,13 @@
         "security.encryption.at_rest": "unknown",
         "security.encryption.in_transit": "unknown",
         "security.customer_managed_key": "unknown",
-        "security.soc2_type2": "unknown"
+        "security.soc2_type2": "documented_true_or_value"
       }
     },
     "AI-0051": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1676,7 +1676,7 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
@@ -1793,9 +1793,9 @@
       }
     },
     "AI-0055": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1805,7 +1805,7 @@
         "api.rest": "unknown",
         "api.webhooks": "unknown",
         "hosting.managed": "unknown",
-        "hosting.self_hosted": "unknown",
+        "hosting.self_hosted": "documented_true_or_value",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
         "privacy.residency.customer_region_selectable": "unknown",
@@ -1921,9 +1921,9 @@
       }
     },
     "AI-0059": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1932,7 +1932,7 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
@@ -1953,9 +1953,9 @@
       }
     },
     "AI-0060": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1964,7 +1964,7 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
@@ -1985,16 +1985,16 @@
       }
     },
     "AI-0061": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
         "protocols.a2a.supported": "unknown",
         "protocols.a2a.client": "unknown",
         "protocols.a2a.server": "unknown",
-        "api.rest": "unknown",
+        "api.rest": "documented_true_or_value",
         "api.webhooks": "unknown",
         "hosting.managed": "unknown",
         "hosting.self_hosted": "unknown",
@@ -2017,9 +2017,9 @@
       }
     },
     "AI-0062": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -2028,7 +2028,7 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
@@ -2049,9 +2049,9 @@
       }
     },
     "AI-0063": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -2061,7 +2061,7 @@
         "api.rest": "unknown",
         "api.webhooks": "unknown",
         "hosting.managed": "unknown",
-        "hosting.self_hosted": "unknown",
+        "hosting.self_hosted": "documented_true_or_value",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
         "privacy.residency.customer_region_selectable": "unknown",
@@ -2177,9 +2177,9 @@
       }
     },
     "AI-0067": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -2189,7 +2189,7 @@
         "api.rest": "unknown",
         "api.webhooks": "unknown",
         "hosting.managed": "unknown",
-        "hosting.self_hosted": "unknown",
+        "hosting.self_hosted": "documented_true_or_value",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
         "privacy.residency.customer_region_selectable": "unknown",
@@ -2209,9 +2209,9 @@
       }
     },
     "AI-0068": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -2220,7 +2220,7 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
@@ -2305,9 +2305,9 @@
       }
     },
     "AI-0071": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -2317,7 +2317,7 @@
         "api.rest": "unknown",
         "api.webhooks": "unknown",
         "hosting.managed": "unknown",
-        "hosting.self_hosted": "unknown",
+        "hosting.self_hosted": "documented_true_or_value",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
         "privacy.residency.customer_region_selectable": "unknown",
@@ -2337,9 +2337,9 @@
       }
     },
     "AI-0072": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -2348,7 +2348,7 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",

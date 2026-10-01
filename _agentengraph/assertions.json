@@ -35765,6 +35765,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-64C7DEB1DC2C6745A8",
+      "agent_id": "AI-0043",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E4D6FCE15FCD8F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sierra_platform_agents",
+        "note": "Sierra documents SOC 2 Type II coverage for its AI-agent platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E4D6FCE15FCD8F",
+            "note": "Sierra's Trust Center identifies its conversational AI platform for customer-facing agents and publishes a current SOC 2 Type II audit report.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance / 3rd Party Assessments and Certifications"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-56995118610C446C96",
       "agent_id": "AI-0043",
       "path": "use_case",
@@ -36317,6 +36352,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BFA678D59E8EB6D4AC",
+      "agent_id": "AI-0044",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-887E718A48F64D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_ai_agent",
+        "note": "Gorgias documents SOC 2 Type II compliance for the platform operating AI Agent.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-887E718A48F64D",
+            "note": "Gorgias explicitly states Gorgias is SOC 2 Type II compliant in the security and privacy FAQ for AI Agent.",
+            "evidence_type": "security_trust",
+            "source_section": "Does AI Agent comply with data protection laws and AI regulations?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-00CC52DE0CFC9D7510",
       "agent_id": "AI-0044",
       "path": "use_case",
@@ -36771,6 +36841,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-4EDF286B0581D55A5C",
+      "agent_id": "AI-0045",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5C0784271CBBB0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_breeze_prospecting_agent",
+        "note": "Breeze Prospecting Agent is delivered as a managed HubSpot agent.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5C0784271CBBB0",
+            "note": "HubSpot lists Prospecting Agent as a HubSpot-built Breeze agent installed and operated in HubSpot, with workflow enrollment, monitoring, research, and outreach.",
+            "evidence_type": "official_product_page",
+            "source_section": "Prospecting Agent / Overview"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-2475511A7D358A1635",
@@ -37325,6 +37430,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E53CA46E62974305FF",
+      "agent_id": "AI-0046",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-940CD43412DCF2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_agentforce_prospecting",
+        "note": "Agentforce Prospecting is delivered within Salesforce's managed Agentforce/Sales Cloud environment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-940CD43412DCF2",
+            "note": "Salesforce documents Agentforce Prospecting as a Salesforce sales agent enabled, built, managed, and monitored inside Salesforce.",
+            "evidence_type": "technical_docs",
+            "source_section": "Prospecting / Set Up Agentforce Prospecting"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-59804169EAF267BA59",
       "agent_id": "AI-0046",
       "path": "identity.name",
@@ -37875,6 +38015,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-37A02184E7E5518C50",
+      "agent_id": "AI-0047",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8FBE10EF8133E6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_data_agent",
+        "note": "HubSpot Data Agent is delivered as a managed agent inside HubSpot.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8FBE10EF8133E6",
+            "note": "HubSpot lists Data Agent as a HubSpot-built Breeze agent that researches and writes insights directly into HubSpot CRM properties, Data Studio, and automations.",
+            "evidence_type": "official_product_page",
+            "source_section": "Data Agent / Overview / Features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-1F2FD256B5A648BCAC",
@@ -40102,6 +40277,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-FD1A419AA33441A326",
+      "agent_id": "AI-0050",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9117EC7C4AA8A6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cocounsel_legal",
+        "note": "Thomson Reuters documents SOC 2 certification for CoCounsel Legal.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9117EC7C4AA8A6",
+            "note": "The CoCounsel Legal product page explicitly states enterprise-grade security is SOC 2 certified.",
+            "evidence_type": "security_trust",
+            "source_section": "Security / SOC 2 and ISO 42001 certified"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-0DFD552897DAE73546",
       "agent_id": "AI-0050",
       "path": "use_case",
@@ -40580,6 +40790,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-6842E65114BE1FFE05",
+      "agent_id": "AI-0051",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CA1CF85B724008"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "chatgpt_work_cloud",
+        "note": "ChatGPT Work is delivered as a managed ChatGPT service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CA1CF85B724008",
+            "note": "OpenAI documents ChatGPT Work as a ChatGPT service available on web, mobile, macOS, and Windows that carries out work across connected tools, files, and apps.",
+            "evidence_type": "official_product_page",
+            "source_section": "ChatGPT Work / Ideen in die Tat umsetzen"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-B5608CF560E81A01FA",
@@ -43648,6 +43893,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-1A071B6DAA91B1E4DA",
+      "agent_id": "AI-0055",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CA52EC1BB01592"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_comet_local_browser",
+        "note": "The Comet browser and its browser-side agent surface run on the user's installed desktop browser environment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CA52EC1BB01592",
+            "note": "Perplexity documents Comet as an installable AI-powered browser whose assistant operates directly in the user's browser, navigating pages, clicking, typing, sending, and filling forms.",
+            "evidence_type": "official_product_page",
+            "source_section": "Comet ist mächtig / Comet holen"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-92F027FD684CB2EF80",
@@ -47199,6 +47479,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-40B22F9CC86399BE0C",
+      "agent_id": "AI-0059",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-34EAC6A2B5A5FB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notebooklm_deep_research",
+        "note": "NotebookLM Deep Research is delivered as a managed NotebookLM service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-34EAC6A2B5A5FB",
+            "note": "Google documents Deep Research as a NotebookLM capability that runs research in the background, browses hundreds of websites, and returns reports and sources into the user's NotebookLM notebook.",
+            "evidence_type": "official_release",
+            "source_section": "Expand your sources with Deep Research"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-FF2FA5E30BE282C9CF",
       "agent_id": "AI-0059",
       "path": "identity.name",
@@ -47775,6 +48090,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-42B489CCB08F5EF982",
+      "agent_id": "AI-0060",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9E8C6430D83420"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "grok_deepsearch",
+        "note": "Grok DeepSearch is delivered through xAI's managed Grok service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9E8C6430D83420",
+            "note": "xAI documents DeepSearch as its first Grok agent, available through Grok.com and X to eligible users.",
+            "evidence_type": "official_release",
+            "source_section": "Grok Agents: Combining Reasoning and Tool Use / What's Next"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-72773A2C0CBFA8D0A0",
       "agent_id": "AI-0060",
       "path": "identity.name",
@@ -48037,6 +48387,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-984099AB26EF5EFB3C",
+      "agent_id": "AI-0061",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C3CA0E656398C2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "elicit_research_agent_api",
+        "note": "Elicit Research Agent has official programmatic API access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C3CA0E656398C2",
+            "note": "Elicit explicitly states Research Agent is available through elicit.com or via API for integration into workflows.",
+            "evidence_type": "official_release",
+            "source_section": "Introducing Research Agent and BioDecisionBench"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-7D452EE911F5B2C862",
@@ -48903,6 +49288,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-D1EDA83DE237B39D77",
+      "agent_id": "AI-0062",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EEEB2D1D339F85"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "consensus_research_agent",
+        "note": "Consensus Research Agent is delivered as a managed Consensus web service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EEEB2D1D339F85",
+            "note": "Consensus documents Research Agent as its AI research assistant accessed at consensus.app and used through the hosted Consensus search experience.",
+            "evidence_type": "technical_docs",
+            "source_section": "How to use Research Agent"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D13111C8989471BA90",
       "agent_id": "AI-0062",
       "path": "identity.name",
@@ -49477,6 +49897,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-AB6FDA4D9EB71CF31F",
+      "agent_id": "AI-0063",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5F02C85643AFC4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "jetbrains_junie_local",
+        "note": "Junie supports a fully local user-managed runtime.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5F02C85643AFC4",
+            "note": "JetBrains states Junie Local runs entirely on the user's Mac with the model and agent loop on-device and no code leaving the machine.",
+            "evidence_type": "official_release",
+            "source_section": "Our first step into on-device coding agents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-3D781A612B5F6F7D10",
@@ -52417,6 +52872,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-92B42F8DE31344DC56",
+      "agent_id": "AI-0067",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A7BC6E28E4D2A9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "openhands_open_source_and_enterprise",
+        "note": "OpenHands supports local and enterprise self-hosted deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A7BC6E28E4D2A9",
+            "note": "OpenHands explicitly documents local open-source operation and an Enterprise self-hosted option, including deployment in the customer's VPC.",
+            "evidence_type": "official_product_page",
+            "source_section": "Local / SaaS or Self-hosted / Compare plans"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-78157622CEC5A876F2",
       "agent_id": "AI-0067",
       "path": "identity.name",
@@ -52991,6 +53481,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-C0F4ACC9FECEC2889D",
+      "agent_id": "AI-0068",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E70FCA0623DED7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qodo_git",
+        "note": "Qodo Git is delivered as a managed Qodo code-review service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E70FCA0623DED7",
+            "note": "Qodo documents Qodo Git as its AI PR review system integrated into pull-request workflows and offered as part of Qodo's product platform.",
+            "evidence_type": "official_product_page",
+            "source_section": "AI code review built for real issues"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-4FEFCFA9AE7A0294F9",
@@ -54814,6 +55339,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-40ABAF8026268FEBED",
+      "agent_id": "AI-0071",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7BA6686A9B29E5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_droids_private",
+        "note": "Factory Droids support customer-managed and fully airgapped deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7BA6686A9B29E5",
+            "note": "Factory documents Droids running in customer VMs, containers, CI runners, Kubernetes clusters, and fully airgapped environments with no Factory cloud involvement at runtime.",
+            "evidence_type": "technical_docs",
+            "source_section": "Choose a pattern / Hybrid / Fully airgapped"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4CCF847DAE19111DEF",
       "agent_id": "AI-0071",
       "path": "identity.name",
@@ -55388,6 +55948,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-C1D8ECE26C8353F69C",
+      "agent_id": "AI-0072",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D7C8274A75FCFE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "genspark_code",
+        "note": "Genspark Code is delivered as a managed Genspark workspace and agent service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D7C8274A75FCFE",
+            "note": "Genspark documents Code as a Genspark product workspace where the autonomous coding agent plans, codes, tests, deploys, and stores projects.",
+            "evidence_type": "technical_docs",
+            "source_section": "What is Genspark Code? / Projects tab"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-CE9ED5FBBE77F8298A",
