@@ -179,6 +179,17 @@ jobs:
               for k in keys:
                   a=d['audits'][k]
                   row[k]=a.get('displayValue')
+              fails=[]
+              for ref in cats['accessibility'].get('auditRefs',[]):
+                  audit=d['audits'].get(ref['id'],{})
+                  score=audit.get('score')
+                  if score is not None and score < 1:
+                      fails.append({
+                          'id': ref['id'],
+                          'title': audit.get('title'),
+                          'display': audit.get('displayValue'),
+                      })
+              row['accessibility_failures']=fails
               scores.append(row)
           print('=== LIGHTHOUSE RESULTS ===')
           for x in scores: print(json.dumps(x,ensure_ascii=False))
