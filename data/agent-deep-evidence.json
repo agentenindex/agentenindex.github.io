@@ -2674,6 +2674,145 @@
       ]
     },
     {
+      "agent_id": "AI-0065",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "gitlab_duo_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – GitLab MCP clients",
+              "url": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_clients/",
+              "note": "GitLab documents Duo Agentic Chat and Software Development Flow as MCP clients that connect to external MCP servers.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "GitLab Duo Agent Platform features can consume external MCP tools as MCP clients."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "gitlab_instance_with_duo_agent_platform_toolset",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – GitLab MCP server",
+              "url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+              "note": "GitLab documents its MCP server and an opt-in duo_agent_platform toolset for exposing Duo Agent Platform operations to MCP-compatible clients.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "GitLab exposes an MCP server with a Duo Agent Platform toolset."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "duo_agent_platform_flows",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – Flows API",
+              "url": "https://docs.gitlab.com/api/duo_agent_platform_flows/",
+              "note": "GitLab documents API endpoints for creating, managing, and triggering Duo Agent Platform flows.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "Duo Agent Platform flows have a documented API surface."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "gitlab_com",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – Agents",
+              "url": "https://docs.gitlab.com/user/duo_agent_platform/agents/",
+              "note": "GitLab lists GitLab.com as a supported offering for Duo Agent Platform agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "GitLab.com provides a vendor-managed Duo Agent Platform deployment."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "gitlab_self_managed",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – Agents",
+              "url": "https://docs.gitlab.com/user/duo_agent_platform/agents/",
+              "note": "GitLab lists GitLab Self-Managed as a supported offering for Duo Agent Platform agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Duo Agent Platform is supported on GitLab Self-Managed."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "duo_agent_sessions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – Audit AI events",
+              "url": "https://docs.gitlab.com/user/ai-governance/ai-audit-events/",
+              "note": "GitLab documents a unified audit record for Duo agent activity, with comprehensive audit artifacts per agent session.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Duo Agent Platform sessions generate dedicated AI audit events."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "duo_related_gitlab_audit_events",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – Audit events",
+              "url": "https://docs.gitlab.com/user/compliance/audit_events/",
+              "note": "GitLab documents access to project audit events through the Audit Events API and identifies AI agent sessions as audit events.",
+              "evidence_type": "api_docs"
+            },
+            {
+              "title": "GitLab Docs – Audit event schema and examples",
+              "url": "https://docs.gitlab.com/user/compliance/audit_event_schema/",
+              "note": "GitLab documents duo_related audit-event fields for Duo Agent Platform activity, enabling identification in API/SIEM workflows.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Duo-related audit events are accessible through GitLab audit-event APIs."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "gitlab_self_managed_and_dedicated_ai_audit_events",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – Audit event streaming for instances",
+              "url": "https://docs.gitlab.com/administration/compliance/audit_event_streaming/",
+              "note": "GitLab documents streaming Duo Agent Platform AI audit events to active external audit-event destinations on Self-Managed and Dedicated.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "GitLab can stream AI audit events to external destinations suitable for SIEM ingestion."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0077",
       "claims": [
         {
@@ -4016,6 +4155,171 @@
             }
           ],
           "note": "ASOR exposes agent monitoring and analytics."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0092",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "gemini_enterprise_apps_via_agent_gateway",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Import MCP servers from Agent Registry",
+              "url": "https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/import-govern-mcp-server-agent-registry",
+              "note": "Google documents importing governed MCP servers into Gemini Enterprise apps through Agent Registry and Agent Gateway.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Gemini Enterprise apps can consume governed MCP servers."
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "gemini_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Register and manage A2A agents",
+              "url": "https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-a2a-agent",
+              "note": "Google documents registering A2A agents hosted on any platform so Gemini Enterprise users can invoke them.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Gemini Enterprise supports A2A agents."
+        },
+        {
+          "path": "protocols.a2a.client",
+          "value": true,
+          "scope": "gemini_enterprise_invoking_registered_a2a_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Register and manage A2A agents",
+              "url": "https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-a2a-agent",
+              "note": "Google documents Gemini Enterprise invoking registered A2A agents with service IAM and optional end-user OAuth credentials.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Gemini Enterprise acts as an A2A client when invoking registered agents."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "gemini_enterprise_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Agent Platform data residency",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/data-residency",
+              "note": "Google documents that data stored at rest remains in the customer-selected Agent Platform location and describes regional processing controls.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Agent Platform provides documented data-residency controls."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "gemini_enterprise_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Agent Platform data residency",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/data-residency",
+              "note": "Google states customers choose the location in which Agent Platform data is stored at rest and can use jurisdictional or locational endpoints for processing.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Customers select supported Agent Platform locations/endpoints for residency."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "gemini_enterprise_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Agent Platform access control",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/access-control",
+              "note": "Google documents IAM roles and permissions governing principals' access to Agent Platform resources.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Agent Platform access is governed through Google Cloud IAM roles."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "gemini_enterprise_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Agent Platform access control",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/access-control",
+              "note": "Google explicitly documents using custom IAM roles for user-defined permission sets on Agent Platform operations.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Custom IAM roles can grant fine-grained Agent Platform permissions."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "gemini_enterprise_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Agent Platform audit logging information",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/audit-logging",
+              "note": "Google documents Admin Activity, System Event, and optional Data Access Cloud Audit Logs for Agent Platform.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Agent Platform produces Google Cloud Audit Logs."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "Google default encryption",
+          "scope": "gemini_enterprise_agent_platform_customer_content",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Customer-managed encryption keys for Agent Platform",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/cmek",
+              "note": "Google states Agent Platform encrypts customer content at rest by default using Google-managed encryption.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Agent Platform customer content is encrypted at rest by default."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "supported_gemini_enterprise_agent_platform_resources",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Customer-managed encryption keys for Agent Platform",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/cmek",
+              "note": "Google documents Cloud KMS customer-managed encryption keys for CMEK-integrated Agent Platform resources.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Supported Agent Platform resources can use customer-managed encryption keys."
         }
       ]
     },
