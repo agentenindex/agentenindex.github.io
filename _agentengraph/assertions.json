@@ -36858,6 +36858,83 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-B6D6924260DB33FFCE",
+      "agent_id": "AI-0052",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0B0B36A69C0601"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "manus_api_v2",
+        "note": "Manus provides a programmatic HTTP API with resource/action endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0B0B36A69C0601",
+            "note": "Manus documents an HTTP API at api.manus.ai with endpoint-based task, file, webhook, skill, and agent operations.",
+            "evidence_type": "api_docs",
+            "source_section": "Base URL / API reference"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E34AA9A77E323D974C",
+      "agent_id": "AI-0052",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B9620E73508F54",
+          "SRC-E15ABF68FC5B58"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "manus_api_v2_tasks",
+        "note": "Manus supports outbound webhooks for task lifecycle events.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B9620E73508F54",
+            "note": "Manus documents HTTPS webhook callbacks for task creation and task state-change events.",
+            "evidence_type": "api_docs",
+            "source_section": "Webhooks Guide / How Webhook Events Work"
+          },
+          {
+            "source_id": "SRC-E15ABF68FC5B58",
+            "note": "Manus documents creating webhook subscriptions that receive task-event POST notifications.",
+            "evidence_type": "api_docs",
+            "source_section": "webhook.create"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3128B65144E6B21656",
       "agent_id": "AI-0052",
       "path": "audience",
@@ -37196,6 +37273,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-FFECEFF37CAD46FD21",
+      "agent_id": "AI-0052",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-209A809B88A565"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "manus_team_and_enterprise",
+        "note": "Manus Team/Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-209A809B88A565",
+            "note": "Manus lists audit logs among Team/Enterprise governance and compliance capabilities.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise-Level security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-702C259D0EF0266FFC",
       "agent_id": "AI-0052",
       "path": "identity.name",
@@ -37298,6 +37410,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-A5F0CFD1E65FC2FE67",
+      "agent_id": "AI-0052",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9A9AF38BFD0598"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "manus_service",
+        "note": "Manus documents SOC 2 Type 2 certification.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9A9AF38BFD0598",
+            "note": "Manus lists SOC 2 Type 2 certification and provides a SOC 2 Type 2 attestation resource.",
+            "evidence_type": "security_trust",
+            "source_section": "Security / Resources"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-03A7A4D31B37BED910",
