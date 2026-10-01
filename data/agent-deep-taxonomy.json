@@ -1,0 +1,567 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-10-01",
+  "principle": "Canonical field paths for curated AgentenGraph deep evidence. Missing fields are unknown; false requires explicit primary-source evidence.",
+  "domains": {
+    "protocols": "Interoperability and agent/tool protocols such as MCP and A2A.",
+    "api": "Programmatic interfaces and their authentication methods.",
+    "sdk": "Official software development kits.",
+    "hosting": "Deployment and runtime topology.",
+    "deployment": "Deployment lifecycle and licensing requirements.",
+    "identity": "Agent and runtime identity semantics.",
+    "governance": "Administration, access control, audit, observability and policy controls.",
+    "privacy": "Data residency, training and privacy controls.",
+    "security": "Encryption, key management and security attestations/capabilities.",
+    "tools": "External tool integration capabilities that are not protocol-specific."
+  },
+  "paths": {
+    "api.async": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "api.auth.api_key": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "api.auth.entra_id": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "api.auth.oauth": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "api.openai_compatible": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "api.openai_responses": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "api.public_access": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "api.rest": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "api.webhooks": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "api.websocket": {
+      "domain": "api",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "deployment.import_export": {
+      "domain": "deployment",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "deployment.license_requirement": {
+      "domain": "deployment",
+      "value_kind": "string",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "deployment.low_code": {
+      "domain": "deployment",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.ai_control_tower": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.audit_logs.api": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.audit_logs.available": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.audit_logs.retention_days": {
+      "domain": "governance",
+      "value_kind": "number",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.audit_logs.siem_export": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.custom_roles": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.dlp": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.human_approval": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.logs.cloudwatch": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.logs.firehose_export": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.logs.s3_export": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.mcp.control_tower_registration": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.monitoring_access_control": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.observability": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.permission_sets": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.policy_controls": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.rbac": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.roles.admin": {
+      "domain": "governance",
+      "value_kind": "string",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.roles.viewer": {
+      "domain": "governance",
+      "value_kind": "string",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.scim": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.session_logs.available": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.sso.oidc": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.sso.saml": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.tracing": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.byo_vnet": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.cloud": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.customer_managed_storage": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.docker": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.local": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.managed": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.managed_provider": {
+      "domain": "hosting",
+      "value_kind": "string",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.managed_vnet": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.private_network": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.self_hosted": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "hosting.single_tenant": {
+      "domain": "hosting",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "identity.agent_identity": {
+      "domain": "identity",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "identity.agent_identity.provider": {
+      "domain": "identity",
+      "value_kind": "string",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "identity.agent_user": {
+      "domain": "identity",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "privacy.residency.available": {
+      "domain": "privacy",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "privacy.residency.customer_region_selectable": {
+      "domain": "privacy",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "privacy.residency.region": {
+      "domain": "privacy",
+      "value_kind": "string",
+      "cardinality": "multi",
+      "status": "active"
+    },
+    "privacy.training.customer_data": {
+      "domain": "privacy",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.a2a.auth.iam": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.a2a.auth.oauth": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.a2a.client": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.a2a.server": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.a2a.supported": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.auth.api_key": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.auth.basic": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.auth.iam": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.auth.jwt": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.auth.oauth": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.auth.required": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.auth.token": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.client": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.gateway": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.registry": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.remote": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.server": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.transport.sse": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "protocols.mcp.transport.streamable_http": {
+      "domain": "protocols",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "sdk.python": {
+      "domain": "sdk",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "security.customer_managed_key": {
+      "domain": "security",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "security.encryption.at_rest": {
+      "domain": "security",
+      "value_kind": "string",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "security.encryption.in_transit": {
+      "domain": "security",
+      "value_kind": "string",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "security.security_audit": {
+      "domain": "security",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "security.soc2_type2": {
+      "domain": "security",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "tools.external_rest": {
+      "domain": "tools",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    }
+  },
+  "deprecated_aliases": {
+    "api.public": {
+      "replacement": "api.public_access",
+      "reason": "Clarifies that public availability is distinct from transport style."
+    },
+    "api.type": {
+      "replacement": "api.rest",
+      "reason": "Transport/interface type is represented as a concrete boolean capability path."
+    },
+    "api.http": {
+      "replacement": "api.rest",
+      "reason": "Current curated HTTP claim explicitly documented REST endpoints."
+    },
+    "protocols.a2a": {
+      "replacement": "protocols.a2a.supported",
+      "reason": "Separates generic support from directional client/server roles."
+    },
+    "governance.roles": {
+      "replacement": "governance.rbac",
+      "reason": "Generic role support is represented as RBAC when source documents role-based access."
+    },
+    "tools.mcp": {
+      "replacement": "protocols.mcp.client",
+      "reason": "MCP integration belongs under the protocol taxonomy; redundant generic path removed."
+    }
+  },
+  "completeness_profile": {
+    "version": "1.0",
+    "fields": [
+      "protocols.mcp.client",
+      "protocols.mcp.server",
+      "protocols.a2a.supported",
+      "protocols.a2a.client",
+      "protocols.a2a.server",
+      "api.rest",
+      "api.webhooks",
+      "hosting.managed",
+      "hosting.self_hosted",
+      "hosting.private_network",
+      "privacy.residency.available",
+      "privacy.residency.customer_region_selectable",
+      "governance.sso.saml",
+      "governance.sso.oidc",
+      "governance.scim",
+      "governance.rbac",
+      "governance.custom_roles",
+      "governance.audit_logs.available",
+      "governance.audit_logs.api",
+      "governance.audit_logs.retention_days",
+      "governance.audit_logs.siem_export",
+      "security.encryption.at_rest",
+      "security.encryption.in_transit",
+      "security.customer_managed_key",
+      "security.soc2_type2"
+    ],
+    "state_model": [
+      "documented_true_or_value",
+      "documented_false",
+      "unknown"
+    ],
+    "note": "Unknown means no curated field-level evidence exists; it must never be rendered as false."
+  }
+}
