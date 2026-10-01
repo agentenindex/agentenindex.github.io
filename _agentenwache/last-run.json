@@ -1,44 +1,36 @@
 {
   "name": "AgentenWache",
   "version": "1.0",
-  "started_at": "2026-10-01T13:02:52Z",
-  "finished_at": "2026-10-01T13:03:08Z",
+  "started_at": "2026-10-01T13:06:30Z",
+  "finished_at": "2026-10-01T13:06:44Z",
   "source_registry": "_agentengraph/sources.json",
-  "active_sources": 155,
-  "hosts": 102,
+  "active_sources": 154,
+  "hosts": 99,
   "counts": {
-    "changes": 3,
-    "fetched": 74,
-    "http_error": 6,
-    "not_modified": 60,
-    "robots_disallowed": 15,
-    "severity_low": 1,
-    "severity_medium": 2
+    "baseline": 3,
+    "changes": 2,
+    "fetched": 75,
+    "http_error": 4,
+    "not_modified": 62,
+    "robots_disallowed": 13,
+    "severity_low": 2
   },
   "open_review_items": 12,
   "changes_this_run": [
-    {
-      "source_id": "SRC-34EAC6A2B5A5FB",
-      "type": "status_change",
-      "severity": "medium",
-      "agents": [
-        "AI-0059"
-      ]
-    },
-    {
-      "source_id": "SRC-A076947F623118",
-      "type": "status_change",
-      "severity": "medium",
-      "agents": [
-        "AI-0002"
-      ]
-    },
     {
       "source_id": "SRC-4271C275BA8FED",
       "type": "content_change",
       "severity": "low",
       "agents": [
         "AI-0090"
+      ]
+    },
+    {
+      "source_id": "SRC-15C5A1E3CDD01B",
+      "type": "content_change",
+      "severity": "low",
+      "agents": [
+        "AI-0020"
       ]
     }
   ],
