@@ -32,8 +32,8 @@
     "security.soc2_type2"
   ],
   "state_totals": {
-    "unknown": 1785,
-    "documented_true_or_value": 963,
+    "unknown": 1763,
+    "documented_true_or_value": 985,
     "documented_false": 2
   },
   "domain_totals": {
@@ -42,13 +42,13 @@
       "unknown": 169
     },
     "governance": {
-      "documented_true_or_value": 379,
-      "unknown": 610,
+      "documented_true_or_value": 388,
+      "unknown": 601,
       "documented_false": 1
     },
     "hosting": {
-      "documented_true_or_value": 138,
-      "unknown": 192
+      "documented_true_or_value": 141,
+      "unknown": 189
     },
     "privacy": {
       "documented_true_or_value": 100,
@@ -60,8 +60,8 @@
       "documented_true_or_value": 84
     },
     "security": {
-      "documented_true_or_value": 211,
-      "unknown": 229
+      "documented_true_or_value": 221,
+      "unknown": 219
     }
   },
   "agents": {
@@ -1954,9 +1954,9 @@
       }
     },
     "AI-0060": {
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
+      "documented_fields": 4,
+      "unknown_fields": 21,
+      "coverage_pct": 16.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1972,7 +1972,7 @@
         "privacy.residency.customer_region_selectable": "unknown",
         "governance.sso.saml": "unknown",
         "governance.sso.oidc": "unknown",
-        "governance.scim": "unknown",
+        "governance.scim": "documented_true_or_value",
         "governance.rbac": "unknown",
         "governance.custom_roles": "unknown",
         "governance.audit_logs.available": "unknown",
@@ -1981,14 +1981,14 @@
         "governance.audit_logs.siem_export": "unknown",
         "security.encryption.at_rest": "unknown",
         "security.encryption.in_transit": "unknown",
-        "security.customer_managed_key": "unknown",
-        "security.soc2_type2": "unknown"
+        "security.customer_managed_key": "documented_true_or_value",
+        "security.soc2_type2": "documented_true_or_value"
       }
     },
     "AI-0061": {
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
+      "documented_fields": 7,
+      "unknown_fields": 18,
+      "coverage_pct": 28.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -1997,12 +1997,12 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "documented_true_or_value",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
-        "hosting.private_network": "unknown",
+        "hosting.private_network": "documented_true_or_value",
         "privacy.residency.available": "unknown",
         "privacy.residency.customer_region_selectable": "unknown",
-        "governance.sso.saml": "unknown",
+        "governance.sso.saml": "documented_true_or_value",
         "governance.sso.oidc": "unknown",
         "governance.scim": "unknown",
         "governance.rbac": "unknown",
@@ -2011,10 +2011,10 @@
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",
         "governance.audit_logs.siem_export": "unknown",
-        "security.encryption.at_rest": "unknown",
-        "security.encryption.in_transit": "unknown",
+        "security.encryption.at_rest": "documented_true_or_value",
+        "security.encryption.in_transit": "documented_true_or_value",
         "security.customer_managed_key": "unknown",
-        "security.soc2_type2": "unknown"
+        "security.soc2_type2": "documented_true_or_value"
       }
     },
     "AI-0062": {
@@ -2850,9 +2850,9 @@
       }
     },
     "AI-0088": {
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
+      "documented_fields": 4,
+      "unknown_fields": 21,
+      "coverage_pct": 16.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -2868,7 +2868,7 @@
         "privacy.residency.customer_region_selectable": "unknown",
         "governance.sso.saml": "unknown",
         "governance.sso.oidc": "unknown",
-        "governance.scim": "unknown",
+        "governance.scim": "documented_true_or_value",
         "governance.rbac": "unknown",
         "governance.custom_roles": "unknown",
         "governance.audit_logs.available": "unknown",
@@ -2877,8 +2877,8 @@
         "governance.audit_logs.siem_export": "unknown",
         "security.encryption.at_rest": "unknown",
         "security.encryption.in_transit": "unknown",
-        "security.customer_managed_key": "unknown",
-        "security.soc2_type2": "unknown"
+        "security.customer_managed_key": "documented_true_or_value",
+        "security.soc2_type2": "documented_true_or_value"
       }
     },
     "AI-0089": {
@@ -3234,9 +3234,9 @@
       }
     },
     "AI-0100": {
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
+      "documented_fields": 6,
+      "unknown_fields": 19,
+      "coverage_pct": 24.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -3253,16 +3253,16 @@
         "governance.sso.saml": "unknown",
         "governance.sso.oidc": "unknown",
         "governance.scim": "unknown",
-        "governance.rbac": "unknown",
+        "governance.rbac": "documented_true_or_value",
         "governance.custom_roles": "unknown",
-        "governance.audit_logs.available": "unknown",
+        "governance.audit_logs.available": "documented_true_or_value",
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",
         "governance.audit_logs.siem_export": "unknown",
-        "security.encryption.at_rest": "unknown",
-        "security.encryption.in_transit": "unknown",
+        "security.encryption.at_rest": "documented_true_or_value",
+        "security.encryption.in_transit": "documented_true_or_value",
         "security.customer_managed_key": "unknown",
-        "security.soc2_type2": "unknown"
+        "security.soc2_type2": "documented_true_or_value"
       }
     },
     "AI-0101": {
@@ -3298,9 +3298,9 @@
       }
     },
     "AI-0102": {
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
+      "documented_fields": 6,
+      "unknown_fields": 19,
+      "coverage_pct": 24.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -3309,17 +3309,17 @@
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
-        "hosting.managed": "unknown",
+        "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
         "privacy.residency.customer_region_selectable": "unknown",
-        "governance.sso.saml": "unknown",
+        "governance.sso.saml": "documented_true_or_value",
         "governance.sso.oidc": "unknown",
-        "governance.scim": "unknown",
-        "governance.rbac": "unknown",
+        "governance.scim": "documented_true_or_value",
+        "governance.rbac": "documented_true_or_value",
         "governance.custom_roles": "unknown",
-        "governance.audit_logs.available": "unknown",
+        "governance.audit_logs.available": "documented_true_or_value",
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",
         "governance.audit_logs.siem_export": "unknown",

@@ -55637,6 +55637,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-A7EB7357791E6A40AD",
+      "agent_id": "AI-0060",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "grok_for_business",
+        "note": "Grok for Business supports SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "xAI explicitly lists SCIM among Grok for Business enterprise controls.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise-grade AI"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-42B489CCB08F5EF982",
       "agent_id": "AI-0060",
       "path": "hosting.managed",
@@ -55766,6 +55801,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-737718271D34AC4116",
+      "agent_id": "AI-0060",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "grok_for_business_enterprise_vault",
+        "note": "Grok for Business documents customer-controlled encryption keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "xAI states Enterprise Vault data is encrypted with customer-controlled keys.",
+            "evidence_type": "security_trust",
+            "source_section": "Secure, Enterprise Vault"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-28F1900009DDF7E936",
+      "agent_id": "AI-0060",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "grok_for_business",
+        "note": "Grok for Business documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "xAI explicitly lists SOC 2 Type II for Grok for Business.",
+            "evidence_type": "security_trust",
+            "source_section": "Enterprise-grade security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-36A05D1E1C7EA84E78",
@@ -56259,6 +56364,111 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-254345C81C57DD91C4",
+      "agent_id": "AI-0061",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-64BE1CCD74A7C2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "elicit_enterprise",
+        "note": "Elicit Enterprise supports SAML 2.0 SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-64BE1CCD74A7C2",
+            "note": "Elicit states SAML 2.0 SSO is supported for larger organizations.",
+            "evidence_type": "security_trust",
+            "source_section": "Privacy controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C3523D9F3133B64935",
+      "agent_id": "AI-0061",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C3CA0E656398C2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "elicit_research_agent",
+        "note": "Elicit Research Agent is delivered as a managed Elicit service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C3CA0E656398C2",
+            "note": "Elicit documents Research Agent as available directly through elicit.com as a hosted service.",
+            "evidence_type": "official_release",
+            "source_section": "Introducing Research Agent"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2E953232B453DF3D05",
+      "agent_id": "AI-0061",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-64BE1CCD74A7C2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "elicit_enterprise_single_tenant",
+        "note": "Elicit Enterprise provides dedicated logically isolated single-tenant AWS clusters.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-64BE1CCD74A7C2",
+            "note": "Elicit states Enterprise customers receive dedicated, logically isolated AWS clusters with single tenancy.",
+            "evidence_type": "security_trust",
+            "source_section": "Sensitive academic or corporate research materials"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-92B93226954A9A0E3C",
       "agent_id": "AI-0061",
       "path": "identity.name",
@@ -56353,6 +56563,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-868366E0D662A21157",
+      "agent_id": "AI-0061",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256-GCM",
+      "value_hash": "b0b43c4f0209d7c3",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-64BE1CCD74A7C2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "elicit_enterprise_research_data",
+        "note": "Elicit documents AES-256-GCM encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-64BE1CCD74A7C2",
+            "note": "Elicit states uploaded documents and research projects are encrypted at rest with AES-256-GCM.",
+            "evidence_type": "security_trust",
+            "source_section": "Sensitive academic or corporate research materials"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-402618A143C127D254",
+      "agent_id": "AI-0061",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-64BE1CCD74A7C2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "elicit_enterprise_research_data",
+        "note": "Elicit documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-64BE1CCD74A7C2",
+            "note": "Elicit states uploaded documents and research projects are encrypted in transit using TLS 1.2+.",
+            "evidence_type": "security_trust",
+            "source_section": "Sensitive academic or corporate research materials"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2C0259038236472D55",
+      "agent_id": "AI-0061",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-64BE1CCD74A7C2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "elicit_platform",
+        "note": "Elicit documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-64BE1CCD74A7C2",
+            "note": "Elicit states it achieved SOC 2 Type II compliance with a clean audit opinion.",
+            "evidence_type": "security_trust",
+            "source_section": "SOC 2 Type II Compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-22ED7F4A56987E716B",
@@ -81764,6 +82079,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-AC557C06404830B8F5",
+      "agent_id": "AI-0088",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "grok_for_business",
+        "note": "Grok for Business supports SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "xAI explicitly lists SCIM among Grok for Business enterprise controls.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise-grade AI"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-36EBACE6255BB3ACDB",
       "agent_id": "AI-0088",
       "path": "hosting.managed",
@@ -81893,6 +82243,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-E9732B5D6FCB1FE8AF",
+      "agent_id": "AI-0088",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "grok_for_business_enterprise_vault",
+        "note": "Grok for Business documents customer-controlled encryption keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "xAI states Enterprise Vault data is encrypted with customer-controlled keys.",
+            "evidence_type": "security_trust",
+            "source_section": "Secure, Enterprise Vault"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FF083527D28A67DF75",
+      "agent_id": "AI-0088",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "grok_for_business",
+        "note": "Grok for Business documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "xAI explicitly lists SOC 2 Type II for Grok for Business.",
+            "evidence_type": "security_trust",
+            "source_section": "Enterprise-grade security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-03A95326438C9C2859",
@@ -92651,6 +93071,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-388B47290BB9D60B15",
+      "agent_id": "AI-0100",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CDA0FE693311A6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "decagon_platform_ai_concierge",
+        "note": "Decagon provides tamper-protected audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CDA0FE693311A6",
+            "note": "Decagon documents comprehensive tamper-protected audit logs capturing key platform events.",
+            "evidence_type": "security_trust",
+            "source_section": "Ensure safe, transparent, and accountable AI performance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3FEACF140714F63A78",
+      "agent_id": "AI-0100",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CDA0FE693311A6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "decagon_platform_ai_concierge",
+        "note": "Decagon provides RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CDA0FE693311A6",
+            "note": "Decagon explicitly documents role-based access control for platform access.",
+            "evidence_type": "security_trust",
+            "source_section": "Authenticate users with precision and confidence"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B6089ABB1095156DC1",
       "agent_id": "AI-0100",
       "path": "hosting.managed",
@@ -92780,6 +93270,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-999FCB8A92443BDD84",
+      "agent_id": "AI-0100",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CDA0FE693311A6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "decagon_platform_data",
+        "note": "Decagon documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CDA0FE693311A6",
+            "note": "Decagon states storage and backups are encrypted with AES-256.",
+            "evidence_type": "security_trust",
+            "source_section": "Protect your data"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-59106992C30A442BAA",
+      "agent_id": "AI-0100",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CDA0FE693311A6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "decagon_platform_data",
+        "note": "Decagon documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CDA0FE693311A6",
+            "note": "Decagon states all network transmission uses TLS 1.2 or higher.",
+            "evidence_type": "security_trust",
+            "source_section": "Protect your data"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-ED1BBBA6BEFC6CF5DB",
+      "agent_id": "AI-0100",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-46FBA267A64AF9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "decagon_platform_ai_concierge",
+        "note": "Decagon documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-46FBA267A64AF9",
+            "note": "Decagon's Trust Center lists SOC 2 Type II and current SOC 2 Type II reports.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-07ECC04D8B18A29ED0",
@@ -94069,6 +94664,181 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-F548CFAA838457C08A",
+      "agent_id": "AI-0102",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C4F87AD4DA91F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "artisan_enterprise",
+        "note": "Artisan Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9C4F87AD4DA91F",
+            "note": "Artisan Enterprise explicitly lists audit logs.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E0BD71A39398D80BF0",
+      "agent_id": "AI-0102",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-463315DB73CF86"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "artisan_enterprise",
+        "note": "Artisan Enterprise provides RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-463315DB73CF86",
+            "note": "Artisan states Ava Enterprise includes role-based access control plus team/workspace permissions.",
+            "evidence_type": "official_release",
+            "source_section": "Built for enterprise scale"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-709B6DF72E5405A8A8",
+      "agent_id": "AI-0102",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7592BD11D7B240"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "artisan_enterprise",
+        "note": "Artisan Enterprise supports SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7592BD11D7B240",
+            "note": "Artisan explicitly lists SAML & SCIM among enterprise-grade security controls.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise-grade security built in"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-471125F9E6841D4954",
+      "agent_id": "AI-0102",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C4F87AD4DA91F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "artisan_enterprise",
+        "note": "Artisan Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9C4F87AD4DA91F",
+            "note": "Artisan Enterprise explicitly lists SSO / SAML.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3A737D028399997DBD",
+      "agent_id": "AI-0102",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-463315DB73CF86"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "artisan_ava",
+        "note": "Ava is delivered as a managed Artisan service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-463315DB73CF86",
+            "note": "Artisan documents Ava as its autonomous AI BDR delivered through the Artisan platform for enterprise sales teams.",
+            "evidence_type": "official_release",
+            "source_section": "Ava 2.0"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-7D834277B190B18502",
