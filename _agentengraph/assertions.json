@@ -4427,6 +4427,318 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9AC5EA46E90943BACE",
+      "agent_id": "AI-0007",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-849C07C0600322"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise_including_claude_code",
+        "note": "Claude Enterprise exposes programmatic audit/activity access through the Compliance API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-849C07C0600322",
+            "note": "Anthropic documents the Compliance API for programmatic access to activity logs, chats, files, and projects.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FFD95D91F1D96CED8B",
+      "agent_id": "AI-0007",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7538E94C51DD43",
+          "SRC-849C07C0600322"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_code_enterprise_and_cloud_sessions",
+        "note": "Claude Code activity has documented audit logging in cloud sessions and Enterprise governance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7538E94C51DD43",
+            "note": "Anthropic states all operations in Anthropic-hosted Claude Code cloud sessions are logged for compliance and audit purposes.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-849C07C0600322",
+            "note": "Anthropic lists audit logs as an Enterprise visibility and logging control covering the Enterprise suite including Claude Code.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5964A5EBF53A8BC0BF",
+      "agent_id": "AI-0007",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-72C46F3DC865F4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_code_opentelemetry",
+        "note": "Claude Code audit events can be exported to SIEM systems through OpenTelemetry.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-72C46F3DC865F4",
+            "note": "Anthropic documents Claude Code OpenTelemetry audit events and states OTLP logs can be delivered to any SIEM with an OTLP receiver or via an OpenTelemetry Collector.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6020F5AF315F513958",
+      "agent_id": "AI-0007",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C8CFCDF1448985"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise",
+        "note": "Claude Enterprise supports custom roles applicable to Claude Code governance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C8CFCDF1448985",
+            "note": "Anthropic explicitly documents custom roles (RBAC) in Claude Enterprise for scoping feature and administrative access.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3E6DB41BE0A7BB6121",
+      "agent_id": "AI-0007",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-849C07C0600322"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise_including_claude_code",
+        "note": "Claude Code Enterprise access and entitlements are governed through RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-849C07C0600322",
+            "note": "Anthropic documents role-based access control for fine-grained user, feature, and spend management, with Claude Code included in Enterprise entitlements.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C0ED434FD73C8E9C70",
+      "agent_id": "AI-0007",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-849C07C0600322"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise_including_claude_code",
+        "note": "Claude Enterprise SCIM provisioning governs Claude Code users.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-849C07C0600322",
+            "note": "Anthropic documents SCIM provisioning for Claude Enterprise and states Claude Code is included under the same enterprise identity and admin controls.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-62BDFFD2CF62E19B1D",
+      "agent_id": "AI-0007",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-849C07C0600322"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise_including_claude_code",
+        "note": "Claude Code under Claude Enterprise is governed by Enterprise SSO/SAML.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-849C07C0600322",
+            "note": "Anthropic lists single sign-on (SSO/SAML) as an Enterprise security and administration control and includes Claude Code in the Enterprise suite.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0C46492A5FD8590CB7",
+      "agent_id": "AI-0007",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7538E94C51DD43"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_code_cloud_sessions_anthropic_hosted",
+        "note": "Claude Code cloud sessions can run in Anthropic-managed environments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7538E94C51DD43",
+            "note": "Anthropic documents cloud sessions running in isolated Anthropic-managed virtual machines.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-53727A055F9095BCF3",
+      "agent_id": "AI-0007",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7538E94C51DD43"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_code_cloud_sessions_self_hosted_environment",
+        "note": "Organizations can route Claude Code cloud sessions to a self-hosted environment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7538E94C51DD43",
+            "note": "Anthropic explicitly documents organization-routed cloud sessions running in a self-hosted environment on customer infrastructure.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-45A1D2664F7490BD44",
       "agent_id": "AI-0007",
       "path": "identity.name",
@@ -4525,6 +4837,142 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-AB16C4A869B2E8D926",
+      "agent_id": "AI-0007",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E8ECDAFBF282BC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_code",
+        "note": "Claude Code is a documented MCP client.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E8ECDAFBF282BC",
+            "note": "Anthropic documents Claude Code connecting to remote and local MCP servers to access tools, databases, and APIs.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C94F593C6B6D879A2F",
+      "agent_id": "AI-0007",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E8ECDAFBF282BC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_code_stdio",
+        "note": "Claude Code can expose its tools as an MCP server.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E8ECDAFBF282BC",
+            "note": "Anthropic documents `claude mcp serve`, which runs Claude Code itself as a stdio MCP server for other applications.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-63EA5E107418EBF84E",
+      "agent_id": "AI-0007",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-849C07C0600322"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise_including_claude_code",
+        "note": "Claude Enterprise offers customer-managed encryption keys for its Enterprise suite.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-849C07C0600322",
+            "note": "Anthropic lists customer-managed encryption keys among Enterprise data controls and includes Claude Code in the same Enterprise suite.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-33BB079DADC3B92C40",
+      "agent_id": "AI-0007",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7538E94C51DD43"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_code_security_program",
+        "note": "Claude Code is covered by Anthropic's documented SOC 2 Type 2 security program.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7538E94C51DD43",
+            "note": "Anthropic's Claude Code security documentation explicitly references its SOC 2 Type 2 report in the Trust Center.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-5D61E45DF2941DFA8B",
