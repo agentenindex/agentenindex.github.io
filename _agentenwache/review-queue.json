@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:14:00Z",
-  "open_count": 0,
+  "updated_at": "2026-10-01T15:16:11Z",
+  "open_count": 2,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -224,6 +224,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:21:10Z",
       "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
+    },
+    {
+      "review_id": "REV-22D81397DA478DEB43",
+      "status": "open",
+      "first_detected": "2026-10-01T15:15:42Z",
+      "last_detected": "2026-10-01T15:15:42Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-00088F988EFE44",
+      "source_title": "GitHub Docs – GitHub Copilot with data residency",
+      "url": "https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/github-copilot-with-data-residency",
+      "agent_ids": [
+        "AI-0008"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/github-copilot-with-data-residency",
+        "text_hash": "666610024b8d12487552e1f3d7fa74ad678d4e8776093236c74e624841cc7510",
+        "simhash64": "1c6444a864c8de8a",
+        "token_count": 592,
+        "text_sample": "In this article GitHub Copilot with data residency Keep AI-powered coding assistance within your designated region, so you can meet compliance requirements while improving developer productivity. Copy markdown Who can use this feature? GitHub Enterprise Cloud with data residency In this article If your enterprise uses GitHub Enterprise Cloud with data residency, you can enable a policy to ensure that all inference processing and associated data for GitHub Copilot remain within your designated geographic region . Supported regions Copilot with data residency is currently available in the following regions: United States European Union GitHub plans to add support for more regions in the near future. How restrictions are enforced When you enforce data residency for Copilot, GitHub routes all Copilot requests to model endpoints within your enterprise's designated region. Your code, prompts, and Copilot responses never leave your region during inference processing. The enforcement happens at multiple levels: Authentication and routing : Users' authentication tokens only grant access to your region-specific endpoints, ensuring that traffic never leaves the designated geography. Model ava"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/github-copilot-with-data-residency",
+        "text_hash": "91345eefe99df1080f835c7ef83f6020b8cb9bd7c0fd41f9da1867623986cc44",
+        "simhash64": "1e6444a864c8de8c",
+        "token_count": 604,
+        "text_sample": "In this article GitHub Copilot with data residency Keep AI-powered coding assistance within your designated region, so you can meet compliance requirements while improving developer productivity. Copy markdown Who can use this feature? GitHub Enterprise Cloud with data residency In this article If your enterprise uses GitHub Enterprise Cloud with data residency, you can enable a policy to ensure that all inference processing and associated data for GitHub Copilot remain within your designated geographic region . Supported regions Copilot with data residency is currently available in the following regions: United States European Union GitHub plans to add support for more regions in the near future. How restrictions are enforced When you enforce data residency for Copilot, GitHub routes all Copilot requests to model endpoints within your enterprise's designated region. Your code, prompts, and Copilot responses never leave your region during inference processing. The enforcement happens at multiple levels: Authentication and routing : Users' authentication tokens only grant access to your region-specific endpoints, ensuring that traffic never leaves the designated geography. Model ava",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "666610024b8d12487552e1f3d7fa74ad678d4e8776093236c74e624841cc7510",
+        "new_hash": "91345eefe99df1080f835c7ef83f6020b8cb9bd7c0fd41f9da1867623986cc44",
+        "simhash_distance": 3,
+        "old_token_count": 592,
+        "new_token_count": 604,
+        "token_delta_pct": 2.03
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-256AEB12C3612F2E4F",
@@ -1364,6 +1406,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Updated the Gorgias source to the current Help Center canonical URL after the documented redirect; no product fact changed.",
       "reviewed_at": "2026-10-01T14:47:00Z"
+    },
+    {
+      "review_id": "REV-F1C35F5F4668B6D422",
+      "status": "open",
+      "first_detected": "2026-10-01T15:16:00Z",
+      "last_detected": "2026-10-01T15:16:00Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-6E25654B1985F2",
+      "source_title": "Lindy – Official Site",
+      "url": "https://www.lindy.ai/",
+      "agent_ids": [
+        "AI-0020"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://www.lindy.ai/",
+        "text_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "simhash64": "acd329c5dea49872",
+        "token_count": 2659,
+        "text_sample": "The AI teammate that will 3x your output. Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo $50 in free credits • No credit card required 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://www.lindy.ai/",
+        "text_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "simhash64": "2cdb69d5dea09872",
+        "token_count": 2649,
+        "text_sample": "The AI teammate that will 3x your output . Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo 7-day free trial • Cancel anytime 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is normal vol",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "new_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "simhash_distance": 5,
+        "old_token_count": 2659,
+        "new_token_count": 2649,
+        "token_delta_pct": -0.38
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-FCE2FF2F1439740BD2",

@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:12:06Z",
+  "updated_at": "2026-10-01T15:16:11Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -1363,6 +1363,52 @@
         "token_delta_pct": 0.0
       },
       "previous_checked_at": "2026-10-01T14:54:49Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-BF193AF20923A78E85",
+      "detected_at": "2026-10-01T15:15:42Z",
+      "source_id": "SRC-00088F988EFE44",
+      "agent_ids": [
+        "AI-0008"
+      ],
+      "source_title": "GitHub Docs – GitHub Copilot with data residency",
+      "url": "https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/github-copilot-with-data-residency",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "666610024b8d12487552e1f3d7fa74ad678d4e8776093236c74e624841cc7510",
+        "new_hash": "91345eefe99df1080f835c7ef83f6020b8cb9bd7c0fd41f9da1867623986cc44",
+        "simhash_distance": 3,
+        "old_token_count": 592,
+        "new_token_count": 604,
+        "token_delta_pct": 2.03
+      },
+      "previous_checked_at": "2026-10-01T15:11:14Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-B4BDCB6F0A2D97EADB",
+      "detected_at": "2026-10-01T15:16:00Z",
+      "source_id": "SRC-6E25654B1985F2",
+      "agent_ids": [
+        "AI-0020"
+      ],
+      "source_title": "Lindy – Official Site",
+      "url": "https://www.lindy.ai/",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "new_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "simhash_distance": 5,
+        "old_token_count": 2659,
+        "new_token_count": 2649,
+        "token_delta_pct": -0.38
+      },
+      "previous_checked_at": "2026-10-01T15:11:32Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
