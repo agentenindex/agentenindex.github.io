@@ -33,6 +33,244 @@
             }
           ],
           "note": "OpenAI deep research is programmatically available through the Responses API."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "chatgpt_enterprise_compliance_platform",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-compliance-api-for-chatgpt-enterprise-edu-and-chatgpt-for-teachers",
+              "note": "OpenAI documents programmatic access to audit and compliance data through the Compliance/Admin API.",
+              "evidence_type": "api_docs",
+              "source_section": "Compliance API documentation / How it works"
+            }
+          ],
+          "note": "ChatGPT Enterprise audit/compliance data is accessible through API.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "chatgpt_enterprise_compliance_platform",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-compliance-api-for-chatgpt-enterprise-edu-and-chatgpt-for-teachers",
+              "note": "OpenAI documents immutable compliance log events and audit/authentication/app logs for ChatGPT workspaces.",
+              "evidence_type": "security_trust",
+              "source_section": "How it works"
+            }
+          ],
+          "note": "ChatGPT Enterprise provides compliance/audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 30,
+          "scope": "chatgpt_enterprise_compliance_logs_platform",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-compliance-api-for-chatgpt-enterprise-edu-and-chatgpt-for-teachers",
+              "note": "OpenAI states the Compliance Logs Platform retains data for 30 days.",
+              "evidence_type": "technical_docs",
+              "source_section": "Data Retention with the Compliance API"
+            }
+          ],
+          "note": "The ChatGPT Compliance Logs Platform documents 30-day retention.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "chatgpt_enterprise_compliance_platform",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-compliance-api-for-chatgpt-enterprise-edu-and-chatgpt-for-teachers",
+              "note": "OpenAI documents connecting Compliance Platform logs and metadata with SIEM tools and lists supported security integrations.",
+              "evidence_type": "security_trust",
+              "source_section": "How it works / Partner integrations"
+            }
+          ],
+          "note": "ChatGPT Enterprise compliance logs can feed SIEM tooling.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "chatgpt_enterprise",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Managing feature access with RBAC in ChatGPT",
+              "url": "https://help.openai.com/en/articles/11750701-managing-feature-access-with-role-based-access-control-in-chatgpt",
+              "note": "OpenAI explicitly documents creating reusable custom roles with granular feature permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Overview / custom roles"
+            }
+          ],
+          "note": "ChatGPT Enterprise supports custom roles.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "chatgpt_enterprise",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Managing feature access with RBAC in ChatGPT",
+              "url": "https://help.openai.com/en/articles/11750701-managing-feature-access-with-role-based-access-control-in-chatgpt",
+              "note": "OpenAI documents role-based access control for ChatGPT Enterprise with reusable roles and group-based assignments.",
+              "evidence_type": "technical_docs",
+              "source_section": "Overview / Availability"
+            }
+          ],
+          "note": "ChatGPT Enterprise supports RBAC.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "chatgpt_enterprise",
+          "evidence": [
+            {
+              "title": "OpenAI – Enterprise privacy",
+              "url": "https://openai.com/enterprise-privacy/",
+              "note": "OpenAI explicitly documents enterprise authentication via SAML SSO.",
+              "evidence_type": "security_trust",
+              "source_section": "Control"
+            }
+          ],
+          "note": "ChatGPT Enterprise supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "openai_chatgpt_business_products",
+          "evidence": [
+            {
+              "title": "OpenAI – Enterprise privacy",
+              "url": "https://openai.com/enterprise-privacy/",
+              "note": "OpenAI documents ChatGPT business products as OpenAI-hosted enterprise services with organization controls and managed data handling.",
+              "evidence_type": "security_trust",
+              "source_section": "Our commitments / General FAQ"
+            }
+          ],
+          "note": "ChatGPT business features are delivered as managed OpenAI services.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "chatgpt_enterprise_edu",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Data residency and inference residency for ChatGPT",
+              "url": "https://help.openai.com/en/articles/9903489-data-residency-for-chatgpt",
+              "note": "OpenAI documents ChatGPT data residency that keeps in-scope customer content stored at rest in a specified geographic region for eligible Enterprise/Edu customers.",
+              "evidence_type": "technical_docs",
+              "source_section": "Overview / Eligibility"
+            }
+          ],
+          "note": "Eligible ChatGPT Enterprise/Edu customers can use data residency.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "chatgpt_enterprise_edu",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Data residency and inference residency for ChatGPT",
+              "url": "https://help.openai.com/en/articles/9903489-data-residency-for-chatgpt",
+              "note": "OpenAI states eligible ChatGPT Enterprise/Edu customers can choose supported countries/regions for in-scope customer content.",
+              "evidence_type": "technical_docs",
+              "source_section": "Eligibility / supported regions"
+            }
+          ],
+          "note": "Eligible customers can select a supported ChatGPT data-residency region.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "chatgpt_enterprise_edu",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Enterprise Key Management overview",
+              "url": "https://help.openai.com/en/articles/20000943",
+              "note": "OpenAI documents BYOK Enterprise Key Management for ChatGPT Enterprise/Edu using customer-managed AWS KMS, GCP, or Azure Key Vault keys.",
+              "evidence_type": "security_trust",
+              "source_section": "Overview"
+            }
+          ],
+          "note": "ChatGPT Enterprise/Edu supports customer-managed encryption keys through EKM.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "openai_chatgpt_business_products",
+          "evidence": [
+            {
+              "title": "OpenAI – Enterprise privacy",
+              "url": "https://openai.com/enterprise-privacy/",
+              "note": "OpenAI documents AES-256 encryption at rest for business data.",
+              "evidence_type": "security_trust",
+              "source_section": "Security"
+            }
+          ],
+          "note": "OpenAI documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "openai_chatgpt_business_products",
+          "evidence": [
+            {
+              "title": "OpenAI – Enterprise privacy",
+              "url": "https://openai.com/enterprise-privacy/",
+              "note": "OpenAI documents TLS 1.2+ encryption in transit between customers, OpenAI, and service providers.",
+              "evidence_type": "security_trust",
+              "source_section": "Security"
+            }
+          ],
+          "note": "OpenAI documents TLS 1.2+ encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "openai_chatgpt_business_products",
+          "evidence": [
+            {
+              "title": "OpenAI – Security and privacy",
+              "url": "https://openai.com/security-and-privacy/",
+              "note": "OpenAI states its API and ChatGPT business products have undergone an independent SOC 2 Type 2 examination.",
+              "evidence_type": "security_trust",
+              "source_section": "Our accreditations / SOC 2 Type 2"
+            }
+          ],
+          "note": "OpenAI documents SOC 2 Type 2 coverage for ChatGPT business products.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -7096,6 +7334,125 @@
       "agent_id": "AI-0051",
       "claims": [
         {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "chatgpt_enterprise_compliance_platform",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-compliance-api-for-chatgpt-enterprise-edu-and-chatgpt-for-teachers",
+              "note": "OpenAI documents programmatic access to audit and compliance data through the Compliance/Admin API.",
+              "evidence_type": "api_docs",
+              "source_section": "Compliance API documentation / How it works"
+            }
+          ],
+          "note": "ChatGPT Enterprise audit/compliance data is accessible through API.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "chatgpt_enterprise_compliance_platform",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-compliance-api-for-chatgpt-enterprise-edu-and-chatgpt-for-teachers",
+              "note": "OpenAI documents immutable compliance log events and audit/authentication/app logs for ChatGPT workspaces.",
+              "evidence_type": "security_trust",
+              "source_section": "How it works"
+            }
+          ],
+          "note": "ChatGPT Enterprise provides compliance/audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 30,
+          "scope": "chatgpt_enterprise_compliance_logs_platform",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-compliance-api-for-chatgpt-enterprise-edu-and-chatgpt-for-teachers",
+              "note": "OpenAI states the Compliance Logs Platform retains data for 30 days.",
+              "evidence_type": "technical_docs",
+              "source_section": "Data Retention with the Compliance API"
+            }
+          ],
+          "note": "The ChatGPT Compliance Logs Platform documents 30-day retention.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "chatgpt_enterprise_compliance_platform",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
+              "url": "https://help.openai.com/en/articles/9261474-compliance-api-for-chatgpt-enterprise-edu-and-chatgpt-for-teachers",
+              "note": "OpenAI documents connecting Compliance Platform logs and metadata with SIEM tools and lists supported security integrations.",
+              "evidence_type": "security_trust",
+              "source_section": "How it works / Partner integrations"
+            }
+          ],
+          "note": "ChatGPT Enterprise compliance logs can feed SIEM tooling.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "chatgpt_enterprise",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Managing feature access with RBAC in ChatGPT",
+              "url": "https://help.openai.com/en/articles/11750701-managing-feature-access-with-role-based-access-control-in-chatgpt",
+              "note": "OpenAI explicitly documents creating reusable custom roles with granular feature permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Overview / custom roles"
+            }
+          ],
+          "note": "ChatGPT Enterprise supports custom roles.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "chatgpt_enterprise",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Managing feature access with RBAC in ChatGPT",
+              "url": "https://help.openai.com/en/articles/11750701-managing-feature-access-with-role-based-access-control-in-chatgpt",
+              "note": "OpenAI documents role-based access control for ChatGPT Enterprise with reusable roles and group-based assignments.",
+              "evidence_type": "technical_docs",
+              "source_section": "Overview / Availability"
+            }
+          ],
+          "note": "ChatGPT Enterprise supports RBAC.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "chatgpt_enterprise",
+          "evidence": [
+            {
+              "title": "OpenAI – Enterprise privacy",
+              "url": "https://openai.com/enterprise-privacy/",
+              "note": "OpenAI explicitly documents enterprise authentication via SAML SSO.",
+              "evidence_type": "security_trust",
+              "source_section": "Control"
+            }
+          ],
+          "note": "ChatGPT Enterprise supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "chatgpt_work_cloud",
@@ -7111,6 +7468,108 @@
             }
           ],
           "note": "ChatGPT Work is delivered as a managed ChatGPT service."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "chatgpt_enterprise_edu",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Data residency and inference residency for ChatGPT",
+              "url": "https://help.openai.com/en/articles/9903489-data-residency-for-chatgpt",
+              "note": "OpenAI documents ChatGPT data residency that keeps in-scope customer content stored at rest in a specified geographic region for eligible Enterprise/Edu customers.",
+              "evidence_type": "technical_docs",
+              "source_section": "Overview / Eligibility"
+            }
+          ],
+          "note": "Eligible ChatGPT Enterprise/Edu customers can use data residency.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "chatgpt_enterprise_edu",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Data residency and inference residency for ChatGPT",
+              "url": "https://help.openai.com/en/articles/9903489-data-residency-for-chatgpt",
+              "note": "OpenAI states eligible ChatGPT Enterprise/Edu customers can choose supported countries/regions for in-scope customer content.",
+              "evidence_type": "technical_docs",
+              "source_section": "Eligibility / supported regions"
+            }
+          ],
+          "note": "Eligible customers can select a supported ChatGPT data-residency region.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "chatgpt_enterprise_edu",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Enterprise Key Management overview",
+              "url": "https://help.openai.com/en/articles/20000943",
+              "note": "OpenAI documents BYOK Enterprise Key Management for ChatGPT Enterprise/Edu using customer-managed AWS KMS, GCP, or Azure Key Vault keys.",
+              "evidence_type": "security_trust",
+              "source_section": "Overview"
+            }
+          ],
+          "note": "ChatGPT Enterprise/Edu supports customer-managed encryption keys through EKM.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "openai_chatgpt_business_products",
+          "evidence": [
+            {
+              "title": "OpenAI – Enterprise privacy",
+              "url": "https://openai.com/enterprise-privacy/",
+              "note": "OpenAI documents AES-256 encryption at rest for business data.",
+              "evidence_type": "security_trust",
+              "source_section": "Security"
+            }
+          ],
+          "note": "OpenAI documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "openai_chatgpt_business_products",
+          "evidence": [
+            {
+              "title": "OpenAI – Enterprise privacy",
+              "url": "https://openai.com/enterprise-privacy/",
+              "note": "OpenAI documents TLS 1.2+ encryption in transit between customers, OpenAI, and service providers.",
+              "evidence_type": "security_trust",
+              "source_section": "Security"
+            }
+          ],
+          "note": "OpenAI documents TLS 1.2+ encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "openai_chatgpt_business_products",
+          "evidence": [
+            {
+              "title": "OpenAI – Security and privacy",
+              "url": "https://openai.com/security-and-privacy/",
+              "note": "OpenAI states its API and ChatGPT business products have undergone an independent SOC 2 Type 2 examination.",
+              "evidence_type": "security_trust",
+              "source_section": "Our accreditations / SOC 2 Type 2"
+            }
+          ],
+          "note": "OpenAI documents SOC 2 Type 2 coverage for ChatGPT business products.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -8506,6 +8965,108 @@
       "agent_id": "AI-0069",
       "claims": [
         {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Admin Audit Logs API",
+              "url": "https://docs.mistral.ai/api/endpoint/beta/admin/audit-logs",
+              "note": "Mistral documents GET /v1/admin/audit-logs for programmatic organization audit-log access.",
+              "evidence_type": "api_docs",
+              "source_section": "Get Audit Logs"
+            }
+          ],
+          "note": "Mistral Enterprise exposes audit logs through Admin API.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Audit logs",
+              "url": "https://docs.mistral.ai/admin/monitor-comply/audit-logs/overview",
+              "note": "Mistral documents Enterprise audit logs across Studio and Vibe, including user, API-key, security, and Vibe interaction events.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit logs / What gets logged"
+            }
+          ],
+          "note": "Mistral Enterprise provides audit logs covering Vibe.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Admin",
+              "url": "https://docs.mistral.ai/admin",
+              "note": "Mistral documents role-based access control for organization members, groups, roles, and permissions across workspaces including Vibe.",
+              "evidence_type": "technical_docs",
+              "source_section": "Identity and access (RBAC)"
+            }
+          ],
+          "note": "Mistral Enterprise supports RBAC.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Admin SCIM API",
+              "url": "https://docs.mistral.ai/api/endpoint/beta/admin/scim",
+              "note": "Mistral documents SCIM user-provisioning mode and SCIM synchronization endpoints requiring SAML authentication.",
+              "evidence_type": "api_docs",
+              "source_section": "Beta Admin Scim Endpoints"
+            }
+          ],
+          "note": "Mistral Enterprise supports SCIM provisioning.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Create your organization",
+              "url": "https://docs.mistral.ai/getting-started/quickstarts/admin/create-organization",
+              "note": "Mistral documents SAML-based SSO for Enterprise organization authentication across Studio and Vibe.",
+              "evidence_type": "technical_docs",
+              "source_section": "Security and monitoring"
+            }
+          ],
+          "note": "Mistral Enterprise supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "mistral_vibe",
+          "evidence": [
+            {
+              "title": "Mistral – Vibe",
+              "url": "https://mistral.ai/products/vibe/",
+              "note": "Mistral documents Vibe as its hosted work-and-code agent and supports launching coding tasks directly in Vibe with remote agents.",
+              "evidence_type": "official_product_page",
+              "source_section": "Vibe / FAQ"
+            }
+          ],
+          "note": "Mistral Vibe provides a managed service/runtime.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.self_hosted",
           "value": true,
           "scope": "mistral_vibe_code_local_runtime",
@@ -8521,6 +9082,57 @@
             }
           ],
           "note": "Vibe Code supports a local customer/user-managed runtime via CLI or VS Code."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "mistral_vibe_enterprise",
+          "evidence": [
+            {
+              "title": "Mistral – Vibe",
+              "url": "https://mistral.ai/products/vibe/",
+              "note": "Mistral states Enterprise Vibe supports full data residency across on-premises, private cloud, or Mistral Cloud deployments.",
+              "evidence_type": "official_product_page",
+              "source_section": "Intelligence you own / FAQ"
+            }
+          ],
+          "note": "Mistral Vibe Enterprise supports data-residency controls.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "mistral_vibe_enterprise",
+          "evidence": [
+            {
+              "title": "Mistral – Regional inference",
+              "url": "https://mistral.ai/news/regional-inference-open-models-new-compute/",
+              "note": "Mistral documents regional endpoints allowing customers to choose EU or US inference regions for regional control and data-residency requirements.",
+              "evidence_type": "official_release",
+              "source_section": "Regional control, production-grade reliability"
+            }
+          ],
+          "note": "Mistral customers can choose supported regional inference locations.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "mistral_platform_including_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Help – SOC 2 and ISO certifications",
+              "url": "https://help.mistral.ai/en/articles/347638-do-you-have-soc-2-or-iso-27001-certification",
+              "note": "Mistral states it complies with SOC 2 Type II and ISO 27001/27701 frameworks.",
+              "evidence_type": "security_trust",
+              "source_section": "Answer"
+            }
+          ],
+          "note": "Mistral documents SOC 2 Type II compliance.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -10841,6 +11453,91 @@
       "agent_id": "AI-0087",
       "claims": [
         {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Admin Audit Logs API",
+              "url": "https://docs.mistral.ai/api/endpoint/beta/admin/audit-logs",
+              "note": "Mistral documents GET /v1/admin/audit-logs for programmatic organization audit-log access.",
+              "evidence_type": "api_docs",
+              "source_section": "Get Audit Logs"
+            }
+          ],
+          "note": "Mistral Enterprise exposes audit logs through Admin API.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Audit logs",
+              "url": "https://docs.mistral.ai/admin/monitor-comply/audit-logs/overview",
+              "note": "Mistral documents Enterprise audit logs across Studio and Vibe, including user, API-key, security, and Vibe interaction events.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit logs / What gets logged"
+            }
+          ],
+          "note": "Mistral Enterprise provides audit logs covering Vibe.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Admin",
+              "url": "https://docs.mistral.ai/admin",
+              "note": "Mistral documents role-based access control for organization members, groups, roles, and permissions across workspaces including Vibe.",
+              "evidence_type": "technical_docs",
+              "source_section": "Identity and access (RBAC)"
+            }
+          ],
+          "note": "Mistral Enterprise supports RBAC.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Admin SCIM API",
+              "url": "https://docs.mistral.ai/api/endpoint/beta/admin/scim",
+              "note": "Mistral documents SCIM user-provisioning mode and SCIM synchronization endpoints requiring SAML authentication.",
+              "evidence_type": "api_docs",
+              "source_section": "Beta Admin Scim Endpoints"
+            }
+          ],
+          "note": "Mistral Enterprise supports SCIM provisioning.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "mistral_enterprise_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Create your organization",
+              "url": "https://docs.mistral.ai/getting-started/quickstarts/admin/create-organization",
+              "note": "Mistral documents SAML-based SSO for Enterprise organization authentication across Studio and Vibe.",
+              "evidence_type": "technical_docs",
+              "source_section": "Security and monitoring"
+            }
+          ],
+          "note": "Mistral Enterprise supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "mistral_vibe_work",
@@ -10856,6 +11553,74 @@
             }
           ],
           "note": "Vibe Work is explicitly documented as Mistral-hosted."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "mistral_vibe_enterprise",
+          "evidence": [
+            {
+              "title": "Mistral – Vibe",
+              "url": "https://mistral.ai/products/vibe/",
+              "note": "Mistral states Enterprise customers can deploy Vibe on-premises or in a private cloud.",
+              "evidence_type": "official_product_page",
+              "source_section": "Can I deploy Vibe on my own infrastructure?"
+            }
+          ],
+          "note": "Mistral Vibe supports on-premises/private-cloud deployment.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "mistral_vibe_enterprise",
+          "evidence": [
+            {
+              "title": "Mistral – Vibe",
+              "url": "https://mistral.ai/products/vibe/",
+              "note": "Mistral states Enterprise Vibe supports full data residency across on-premises, private cloud, or Mistral Cloud deployments.",
+              "evidence_type": "official_product_page",
+              "source_section": "Intelligence you own / FAQ"
+            }
+          ],
+          "note": "Mistral Vibe Enterprise supports data-residency controls.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "mistral_vibe_enterprise",
+          "evidence": [
+            {
+              "title": "Mistral – Regional inference",
+              "url": "https://mistral.ai/news/regional-inference-open-models-new-compute/",
+              "note": "Mistral documents regional endpoints allowing customers to choose EU or US inference regions for regional control and data-residency requirements.",
+              "evidence_type": "official_release",
+              "source_section": "Regional control, production-grade reliability"
+            }
+          ],
+          "note": "Mistral customers can choose supported regional inference locations.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "mistral_platform_including_vibe",
+          "evidence": [
+            {
+              "title": "Mistral Help – SOC 2 and ISO certifications",
+              "url": "https://help.mistral.ai/en/articles/347638-do-you-have-soc-2-or-iso-27001-certification",
+              "note": "Mistral states it complies with SOC 2 Type II and ISO 27001/27701 frameworks.",
+              "evidence_type": "security_trust",
+              "source_section": "Answer"
+            }
+          ],
+          "note": "Mistral documents SOC 2 Type II compliance.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
