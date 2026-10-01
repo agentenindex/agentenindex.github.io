@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T17:01:09Z",
+  "updated_at": "2026-10-01T17:10:49Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -1650,6 +1650,29 @@
         "new_status": 200
       },
       "previous_checked_at": "2026-10-01T16:40:28Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-46C2B9455B4F2D535A",
+      "detected_at": "2026-10-01T17:10:12Z",
+      "source_id": "SRC-B6A803A2C827C8",
+      "agent_ids": [
+        "AI-0086"
+      ],
+      "source_title": "Microsoft GitHub – Agent Framework",
+      "url": "https://github.com/microsoft/agent-framework",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "f3a9f55cf4c832cd5e8acb23ab3a4b7b5703482e4e045cafa7d905f5201e88f3",
+        "new_hash": "51a96a7711913ca14f548b1727f3ae98c48b891b2090e0a54d70d1daf756c19f",
+        "simhash_distance": 1,
+        "old_token_count": 1426,
+        "new_token_count": 1426,
+        "token_delta_pct": 0.0
+      },
+      "previous_checked_at": "2026-10-01T17:00:41Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }

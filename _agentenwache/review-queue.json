@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T17:01:09Z",
-  "open_count": 0,
+  "updated_at": "2026-10-01T17:10:49Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -423,6 +423,48 @@
       "resolution": "Source is inactive; automated availability review is no longer actionable."
     },
     {
+      "review_id": "REV-3493B3225601CA6BC1",
+      "status": "open",
+      "first_detected": "2026-10-01T17:10:12Z",
+      "last_detected": "2026-10-01T17:10:12Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-B6A803A2C827C8",
+      "source_title": "Microsoft GitHub – Agent Framework",
+      "url": "https://github.com/microsoft/agent-framework",
+      "agent_ids": [
+        "AI-0086"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/microsoft/agent-framework",
+        "text_hash": "f3a9f55cf4c832cd5e8acb23ab3a4b7b5703482e4e045cafa7d905f5201e88f3",
+        "simhash64": "c713a582a937a5c6",
+        "token_count": 1426,
+        "text_sample": "microsoft / agent-framework Public Notifications You must be signed in to change notification settings Fork 2.4k Star 13.9k main Branches Tags Go to file Code Open more actions menu Latest commit History 3,389 Commits 3,389 Commits Folders and files Name Name Last commit message Last commit date .devcontainer .devcontainer .github .github .vscode .vscode declarative-agents declarative-agents docs docs dotnet dotnet go go python python .gitattributes .gitattributes .gitignore .gitignore CODE_OF_CONDUCT.md CODE_OF_CONDUCT.md COMMUNITY.md COMMUNITY.md CONTRIBUTING.md CONTRIBUTING.md LICENSE LICENSE README.md README.md SECURITY.md SECURITY.md SUPPORT.md SUPPORT.md TRANSPARENCY_FAQ.md TRANSPARENCY_FAQ.md es-metadata.yml es-metadata.yml View all files Repository files navigation Welcome to Microsoft Agent Framework! Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python . Microsoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python, .NET and Go, while keepin"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://github.com/microsoft/agent-framework",
+        "text_hash": "51a96a7711913ca14f548b1727f3ae98c48b891b2090e0a54d70d1daf756c19f",
+        "simhash64": "c713a582a937adc6",
+        "token_count": 1426,
+        "text_sample": "microsoft / agent-framework Public Notifications You must be signed in to change notification settings Fork 2.4k Star 13.9k main Branches Tags Go to file Code Open more actions menu Latest commit History 3,392 Commits 3,392 Commits Folders and files Name Name Last commit message Last commit date .devcontainer .devcontainer .github .github .vscode .vscode declarative-agents declarative-agents docs docs dotnet dotnet go go python python .gitattributes .gitattributes .gitignore .gitignore CODE_OF_CONDUCT.md CODE_OF_CONDUCT.md COMMUNITY.md COMMUNITY.md CONTRIBUTING.md CONTRIBUTING.md LICENSE LICENSE README.md README.md SECURITY.md SECURITY.md SUPPORT.md SUPPORT.md TRANSPARENCY_FAQ.md TRANSPARENCY_FAQ.md es-metadata.yml es-metadata.yml View all files Repository files navigation Welcome to Microsoft Agent Framework! Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python . Microsoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python, .NET and Go, while keepin",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "f3a9f55cf4c832cd5e8acb23ab3a4b7b5703482e4e045cafa7d905f5201e88f3",
+        "new_hash": "51a96a7711913ca14f548b1727f3ae98c48b891b2090e0a54d70d1daf756c19f",
+        "simhash_distance": 1,
+        "old_token_count": 1426,
+        "new_token_count": 1426,
+        "token_delta_pct": 0.0
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-4695D13505A3BA8C5D",
       "status": "acknowledged",
       "first_detected": "2026-10-01T13:16:09Z",
@@ -787,8 +829,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The current official Slack article still supports the indexed Slackbot capabilities; the observed render/content variants do not change an indexed product fact.",
       "reviewed_at": "2026-10-01T14:54:00Z",
-      "last_seen_after_review": "2026-10-01T15:55:00Z",
-      "suppressed_reoccurrences": 3
+      "last_seen_after_review": "2026-10-01T17:10:13Z",
+      "suppressed_reoccurrences": 4
     },
     {
       "review_id": "REV-6D8E1264AB85F24B94",
