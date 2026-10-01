@@ -7132,6 +7132,91 @@
       "agent_id": "AI-0046",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "salesforce_org_including_agentforce",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Monitor Setup Changes with Setup Audit Trail",
+              "url": "https://help.salesforce.com/s/articleView?id=admin_monitorsetup.htm&language=en_US&type=5",
+              "note": "Salesforce documents Setup Audit Trail and explicitly records changes made through AI agents in Setup with Agentforce.",
+              "evidence_type": "technical_docs",
+              "source_section": "Setup Audit Trail"
+            }
+          ],
+          "note": "Salesforce provides audit trails that include Agentforce-mediated setup actions."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 180,
+          "scope": "salesforce_setup_audit_trail",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Monitor Setup Changes with Setup Audit Trail",
+              "url": "https://help.salesforce.com/s/articleView?id=admin_monitorsetup.htm&language=en_US&type=5",
+              "note": "Salesforce states complete setup history is downloadable for the past 180 days and setup records are deleted after 180 days.",
+              "evidence_type": "technical_docs",
+              "source_section": "Setup Audit Trail retention"
+            }
+          ],
+          "note": "Salesforce Setup Audit Trail retains setup records for 180 days."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "salesforce_org_including_agentforce_prospecting",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Set Up Record Access for Your Users",
+              "url": "https://help.salesforce.com/s/articleView?id=sf.users_manage_sharing.htm&language=en_US&type=5",
+              "note": "Salesforce documents creating and managing user roles within a role hierarchy to define record access.",
+              "evidence_type": "technical_docs",
+              "source_section": "Extend Record Access Vertically with the Role Hierarchy"
+            }
+          ],
+          "note": "Salesforce organizations support administrator-defined roles and role hierarchies."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "salesforce_org_including_agentforce_prospecting",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Control Who Sees What",
+              "url": "https://help.salesforce.com/s/articleView?id=security_data_access.htm&language=en_US&type=5",
+              "note": "Salesforce documents role hierarchy, profiles, permission sets, and sharing rules as layered role/access controls.",
+              "evidence_type": "technical_docs",
+              "source_section": "Role hierarchy / permissions"
+            }
+          ],
+          "note": "Salesforce provides role-based access control through roles, profiles, and permission sets."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "salesforce_org_including_agentforce_prospecting",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – SAML SSO with Salesforce as Service Provider",
+              "url": "https://help.salesforce.com/s/articleView?id=sso_saml_setting_up.htm&language=de&type=0",
+              "note": "Salesforce documents SAML-based SSO for Salesforce organizations.",
+              "evidence_type": "technical_docs",
+              "source_section": "SAML SSO"
+            }
+          ],
+          "note": "Salesforce supports SAML SSO."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "salesforce_agentforce_prospecting",
@@ -7147,6 +7232,74 @@
             }
           ],
           "note": "Agentforce Prospecting is delivered within Salesforce's managed Agentforce/Sales Cloud environment."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "salesforce_hyperforce_org_including_agentforce",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Hyperforce General Information",
+              "url": "https://help.salesforce.com/s/articleView?id=000388902&language=en_US&type=1",
+              "note": "Salesforce documents Hyperforce as giving customers choice and control over where organization data resides.",
+              "evidence_type": "technical_docs",
+              "source_section": "What Is Salesforce Hyperforce?"
+            }
+          ],
+          "note": "Salesforce Hyperforce provides data-residency options for Salesforce organizations."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "salesforce_hyperforce_org_including_agentforce",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Hyperforce General Information",
+              "url": "https://help.salesforce.com/s/articleView?id=000388902&language=en_US&type=1",
+              "note": "Salesforce states customers can choose the region where their data resides on Hyperforce.",
+              "evidence_type": "technical_docs",
+              "source_section": "Hyperforce benefits"
+            }
+          ],
+          "note": "Hyperforce customers can choose supported data regions."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "salesforce_shield_platform_encryption",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Shield",
+              "url": "https://www.salesforce.com/platform/shield/",
+              "note": "Salesforce documents Platform Encryption with AES-256 field/file encryption at rest and customer-managed keys.",
+              "evidence_type": "security_trust",
+              "source_section": "Shield FAQ"
+            }
+          ],
+          "note": "Salesforce supports customer-managed encryption keys through Shield Platform Encryption."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "salesforce_hyperforce_org_including_agentforce",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Architects – Data Protection Patterns",
+              "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust-data-protection-patterns.html",
+              "note": "Salesforce states all Hyperforce data is encrypted at rest at the infrastructure level.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption at rest"
+            }
+          ],
+          "note": "Hyperforce encrypts data at rest."
         }
       ]
     },
@@ -13756,6 +13909,173 @@
             }
           ],
           "note": "Moveworks Agent Studio supports webhook-based system triggers."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "moveworks_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – Release Notes 2024",
+              "url": "https://help.moveworks.com/ai-assistant/getting-started/roadmap-release-notes/release-notes-2024",
+              "note": "Moveworks documents Agent Studio audit logs for developer activity and connections to business systems.",
+              "evidence_type": "official_release",
+              "source_section": "Audit how developers are using Agent Studio"
+            }
+          ],
+          "note": "Agent Studio provides audit logs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 60,
+          "scope": "moveworks_configuration_and_permissions_logs",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – Configuration Change Logs",
+              "url": "https://help.moveworks.com/service-management/administration/configuration-change-logs",
+              "note": "Moveworks documents 60-day retention for configuration change audit logs.",
+              "evidence_type": "technical_docs",
+              "source_section": "Retention"
+            },
+            {
+              "title": "Moveworks – Permissions Logs",
+              "url": "https://help.moveworks.com/service-management/administration/permissions-logs",
+              "note": "Moveworks documents 60-day retention for permissions audit logs.",
+              "evidence_type": "technical_docs",
+              "source_section": "Retention"
+            }
+          ],
+          "note": "Moveworks documents 60-day retention for key administrative audit logs."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "moveworks_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – Roles and Permissions",
+              "url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications",
+              "note": "Moveworks documents Agent Studio User, Agent Studio Analytics Viewer, Log Viewer, and Elevated Log Viewer roles with distinct permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Agent Studio roles"
+            }
+          ],
+          "note": "Agent Studio uses role-based access controls."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "moveworks_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – MyMoveworks SSO",
+              "url": "https://help.moveworks.com/service-management/administration/sso",
+              "note": "Moveworks documents OpenID Connect as a supported SSO protocol for MyMoveworks applications, including Agent Studio.",
+              "evidence_type": "technical_docs",
+              "source_section": "MyMoveworks SSO"
+            }
+          ],
+          "note": "Moveworks Studio supports OIDC SSO."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "moveworks_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – Okta Installation Guide (SAML)",
+              "url": "https://help.moveworks.com/service-management/administration/sso/configure-okta-sso-app/okta-sso-configuration-guide-saml",
+              "note": "Moveworks explicitly documents a SAML configuration whose Moveworks Product is 'studio'.",
+              "evidence_type": "technical_docs",
+              "source_section": "Add SAML Configuration in MyMoveworks"
+            }
+          ],
+          "note": "Moveworks Studio supports SAML SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "moveworks_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – Agent Studio Overview",
+              "url": "https://help.moveworks.com/agent-studio/overview",
+              "note": "Moveworks documents Agent Studio as an application within the Moveworks platform used to build, test, and publish plugins and agents.",
+              "evidence_type": "technical_docs",
+              "source_section": "Agent Studio Overview"
+            },
+            {
+              "title": "Moveworks – On-Prem Agent",
+              "url": "https://help.moveworks.com/agent-studio/core-platform/moveworks-agent",
+              "note": "Moveworks distinguishes the hosted Moveworks Platform from the optional on-premises connector agent installed behind a customer firewall.",
+              "evidence_type": "technical_docs",
+              "source_section": "Overview"
+            }
+          ],
+          "note": "Agent Studio is delivered as part of the managed Moveworks Platform."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "moveworks_platform_including_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – FAQ",
+              "url": "https://www.moveworks.com/us/en/faq",
+              "note": "Moveworks states customer data is encrypted at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and compliance"
+            }
+          ],
+          "note": "Moveworks documents encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "moveworks_platform_including_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – FAQ",
+              "url": "https://www.moveworks.com/us/en/faq",
+              "note": "Moveworks states customer data is encrypted in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and compliance"
+            }
+          ],
+          "note": "Moveworks documents encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "moveworks_platform_including_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – FAQ",
+              "url": "https://www.moveworks.com/us/en/faq",
+              "note": "Moveworks lists SOC 2 Type 2 among its platform certifications.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and compliance"
+            }
+          ],
+          "note": "Moveworks documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -13954,6 +14274,74 @@
     {
       "agent_id": "AI-0096",
       "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "zoom_account_including_zoommate",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zoom Support – Admin Activity Logs",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
+              "note": "Zoom documents review and export of an audit log containing admin actions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Admin Activity Logs"
+            }
+          ],
+          "note": "Zoom provides account administrative audit logs."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "zoom_account_including_zoommate",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zoom Support – Advanced SAML mapping",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061497",
+              "note": "Zoom documents mapping users to Zoom user roles and groups and supports custom administrative role models.",
+              "evidence_type": "technical_docs",
+              "source_section": "Advanced SAML mapping"
+            }
+          ],
+          "note": "Zoom supports administrator-defined/custom role assignments."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "zoom_account_including_zoommate",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zoom Support – Admin Activity Logs",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
+              "note": "Zoom documents account owners, admins, and customized roles with controlled access to account administration.",
+              "evidence_type": "technical_docs",
+              "source_section": "Admin activity logs / permissions"
+            }
+          ],
+          "note": "Zoom provides role-based administrative access."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "zoom_account_including_zoommate",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zoom Support – Advanced SAML mapping",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061497",
+              "note": "Zoom documents SAML SSO and SAML-based assignment of licenses, add-ons, user roles, and groups.",
+              "evidence_type": "technical_docs",
+              "source_section": "Advanced SAML mapping"
+            }
+          ],
+          "note": "Zoom accounts support SAML SSO."
+        },
         {
           "path": "hosting.managed",
           "value": true,
