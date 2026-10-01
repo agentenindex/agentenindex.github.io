@@ -857,6 +857,209 @@
       ]
     },
     {
+      "agent_id": "AI-0016",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "cline_ide_cli_and_desktop",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline Docs – MCP",
+              "url": "https://docs.cline.bot/mcp/mcp-overview",
+              "note": "Cline documents adding local and remote MCP servers and using their external tools and data sources from Cline.",
+              "evidence_type": "technical_docs",
+              "source_section": "MCP / Add servers"
+            }
+          ],
+          "note": "Cline acts as an MCP client for local and remote MCP servers."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "cline_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline Docs – Cline API",
+              "url": "https://docs.cline.bot/api/overview",
+              "note": "Cline documents an OpenAI-compatible Chat Completions API with an HTTPS POST endpoint.",
+              "evidence_type": "api_docs",
+              "source_section": "Cline API / Quick Start"
+            }
+          ],
+          "note": "Cline provides a documented HTTP API endpoint for programmatic model access."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "cline_enterprise_deployment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline – Install / Enterprise",
+              "url": "https://cline.bot/install",
+              "note": "Cline documents self-hosted or on-prem deployments for Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            },
+            {
+              "title": "Cline Enterprise",
+              "url": "https://cline.bot/enterprise",
+              "note": "Cline documents deployment in VPC, on-prem, and air-gapped environments.",
+              "evidence_type": "official_product_page",
+              "source_section": "Deploy where you want"
+            }
+          ],
+          "note": "Cline Enterprise supports customer-managed self-hosted/on-prem deployment."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "cline_enterprise_deployment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline – Install / Enterprise",
+              "url": "https://cline.bot/install",
+              "note": "Cline documents private networking through VPC/private link for Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            },
+            {
+              "title": "Cline Enterprise",
+              "url": "https://cline.bot/enterprise",
+              "note": "Cline documents running Cline in a customer's own VPC.",
+              "evidence_type": "official_product_page",
+              "source_section": "Your data flows the way you choose"
+            }
+          ],
+          "note": "Cline Enterprise supports private-network deployment in customer VPC environments."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "cline_enterprise_identity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline – Install / Enterprise",
+              "url": "https://cline.bot/install",
+              "note": "Cline explicitly lists SSO using SAML/OIDC for Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "Cline Enterprise documents SAML SSO."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "cline_enterprise_identity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline – Pricing",
+              "url": "https://cline.bot/pricing",
+              "note": "Cline lists OIDC among Enterprise security capabilities.",
+              "evidence_type": "official_product_page",
+              "source_section": "When do I need Enterprise?"
+            },
+            {
+              "title": "Cline – Install / Enterprise",
+              "url": "https://cline.bot/install",
+              "note": "Cline explicitly lists SSO using SAML/OIDC for Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "Cline Enterprise documents OIDC SSO."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "cline_enterprise_identity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline – Pricing",
+              "url": "https://cline.bot/pricing",
+              "note": "Cline lists SCIM provisioning among Enterprise security capabilities.",
+              "evidence_type": "official_product_page",
+              "source_section": "When do I need Enterprise?"
+            }
+          ],
+          "note": "Cline Enterprise documents SCIM provisioning."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "cline_enterprise_governance",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline – Pricing",
+              "url": "https://cline.bot/pricing",
+              "note": "Cline lists Role Based Access Control as an Enterprise feature.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "Cline Enterprise documents role-based access control."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "cline_enterprise_observability",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline – Pricing",
+              "url": "https://cline.bot/pricing",
+              "note": "Cline lists audit logs among Enterprise security capabilities.",
+              "evidence_type": "official_product_page",
+              "source_section": "When do I need Enterprise?"
+            },
+            {
+              "title": "Cline – Enterprise infrastructure",
+              "url": "https://cline.bot/blog/enterprise-ai-coding-that-uses-your-infrastructure-not-ours",
+              "note": "Cline documents centralized audit trails for user activity, configuration changes, model usage, and tool executions.",
+              "evidence_type": "official_release",
+              "source_section": "Real-time monitoring and audit trails"
+            }
+          ],
+          "note": "Cline Enterprise provides centralized audit trails."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "cline_enterprise_observability",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cline – Enterprise infrastructure",
+              "url": "https://cline.bot/blog/enterprise-ai-coding-that-uses-your-infrastructure-not-ours",
+              "note": "Cline documents OpenTelemetry export to observability platforms including Splunk, Datadog, Grafana Cloud, and New Relic.",
+              "evidence_type": "official_release",
+              "source_section": "Real-time monitoring and audit trails"
+            }
+          ],
+          "note": "Cline Enterprise can export telemetry/audit data to external observability and SIEM tooling including Splunk."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0018",
       "claims": [
         {
