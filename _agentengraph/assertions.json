@@ -22062,17 +22062,17 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-4F93E98B2F89F3"
+          "SRC-303FCA868F761D"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
         "confidence": "high",
         "scope": "servicenow_ai_agents",
-        "note": "A2A interoperability is documented.",
+        "note": "A2A integration is documented in both inbound and outbound directions.",
         "evidence_items": [
           {
-            "source_id": "SRC-4F93E98B2F89F3",
-            "note": "Action Fabric includes A2A communication among ServiceNow and third-party AI agents."
+            "source_id": "SRC-303FCA868F761D",
+            "note": "ServiceNow documents bidirectional A2A integration between the ServiceNow AI Platform and external AI agents."
           }
         ]
       },
@@ -22194,17 +22194,17 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-4F93E98B2F89F3"
+          "SRC-A2962F7EF1B076"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
         "confidence": "high",
         "scope": "servicenow_ai_agents",
-        "note": "ServiceNow AI Agents include MCP client capability.",
+        "note": "ServiceNow AI agents can consume authenticated MCP server tools.",
         "evidence_items": [
           {
-            "source_id": "SRC-4F93E98B2F89F3",
-            "note": "ServiceNow states AI Agents can reach external tools, data and systems via an MCP client."
+            "source_id": "SRC-A2962F7EF1B076",
+            "note": "ServiceNow documents adding authenticated MCP server tools to AI agents, establishing the AI agent as a consumer of MCP server capabilities."
           }
         ]
       },
