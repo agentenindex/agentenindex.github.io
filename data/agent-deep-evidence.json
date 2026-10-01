@@ -11003,6 +11003,30 @@
       "agent_id": "AI-0067",
       "claims": [
         {
+          "path": "api.rest",
+          "value": true,
+          "scope": "openhands_cloud_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenHands Docs – Get Conversation",
+              "url": "https://docs.openhands.dev/api-reference/get-conversation",
+              "note": "OpenHands documents authenticated HTTP GET endpoints under /api/conversations for retrieving agent conversations and runtime status.",
+              "evidence_type": "api_docs",
+              "source_section": "GET /api/conversations/{conversation_id}"
+            },
+            {
+              "title": "OpenHands Docs – Search Conversations",
+              "url": "https://docs.openhands.dev/api-reference/search-conversations",
+              "note": "OpenHands documents authenticated GET /api/conversations for programmatic conversation search and automation.",
+              "evidence_type": "api_docs",
+              "source_section": "GET /api/conversations"
+            }
+          ],
+          "note": "OpenHands exposes documented REST-style HTTP API endpoints for agent conversations and automation."
+        },
+        {
           "path": "governance.audit_logs.available",
           "value": true,
           "scope": "openhands_enterprise_agent_control_plane",
@@ -11103,6 +11127,23 @@
             }
           ],
           "note": "OpenHands supports local and enterprise self-hosted deployment."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "openhands_agent_sessions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenHands Docs – Store Settings",
+              "url": "https://docs.openhands.dev/api-reference/store-settings",
+              "note": "OpenHands documents MCP configuration with SSE, stdio, and streamable HTTP servers added to the MCP router inside the runtime container.",
+              "evidence_type": "api_docs",
+              "source_section": "mcp_config"
+            }
+          ],
+          "note": "OpenHands agent sessions can connect to configured MCP servers through the runtime MCP router."
         }
       ]
     },
