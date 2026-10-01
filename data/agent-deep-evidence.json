@@ -12,6 +12,776 @@
   },
   "agents": [
     {
+      "agent_id": "AI-0006",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "codex_cli_and_ide",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Developers – Docs MCP",
+              "url": "https://developers.openai.com/learn/docs-mcp",
+              "note": "OpenAI documents connecting Codex CLI/IDE to remote MCP servers."
+            }
+          ],
+          "note": "Codex can act as an MCP client."
+        },
+        {
+          "path": "hosting.cloud",
+          "value": true,
+          "scope": "chatgpt_plans",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Developers – ChatGPT and Codex pricing/features",
+              "url": "https://developers.openai.com/de-DE/docs/pricing",
+              "note": "The feature matrix lists Codex Cloud and cloud environments."
+            }
+          ],
+          "note": "Codex Cloud is documented."
+        },
+        {
+          "path": "hosting.local",
+          "value": true,
+          "scope": "cli_and_desktop",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Developers – ChatGPT and Codex pricing/features",
+              "url": "https://developers.openai.com/de-DE/docs/pricing",
+              "note": "The feature matrix lists Codex CLI, IDE extension and local capabilities."
+            }
+          ],
+          "note": "Codex also has local execution surfaces."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Developers – ChatGPT and Codex pricing/features",
+              "url": "https://developers.openai.com/de-DE/docs/pricing",
+              "note": "Business and Enterprise feature rows list SAML SSO."
+            }
+          ],
+          "note": "SAML SSO is documented for managed ChatGPT/Codex workspaces."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Developers – ChatGPT and Codex pricing/features",
+              "url": "https://developers.openai.com/de-DE/docs/pricing",
+              "note": "Enterprise feature rows list RBAC and custom roles."
+            }
+          ],
+          "note": "RBAC is documented for Enterprise."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Developers – ChatGPT and Codex pricing/features",
+              "url": "https://developers.openai.com/de-DE/docs/pricing",
+              "note": "Enterprise feature rows list custom roles."
+            }
+          ],
+          "note": "Custom roles are documented."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Developers – ChatGPT and Codex pricing/features",
+              "url": "https://developers.openai.com/de-DE/docs/pricing",
+              "note": "Enterprise feature rows list SCIM."
+            }
+          ],
+          "note": "SCIM provisioning is documented."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Developers – ChatGPT and Codex pricing/features",
+              "url": "https://developers.openai.com/de-DE/docs/pricing",
+              "note": "Enterprise feature rows list enterprise data retention and data residency settings."
+            }
+          ],
+          "note": "Enterprise residency controls are documented."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "enterprise_and_edu",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform",
+              "url": "https://help.openai.com/en/articles/9261474",
+              "note": "Codex policy/configuration changes are recorded in workspace audit logs."
+            }
+          ],
+          "note": "Audit logs cover Codex policy changes."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "enterprise_and_edu",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Compliance Platform",
+              "url": "https://help.openai.com/en/articles/9261474",
+              "note": "Authorized admins can retrieve Codex-related workspace audit logs through the Compliance API."
+            }
+          ],
+          "note": "Audit logs are retrievable via API."
+        },
+        {
+          "path": "api.admin",
+          "value": true,
+          "scope": "eligible_managed_workspaces",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Managing your tenant in Admin Console",
+              "url": "https://help.openai.com/en/articles/12289294-managing-your-tenant-in-admin-console",
+              "note": "Workspace-scoped Admin keys support ChatGPT and Codex administration APIs."
+            }
+          ],
+          "note": "Admin APIs are documented for eligible managed workspaces."
+        },
+        {
+          "path": "identity.service_accounts",
+          "value": true,
+          "scope": "eligible_managed_workspaces",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Managing your tenant in Admin Console",
+              "url": "https://help.openai.com/en/articles/12289294-managing-your-tenant-in-admin-console",
+              "note": "OpenAI documents separate Codex service-account credentials for automation."
+            }
+          ],
+          "note": "Non-human Codex service-account credentials are documented."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0018",
+      "claims": [
+        {
+          "path": "hosting.cloud",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Overview",
+              "url": "https://docs.n8n.io/",
+              "note": "n8n documentation presents Cloud as a supported deployment option."
+            }
+          ],
+          "note": "n8n Cloud is available."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Overview",
+              "url": "https://docs.n8n.io/",
+              "note": "n8n documentation explicitly presents self-hosting as an option."
+            }
+          ],
+          "note": "Self-hosting is supported."
+        },
+        {
+          "path": "hosting.docker",
+          "value": true,
+          "scope": "self_hosted",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Overview",
+              "url": "https://docs.n8n.io/",
+              "note": "n8n documentation lists Docker as an installation option."
+            }
+          ],
+          "note": "Docker deployment is documented."
+        },
+        {
+          "path": "api.public",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Security audit",
+              "url": "https://docs.n8n.io/hosting/securing/security-audit/",
+              "note": "The security-audit documentation explicitly describes use through the public API."
+            }
+          ],
+          "note": "A public API is documented."
+        },
+        {
+          "path": "api.auth.api_key",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Source control environments",
+              "url": "https://docs.n8n.io/source-control-environments/create-environments/",
+              "note": "The official source-control tutorial authenticates an n8n API call with X-N8N-API-KEY."
+            }
+          ],
+          "note": "API-key authentication is documented."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Set up SAML",
+              "url": "https://docs.n8n.io/user-management/saml/setup/",
+              "note": "Official n8n documentation describes configuring SAML SSO."
+            }
+          ],
+          "note": "SAML SSO is supported."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Set up OIDC",
+              "url": "https://docs.n8n.io/user-management/oidc/setup/",
+              "note": "Official n8n documentation describes configuring OIDC SSO."
+            }
+          ],
+          "note": "OIDC SSO is supported."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Role-based access control",
+              "url": "https://docs.n8n.io/user-management/rbac/",
+              "note": "n8n documents role-based access control with instance and project roles."
+            }
+          ],
+          "note": "Role-based access control is documented."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Role-based access control",
+              "url": "https://docs.n8n.io/user-management/rbac/",
+              "note": "The RBAC documentation includes custom roles."
+            }
+          ],
+          "note": "Custom roles are documented."
+        },
+        {
+          "path": "security.security_audit",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Security audit",
+              "url": "https://docs.n8n.io/hosting/securing/security-audit/",
+              "note": "n8n provides a security audit via CLI, public API, or n8n node."
+            }
+          ],
+          "note": "A built-in security audit capability is documented."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0025",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "copilot_studio_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Add MCP tools to Copilot Studio agents",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent",
+              "note": "Copilot Studio can connect an existing MCP server and add its tools/resources to an agent."
+            }
+          ],
+          "note": "Copilot Studio agents can consume MCP servers."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "copilot_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Geographic data residency in Copilot Studio",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/geo-data-residency",
+              "note": "Microsoft documents geographic data residency for Copilot Studio."
+            }
+          ],
+          "note": "Geographic data residency is documented."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "copilot_studio_environment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Geographic data residency in Copilot Studio",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/geo-data-residency",
+              "note": "Organizations can choose where Copilot Studio data is stored across supported Azure geographies."
+            }
+          ],
+          "note": "Customer-selectable geography is documented."
+        },
+        {
+          "path": "governance.dlp",
+          "value": true,
+          "scope": "power_platform_tenant",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Copilot Studio security and governance",
+              "url": "https://learn.microsoft.com/de-de/microsoft-copilot-studio/security-and-governance",
+              "note": "Copilot Studio security/governance explicitly includes Data Loss Prevention controls."
+            }
+          ],
+          "note": "DLP governance is documented."
+        },
+        {
+          "path": "identity.agent_identity",
+          "value": true,
+          "scope": "new_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Copilot Studio agent identities",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/govern-agents-identities-overview",
+              "note": "All new Copilot Studio agents automatically receive an Entra Agent ID."
+            }
+          ],
+          "note": "Agents receive a dedicated managed identity."
+        },
+        {
+          "path": "identity.agent_identity.provider",
+          "value": "Microsoft Entra Agent ID",
+          "scope": "new_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Copilot Studio agent identities",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/govern-agents-identities-overview",
+              "note": "The identity type is a Microsoft Entra service principal with Agent subtype."
+            }
+          ],
+          "note": "Microsoft Entra Agent ID is the documented identity provider."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0027",
+      "claims": [
+        {
+          "path": "tools.external_rest",
+          "value": true,
+          "scope": "ai_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Access Requirements for AI Agent Studio",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/access-ai-agent-studio.html",
+              "note": "Oracle documents a privilege specifically for creating External REST API tools."
+            }
+          ],
+          "note": "External REST tools are supported."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "fusion_roles",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Access Requirements for AI Agent Studio",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/access-ai-agent-studio.html",
+              "note": "AI Agent Studio access is granted through predefined duty roles assigned to job roles."
+            }
+          ],
+          "note": "Role-based access is documented."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "fusion_security_console",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Access Requirements for AI Agent Studio",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/access-ai-agent-studio.html",
+              "note": "Oracle instructs admins to create or edit custom roles for AI Agent Studio privileges."
+            }
+          ],
+          "note": "Custom roles are supported."
+        },
+        {
+          "path": "governance.monitoring_access_control",
+          "value": true,
+          "scope": "monitoring_and_evaluation",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Access Requirements for AI Agent Studio",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/access-ai-agent-studio.html",
+              "note": "Viewing monitored agent records requires an additional permission group."
+            }
+          ],
+          "note": "Monitoring records are access-controlled."
+        },
+        {
+          "path": "deployment.import_export",
+          "value": true,
+          "scope": "agent_teams_between_instances",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Migrate AI Agents between instances",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/migrate-ai-agents-from-one-instance-to-another.html",
+              "note": "Agent teams can be exported and imported between Oracle environments and then republished."
+            }
+          ],
+          "note": "Cross-instance import/export is documented."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0029",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "agentforce_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – MCP for Agentforce",
+              "url": "https://help.salesforce.com/s/articleView?id=ai.agent_mcp.htm&language=en_US&type=5",
+              "note": "Agentforce can register and use third-party MCP tools."
+            }
+          ],
+          "note": "Agentforce can act as an MCP client."
+        },
+        {
+          "path": "protocols.mcp.remote",
+          "value": true,
+          "scope": "externally_hosted_servers",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – MCP for Agentforce",
+              "url": "https://help.salesforce.com/s/articleView?id=ai.agent_mcp.htm&language=en_US&type=5",
+              "note": "MCP for Agentforce connects to third-party server tools across systems."
+            }
+          ],
+          "note": "Remote MCP integrations are documented."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "agentforce_agents_built_with_agent_script_builder",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Developers – Expose Agentforce through hosted MCP servers",
+              "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/agentforce.html",
+              "note": "Salesforce documents exposing Agentforce agents as MCP tools through hosted MCP servers."
+            }
+          ],
+          "note": "Agentforce can be exposed through an MCP server."
+        },
+        {
+          "path": "identity.agent_user",
+          "value": true,
+          "scope": "external_service_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Agent context vs user context in Agentforce",
+              "url": "https://help.salesforce.com/s/articleView?id=005314096&language=en&type=1",
+              "note": "External Service Agents run as a system user/agent user."
+            }
+          ],
+          "note": "Agent-user execution identity is documented."
+        },
+        {
+          "path": "governance.permission_sets",
+          "value": true,
+          "scope": "external_service_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Agent context vs user context in Agentforce",
+              "url": "https://help.salesforce.com/s/articleView?id=005314096&language=en&type=1",
+              "note": "Agent-context execution requires explicit permission grants through permission sets."
+            }
+          ],
+          "note": "Permission-set control is documented."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "agent_actions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Agent context vs user context in Agentforce",
+              "url": "https://help.salesforce.com/s/articleView?id=005314096&language=en&type=1",
+              "note": "Salesforce states that actions are attributed in the audit trail to the agent or specific user depending on execution context."
+            }
+          ],
+          "note": "Agent action attribution is documented."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0030",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "joule_studio_agent_builder",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – Integrating a service with Joule Studio",
+              "url": "https://help.sap.com/docs/automation-pilot/automation-pilot/integrating-service-with-joule-studio?version=Cloud",
+              "note": "SAP documents adding MCP servers to a Joule agent and exposing their tools to the agent."
+            }
+          ],
+          "note": "Joule Studio agents can consume MCP servers."
+        },
+        {
+          "path": "protocols.a2a",
+          "value": true,
+          "scope": "joule_studio_and_code_editor",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Samples – BTP Agentic AI Use Cases",
+              "url": "https://github.com/SAP-samples/btp-agentic-ai-use-cases",
+              "note": "SAP's official samples include Joule integration with a code-based agent through A2A."
+            }
+          ],
+          "note": "A2A integration is demonstrated by SAP."
+        },
+        {
+          "path": "api.async",
+          "value": true,
+          "scope": "joule_studio_code_editor_sample",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Samples – BTP Agentic AI Use Cases",
+              "url": "https://github.com/SAP-samples/btp-agentic-ai-use-cases",
+              "note": "SAP's official samples include asynchronous API integration with a code-based agent."
+            }
+          ],
+          "note": "Async API integration is demonstrated."
+        },
+        {
+          "path": "deployment.low_code",
+          "value": true,
+          "scope": "joule_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Samples – BTP Agentic AI Use Cases",
+              "url": "https://github.com/SAP-samples/btp-agentic-ai-use-cases",
+              "note": "The official SAP samples describe Joule Studio Agent Builder and Code Editor low-code approaches."
+            }
+          ],
+          "note": "Low-code agent building is documented."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0035",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "servicenow_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow – AI Agents",
+              "url": "https://www.servicenow.com/products/ai-agents.html",
+              "note": "ServiceNow states AI Agents can reach external tools, data and systems via an MCP client."
+            }
+          ],
+          "note": "ServiceNow AI Agents include MCP client capability."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "servicenow_ai_platform_action_fabric",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Newsroom – Action Fabric and MCP Server",
+              "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-opens-its-full-system-of-action-to-every-AI-Agent-in-the-enterprise/default.aspx",
+              "note": "ServiceNow describes its generally available MCP Server exposing governed enterprise actions."
+            }
+          ],
+          "note": "ServiceNow provides MCP server capability at platform level."
+        },
+        {
+          "path": "protocols.a2a",
+          "value": true,
+          "scope": "servicenow_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow – AI Agents",
+              "url": "https://www.servicenow.com/products/ai-agents.html",
+              "note": "Action Fabric includes A2A communication among ServiceNow and third-party AI agents."
+            }
+          ],
+          "note": "A2A interoperability is documented."
+        },
+        {
+          "path": "governance.ai_control_tower",
+          "value": true,
+          "scope": "servicenow_ai_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow – AI Control Tower",
+              "url": "https://www.servicenow.com/products/ai-control-tower.html",
+              "note": "AI Control Tower is positioned as the central governance layer for AI assets."
+            }
+          ],
+          "note": "Centralized AI governance is documented."
+        },
+        {
+          "path": "governance.observability",
+          "value": true,
+          "scope": "ai_control_tower",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow – AI Control Tower",
+              "url": "https://www.servicenow.com/products/ai-control-tower.html",
+              "note": "AI Control Tower continuously monitors AI-agent performance through metrics and log traces."
+            }
+          ],
+          "note": "Agent observability is documented."
+        },
+        {
+          "path": "governance.policy_controls",
+          "value": true,
+          "scope": "ai_control_tower",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow – AI Control Tower",
+              "url": "https://www.servicenow.com/products/ai-control-tower.html",
+              "note": "AI Control Tower describes lifecycle governance, integrated controls and compliance gates."
+            }
+          ],
+          "note": "Policy/governance controls are documented."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0057",
       "claims": [
         {
@@ -317,157 +1087,527 @@
       ]
     },
     {
-      "agent_id": "AI-0018",
+      "agent_id": "AI-0078",
       "claims": [
         {
-          "path": "hosting.cloud",
+          "path": "hosting.managed",
           "value": true,
-          "scope": "platform",
+          "scope": "foundry_agent_service",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Overview",
-              "url": "https://docs.n8n.io/",
-              "note": "n8n documentation presents Cloud as a supported deployment option."
+              "title": "Microsoft Learn – Foundry Agent Service overview",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+              "note": "Foundry Agent Service is fully managed and handles hosting, scaling and identity."
             }
           ],
-          "note": "n8n Cloud is available."
+          "note": "Managed hosting is a core service property."
         },
         {
-          "path": "hosting.self_hosted",
+          "path": "hosting.private_network",
           "value": true,
-          "scope": "platform",
+          "scope": "foundry_account_and_project",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Overview",
-              "url": "https://docs.n8n.io/",
-              "note": "n8n documentation explicitly presents self-hosting as an option."
+              "title": "Microsoft Learn – Foundry Agent Service networking options",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/networking-options",
+              "note": "Foundry supports private endpoints and network-isolated configurations."
             }
           ],
-          "note": "Self-hosting is supported."
+          "note": "Private networking is supported."
         },
         {
-          "path": "hosting.docker",
+          "path": "hosting.byo_vnet",
           "value": true,
-          "scope": "self_hosted",
+          "scope": "standard_networking",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Overview",
-              "url": "https://docs.n8n.io/",
-              "note": "n8n documentation lists Docker as an installation option."
+              "title": "Microsoft Learn – Foundry Agent Service networking options",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/networking-options",
+              "note": "Foundry supports bring-your-own virtual networks with delegated subnets."
             }
           ],
-          "note": "Docker deployment is documented."
+          "note": "BYO VNet is documented."
         },
         {
-          "path": "api.public",
+          "path": "hosting.managed_vnet",
           "value": true,
-          "scope": "platform",
+          "scope": "standard_networking",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Security audit",
-              "url": "https://docs.n8n.io/hosting/securing/security-audit/",
-              "note": "The security-audit documentation explicitly describes use through the public API."
+              "title": "Microsoft Learn – Foundry Agent Service networking options",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/networking-options",
+              "note": "A Microsoft-managed virtual network option is documented."
             }
           ],
-          "note": "A public API is documented."
+          "note": "Managed VNet isolation is supported."
         },
         {
-          "path": "api.auth.api_key",
+          "path": "hosting.customer_managed_storage",
           "value": true,
-          "scope": "platform",
+          "scope": "standard_setup",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Source control environments",
-              "url": "https://docs.n8n.io/source-control-environments/create-environments/",
-              "note": "The official source-control tutorial authenticates an n8n API call with X-N8N-API-KEY."
+              "title": "Microsoft Learn – Foundry Agent Service networking options",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/networking-options",
+              "note": "BYO data resources can include Azure Storage, Azure AI Search and Cosmos DB in the customer tenant."
             }
           ],
-          "note": "API-key authentication is documented."
+          "note": "Customer-managed data resources are supported."
         },
         {
-          "path": "governance.sso.saml",
+          "path": "privacy.residency.available",
           "value": true,
-          "scope": "enterprise",
+          "scope": "agent_service_state",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Set up SAML",
-              "url": "https://docs.n8n.io/user-management/saml/setup/",
-              "note": "Official n8n documentation describes configuring SAML SSO."
+              "title": "Microsoft Learn – Foundry Agent Service data, privacy and security",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/agents/data-privacy-security",
+              "note": "Data stored at rest is kept in the geography of the Azure OpenAI resource."
             }
           ],
-          "note": "SAML SSO is supported."
+          "note": "Agent Service data residency follows the Azure resource geography."
         },
         {
-          "path": "governance.sso.oidc",
-          "value": true,
-          "scope": "enterprise",
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "stored_agent_data",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Set up OIDC",
-              "url": "https://docs.n8n.io/user-management/oidc/setup/",
-              "note": "Official n8n documentation describes configuring OIDC SSO."
+              "title": "Microsoft Learn – Foundry Agent Service data, privacy and security",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/agents/data-privacy-security",
+              "note": "Microsoft documents AES-256 encryption at rest."
             }
           ],
-          "note": "OIDC SSO is supported."
+          "note": "AES-256 at-rest encryption is documented."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "supported_non_preview_features",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Foundry Agent Service data, privacy and security",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/agents/data-privacy-security",
+              "note": "Customer-managed keys are optional for supported Agent Service features."
+            }
+          ],
+          "note": "CMK support is documented with preview caveats."
+        },
+        {
+          "path": "protocols.a2a.client",
+          "value": true,
+          "scope": "foundry_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Connect to an A2A endpoint from Foundry Agent Service",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/agent-to-agent",
+              "note": "Foundry agents can connect to remote A2A endpoints using A2A 1.0."
+            }
+          ],
+          "note": "Outbound A2A is documented."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "prompt_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Enable incoming A2A on a Foundry agent",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+              "note": "Foundry prompt agents can expose an incoming A2A endpoint."
+            }
+          ],
+          "note": "Incoming A2A is documented."
         },
         {
           "path": "governance.rbac",
           "value": true,
-          "scope": "platform",
+          "scope": "foundry_project",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Role-based access control",
-              "url": "https://docs.n8n.io/user-management/rbac/",
-              "note": "n8n documents role-based access control with instance and project roles."
+              "title": "Microsoft Learn – Enable incoming A2A on a Foundry agent",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+              "note": "The A2A setup documents required Foundry RBAC roles."
             }
           ],
-          "note": "Role-based access control is documented."
+          "note": "Azure RBAC is part of Agent Service access control."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0079",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "agentcore_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Deploy MCP servers in AgentCore Runtime",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-mcp.html",
+              "note": "AgentCore Runtime deploys MCP server workloads on AWS-managed AgentCore infrastructure."
+            }
+          ],
+          "note": "Managed runtime hosting is documented."
         },
         {
-          "path": "governance.custom_roles",
+          "path": "protocols.mcp.server",
           "value": true,
-          "scope": "enterprise",
+          "scope": "agentcore_runtime",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Role-based access control",
-              "url": "https://docs.n8n.io/user-management/rbac/",
-              "note": "The RBAC documentation includes custom roles."
+              "title": "AWS Docs – Deploy MCP servers in AgentCore Runtime",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-mcp.html",
+              "note": "AgentCore Runtime can host streamable-HTTP MCP servers."
             }
           ],
-          "note": "Custom roles are documented."
+          "note": "MCP server hosting is supported."
         },
         {
-          "path": "security.security_audit",
+          "path": "protocols.mcp.remote",
           "value": true,
-          "scope": "platform",
+          "scope": "agentcore_gateway",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "n8n Docs – Security audit",
-              "url": "https://docs.n8n.io/hosting/securing/security-audit/",
-              "note": "n8n provides a security audit via CLI, public API, or n8n node."
+              "title": "AWS Docs – MCP server targets in AgentCore Gateway",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-MCPservers.html",
+              "note": "AgentCore Gateway connects to MCP server targets by URL."
             }
           ],
-          "note": "A built-in security audit capability is documented."
+          "note": "Remote MCP server targets are supported."
+        },
+        {
+          "path": "protocols.mcp.gateway",
+          "value": true,
+          "scope": "agentcore_gateway",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – MCP server targets in AgentCore Gateway",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-MCPservers.html",
+              "note": "Gateway aggregates MCP targets into a unified virtual MCP server."
+            }
+          ],
+          "note": "AgentCore includes MCP gateway capability."
+        },
+        {
+          "path": "protocols.mcp.auth.iam",
+          "value": true,
+          "scope": "mcp_gateway_targets",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – MCP server targets in AgentCore Gateway",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-MCPservers.html",
+              "note": "Gateway supports IAM SigV4 outbound authorization for compatible MCP targets."
+            }
+          ],
+          "note": "IAM/SigV4 auth is documented."
+        },
+        {
+          "path": "protocols.mcp.auth.api_key",
+          "value": true,
+          "scope": "mcp_gateway_targets",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – MCP server targets in AgentCore Gateway",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-MCPservers.html",
+              "note": "Gateway supports API key credential providers for MCP targets."
+            }
+          ],
+          "note": "API-key auth is documented."
+        },
+        {
+          "path": "protocols.mcp.auth.oauth",
+          "value": true,
+          "scope": "runtime_and_gateway",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – AgentCore Runtime authentication and authorization",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-oauth.html",
+              "note": "AgentCore Runtime supports OAuth/JWT inbound authorization and gateway-restricted invocation."
+            }
+          ],
+          "note": "OAuth/JWT authorization is documented."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "gateway_targets",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – AgentCore Gateway VPC egress",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-vpc-egress.html",
+              "note": "Gateway can route privately to MCP servers inside a VPC using managed VPC Lattice endpoints."
+            }
+          ],
+          "note": "Private VPC connectivity is documented."
+        },
+        {
+          "path": "governance.observability",
+          "value": true,
+          "scope": "agentcore_resources",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – AgentCore observability",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html",
+              "note": "AgentCore documents observability for runtime, memory, gateway, tools and identity resources."
+            }
+          ],
+          "note": "Built-in observability is documented."
+        },
+        {
+          "path": "governance.logs.cloudwatch",
+          "value": true,
+          "scope": "agentcore_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – AgentCore observability",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html",
+              "note": "AgentCore Runtime creates a CloudWatch log group for service-provided logs."
+            }
+          ],
+          "note": "CloudWatch logging is documented."
+        },
+        {
+          "path": "governance.logs.s3_export",
+          "value": true,
+          "scope": "memory_and_gateway",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – AgentCore observability",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html",
+              "note": "Memory and gateway logs can be configured to Amazon S3."
+            }
+          ],
+          "note": "S3 log destinations are documented."
+        },
+        {
+          "path": "governance.logs.firehose_export",
+          "value": true,
+          "scope": "memory_and_gateway",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – AgentCore observability",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html",
+              "note": "Memory and gateway logs can be sent to Amazon Data Firehose."
+            }
+          ],
+          "note": "Firehose log export is documented."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0082",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "agent_designer",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Using MCP with Agent Designer",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Using_MCP_with_Agent_Designer",
+              "note": "Boomi Agent Designer connects to remote MCP servers and imports their tools."
+            }
+          ],
+          "note": "Agentstudio acts as an MCP client."
+        },
+        {
+          "path": "protocols.mcp.remote",
+          "value": true,
+          "scope": "agent_designer",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Using MCP with Agent Designer",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Using_MCP_with_Agent_Designer",
+              "note": "Agent Designer can connect to third-party remote MCP servers."
+            }
+          ],
+          "note": "Remote MCP servers are supported."
+        },
+        {
+          "path": "protocols.mcp.registry",
+          "value": true,
+          "scope": "api_control_plane",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – MCP Server Catalog",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Using_the_MCP_registry",
+              "note": "Boomi provides a centralized MCP Registry and governed Server Catalog."
+            }
+          ],
+          "note": "A managed MCP registry/catalog is documented."
+        },
+        {
+          "path": "protocols.mcp.auth.oauth",
+          "value": true,
+          "scope": "mcp_sources",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Creating and managing Agentstudio sources",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/ai_Creating_and_managing_sources",
+              "note": "Boomi documents OAuth 2.0/2.1 for MCP source authentication."
+            }
+          ],
+          "note": "OAuth for MCP sources is documented."
+        },
+        {
+          "path": "protocols.mcp.auth.basic",
+          "value": true,
+          "scope": "mcp_sources",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Creating and managing Agentstudio sources",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/ai_Creating_and_managing_sources",
+              "note": "Boomi documents Basic authentication for MCP sources."
+            }
+          ],
+          "note": "Basic auth is supported."
+        },
+        {
+          "path": "protocols.mcp.auth.token",
+          "value": true,
+          "scope": "mcp_sources",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Creating and managing Agentstudio sources",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/ai_Creating_and_managing_sources",
+              "note": "Boomi documents Token authentication for MCP sources."
+            }
+          ],
+          "note": "Token auth is supported."
+        },
+        {
+          "path": "protocols.mcp.auth.jwt",
+          "value": true,
+          "scope": "mcp_sources",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Creating and managing Agentstudio sources",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/ai_Creating_and_managing_sources",
+              "note": "Boomi documents Platform JWT authentication for MCP sources."
+            }
+          ],
+          "note": "Platform JWT auth is supported."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "agentstudio_programmatic_management",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Agentstudio benefits and features",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Agentstudio",
+              "note": "Agentstudio documents programmatic agent development/management through REST APIs."
+            }
+          ],
+          "note": "REST APIs are documented."
+        },
+        {
+          "path": "governance.roles",
+          "value": true,
+          "scope": "agentstudio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Agentstudio access and permissions",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Accessing_agentstudio",
+              "note": "Agentstudio documents Administrator, Developer, User and custom privilege-based roles."
+            }
+          ],
+          "note": "Role-based access patterns are documented."
+        },
+        {
+          "path": "governance.ai_control_tower",
+          "value": true,
+          "scope": "agentstudio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Agentstudio benefits and features",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Agentstudio",
+              "note": "Agent Control Tower is the governance layer of Agentstudio."
+            }
+          ],
+          "note": "Centralized agent governance is documented."
+        },
+        {
+          "path": "governance.observability",
+          "value": true,
+          "scope": "agentstudio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Docs – Agentstudio benefits and features",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Agentstudio",
+              "note": "Agentstudio documents near-real-time metrics and agent-session tracing."
+            }
+          ],
+          "note": "Agent monitoring and tracing are documented."
         }
       ]
     },
