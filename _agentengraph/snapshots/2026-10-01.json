@@ -946,6 +946,12 @@
         "governance.audit_logs.available": [
           true
         ],
+        "governance.audit_logs.retention_days": [
+          30
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
         "governance.rbac": [
           true
         ],
@@ -3505,6 +3511,9 @@
         "profile.version": [
           "2.0"
         ],
+        "protocols.mcp.client": [
+          true
+        ],
         "security.encryption.at_rest": [
           "AES-256"
         ],
@@ -3991,6 +4000,9 @@
         "access.description": [
           "Gorgias AI Agent; kommerzielles Angebot"
         ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -4046,6 +4058,9 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          true
         ],
         "security.encryption.in_transit": [
           "TLS"

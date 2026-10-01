@@ -9279,6 +9279,76 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-E6505C48287A6CFFAD",
+      "agent_id": "AI-0011",
+      "path": "governance.audit_logs.retention_days",
+      "value": 30,
+      "value_hash": "624b60c58c9d8bfb",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FF3E9F5B468E50"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_enterprise_audit_logs_default",
+        "note": "Replit Enterprise audit logs have a documented 30-day default retention.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FF3E9F5B468E50",
+            "note": "Replit states default audit-log retention is 30 days, with longer retention available by arrangement.",
+            "evidence_type": "official_release",
+            "source_section": "Audit logs that work with your existing tooling"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E9ECD3FA82649F93BF",
+      "agent_id": "AI-0011",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FF3E9F5B468E50"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_enterprise_agent_activity",
+        "note": "Replit Enterprise audit events including agent activity can stream to SIEM/observability destinations.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FF3E9F5B468E50",
+            "note": "Replit documents native streaming of audit events, including agent activity, to Datadog, Splunk, Amazon S3, or generic HTTP endpoints.",
+            "evidence_type": "official_release",
+            "source_section": "Audit logs that work with your existing tooling"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-A4D7E472C86807401B",
       "agent_id": "AI-0011",
       "path": "governance.rbac",
@@ -34752,6 +34822,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9FABD9F139A47D1A48",
+      "agent_id": "AI-0038",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3AE6F7433378D2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_computer",
+        "note": "Perplexity Computer can act as an MCP client for local or remote MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3AE6F7433378D2",
+            "note": "Perplexity explicitly states Computer supports custom local and remote MCP servers/connectors.",
+            "evidence_type": "technical_docs",
+            "source_section": "Connectors and integrations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-09B9787722B3A9BB2D",
       "agent_id": "AI-0038",
       "path": "security.encryption.at_rest",
@@ -39413,6 +39518,48 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-3E3F0E3DC322865B6B",
+      "agent_id": "AI-0044",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2F636AA7F4BBBE",
+          "SRC-BEF8556642E963"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_platform_ai_agent_data_and_actions",
+        "note": "Gorgias exposes REST API access to platform data that includes AI Agent-managed fields.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2F636AA7F4BBBE",
+            "note": "Gorgias documents its REST API and role-scoped access tokens; the API exposes resources that include AI Agent-managed ticket fields and actions.",
+            "evidence_type": "api_docs",
+            "source_section": "Access Tokens / REST API"
+          },
+          {
+            "source_id": "SRC-BEF8556642E963",
+            "note": "The Gorgias REST API explicitly documents system-managed AI Agent Outcome and AI Intent ticket fields.",
+            "evidence_type": "api_docs",
+            "source_section": "Update ticket fields values"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-929CFB17DBFDF2508A",
       "agent_id": "AI-0044",
       "path": "audience",
@@ -40012,6 +40159,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-A937D9260712BDCEA5",
+      "agent_id": "AI-0044",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8E6AF6EC291F12"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_platform_including_ai_agent",
+        "note": "Gorgias documents encryption at rest for Subscription Services data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8E6AF6EC291F12",
+            "note": "Gorgias documents industry-standard encryption technologies for Personal Data at rest as part of its Subscription Services security measures.",
+            "evidence_type": "security_trust",
+            "source_section": "Security of Personal Data / technical and organizational measures"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-415C637E1CC93E5F5C",
