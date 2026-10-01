@@ -563,5 +563,33 @@
       "unknown"
     ],
     "note": "Unknown means no curated field-level evidence exists; it must never be rendered as false."
+  },
+  "evidence_model": {
+    "required_fields": [
+      "title",
+      "url",
+      "evidence_type"
+    ],
+    "evidence_types": [
+      "technical_docs",
+      "api_docs",
+      "security_trust",
+      "official_github",
+      "official_product_page",
+      "official_release"
+    ],
+    "optional_fields": [
+      "source_section",
+      "product_version"
+    ],
+    "preference_order": [
+      "technical_docs",
+      "api_docs",
+      "security_trust",
+      "official_github",
+      "official_product_page",
+      "official_release"
+    ],
+    "note": "Evidence type ranks source classes only; it does not replace claim-level confidence or editorial review."
   }
 }
