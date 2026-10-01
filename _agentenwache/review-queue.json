@@ -1,8 +1,46 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T13:06:44Z",
-  "open_count": 12,
+  "updated_at": "2026-10-01T13:16:19Z",
+  "open_count": 29,
   "items": [
+    {
+      "review_id": "REV-0165DB21E9A6DBB929",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:11Z",
+      "last_detected": "2026-10-01T13:16:11Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-3A2D2B60D2F057",
+      "source_title": "LexisNexis – Lexis+ with Protégé",
+      "url": "https://www.lexisnexis.com/en-us/products/lexis-plus-protege.page",
+      "agent_ids": [
+        "AI-0107"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://www.lexisnexis.com/en-us/products/lexis-plus-protege.page",
+        "text_hash": "1a9b7e013f8ddd78d1c1fc545f6e0a67b8b90d23b0c4b942d39ecc6c67536483",
+        "simhash64": "f7610a79eb1f682b",
+        "token_count": 2324,
+        "text_sample": "Lexis+ with Protégé: Legal AI software for drafting, research, and analysis Lexis+ ® with Protégé ™ Legal AI, built on authority Request a trial Explore what's new Lexis+ ® with Protégé ™ What is Lexis+ with Protégé legal AI software? Lexis+ with Protégé* is a legal AI solution built for drafting, research, and analysis. It combines the LexisNexis Protégé ™ AI assistant with trusted LexisNexis content and purpose-built workflows to help legal professionals deliver complex legal work with confidence. *Formerly Lexis+ AI New ways to bring legal work together See what’s new Legal AI Drafting Legal AI Drafting Full legal document drafting Draft and refine transactional agreements and contracts, as well as litigation motions, briefs, complaints, and client communications. Start drafting See how it works Legal AI Research Connect trusted sources, drive better results Accelerate research and surface insights with AI grounded in your organization’s knowledge, authoritative LexisNexis legal content, and web sources—so results are verified and traceable. Start researching See how it works Legal AI tools to streamline legal work Productivity Features Streamline your work Move seamlessly from ",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
     {
       "review_id": "REV-0E528BB51ED396EA2E",
       "status": "open",
@@ -96,6 +134,158 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
+      "review_id": "REV-22CE71D67D9C131BAD",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:13Z",
+      "last_detected": "2026-10-01T13:16:13Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-EE5CC1D6AD49AC",
+      "source_title": "Perplexity Help – Subscription Plans",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you",
+      "agent_ids": [
+        "AI-0004"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 403,
+        "final_url": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 403
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-256AEB12C3612F2E4F",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:08Z",
+      "last_detected": "2026-10-01T13:16:08Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-3918ED07C8729B",
+      "source_title": "OpenAI Help – ChatGPT Arbeit und Codex",
+      "url": "https://help.openai.com/de-de/articles/20001275-chatgpt-work-and-codex",
+      "agent_ids": [
+        "AI-0051"
+      ],
+      "previous": {
+        "status_code": 403,
+        "final_url": "https://help.openai.com/de-de/articles/20001275-chatgpt-work-and-codex",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://help.openai.com/de-de/articles/20001275-chatgpt-work-and-codex",
+        "text_hash": "40603116042135ea3b6cc5981814fac6c9ccda4a87914ab2492b00e3ff10254d",
+        "simhash64": "5c7e425462d12ce0",
+        "token_count": 2738,
+        "text_sample": "ChatGPT Arbeit und Codex Nutze Chat oder Arbeit in ChatGPT oder wechsle für Softwareentwicklung zu Codex. Aktualisiert: 7 hours ago GPT‑6 Pro basiert auf GPT‑6 Astra und ist in ChatGPT mit den Tarifen Pro für 100 USD, Pro für 200 USD, Business und Enterprise verfügbar. Der Zugriff bei Enterprise hängt außerdem von den Modellzugriffsberechtigungen deines Workspaces ab. Plus-Tarife enthalten GPT‑6 Astra in ChatGPT Work und Codex. Hinweis : Astra erfordert die Codex-CLI-Version 0.153.0 oder neuer . Aktualisiere außerdem auf die neueste verfügbare Version der ChatGPT-Desktop-App. Wenn Astra in der Desktop-App in Chat, Work oder Codex nicht verfügbar ist, stelle sicher, dass du deine App über Menü > Nach Updates suchen, aktualisierst, auch wenn du die App kürzlich aufgrund einer automatischen Update-Benachrichtigung oder durch Klicken auf das Update-Symbol in der Seitenleiste aktualisiert hast. ChatGPT umfasst Chat und Work sowie Codex in der Desktop-App. Chat bietet schnelle Unterstützung im Gespräch und Antworten auf Alltagsfragen. Work ist ein Agent für längere, mehrstufige Aufgaben und fertige Arbeitsergebnisse. Codex bleibt auf Softwareentwicklung und technische Aufgaben spezialisi",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": 403,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-258E895041302A70DD",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:12Z",
+      "last_detected": "2026-10-01T13:16:12Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-A41FE8F5934AC4",
+      "source_title": "Perplexity – Computer",
+      "url": "https://www.perplexity.ai/de/products/computer",
+      "agent_ids": [
+        "AI-0038"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 403,
+        "final_url": "https://www.perplexity.ai/de/products/computer",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 403
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-4695D13505A3BA8C5D",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:09Z",
+      "last_detected": "2026-10-01T13:16:09Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-E99196D1B5A597",
+      "source_title": "vLex – Vincent",
+      "url": "https://law.vlex.com/vincent",
+      "agent_ids": [
+        "AI-0108"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://law.vlex.com/vincent",
+        "text_hash": "c8924dff60925b2fd6b3e4782ac4b4ce6d1b5628dbada9fb4a1b49b9438b8067",
+        "simhash64": "cc70cb5018338089",
+        "token_count": 298,
+        "text_sample": "Vincent AI - Legal Research Assistant Meet Vincent : Your legal AI assistant Vincent partners with you to amplify your practice. Get through more casework in less time without hiring more headcount. Get Started Free No Credit Card Required Increase your profitability with every use. By speeding up labor-intensive tasks like research and document review, Vincent helps you handle more cases, deliver better outcomes, and boost your bottom line. Get Started Free “The night before a trial, I needed to research a unique legal issue, file a motion, and write a new complaint. While I could have completed these tasks without Vincent AI, the tool's efficiency allowed me to spend the evening with my baby daughter instead of working.” Jordan Couch Partner at Palace Law Get Started Free AI that Knows the Law Vincent is trained on the world's largest global legal library. Whether it's legal research, contract review, or litigation prep, Vincent makes your practice faster, more effective, and more competitive. Get Started Free The Global Standard Vincent is trusted by 8 out of 10 of the world's top law firms to transform their legal workflows. 8/10 Proven Productivity Independent benchmarking stu",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-5224C43C4FE1DC7E75",
       "status": "open",
       "first_detected": "2026-10-01T13:00:46Z",
@@ -138,11 +328,88 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
+      "review_id": "REV-54DE68D061583AB44D",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:06Z",
+      "last_detected": "2026-10-01T13:16:06Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-BE966A5EB0C0A7",
+      "source_title": "Google – I/O 2026 Sundar Pichai Keynote",
+      "url": "https://blog.google/intl/de-de/unternehmen/technologie/sundar-pichai-io-2026/",
+      "agent_ids": [
+        "AI-0053"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://blog.google/intl/de-de/unternehmen/technologie/sundar-pichai-io-2026/",
+        "text_hash": "f6de7539ea9e4191ab37ab896da8a76a65329acae3eb03699160ec0eb86a95ad",
+        "simhash64": "cdb14e42f3f94bf9",
+        "token_count": 3645,
+        "text_sample": "I/O 2026: Willkommen in der agentischen Ära von Gemini 19 Mai 2026 | x.com Facebook LinkedIn Mail Kopieren So helfen wir euch, mit Gemini noch mehr zu erreichen. Sundar Pichai CEO of Google and Alphabet Share x.com Facebook LinkedIn Mail Kopieren Themen in diesem Artikel Hinweis der Redaktion: Dies ist eine bearbeitete Version der Keynote von Google-CEO Sundar Pichai auf der Google I/O 2026, die um weitere Ankündigungen ergänzt wurde. Alle Ankündigungen findet ihr in dieser Übersicht . Wir haben ein unglaubliches Jahr seit der letzten I/O hinter uns. Es war geprägt von zahlreichen Produktveröffentlichungen, technologischem Fortschritt und einem rasanten Entwicklungstempo. Wir befinden uns nun in einer Phase des KI-Zyklus, in der die Menschen den wahren Mehrwert der Produkte sehen möchten, die sie täglich verwenden. Darauf haben wir uns intensiv konzentriert, und das werdet ihr auch in den Produkten und Funktionen sehen, die wir heute auf der I/O vorstellen. Zehn Jahre nachdem wir unseren Schwerpunkt auf künstliche Intelligenz gelegt haben, sehen wir KI weiterhin als Schlüssel, um unsere Mission zu verwirklichen und das Leben von Menschen in großem Umfang zu verbessern. Deshalb verf",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-5A56C2FCA586E63276",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:11Z",
+      "last_detected": "2026-10-01T13:16:11Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-C0E7744B648035",
+      "source_title": "Genspark",
+      "url": "https://www.genspark.ai/",
+      "agent_ids": [
+        "AI-0072",
+        "AI-0075"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://www.genspark.ai/",
+        "text_hash": "c4e35c7bff5abebb91e2d3fba9f7033c78462829f5b238d12cc979993bc8f030",
+        "simhash64": "f9aa65e5a51e3927",
+        "token_count": 66,
+        "text_sample": "Genspark – Ihr All-in-One KI-Arbeitsbereich New Startseite Skills Second Brain Mehr Genspark AI-Arbeitsbereich 6.0 From a question to a live dashboard in seconds Skip the SQL and the spreadsheet chase. Ask in plain English — Genspark queries your data, picks the chart, and ships a live dashboard. Natural-language queries, no SQL Charts auto-refresh and stay live Share a single link, no manual updates Try it now Maybe later",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-66484F39574C8E3200",
       "status": "open",
       "first_detected": "2026-10-01T11:47:50Z",
-      "last_detected": "2026-10-01T13:06:35Z",
-      "occurrences": 4,
+      "last_detected": "2026-10-01T13:16:09Z",
+      "occurrences": 5,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-4271C275BA8FED",
@@ -162,20 +429,58 @@
       "current": {
         "status_code": 200,
         "final_url": "https://slack.com/intl/de-de/blog/news/ai-powered-interface-for-work",
-        "text_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
-        "simhash64": "8a353cc5b4aa6e30",
-        "token_count": 1494,
+        "text_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "simhash64": "9a353ccdb4aa6e30",
+        "token_count": 1470,
         "text_sample": "6 Min. Lesezeit Diese Woche auf der Dreamforce haben wir Slack eines seiner bisher größten Upgrades verpasst: die vernetzte Oberfläche für KI und Salesforce, die für dein gesamtes Team funktioniert. Jedes Unternehmen investiert gerade in KI, doch es fehlen zwei entscheidende Dinge. Erstens: der Kontext aus Unterhaltungen, der ein langfristiges Gedächtnis und Einblicke liefert und KI damit präziser, handlungsfähiger und vertrauenswürdiger macht. Zweitens: eine kollaborative Oberfläche, die es Mitarbeitenden ermöglicht, diese KI-Tools gemeinsam zu nutzen und voneinander zu lernen. In Slack kommt beides zusammen. So ist Slack zum Betriebssystem für die Arbeit geworden, das alle Mitarbeitenden, Agenten und Plattformen miteinander vernetzt – mit Slackbot als KI-Teammitglied, das dich durch deinen Arbeitsalltag begleitet. Genau das macht Slack zum Einstieg in das agentbasierte Unternehmen – und für Salesforce-Kund:innen auch für Salesforce selbst. Vorhang auf für Slackforce: Der zentrale Einstieg in Salesforce Seit 25 Jahren bauen Salesforce-Kund:innen umfangreiche Kundendaten und Workflows auf, um ihr Geschäft zu steuern. Jetzt können diese Daten dort zum Einsatz kommen, wo Entscheidung",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
-        "new_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "old_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "new_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
         "simhash_distance": 2,
-        "old_token_count": 1470,
-        "new_token_count": 1494,
-        "token_delta_pct": 1.63
+        "old_token_count": 1494,
+        "new_token_count": 1470,
+        "token_delta_pct": -1.61
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-91C81ED1F805341CE6",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:09Z",
+      "last_detected": "2026-10-01T13:16:09Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-F1EDCC027511E4",
+      "source_title": "vLex – Vincent features",
+      "url": "https://knowledge.vlex.com/en/features/vincent/find-related-documents",
+      "agent_ids": [
+        "AI-0108"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://knowledge.vlex.com/en/features/vincent/find-related-documents",
+        "text_hash": "721d1948b2ceb8f87c707b84bdc041776ac585ca3c157931f2465029a319a786",
+        "simhash64": "68ac6ad0ffc17601",
+        "token_count": 551,
+        "text_sample": "Help Center Vincent AI Document Workflows Find Related Documents See a variety of suggested texts related to your document of interest. Upload a document to Vincent AI and it will automatically find semantically related documents that might have been overlooked in a manual search. Legal professionals can be sure that they are aware of both key documents, and those that can give them an extra edge when it comes to building their case. Vincent can analyze documents in both English and Spanish, from 32 countries. To get started, click the blue 'Vincent AI' button on the top bar, then select the jurisdiction you wish to start with. When you first enter the page, the jurisdiction will match your default search jurisdiction, if it is available from the list. You may also need to select 'Find Related Documents' depending on your subscription level. Location of Vincent on the Homepage. Drag and drop your document, or click select file, to open a dialogue box where you can choose a piece of text or a document to upload. Vincent accepts files smaller than 5MB in: Word formats (.docx and .doc) Adobe Portable Document Format (PDF) with searchable text. If you have a scanned document, use Optic",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 200
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -207,6 +512,44 @@
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
     },
     {
+      "review_id": "REV-9CE41958612622F644",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:10Z",
+      "last_detected": "2026-10-01T13:16:10Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-6C348B777332B3",
+      "source_title": "Google Hilfe – Deep Research in Gemini-Apps",
+      "url": "https://support.google.com/gemini/answer/15719111?hl=de-DE",
+      "agent_ids": [
+        "AI-0002"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://support.google.com/gemini/answer/15719111?hl=de-DE",
+        "text_hash": "0ae28e81989609f5048f6984f4577c2b0e2f09e68b44ba2a46794e2a6930f25f",
+        "simhash64": "4e130561932005d2",
+        "token_count": 898,
+        "text_sample": "Deep Research in Gemini-Apps verwenden Wenn Sie mit Deep Research in Gemini-Apps arbeiten, können Sie fast jedes Thema ausführlich recherchieren und sich im Handumdrehen einen Bericht erstellen lassen. Gemini verwendet standardmäßig unter anderem die Google Suche als Quelle bei der Recherche. Sie können aber auch andere Quellen hinzufügen oder die Auswahl ändern und z. B. Ihr privates Gmail- oder Drive-Konto als Quelle angeben. Sie können auch Dateien hochladen und NotebookLM-Notebooks hinzufügen. Weitere Informationen zu Deep Research Tipp : Wenn Sie ein Google AI Ultra-Abo haben, können Deep Research-Berichte visuelles Material wie Diagramme, Schaubilder, Schemadarstellungen und interaktive Simulatoren enthalten. Weitere Informationen zu visuellem Material und Animationen Voraussetzungen Voraussetzungen für die Nutzung von Deep Research: Sie müssen mindestens 18 Jahre alt sein. Sie müssen in der mobilen Gemini App angemeldet sein. Informationen zum Anmelden in Gemini-Apps Informationen über die Modelle und Nutzungslimits für Deep Research Deep Research-Modelle Nutzer mit einem Abo für Google AI Pro oder Google AI Ultra können Berichte mit dem Modell „Pro“ erstellen, um noch besse",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-A09FB1ABF27A30C6EA",
       "status": "open",
       "first_detected": "2026-10-01T11:44:34Z",
@@ -232,6 +575,44 @@
         "baseline_health": true
       },
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+    },
+    {
+      "review_id": "REV-A966C5A91D2E3C060C",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:13Z",
+      "last_detected": "2026-10-01T13:16:13Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-CA52EC1BB01592",
+      "source_title": "Perplexity – Comet Browser",
+      "url": "https://www.perplexity.ai/comet/de",
+      "agent_ids": [
+        "AI-0055"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 403,
+        "final_url": "https://www.perplexity.ai/comet/de",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 403
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-AD6F59ECA3A74FA288",
@@ -262,6 +643,82 @@
         "simhash64": "827ab4dfe74dbd32",
         "token_count": 1315,
         "text_sample": "Deep Research Max: a step change for autonomous research agents Apr 21, 2026 | x.com Facebook LinkedIn Mail Copy link Built with Gemini 3.1 Pro, the new Deep Research agents bring MCP support, native visualizations and unprecedented analytical quality to long-horizon research workflows across the web or custom sources. Lukas Haas Product Manager, Google DeepMind Srinivas Tadepalli Program Manager, Google DeepMind Share x.com Facebook LinkedIn Mail Copy link Your browser does not support the audio element. Listen to article [[duration]] minutes This content is generated by Google AI. Generative AI is experimental Voice Speed Voice Speed 0.75X 1X 1.5X 2X Read AI-generated summary Google’s \"Deep Research Max\" article introduces powerful new autonomous agents for advanced data analysis. Choose between the fast Deep Research agent or the comprehensive Deep Research Max model. These agents now securely connect to your private data using the Model Context Protocol. The system creates professional charts and infographics to help you visualize complex research findings. You can now guide the agent's research plan to ensure you get exactly what's needed. Summaries were generated by Google AI",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-AD90D1DDEF25797E4A",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:04Z",
+      "last_detected": "2026-10-01T13:16:04Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-2D1D00F4555E5B",
+      "source_title": "Google – Die Gemini-App bekommt agentische Fähigkeiten",
+      "url": "https://blog.google/intl/de-de/produkte/suchen-entdecken/gemini-app-io-2026/",
+      "agent_ids": [
+        "AI-0053"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://blog.google/intl/de-de/produkte/suchen-entdecken/gemini-app-io-2026/",
+        "text_hash": "b481dd22b88f3185e95bf0010177f478a1b4f4cc61f7f8f1c3a3a15693c17a9b",
+        "simhash64": "503dce7c802fddb1",
+        "token_count": 1461,
+        "text_sample": "Die Gemini-App bekommt agentische Fähigkeiten und kann proaktive Unterstützung rund um die Uhr bieten 19 Mai 2026 | x.com Facebook LinkedIn Mail Kopieren Gemini entwickelt sich zu einem noch hilfreicheren KI-Assistenten – mit einer intuitiven neuen Benutzeroberfläche, proaktiven täglichen Briefings und Gemini Spark, einem Agenten, der euch rund um die Uhr dabei helfen kann, Dinge zu erledigen. Josh Woodward VP, Google Labs, Gemini app & AI Studio Share x.com Facebook LinkedIn Mail Kopieren Für die Gemini-App war es ein herausragendes Jahr. Letztes Jahr auf der Google I/O erreichte Gemini 400 Millionen Nutzer*innen. Heute wenden sich jeden Monat mehr als 900 Millionen Menschen aus 230 Ländern und in über 70 Sprachen an Gemini, um Unterstützung zu erhalten. Pünktlich zur Google I/O 2026 gibt es hier die Neuerungen: Gemini 3.5 Flash: Das erste Modell unserer nächsten Generation, das fortgeschrittene Intelligenz mit blitzschneller Reaktionsfähigkeit vereint. Neural Expressive: Eine lebendige, dynamische und völlig neu konzipierte Designsprache für Gemini. Gemini Omni: Unser neues Modell, das Text-, Bild- und Video-Prompts nahtlos in hochwertige, filmreife Videos umwandeln kann. Daily B",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-AE7747ECB75004230A",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:17Z",
+      "last_detected": "2026-10-01T13:16:17Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-86D33680387C2C",
+      "source_title": "LexisNexis – Agentic productivity",
+      "url": "https://www.lexisnexis.com/community/pressroom/b/news/posts/lexis-with-protege-accelerates-frictionless-agentic-productivity-from-first-idea-to-review-ready-legal-work-product",
+      "agent_ids": [
+        "AI-0107"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://www.lexisnexis.com/community/pressroom/b/news/posts/lexis-with-protege-accelerates-frictionless-agentic-productivity-from-first-idea-to-review-ready-legal-work-product",
+        "text_hash": "9f74dab364aba5903f786a5a1d153e48e2f7bb416111099344eee92c710bb4b8",
+        "simhash64": "ef22320ea6df7c48",
+        "token_count": 17,
+        "text_sample": "Lexis+ with Protégé Accelerates Frictionless Agentic Productivity from First Idea to Review-Ready Legal Work Product | LexisNexis PressRoom",
         "result": "fetched",
         "error": null
       },
@@ -341,11 +798,125 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
+      "review_id": "REV-BD391EEDBB06EBBBBE",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:09Z",
+      "last_detected": "2026-10-01T13:16:09Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-D53562C9899562",
+      "source_title": "OpenAI Help – Deep Research in ChatGPT",
+      "url": "https://help.openai.com/de-de/articles/10500283-deep-research",
+      "agent_ids": [
+        "AI-0001"
+      ],
+      "previous": {
+        "status_code": 403,
+        "final_url": "https://help.openai.com/de-de/articles/10500283-deep-research",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://help.openai.com/de-de/articles/10500283-deep-research-in-chatgpt",
+        "text_hash": "d173ba4802e1e18c8fb7a3017ed68edc8c2b8176b4c111c71be88f26fdfa34c4",
+        "simhash64": "b4964fd5ddd5153c",
+        "token_count": 1171,
+        "text_sample": "Deep Research in ChatGPT Komplexe Fragen planen, recherchieren und in einem mit Quellen belegten Bericht zusammenführen. Aktualisiert: 10 days ago Überblick Deep Research unterstützt dich bei komplexen Online-Aufgaben, indem es Schlussfolgerungen zieht, recherchiert und Informationen in einem mit Quellen belegten Bericht zusammenführt. Es kann hochgeladene Dateien verarbeiten, das öffentliche Internet oder bestimmte Websites durchsuchen und aktivierte ChatGPT-Apps verwenden. So funktioniert Deep Research Du beschreibst das gewünschte Ergebnis. Wähle bei Bedarf Websites oder hochgeladene Dateien aus. Geeignete verbundene Apps sind automatisch verfügbar, sofern ihre Berechtigungen und die Workspace-Einstellungen dies zulassen. ChatGPT erstellt einen vorgeschlagenen Rechercheplan. Du kannst ihn prüfen und ändern, bevor die Recherche beginnt. Du kannst den Fortschritt verfolgen und die Recherche jederzeit unterbrechen, um den Schwerpunkt genauer festzulegen. Dabei kannst du auch anpassen, auf welche Quellen sie zugreifen kann. Du erhältst einen strukturierten Bericht mit Quellenangaben oder -links, anhand derer du die Informationen überprüfen kannst. Deep Research verwendet die neueste",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": 403,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-C56824BA5F983001EF",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:09Z",
+      "last_detected": "2026-10-01T13:16:09Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-34E2FF53D66D85",
+      "source_title": "OpenAI – ChatGPT ist jetzt ein Partner für deine anspruchsvollste Arbeit",
+      "url": "https://openai.com/de-DE/index/chatgpt-for-your-most-ambitious-work/",
+      "agent_ids": [
+        "AI-0051"
+      ],
+      "previous": {
+        "status_code": 403,
+        "final_url": "https://openai.com/de-DE/index/chatgpt-for-your-most-ambitious-work/",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://openai.com/de-DE/index/chatgpt-for-your-most-ambitious-work/",
+        "text_hash": "c2fc41a64d127e56fa71f474bca196aeb4395d30ae092332fef91b99eb2f69b3",
+        "simhash64": "b4f045337bd86328",
+        "token_count": 2329,
+        "text_sample": "OpenAI 9. Juli 2026 Produkt ChatGPT ist jetzt ein Partner für deine anspruchsvollste Arbeit ChatGPT Work ist ein Agent, der Aktionen in deinen Apps und Dateien ausführen kann, bei Bedarf stundenlang an einem Projekt bleibt und aus einem Ziel fertige Arbeit macht. ChatGPT-Desktop-App herunterladen (wird in einem neuen Fenster geöffnet) Vertrieb kontaktieren Explore more ways to work together Create and collaborate on pages with your team and ChatGPT in ChatGPT Space ⁠ (wird in einem neuen Fenster geöffnet) . Build interactive tools with Sites ⁠ (wird in einem neuen Fenster geöffnet) . Bring ChatGPT into team conversations with ChatGPT in Slack and Microsoft Teams ⁠ (wird in einem neuen Fenster geöffnet) . Laden … Teilen Wir führen ChatGPT Work ein, einen Agenten in ChatGPT, der dir hilft, anspruchsvollere Aufgaben zu bewältigen. ChatGPT Work kann Informationen aus deinen Apps und Workflows zusammentragen, um fertige Materialien wie Tabellen, Präsentationen, Dokumente und Web-Apps zu erstellen. Bei komplexen Projekten bleibt es bei Bedarf stundenlang am Ball, indem es sie in kleinere Schritte unterteilt und diese eigenständig erledigt. Mit integrierter Codex-Technologie kann ChatGPT ",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": 403,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-DFAFF968254C2EA248",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:10Z",
+      "last_detected": "2026-10-01T13:16:10Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-CA1CF85B724008",
+      "source_title": "OpenAI – ChatGPT Work für jedes Team",
+      "url": "https://openai.com/de-DE/chatgpt-work/",
+      "agent_ids": [
+        "AI-0051"
+      ],
+      "previous": {
+        "status_code": 403,
+        "final_url": "https://openai.com/de-DE/chatgpt-work/",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://openai.com/de-DE/chatgpt-work/",
+        "text_hash": "a835ae6049b3fe93ff3babca3b2e60322255abbfa209a8a04559e5833484d292",
+        "simhash64": "5dd67cabe5a8e327",
+        "token_count": 757,
+        "text_sample": "OpenAI ChatGPT Work Mach aus den Ambitionen deines Teams fertige Ergebnisse. Das auf GPT‑6 basierende ChatGPT Work führt den Kontext deines Teams zusammen, um komplexe Aufgaben zu bewältigen – vom Abwägen von Vor- und Nachteilen bis zum Erstellen hochwertiger Präsentationen, Berichte und Analysen –, während dein Team die volle Kontrolle behält. Vertrieb kontaktieren Auf macOS- und Windows-Desktops für alle Pläne und im Web sowie auf Mobilgeräten für die Pläne Plus, Pro, Business, Enterprise und Edu verfügbar. ChatGPT Work Anwendungsfälle GPT-6 ChatGPT mit GPT-5 Ideen in die Tat umsetzen ChatGPT Work bündelt deine Tools, Dateien und deinen Kontext, damit du Inhalte erstellen, zusammenarbeiten und Arbeit automatisieren kannst. Entwickle mit ChatGPT einen ersten Entwurf, baue ihn mit deinem Team aus und bringe wiederkehrende Arbeit voran. Erweitern, was jedes Team leisten kann Erfahre, wie ChatGPT Work Teams helfen kann, mehr zu erreichen. Mit GPT‑6 GPT‑6 stellt Astra vor, eine neue Stufe der Intelligenz für Arbeit, die ein tieferes Urteilsvermögen erfordert. Research lesen Von führenden Teams genutzt Sieh dir an, wie Organisationen ChatGPT Work nutzen, um schneller voranzukommen und ",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": 403,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-E5D74BB58A9399C244",
       "status": "open",
       "first_detected": "2026-10-01T11:41:55Z",
-      "last_detected": "2026-10-01T13:06:37Z",
-      "occurrences": 3,
+      "last_detected": "2026-10-01T13:16:11Z",
+      "occurrences": 4,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-15C5A1E3CDD01B",
@@ -365,20 +936,58 @@
       "current": {
         "status_code": 200,
         "final_url": "https://www.lindy.ai/",
-        "text_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
-        "simhash64": "acd329c5dea49872",
-        "token_count": 2659,
-        "text_sample": "The AI teammate that will 3x your output. Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo $50 in free credits • No credit card required 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is",
+        "text_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "simhash64": "2cdb69d5dea09872",
+        "token_count": 2649,
+        "text_sample": "The AI teammate that will 3x your output . Lindy connects to all your tools, knows everything about your company, and does real work for the whole team. Try for free Book a demo 7-day free trial • Cancel anytime 4.9 # growth 11 members +14 Channels # growth # support # eng # finance Lindy Drope 8:47 AM @Lindy can you help debug why ad spend doubled? Lindy App 8:47 AM Pulling 14 days of spend from Meta and Google, joining to PostHog Pulled 14 days of spend across Meta + Google ✓ Joined it to signups and activation in PostHog ✓ Wrote it up with 3 replacement creatives ✓ 3 steps · done in 21s One Meta campaign is spiking hard. Want me to pause it? − 64% blended CAC if paused CAC-teardown.pdf 4 pages · 3 new creatives Pause the campaign Open the teardown 😤 1 🙌 1 💸 1 Haneen Azhar 9:12 AM @Lindy support inbox is blowing up — what's going on? Lindy App 9:12 AM Reading 1,340 tickets across Zendesk and Intercom Read 1,340 tickets from the last 18 hours ✓ Clustered them by root cause, not by keyword ✓ Filed ENG-2214 for the export timeout ✓ 3 steps · done in 8s It's one bug, not a flood. 23 of the 31 escalations are the same CSV export timing out over 50k rows — everything else is normal vol",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
-        "new_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "old_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "new_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
         "simhash_distance": 5,
-        "old_token_count": 2649,
-        "new_token_count": 2659,
-        "token_delta_pct": 0.38
+        "old_token_count": 2659,
+        "new_token_count": 2649,
+        "token_delta_pct": -0.38
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-EAE8D697875A437E7D",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:13Z",
+      "last_detected": "2026-10-01T13:16:13Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-E17879D619AB68",
+      "source_title": "Perplexity – Der neue Comet Assistant",
+      "url": "https://www.perplexity.ai/de/hub/blog/the-new-comet-assistant",
+      "agent_ids": [
+        "AI-0055"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 403,
+        "final_url": "https://www.perplexity.ai/de/hub/blog/the-new-comet-assistant",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 403
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -417,6 +1026,44 @@
       "latest_metrics": {
         "old_final_url": "https://helpcenter.gorgias.com/en-US/ai-agent-explained-497772",
         "new_final_url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772"
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
+      "review_id": "REV-FCE2FF2F1439740BD2",
+      "status": "open",
+      "first_detected": "2026-10-01T13:16:12Z",
+      "last_detected": "2026-10-01T13:16:12Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-05696F16512E74",
+      "source_title": "Perplexity – Deep Research",
+      "url": "https://www.perplexity.ai/de/hub/products/deep-research",
+      "agent_ids": [
+        "AI-0004"
+      ],
+      "previous": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 403,
+        "final_url": "https://www.perplexity.ai/de/hub/products/deep-research",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      "latest_metrics": {
+        "old_status": null,
+        "new_status": 403
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     }
