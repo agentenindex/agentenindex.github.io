@@ -6,4 +6,4 @@ Updated: 2026-09-29
 - Removed references to static.cloudflareinsights.com/beacon.min.js and the site analytics token.
 - Cloudflare DNS, proxy, TLS and security configuration are not affected by this source-code change.
 - No Google Analytics, Microsoft Clarity, Meta Pixel or other marketing/analytics tracker was added.
-- AgentenCheck remains a separate deployment and contains no Cloudflare Web Analytics beacon in the privacy-hardened build.
+- Agenten-Check remains a separate deployment and contains no Cloudflare Web Analytics beacon in the privacy-hardened build.

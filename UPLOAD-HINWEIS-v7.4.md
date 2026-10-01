@@ -10,11 +10,11 @@ Dieses ZIP enthält alle Dateien, die gegenüber dem ursprünglich bereitgestell
 
 ## Enthalten
 - neues v7 Startseiten-Design
-- v7 AgentenPassport-Design für alle 57 Agentenprofile
+- v7 AgentenProfil-Design für alle 57 Agentenprofile
 - ChatGPT Deep Research als redaktioneller Master-Passport
 - Agentenübersicht / Kategorien im neuen Design
-- einheitlicher CTA `AgentenPassport öffnen →`
+- einheitlicher CTA `AgentenProfil öffnen →`
 - Mobile-Stability-Fix
 - mobile Vergleichstabellen als lesbare Karten
-- finale Schreibweise `AgentenIndex`, `AgentenPassport`, `AgentenCheck`
+- finale Schreibweise `AgentenIndex`, `AgentenProfil`, `Agenten-Check`
 - CSS Cache-Busting `v=7.4`
