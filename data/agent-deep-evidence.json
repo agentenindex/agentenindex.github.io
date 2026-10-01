@@ -7605,6 +7605,72 @@
       ]
     },
     {
+      "agent_id": "AI-0073",
+      "claims": [
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "opencode_local_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenCode – Official Site",
+              "url": "https://opencode.ai/",
+              "note": "OpenCode documents itself as an open-source coding agent installed locally and used in the terminal, IDE, or desktop, with support for local models.",
+              "evidence_type": "official_product_page",
+              "source_section": "What is OpenCode? / Install"
+            }
+          ],
+          "note": "OpenCode supports a local user-managed agent runtime."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0074",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "coderabbit_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – Official Site",
+              "url": "https://www.coderabbit.ai/",
+              "note": "CodeRabbit documents its automated review and agent services as the CodeRabbit application integrated with GitHub and GitLab repositories and operated through app.coderabbit.ai.",
+              "evidence_type": "official_product_page",
+              "source_section": "Review every PR automatically / Get started"
+            }
+          ],
+          "note": "CodeRabbit Agent is delivered as a managed CodeRabbit service."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0075",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "genspark_super_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Genspark Help – Super Agent",
+              "url": "https://www.genspark.ai/de/helpcenter",
+              "note": "Genspark documents Super Agent as its autonomous assistant available in the Genspark workspace, using connected apps, files, accounts, and SecondBrain.",
+              "evidence_type": "technical_docs",
+              "source_section": "Super-Agent / Was ist der Genspark Super-Agent?"
+            }
+          ],
+          "note": "Genspark Super Agent is delivered as a managed Genspark workspace service."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0076",
       "claims": [
         {
@@ -9497,6 +9563,28 @@
       ]
     },
     {
+      "agent_id": "AI-0083",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "kore_ai_artemis_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai – Artemis Agent Platform launch",
+              "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
+              "note": "Kore.ai documents the Artemis generation of Kore.ai Agent Platform launching initially on Microsoft Azure as the enterprise foundation for building and operating agents.",
+              "evidence_type": "official_release",
+              "source_section": "Kore.ai Agent Platform Artemis edition"
+            }
+          ],
+          "note": "Kore.ai Agent Platform Artemis is delivered as a managed cloud platform, initially on Microsoft Azure."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0084",
       "claims": [
         {
@@ -9515,6 +9603,28 @@
             }
           ],
           "note": "Merlin Agent Builder runs on the Tray platform covered by Tray's SOC 2 Type II compliance posture."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0085",
+      "claims": [
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "strands_agents_sdk",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Prescriptive Guidance – Strands Agents",
+              "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-frameworks/strands-agents.html",
+              "note": "AWS documents Strands Agents as an open-source SDK with a DIY deployment model for building autonomous agents across AWS and third-party components.",
+              "evidence_type": "technical_docs",
+              "source_section": "Strands Agents / Comparing agentic AI frameworks"
+            }
+          ],
+          "note": "Strands Agents is an open-source SDK intended to run in developer/customer-managed environments."
         }
       ]
     },
@@ -9760,6 +9870,72 @@
             }
           ],
           "note": "Vibe Work is explicitly documented as Mistral-hosted."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0088",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "grok_bot",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "xAI – Introducing Grok Bot",
+              "url": "https://x.ai/news/introducing-grok-bot",
+              "note": "xAI documents Grok Bot as a subscription service of always-on agents with their own computer, available to eligible SuperGrok and Cursor subscribers.",
+              "evidence_type": "official_release",
+              "source_section": "Introducing Grok Bot"
+            }
+          ],
+          "note": "Grok Bot is delivered as an xAI-managed persistent-agent service."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0089",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "box_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box – Introducing the new Box Agent",
+              "url": "https://blog.box.com/box-agent-launch",
+              "note": "Box documents Box Agent as a secure content-centric AI agent built directly into Box and accessed through the hosted Box AI Home experience.",
+              "evidence_type": "official_release",
+              "source_section": "What is Box Agent? / How do I get started"
+            }
+          ],
+          "note": "Box Agent is delivered as a managed capability inside Box."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0090",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "slackbot_ai_teammate",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Slack – Slack is where your team works. Now it’s where your agents work too.",
+              "url": "https://slack.com/blog/news/slack-is-where-agents-work",
+              "note": "Slack documents Slackbot and agents as capabilities deployed and managed on the Slack agent-first workspace.",
+              "evidence_type": "official_release",
+              "source_section": "Build, deploy, and manage agents"
+            }
+          ],
+          "note": "Slackbot AI teammate is delivered as a managed Slack workspace capability."
         }
       ]
     },
@@ -10166,6 +10342,50 @@
       ]
     },
     {
+      "agent_id": "AI-0093",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Adobe Experience League – Agent Orchestrator",
+              "url": "https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/agents/agent-orchestrator",
+              "note": "Adobe documents Agent Orchestrator as the agentic layer in Adobe Experience Platform, invoked through Experience Cloud conversational interfaces to orchestrate specialized agents.",
+              "evidence_type": "technical_docs",
+              "source_section": "Adobe Experience Platform Agent Orchestrator"
+            }
+          ],
+          "note": "Adobe Agent Orchestrator is delivered inside the managed Adobe Experience Platform."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0094",
+      "claims": [
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "moveworks_agent_studio_system_triggers",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Moveworks – Agent Studio Overview",
+              "url": "https://help.moveworks.com/agent-studio/overview",
+              "note": "Moveworks lists System Triggers with Webhooks and scheduled triggers among Agent Studio building blocks.",
+              "evidence_type": "technical_docs",
+              "source_section": "Building Blocks Reference / Triggers"
+            }
+          ],
+          "note": "Moveworks Agent Studio supports webhook-based system triggers."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0095",
       "claims": [
         {
@@ -10188,6 +10408,50 @@
       ]
     },
     {
+      "agent_id": "AI-0096",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "zoommate",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zoom – ZoomMate launch",
+              "url": "https://news.zoom.com/zoom-launches-zoommate/",
+              "note": "Zoom documents ZoomMate as a generally available paid Zoom work surface integrating agentic search, execution, custom agents, and content creation.",
+              "evidence_type": "official_release",
+              "source_section": "Zoom launches ZoomMate / Availability"
+            }
+          ],
+          "note": "ZoomMate is delivered as a managed Zoom service."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0097",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "dropbox_dash",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox – Dash AI information",
+              "url": "https://dash.dropbox.com/ai-info-page",
+              "note": "Dropbox documents Dash as Dropbox's AI-powered universal search and knowledge workspace that acts as an AI teammate across team content and workflows.",
+              "evidence_type": "official_product_page",
+              "source_section": "Basic information"
+            }
+          ],
+          "note": "Dropbox Dash is delivered as a managed Dropbox workspace service."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0098",
       "claims": [
         {
@@ -10206,6 +10470,50 @@
             }
           ],
           "note": "Snowflake CoWork is delivered as a managed Snowflake cloud service."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0099",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "cognigy_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy Docs – Deploying your AI Agents",
+              "url": "https://docs.cognigy.com/ai/agents/deploy/deploying-your-ai-agents",
+              "note": "Cognigy documents deploying AI Agents through Cognigy.AI endpoints to Webchat, WhatsApp, Voice Gateway, Amazon, Twilio, and other channels.",
+              "evidence_type": "technical_docs",
+              "source_section": "Deploying your AI Agents"
+            }
+          ],
+          "note": "NiCE Cognigy AI Agents are deployed and operated through the managed Cognigy.AI platform."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0100",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "decagon_ai_concierge",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Decagon – Official Site",
+              "url": "https://decagon.ai/",
+              "note": "Decagon documents AI Concierge as its enterprise customer-experience product spanning chat, voice, and email, offered through Decagon's product platform and integrations.",
+              "evidence_type": "official_product_page",
+              "source_section": "The AI concierge for every customer / Product"
+            }
+          ],
+          "note": "Decagon AI Concierge is delivered as a managed Decagon service."
         }
       ]
     },
@@ -10272,6 +10580,28 @@
             }
           ],
           "note": "Piper runs on the Qualified platform covered by Qualified's annual SOC 2 Type II audit."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0104",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "claygent_builder",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Clay Docs – Claygent Builder",
+              "url": "https://university.clay.com/docs/claygent-builder",
+              "note": "Clay documents Claygent Builder as the centralized workspace hub for building, testing, deploying, versioning, and managing Clay AI agents across workflows.",
+              "evidence_type": "technical_docs",
+              "source_section": "Claygent Builder / Centralized management"
+            }
+          ],
+          "note": "Claygent is delivered and centrally managed within Clay's hosted workspace."
         }
       ]
     },
@@ -10513,6 +10843,28 @@
       ]
     },
     {
+      "agent_id": "AI-0106",
+      "claims": [
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "microsoft_fabric_data_agent_published",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "MicrosoftDocs – Data agent as Model Context Protocol server",
+              "url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/data-agent-mcp-server.md",
+              "note": "Microsoft documents a published Fabric data agent acting as an MCP server with an MCP endpoint that exposes enterprise data and queries to MCP clients.",
+              "evidence_type": "official_github",
+              "source_section": "Data agent as Model Context Protocol server"
+            }
+          ],
+          "note": "Published Microsoft Fabric Data Agents can expose an MCP server endpoint."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0107",
       "claims": [
         {
@@ -10553,6 +10905,28 @@
             }
           ],
           "note": "Vincent is delivered on vLex's managed AWS-hosted platform."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0109",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "luminance_agent_lumi",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Luminance – Legal",
+              "url": "https://www.luminance.com/solutions/legal/",
+              "note": "Luminance documents Lumi as an integrated Legal-Grade AI capability within the Luminance Contract Intelligence platform for contract review, drafting, search, and enterprise legal workflows.",
+              "evidence_type": "official_product_page",
+              "source_section": "Luminance for Legal / With Luminance"
+            }
+          ],
+          "note": "Lumi is delivered as a managed capability within Luminance's enterprise legal platform."
         }
       ]
     },
