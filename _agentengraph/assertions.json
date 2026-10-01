@@ -55908,6 +55908,46 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-D26EEB8BB00C0C25A0",
+      "agent_id": "AI-0082",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-20F81E3EFA0E29",
+          "SRC-A4AD6267DC83B2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "boomi_enterprise_platform_users_accessing_agentstudio",
+        "note": "Agentstudio users access the Boomi Enterprise Platform, which supports SAML 2.0 SSO where the Advanced User Security feature is enabled.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-20F81E3EFA0E29",
+            "note": "Boomi documents SAML 2.0 single sign-on for the Boomi Enterprise Platform.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-A4AD6267DC83B2",
+            "note": "Boomi documents Agentstudio as an application accessed through the Boomi Enterprise Platform and governed by Platform user management.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-608D358C43850E3AD5",
       "agent_id": "AI-0082",
       "path": "governance.tracing",
@@ -58865,6 +58905,74 @@
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
       "valid_to": "2026-10-01",
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-21F8115FA9796D88AD",
+      "agent_id": "AI-0086",
+      "path": "protocols.a2a.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F30B9BD7B791CA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_agent_framework_remote_a2a_agent_service",
+        "note": "Microsoft Agent Framework can invoke remote agents through the A2A protocol.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F30B9BD7B791CA",
+            "note": "Microsoft documents A2AAgent as a client wrapper that connects Agent Framework applications to remote A2A-compliant agent endpoints.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-74A9111871F9D6B4F3",
+      "agent_id": "AI-0086",
+      "path": "protocols.a2a.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DB145BAD688627"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_agent_framework_a2a_hosting",
+        "note": "Microsoft Agent Framework agents can be exposed as A2A servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DB145BAD688627",
+            "note": "Microsoft documents hosting packages that expose Agent Framework agents through the A2A protocol for discovery and communication by A2A clients.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"

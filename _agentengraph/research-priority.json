@@ -8,9 +8,9 @@
     "core_fields": 25
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 5,
+    "agents_below_target_with_deep_evidence": 4,
     "agents_without_deep_evidence": 87,
-    "agents_at_or_above_target": 18
+    "agents_at_or_above_target": 19
   },
   "field_priorities": [
     {
@@ -44,16 +44,16 @@
       "coverage_pct": 3.64
     },
     {
-      "path": "protocols.a2a.client",
+      "path": "security.soc2_type2",
       "documented_agents": 4,
       "unknown_agents": 106,
       "coverage_pct": 3.64
     },
     {
-      "path": "security.soc2_type2",
-      "documented_agents": 4,
-      "unknown_agents": 106,
-      "coverage_pct": 3.64
+      "path": "protocols.a2a.client",
+      "documented_agents": 5,
+      "unknown_agents": 105,
+      "coverage_pct": 4.55
     },
     {
       "path": "governance.audit_logs.api",
@@ -62,13 +62,13 @@
       "coverage_pct": 5.45
     },
     {
-      "path": "protocols.a2a.server",
-      "documented_agents": 6,
-      "unknown_agents": 104,
-      "coverage_pct": 5.45
+      "path": "hosting.self_hosted",
+      "documented_agents": 7,
+      "unknown_agents": 103,
+      "coverage_pct": 6.36
     },
     {
-      "path": "hosting.self_hosted",
+      "path": "protocols.a2a.server",
       "documented_agents": 7,
       "unknown_agents": 103,
       "coverage_pct": 6.36
@@ -104,12 +104,6 @@
       "coverage_pct": 7.27
     },
     {
-      "path": "governance.sso.saml",
-      "documented_agents": 9,
-      "unknown_agents": 101,
-      "coverage_pct": 8.18
-    },
-    {
       "path": "privacy.residency.customer_region_selectable",
       "documented_agents": 9,
       "unknown_agents": 101,
@@ -120,6 +114,12 @@
       "documented_agents": 9,
       "unknown_agents": 101,
       "coverage_pct": 8.18
+    },
+    {
+      "path": "governance.sso.saml",
+      "documented_agents": 10,
+      "unknown_agents": 100,
+      "coverage_pct": 9.09
     },
     {
       "path": "hosting.managed",
@@ -180,8 +180,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -200,8 +200,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -220,8 +220,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -230,39 +230,19 @@
       "name": "Microsoft Agent Framework",
       "provider_id": "PROV-MICROSOFT",
       "priority": "P0_raise_existing_to_40pct",
-      "documented_fields": 5,
-      "unknown_fields": 20,
-      "coverage_pct": 20.0,
-      "fields_needed_for_40pct": 5,
+      "documented_fields": 7,
+      "unknown_fields": 18,
+      "coverage_pct": 28.0,
+      "fields_needed_for_40pct": 3,
       "recommended_unknown_paths": [
         "api.webhooks",
         "governance.sso.oidc",
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
-        "governance.audit_logs.api"
-      ]
-    },
-    {
-      "agent_id": "AI-0082",
-      "name": "Boomi Agentstudio",
-      "provider_id": "PROV-BOOMI",
-      "priority": "P0_raise_existing_to_40pct",
-      "documented_fields": 9,
-      "unknown_fields": 16,
-      "coverage_pct": 36.0,
-      "fields_needed_for_40pct": 1,
-      "recommended_unknown_paths": [
-        "api.webhooks",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
-        "security.soc2_type2",
-        "governance.audit_logs.api"
+        "governance.audit_logs.api",
+        "governance.custom_roles"
       ]
     },
     {
@@ -280,8 +260,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -300,8 +280,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -320,8 +300,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -340,8 +320,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -360,8 +340,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -380,8 +360,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -400,8 +380,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -420,8 +400,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -440,8 +420,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -460,8 +440,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -480,8 +460,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -500,8 +480,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -520,8 +500,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -540,8 +520,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -560,8 +540,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -580,8 +560,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -600,8 +580,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -620,8 +600,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -640,8 +620,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -660,8 +640,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -680,8 +660,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -700,8 +680,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -720,8 +700,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -740,8 +720,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -760,8 +740,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -780,8 +760,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -800,8 +780,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -820,8 +800,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -840,8 +820,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -860,8 +840,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -880,8 +860,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -900,8 +880,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -920,8 +900,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -940,8 +920,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -960,8 +940,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -980,8 +960,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1000,8 +980,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1020,8 +1000,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1040,8 +1020,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1060,8 +1040,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1080,8 +1060,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1100,8 +1080,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1120,8 +1100,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1140,8 +1120,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1160,8 +1140,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1180,8 +1160,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1200,8 +1180,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1220,8 +1200,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1240,8 +1220,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1260,8 +1240,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1280,8 +1260,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1300,8 +1280,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1320,8 +1300,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1340,8 +1320,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1360,8 +1340,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1380,8 +1360,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1400,8 +1380,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1420,8 +1400,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1440,8 +1420,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1460,8 +1440,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1480,8 +1460,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1500,8 +1480,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1520,8 +1500,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1540,8 +1520,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1560,8 +1540,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1580,8 +1560,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1600,8 +1580,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1620,8 +1600,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1640,8 +1620,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1660,8 +1640,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1680,8 +1660,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1700,8 +1680,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1720,8 +1700,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1740,8 +1720,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1760,8 +1740,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1780,8 +1760,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1800,8 +1780,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1820,8 +1800,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1840,8 +1820,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1860,8 +1840,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1880,8 +1860,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1900,8 +1880,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1920,8 +1900,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1940,8 +1920,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1960,8 +1940,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -1980,8 +1960,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -2000,8 +1980,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api"
       ]
     },
@@ -2018,11 +1998,11 @@
         "api.webhooks",
         "governance.sso.oidc",
         "hosting.private_network",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api",
-        "protocols.a2a.server",
-        "hosting.self_hosted"
+        "hosting.self_hosted",
+        "protocols.a2a.server"
       ]
     },
     {
@@ -2038,8 +2018,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api",
         "protocols.a2a.server",
         "protocols.a2a.supported"
@@ -2060,9 +2040,9 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
-        "protocols.a2a.server"
+        "protocols.a2a.client",
+        "hosting.self_hosted"
       ]
     },
     {
@@ -2079,8 +2059,8 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api",
         "governance.custom_roles"
       ]
@@ -2119,10 +2099,10 @@
         "governance.sso.oidc",
         "hosting.private_network",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
-        "protocols.a2a.server",
-        "hosting.self_hosted"
+        "protocols.a2a.client",
+        "hosting.self_hosted",
+        "protocols.a2a.server"
       ]
     },
     {
@@ -2142,7 +2122,7 @@
         "governance.audit_logs.siem_export",
         "protocols.a2a.client",
         "governance.audit_logs.api",
-        "protocols.a2a.server"
+        "hosting.self_hosted"
       ]
     },
     {
@@ -2179,8 +2159,8 @@
         "governance.sso.oidc",
         "hosting.private_network",
         "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "protocols.a2a.server",
         "protocols.a2a.supported"
       ]
@@ -2199,10 +2179,30 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api",
         "governance.custom_roles"
+      ]
+    },
+    {
+      "agent_id": "AI-0082",
+      "name": "Boomi Agentstudio",
+      "provider_id": "PROV-BOOMI",
+      "priority": "P2_maintain_or_deepen",
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "api.webhooks",
+        "governance.sso.oidc",
+        "hosting.private_network",
+        "governance.audit_logs.retention_days",
+        "governance.audit_logs.siem_export",
+        "security.soc2_type2",
+        "protocols.a2a.client",
+        "governance.audit_logs.api"
       ]
     },
     {
@@ -2222,7 +2222,7 @@
         "governance.audit_logs.siem_export",
         "security.soc2_type2",
         "governance.audit_logs.api",
-        "protocols.a2a.server"
+        "hosting.self_hosted"
       ]
     },
     {
@@ -2239,10 +2239,10 @@
         "hosting.private_network",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api",
-        "protocols.a2a.server"
+        "hosting.self_hosted"
       ]
     },
     {
@@ -2261,8 +2261,8 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
         "protocols.a2a.client",
-        "protocols.a2a.server",
-        "hosting.self_hosted"
+        "hosting.self_hosted",
+        "protocols.a2a.server"
       ]
     },
     {
@@ -2298,10 +2298,10 @@
         "api.webhooks",
         "governance.sso.oidc",
         "hosting.private_network",
-        "protocols.a2a.client",
         "security.soc2_type2",
-        "protocols.a2a.server",
+        "protocols.a2a.client",
         "hosting.self_hosted",
+        "protocols.a2a.server",
         "protocols.a2a.supported"
       ]
     },
@@ -2339,8 +2339,8 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
         "security.soc2_type2",
+        "protocols.a2a.client",
         "governance.audit_logs.api",
         "protocols.a2a.supported"
       ]
@@ -2359,8 +2359,8 @@
         "governance.audit_logs.siem_export",
         "protocols.a2a.client",
         "governance.audit_logs.api",
-        "protocols.a2a.server",
         "hosting.self_hosted",
+        "protocols.a2a.server",
         "protocols.a2a.supported",
         "governance.custom_roles"
       ]
