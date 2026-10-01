@@ -558,6 +558,23 @@
           "verified_at": "2026-10-01"
         },
         {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "perplexity_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Perplexity – Role-based access controls, API credentials, Brain for Max",
+              "url": "https://www.perplexity.ai/en-GB/changelog/role-based-access-controls-api-credentials-and-brain-for-max",
+              "note": "Perplexity documents Enterprise custom roles with granular permissions, SCIM group sync, and per-group controls.",
+              "evidence_type": "official_release",
+              "source_section": "Control Enterprise access with custom roles and SCIM groups"
+            }
+          ],
+          "note": "Perplexity Enterprise supports custom roles with granular permissions."
+        },
+        {
           "path": "governance.rbac",
           "value": true,
           "scope": "perplexity_enterprise_research",
@@ -6082,6 +6099,23 @@
           "verified_at": "2026-10-01"
         },
         {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "perplexity_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Perplexity – Role-based access controls, API credentials, Brain for Max",
+              "url": "https://www.perplexity.ai/en-GB/changelog/role-based-access-controls-api-credentials-and-brain-for-max",
+              "note": "Perplexity documents Enterprise custom roles with granular permissions, SCIM group sync, and per-group controls.",
+              "evidence_type": "official_release",
+              "source_section": "Control Enterprise access with custom roles and SCIM groups"
+            }
+          ],
+          "note": "Perplexity Enterprise supports custom roles with granular permissions."
+        },
+        {
           "path": "governance.rbac",
           "value": true,
           "scope": "perplexity_enterprise_computer",
@@ -8336,6 +8370,23 @@
           "note": "Perplexity Enterprise provides audit logs.",
           "confidence": "high",
           "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "perplexity_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Perplexity – Role-based access controls, API credentials, Brain for Max",
+              "url": "https://www.perplexity.ai/en-GB/changelog/role-based-access-controls-api-credentials-and-brain-for-max",
+              "note": "Perplexity documents Enterprise custom roles with granular permissions, SCIM group sync, and per-group controls.",
+              "evidence_type": "official_release",
+              "source_section": "Control Enterprise access with custom roles and SCIM groups"
+            }
+          ],
+          "note": "Perplexity Enterprise supports custom roles with granular permissions."
         },
         {
           "path": "governance.rbac",
@@ -11848,6 +11899,204 @@
     {
       "agent_id": "AI-0084",
       "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "tray_platform_including_merlin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – Logs and Debugging",
+              "url": "https://tray.ai/documentation/platform/artificial-intelligence/agent-builder/logs-and-debugging",
+              "note": "Tray documents detailed logs for each agent request and execution.",
+              "evidence_type": "technical_docs",
+              "source_section": "Logs and Debugging"
+            },
+            {
+              "title": "Tray Docs – Security Policies",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/security-compliance/security-policies",
+              "note": "Tray documents comprehensive audit logs across its application and infrastructure.",
+              "evidence_type": "security_trust",
+              "source_section": "Security Policies"
+            }
+          ],
+          "note": "Tray provides agent execution logs and platform audit logs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 30,
+          "scope": "tray_default_workflow_logs_used_by_merlin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – Security Statement",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/security-compliance/security-statement",
+              "note": "Tray states customers can reduce workflow-log retention from 30 days to 24 hours; Merlin Agent Builder stores conversation inputs and outputs in workflow logs.",
+              "evidence_type": "security_trust",
+              "source_section": "Additional Safeguards"
+            },
+            {
+              "title": "Tray Docs – How does Merlin AI use my data?",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/security-compliance/how-does-merlin-ai-use-my-data",
+              "note": "Merlin Agent Builder conversation inputs and outputs follow the existing workflow-log retention period.",
+              "evidence_type": "technical_docs",
+              "source_section": "Merlin Agent Builder"
+            }
+          ],
+          "note": "The documented default workflow-log retention used by Merlin Agent Builder is 30 days."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "tray_platform_logs",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – Log Streaming",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/logs-debugging/log-streaming",
+              "note": "Tray documents streaming execution, step, and audit logs to external systems such as Datadog, Sentry, New Relic, or Kibana.",
+              "evidence_type": "technical_docs",
+              "source_section": "Log Streaming / Audit event type"
+            }
+          ],
+          "note": "Tray can stream audit and execution logs to external observability/SIEM systems."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "tray_platform_including_merlin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – User management and RBAC",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/organisation-management/users/roles",
+              "note": "Tray documents Owner, Admin, Contributor, and Viewer roles with an RBAC permission matrix.",
+              "evidence_type": "technical_docs",
+              "source_section": "Role-Based Access Control (RBAC)"
+            },
+            {
+              "title": "Tray Docs – Merlin Agent Builder Getting Started",
+              "url": "https://tray.ai/documentation/platform/artificial-intelligence/agent-builder/getting-started",
+              "note": "Tray requires workspace/project permissions to access Merlin Agent Builder.",
+              "evidence_type": "technical_docs",
+              "source_section": "Prerequisites"
+            }
+          ],
+          "note": "Merlin Agent Builder access operates within Tray's RBAC model."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "tray_enterprise_including_merlin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – Profile & Login",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/organisation-management/users/profile-login",
+              "note": "Tray documents SSO with any SAML 2.0-compatible identity provider for Enterprise organizations.",
+              "evidence_type": "technical_docs",
+              "source_section": "Single Sign-On"
+            }
+          ],
+          "note": "Tray Enterprise supports SAML 2.0 SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "tray_merlin_agent_builder",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – How does Merlin AI use my data?",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/security-compliance/how-does-merlin-ai-use-my-data",
+              "note": "Tray explicitly states Merlin Agent Builder runs within Tray's cloud infrastructure.",
+              "evidence_type": "technical_docs",
+              "source_section": "Merlin Agent Builder"
+            }
+          ],
+          "note": "Merlin Agent Builder runs on Tray-managed cloud infrastructure."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "tray_merlin_agent_builder",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – Regional Hosting",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/organisation-management/regional-hosting",
+              "note": "Tray documents US, EU, and APAC data regions for Tray instances.",
+              "evidence_type": "technical_docs",
+              "source_section": "Regional Hosting"
+            },
+            {
+              "title": "Tray Docs – How does Merlin AI use my data?",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/security-compliance/how-does-merlin-ai-use-my-data",
+              "note": "Tray documents Merlin Agent Builder processing in region-aware Tray infrastructure and regional Bedrock inference boundaries.",
+              "evidence_type": "technical_docs",
+              "source_section": "Cross-Region AI Processing"
+            }
+          ],
+          "note": "Merlin Agent Builder is available on Tray's region-aware hosting platform."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "tray_organization_instance",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – Regional Hosting",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/organisation-management/regional-hosting",
+              "note": "Tray states a Tray instance can be hosted in one of US, EU, or APAC data regions, with Enterprise access to all regions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Regional Hosting"
+            }
+          ],
+          "note": "Customers can select among supported Tray data regions for their organization instance."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "tray_platform_including_merlin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – Security Policies",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/security-compliance/security-policies",
+              "note": "Tray states all stored data is encrypted at rest, with additional encryption for sensitive workflow authentications.",
+              "evidence_type": "security_trust",
+              "source_section": "Security Measures"
+            }
+          ],
+          "note": "Tray documents encryption at rest for stored platform data."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "tray_platform_including_merlin",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray Docs – Security Policies",
+              "url": "https://tray.ai/documentation/platform/enterprise-core/security-compliance/security-policies",
+              "note": "Tray states all data sent to Tray is encrypted and endpoints are TLS/SSL-only.",
+              "evidence_type": "security_trust",
+              "source_section": "Security Measures"
+            }
+          ],
+          "note": "Tray documents encrypted TLS/SSL transport for data sent to the platform."
+        },
         {
           "path": "security.soc2_type2",
           "value": true,
