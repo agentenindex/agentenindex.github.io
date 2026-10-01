@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-01T17:10:49Z",
-  "open_count": 1,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -424,7 +424,7 @@
     },
     {
       "review_id": "REV-3493B3225601CA6BC1",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-01T17:10:12Z",
       "last_detected": "2026-10-01T17:10:12Z",
       "occurrences": 1,
@@ -460,9 +460,11 @@
         "simhash_distance": 1,
         "old_token_count": 1426,
         "new_token_count": 1426,
-        "token_delta_pct": 0.0
+        "token_delta_pct": 0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The GitHub repository content relevant to AgentenIndex is unchanged; the monitored render only changed the displayed commit count from 3,389 to 3,392. Token count stayed identical and SimHash distance was 1. No indexed Microsoft Agent Framework product fact changed.",
+      "reviewed_at": "2026-10-01T17:11:00Z"
     },
     {
       "review_id": "REV-4695D13505A3BA8C5D",
