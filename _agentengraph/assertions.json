@@ -3342,6 +3342,72 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-5215745584C33D18F2",
+      "agent_id": "AI-0006",
+      "path": "governance.audit_logs.retention_days",
+      "value": 30,
+      "value_hash": "624b60c58c9d8bfb",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7292D8A81AB607"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise_and_edu",
+        "note": "The documented Compliance Logs Platform retention window is 30 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7292D8A81AB607",
+            "note": "OpenAI states that Codex policy/configuration changes are recorded in workspace audit logs and that the Compliance Logs Platform retains data for 30 days."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8CA57DD0CAF5CA5F7F",
+      "agent_id": "AI-0006",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7292D8A81AB607"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "enterprise_and_edu",
+        "note": "Codex workspace audit data can be exported into SIEM/data-lake workflows through the compliance interfaces.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7292D8A81AB607",
+            "note": "OpenAI documents connecting Compliance Platform logs and metadata to SIEM tools and retrieving Codex workspace audit logs through the Compliance API."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-8B96F8C5DB0AFCB79C",
       "agent_id": "AI-0006",
       "path": "governance.custom_roles",
@@ -14838,6 +14904,105 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1944CD2A936E7C9721",
+      "agent_id": "AI-0025",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D520E0292E4544"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "office_365_management_api",
+        "note": "Programmatic audit-log access is documented through the Office 365 Management API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D520E0292E4544",
+            "note": "Microsoft states that developers can access Copilot Studio audit logs through the Office 365 Management API."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C8C1928875490678F7",
+      "agent_id": "AI-0025",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D520E0292E4544"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "copilot_studio_tenant",
+        "note": "Copilot Studio activities are available as audit events in Microsoft Purview.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D520E0292E4544",
+            "note": "Microsoft documents Purview audit events for Copilot Studio administrative, maker, and user interactions."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-67D1AA3AF2137D69C7",
+      "agent_id": "AI-0025",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D5ACDBB9A58927"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "power_platform_environment",
+        "note": "Custom Dataverse security roles are supported for Copilot Studio permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D5ACDBB9A58927",
+            "note": "Microsoft explicitly documents assigning a custom role when predefined Copilot Studio authoring roles do not fit."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-AB724AFB45EB7CCED9",
       "agent_id": "AI-0025",
       "path": "governance.dlp",
@@ -14859,6 +15024,39 @@
           {
             "source_id": "SRC-0745ACBD56A238",
             "note": "Copilot Studio security/governance explicitly includes Data Loss Prevention controls."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8C28AA1A69C2B357CC",
+      "agent_id": "AI-0025",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D5ACDBB9A58927"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "power_platform_environment",
+        "note": "Copilot Studio authoring access is governed with environment security roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D5ACDBB9A58927",
+            "note": "Microsoft instructs organizations to assign Copilot Studio authoring permissions with Dataverse security roles."
           }
         ]
       },
@@ -16206,6 +16404,39 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-149CA9C72855822C6C",
+      "agent_id": "AI-0027",
+      "path": "governance.human_approval",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D5299216F671CA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_actions_and_workflows",
+        "note": "Human approval steps can be added for oversight of agent actions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D5299216F671CA",
+            "note": "Oracle documents adding a human-in-the-loop approval step for selected agent actions."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-41E1B5EC5A6E3564FC",
       "agent_id": "AI-0027",
       "path": "governance.monitoring_access_control",
@@ -16239,6 +16470,39 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-084C75DB2E714A06CA",
+      "agent_id": "AI-0027",
+      "path": "governance.observability",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A7BE4AC460A768"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monitoring_and_evaluation",
+        "note": "AI Agent Studio includes run-level monitoring and metrics.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A7BE4AC460A768",
+            "note": "Oracle documents aggregated metrics and per-session monitoring for all AI Agent Studio agent runs, including draft agents."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4087E97B0741D29B01",
       "agent_id": "AI-0027",
       "path": "governance.rbac",
@@ -16260,6 +16524,39 @@
           {
             "source_id": "SRC-0AC458496F0A8D",
             "note": "AI Agent Studio access is granted through predefined duty roles assigned to job roles."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FD6C56E05BA9C94D0B",
+      "agent_id": "AI-0027",
+      "path": "governance.tracing",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A7BE4AC460A768"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monitoring_and_evaluation",
+        "note": "Detailed per-session tracing is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A7BE4AC460A768",
+            "note": "Oracle's detailed trace view shows the step-by-step conversation, tool calls, duration, and metrics for each step."
           }
         ]
       },
@@ -16366,6 +16663,138 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-EF48148AFB86AA45E6",
+      "agent_id": "AI-0027",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F2E87F68774622"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "ai_agent_studio",
+        "note": "AI Agent Studio can consume external MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F2E87F68774622",
+            "note": "Oracle documents adding an MCP tool that connects AI Agent Studio agents and nodes to external MCP servers."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1B947FD0565340EA2E",
+      "agent_id": "AI-0027",
+      "path": "protocols.mcp.remote",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F2E87F68774622"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "ai_agent_studio",
+        "note": "Remote MCP server connections are supported.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F2E87F68774622",
+            "note": "Oracle requires an external MCP server endpoint URL when configuring an MCP tool."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C7728068C8C81AE508",
+      "agent_id": "AI-0027",
+      "path": "protocols.mcp.transport.sse",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F2E87F68774622"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "mcp_tools",
+        "note": "SSE is a documented MCP transport option.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F2E87F68774622",
+            "note": "Oracle lists Server Sent Events (SSE) as an MCP transport type."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-28245F61FE053469EE",
+      "agent_id": "AI-0027",
+      "path": "protocols.mcp.transport.streamable_http",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F2E87F68774622"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "mcp_tools",
+        "note": "Streamable HTTP is a documented MCP transport option.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F2E87F68774622",
+            "note": "Oracle lists StreamableHTTP as an MCP transport type."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-6B9B73581F949970D5",
@@ -17121,6 +17550,72 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-5B831A53C21E95656B",
+      "agent_id": "AI-0029",
+      "path": "api.auth.oauth",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4F4639D20178E6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_api_external_client_app",
+        "note": "Agent API access uses an OAuth client-credentials application flow.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4F4639D20178E6",
+            "note": "Salesforce requires an external client app supporting the client-credentials flow for Agent API access."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4D6525EE9B6214D0AD",
+      "agent_id": "AI-0029",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4F4639D20178E6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "supported_agent_types",
+        "note": "A REST Agent API is available for supported Agentforce agent types.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4F4639D20178E6",
+            "note": "Salesforce documents direct communication with supported Agentforce agents through the REST Agent API; Agentforce (Default) agents are explicitly excluded."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7AE68A3852362EFBF3",
       "agent_id": "AI-0029",
       "path": "audience",
@@ -17442,6 +17937,72 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-8E4D13AB7665D8B691",
+      "agent_id": "AI-0029",
+      "path": "governance.logs.otel_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C46B24264713D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "session_trace_beta",
+        "note": "Session tracing can be exported in OTLP-compatible form through the beta API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9C46B24264713D",
+            "note": "The beta Session Trace OTel API exports unified trace, metric, and log data in OpenTelemetry/OTLP format for ingestion by observability tools."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2A3818843587B7E714",
+      "agent_id": "AI-0029",
+      "path": "governance.logs.query_window_hours",
+      "value": 72,
+      "value_hash": "8722616204217edd",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C46B24264713D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "session_trace_beta",
+        "note": "The documented beta OTel API query window is 72 hours.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9C46B24264713D",
+            "note": "Salesforce states that the beta OTel API returns data only for sessions that started within the previous 72 hours."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D61A896CD4581099BC",
       "agent_id": "AI-0029",
       "path": "governance.permission_sets",
@@ -17731,6 +18292,39 @@
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
       "valid_to": "2026-10-01",
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BD49B57360BC562A9C",
+      "agent_id": "AI-0029",
+      "path": "sdk.python",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B0F471004CA2CC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentforce_development",
+        "note": "A first-party Agentforce Python SDK is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B0F471004CA2CC",
+            "note": "Salesforce lists the Agentforce Python SDK for programmatic agent creation and management."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -18258,6 +18852,39 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-D0F62F91E50B1E05FA",
+      "agent_id": "AI-0030",
+      "path": "governance.mcp.control_tower_registration",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-42713129796692"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "joule_studio_classic",
+        "note": "MCP destinations are governed through control-tower registration.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-42713129796692",
+            "note": "SAP requires MCP destinations to be created in BTP Cockpit and registered in the control tower before use by a Joule agent."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-45DC99638EE8B86246",
       "agent_id": "AI-0030",
       "path": "identity.name",
@@ -18408,6 +19035,39 @@
           {
             "source_id": "SRC-E61E1B88E97A77",
             "note": "SAP's official sample shows a Joule Studio Agent Builder configuration using Tavily and Exa MCP server tools."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B4A940E74945B39135",
+      "agent_id": "AI-0030",
+      "path": "protocols.mcp.remote",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-42713129796692"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "joule_studio_classic",
+        "note": "Joule Studio classic supports remote MCP server connections.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-42713129796692",
+            "note": "SAP documents adding MCP servers to Joule agents to connect them with external applications."
           }
         ]
       },
@@ -21230,6 +21890,39 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-774F84068392A051E4",
+      "agent_id": "AI-0035",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0EAE25D9AB6D6F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_ai_agents",
+        "note": "AI agent configuration and monitoring access is role-based.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0EAE25D9AB6D6F",
+            "note": "ServiceNow documents distinct AI Agent admin, viewer, and role-configuration roles for Otto AI agents."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B42313F60C87E27DD1",
       "agent_id": "AI-0035",
       "path": "identity.name",
@@ -21347,6 +22040,105 @@
           {
             "source_id": "SRC-4F93E98B2F89F3",
             "note": "Action Fabric includes A2A communication among ServiceNow and third-party AI agents."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-75EDC17DC2EBBF81F1",
+      "agent_id": "AI-0035",
+      "path": "protocols.a2a.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-303FCA868F761D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_ai_platform",
+        "note": "ServiceNow can consume external A2A agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-303FCA868F761D",
+            "note": "ServiceNow documents allowing the ServiceNow AI Platform to access external agents through A2A."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A527BFCB4BFE7790F2",
+      "agent_id": "AI-0035",
+      "path": "protocols.a2a.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-303FCA868F761D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_ai_platform",
+        "note": "ServiceNow AI agents can be exposed to third-party A2A systems.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-303FCA868F761D",
+            "note": "ServiceNow documents allowing third parties to access ServiceNow AI agents through A2A."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-CA11DF75559608F927",
+      "agent_id": "AI-0035",
+      "path": "protocols.mcp.auth.required",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A2962F7EF1B076"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "ai_agent_studio_mcp_tools",
+        "note": "Authenticated MCP servers are required for AI Agent Studio MCP tools.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A2962F7EF1B076",
+            "note": "ServiceNow explicitly requires an MCP server to be authenticated before its tool can be added to an AI agent."
           }
         ]
       },
@@ -21689,6 +22481,39 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BAA402398FE43AACDC",
+      "agent_id": "AI-0036",
+      "path": "deployment.license_requirement",
+      "value": "ServiceNow Otto Pro Plus or Enterprise entitlement",
+      "value_hash": "4a007cec9d821eb6",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A83B94743B0E79"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_otto_ai_agents",
+        "note": "Otto AI agent setup requires the documented Pro Plus or Enterprise entitlement.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A83B94743B0E79",
+            "note": "ServiceNow lists ServiceNow Otto Pro Plus or Enterprise entitlement as a licensing requirement for AI agents."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-375F155DCF5037D695",
       "agent_id": "AI-0036",
       "path": "description.summary",
@@ -21879,6 +22704,105 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-0D673F7EF36ED4CDE1",
+      "agent_id": "AI-0036",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0EAE25D9AB6D6F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_otto_ai_agents",
+        "note": "ServiceNow Otto AI agents use role-based administration and viewing permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0EAE25D9AB6D6F",
+            "note": "ServiceNow documents installed AI Agent admin, viewer, and role-configuration roles for ServiceNow Otto AI agents."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-157F66299A3E287436",
+      "agent_id": "AI-0036",
+      "path": "governance.roles.admin",
+      "value": "sn_aia.admin",
+      "value_hash": "cfa2285d486af445",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0EAE25D9AB6D6F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_otto_ai_agents",
+        "note": "The documented AI Agent administrator role is sn_aia.admin.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0EAE25D9AB6D6F",
+            "note": "ServiceNow identifies sn_aia.admin as the AI Agent administrator role."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-826C8F8DD2BD43C392",
+      "agent_id": "AI-0036",
+      "path": "governance.roles.viewer",
+      "value": "sn_aia.viewer",
+      "value_hash": "629b311aeb6f6bee",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0EAE25D9AB6D6F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_otto_ai_agents",
+        "note": "The documented read-only AI Agent viewer role is sn_aia.viewer.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0EAE25D9AB6D6F",
+            "note": "ServiceNow identifies sn_aia.viewer as the read-only AI Agent viewer role."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-30173154E0CB8EA897",
@@ -46365,6 +47289,138 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-F3A35765AAA2F7B036",
+      "agent_id": "AI-0078",
+      "path": "api.auth.api_key",
+      "value": false,
+      "value_hash": "fcbcf165908dd18a",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-453E6249D425B9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_endpoint_inbound",
+        "note": "This negative value is explicit and scoped only to inbound authentication on the agent endpoint.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-453E6249D425B9",
+            "note": "Microsoft explicitly states that API key authentication is not supported for the Foundry agent endpoint and directs callers to Entra ID/Azure RBAC."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-822ED9920274A6ED05",
+      "agent_id": "AI-0078",
+      "path": "api.auth.entra_id",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-453E6249D425B9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_endpoint_inbound",
+        "note": "Microsoft Entra ID is a supported inbound authorization scheme.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-453E6249D425B9",
+            "note": "Microsoft documents Microsoft Entra ID authorization for inbound Foundry agent endpoint access."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F40A2642D00F4F3580",
+      "agent_id": "AI-0078",
+      "path": "api.openai_responses",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-453E6249D425B9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_endpoint",
+        "note": "Foundry agents expose a Responses protocol endpoint.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-453E6249D425B9",
+            "note": "Microsoft documents the agent endpoint's OpenAI Responses protocol URL and enables Responses by default."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E1C8244265F474F63F",
+      "agent_id": "AI-0078",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-453E6249D425B9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_management",
+        "note": "Agent endpoint configuration is available through a REST API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-453E6249D425B9",
+            "note": "Microsoft documents configuring agent versions, protocols, authorization, and agent cards through the REST API."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3C2E6397857C631DA7",
       "agent_id": "AI-0078",
       "path": "audience",
@@ -47070,6 +48126,39 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-FC6AD92FE04E78CC34",
+      "agent_id": "AI-0078",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-453E6249D425B9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_endpoint_preview",
+        "note": "Foundry agents can expose an MCP endpoint in preview.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-453E6249D425B9",
+            "note": "Microsoft lists an MCP (preview) protocol endpoint that a Foundry agent can expose."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-123CB3567F7C225C4D",
       "agent_id": "AI-0078",
       "path": "security.customer_managed_key",
@@ -47302,6 +48391,72 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-33EB95247798FE5FEC",
+      "agent_id": "AI-0079",
+      "path": "api.http",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2F786AC98E2167"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime",
+        "note": "AgentCore Runtime supports direct HTTP/REST invocation.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2F786AC98E2167",
+            "note": "AWS lists HTTP REST endpoints as a supported AgentCore Runtime protocol surface."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-39BE8A6D0AA097E8AB",
+      "agent_id": "AI-0079",
+      "path": "api.websocket",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2F786AC98E2167"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime",
+        "note": "WebSocket invocation is documented for supported runtime protocols.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2F786AC98E2167",
+            "note": "AWS lists WebSocket endpoints for the HTTP and AG-UI protocol surfaces."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-3EEA3659BE51ADA2A0",
@@ -47616,6 +48771,39 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-F711BC91A01DC91D1C",
+      "agent_id": "AI-0079",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6E84765BE77B47"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime_api",
+        "note": "AWS CloudTrail provides audit records for AgentCore Runtime API activity.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6E84765BE77B47",
+            "note": "AWS documents CloudTrail recording Runtime invoke and control-plane API calls with caller identity, timestamp, source IP, and response status."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-84067F3010E8C79EF6",
       "agent_id": "AI-0079",
       "path": "governance.logs.cloudwatch",
@@ -47910,6 +49098,105 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E39C09B83257D19E83",
+      "agent_id": "AI-0079",
+      "path": "protocols.a2a.auth.iam",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4AA25335B04C88"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime_a2a",
+        "note": "A2A endpoints support AWS SigV4 authentication.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4AA25335B04C88",
+            "note": "AWS documents SigV4 authentication for A2A server access."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A5D8ED903D0760D9AA",
+      "agent_id": "AI-0079",
+      "path": "protocols.a2a.auth.oauth",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4AA25335B04C88"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime_a2a",
+        "note": "A2A endpoints support OAuth 2.0 bearer-token authentication.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4AA25335B04C88",
+            "note": "AWS documents OAuth 2.0 Bearer token authentication for A2A server access."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EEAF0E1776724AA835",
+      "agent_id": "AI-0079",
+      "path": "protocols.a2a.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-70F4B12EE27964"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime",
+        "note": "AgentCore Runtime can host A2A servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-70F4B12EE27964",
+            "note": "AWS documents deploying and running A2A servers in AgentCore Runtime."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-0974C7B5E1236FC4AE",
       "agent_id": "AI-0079",
       "path": "protocols.mcp.auth.api_key",
@@ -48096,6 +49383,105 @@
           {
             "source_id": "SRC-9B5E568249898E",
             "note": "AgentCore Runtime can host streamable-HTTP MCP servers."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-07A6BC1ACD296426E8",
+      "agent_id": "AI-0079",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DCB626C2E77CDE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "supported_agentcore_resources",
+        "note": "Customer-managed KMS keys are supported for documented AgentCore resource types.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DCB626C2E77CDE",
+            "note": "AWS documents customer-managed KMS keys for supported AgentCore resources including Memories and Gateways."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-CD047A37C99996C9FE",
+      "agent_id": "AI-0079",
+      "path": "security.encryption.at_rest",
+      "value": "AWS KMS (AWS owned keys)",
+      "value_hash": "1239d45ed9ce0bb1",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6E84765BE77B47"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime",
+        "note": "Default Runtime at-rest encryption uses AWS-owned AWS KMS keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6E84765BE77B47",
+            "note": "AWS states Runtime data at rest is encrypted by default with AWS-owned keys in AWS KMS."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8B336FD15CAB93D751",
+      "agent_id": "AI-0079",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6E84765BE77B47"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime",
+        "note": "TLS 1.2 or higher is the documented minimum for Runtime communication.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6E84765BE77B47",
+            "note": "AWS states all client-to-Runtime and Runtime-to-dependency communication is protected with TLS 1.2 or higher."
           }
         ]
       },
@@ -49782,6 +51168,39 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-97C76AE69385712AEB",
+      "agent_id": "AI-0082",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A4AD6267DC83B2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentstudio",
+        "note": "Custom roles with granular Agentstudio privileges are supported.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A4AD6267DC83B2",
+            "note": "Boomi explicitly supports custom roles with granular Agent Garden privileges for building and managing agents."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-6A1D7E08ACB0018AB5",
       "agent_id": "AI-0082",
       "path": "governance.observability",
@@ -49836,6 +51255,72 @@
           {
             "source_id": "SRC-A4AD6267DC83B2",
             "note": "Agentstudio documents Administrator, Developer, User and custom privilege-based roles."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A231B10AF461E22382",
+      "agent_id": "AI-0082",
+      "path": "governance.session_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-511B1C78DB8A3F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "deployed_conversational_agents",
+        "note": "Session logs are available for deployed conversational agents in Agent Garden.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-511B1C78DB8A3F",
+            "note": "Boomi documents session logs for deployed conversational Agent Garden agents, including all executed sessions."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-608D358C43850E3AD5",
+      "agent_id": "AI-0082",
+      "path": "governance.tracing",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-511B1C78DB8A3F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "deployed_conversational_agents",
+        "note": "Production session tracing is documented for deployed conversational agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-511B1C78DB8A3F",
+            "note": "Boomi states session logs provide production reasoning visibility and detailed session traces for troubleshooting and optimization."
           }
         ]
       },

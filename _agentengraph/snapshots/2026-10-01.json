@@ -369,6 +369,12 @@
         "governance.audit_logs.available": [
           true
         ],
+        "governance.audit_logs.retention_days": [
+          30
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
         "governance.custom_roles": [
           true
         ],
@@ -1636,7 +1642,19 @@
           "Low-Code plus Erweiterbarkeit",
           "Microsoft-Ökosystem"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.custom_roles": [
+          true
+        ],
         "governance.dlp": [
+          true
+        ],
+        "governance.rbac": [
           true
         ],
         "identity.agent_identity": [
@@ -1786,10 +1804,19 @@
         "governance.custom_roles": [
           true
         ],
+        "governance.human_approval": [
+          true
+        ],
         "governance.monitoring_access_control": [
           true
         ],
+        "governance.observability": [
+          true
+        ],
         "governance.rbac": [
+          true
+        ],
+        "governance.tracing": [
           true
         ],
         "identity.name": [
@@ -1803,6 +1830,18 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "protocols.mcp.remote": [
+          true
+        ],
+        "protocols.mcp.transport.sse": [
+          true
+        ],
+        "protocols.mcp.transport.streamable_http": [
+          true
         ],
         "tools.external_rest": [
           true
@@ -1895,6 +1934,12 @@
         "access.description": [
           "Salesforce Agentforce; kommerzielles Enterprise-Angebot"
         ],
+        "api.auth.oauth": [
+          true
+        ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -1924,6 +1969,12 @@
         "governance.audit_logs.available": [
           true
         ],
+        "governance.logs.otel_export": [
+          true
+        ],
+        "governance.logs.query_window_hours": [
+          72
+        ],
         "governance.permission_sets": [
           true
         ],
@@ -1949,6 +2000,9 @@
           true
         ],
         "protocols.mcp.remote": [
+          true
+        ],
+        "sdk.python": [
           true
         ],
         "use_case": [
@@ -2008,6 +2062,9 @@
           "SAP-Geschäftskontext",
           "Unternehmensdaten und semantischer Kontext"
         ],
+        "governance.mcp.control_tower_registration": [
+          true
+        ],
         "identity.name": [
           "SAP Joule Agents"
         ],
@@ -2024,6 +2081,9 @@
           true
         ],
         "protocols.mcp.client": [
+          true
+        ],
+        "protocols.mcp.remote": [
           true
         ],
         "use_case": [
@@ -2340,6 +2400,9 @@
         "governance.policy_controls": [
           true
         ],
+        "governance.rbac": [
+          true
+        ],
         "identity.name": [
           "ServiceNow AI Agents"
         ],
@@ -2353,6 +2416,15 @@
           "2.0"
         ],
         "protocols.a2a": [
+          true
+        ],
+        "protocols.a2a.client": [
+          true
+        ],
+        "protocols.a2a.server": [
+          true
+        ],
+        "protocols.mcp.auth.required": [
           true
         ],
         "protocols.mcp.client": [
@@ -2398,6 +2470,9 @@
         "classification.product_type": [
           "Enterprise AI Experience / Agent"
         ],
+        "deployment.license_requirement": [
+          "ServiceNow Otto Pro Plus or Enterprise entitlement"
+        ],
         "description.summary": [
           "ServiceNow Otto ist eine einheitliche KI-Arbeitsoberfläche, die Anfragen über Agenten, Systeme und Workflows hinweg orchestriert."
         ],
@@ -2411,6 +2486,15 @@
           "Für End-to-End-Aufgaben gedacht",
           "Routing über Systeme und Agenten",
           "ServiceNow-Prozessnähe"
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.roles.admin": [
+          "sn_aia.admin"
+        ],
+        "governance.roles.viewer": [
+          "sn_aia.viewer"
         ],
         "identity.name": [
           "ServiceNow Otto"
@@ -5129,6 +5213,18 @@
         "access.description": [
           "Über Microsoft Foundry/Azure; Kosten, Regionen und Funktionen abhängig vom Azure-Angebot."
         ],
+        "api.auth.api_key": [
+          false
+        ],
+        "api.auth.entra_id": [
+          true
+        ],
+        "api.openai_responses": [
+          true
+        ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -5195,6 +5291,9 @@
         "protocols.a2a.server": [
           true
         ],
+        "protocols.mcp.server": [
+          true
+        ],
         "security.customer_managed_key": [
           true
         ],
@@ -5226,6 +5325,12 @@
         "access.description": [
           "Über AWS; nutzungsabhängige Kosten und regionale Verfügbarkeit beachten."
         ],
+        "api.http": [
+          true
+        ],
+        "api.websocket": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -5252,6 +5357,9 @@
           "Für produktive Agentenarchitekturen",
           "Identitäts- und Observability-Bausteine",
           "Managed Agent Runtime"
+        ],
+        "governance.audit_logs.available": [
+          true
         ],
         "governance.logs.cloudwatch": [
           true
@@ -5283,6 +5391,15 @@
         "profile.version": [
           "2.0"
         ],
+        "protocols.a2a.auth.iam": [
+          true
+        ],
+        "protocols.a2a.auth.oauth": [
+          true
+        ],
+        "protocols.a2a.server": [
+          true
+        ],
         "protocols.mcp.auth.api_key": [
           true
         ],
@@ -5300,6 +5417,15 @@
         ],
         "protocols.mcp.server": [
           true
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "AWS KMS (AWS owned keys)"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
         ],
         "use_case": [
           "Agenten produktiv betreiben",
@@ -5486,10 +5612,19 @@
         "governance.ai_control_tower": [
           true
         ],
+        "governance.custom_roles": [
+          true
+        ],
         "governance.observability": [
           true
         ],
         "governance.roles": [
+          true
+        ],
+        "governance.session_logs.available": [
+          true
+        ],
+        "governance.tracing": [
           true
         ],
         "identity.name": [
