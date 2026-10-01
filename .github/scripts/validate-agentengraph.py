@@ -33,6 +33,7 @@ source_ids={s["source_id"] for s in sources["sources"]}
 source_by_url={s["url"]:s for s in sources["sources"]}
 canonical_deep_paths=set((TAXONOMY.get("paths") or {}).keys())
 deprecated_deep_paths=set((TAXONOMY.get("deprecated_aliases") or {}).keys())
+allowed_evidence_types=set((TAXONOMY.get("evidence_model") or {}).get("evidence_types") or [])
 
 if DATA["count"] != 110:
     errors.append(f"Expected 110 source agents, got {DATA['count']}")
@@ -95,6 +96,14 @@ for entry in DEEP.get("agents",[]):
         for ev in evidence:
             if not ev.get("title") or not ev.get("url"):
                 errors.append(f"{aid} {path}: evidence item missing title/url")
+            evidence_type=ev.get("evidence_type")
+            if not evidence_type:
+                errors.append(f"{aid} {path}: evidence item missing evidence_type")
+            elif allowed_evidence_types and evidence_type not in allowed_evidence_types:
+                errors.append(f"{aid} {path}: invalid evidence_type {evidence_type}")
+            for optional_key in ("source_section","product_version"):
+                if optional_key in ev and (not isinstance(ev.get(optional_key),str) or not ev.get(optional_key).strip()):
+                    errors.append(f"{aid} {path}: invalid {optional_key}")
 
 active=[a for a in assertions["assertions"] if a.get("valid_to") is None]
 if not active:
