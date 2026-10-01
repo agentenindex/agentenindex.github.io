@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:22:11Z",
-  "open_count": 1,
+  "updated_at": "2026-10-01T15:24:00Z",
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -708,7 +708,7 @@
     },
     {
       "review_id": "REV-745F3171F22424BA6E",
-      "status": "open",
+      "status": "reviewed_no_product_change",
       "first_detected": "2026-10-01T15:22:06Z",
       "last_detected": "2026-10-01T15:22:06Z",
       "occurrences": 1,
@@ -744,9 +744,11 @@
         "simhash_distance": 2,
         "old_token_count": 1447,
         "new_token_count": 1447,
-        "token_delta_pct": 0.0
+        "token_delta_pct": 0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The volatile ServiceNow Community source was replaced for the three AI Control Tower deep-evidence claims with stable official ServiceNow documentation; no product value changed.",
+      "reviewed_at": "2026-10-01T15:24:00Z"
     },
     {
       "review_id": "REV-84E669952E01DA60F2",
