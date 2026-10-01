@@ -9,8 +9,8 @@ const browser=await puppeteer.launch({
 const paths=[
   '/agenten/chatgpt-deep-research/',
   '/agenten/claude-code/',
-  '/agenten/zapier-central/',
-  '/agenten/harvey-ai/'
+  '/agenten/ai-by-zapier/',
+  '/agenten/harvey-agents/'
 ];
 const viewports=[
   {name:'desktop',width:1440,height:1100},
