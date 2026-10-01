@@ -3109,6 +3109,111 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BBDAB103B7C63F5AFA",
+      "agent_id": "AI-0004",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7352EB8BEEDB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_research",
+        "note": "Perplexity Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7352EB8BEEDB8",
+            "note": "Perplexity lists Audit Logs as an organization-wide Enterprise Max security feature.",
+            "evidence_type": "technical_docs",
+            "source_section": "Premium security features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-270F52CBDC05AFBFED",
+      "agent_id": "AI-0004",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4C9A9569DE255C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_research",
+        "note": "Perplexity Enterprise provides role-based access controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4C9A9569DE255C",
+            "note": "Perplexity documents role-based access controls for Enterprise organizations alongside its Research/Comet workflows.",
+            "evidence_type": "technical_docs",
+            "source_section": "Security & Privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2F96465C0386275603",
+      "agent_id": "AI-0004",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7352EB8BEEDB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_research",
+        "note": "Perplexity Enterprise supports SCIM for the product suite including Research and Comet.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7352EB8BEEDB8",
+            "note": "Perplexity states Enterprise Max includes organization-wide SCIM and explicitly includes Research and Comet Assistant among its product capabilities.",
+            "evidence_type": "technical_docs",
+            "source_section": "Key Features / Premium security features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-2BB4DA6EB61BDA69EC",
       "agent_id": "AI-0004",
       "path": "hosting.managed",
@@ -3238,6 +3343,111 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-27841BBAD962B5B443",
+      "agent_id": "AI-0004",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4C9A9569DE255C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_platform",
+        "note": "Perplexity documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4C9A9569DE255C",
+            "note": "Perplexity documents AES-256 encryption for data at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & Privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D390F70456AD6C4436",
+      "agent_id": "AI-0004",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.3",
+      "value_hash": "fdb7abc7906b8335",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4C9A9569DE255C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_platform",
+        "note": "Perplexity documents TLS 1.3 encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4C9A9569DE255C",
+            "note": "Perplexity documents TLS 1.3 for data in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & Privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8A0A5AE8DA1CC805D0",
+      "agent_id": "AI-0004",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7352EB8BEEDB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_platform",
+        "note": "Perplexity documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7352EB8BEEDB8",
+            "note": "Perplexity states Enterprise Max has SOC 2 Type II certification.",
+            "evidence_type": "security_trust",
+            "source_section": "How safe is Enterprise Max?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-56912553C00C8F6AC0",
@@ -7451,6 +7661,216 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-783D62C1C4DDFD2A32",
+      "agent_id": "AI-0009",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CDF1BA51E39DA1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_enterprise",
+        "note": "Cursor exposes audit logs programmatically through the Admin API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CDF1BA51E39DA1",
+            "note": "Cursor documents Admin API endpoints GET /teams/audit-logs and GET /organizations/audit-logs.",
+            "evidence_type": "api_docs",
+            "source_section": "Accessing audit logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-24E2550F8AF6B8981D",
+      "agent_id": "AI-0009",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CDF1BA51E39DA1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_enterprise",
+        "note": "Cursor Enterprise provides administrative/security audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CDF1BA51E39DA1",
+            "note": "Cursor documents Enterprise audit logs for sign-ins, membership, roles, settings, integrations, Cloud Agent environments, and related surfaces.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0AB4EEAD61D63BE3F4",
+      "agent_id": "AI-0009",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CDF1BA51E39DA1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_enterprise",
+        "note": "Cursor Enterprise can stream audit events to SIEM/security tooling.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CDF1BA51E39DA1",
+            "note": "Cursor documents streaming audit events to Splunk, Sumo Logic, HTTPS webhooks including SIEM endpoints, or S3.",
+            "evidence_type": "technical_docs",
+            "source_section": "Streaming audit logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-64D0EF98B1EB53AAF5",
+      "agent_id": "AI-0009",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-72C2571D931F8D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_enterprise",
+        "note": "Cursor Enterprise supports SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-72C2571D931F8D",
+            "note": "Cursor documents SCIM provisioning and access gating for Enterprise.",
+            "evidence_type": "technical_docs",
+            "source_section": "Identity and access / SCIM"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3B00E3BEFD8C760219",
+      "agent_id": "AI-0009",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-30A2F70DBD3319"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_teams_enterprise",
+        "note": "Cursor supports OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-30A2F70DBD3319",
+            "note": "Cursor explicitly lists SAML/OIDC SSO for Teams and Enterprise.",
+            "evidence_type": "official_product_page",
+            "source_section": "Teams / Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7D70F3E520F737D7AF",
+      "agent_id": "AI-0009",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-72C2571D931F8D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_teams_enterprise",
+        "note": "Cursor business plans support SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-72C2571D931F8D",
+            "note": "Cursor documents SSO (SAML/OIDC) for Teams and Enterprise.",
+            "evidence_type": "technical_docs",
+            "source_section": "Plan Comparison / SSO (SAML/OIDC)"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B776340951242E4A36",
       "agent_id": "AI-0009",
       "path": "identity.name",
@@ -7570,6 +7990,146 @@
             "note": "Cursor documents that MCP enables Cursor to connect to external tools and data sources and that the Agent automatically uses available MCP tools.",
             "evidence_type": "technical_docs",
             "source_section": "What is MCP? / Using MCP in chat"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-15AD16846D301F7B36",
+      "agent_id": "AI-0009",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BEF6BC0F45F772"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_enterprise_cloud_agent_data",
+        "note": "Cursor Enterprise supports CMEK for Cloud Agent data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BEF6BC0F45F772",
+            "note": "Cursor documents Customer Managed Encryption Keys for Enterprise, including Cloud Agent data encrypted with the customer key.",
+            "evidence_type": "security_trust",
+            "source_section": "Data encryption / CMEK"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DEAE083C9DAFA4344E",
+      "agent_id": "AI-0009",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-753DC771AD3A3E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_infrastructure",
+        "note": "Cursor documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-753DC771AD3A3E",
+            "note": "Cursor documents AES-256 encryption for stored data, vector storage, and Cloud Agent code storage.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption / At rest"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A0CEDE67EAB6885635",
+      "agent_id": "AI-0009",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-753DC771AD3A3E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_services",
+        "note": "Cursor documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-753DC771AD3A3E",
+            "note": "Cursor documents TLS 1.2 or higher for connections to Cursor services.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption / In transit"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B229A9F252E20675B4",
+      "agent_id": "AI-0009",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2B31F1A0FB5A4C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_platform",
+        "note": "Cursor documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2B31F1A0FB5A4C",
+            "note": "Cursor states it holds a SOC 2 Type II attestation.",
+            "evidence_type": "security_trust",
+            "source_section": "Certifications and third-party assessments"
           }
         ]
       },
@@ -33116,6 +33676,146 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-04C14CA6ED7C2070CD",
+      "agent_id": "AI-0038",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7352EB8BEEDB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_computer",
+        "note": "Perplexity Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7352EB8BEEDB8",
+            "note": "Perplexity lists Audit Logs as an organization-wide Enterprise Max security feature.",
+            "evidence_type": "technical_docs",
+            "source_section": "Premium security features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AF52DE3B95C4CF80B8",
+      "agent_id": "AI-0038",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4C9A9569DE255C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_computer",
+        "note": "Perplexity Enterprise provides role-based access controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4C9A9569DE255C",
+            "note": "Perplexity documents role-based access controls for Enterprise organizations alongside its Research/Comet workflows.",
+            "evidence_type": "technical_docs",
+            "source_section": "Security & Privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-19BBE23E1FB01CD7E5",
+      "agent_id": "AI-0038",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7352EB8BEEDB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_computer",
+        "note": "Perplexity Enterprise supports SCIM for the product suite including Research and Comet.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7352EB8BEEDB8",
+            "note": "Perplexity states Enterprise Max includes organization-wide SCIM and explicitly includes Research and Comet Assistant among its product capabilities.",
+            "evidence_type": "technical_docs",
+            "source_section": "Key Features / Premium security features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A5FB1B507018D81B1A",
+      "agent_id": "AI-0038",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2C48F6BDF2D71"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_computer",
+        "note": "Perplexity Computer inherits SAML SSO from the Enterprise platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2C48F6BDF2D71",
+            "note": "Perplexity states Computer inherits Enterprise security features including SAML SSO.",
+            "evidence_type": "official_release",
+            "source_section": "Enterprise governance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-27AADD191C39D22C98",
       "agent_id": "AI-0038",
       "path": "hosting.managed",
@@ -33245,6 +33945,111 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-09B9787722B3A9BB2D",
+      "agent_id": "AI-0038",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4C9A9569DE255C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_platform",
+        "note": "Perplexity documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4C9A9569DE255C",
+            "note": "Perplexity documents AES-256 encryption for data at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & Privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B62EA8680625901D0A",
+      "agent_id": "AI-0038",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.3",
+      "value_hash": "fdb7abc7906b8335",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4C9A9569DE255C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_platform",
+        "note": "Perplexity documents TLS 1.3 encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4C9A9569DE255C",
+            "note": "Perplexity documents TLS 1.3 for data in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & Privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F12E3ED51526614464",
+      "agent_id": "AI-0038",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7352EB8BEEDB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_platform",
+        "note": "Perplexity documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7352EB8BEEDB8",
+            "note": "Perplexity states Enterprise Max has SOC 2 Type II certification.",
+            "evidence_type": "security_trust",
+            "source_section": "How safe is Enterprise Max?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-2CC07667094509C45E",
@@ -46990,6 +47795,111 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1F8CB5B17AEC25CEB0",
+      "agent_id": "AI-0055",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7352EB8BEEDB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_comet",
+        "note": "Perplexity Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7352EB8BEEDB8",
+            "note": "Perplexity lists Audit Logs as an organization-wide Enterprise Max security feature.",
+            "evidence_type": "technical_docs",
+            "source_section": "Premium security features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8026D8EC0F80D93AC6",
+      "agent_id": "AI-0055",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4C9A9569DE255C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_comet",
+        "note": "Perplexity Enterprise provides role-based access controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4C9A9569DE255C",
+            "note": "Perplexity documents role-based access controls for Enterprise organizations alongside its Research/Comet workflows.",
+            "evidence_type": "technical_docs",
+            "source_section": "Security & Privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AC1EE4E124ABB64B63",
+      "agent_id": "AI-0055",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7352EB8BEEDB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_comet",
+        "note": "Perplexity Enterprise supports SCIM for the product suite including Research and Comet.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7352EB8BEEDB8",
+            "note": "Perplexity states Enterprise Max includes organization-wide SCIM and explicitly includes Research and Comet Assistant among its product capabilities.",
+            "evidence_type": "technical_docs",
+            "source_section": "Key Features / Premium security features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-1A071B6DAA91B1E4DA",
       "agent_id": "AI-0055",
       "path": "hosting.self_hosted",
@@ -47119,6 +48029,111 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-69B38FDAFCC6D948D0",
+      "agent_id": "AI-0055",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4C9A9569DE255C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_platform",
+        "note": "Perplexity documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4C9A9569DE255C",
+            "note": "Perplexity documents AES-256 encryption for data at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & Privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3454A32E92FDC1EABB",
+      "agent_id": "AI-0055",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.3",
+      "value_hash": "fdb7abc7906b8335",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4C9A9569DE255C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_platform",
+        "note": "Perplexity documents TLS 1.3 encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4C9A9569DE255C",
+            "note": "Perplexity documents TLS 1.3 for data in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & Privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-57538E23A3C7AE5480",
+      "agent_id": "AI-0055",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7352EB8BEEDB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise_platform",
+        "note": "Perplexity documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7352EB8BEEDB8",
+            "note": "Perplexity states Enterprise Max has SOC 2 Type II certification.",
+            "evidence_type": "security_trust",
+            "source_section": "How safe is Enterprise Max?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-08D9216750DBADB24E",
@@ -66410,6 +67425,146 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-49B598C44880A84F81",
+      "agent_id": "AI-0080",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BEF37D9BE7A566"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_enterprise",
+        "note": "LangSmith exposes audit logs through API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BEF37D9BE7A566",
+            "note": "LangChain documents GET /api/v1/audit-logs for programmatic audit-log access.",
+            "evidence_type": "api_docs",
+            "source_section": "Accessing Logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8C2C5AC066A5C4A60E",
+      "agent_id": "AI-0080",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BEF37D9BE7A566"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_enterprise",
+        "note": "LangSmith provides administrative audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BEF37D9BE7A566",
+            "note": "LangChain documents LangSmith audit logs covering 70+ administrative operations.",
+            "evidence_type": "technical_docs",
+            "source_section": "What Gets Logged"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1230203E8DD286C3BB",
+      "agent_id": "AI-0080",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BEF37D9BE7A566"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_enterprise",
+        "note": "LangSmith audit logs are SIEM-compatible.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BEF37D9BE7A566",
+            "note": "LangChain documents OCSF 1.7 audit-log format and compatibility with SIEM tools such as Splunk and Datadog.",
+            "evidence_type": "technical_docs",
+            "source_section": "What Gets Logged"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-ADAF3D7A3803200F40",
+      "agent_id": "AI-0080",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-48A6FECCB848E2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_enterprise",
+        "note": "LangSmith Enterprise supports RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-48A6FECCB848E2",
+            "note": "LangChain explicitly documents role-based access control with organization-level permissions and project isolation.",
+            "evidence_type": "official_product_page",
+            "source_section": "Security and compliance at scale"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-5A94E3D167D7F48C48",
       "agent_id": "AI-0080",
       "path": "hosting.managed",
@@ -66433,6 +67588,76 @@
             "note": "LangChain explicitly describes LangSmith Deployment as the managed service for running agents at scale in production with one-click deployments and autoscaling.",
             "evidence_type": "official_product_page",
             "source_section": "FAQ / One-click deploy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F302954A475E02F92A",
+      "agent_id": "AI-0080",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-19B2C00E70A40A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_byoc_self_hosted",
+        "note": "LangSmith supports customer-account/VPC deployment through BYOC/self-hosted models.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-19B2C00E70A40A",
+            "note": "LangChain documents LangSmith BYOC in customer AWS accounts, with EKS audit logs and VPC flow logs remaining in customer-controlled infrastructure.",
+            "evidence_type": "official_release",
+            "source_section": "BYOC architecture"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8FD469EA4FAE4B4B28",
+      "agent_id": "AI-0080",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5B227C198C86A6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_deployment_enterprise",
+        "note": "LangSmith Deployment supports self-hosting.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5B227C198C86A6",
+            "note": "LangChain documents LangSmith Self-Hosted running entirely in the customer's own infrastructure.",
+            "evidence_type": "technical_docs",
+            "source_section": "What is LangSmith Self-Hosted?"
           }
         ]
       },
@@ -66495,6 +67720,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-280CB9B755F4757796",
+      "agent_id": "AI-0080",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AD619684CEA09F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_saas_and_self_hosted",
+        "note": "LangSmith offers regional hosted instances and self-hosted residency options.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AD619684CEA09F",
+            "note": "LangChain documents LangSmith hosted data in the U.S. or Netherlands and Enterprise self-hosted deployment where data remains in the customer environment.",
+            "evidence_type": "technical_docs",
+            "source_section": "LangSmith FAQs / Where is my data stored?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-EA46EE0590030D0A21",
       "agent_id": "AI-0080",
       "path": "profile.depth",
@@ -66543,6 +67803,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-1BEC3B72C7BE3EA18A",
+      "agent_id": "AI-0080",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-79B840D9F206A1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_platform",
+        "note": "LangSmith documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-79B840D9F206A1",
+            "note": "LangChain states LangSmith product data is encrypted at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Product Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6DFE3DC5FF5A1FA471",
+      "agent_id": "AI-0080",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-79B840D9F206A1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_platform",
+        "note": "LangSmith documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-79B840D9F206A1",
+            "note": "LangChain states LangSmith product data is encrypted in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Product Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5E01C264CD32E3D762",
+      "agent_id": "AI-0080",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A1DA854432B207"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_entire_offering",
+        "note": "LangSmith is covered by SOC 2 Type II.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A1DA854432B207",
+            "note": "LangChain states its 2026 SOC 2 Type II examination spans the entire LangSmith offering.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance / 2026 SOC 2 Type II Report"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0CC09E93EEFEE4E95B",
@@ -77135,6 +78500,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-B255012D264F9668B5",
+      "agent_id": "AI-0093",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-35534954755758"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Experience Platform audit logs are available through API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-35534954755758",
+            "note": "Adobe documents the Audit Query API for programmatically retrieving and monitoring audit event data.",
+            "evidence_type": "api_docs",
+            "source_section": "Audit Query API guide"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-744913D514839BB832",
+      "agent_id": "AI-0093",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-264F158DBDB8B7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Experience Platform provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-264F158DBDB8B7",
+            "note": "Adobe documents audit logs for user activity across Experience Platform services and capabilities.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C4319DA427DA0023DE",
+      "agent_id": "AI-0093",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-264F158DBDB8B7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_audit_logs",
+        "note": "Experience Platform retains audit logs for 365 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-264F158DBDB8B7",
+            "note": "Adobe states audit logs are retained for 365 days.",
+            "evidence_type": "technical_docs",
+            "source_section": "Managing audit logs in the UI"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-89381896C20CB508C5",
+      "agent_id": "AI-0093",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CC7EDC46D9B5A2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Experience Platform supports custom roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CC7EDC46D9B5A2",
+            "note": "Adobe documents creating new custom roles and assigning resources and permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create a new role"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-99E9FEF30B4B1B531A",
+      "agent_id": "AI-0093",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-315F6D14E4C527"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Experience Platform provides RBAC for capabilities including Agent Orchestrator.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-315F6D14E4C527",
+            "note": "Adobe documents role-based access control through roles, permissions, policies, and sandbox assignments.",
+            "evidence_type": "technical_docs",
+            "source_section": "Roles / Access control hierarchy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-35897E0DA97984DCD9",
       "agent_id": "AI-0093",
       "path": "hosting.managed",
@@ -77218,6 +78758,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BC9E04C4D795413F02",
+      "agent_id": "AI-0093",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13254EB1B6E4A8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Agent Orchestrator runs on Experience Platform, which supports regional data hosting.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13254EB1B6E4A8",
+            "note": "Adobe documents Experience Platform data hosting across North America, Europe, and APAC regions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Hosting locations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1C88A3E7193B9172C3",
+      "agent_id": "AI-0093",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13254EB1B6E4A8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Customers can designate the region for Experience Platform data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13254EB1B6E4A8",
+            "note": "Adobe states customers designate the region where their Adobe Experience Platform data will reside at provisioning.",
+            "evidence_type": "technical_docs",
+            "source_section": "Hosting locations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-BE1D7FE15D8E1FAD4B",
       "agent_id": "AI-0093",
       "path": "profile.depth",
@@ -77264,6 +78874,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-37A0788438EB1AE2CF",
+      "agent_id": "AI-0093",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DCCFFE45FEB651"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Experience Platform supports customer-managed keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DCCFFE45FEB651",
+            "note": "Adobe documents customer-managed encryption keys for Experience Platform on Azure and AWS.",
+            "evidence_type": "security_trust",
+            "source_section": "Customer Managed Keys"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EC5E763C5E736BAF79",
+      "agent_id": "AI-0093",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F0F5B1DDB568C4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Experience Platform encrypts data at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F0F5B1DDB568C4",
+            "note": "Adobe states all data used by Experience Platform is encrypted at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Data at rest"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2986B14AAC94CEE947",
+      "agent_id": "AI-0093",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2",
+      "value_hash": "a080d1f9d6a8ac35",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F0F5B1DDB568C4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Experience Platform documents TLS 1.2 encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F0F5B1DDB568C4",
+            "note": "Adobe states all data in transit between Experience Platform and external components uses HTTPS TLS v1.2.",
+            "evidence_type": "security_trust",
+            "source_section": "Data in transit"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-08769ED13E336D0FE8",
