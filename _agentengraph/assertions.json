@@ -4701,6 +4701,40 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E4056E0588BF019B49",
+      "agent_id": "AI-0008",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B94FF1C985AE9B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "copilot_cloud_agent_management",
+        "note": "GitHub provides REST APIs for cloud-agent administration.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B94FF1C985AE9B",
+            "note": "GitHub exposes REST endpoints to manage Copilot cloud agent policies and repository access.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4E8D629210227CCB99",
       "agent_id": "AI-0008",
       "path": "audience",
@@ -5149,6 +5183,142 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-AE8479DDD500214277",
+      "agent_id": "AI-0008",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0E53AFEDBEC5D6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "github_enterprise_agent_management",
+        "note": "Enterprise agent management is role-governed through GitHub owner and AI-manager permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0E53AFEDBEC5D6",
+            "note": "GitHub documents distinct enterprise-owner and AI-manager roles for controlling agent policies and enterprise custom agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-77418C47E4AA08983E",
+      "agent_id": "AI-0008",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C8E64AE19D2485"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "github_enterprise_managed_users_with_copilot",
+        "note": "SCIM provisioning is supported for Enterprise Managed Users with Copilot.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C8E64AE19D2485",
+            "note": "GitHub documents provisioning Enterprise Managed Users from an identity provider using SCIM for Copilot Business access.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0D49BDB34DADBE1820",
+      "agent_id": "AI-0008",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C8E64AE19D2485"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "github_enterprise_copilot_access",
+        "note": "Enterprise Copilot access can be protected with SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C8E64AE19D2485",
+            "note": "GitHub documents optional SAML SSO for enterprise users with Copilot Business.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5CD288EFC1581D95A2",
+      "agent_id": "AI-0008",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-158FF058ADE67F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "copilot_cloud_agent_execution",
+        "note": "Copilot cloud agent uses a managed ephemeral GitHub Actions execution environment by default.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-158FF058ADE67F",
+            "note": "GitHub documents an ephemeral development environment powered by GitHub Actions and a default GitHub-hosted runner.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-26E62FAFA1E407896D",
       "agent_id": "AI-0008",
       "path": "identity.name",
@@ -5277,6 +5447,40 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-A1A87866203D17ED5C",
+      "agent_id": "AI-0008",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F3B7CC3033F346"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "copilot_cloud_agent",
+        "note": "Copilot cloud agent can consume configured MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F3B7CC3033F346",
+            "note": "GitHub documents repository MCP server configuration that gives Copilot cloud agent access to external tools and data sources.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-03E2A1E456832DAA3D",
@@ -15921,6 +16125,74 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-4FB3406807B9712C0F",
+      "agent_id": "AI-0026",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3BC2E0D67CBA46"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate_platform_api",
+        "note": "watsonx Orchestrate has a documented programmatic HTTP API surface.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3BC2E0D67CBA46",
+            "note": "IBM publishes REST-style watsonx Orchestrate API endpoints for agent management, execution, tools, workspaces and observability.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-52B52844693665CB5D",
+      "agent_id": "AI-0026",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F69908FBF8C4A9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate_message_processing",
+        "note": "watsonx Orchestrate supports configurable message-processing webhooks.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F69908FBF8C4A9",
+            "note": "IBM documents configurable pre-message webhooks that send HTTPS POST requests to external services.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F7D3BF587FCBF26F48",
       "agent_id": "AI-0026",
       "path": "audience",
@@ -16311,6 +16583,40 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-F8184886BC55E75FB5",
+      "agent_id": "AI-0026",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B6DFB7EF415EEF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate_ibm_cloud",
+        "note": "SAML-federated SSO is supported for the IBM Cloud deployment path.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B6DFB7EF415EEF",
+            "note": "IBM documents SSO login and references SAML federation with IBM Cloud IAM for the IBM Cloud offering.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D3D3B21A4FC9400588",
       "agent_id": "AI-0026",
       "path": "governance.tracing",
@@ -16333,6 +16639,74 @@
             "source_id": "SRC-3CA0E547871DB4",
             "note": "IBM documents real-time monitoring with OpenTelemetry traces and audit-ready dashboards.",
             "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-967A0E155E45A674F0",
+      "agent_id": "AI-0026",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EE2A38E36760C0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate_saas",
+        "note": "IBM offers watsonx Orchestrate as a managed SaaS service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EE2A38E36760C0",
+            "note": "IBM documents watsonx Orchestrate as a managed SaaS offering on IBM Cloud and AWS regions.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F3E60795E872CF8DCC",
+      "agent_id": "AI-0026",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D35F4C05BA170C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate_on_premises",
+        "note": "watsonx Orchestrate supports customer-managed on-premises deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D35F4C05BA170C",
+            "note": "IBM documents installation on IBM Software Hub or Cloud Pak for Data on customer infrastructure.",
+            "evidence_type": "technical_docs"
           }
         ]
       },
@@ -16393,6 +16767,40 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-76D696FB6E00493712",
+      "agent_id": "AI-0026",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EE2A38E36760C0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate_saas",
+        "note": "Regional watsonx Orchestrate SaaS deployments support data-residency requirements.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EE2A38E36760C0",
+            "note": "IBM states the SaaS service is deployed across multiple global regions to support data residency, performance and compliance needs.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B00E93027153724DFC",
       "agent_id": "AI-0026",
       "path": "profile.depth",
@@ -16441,6 +16849,40 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-769212E12E76C6BABE",
+      "agent_id": "AI-0026",
+      "path": "protocols.a2a.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-03BED5096E6648"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate_published_agents",
+        "note": "Published watsonx Orchestrate agents expose authenticated A2A interaction endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-03BED5096E6648",
+            "note": "IBM exposes A2A discovery and agent-specific interaction endpoints for watsonx Orchestrate agents.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-1E58E5C554984DDD8F",
       "agent_id": "AI-0026",
       "path": "protocols.a2a.supported",
@@ -16463,6 +16905,40 @@
             "source_id": "SRC-3CA0E547871DB4",
             "note": "IBM states that native, imported LangGraph, and external A2A agents can be governed in the same control plane.",
             "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B41CB941E3490AA515",
+      "agent_id": "AI-0026",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8205049E6B81EC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate_agents",
+        "note": "watsonx Orchestrate agents can consume MCP server tools.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8205049E6B81EC",
+            "note": "IBM documents importing local or remote MCP server tools into watsonx Orchestrate agents.",
+            "evidence_type": "technical_docs"
           }
         ]
       },
@@ -16698,6 +17174,40 @@
           {
             "source_id": "SRC-4608610BB8397E",
             "note": "Oracle requires OCI/Fusion IAM authentication with an OAuth 2.0 bearer token for /invokeAsync.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4DC3D1B717CD7088BD",
+      "agent_id": "AI-0027",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4608610BB8397E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "external_agent_invocation",
+        "note": "External applications can invoke Fusion AI agent teams through documented REST endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4608610BB8397E",
+            "note": "Oracle documents the /invokeAsync API and points to Agent Team REST Endpoints for external agent invocation.",
             "evidence_type": "api_docs"
           }
         ]
@@ -17331,6 +17841,108 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-17B5DF70E807E79BA0",
+      "agent_id": "AI-0027",
+      "path": "protocols.a2a.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DAC8719354387D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fusion_ai_agent_studio_26c",
+        "note": "Fusion Applications agents can call external A2A agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DAC8719354387D",
+            "note": "Oracle's example states that an Oracle AI agent can reach out to a third-party agent using A2A.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-94876EBB831FDF5303",
+      "agent_id": "AI-0027",
+      "path": "protocols.a2a.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DAC8719354387D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fusion_ai_agent_studio_26c",
+        "note": "Published Fusion Applications agents can be invoked by external A2A clients.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DAC8719354387D",
+            "note": "Oracle documents third-party platforms calling Fusion Applications agents through authenticated A2A endpoints and Agent Cards.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-54874F82FBD6464E07",
+      "agent_id": "AI-0027",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DAC8719354387D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fusion_ai_agent_studio_26c",
+        "note": "Oracle AI Agent Studio supports A2A cross-platform agent interoperability.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DAC8719354387D",
+            "note": "Oracle documents A2A as the standard mechanism for cross-platform collaboration between Fusion Applications agents and external agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-EF48148AFB86AA45E6",
@@ -20671,6 +21283,46 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-AD28C03AA9FE66B42F",
+      "agent_id": "AI-0031",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-36787CDD28DE26",
+          "SRC-5F16545C51AB09"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rovo_organization_audit_events",
+        "note": "Rovo audit activity is available through Atlassian organization audit-log APIs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5F16545C51AB09",
+            "note": "Atlassian lists Rovo admin and user activity in organization audit logs.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-36787CDD28DE26",
+            "note": "The Organizations REST API exposes paginated audit-log events through the events-stream endpoint.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-E6ACB43A65939A2EA8",
       "agent_id": "AI-0031",
       "path": "governance.audit_logs.available",
@@ -20692,6 +21344,86 @@
           {
             "source_id": "SRC-9426998C9F7364",
             "note": "Atlassian documents Rovo admin and user actions in the organization audit log, with availability depending on Atlassian Guard plan.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C6C897DBA436C0011D",
+      "agent_id": "AI-0031",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-39A11F9EEE2C63",
+          "SRC-7BE77BC34858F1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "atlassian_org_users_accessing_rovo",
+        "note": "Rovo access can be governed through Atlassian organization SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-39A11F9EEE2C63",
+            "note": "Atlassian documents SCIM 2.0 provisioning for managed accounts and groups in Atlassian organizations.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-7BE77BC34858F1",
+            "note": "Atlassian states Rovo inherits security practices from the Atlassian Cloud Platform.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6ACC8E22D26FEBBCE6",
+      "agent_id": "AI-0031",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7BE77BC34858F1",
+          "SRC-A721DD10299144"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "atlassian_org_users_accessing_rovo",
+        "note": "Rovo user access inherits Atlassian organization SAML SSO controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A721DD10299144",
+            "note": "Atlassian documents SAML SSO for users logging in to Atlassian Cloud apps.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-7BE77BC34858F1",
+            "note": "Atlassian states Rovo inherits security practices from the Atlassian Cloud Platform.",
             "evidence_type": "security_trust"
           }
         ]
@@ -20867,6 +21599,114 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-C7616F5FD49CFBEC2E",
+      "agent_id": "AI-0031",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-244406B40C2BAA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rovo_customer_data",
+        "note": "Rovo customer data is covered by Atlassian's AES-256 encryption-at-rest control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-244406B40C2BAA",
+            "note": "Atlassian explicitly includes Rovo among cloud products whose customer-data drives use AES-256 encryption at rest.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-944A31F1100A7129AA",
+      "agent_id": "AI-0031",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-244406B40C2BAA",
+          "SRC-7BE77BC34858F1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rovo_customer_data",
+        "note": "Rovo inherits Atlassian Cloud TLS 1.2+ transport encryption.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-244406B40C2BAA",
+            "note": "Atlassian requires TLS 1.2 or higher for customer data in transit across Atlassian cloud products.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-7BE77BC34858F1",
+            "note": "Atlassian states Rovo inherits Atlassian Cloud Platform security practices.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8D7FF98CC39727E39A",
+      "agent_id": "AI-0031",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C50D92CEB194EF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rovo_and_atlassian_ai",
+        "note": "Atlassian documents completed SOC 2 assessment for Rovo and AI.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C50D92CEB194EF",
+            "note": "Atlassian states Rovo and AI have completed external SOC 2 and ISO 27001 assessments/certifications.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0D24C546B34501FF74",
@@ -24019,6 +24859,40 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-5788D1CC4B37720071",
+      "agent_id": "AI-0036",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-615BCC99B5B019"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_otto_actions",
+        "note": "ServiceNow explicitly documents action logging and governance for Otto.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-615BCC99B5B019",
+            "note": "ServiceNow states that every Otto action is logged and governed.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0D673F7EF36ED4CDE1",
@@ -48468,6 +49342,46 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-E1B89EB061CC0D1A25",
+      "agent_id": "AI-0077",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-30D583B43E23B0",
+          "SRC-FD453A2A2AA839"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_on_vertex_ai_agent_engine",
+        "note": "ADK agents deployed on Vertex AI Agent Engine can use private VPC connectivity.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-30D583B43E23B0",
+            "note": "Google documents private VPC deployment with Private Service Connect for Vertex AI Agent Engine.",
+            "evidence_type": "official_release"
+          },
+          {
+            "source_id": "SRC-FD453A2A2AA839",
+            "note": "Google documents managed Agent Runtime as a deployment target for ADK agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-AAB7D9EFE27296DA02",
       "agent_id": "AI-0077",
       "path": "identity.name",
@@ -48619,6 +49533,46 @@
           {
             "source_id": "SRC-5216B2211FAB92",
             "note": "Google documents configuring an ADK agent with McpToolset and a remote MCP server over Streamable HTTP.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7EA9A979BA1841FDF1",
+      "agent_id": "AI-0077",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-30D583B43E23B0",
+          "SRC-FD453A2A2AA839"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_on_vertex_ai_agent_engine",
+        "note": "ADK agents deployed on Vertex AI Agent Engine can use CMEK for data-at-rest protection.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-30D583B43E23B0",
+            "note": "Google documents customer-managed encryption key support for Vertex AI Agent Engine data at rest.",
+            "evidence_type": "official_release"
+          },
+          {
+            "source_id": "SRC-FD453A2A2AA839",
+            "note": "Google documents deployment of ADK agents to managed Agent Runtime.",
             "evidence_type": "technical_docs"
           }
         ]
@@ -66850,6 +67804,40 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-D9B51F376A81DDF31E",
+      "agent_id": "AI-0105",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FC98924443AB3C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cortex_agent_activity",
+        "note": "Cortex Agent activity is represented in Snowflake audit/history views.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FC98924443AB3C",
+            "note": "Snowflake carries agent identity into QUERY_HISTORY and ACCESS_HISTORY so Cortex Agent activity and accessed objects can be audited.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-A87405553E509EE5DE",

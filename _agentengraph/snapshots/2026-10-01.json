@@ -510,6 +510,9 @@
         "access.description": [
           "GitHub Copilot; plan- und repositoryabhängig"
         ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -549,6 +552,18 @@
         "governance.observability": [
           true
         ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
         "identity.name": [
           "GitHub Copilot Coding Agent"
         ],
@@ -563,6 +578,9 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
         ],
         "use_case": [
           "Bugfixes",
@@ -1739,6 +1757,12 @@
         "access.description": [
           "IBM watsonx Orchestrate; Enterprise-Angebot"
         ],
+        "api.rest": [
+          true
+        ],
+        "api.webhooks": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -1774,7 +1798,16 @@
         "governance.rbac": [
           true
         ],
+        "governance.sso.saml": [
+          true
+        ],
         "governance.tracing": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
+        "hosting.self_hosted": [
           true
         ],
         "identity.name": [
@@ -1783,13 +1816,22 @@
         "identity.provider": [
           "IBM"
         ],
+        "privacy.residency.available": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
         ],
+        "protocols.a2a.server": [
+          true
+        ],
         "protocols.a2a.supported": [
+          true
+        ],
+        "protocols.mcp.client": [
           true
         ],
         "use_case": [
@@ -1821,6 +1863,9 @@
           true
         ],
         "api.auth.oauth": [
+          true
+        ],
+        "api.rest": [
           true
         ],
         "audience": [
@@ -1881,6 +1926,15 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.a2a.client": [
+          true
+        ],
+        "protocols.a2a.server": [
+          true
+        ],
+        "protocols.a2a.supported": [
+          true
         ],
         "protocols.mcp.client": [
           true
@@ -2218,7 +2272,16 @@
           "Jira- und Confluence-Kontext",
           "Konfigurierbare Agentenrollen"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
         "governance.audit_logs.available": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.saml": [
           true
         ],
         "identity.name": [
@@ -2238,6 +2301,15 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Projektarbeit",
@@ -2579,6 +2651,9 @@
           "Für End-to-End-Aufgaben gedacht",
           "Routing über Systeme und Agenten",
           "ServiceNow-Prozessnähe"
+        ],
+        "governance.audit_logs.available": [
+          true
         ],
         "governance.rbac": [
           true
@@ -5272,6 +5347,9 @@
         "hosting.managed": [
           true
         ],
+        "hosting.private_network": [
+          true
+        ],
         "identity.name": [
           "Google Agent Development Kit"
         ],
@@ -5288,6 +5366,9 @@
           true
         ],
         "protocols.mcp.client": [
+          true
+        ],
+        "security.customer_managed_key": [
           true
         ],
         "use_case": [
@@ -7266,6 +7347,9 @@
           "Governance über Snowflake-Rollen",
           "Strukturierte und unstrukturierte Daten",
           "Tool- und Datenorchestrierung"
+        ],
+        "governance.audit_logs.available": [
+          true
         ],
         "governance.custom_roles": [
           true
