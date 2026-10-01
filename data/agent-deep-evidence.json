@@ -4425,6 +4425,236 @@
       ]
     },
     {
+      "agent_id": "AI-0076",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "crewai_framework_deployed_in_amp",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI Docs – Using Annotations in crew.py",
+              "url": "https://docs.crewai.com/learn/using-annotations",
+              "note": "CrewAI documents MCP integration through mcp_server_params and get_mcp_tools(), which starts an MCP adapter and hydrates tools from configured MCP servers.",
+              "evidence_type": "technical_docs",
+              "source_section": "MCP integration"
+            }
+          ],
+          "note": "CrewAI agents can consume tools from configured MCP servers."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "crewai_amp_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI – Pricing",
+              "url": "https://crewai.com/pricing",
+              "note": "CrewAI lists 'Export as MCP server' as a supported capability.",
+              "evidence_type": "official_product_page",
+              "source_section": "Build and integrate"
+            }
+          ],
+          "note": "CrewAI workflows can be exported as MCP servers."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "crewai_amp_deployed_crews",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI Docs – CrewAI AMP",
+              "url": "https://docs.crewai.com/enterprise/introduction",
+              "note": "CrewAI AMP documents REST API access for deployed crews and generated API endpoints.",
+              "evidence_type": "api_docs",
+              "source_section": "API Access"
+            }
+          ],
+          "note": "CrewAI AMP exposes deployed crews through REST API endpoints."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "crewai_amp_runtime_events",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI Docs – CrewAI AMP",
+              "url": "https://docs.crewai.com/enterprise/introduction",
+              "note": "CrewAI AMP documents Webhook Streaming for real-time events and updates to external systems.",
+              "evidence_type": "api_docs",
+              "source_section": "Webhook Streaming"
+            }
+          ],
+          "note": "CrewAI AMP supports webhook streaming of runtime events and updates."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "crewai_amp",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI Docs – CrewAI AMP",
+              "url": "https://docs.crewai.com/enterprise/introduction",
+              "note": "CrewAI AMP documents deploying crews to managed infrastructure.",
+              "evidence_type": "technical_docs",
+              "source_section": "Crew Deployments"
+            }
+          ],
+          "note": "CrewAI AMP provides managed deployment infrastructure."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "crewai_factory_customer_infrastructure",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI – CrewAI Factory and NVIDIA",
+              "url": "https://crewai.com/blog/unlocking-agent-native-transformation-with-crewai-factory-and-nvidia",
+              "note": "CrewAI documents Enterprise deployment on customer infrastructure, including data centers and customer-managed Kubernetes environments.",
+              "evidence_type": "official_release",
+              "source_section": "Deploy anywhere"
+            }
+          ],
+          "note": "CrewAI Enterprise can run on customer-managed infrastructure."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "crewai_factory_customer_vpc",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI – CrewAI Factory and NVIDIA",
+              "url": "https://crewai.com/blog/unlocking-agent-native-transformation-with-crewai-factory-and-nvidia",
+              "note": "CrewAI documents deployment in customer AWS/Azure VPCs and on-premises environments.",
+              "evidence_type": "official_release",
+              "source_section": "Deploy anywhere"
+            },
+            {
+              "title": "CrewAI – Pricing",
+              "url": "https://crewai.com/pricing",
+              "note": "CrewAI Enterprise lists dedicated VPC deployment on CrewAI or customer infrastructure.",
+              "evidence_type": "official_product_page",
+              "source_section": "Deployment"
+            }
+          ],
+          "note": "CrewAI Enterprise supports deployment in customer-controlled VPC/private infrastructure."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "crewai_amp_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI – Pricing",
+              "url": "https://crewai.com/pricing",
+              "note": "CrewAI Enterprise lists RBAC as a governance capability.",
+              "evidence_type": "official_product_page",
+              "source_section": "Governance from the start"
+            },
+            {
+              "title": "CrewAI – Enterprise Agent Build & Runtime",
+              "url": "https://crewai.com/",
+              "note": "CrewAI states its control plane provides RBAC and granular governance controls.",
+              "evidence_type": "official_product_page",
+              "source_section": "Govern"
+            }
+          ],
+          "note": "CrewAI AMP provides role-based access control."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "crewai_amp_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI – Enterprise Agent Build & Runtime",
+              "url": "https://crewai.com/",
+              "note": "CrewAI describes immutable audit trails in the Control Plane alongside RBAC.",
+              "evidence_type": "official_product_page",
+              "source_section": "Govern"
+            },
+            {
+              "title": "CrewAI – A Missing Layer in Agentic Systems?",
+              "url": "https://crewai.com/blog/a-missing-layer-in-agentic-systems",
+              "note": "CrewAI documents full audit trails for human-in-the-loop requests, responses, and decisions in AMP.",
+              "evidence_type": "official_release",
+              "source_section": "Enterprise AMP"
+            }
+          ],
+          "note": "CrewAI AMP documents audit trails for governed agent execution."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "crewai_factory_customer_infrastructure",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI – CrewAI Factory and NVIDIA",
+              "url": "https://crewai.com/blog/unlocking-agent-native-transformation-with-crewai-factory-and-nvidia",
+              "note": "CrewAI explicitly lists encrypted storage as a CrewAI Factory security capability.",
+              "evidence_type": "official_release",
+              "source_section": "CrewAI Factory"
+            }
+          ],
+          "note": "CrewAI Factory documents encryption for stored data."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "crewai_factory_customer_infrastructure",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI – CrewAI Factory and NVIDIA",
+              "url": "https://crewai.com/blog/unlocking-agent-native-transformation-with-crewai-factory-and-nvidia",
+              "note": "CrewAI explicitly lists encrypted communication as a CrewAI Factory security capability.",
+              "evidence_type": "official_release",
+              "source_section": "CrewAI Factory"
+            }
+          ],
+          "note": "CrewAI Factory documents encrypted communications."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "crewai_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CrewAI Trust Center",
+              "url": "https://trust.crewai.com/",
+              "note": "CrewAI states it maintains a SOC 2 Type 2 certified security program and publishes a SOC 2 Type 2 report in its Trust Center.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance"
+            }
+          ],
+          "note": "CrewAI documents SOC 2 Type 2 certification."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0077",
       "claims": [
         {
