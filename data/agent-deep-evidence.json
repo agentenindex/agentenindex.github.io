@@ -4683,6 +4683,91 @@
       "agent_id": "AI-0033",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "notion_enterprise_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – Audit log",
+              "url": "https://www.notion.com/help/audit-log",
+              "note": "Notion documents Enterprise organization/workspace audit logs and agent-attributed activity.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit log"
+            }
+          ],
+          "note": "Notion Enterprise provides workspace and organization audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "notion_enterprise_audit_log",
+          "evidence": [
+            {
+              "title": "Notion Help – Audit log",
+              "url": "https://www.notion.com/help/audit-log",
+              "note": "Notion states audit-log history is retained for up to 365 days.",
+              "evidence_type": "technical_docs",
+              "source_section": "Filter audit logs / Date"
+            }
+          ],
+          "note": "Notion documents 365 days of audit-log history.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "notion_enterprise_audit_log",
+          "evidence": [
+            {
+              "title": "Notion Help – Audit log",
+              "url": "https://www.notion.com/help/audit-log",
+              "note": "Notion documents a custom SIEM integration that streams audit events as they occur.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit log / real-time events"
+            }
+          ],
+          "note": "Notion audit events can be streamed to a customer SIEM.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "notion_enterprise_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – Provision users & groups with SCIM",
+              "url": "https://www.notion.com/help/provision-users-and-groups-with-scim",
+              "note": "Notion documents Enterprise SCIM provisioning for users, groups, and memberships.",
+              "evidence_type": "technical_docs",
+              "source_section": "Prerequisites for SCIM with Notion"
+            }
+          ],
+          "note": "Notion Enterprise supports SCIM provisioning.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "notion_business_enterprise_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – SAML SSO",
+              "url": "https://www.notion.com/help/saml-sso-configuration",
+              "note": "Notion documents SAML 2.0 SSO for Business and Enterprise workspaces.",
+              "evidence_type": "technical_docs",
+              "source_section": "SAML SSO"
+            }
+          ],
+          "note": "Notion supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "notion_agent",
@@ -4698,6 +4783,74 @@
             }
           ],
           "note": "Notion Agent is delivered as a managed capability inside Notion."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "notion_enterprise_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – Data residency",
+              "url": "https://www.notion.com/help/data-residency",
+              "note": "Notion documents Enterprise data-residency options for storing workspace data in supported data regions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Who is eligible?"
+            }
+          ],
+          "note": "Notion Enterprise provides data-residency options.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "notion_enterprise_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – Data residency",
+              "url": "https://www.notion.com/help/data-residency",
+              "note": "Notion states eligible Enterprise workspace owners can request migration of existing workspace data to a chosen data region.",
+              "evidence_type": "technical_docs",
+              "source_section": "Who is eligible?"
+            }
+          ],
+          "note": "Eligible Enterprise customers can choose/request a Notion data region.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "notion_platform_data_including_agent_content",
+          "evidence": [
+            {
+              "title": "Notion Trust Center – Terms and Privacy",
+              "url": "https://trust.notion.com/terms-and-privacy",
+              "note": "Notion documents AES-256 encryption at rest for Customer Data.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection and architecture"
+            }
+          ],
+          "note": "Notion documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "notion_platform_data_including_agent_content",
+          "evidence": [
+            {
+              "title": "Notion Trust Center – Terms and Privacy",
+              "url": "https://trust.notion.com/terms-and-privacy",
+              "note": "Notion documents TLS 1.2 or higher encryption in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection and architecture"
+            }
+          ],
+          "note": "Notion documents TLS 1.2+ encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -4720,6 +4873,159 @@
             }
           ],
           "note": "Notion Enterprise records Custom Agent governance and execution-related events in the workspace audit log."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "notion_enterprise_audit_log",
+          "evidence": [
+            {
+              "title": "Notion Help – Audit log",
+              "url": "https://www.notion.com/help/audit-log",
+              "note": "Notion states audit-log history is retained for up to 365 days.",
+              "evidence_type": "technical_docs",
+              "source_section": "Filter audit logs / Date"
+            }
+          ],
+          "note": "Notion documents 365 days of audit-log history.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "notion_enterprise_audit_log",
+          "evidence": [
+            {
+              "title": "Notion Help – Audit log",
+              "url": "https://www.notion.com/help/audit-log",
+              "note": "Notion documents a custom SIEM integration that streams audit events as they occur.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit log / real-time events"
+            }
+          ],
+          "note": "Notion audit events can be streamed to a customer SIEM.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "notion_enterprise_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – Provision users & groups with SCIM",
+              "url": "https://www.notion.com/help/provision-users-and-groups-with-scim",
+              "note": "Notion documents Enterprise SCIM provisioning for users, groups, and memberships.",
+              "evidence_type": "technical_docs",
+              "source_section": "Prerequisites for SCIM with Notion"
+            }
+          ],
+          "note": "Notion Enterprise supports SCIM provisioning.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "notion_business_enterprise_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – SAML SSO",
+              "url": "https://www.notion.com/help/saml-sso-configuration",
+              "note": "Notion documents SAML 2.0 SSO for Business and Enterprise workspaces.",
+              "evidence_type": "technical_docs",
+              "source_section": "SAML SSO"
+            }
+          ],
+          "note": "Notion supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "notion_platform_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – Security practices",
+              "url": "https://www.notion.com/help/security-and-privacy",
+              "note": "Notion documents that its infrastructure and customer data are hosted on AWS in its secured production environment.",
+              "evidence_type": "security_trust",
+              "source_section": "Infrastructure"
+            }
+          ],
+          "note": "Notion Agents run on Notion's managed AWS-hosted platform.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "notion_enterprise_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – Data residency",
+              "url": "https://www.notion.com/help/data-residency",
+              "note": "Notion documents Enterprise data-residency options for storing workspace data in supported data regions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Who is eligible?"
+            }
+          ],
+          "note": "Notion Enterprise provides data-residency options.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "notion_enterprise_including_agents",
+          "evidence": [
+            {
+              "title": "Notion Help – Data residency",
+              "url": "https://www.notion.com/help/data-residency",
+              "note": "Notion states eligible Enterprise workspace owners can request migration of existing workspace data to a chosen data region.",
+              "evidence_type": "technical_docs",
+              "source_section": "Who is eligible?"
+            }
+          ],
+          "note": "Eligible Enterprise customers can choose/request a Notion data region.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "notion_platform_data_including_agent_content",
+          "evidence": [
+            {
+              "title": "Notion Trust Center – Terms and Privacy",
+              "url": "https://trust.notion.com/terms-and-privacy",
+              "note": "Notion documents AES-256 encryption at rest for Customer Data.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection and architecture"
+            }
+          ],
+          "note": "Notion documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "notion_platform_data_including_agent_content",
+          "evidence": [
+            {
+              "title": "Notion Trust Center – Terms and Privacy",
+              "url": "https://trust.notion.com/terms-and-privacy",
+              "note": "Notion documents TLS 1.2 or higher encryption in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection and architecture"
+            }
+          ],
+          "note": "Notion documents TLS 1.2+ encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -5735,6 +6041,91 @@
       "agent_id": "AI-0042",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "hubspot_account_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – View and export account activity history",
+              "url": "https://knowledge.hubspot.com/account-management/view-and-export-account-activity-history",
+              "note": "HubSpot documents centralized audit logs for reviewing, filtering, and exporting user actions and security-related account activity.",
+              "evidence_type": "technical_docs",
+              "source_section": "View, filter, and export a centralized audit log"
+            }
+          ],
+          "note": "HubSpot provides centralized account audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – Create and assign permission sets",
+              "url": "https://knowledge.hubspot.com/user-management/create-permission-sets",
+              "note": "HubSpot documents creating custom permission sets from templates or from scratch with granular permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Create a permission set"
+            }
+          ],
+          "note": "HubSpot Enterprise supports custom reusable permission sets/roles.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – Create and assign permission sets",
+              "url": "https://knowledge.hubspot.com/user-management/create-permission-sets",
+              "note": "HubSpot documents reusable permission sets based on roles that grant consistent access to users.",
+              "evidence_type": "technical_docs",
+              "source_section": "Create a permission set"
+            }
+          ],
+          "note": "HubSpot Enterprise provides role-oriented permission sets for access control.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot explicitly documents SCIM-based provisioning through Okta.",
+              "evidence_type": "security_trust",
+              "source_section": "Frequently Asked Questions / identity provider"
+            }
+          ],
+          "note": "HubSpot Enterprise supports SCIM-based provisioning.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot explicitly documents SAML-based SSO for major identity providers.",
+              "evidence_type": "security_trust",
+              "source_section": "Frequently Asked Questions / identity provider"
+            }
+          ],
+          "note": "HubSpot Enterprise supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "hubspot_breeze_customer_agent",
@@ -5750,6 +6141,91 @@
             }
           ],
           "note": "Breeze Customer Agent is delivered as a managed HubSpot agent."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "hubspot_platform_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Cloud Infrastructure and Data Hosting FAQ",
+              "url": "https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions",
+              "note": "HubSpot documents regional product infrastructure and account hosting in US, EU, Canada, and Australia.",
+              "evidence_type": "security_trust",
+              "source_section": "Where is HubSpot's product infrastructure hosted?"
+            }
+          ],
+          "note": "HubSpot provides regional data-hosting options for the platform that hosts Breeze agents.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "hubspot_paid_accounts",
+          "evidence": [
+            {
+              "title": "HubSpot Cloud Infrastructure and Data Hosting FAQ",
+              "url": "https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions",
+              "note": "HubSpot states Starter, Professional, and Enterprise accounts can change their assigned data center.",
+              "evidence_type": "technical_docs",
+              "source_section": "How are data centers assigned?"
+            }
+          ],
+          "note": "Eligible paid HubSpot customers can change their account data-center region.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Security Program",
+              "url": "https://legal.hubspot.com/security",
+              "note": "HubSpot documents AES-256 encryption for product-server disks and long-term storage such as AWS S3.",
+              "evidence_type": "security_trust",
+              "source_section": "How does HubSpot encrypt data?"
+            }
+          ],
+          "note": "HubSpot documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Security Program",
+              "url": "https://legal.hubspot.com/security",
+              "note": "HubSpot documents TLS 1.2 or 1.3 for sensitive product interactions including API calls and authenticated sessions.",
+              "evidence_type": "security_trust",
+              "source_section": "How does HubSpot encrypt data?"
+            }
+          ],
+          "note": "HubSpot documents TLS 1.2+ encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot states its Trust Center provides the HubSpot SOC 2 Type II report and that HubSpot AI runs on the same secure platform infrastructure.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & compliance / HubSpot AI"
+            }
+          ],
+          "note": "HubSpot documents SOC 2 Type II coverage for the platform hosting its AI features.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -5801,6 +6277,91 @@
       "agent_id": "AI-0045",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "hubspot_account_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – View and export account activity history",
+              "url": "https://knowledge.hubspot.com/account-management/view-and-export-account-activity-history",
+              "note": "HubSpot documents centralized audit logs for reviewing, filtering, and exporting user actions and security-related account activity.",
+              "evidence_type": "technical_docs",
+              "source_section": "View, filter, and export a centralized audit log"
+            }
+          ],
+          "note": "HubSpot provides centralized account audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – Create and assign permission sets",
+              "url": "https://knowledge.hubspot.com/user-management/create-permission-sets",
+              "note": "HubSpot documents creating custom permission sets from templates or from scratch with granular permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Create a permission set"
+            }
+          ],
+          "note": "HubSpot Enterprise supports custom reusable permission sets/roles.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – Create and assign permission sets",
+              "url": "https://knowledge.hubspot.com/user-management/create-permission-sets",
+              "note": "HubSpot documents reusable permission sets based on roles that grant consistent access to users.",
+              "evidence_type": "technical_docs",
+              "source_section": "Create a permission set"
+            }
+          ],
+          "note": "HubSpot Enterprise provides role-oriented permission sets for access control.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot explicitly documents SCIM-based provisioning through Okta.",
+              "evidence_type": "security_trust",
+              "source_section": "Frequently Asked Questions / identity provider"
+            }
+          ],
+          "note": "HubSpot Enterprise supports SCIM-based provisioning.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot explicitly documents SAML-based SSO for major identity providers.",
+              "evidence_type": "security_trust",
+              "source_section": "Frequently Asked Questions / identity provider"
+            }
+          ],
+          "note": "HubSpot Enterprise supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "hubspot_breeze_prospecting_agent",
@@ -5816,6 +6377,91 @@
             }
           ],
           "note": "Breeze Prospecting Agent is delivered as a managed HubSpot agent."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "hubspot_platform_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Cloud Infrastructure and Data Hosting FAQ",
+              "url": "https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions",
+              "note": "HubSpot documents regional product infrastructure and account hosting in US, EU, Canada, and Australia.",
+              "evidence_type": "security_trust",
+              "source_section": "Where is HubSpot's product infrastructure hosted?"
+            }
+          ],
+          "note": "HubSpot provides regional data-hosting options for the platform that hosts Breeze agents.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "hubspot_paid_accounts",
+          "evidence": [
+            {
+              "title": "HubSpot Cloud Infrastructure and Data Hosting FAQ",
+              "url": "https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions",
+              "note": "HubSpot states Starter, Professional, and Enterprise accounts can change their assigned data center.",
+              "evidence_type": "technical_docs",
+              "source_section": "How are data centers assigned?"
+            }
+          ],
+          "note": "Eligible paid HubSpot customers can change their account data-center region.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Security Program",
+              "url": "https://legal.hubspot.com/security",
+              "note": "HubSpot documents AES-256 encryption for product-server disks and long-term storage such as AWS S3.",
+              "evidence_type": "security_trust",
+              "source_section": "How does HubSpot encrypt data?"
+            }
+          ],
+          "note": "HubSpot documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Security Program",
+              "url": "https://legal.hubspot.com/security",
+              "note": "HubSpot documents TLS 1.2 or 1.3 for sensitive product interactions including API calls and authenticated sessions.",
+              "evidence_type": "security_trust",
+              "source_section": "How does HubSpot encrypt data?"
+            }
+          ],
+          "note": "HubSpot documents TLS 1.2+ encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot states its Trust Center provides the HubSpot SOC 2 Type II report and that HubSpot AI runs on the same secure platform infrastructure.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & compliance / HubSpot AI"
+            }
+          ],
+          "note": "HubSpot documents SOC 2 Type II coverage for the platform hosting its AI features.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -5845,6 +6491,91 @@
       "agent_id": "AI-0047",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "hubspot_account_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – View and export account activity history",
+              "url": "https://knowledge.hubspot.com/account-management/view-and-export-account-activity-history",
+              "note": "HubSpot documents centralized audit logs for reviewing, filtering, and exporting user actions and security-related account activity.",
+              "evidence_type": "technical_docs",
+              "source_section": "View, filter, and export a centralized audit log"
+            }
+          ],
+          "note": "HubSpot provides centralized account audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – Create and assign permission sets",
+              "url": "https://knowledge.hubspot.com/user-management/create-permission-sets",
+              "note": "HubSpot documents creating custom permission sets from templates or from scratch with granular permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Create a permission set"
+            }
+          ],
+          "note": "HubSpot Enterprise supports custom reusable permission sets/roles.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – Create and assign permission sets",
+              "url": "https://knowledge.hubspot.com/user-management/create-permission-sets",
+              "note": "HubSpot documents reusable permission sets based on roles that grant consistent access to users.",
+              "evidence_type": "technical_docs",
+              "source_section": "Create a permission set"
+            }
+          ],
+          "note": "HubSpot Enterprise provides role-oriented permission sets for access control.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot explicitly documents SCIM-based provisioning through Okta.",
+              "evidence_type": "security_trust",
+              "source_section": "Frequently Asked Questions / identity provider"
+            }
+          ],
+          "note": "HubSpot Enterprise supports SCIM-based provisioning.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot explicitly documents SAML-based SSO for major identity providers.",
+              "evidence_type": "security_trust",
+              "source_section": "Frequently Asked Questions / identity provider"
+            }
+          ],
+          "note": "HubSpot Enterprise supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "hubspot_data_agent",
@@ -5860,12 +6591,182 @@
             }
           ],
           "note": "HubSpot Data Agent is delivered as a managed agent inside HubSpot."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "hubspot_platform_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Cloud Infrastructure and Data Hosting FAQ",
+              "url": "https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions",
+              "note": "HubSpot documents regional product infrastructure and account hosting in US, EU, Canada, and Australia.",
+              "evidence_type": "security_trust",
+              "source_section": "Where is HubSpot's product infrastructure hosted?"
+            }
+          ],
+          "note": "HubSpot provides regional data-hosting options for the platform that hosts Breeze agents.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "hubspot_paid_accounts",
+          "evidence": [
+            {
+              "title": "HubSpot Cloud Infrastructure and Data Hosting FAQ",
+              "url": "https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions",
+              "note": "HubSpot states Starter, Professional, and Enterprise accounts can change their assigned data center.",
+              "evidence_type": "technical_docs",
+              "source_section": "How are data centers assigned?"
+            }
+          ],
+          "note": "Eligible paid HubSpot customers can change their account data-center region.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Security Program",
+              "url": "https://legal.hubspot.com/security",
+              "note": "HubSpot documents AES-256 encryption for product-server disks and long-term storage such as AWS S3.",
+              "evidence_type": "security_trust",
+              "source_section": "How does HubSpot encrypt data?"
+            }
+          ],
+          "note": "HubSpot documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Security Program",
+              "url": "https://legal.hubspot.com/security",
+              "note": "HubSpot documents TLS 1.2 or 1.3 for sensitive product interactions including API calls and authenticated sessions.",
+              "evidence_type": "security_trust",
+              "source_section": "How does HubSpot encrypt data?"
+            }
+          ],
+          "note": "HubSpot documents TLS 1.2+ encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot states its Trust Center provides the HubSpot SOC 2 Type II report and that HubSpot AI runs on the same secure platform infrastructure.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & compliance / HubSpot AI"
+            }
+          ],
+          "note": "HubSpot documents SOC 2 Type II coverage for the platform hosting its AI features.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
     {
       "agent_id": "AI-0048",
       "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "hubspot_account_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – View and export account activity history",
+              "url": "https://knowledge.hubspot.com/account-management/view-and-export-account-activity-history",
+              "note": "HubSpot documents centralized audit logs for reviewing, filtering, and exporting user actions and security-related account activity.",
+              "evidence_type": "technical_docs",
+              "source_section": "View, filter, and export a centralized audit log"
+            }
+          ],
+          "note": "HubSpot provides centralized account audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – Create and assign permission sets",
+              "url": "https://knowledge.hubspot.com/user-management/create-permission-sets",
+              "note": "HubSpot documents creating custom permission sets from templates or from scratch with granular permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Create a permission set"
+            }
+          ],
+          "note": "HubSpot Enterprise supports custom reusable permission sets/roles.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – Create and assign permission sets",
+              "url": "https://knowledge.hubspot.com/user-management/create-permission-sets",
+              "note": "HubSpot documents reusable permission sets based on roles that grant consistent access to users.",
+              "evidence_type": "technical_docs",
+              "source_section": "Create a permission set"
+            }
+          ],
+          "note": "HubSpot Enterprise provides role-oriented permission sets for access control.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot explicitly documents SCIM-based provisioning through Okta.",
+              "evidence_type": "security_trust",
+              "source_section": "Frequently Asked Questions / identity provider"
+            }
+          ],
+          "note": "HubSpot Enterprise supports SCIM-based provisioning.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "hubspot_enterprise_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot explicitly documents SAML-based SSO for major identity providers.",
+              "evidence_type": "security_trust",
+              "source_section": "Frequently Asked Questions / identity provider"
+            }
+          ],
+          "note": "HubSpot Enterprise supports SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
         {
           "path": "hosting.managed",
           "value": true,
@@ -5882,6 +6783,91 @@
             }
           ],
           "note": "The Company Research Agent is delivered and operated inside HubSpot's managed Agent Hub."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "hubspot_platform_including_breeze_agents",
+          "evidence": [
+            {
+              "title": "HubSpot Cloud Infrastructure and Data Hosting FAQ",
+              "url": "https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions",
+              "note": "HubSpot documents regional product infrastructure and account hosting in US, EU, Canada, and Australia.",
+              "evidence_type": "security_trust",
+              "source_section": "Where is HubSpot's product infrastructure hosted?"
+            }
+          ],
+          "note": "HubSpot provides regional data-hosting options for the platform that hosts Breeze agents.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "hubspot_paid_accounts",
+          "evidence": [
+            {
+              "title": "HubSpot Cloud Infrastructure and Data Hosting FAQ",
+              "url": "https://knowledge.hubspot.com/account-security/hubspot-cloud-infrastructure-and-data-hosting-frequently-asked-questions",
+              "note": "HubSpot states Starter, Professional, and Enterprise accounts can change their assigned data center.",
+              "evidence_type": "technical_docs",
+              "source_section": "How are data centers assigned?"
+            }
+          ],
+          "note": "Eligible paid HubSpot customers can change their account data-center region.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Security Program",
+              "url": "https://legal.hubspot.com/security",
+              "note": "HubSpot documents AES-256 encryption for product-server disks and long-term storage such as AWS S3.",
+              "evidence_type": "security_trust",
+              "source_section": "How does HubSpot encrypt data?"
+            }
+          ],
+          "note": "HubSpot documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot Security Program",
+              "url": "https://legal.hubspot.com/security",
+              "note": "HubSpot documents TLS 1.2 or 1.3 for sensitive product interactions including API calls and authenticated sessions.",
+              "evidence_type": "security_trust",
+              "source_section": "How does HubSpot encrypt data?"
+            }
+          ],
+          "note": "HubSpot documents TLS 1.2+ encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "hubspot_platform_including_ai_features",
+          "evidence": [
+            {
+              "title": "HubSpot – Security and Compliance",
+              "url": "https://www.hubspot.com/security-and-compliance",
+              "note": "HubSpot states its Trust Center provides the HubSpot SOC 2 Type II report and that HubSpot AI runs on the same secure platform infrastructure.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & compliance / HubSpot AI"
+            }
+          ],
+          "note": "HubSpot documents SOC 2 Type II coverage for the platform hosting its AI features.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
