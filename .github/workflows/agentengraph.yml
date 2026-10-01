@@ -31,11 +31,17 @@ jobs:
       - name: Test historical change tracking
         run: python .github/scripts/test-agentengraph-history.py
 
+      - name: Render public AgentenGraph history
+        run: python .github/scripts/render-agentengraph-profiles.py
+
+      - name: Validate public AgentenGraph history
+        run: python .github/scripts/validate-agentengraph-profiles.py
+
       - name: Commit graph history
         run: |
           git config user.name "AgentenIndex"
           git config user.email "actions@users.noreply.github.com"
-          git add _agentengraph
+          git add _agentengraph agenten
           if git diff --cached --quiet; then
             echo "AgentenGraph already current."
             exit 0
