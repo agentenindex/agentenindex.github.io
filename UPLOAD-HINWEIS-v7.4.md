@@ -10,8 +10,8 @@ Dieses ZIP enthält alle Dateien, die gegenüber dem ursprünglich bereitgestell
 
 ## Enthalten
 - neues v7 Startseiten-Design
-- v7 AgentenProfil-Design für alle 57 Agentenprofile
-- ChatGPT Deep Research als redaktioneller Master-Passport
+- v7 AgentenProfil-Design für alle 110 Agentenprofile
+- ChatGPT Deep Research als redaktioneller Master-Profil
 - Agentenübersicht / Kategorien im neuen Design
 - einheitlicher CTA `AgentenProfil öffnen →`
 - Mobile-Stability-Fix
