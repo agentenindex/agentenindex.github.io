@@ -14238,6 +14238,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-78E83FFA99C051D975",
+      "agent_id": "AI-0021",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3853FEF20978CF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_agents",
+        "note": "Relevance AI exposes programmatic HTTP API access for agent execution and conversations.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3853FEF20978CF",
+            "note": "Relevance AI documents HTTPS API endpoints for triggering agents, polling jobs, continuing conversations, and listing messages.",
+            "evidence_type": "api_docs",
+            "source_section": "Conversation API for Agents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8FEBDCD58E5341B280",
+      "agent_id": "AI-0021",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EFBEB2BCEC33"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_agent_triggers",
+        "note": "Relevance AI agents can be triggered through webhooks.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EFBEB2BCEC33",
+            "note": "Relevance AI explicitly documents webhooks as a native trigger for agents alongside schedules and app events.",
+            "evidence_type": "official_product_page",
+            "source_section": "Triggers and scheduling"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3BE72E8987AAD71BB0",
       "agent_id": "AI-0021",
       "path": "audience",
@@ -14538,6 +14608,195 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-474944DE5F3DBBD44F",
+      "agent_id": "AI-0021",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3C90D7B2BFD4F0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_enterprise",
+        "note": "Relevance AI Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3C90D7B2BFD4F0",
+            "note": "Relevance AI explicitly lists audit logs and audit trails among enterprise governance controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & data privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8204EC5DE0418B819F",
+      "agent_id": "AI-0021",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6D9EAACB307D6A",
+          "SRC-D2EFBEB2BCEC33"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_enterprise_audit_stream",
+        "note": "Enterprise audit logs and traces can be exported to customer-controlled observability/SIEM destinations through OpenTelemetry.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6D9EAACB307D6A",
+            "note": "Relevance AI documents streaming AI audit logs and execution traces in OpenTelemetry format to a customer-controlled destination for enterprise governance and compliance.",
+            "evidence_type": "official_release",
+            "source_section": "OpenTelemetry Event Streaming for AI Audit Logs and Execution Traces"
+          },
+          {
+            "source_id": "SRC-D2EFBEB2BCEC33",
+            "note": "Relevance AI lists OTEL and Delta Share export under enterprise monitoring and oversight.",
+            "evidence_type": "official_product_page",
+            "source_section": "Monitoring & oversight"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7D61D2278D529F1BB7",
+      "agent_id": "AI-0021",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3C90D7B2BFD4F0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_enterprise",
+        "note": "Relevance AI Enterprise supports role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3C90D7B2BFD4F0",
+            "note": "Relevance AI explicitly lists role-based access control as an enterprise capability.",
+            "evidence_type": "security_trust",
+            "source_section": "Access & controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1E070CEC524B58380F",
+      "agent_id": "AI-0021",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3C90D7B2BFD4F0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_enterprise",
+        "note": "Relevance AI Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3C90D7B2BFD4F0",
+            "note": "Relevance AI explicitly lists SSO / SAML under enterprise access controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Access & controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9979A2A35830237430",
+      "agent_id": "AI-0021",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-16D8D439713430",
+          "SRC-C57C82B1F09DE8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_platform",
+        "note": "Relevance AI provides managed hosting and scaling for agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C57C82B1F09DE8",
+            "note": "Relevance AI describes itself as a fully managed service handling infrastructure management, hosting, and scaling.",
+            "evidence_type": "technical_docs",
+            "source_section": "Fully Managed Service"
+          },
+          {
+            "source_id": "SRC-16D8D439713430",
+            "note": "Relevance AI documents fully managed infrastructure that auto-scales for agent API deployments.",
+            "evidence_type": "official_product_page",
+            "source_section": "Managed API / Fully managed services"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3C0730935396079333",
       "agent_id": "AI-0021",
       "path": "identity.name",
@@ -14588,6 +14847,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-F9EB82112E8A55D808",
+      "agent_id": "AI-0021",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3C90D7B2BFD4F0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_enterprise",
+        "note": "Relevance AI Enterprise documents data-residency capability.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3C90D7B2BFD4F0",
+            "note": "Relevance AI explicitly lists data residency as an enterprise security and privacy capability.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & data privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-E5109E0716179BD911",
       "agent_id": "AI-0021",
       "path": "profile.depth",
@@ -14636,6 +14930,153 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-50C237ADB518B28956",
+      "agent_id": "AI-0021",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EFBEB2BCEC33"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_agents",
+        "note": "Relevance AI agents can consume MCP-connected tools and servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EFBEB2BCEC33",
+            "note": "Relevance AI documents that agents can access native connectors plus MCP support and MCP servers.",
+            "evidence_type": "official_product_page",
+            "source_section": "All of your agents on one stack / What can my agents access?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-CC494C5383979B743E",
+      "agent_id": "AI-0021",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E2927C24E68B30"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_platform_data",
+        "note": "Relevance AI documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E2927C24E68B30",
+            "note": "Relevance AI states all data is encrypted at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "How does Relevance AI handle data security?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-84AE1365BB39543F05",
+      "agent_id": "AI-0021",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E2927C24E68B30"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_platform_data",
+        "note": "Relevance AI documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E2927C24E68B30",
+            "note": "Relevance AI states all data is encrypted in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "How does Relevance AI handle data security?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DFE3B77FA8288DAD41",
+      "agent_id": "AI-0021",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3C90D7B2BFD4F0",
+          "SRC-C57C82B1F09DE8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "relevance_ai_platform",
+        "note": "Relevance AI documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3C90D7B2BFD4F0",
+            "note": "Relevance AI explicitly states SOC 2 Type II compliance.",
+            "evidence_type": "security_trust",
+            "source_section": "Enterprise security"
+          },
+          {
+            "source_id": "SRC-C57C82B1F09DE8",
+            "note": "Relevance AI states the platform is SOC 2 Type 2 certified.",
+            "evidence_type": "security_trust",
+            "source_section": "Enterprise-Grade Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-2C36C264875A8449BB",
