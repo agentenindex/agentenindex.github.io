@@ -7,6 +7,8 @@ import sys
 ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/"_agentengraph"
 DATA=json.loads((ROOT/"data"/"agents.json").read_text(encoding="utf-8"))
+DEEP_PATH=ROOT/"data"/"agent-deep-evidence.json"
+DEEP=json.loads(DEEP_PATH.read_text(encoding="utf-8")) if DEEP_PATH.exists() else {"schema_version":"1.0","agents":[]}
 
 def load(name):
     return json.loads((OUT/name).read_text(encoding="utf-8"))
@@ -25,6 +27,7 @@ agent_ids={a["profile_id"] for a in DATA["agents"]}
 entity_ids={a["agent_id"] for a in entities["agents"]}
 provider_names={a["provider"] for a in DATA["agents"]}
 source_ids={s["source_id"] for s in sources["sources"]}
+source_by_url={s["url"]:s for s in sources["sources"]}
 
 if DATA["count"] != 110:
     errors.append(f"Expected 110 source agents, got {DATA['count']}")
@@ -37,9 +40,67 @@ if len(entities["providers"]) != len(provider_names):
 if len(snapshot["agents"]) != DATA["count"]:
     errors.append("Snapshot agent count mismatch")
 
+# Curated deep evidence must be explicit, deduplicated and resolve to known agents/sources.
+deep_keys=set()
+deep_claims=[]
+for entry in DEEP.get("agents",[]):
+    aid=entry.get("agent_id")
+    if aid not in agent_ids:
+        errors.append(f"Deep evidence references unknown agent {aid}")
+    for claim in entry.get("claims",[]):
+        path=claim.get("path")
+        value=claim.get("value")
+        key=(aid,path,json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(",",":")))
+        if key in deep_keys:
+            errors.append(f"Duplicate deep claim {aid} {path} {value!r}")
+        deep_keys.add(key)
+        deep_claims.append((aid,claim))
+        if not path:
+            errors.append(f"{aid}: deep claim missing path")
+        if claim.get("confidence") not in {"high","medium","low"}:
+            errors.append(f"{aid} {path}: invalid confidence {claim.get('confidence')}")
+        if not claim.get("verified_at"):
+            errors.append(f"{aid} {path}: missing verified_at")
+        if not claim.get("scope"):
+            errors.append(f"{aid} {path}: missing scope")
+        evidence=claim.get("evidence") or []
+        if not evidence:
+            errors.append(f"{aid} {path}: no field-level evidence")
+        for ev in evidence:
+            if not ev.get("title") or not ev.get("url"):
+                errors.append(f"{aid} {path}: evidence item missing title/url")
+
 active=[a for a in assertions["assertions"] if a.get("valid_to") is None]
 if not active:
     errors.append("No active assertions")
+
+active_by_value={(a["agent_id"],a["path"],json.dumps(a["value"],ensure_ascii=False,sort_keys=True,separators=(",",":"))):a for a in active}
+for aid,claim in deep_claims:
+    path=claim.get("path")
+    value=claim.get("value")
+    key=(aid,path,json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(",",":")))
+    ast=active_by_value.get(key)
+    if not ast:
+        errors.append(f"{aid} {path}: deep claim missing active assertion")
+        continue
+    ev=ast.get("evidence") or {}
+    if ev.get("binding")!="field_level" or ev.get("field_level_verified") is not True:
+        errors.append(f"{aid} {path}: deep claim not field-level verified")
+    expected=[]
+    for item in claim.get("evidence") or []:
+        src=source_by_url.get(item.get("url"))
+        if not src:
+            errors.append(f"{aid} {path}: deep evidence URL missing from source registry {item.get('url')}")
+        else:
+            expected.append(src["source_id"])
+    if sorted(set(expected)) != sorted(ev.get("source_ids") or []):
+        errors.append(f"{aid} {path}: field-level source binding differs from curated evidence")
+    if ev.get("verified_at") != claim.get("verified_at"):
+        errors.append(f"{aid} {path}: verified_at differs from curated evidence")
+    if ev.get("confidence") != claim.get("confidence"):
+        errors.append(f"{aid} {path}: confidence differs from curated evidence")
+    if ev.get("scope") != claim.get("scope"):
+        errors.append(f"{aid} {path}: scope differs from curated evidence")
 
 # Every source reference must resolve. Exact field-level evidence must be explicit.
 for a in assertions["assertions"]:
@@ -106,8 +167,9 @@ if field_exact != coverage.get("field_level_evidence_assertions"):
     errors.append("Field-level evidence count mismatch")
 
 # Current baseline snapshot must match source dataset date.
-if snapshot.get("observed_at") != DATA.get("updated"):
-    errors.append("Current snapshot date does not match agents.json updated date")
+expected_snapshot_date=max(x for x in [DATA.get("updated"),DEEP.get("updated")] if x)
+if snapshot.get("observed_at") != expected_snapshot_date:
+    errors.append("Current snapshot date does not match latest source/deep-evidence dataset date")
 
 if errors:
     print("AGENTENGRAPH_VALIDATION_FAILED")
@@ -124,5 +186,6 @@ print(json.dumps({
     "assertions_active":len(active),
     "events":len(events["events"]),
     "field_level_evidence":field_exact,
+    "curated_deep_claims":len(deep_claims),
     "snapshot":snapshot.get("observed_at"),
 },ensure_ascii=False))
