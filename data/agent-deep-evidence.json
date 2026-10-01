@@ -1440,6 +1440,82 @@
             }
           ],
           "note": "CMK encryption is available for Agent trace data as an opt-in feature."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "uipath_automation_cloud_org_access",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Automation Cloud – Configuring the SAML integration",
+              "url": "https://docs.uipath.com/automation-cloud/automation-cloud/latest/admin-guide/configuring-the-saml-integration",
+              "note": "UiPath documents SAML 2.0 SSO for Automation Cloud organizations; the feature is available with Enterprise licensing.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "UiPath Agents running in Automation Cloud inherit organization SAML SSO access controls."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "uipath_automation_cloud_org_access",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Automation Cloud – Configuring SCIM User Sync with Microsoft Entra ID",
+              "url": "https://docs.uipath.com/automation-cloud/automation-cloud/latest/admin-guide/configuring-scim-with-microsoft-entra-id",
+              "note": "UiPath documents SCIM user synchronization/provisioning for Automation Cloud organizations.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Automation Cloud organization identities used to access Agents can be provisioned with SCIM."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "uipath_agents_traces_and_ai_trust_layer",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Automation Cloud – Encryption",
+              "url": "https://docs.uipath.com/automation-cloud/automation-cloud/latest/admin-guide/encryption",
+              "note": "UiPath's encryption matrix explicitly lists Agents traces with AES-256 TDE at rest.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "UiPath Automation Cloud – About AI Trust Layer",
+              "url": "https://docs.uipath.com/automation-cloud/automation-cloud/latest/admin-guide/about-ai-trust-layer",
+              "note": "UiPath states data flowing through AI Trust Layer is encrypted with AES-256 at rest.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "UiPath explicitly documents AES-256 at-rest encryption for Agents trace data and AI Trust Layer data flows."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "uipath_agents_traces_and_ai_trust_layer",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Automation Cloud – Encryption",
+              "url": "https://docs.uipath.com/automation-cloud/automation-cloud/latest/admin-guide/encryption",
+              "note": "UiPath's encryption matrix explicitly lists Agents traces with TLS 1.2 or higher in transit.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "UiPath Automation Cloud – About AI Trust Layer",
+              "url": "https://docs.uipath.com/automation-cloud/automation-cloud/latest/admin-guide/about-ai-trust-layer",
+              "note": "UiPath states all data flowing through AI Trust Layer uses TLS 1.2 or higher in transit.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "UiPath explicitly documents TLS 1.2+ for Agents trace and AI Trust Layer traffic."
         }
       ]
     },
@@ -2643,6 +2719,28 @@
             }
           ],
           "note": "ADK agents deployed on Vertex AI Agent Engine can use CMEK for data-at-rest protection."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "adk_local_or_customer_managed_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Agents CLI – CLI reference",
+              "url": "https://google.github.io/agents-cli/cli/",
+              "note": "Google documents local ADK agent execution via a local server and deployment targets including GKE in addition to managed Agent Runtime.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Google ADK – Agent Runtime Code Execution tool",
+              "url": "https://google.github.io/adk-docs/tools/google-cloud/code-exec-agent-engine/",
+              "note": "Google states an ADK agent can run locally or with other services and need not be deployed to Agent Runtime.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ADK supports local/customer-managed runtime execution in addition to managed Agent Runtime deployment."
         }
       ]
     },
@@ -3911,6 +4009,110 @@
             }
           ],
           "note": "Cortex Agent activity is represented in Snowflake audit/history views."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "snowflake_account_access_to_cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Federated authentication and SSO",
+              "url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-overview",
+              "note": "Snowflake documents SAML 2.0 federated authentication for account users; Cortex Agents execute under the querying user's Snowflake role.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Snowflake Docs – Cortex Agents access control and authentication",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+              "note": "Cortex Agents uses the querying user's Snowflake identity and default role for permissions.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Cortex Agent users can authenticate through Snowflake's SAML SSO controls."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "snowflake_account_access_to_cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Federated authentication and SSO",
+              "url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-overview",
+              "note": "Snowflake documents OIDC federated authentication with managed or custom identity providers.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Snowflake Docs – Cortex Agents access control and authentication",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+              "note": "Cortex Agents permissions are resolved from the authenticated Snowflake user and default role.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Cortex Agent users can authenticate through Snowflake's OIDC federation controls."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "snowflake_account_users_and_roles_for_cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – SCIM support",
+              "url": "https://docs.snowflake.com/en/user-guide/scim-intro",
+              "note": "Snowflake supports SCIM 2.0 provisioning of users and groups/roles from identity providers.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Snowflake Docs – Cortex Agents access control and authentication",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+              "note": "Cortex Agents access is granted through Snowflake roles and user identities.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Users and roles that govern Cortex Agent access can be provisioned through Snowflake SCIM."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "cortex_agents_account_data_and_inference_controls",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Cross-region inference",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference",
+              "note": "Snowflake states customer data remains stored only in the account region and cross-region inference can be disabled for strict residency.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Cortex AI supports an account-home-region residency posture by disabling cross-region inference."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "snowflake_account_hosting_cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Supported cloud regions",
+              "url": "https://docs.snowflake.com/en/user-guide/intro-regions",
+              "note": "Snowflake states organizations can choose the region where an account is located and data is geographically stored.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Snowflake Docs – Cross-region inference",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference",
+              "note": "Snowflake documents controls to keep Cortex inference in the account home region when required.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Organizations choose the Snowflake account region that hosts Cortex Agents and can restrict inference to the home region."
         }
       ]
     }
