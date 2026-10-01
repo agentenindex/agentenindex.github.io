@@ -278,6 +278,91 @@
       ]
     },
     {
+      "agent_id": "AI-0008",
+      "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "github_enterprise_agentic_activity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – Audit log events for agents",
+              "url": "https://docs.github.com/en/copilot/reference/enterprise-administrators/agentic-audit-log-events",
+              "note": "GitHub documents enterprise audit-log events for agentic activity, including the initiating user and agent session ID.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Enterprise agentic activity is represented in GitHub audit logs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 180,
+          "scope": "github_enterprise_agentic_activity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – Audit log events for agents",
+              "url": "https://docs.github.com/en/copilot/reference/enterprise-administrators/agentic-audit-log-events",
+              "note": "GitHub states enterprise owners can view agentic activity over the last 180 days.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "The documented enterprise agentic audit-log view covers 180 days."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "eligible_enterprises_public_preview",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – Monitoring agentic activity in your enterprise",
+              "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/monitor-agentic-activity",
+              "note": "GitHub documents streaming agentic audit-log activity to an external destination; the feature is in public preview for specified enterprise configurations.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Eligible enterprises can stream agentic audit events to an external destination."
+        },
+        {
+          "path": "governance.observability",
+          "value": true,
+          "scope": "github_enterprise_agent_monitoring",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – Monitoring agentic activity in your enterprise",
+              "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/monitor-agentic-activity",
+              "note": "GitHub documents enterprise views for recent agent sessions, audit-log tracking, and OpenTelemetry monitoring.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "GitHub Enterprise provides centralized agent-session and telemetry monitoring."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "github_enterprise_cloud_with_data_residency",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – GitHub Copilot with data residency",
+              "url": "https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/github-copilot-with-data-residency",
+              "note": "GitHub documents regional routing and storage for Copilot when enterprise data residency is enforced.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Copilot supports regional processing/storage under GitHub Enterprise Cloud data-residency configurations."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0018",
       "claims": [
         {
@@ -640,6 +725,91 @@
       ]
     },
     {
+      "agent_id": "AI-0026",
+      "claims": [
+        {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "watsonx_orchestrate_control_plane",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM watsonx Orchestrate – AI agent development and deployment",
+              "url": "https://www.ibm.com/products/watsonx-orchestrate/developers",
+              "note": "IBM states that native, imported LangGraph, and external A2A agents can be governed in the same control plane.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "watsonx Orchestrate explicitly supports external A2A agents in its governed agent portfolio."
+        },
+        {
+          "path": "deployment.low_code",
+          "value": true,
+          "scope": "watsonx_orchestrate",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM watsonx Orchestrate – AI agent development and deployment",
+              "url": "https://www.ibm.com/products/watsonx-orchestrate/developers",
+              "note": "IBM documents both low-code and pro-code agent creation paths.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "Low-code agent creation is documented alongside the Agent Development Kit."
+        },
+        {
+          "path": "governance.human_approval",
+          "value": true,
+          "scope": "agentic_workflows",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM watsonx Orchestrate – AI agent development and deployment",
+              "url": "https://www.ibm.com/products/watsonx-orchestrate/developers",
+              "note": "IBM documents human-in-the-loop workflow approvals that pause, capture context, and resume with audit-ready traceability.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "Human approval steps are a documented workflow capability."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "watsonx_orchestrate",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM watsonx Orchestrate – AI agent development and deployment",
+              "url": "https://www.ibm.com/products/watsonx-orchestrate/developers",
+              "note": "IBM lists role-based access among the platform controls for securely scaling agents.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "Role-based access is documented for the platform."
+        },
+        {
+          "path": "governance.tracing",
+          "value": true,
+          "scope": "watsonx_orchestrate",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM watsonx Orchestrate – AI agent development and deployment",
+              "url": "https://www.ibm.com/products/watsonx-orchestrate/developers",
+              "note": "IBM documents real-time monitoring with OpenTelemetry traces and audit-ready dashboards.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "OpenTelemetry traces are documented for agent observability."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0027",
       "claims": [
         {
@@ -865,6 +1035,123 @@
             }
           ],
           "note": "OAuth 2.0 bearer-token authentication is documented for external agent invocation."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0028",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "uipath_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Docs – MCP Servers",
+              "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/mcp-servers",
+              "note": "UiPath documents adding UiPath-hosted and external MCP servers as tools in Agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "UiPath Agents can consume MCP servers as tools."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "uipath_agents_and_mcp_integrations",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Docs – MCP servers compliance",
+              "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/mcp-servers-compliance",
+              "note": "UiPath explicitly directs administrators to use Orchestrator RBAC and least-privilege roles for agent/MCP integrations.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "RBAC is documented for controlling agent integration access."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "uipath_agent_activity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Docs – MCP servers compliance",
+              "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/mcp-servers-compliance",
+              "note": "UiPath states that agent activities, including tool usage and data passed to tools, are logged within the platform.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Agent activities have documented platform logging and audit support."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "automation_cloud_audit",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Automation Cloud – Audit Logs API",
+              "url": "https://docs.uipath.com/automation-cloud/automation-cloud/latest/api-guide/audit-logs",
+              "note": "UiPath provides organization- and tenant-level APIs to list and download audit events.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "Automation Cloud exposes audit logs through documented APIs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 60,
+          "scope": "ai_trust_layer_agent_operations",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Automation Cloud – Viewing AI Trust Layer audit logs",
+              "url": "https://docs.uipath.com/automation-cloud/automation-cloud/latest/admin-guide/viewing-audit-logs",
+              "note": "UiPath states AI Trust Layer audit entries are viewable for the last 60 days and include Agents inputs and outputs.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "The documented AI Trust Layer log window for agent operations is 60 days."
+        },
+        {
+          "path": "governance.tracing",
+          "value": true,
+          "scope": "uipath_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Docs – Agent traces",
+              "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/agent-traces",
+              "note": "UiPath documents complete agent-run traces covering steps, decisions, inputs/outputs, errors, and metadata.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Agent traces provide detailed run-level observability and auditability."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "agent_traces_opt_in",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "UiPath Docs – Agent traces",
+              "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/agent-traces",
+              "note": "UiPath documents optional Customer-Managed Key encryption for Agent trace data.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "CMK encryption is available for Agent trace data as an opt-in feature."
         }
       ]
     },
@@ -1201,6 +1488,59 @@
             }
           ],
           "note": "Joule Studio documents audit logging for product-specific events."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0031",
+      "claims": [
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "rovo_in_scope_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian Support – Understand data residency",
+              "url": "https://support.atlassian.com/security-and-access-policies/docs/understand-data-residency/",
+              "note": "Atlassian documents data-residency controls for Rovo and pinning of in-scope Rovo data.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Rovo supports data residency for in-scope data."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "rovo_in_scope_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian – Rovo security, privacy, and data use",
+              "url": "https://www.atlassian.com/software/rovo/guides/admin-guide/rovo-data-usage-privacy",
+              "note": "Atlassian states customers can pin Rovo data to the same selected region as Jira or Confluence data.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Organizations can select the supported Rovo data region through Atlassian data-residency controls."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "rovo_admin_and_user_actions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian – Rovo security, privacy, and data use",
+              "url": "https://www.atlassian.com/software/rovo/guides/admin-guide/rovo-data-usage-privacy",
+              "note": "Atlassian documents Rovo admin and user actions in the organization audit log, with availability depending on Atlassian Guard plan.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Rovo actions are recorded in the Atlassian audit log with plan-dependent access."
         }
       ]
     },
@@ -1766,6 +2106,75 @@
             }
           ],
           "note": "Dust documents a developer-facing RESTful API; the former api.public/api.type split is consolidated into api.rest."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0077",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "adk_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google MCP Security – Remote MCP Server with ADK",
+              "url": "https://google.github.io/mcp-security/remote_server.html",
+              "note": "Google documents configuring an ADK agent with McpToolset and a remote MCP server over Streamable HTTP.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ADK agents can consume MCP servers through the documented MCP toolset."
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "adk_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Agents CLI – Agent Starter Pack migration reference",
+              "url": "https://google.github.io/agents-cli/reference/from-agent-starter-pack/",
+              "note": "Google states that A2A is built into every ADK agent template in Agents CLI.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "A2A is a documented first-party interoperability mode for ADK agents."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "adk_agent_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Agents CLI – Deployment",
+              "url": "https://google.github.io/agents-cli/guide/deployment/",
+              "note": "Google documents Agent Runtime as a fully managed deployment target for ADK agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ADK agents can be deployed to Google Agent Runtime as a fully managed runtime."
+        },
+        {
+          "path": "governance.tracing",
+          "value": true,
+          "scope": "adk_on_agent_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Trace an agent",
+              "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/manage/tracing",
+              "note": "Google documents enabling OpenTelemetry traces and logs for AdkApp deployments on Agent Runtime.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ADK deployments on Agent Runtime support OpenTelemetry-based tracing."
         }
       ]
     },
@@ -2800,6 +3209,224 @@
             }
           ],
           "note": "OpenAI-compatible serving endpoints are documented."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0091",
+      "claims": [
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "agent_system_of_record",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – Set Up Agent System of Record",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/set-up-agent-system-of-record.html",
+              "note": "Workday documents domain security policies, security groups, and View/Modify permissions for ASOR administration.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ASOR administration is governed by Workday security groups and domain permissions."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "agent_system_of_record",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – About Workday Agents",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/setup-considerations--agent-system-of-record.html?toc=0",
+              "note": "Workday describes ASOR as a control center for governance, security and auditing and recommends reviewing the audit log for agent actions.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Agent actions and security activity have documented audit-trail support in ASOR."
+        },
+        {
+          "path": "identity.agent_identity",
+          "value": true,
+          "scope": "workday_agent_security",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – Agent Security",
+              "url": "https://stage.doc.workday.com/admin-guide/en-us/workday-ai/agents/agent-system-of-record/agent-security-and-compliance/concept--agent-security.html",
+              "note": "Workday documents unique agent identities through Agent System User (ASU) accounts.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Workday Agent Security assigns agents distinct managed identities."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "agent_tool_access_and_external_agent_definition",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – Agent Security setup considerations",
+              "url": "https://stage.doc.workday.com/admin-guide/en-us/workday-ai/agents/agent-system-of-record/agent-security-and-compliance/setup-considerations--agent-security.html",
+              "note": "Workday states agent access to Workday data is carried out through REST API endpoints secured by domain or business-process policies.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "Workday agents use secured REST API endpoints for data/tool access."
+        },
+        {
+          "path": "api.auth.oauth",
+          "value": true,
+          "scope": "agent_authentication",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – Agent Security setup considerations",
+              "url": "https://stage.doc.workday.com/admin-guide/en-us/workday-ai/agents/agent-system-of-record/agent-security-and-compliance/setup-considerations--agent-security.html",
+              "note": "Workday documents OAuth 2.0 token exchange for agent authentication in delegate mode.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "OAuth 2.0 is documented in the Workday agent authentication flow."
+        },
+        {
+          "path": "governance.observability",
+          "value": true,
+          "scope": "agent_system_of_record",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday Admin Guide – About Workday Agents",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/setup-considerations--agent-system-of-record.html?toc=0",
+              "note": "Workday documents monitoring, agent analytics, usage and performance reporting in ASOR.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ASOR exposes agent monitoring and analytics."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0105",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Use app-created Cortex Agents and MCP servers",
+              "url": "https://docs.snowflake.com/en/developer-guide/native-apps/ui-consumer-agents-mcp",
+              "note": "Snowflake documents connecting multiple MCP servers to a Cortex Agent and monitoring resulting tool activity.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Cortex Agents can consume MCP servers as agent tools."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "cortex_agents_agent_run",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Cortex Agents access control and authentication",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+              "note": "Snowflake documents the Cortex Agents agent:run API and the roles/privileges required to call it.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "Cortex Agents expose a documented agent:run API."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Cortex Agents access control and authentication",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+              "note": "Snowflake explicitly states access to Cortex Agents is governed by Snowflake role-based access control.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Cortex Agent access uses Snowflake RBAC."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Cortex Agents access control and authentication",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-setup",
+              "note": "Snowflake documents granting the CORTEX_AGENT_USER database role to a custom role for selected users.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Custom Snowflake roles can be used to scope Cortex Agent access."
+        },
+        {
+          "path": "governance.observability",
+          "value": true,
+          "scope": "cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Monitor Cortex Agent requests",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-monitor",
+              "note": "Snowflake documents live conversation history, execution traces, planning, tool calls, responses, and feedback for Cortex Agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Cortex Agent observability includes production conversations and execution telemetry."
+        },
+        {
+          "path": "governance.tracing",
+          "value": true,
+          "scope": "cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Monitor Cortex Agent requests",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-monitor",
+              "note": "Snowflake stores OpenTelemetry-style traces and spans for Cortex Agent turns in AI_OBSERVABILITY_EVENTS.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Cortex Agent runs produce OpenTelemetry-style trace data."
+        },
+        {
+          "path": "governance.monitoring_access_control",
+          "value": true,
+          "scope": "cortex_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Monitor Cortex Agent requests",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-monitor",
+              "note": "Viewing Cortex Agent logs requires OWNERSHIP or MONITOR on the AGENT plus the CORTEX_USER database role.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Monitoring access is explicitly privilege-gated."
         }
       ]
     }
