@@ -4223,6 +4223,23 @@
           "note": "Gemini CLI acts as an A2A client when delegating to remote subagents."
         },
         {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "gemini_cli_remote_subagents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gemini CLI Docs – Remote Subagents",
+              "url": "https://geminicli.com/docs/core/remote-agents/",
+              "note": "Google explicitly states Gemini CLI supports connecting to remote subagents using the Agent-to-Agent (A2A) protocol.",
+              "evidence_type": "technical_docs",
+              "source_section": "Remote Subagents"
+            }
+          ],
+          "note": "A2A is an explicitly supported interoperability protocol in Gemini CLI."
+        },
+        {
           "path": "protocols.mcp.client",
           "value": true,
           "scope": "gemini_cli",
