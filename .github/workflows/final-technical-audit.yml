@@ -150,10 +150,6 @@ jobs:
           set -e
           urls=(
             "https://agentenindex.de/"
-            "https://agentenindex.de/agenten/"
-            "https://agentenindex.de/agenten/claude-code/"
-            "https://agentenindex.de/wissen/was-ist-ein-ki-agent/"
-            "https://agentenindex.de/unternehmen/"
           )
           mkdir -p /tmp/lh
           n=0
@@ -190,6 +186,16 @@ jobs:
                           'display': audit.get('displayValue'),
                       })
               row['accessibility_failures']=fails
+              cc=d['audits'].get('color-contrast',{})
+              items=cc.get('details',{}).get('items',[])
+              row['color_contrast_nodes']=[
+                  {
+                      'selector': item.get('node',{}).get('selector'),
+                      'snippet': item.get('node',{}).get('snippet'),
+                      'explanation': item.get('node',{}).get('explanation'),
+                  }
+                  for item in items[:20]
+              ]
               scores.append(row)
           print('=== LIGHTHOUSE RESULTS ===')
           for x in scores: print(json.dumps(x,ensure_ascii=False))
