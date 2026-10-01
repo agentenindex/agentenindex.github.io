@@ -4572,6 +4572,28 @@
             }
           ],
           "note": "Boomi documents in-transit encryption for all Boomi AI data, including Agentstudio."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "boomi_enterprise_platform_users_accessing_agentstudio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Documentation – Single sign-on with SAML authentication",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/c-atm-Single_sign-on_with_SAML_authentication_71c031d5-5912-4255-bb8e-61a129afabc1",
+              "note": "Boomi documents SAML 2.0 single sign-on for the Boomi Enterprise Platform.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Boomi Documentation – Accessing Agentstudio and setting up permissions",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/Accessing_agentstudio",
+              "note": "Boomi documents Agentstudio as an application accessed through the Boomi Enterprise Platform and governed by Platform user management.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Agentstudio users access the Boomi Enterprise Platform, which supports SAML 2.0 SSO where the Advanced User Security feature is enabled."
         }
       ]
     },
@@ -4705,6 +4727,38 @@
             }
           ],
           "note": "OpenAI-compatible serving endpoints are documented."
+        },
+        {
+          "path": "protocols.a2a.client",
+          "value": true,
+          "scope": "microsoft_agent_framework_remote_a2a_agent_service",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – A2A agent service",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/agents/providers/agent-to-agent",
+              "note": "Microsoft documents A2AAgent as a client wrapper that connects Agent Framework applications to remote A2A-compliant agent endpoints.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Microsoft Agent Framework can invoke remote agents through the A2A protocol."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "microsoft_agent_framework_a2a_hosting",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – A2A Hosting",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/agent-to-agent",
+              "note": "Microsoft documents hosting packages that expose Agent Framework agents through the A2A protocol for discovery and communication by A2A clients.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Microsoft Agent Framework agents can be exposed as A2A servers."
         }
       ]
     },
