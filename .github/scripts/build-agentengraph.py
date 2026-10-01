@@ -543,9 +543,11 @@ def main():
 
     target_documented_fields = max(1, math.ceil(len(completeness_fields) * 0.40)) if completeness_fields else 0
     field_priority = []
+    field_documented_counts = {}
     for path in completeness_fields:
         documented_agents = sum(1 for report in completeness_agents.values() if (report.get("states") or {}).get(path) != "unknown")
         unknown_agents = len(completeness_agents) - documented_agents
+        field_documented_counts[path] = documented_agents
         field_priority.append({
             "path": path,
             "documented_agents": documented_agents,
@@ -554,9 +556,61 @@ def main():
         })
     field_priority.sort(key=lambda item: (item["documented_agents"], item["path"]))
 
-    research_agents = []
     deep_agent_ids = set(deep_by_agent)
     entity_by_id = {entity["agent_id"]: entity for entity in agent_entities}
+
+    # Research hints are derived only from already-registered profile sources and
+    # explicit field-level evidence. They are discovery aids, never evidence by themselves.
+    source_hints_by_agent = defaultdict(list)
+    seen_source_hints = defaultdict(set)
+
+    def add_research_source_hint(aid: str, title: str | None, url: str | None, origin: str, evidence_type: str | None = None) -> None:
+        if not aid or not title or not url:
+            return
+        key = (title.strip(), url.strip(), origin, evidence_type or "")
+        if key in seen_source_hints[aid]:
+            return
+        seen_source_hints[aid].add(key)
+        item = {
+            "title": title.strip(),
+            "url": url.strip(),
+            "origin": origin,
+        }
+        if evidence_type:
+            item["evidence_type"] = evidence_type
+        source_hints_by_agent[aid].append(item)
+
+    for a in agents:
+        aid = a["profile_id"]
+        for title, url in a.get("sources", []):
+            add_research_source_hint(aid, title, url, "profile_source")
+
+    for aid, claims in deep_by_agent.items():
+        for claim in claims:
+            for ev in claim.get("evidence", []):
+                add_research_source_hint(
+                    aid,
+                    ev.get("title"),
+                    ev.get("url"),
+                    "field_level_evidence",
+                    ev.get("evidence_type"),
+                )
+
+    for aid in source_hints_by_agent:
+        source_hints_by_agent[aid].sort(
+            key=lambda item: (
+                0 if item.get("origin") == "field_level_evidence" else 1,
+                item.get("title", ""),
+                item.get("url", ""),
+            )
+        )
+
+    research_agents = []
+    tier_base_score = {
+        "P0_raise_existing_to_40pct": 80.0,
+        "P1_start_zero_coverage": 60.0,
+        "P2_maintain_or_deepen": 20.0,
+    }
     for aid in sorted(known_agent_ids):
         report = completeness_agents[aid]
         documented = report["documented_fields"]
@@ -566,24 +620,60 @@ def main():
             tier = "P1_start_zero_coverage"
         else:
             tier = "P2_maintain_or_deepen"
+
         unknown_paths = [path for path, state in report["states"].items() if state == "unknown"]
-        scarcity = {item["path"]: item["documented_agents"] for item in field_priority}
-        unknown_paths.sort(key=lambda path: (scarcity.get(path, 9999), path))
+        unknown_paths.sort(key=lambda path: (field_documented_counts.get(path, 9999), path))
+        recommended_paths = unknown_paths[:8]
+
         entity = entity_by_id.get(aid, {})
+        provider = entity.get("provider") or ""
+        name = entity.get("name") or aid
+        source_hints = source_hints_by_agent.get(aid, [])[:8]
+        fields_needed = max(0, target_documented_fields - documented)
+
+        gap_component = round((fields_needed / max(1, target_documented_fields)) * 10.0, 2)
+        unknown_component = round((report["unknown_fields"] / max(1, len(completeness_fields))) * 5.0, 2)
+        source_readiness_component = float(min(5, len(source_hints)))
+        priority_score = round(min(
+            100.0,
+            tier_base_score[tier] + gap_component + unknown_component + source_readiness_component,
+        ), 2)
+
+        research_hints = []
+        for path in recommended_paths:
+            documented_agents = field_documented_counts.get(path, 0)
+            research_hints.append({
+                "path": path,
+                "documented_agents": documented_agents,
+                "global_coverage_pct": round((documented_agents / len(completeness_agents) * 100), 2) if completeness_agents else 0.0,
+                "suggested_query": f"{provider} {name} official documentation {path.replace('.', ' ')}".strip(),
+            })
+
         research_agents.append({
             "agent_id": aid,
             "name": entity.get("name"),
             "provider_id": entity.get("provider_id"),
             "priority": tier,
+            "priority_score": priority_score,
+            "score_components": {
+                "tier_base": tier_base_score[tier],
+                "gap_to_40pct": gap_component,
+                "unknown_share": unknown_component,
+                "source_readiness": source_readiness_component,
+            },
             "documented_fields": documented,
             "unknown_fields": report["unknown_fields"],
             "coverage_pct": report["coverage_pct"],
-            "fields_needed_for_40pct": max(0, target_documented_fields - documented),
-            "recommended_unknown_paths": unknown_paths[:8],
+            "fields_needed_for_40pct": fields_needed,
+            "recommended_unknown_paths": recommended_paths,
+            "available_primary_sources": source_hints,
+            "research_hints": research_hints,
         })
+
     priority_order = {"P0_raise_existing_to_40pct": 0, "P1_start_zero_coverage": 1, "P2_maintain_or_deepen": 2}
     research_agents.sort(key=lambda item: (
         priority_order.get(item["priority"], 9),
+        -item["priority_score"],
         item["documented_fields"],
         item["agent_id"],
     ))
@@ -595,6 +685,15 @@ def main():
             "minimum_core_coverage_pct": 40,
             "minimum_documented_fields": target_documented_fields,
             "core_fields": len(completeness_fields),
+        },
+        "score_method": {
+            "range": "0-100",
+            "higher_is_more_urgent": True,
+            "tier_base": tier_base_score,
+            "gap_to_40pct_max": 10,
+            "unknown_share_max": 5,
+            "source_readiness_max": 5,
+            "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified.",
         },
         "summary": {
             "agents_below_target_with_deep_evidence": sum(1 for item in research_agents if item["priority"] == "P0_raise_existing_to_40pct"),
