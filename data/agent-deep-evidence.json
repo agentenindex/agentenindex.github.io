@@ -172,9 +172,9 @@
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
-              "url": "https://help.openai.com/en/articles/9261474-openai-compliance-platform-for-enterprise-and-edu-customers",
-              "note": "OpenAI states that Codex policy/configuration changes are recorded in workspace audit logs and that the Compliance Logs Platform retains data for 30 days."
+              "title": "OpenAI – ChatGPT Work admin FAQ",
+              "url": "https://learn.chatgpt.com/docs/enterprise/work-admin-faq",
+              "note": "OpenAI documents a 30-day availability window for records in the Compliance Logs Platform and discusses Codex activity within the same enterprise governance context."
             }
           ],
           "note": "The documented Compliance Logs Platform retention window is 30 days."
@@ -187,9 +187,9 @@
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "OpenAI Help – Compliance Platform for Enterprise and Edu",
-              "url": "https://help.openai.com/en/articles/9261474-openai-compliance-platform-for-enterprise-and-edu-customers",
-              "note": "OpenAI documents connecting Compliance Platform logs and metadata to SIEM tools and retrieving Codex workspace audit logs through the Compliance API."
+              "title": "OpenAI – Compliance API",
+              "url": "https://learn.chatgpt.com/docs/enterprise/compliance-api",
+              "note": "OpenAI documents exporting auditable records through the Compliance API and ingesting or streaming them into SIEM and data-lake systems."
             }
           ],
           "note": "Codex workspace audit data can be exported into SIEM/data-lake workflows through the compliance interfaces."
@@ -822,42 +822,27 @@
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "Salesforce Developers – Agentforce APIs and SDKs",
-              "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/get-started-agents.html",
-              "note": "Salesforce lists the Agentforce Python SDK for programmatic agent creation and management."
+              "title": "Salesforce GitHub – Agentforce SDK",
+              "url": "https://github.com/salesforce/agent-sdk",
+              "note": "Salesforce's official Agentforce SDK repository documents the Python SDK for creating, managing, testing, and deploying agents."
             }
           ],
-          "note": "A first-party Agentforce Python SDK is documented."
+          "note": "A first-party Agentforce Python SDK is documented in Salesforce's official repository."
         },
         {
-          "path": "governance.logs.otel_export",
+          "path": "governance.tracing",
           "value": true,
-          "scope": "session_trace_beta",
+          "scope": "agent_platform_tracing",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "Salesforce Developers – Export Agentforce Session Tracing Data",
-              "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/otel-api.html",
-              "note": "The beta Session Trace OTel API exports unified trace, metric, and log data in OpenTelemetry/OTLP format for ingestion by observability tools."
+              "title": "Salesforce GitHub – Agent Platform Tracing",
+              "url": "https://github.com/salesforce/sf-pi/blob/main/extensions/sf-data360/references/agent-platform-tracing.md",
+              "note": "Salesforce's official repository documents Agent Platform Tracing as backend execution traces represented as OpenTelemetry-style spans in Data Cloud."
             }
           ],
-          "note": "Session tracing can be exported in OTLP-compatible form through the beta API."
-        },
-        {
-          "path": "governance.logs.query_window_hours",
-          "value": 72,
-          "scope": "session_trace_beta",
-          "confidence": "high",
-          "verified_at": "2026-10-01",
-          "evidence": [
-            {
-              "title": "Salesforce Developers – Export Agentforce Session Tracing Data",
-              "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/otel-api.html",
-              "note": "Salesforce states that the beta OTel API returns data only for sessions that started within the previous 72 hours."
-            }
-          ],
-          "note": "The documented beta OTel API query window is 72 hours."
+          "note": "Agentforce execution tracing is documented through Agent Platform Tracing."
         }
       ]
     },
