@@ -1222,3 +1222,33 @@ p{color:inherit}
   .brand-showcase{grid-template-columns:1fr}
   .brand-showcase-logo{max-width:390px;margin:0 auto}
 }
+
+
+/* AgentenIndex v8.1.1 visual fixes */
+.brand-full-logo{
+  width:200px;
+  height:auto;
+  max-height:42px;
+  object-fit:contain;
+  object-position:left center;
+  overflow:visible;
+}
+.footer .brand-full-logo{
+  width:215px;
+  max-height:44px;
+}
+.v73home-copy h1{
+  line-height:.98;
+  padding-bottom:.08em;
+  overflow:visible;
+}
+.v73home-copy h1 span{
+  display:block;
+  padding-bottom:.08em;
+  overflow:visible;
+}
+@media(max-width:700px){
+  .brand-full-logo{width:172px;max-height:38px}
+  .footer .brand-full-logo{width:188px;max-height:40px}
+  .v73home-copy h1{line-height:1}
+}
