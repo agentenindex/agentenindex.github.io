@@ -1726,6 +1726,125 @@
       "agent_id": "AI-0010",
       "claims": [
         {
+          "path": "api.rest",
+          "value": true,
+          "scope": "windsurf_enterprise_analytics",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Windsurf Docs – Analytics API",
+              "url": "https://docs.windsurf.com/de/windsurf/accounts/api-reference/introduction",
+              "note": "Windsurf documents authenticated HTTP API endpoints for Enterprise analytics and usage data that include Cascade activity.",
+              "evidence_type": "api_docs",
+              "source_section": "API Reference / Introduction"
+            }
+          ],
+          "note": "Windsurf Enterprise exposes REST-style analytics API endpoints covering Cascade usage."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "windsurf_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Windsurf – Enterprise comparison",
+              "url": "https://windsurf.com/switch/cursor",
+              "note": "Windsurf explicitly lists RBAC as an Enterprise governance control.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise security"
+            }
+          ],
+          "note": "Windsurf Enterprise provides RBAC."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "windsurf_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Windsurf – Enterprise comparison",
+              "url": "https://windsurf.com/switch/cursor",
+              "note": "Windsurf explicitly lists SCIM/SSO as Enterprise identity controls.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise security"
+            }
+          ],
+          "note": "Windsurf Enterprise supports SCIM."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "windsurf_enterprise_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Windsurf – Enterprise comparison",
+              "url": "https://windsurf.com/switch/cursor",
+              "note": "Windsurf documents Cloud deployment as an Enterprise deployment choice for Windsurf/Cascade.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise & Deployment"
+            }
+          ],
+          "note": "Windsurf Cascade is available through a managed cloud deployment."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "windsurf_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Windsurf – Enterprise comparison",
+              "url": "https://windsurf.com/switch/cursor",
+              "note": "Windsurf explicitly lists Hybrid and Self-hosted Enterprise deployment choices.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise & Deployment"
+            }
+          ],
+          "note": "Windsurf Enterprise supports self-hosted deployment."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "windsurf_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Windsurf – Enterprise comparison",
+              "url": "https://windsurf.com/switch/cursor",
+              "note": "Windsurf explicitly lists an EU cluster / EU residency option for Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise & Deployment"
+            }
+          ],
+          "note": "Windsurf Enterprise provides an EU residency option."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "windsurf_enterprise_deployment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Windsurf – Enterprise comparison",
+              "url": "https://windsurf.com/switch/cursor",
+              "note": "Windsurf presents EU cluster/residency as an Enterprise deployment choice alongside Cloud, Hybrid, and Self-hosted options.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise & Deployment"
+            }
+          ],
+          "note": "Enterprise customers can choose the documented EU cluster deployment option."
+        },
+        {
           "path": "protocols.mcp.client",
           "value": true,
           "scope": "windsurf_cascade",
@@ -1741,6 +1860,40 @@
             }
           ],
           "note": "Cascade can consume capabilities exposed through configured MCP servers."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "windsurf_customer_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Windsurf – Master Subscription Agreement",
+              "url": "https://windsurf.com/MSA",
+              "note": "Windsurf states Customer Data is encrypted during transit as part of its security safeguards.",
+              "evidence_type": "security_trust",
+              "source_section": "Security / Customer Data"
+            }
+          ],
+          "note": "Windsurf documents encryption of customer data in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "windsurf_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Windsurf – Enterprise comparison",
+              "url": "https://windsurf.com/switch/cursor",
+              "note": "Windsurf explicitly lists SOC 2 Type II among Enterprise compliance controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise security and compliance"
+            }
+          ],
+          "note": "Windsurf documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -1923,6 +2076,74 @@
       "agent_id": "AI-0012",
       "claims": [
         {
+          "path": "api.rest",
+          "value": true,
+          "scope": "devin_api_v3",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Docs – API Authentication",
+              "url": "https://docs.devin.ai/es/api-reference/authentication",
+              "note": "Devin documents authenticated HTTPS API endpoints such as POST /v3/organizations/{org_id}/sessions for creating sessions.",
+              "evidence_type": "api_docs",
+              "source_section": "API endpoint examples"
+            }
+          ],
+          "note": "Devin exposes a documented HTTPS REST-style API."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "devin_enterprise_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Docs – API Authentication",
+              "url": "https://docs.devin.ai/es/api-reference/authentication",
+              "note": "Devin documents Enterprise service-user access to /v3/enterprise/* and organization endpoints including audit-log resources.",
+              "evidence_type": "api_docs",
+              "source_section": "Enterprise service users"
+            }
+          ],
+          "note": "Devin Enterprise exposes audit-related resources through its API."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "devin_enterprise_and_government",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Government",
+              "url": "https://devin.ai/government",
+              "note": "Cognition documents audit trails that distinguish human actions from AI actions.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and auditability"
+            }
+          ],
+          "note": "Devin provides audit trails for human and AI activity."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "devin_enterprise_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Docs – API Authentication",
+              "url": "https://docs.devin.ai/es/api-reference/authentication",
+              "note": "Devin documents service-user roles that determine which API endpoints and organization resources the identity can access.",
+              "evidence_type": "api_docs",
+              "source_section": "Service user roles"
+            }
+          ],
+          "note": "Devin Enterprise uses role-based permissions for API/service identities."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "devin_cloud",
@@ -1938,6 +2159,108 @@
             }
           ],
           "note": "Devin is available as Cognition's managed Devin Cloud service."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "devin_vpc",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Docs – VPC Overview",
+              "url": "https://docs.devin.ai/de/enterprise/vpc/overview",
+              "note": "Cognition documents Devin DevBoxes running inside the customer's VPC so repository and service access can stay within customer-controlled networking.",
+              "evidence_type": "technical_docs",
+              "source_section": "In-VPC DevBox architecture"
+            }
+          ],
+          "note": "Devin Enterprise supports customer-VPC execution."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "devin_government_onprem_airgapped",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Government",
+              "url": "https://devin.ai/government",
+              "note": "Cognition documents Devin deployment in customer environments including GovCloud, on-premises, and air-gapped operation.",
+              "evidence_type": "official_product_page",
+              "source_section": "On-Prem & Air-Gapped"
+            }
+          ],
+          "note": "Devin supports on-premises and air-gapped deployment in its government/regulated offering."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "devin_sessions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Docs – Automation Templates",
+              "url": "https://docs.devin.ai/automation-templates/",
+              "note": "Devin documents automation templates that connect Devin to external systems through MCP servers, including Notion, Atlassian, CircleCI, and Stripe.",
+              "evidence_type": "technical_docs",
+              "source_section": "MCP integrations"
+            }
+          ],
+          "note": "Devin sessions can use tools exposed through MCP servers."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "devin_enterprise_vpc",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Docs – VPC Overview",
+              "url": "https://docs.devin.ai/de/enterprise/vpc/overview",
+              "note": "Cognition documents AES-256 encryption for Devin enterprise/VPC data at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption"
+            }
+          ],
+          "note": "Devin documents AES-256 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.3+",
+          "scope": "devin_enterprise_vpc",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Docs – VPC Overview",
+              "url": "https://docs.devin.ai/de/enterprise/vpc/overview",
+              "note": "Cognition documents TLS 1.3 or higher for data in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption"
+            }
+          ],
+          "note": "Devin documents TLS 1.3+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "devin_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Devin Government",
+              "url": "https://devin.ai/government",
+              "note": "Cognition lists SOC 2 Type II among Devin's security/compliance assurances.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and compliance"
+            }
+          ],
+          "note": "Devin documents SOC 2 Type II compliance."
         }
       ]
     },
