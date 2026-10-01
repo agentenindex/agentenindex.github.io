@@ -56537,6 +56537,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-B452066E0456EE32C2",
+      "agent_id": "AI-0073",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D4108B708F7228"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "opencode_local_agent",
+        "note": "OpenCode supports a local user-managed agent runtime.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D4108B708F7228",
+            "note": "OpenCode documents itself as an open-source coding agent installed locally and used in the terminal, IDE, or desktop, with support for local models.",
+            "evidence_type": "official_product_page",
+            "source_section": "What is OpenCode? / Install"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B648FC3DDEF0B4ED6E",
       "agent_id": "AI-0073",
       "path": "identity.name",
@@ -57113,6 +57148,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-B501A3961B2352B7FA",
+      "agent_id": "AI-0074",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7116A5CA057BD2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_agent",
+        "note": "CodeRabbit Agent is delivered as a managed CodeRabbit service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7116A5CA057BD2",
+            "note": "CodeRabbit documents its automated review and agent services as the CodeRabbit application integrated with GitHub and GitLab repositories and operated through app.coderabbit.ai.",
+            "evidence_type": "official_product_page",
+            "source_section": "Review every PR automatically / Get started"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-8EEA8E95F6AA6BD70E",
       "agent_id": "AI-0074",
       "path": "identity.name",
@@ -57687,6 +57757,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-1C2B37DB519A9C4F7C",
+      "agent_id": "AI-0075",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0A76112FC374BD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "genspark_super_agent",
+        "note": "Genspark Super Agent is delivered as a managed Genspark workspace service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0A76112FC374BD",
+            "note": "Genspark documents Super Agent as its autonomous assistant available in the Genspark workspace, using connected apps, files, accounts, and SecondBrain.",
+            "evidence_type": "technical_docs",
+            "source_section": "Super-Agent / Was ist der Genspark Super-Agent?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-89CFBF9941D2CA5541",
@@ -66098,6 +66203,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-21C1A0247B80D6A84A",
+      "agent_id": "AI-0083",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8C47B9A9710123"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_artemis_agent_platform",
+        "note": "Kore.ai Agent Platform Artemis is delivered as a managed cloud platform, initially on Microsoft Azure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8C47B9A9710123",
+            "note": "Kore.ai documents the Artemis generation of Kore.ai Agent Platform launching initially on Microsoft Azure as the enterprise foundation for building and operating agents.",
+            "evidence_type": "official_release",
+            "source_section": "Kore.ai Agent Platform Artemis edition"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-652580D016DBA6DA66",
       "agent_id": "AI-0083",
       "path": "identity.name",
@@ -67258,6 +67398,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-3C4D9AA04C50D1EFD4",
+      "agent_id": "AI-0085",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2C38FE0A1B06E5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "strands_agents_sdk",
+        "note": "Strands Agents is an open-source SDK intended to run in developer/customer-managed environments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2C38FE0A1B06E5",
+            "note": "AWS documents Strands Agents as an open-source SDK with a DIY deployment model for building autonomous agents across AWS and third-party components.",
+            "evidence_type": "technical_docs",
+            "source_section": "Strands Agents / Comparing agentic AI frameworks"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-B5AB2570EB3CEE8F1E",
@@ -69541,6 +69716,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-36EBACE6255BB3ACDB",
+      "agent_id": "AI-0088",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-61F8622F16D38D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "grok_bot",
+        "note": "Grok Bot is delivered as an xAI-managed persistent-agent service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-61F8622F16D38D",
+            "note": "xAI documents Grok Bot as a subscription service of always-on agents with their own computer, available to eligible SuperGrok and Cursor subscribers.",
+            "evidence_type": "official_release",
+            "source_section": "Introducing Grok Bot"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-AF97E59409DAC680CD",
       "agent_id": "AI-0088",
       "path": "identity.name",
@@ -70093,6 +70303,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-FCE88AAFC17E1F6FE4",
+      "agent_id": "AI-0089",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-54EBBFCB2F566A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_agent",
+        "note": "Box Agent is delivered as a managed capability inside Box.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-54EBBFCB2F566A",
+            "note": "Box documents Box Agent as a secure content-centric AI agent built directly into Box and accessed through the hosted Box AI Home experience.",
+            "evidence_type": "official_release",
+            "source_section": "What is Box Agent? / How do I get started"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-2479845C4000D348D1",
       "agent_id": "AI-0089",
       "path": "identity.name",
@@ -70643,6 +70888,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-0DC1666DF54A72194A",
+      "agent_id": "AI-0090",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-26305AD6DE013F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slackbot_ai_teammate",
+        "note": "Slackbot AI teammate is delivered as a managed Slack workspace capability.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-26305AD6DE013F",
+            "note": "Slack documents Slackbot and agents as capabilities deployed and managed on the Slack agent-first workspace.",
+            "evidence_type": "official_release",
+            "source_section": "Build, deploy, and manage agents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-16E141C76065E7A375",
@@ -73130,6 +73410,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-35897E0DA97984DCD9",
+      "agent_id": "AI-0093",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A6139BD9BCB334"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adobe_experience_platform_agent_orchestrator",
+        "note": "Adobe Agent Orchestrator is delivered inside the managed Adobe Experience Platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A6139BD9BCB334",
+            "note": "Adobe documents Agent Orchestrator as the agentic layer in Adobe Experience Platform, invoked through Experience Cloud conversational interfaces to orchestrate specialized agents.",
+            "evidence_type": "technical_docs",
+            "source_section": "Adobe Experience Platform Agent Orchestrator"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-6AA4F1A78A1098441F",
       "agent_id": "AI-0093",
       "path": "identity.name",
@@ -73392,6 +73707,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-7F2C1AC9310C2F0CC7",
+      "agent_id": "AI-0094",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2C403231ABF735"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_agent_studio_system_triggers",
+        "note": "Moveworks Agent Studio supports webhook-based system triggers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2C403231ABF735",
+            "note": "Moveworks lists System Triggers with Webhooks and scheduled triggers among Agent Studio building blocks.",
+            "evidence_type": "technical_docs",
+            "source_section": "Building Blocks Reference / Triggers"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-AFAA1BC4630BDC8955",
@@ -74844,6 +75194,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-B45255528A9F056247",
+      "agent_id": "AI-0096",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E2AB4BC34E6EF7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zoommate",
+        "note": "ZoomMate is delivered as a managed Zoom service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E2AB4BC34E6EF7",
+            "note": "Zoom documents ZoomMate as a generally available paid Zoom work surface integrating agentic search, execution, custom agents, and content creation.",
+            "evidence_type": "official_release",
+            "source_section": "Zoom launches ZoomMate / Availability"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B1A01A1C3A2C57E9F7",
       "agent_id": "AI-0096",
       "path": "identity.name",
@@ -75394,6 +75779,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-7C649434D25B286C2B",
+      "agent_id": "AI-0097",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-08D81CED1B13F2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash",
+        "note": "Dropbox Dash is delivered as a managed Dropbox workspace service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-08D81CED1B13F2",
+            "note": "Dropbox documents Dash as Dropbox's AI-powered universal search and knowledge workspace that acts as an AI teammate across team content and workflows.",
+            "evidence_type": "official_product_page",
+            "source_section": "Basic information"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-B3AED9CA33B3F1D803",
@@ -76558,6 +76978,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-F4739BA032EFA888F2",
+      "agent_id": "AI-0099",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E2E14FE94969E1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_agents",
+        "note": "NiCE Cognigy AI Agents are deployed and operated through the managed Cognigy.AI platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E2E14FE94969E1",
+            "note": "Cognigy documents deploying AI Agents through Cognigy.AI endpoints to Webchat, WhatsApp, Voice Gateway, Amazon, Twilio, and other channels.",
+            "evidence_type": "technical_docs",
+            "source_section": "Deploying your AI Agents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-2D91B6D955FC7FA765",
       "agent_id": "AI-0099",
       "path": "identity.name",
@@ -77108,6 +77563,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-B6089ABB1095156DC1",
+      "agent_id": "AI-0100",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D8D95B116036A2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "decagon_ai_concierge",
+        "note": "Decagon AI Concierge is delivered as a managed Decagon service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D8D95B116036A2",
+            "note": "Decagon documents AI Concierge as its enterprise customer-experience product spanning chat, voice, and email, offered through Decagon's product platform and integrations.",
+            "evidence_type": "official_product_page",
+            "source_section": "The AI concierge for every customer / Product"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-48C0035B890708FE8A",
@@ -79492,6 +79982,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-269A2A13C653B1C8F5",
+      "agent_id": "AI-0104",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FA277DEE419CA4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claygent_builder",
+        "note": "Claygent is delivered and centrally managed within Clay's hosted workspace.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FA277DEE419CA4",
+            "note": "Clay documents Claygent Builder as the centralized workspace hub for building, testing, deploying, versioning, and managing Clay AI agents across workflows.",
+            "evidence_type": "technical_docs",
+            "source_section": "Claygent Builder / Centralized management"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-CD8B658395E949603E",
       "agent_id": "AI-0104",
       "path": "identity.name",
@@ -81181,6 +81706,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-640E95AC0495BAE5B1",
+      "agent_id": "AI-0106",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1973745FC586F7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_fabric_data_agent_published",
+        "note": "Published Microsoft Fabric Data Agents can expose an MCP server endpoint.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1973745FC586F7",
+            "note": "Microsoft documents a published Fabric data agent acting as an MCP server with an MCP endpoint that exposes enterprise data and queries to MCP clients.",
+            "evidence_type": "official_github",
+            "source_section": "Data agent as Model Context Protocol server"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-102655F46DF23E51DE",
       "agent_id": "AI-0106",
       "path": "use_case",
@@ -82855,6 +83415,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-E40CEFD08FB53C4F3A",
+      "agent_id": "AI-0109",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B172502290090F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "luminance_agent_lumi",
+        "note": "Lumi is delivered as a managed capability within Luminance's enterprise legal platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B172502290090F",
+            "note": "Luminance documents Lumi as an integrated Legal-Grade AI capability within the Luminance Contract Intelligence platform for contract review, drafting, search, and enterprise legal workflows.",
+            "evidence_type": "official_product_page",
+            "source_section": "Luminance for Legal / With Luminance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-5B05EA89EC2183B467",
