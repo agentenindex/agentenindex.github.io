@@ -9,6 +9,8 @@ OUT=ROOT/"_agentengraph"
 DATA=json.loads((ROOT/"data"/"agents.json").read_text(encoding="utf-8"))
 DEEP_PATH=ROOT/"data"/"agent-deep-evidence.json"
 DEEP=json.loads(DEEP_PATH.read_text(encoding="utf-8")) if DEEP_PATH.exists() else {"schema_version":"1.0","agents":[]}
+TAXONOMY_PATH=ROOT/"data"/"agent-deep-taxonomy.json"
+TAXONOMY=json.loads(TAXONOMY_PATH.read_text(encoding="utf-8")) if TAXONOMY_PATH.exists() else {"paths":{},"deprecated_aliases":{}}
 
 def load(name):
     return json.loads((OUT/name).read_text(encoding="utf-8"))
@@ -28,6 +30,8 @@ entity_ids={a["agent_id"] for a in entities["agents"]}
 provider_names={a["provider"] for a in DATA["agents"]}
 source_ids={s["source_id"] for s in sources["sources"]}
 source_by_url={s["url"]:s for s in sources["sources"]}
+canonical_deep_paths=set((TAXONOMY.get("paths") or {}).keys())
+deprecated_deep_paths=set((TAXONOMY.get("deprecated_aliases") or {}).keys())
 
 if DATA["count"] != 110:
     errors.append(f"Expected 110 source agents, got {DATA['count']}")
@@ -57,6 +61,10 @@ for entry in DEEP.get("agents",[]):
         deep_claims.append((aid,claim))
         if not path:
             errors.append(f"{aid}: deep claim missing path")
+        elif path in deprecated_deep_paths:
+            errors.append(f"{aid} {path}: deprecated deep path")
+        elif canonical_deep_paths and path not in canonical_deep_paths:
+            errors.append(f"{aid} {path}: path missing from canonical deep taxonomy")
         if claim.get("confidence") not in {"high","medium","low"}:
             errors.append(f"{aid} {path}: invalid confidence {claim.get('confidence')}")
         if not claim.get("verified_at"):
