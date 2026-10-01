@@ -10383,6 +10383,39 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
+      "valid_to": "2026-10-01",
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7C74821A0F466C872B",
+      "agent_id": "AI-0018",
+      "path": "api.public_access",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9DC78DB62D363B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "platform",
+        "note": "A public API is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9DC78DB62D363B",
+            "note": "The security-audit documentation explicitly describes use through the public API."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
@@ -19424,6 +19457,39 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
+      "valid_to": "2026-10-01",
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D1DCB932D0F4707F93",
+      "agent_id": "AI-0030",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-26C2F2C679C22F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "joule_studio_and_code_editor",
+        "note": "A2A integration is demonstrated by SAP.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-26C2F2C679C22F",
+            "note": "SAP's official samples include Joule integration with a code-based agent through A2A."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
@@ -22495,7 +22561,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -35024,6 +35090,43 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
+      "valid_to": "2026-10-01",
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C4DC097D0972631A4F",
+      "agent_id": "AI-0057",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-76DEF67AC893C6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "business_and_enterprise",
+        "note": "Dust documents a developer-facing RESTful API; the former api.public/api.type split is consolidated into api.rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "Dust lists an Open API and a RESTful API for custom integrations."
+          },
+          {
+            "source_id": "SRC-76DEF67AC893C6",
+            "note": "The integration architecture explicitly lists a RESTful API."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
@@ -35057,7 +35160,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -48940,6 +49043,39 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
+      "valid_to": "2026-10-01",
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F736E6FA0B53207F46",
+      "agent_id": "AI-0079",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2F786AC98E2167"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentcore_runtime",
+        "note": "AgentCore Runtime supports direct HTTP/REST invocation.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2F786AC98E2167",
+            "note": "AWS lists HTTP REST endpoints as a supported AgentCore Runtime protocol surface."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
@@ -51787,6 +51923,39 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-A5AA303B55A1E59789",
+      "agent_id": "AI-0082",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A4AD6267DC83B2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentstudio",
+        "note": "Role-based access patterns are documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A4AD6267DC83B2",
+            "note": "Agentstudio documents Administrator, Developer, User and custom privilege-based roles."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-82C6D37A11CE96C5D1",
       "agent_id": "AI-0082",
       "path": "governance.roles",
@@ -51814,7 +51983,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -54693,6 +54862,39 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
+      "valid_to": "2026-10-01",
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D563D1AE55D0BD1AA9",
+      "agent_id": "AI-0086",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-18F91232A2BFC2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "framework",
+        "note": "A2A integration/hosting is documented.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-18F91232A2BFC2",
+            "note": "Microsoft documents A2A hosting and remote A2A agent services."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
@@ -54825,7 +55027,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
