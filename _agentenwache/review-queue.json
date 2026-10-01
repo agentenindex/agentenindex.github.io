@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T13:26:37Z",
-  "open_count": 5,
+  "updated_at": "2026-10-01T13:37:49Z",
+  "open_count": 7,
   "items": [
     {
       "review_id": "REV-0165DB21E9A6DBB929",
@@ -262,6 +262,33 @@
       "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
+      "review_id": "REV-25F5ABB7D6327913AD",
+      "status": "open",
+      "first_detected": "2026-10-01T13:37:49Z",
+      "last_detected": "2026-10-01T13:37:49Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "source_unavailable",
+      "source_id": "SRC-E719A154D9A229",
+      "source_title": "n8n Docs – SAML setup",
+      "url": "https://docs.n8n.io/user-management/saml/n8n-saml-with-okta.pdf",
+      "agent_ids": [
+        "AI-0018"
+      ],
+      "previous": null,
+      "current": {
+        "status_code": 404,
+        "final_url": "https://docs.n8n.io/user-management/saml/n8n-saml-with-okta.pdf",
+        "result": "http_error",
+        "error": "HTTP Error 404: Not Found"
+      },
+      "latest_metrics": {
+        "status_code": 404,
+        "baseline_health": true
+      },
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+    },
+    {
       "review_id": "REV-4695D13505A3BA8C5D",
       "status": "acknowledged",
       "first_detected": "2026-10-01T13:16:09Z",
@@ -425,11 +452,38 @@
       "resolution": "Source is healthy again; technical recovery acknowledged without asserting a product change."
     },
     {
+      "review_id": "REV-5DE9D6CE4D3DBD8310",
+      "status": "open",
+      "first_detected": "2026-10-01T13:37:49Z",
+      "last_detected": "2026-10-01T13:37:49Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "source_unavailable",
+      "source_id": "SRC-3B9424183C9B34",
+      "source_title": "n8n Docs – OIDC setup",
+      "url": "https://docs.n8n.io/user-management/oidc/n8n-oidc-with-okta.pdf",
+      "agent_ids": [
+        "AI-0018"
+      ],
+      "previous": null,
+      "current": {
+        "status_code": 404,
+        "final_url": "https://docs.n8n.io/user-management/oidc/n8n-oidc-with-okta.pdf",
+        "result": "http_error",
+        "error": "HTTP Error 404: Not Found"
+      },
+      "latest_metrics": {
+        "status_code": 404,
+        "baseline_health": true
+      },
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+    },
+    {
       "review_id": "REV-66484F39574C8E3200",
       "status": "open",
       "first_detected": "2026-10-01T11:47:50Z",
-      "last_detected": "2026-10-01T13:16:09Z",
-      "occurrences": 5,
+      "last_detected": "2026-10-01T13:37:44Z",
+      "occurrences": 6,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-4271C275BA8FED",
@@ -449,20 +503,20 @@
       "current": {
         "status_code": 200,
         "final_url": "https://slack.com/intl/de-de/blog/news/ai-powered-interface-for-work",
-        "text_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
-        "simhash64": "9a353ccdb4aa6e30",
-        "token_count": 1470,
+        "text_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "simhash64": "8a353cc5b4aa6e30",
+        "token_count": 1494,
         "text_sample": "6 Min. Lesezeit Diese Woche auf der Dreamforce haben wir Slack eines seiner bisher größten Upgrades verpasst: die vernetzte Oberfläche für KI und Salesforce, die für dein gesamtes Team funktioniert. Jedes Unternehmen investiert gerade in KI, doch es fehlen zwei entscheidende Dinge. Erstens: der Kontext aus Unterhaltungen, der ein langfristiges Gedächtnis und Einblicke liefert und KI damit präziser, handlungsfähiger und vertrauenswürdiger macht. Zweitens: eine kollaborative Oberfläche, die es Mitarbeitenden ermöglicht, diese KI-Tools gemeinsam zu nutzen und voneinander zu lernen. In Slack kommt beides zusammen. So ist Slack zum Betriebssystem für die Arbeit geworden, das alle Mitarbeitenden, Agenten und Plattformen miteinander vernetzt – mit Slackbot als KI-Teammitglied, das dich durch deinen Arbeitsalltag begleitet. Genau das macht Slack zum Einstieg in das agentbasierte Unternehmen – und für Salesforce-Kund:innen auch für Salesforce selbst. Vorhang auf für Slackforce: Der zentrale Einstieg in Salesforce Seit 25 Jahren bauen Salesforce-Kund:innen umfangreiche Kundendaten und Workflows auf, um ihr Geschäft zu steuern. Jetzt können diese Daten dort zum Einsatz kommen, wo Entscheidung",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
-        "new_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "old_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "new_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
         "simhash_distance": 2,
-        "old_token_count": 1494,
-        "new_token_count": 1470,
-        "token_delta_pct": -1.61
+        "old_token_count": 1470,
+        "new_token_count": 1494,
+        "token_delta_pct": 1.63
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },

@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T13:26:37Z",
+  "updated_at": "2026-10-01T13:37:49Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -846,6 +846,67 @@
         "token_delta_pct": 0.38
       },
       "previous_checked_at": "2026-10-01T13:16:11Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-5DCD951FE9B63DA4A7",
+      "detected_at": "2026-10-01T13:37:44Z",
+      "source_id": "SRC-4271C275BA8FED",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – AI-powered interface for work",
+      "url": "https://slack.com/blog/news/ai-powered-interface-for-work",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "new_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "simhash_distance": 2,
+        "old_token_count": 1470,
+        "new_token_count": 1494,
+        "token_delta_pct": 1.63
+      },
+      "previous_checked_at": "2026-10-01T13:26:29Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-5B4440FE968129C61C",
+      "detected_at": "2026-10-01T13:37:49Z",
+      "source_id": "SRC-E719A154D9A229",
+      "agent_ids": [
+        "AI-0018"
+      ],
+      "source_title": "n8n Docs – SAML setup",
+      "url": "https://docs.n8n.io/user-management/saml/n8n-saml-with-okta.pdf",
+      "change_type": "source_unavailable",
+      "severity": "medium",
+      "metrics": {
+        "status_code": 404,
+        "baseline_health": true
+      },
+      "previous_checked_at": null,
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-75BCE2665DCDED9F23",
+      "detected_at": "2026-10-01T13:37:49Z",
+      "source_id": "SRC-3B9424183C9B34",
+      "agent_ids": [
+        "AI-0018"
+      ],
+      "source_title": "n8n Docs – OIDC setup",
+      "url": "https://docs.n8n.io/user-management/oidc/n8n-oidc-with-okta.pdf",
+      "change_type": "source_unavailable",
+      "severity": "medium",
+      "metrics": {
+        "status_code": 404,
+        "baseline_health": true
+      },
+      "previous_checked_at": null,
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
