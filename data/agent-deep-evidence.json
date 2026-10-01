@@ -2100,6 +2100,92 @@
             }
           ],
           "note": "Hyperforce provides customer choice of supported geographic regions."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "agentforce_on_hyperforce",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce – What is Hyperforce?",
+              "url": "https://www.salesforce.com/platform/what-is-hyperforce/",
+              "note": "Salesforce describes Hyperforce as the cloud-native infrastructure that runs Agentforce and Customer 360 on trusted public-cloud infrastructure.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "Agentforce is offered on Salesforce-managed Hyperforce cloud infrastructure."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "agentforce_salesforce_org_access",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Help – Agentforce Security and the Shared Responsibility Model",
+              "url": "https://help.salesforce.com/s/articleView?id=005315874&language=en_US&type=1",
+              "note": "Salesforce states Agentforce administrators configure access through Profiles, Permission Sets, field-level security and least-privilege controls.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "Salesforce Help – Trust and Agentforce",
+              "url": "https://help.salesforce.com/s/articleView?id=sf.copilot_trust.htm&language=en_US&type=5",
+              "note": "Salesforce states Agentforce agents respect standard Salesforce access controls.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Agentforce access and agent capabilities are governed by Salesforce role/permission controls."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "agentforce_customer_data_on_hyperforce",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce – What is Hyperforce?",
+              "url": "https://www.salesforce.com/platform/what-is-hyperforce/",
+              "note": "Salesforce explicitly states Hyperforce, which runs Agentforce, includes encryption at rest.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Customer data supporting Agentforce on Hyperforce is covered by Hyperforce encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "agentforce_customer_data_on_hyperforce",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce – What is Hyperforce?",
+              "url": "https://www.salesforce.com/platform/what-is-hyperforce/",
+              "note": "Salesforce explicitly states Hyperforce, which runs Agentforce, includes encryption in transit.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Customer data supporting Agentforce on Hyperforce is covered by Hyperforce encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "einstein_platform_and_agentforce_on_hyperforce",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce Compliance – SOC 2 Report: Einstein Platform and Agentforce on Hyperforce",
+              "url": "https://compliance.salesforce.com/en/documents/a006e0000115nJkAAI",
+              "note": "Salesforce publishes a current SOC 2 report specifically covering Einstein Platform and Agentforce on Hyperforce.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Salesforce publishes SOC 2 coverage specifically for Agentforce on Hyperforce."
         }
       ]
     },
