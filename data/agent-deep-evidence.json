@@ -3827,6 +3827,62 @@
       ]
     },
     {
+      "agent_id": "AI-0064",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "gemini_cli",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gemini CLI Docs – MCP servers",
+              "url": "https://geminicli.com/docs/tools/mcp-server/",
+              "note": "Google documents Gemini CLI discovering, connecting to, and executing tools from configured MCP servers.",
+              "evidence_type": "technical_docs",
+              "source_section": "Core integration architecture / MCP server configuration"
+            }
+          ],
+          "note": "Gemini CLI acts as an MCP client for configured MCP servers."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "gemini_cli_local_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gemini CLI Docs – Installation, execution, and releases",
+              "url": "https://geminicli.com/docs/get-started/installation/",
+              "note": "Google documents installing Gemini CLI on macOS, Windows, or Linux and running it locally with the gemini command, including execution from source or in a local container.",
+              "evidence_type": "technical_docs",
+              "source_section": "Install Gemini CLI / Run Gemini CLI"
+            }
+          ],
+          "note": "Gemini CLI can run on user/customer-managed local infrastructure rather than requiring a managed hosted agent runtime."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "gemini_cli_enterprise_telemetry",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gemini CLI Docs – Gemini CLI for the enterprise",
+              "url": "https://geminicli.com/docs/cli/enterprise/",
+              "note": "Google documents a Telemetry and auditing configuration for Gemini CLI that sends telemetry to a central location and tracks tool usage and other events.",
+              "evidence_type": "technical_docs",
+              "source_section": "Telemetry and auditing"
+            }
+          ],
+          "note": "Gemini CLI provides configurable centralized telemetry specifically documented for auditing and monitoring."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0065",
       "claims": [
         {
