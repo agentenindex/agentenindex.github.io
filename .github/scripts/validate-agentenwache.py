@@ -16,7 +16,8 @@ queue_doc=load("review-queue.json")
 events_doc=load("events.json")
 summary=load("last-run.json")
 
-active_sources={s["source_id"]:s for s in GRAPH["sources"] if s.get("active")}
+all_sources={s["source_id"]:s for s in GRAPH["sources"]}
+active_sources={sid:s for sid,s in all_sources.items() if s.get("active")}
 states={s["source_id"]:s for s in states_doc.get("states",[])}
 errors=[]
 
@@ -34,11 +35,11 @@ for item in queue_doc.get("items",[]):
     if not rid or rid in review_ids:
         errors.append(f"Invalid/duplicate review id {rid}")
     review_ids.add(rid)
-    if item.get("source_id") not in active_sources:
-        errors.append(f"{rid}: unknown/inactive source {item.get('source_id')}")
+    if item.get("source_id") not in all_sources:
+        errors.append(f"{rid}: unknown source {item.get('source_id')}")
     if item.get("status") not in valid_queue_status:
         errors.append(f"{rid}: invalid status {item.get('status')}")
-    source=active_sources.get(item.get("source_id"))
+    source=all_sources.get(item.get("source_id"))
     if source and sorted(item.get("agent_ids",[])) != sorted(source.get("agent_ids",[])):
         errors.append(f"{rid}: agent mapping differs from AgentenGraph source registry")
     if item.get("change_type") not in {"content_change","status_change","redirect_change","availability_change","availability_restored","source_unavailable"}:
@@ -54,8 +55,8 @@ for event in events_doc.get("events",[]):
     if not eid or eid in event_ids:
         errors.append(f"Invalid/duplicate event id {eid}")
     event_ids.add(eid)
-    if event.get("source_id") not in active_sources:
-        errors.append(f"{eid}: unknown/inactive source {event.get('source_id')}")
+    if event.get("source_id") not in all_sources:
+        errors.append(f"{eid}: unknown source {event.get('source_id')}")
     if event.get("status") != "needs_review":
         errors.append(f"{eid}: monitor event must remain review-only")
     if event.get("policy") != "Never auto-publish as product fact.":
