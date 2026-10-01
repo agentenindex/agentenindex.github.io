@@ -21,6 +21,7 @@ sources=load("sources.json")
 assertions=load("assertions.json")
 events=load("events.json")
 coverage=load("coverage.json")
+deep_coverage=load("deep-coverage.json")
 snapshot=json.loads((OUT/"snapshots"/"current.json").read_text(encoding="utf-8"))
 
 errors=[]
@@ -43,6 +44,23 @@ if len(entities["providers"]) != len(provider_names):
     errors.append("Provider entity count does not match unique source providers")
 if len(snapshot["agents"]) != DATA["count"]:
     errors.append("Snapshot agent count mismatch")
+
+# Deep completeness report must preserve unknown semantics.
+expected_completeness_fields=list((TAXONOMY.get("completeness_profile") or {}).get("fields") or [])
+if deep_coverage.get("fields") != expected_completeness_fields:
+    errors.append("Deep completeness fields do not match taxonomy")
+if set((deep_coverage.get("agents") or {}).keys()) != agent_ids:
+    errors.append("Deep completeness agent set mismatch")
+allowed_states={"documented_true_or_value","documented_false","unknown"}
+for aid, report in (deep_coverage.get("agents") or {}).items():
+    states=report.get("states") or {}
+    if set(states.keys()) != set(expected_completeness_fields):
+        errors.append(f"{aid}: deep completeness state fields mismatch")
+    bad={state for state in states.values() if state not in allowed_states}
+    if bad:
+        errors.append(f"{aid}: invalid deep completeness states {sorted(bad)}")
+    if report.get("unknown_fields") != sum(1 for state in states.values() if state=="unknown"):
+        errors.append(f"{aid}: unknown field count mismatch")
 
 # Curated deep evidence must be explicit, deduplicated and resolve to known agents/sources.
 deep_keys=set()
