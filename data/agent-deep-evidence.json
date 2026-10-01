@@ -682,6 +682,30 @@
       "agent_id": "AI-0005",
       "claims": [
         {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "microsoft_365_copilot_unified_audit_log",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – CopilotInteraction schema",
+              "url": "https://learn.microsoft.com/en-us/office/office-365-management-api/copilot-schema",
+              "note": "Microsoft documents the CopilotInteraction audit schema and Copilot events in the Microsoft 365 unified audit log.",
+              "evidence_type": "api_docs",
+              "source_section": "Copilot interaction events overview"
+            },
+            {
+              "title": "Microsoft Learn – Office 365 Management Activity API reference",
+              "url": "https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference",
+              "note": "Microsoft documents the Office 365 Management Activity API as a REST web service for retrieving audit actions and events.",
+              "evidence_type": "api_docs",
+              "source_section": "Overview"
+            }
+          ],
+          "note": "Microsoft 365 Copilot audit events can be retrieved programmatically through the Management Activity API."
+        },
+        {
           "path": "governance.audit_logs.available",
           "value": true,
           "scope": "microsoft_365_copilot",
@@ -697,6 +721,47 @@
             }
           ],
           "note": "Microsoft 365 Copilot interactions are represented in Microsoft Purview audit logs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 180,
+          "scope": "microsoft_purview_audit_standard_copilot",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Audit logs for Copilot and AI applications",
+              "url": "https://learn.microsoft.com/en-us/purview/audit-copilot",
+              "note": "Microsoft states Microsoft applications and Microsoft Copilots are included in Audit Standard.",
+              "evidence_type": "technical_docs",
+              "source_section": "Billing / Microsoft applications"
+            },
+            {
+              "title": "Microsoft Learn – Get started with auditing solutions",
+              "url": "https://learn.microsoft.com/en-us/purview/audit-get-started",
+              "note": "Microsoft states Audit Standard logs generated after October 17, 2023 have a default retention of 180 days.",
+              "evidence_type": "technical_docs",
+              "source_section": "Retention"
+            }
+          ],
+          "note": "Microsoft 365 Copilot audit records are in Audit Standard, whose documented default retention is 180 days."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "microsoft_365_copilot_audit",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Copilot auditing and logging",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/employee-self-service/auditing-logging",
+              "note": "Microsoft documents SIEM integration paths for Copilot/agent auditing through Microsoft security/telemetry services.",
+              "evidence_type": "technical_docs",
+              "source_section": "Security information and event management (SIEM)"
+            }
+          ],
+          "note": "Microsoft documents SIEM integration for Copilot/agent audit telemetry."
         },
         {
           "path": "governance.rbac",
@@ -2129,6 +2194,23 @@
       "agent_id": "AI-0015",
       "claims": [
         {
+          "path": "api.rest",
+          "value": true,
+          "scope": "kiro_crew_gateway",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – Crew SDK / API reference",
+              "url": "https://kiro.dev/docs/crew/apps/sdk/",
+              "note": "Kiro documents direct Gateway REST endpoints using GET/POST/PUT/PATCH/DELETE for Crew applications and services.",
+              "evidence_type": "api_docs",
+              "source_section": "Gateway REST endpoints"
+            }
+          ],
+          "note": "Kiro Crew exposes documented REST endpoints."
+        },
+        {
           "path": "governance.audit_logs.available",
           "value": true,
           "scope": "kiro_enterprise",
@@ -2180,6 +2262,23 @@
           "note": "Kiro supports a managed cloud-sandbox runtime."
         },
         {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "kiro_api_private_connectivity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – VPC endpoints (AWS PrivateLink)",
+              "url": "https://kiro.dev/docs/privacy-and-security/vpc-endpoints/",
+              "note": "Kiro documents interface VPC endpoints via AWS PrivateLink so traffic to Kiro APIs stays on the Amazon network without public internet.",
+              "evidence_type": "security_trust",
+              "source_section": "Kiro and interface endpoints"
+            }
+          ],
+          "note": "Kiro supports private VPC connectivity via AWS PrivateLink."
+        },
+        {
           "path": "hosting.self_hosted",
           "value": true,
           "scope": "kiro_ide_cli_local_runtime",
@@ -2212,6 +2311,57 @@
             }
           ],
           "note": "Kiro acts as an MCP client."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "kiro_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – Data protection",
+              "url": "https://kiro.dev/docs/privacy-and-security/data-protection/",
+              "note": "Kiro Enterprise administrators can create and use customer-managed AWS KMS keys to encrypt their data.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption at rest / customer managed keys"
+            }
+          ],
+          "note": "Kiro Enterprise supports customer-managed KMS keys."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "kiro_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – Data protection",
+              "url": "https://kiro.dev/docs/privacy-and-security/data-protection/",
+              "note": "Kiro documents encryption at rest using AWS KMS-owned encryption keys.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption at rest"
+            }
+          ],
+          "note": "Kiro encrypts service data at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "kiro_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – Data protection",
+              "url": "https://kiro.dev/docs/privacy-and-security/data-protection/",
+              "note": "Kiro states all communication between customers, Kiro, and downstream dependencies uses TLS 1.2 or higher.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption in transit"
+            }
+          ],
+          "note": "Kiro documents TLS 1.2+ encryption in transit."
         }
       ]
     },
@@ -6553,6 +6703,30 @@
       "agent_id": "AI-0037",
       "claims": [
         {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "microsoft_365_copilot_unified_audit_log",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – CopilotInteraction schema",
+              "url": "https://learn.microsoft.com/en-us/office/office-365-management-api/copilot-schema",
+              "note": "Microsoft documents the CopilotInteraction audit schema and Copilot events in the Microsoft 365 unified audit log.",
+              "evidence_type": "api_docs",
+              "source_section": "Copilot interaction events overview"
+            },
+            {
+              "title": "Microsoft Learn – Office 365 Management Activity API reference",
+              "url": "https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference",
+              "note": "Microsoft documents the Office 365 Management Activity API as a REST web service for retrieving audit actions and events.",
+              "evidence_type": "api_docs",
+              "source_section": "Overview"
+            }
+          ],
+          "note": "Microsoft 365 Copilot audit events can be retrieved programmatically through the Management Activity API."
+        },
+        {
           "path": "governance.audit_logs.available",
           "value": true,
           "scope": "microsoft_365_copilot",
@@ -6568,6 +6742,47 @@
             }
           ],
           "note": "Microsoft 365 Copilot interactions are represented in Microsoft Purview audit logs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 180,
+          "scope": "microsoft_purview_audit_standard_copilot",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Audit logs for Copilot and AI applications",
+              "url": "https://learn.microsoft.com/en-us/purview/audit-copilot",
+              "note": "Microsoft states Microsoft applications and Microsoft Copilots are included in Audit Standard.",
+              "evidence_type": "technical_docs",
+              "source_section": "Billing / Microsoft applications"
+            },
+            {
+              "title": "Microsoft Learn – Get started with auditing solutions",
+              "url": "https://learn.microsoft.com/en-us/purview/audit-get-started",
+              "note": "Microsoft states Audit Standard logs generated after October 17, 2023 have a default retention of 180 days.",
+              "evidence_type": "technical_docs",
+              "source_section": "Retention"
+            }
+          ],
+          "note": "Microsoft 365 Copilot audit records are in Audit Standard, whose documented default retention is 180 days."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "microsoft_365_copilot_audit",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Copilot auditing and logging",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/employee-self-service/auditing-logging",
+              "note": "Microsoft documents SIEM integration paths for Copilot/agent auditing through Microsoft security/telemetry services.",
+              "evidence_type": "technical_docs",
+              "source_section": "Security information and event management (SIEM)"
+            }
+          ],
+          "note": "Microsoft documents SIEM integration for Copilot/agent audit telemetry."
         },
         {
           "path": "governance.rbac",
@@ -11009,6 +11224,23 @@
             }
           ],
           "note": "Qodo Git supports on-premises deployment."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "qodo_service_personal_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Qodo – Data Processing Addendum",
+              "url": "https://www.qodo.ai/data-processing-addendum/",
+              "note": "Qodo's DPA explicitly requires encryption of processed personal data at rest as part of its additional safeguards.",
+              "evidence_type": "security_trust",
+              "source_section": "Part 3 – Additional Safeguards"
+            }
+          ],
+          "note": "Qodo documents encryption at rest for service personal data."
         },
         {
           "path": "security.encryption.in_transit",
