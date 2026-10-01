@@ -929,6 +929,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-6AD161B098FD0D7D13",
+      "agent_id": "AI-0002",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-39A94098B32A0D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_apps_deep_research",
+        "note": "Gemini Deep Research is delivered as a Google-managed Gemini Apps service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-39A94098B32A0D",
+            "note": "Google documents Deep Research as a feature of the hosted Gemini Apps service, used while signed in to the Gemini app and producing research reports in the service.",
+            "evidence_type": "technical_docs",
+            "source_section": "Use Deep Research in Gemini Apps / What you need"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-417A8647148118CA4A",
       "agent_id": "AI-0002",
       "path": "identity.name",
@@ -1027,6 +1062,48 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-DAC7AEA23148986ED5",
+      "agent_id": "AI-0002",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-725719AD056111",
+          "SRC-F1D123F91153AC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_deep_research_workspace_core_service",
+        "note": "For Workspace deployments where Gemini Apps is a core service, Deep Research is covered by the Workspace service security/compliance posture that includes SOC 2.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-725719AD056111",
+            "note": "Google documents Deep Research availability inside Gemini Apps for Workspace users and states Workspace licenses that include Gemini Apps as a core service provide enterprise-grade data protections.",
+            "evidence_type": "technical_docs",
+            "source_section": "Gemini Apps by Workspace editions / Check if you have enterprise-grade data protections"
+          },
+          {
+            "source_id": "SRC-F1D123F91153AC",
+            "note": "Google Workspace lists SOC 1/2/3 among the industry standards/certifications applying to the Workspace cloud service.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance with industry standards"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-151FE898C1D4277831",
@@ -1529,6 +1606,293 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-522AFD006C9CE1A17E",
+      "agent_id": "AI-0003",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C2EDF9EEDF0C6F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_enterprise_compliance_api",
+        "note": "Claude Enterprise exposes organization activity logs programmatically through the Compliance API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C2EDF9EEDF0C6F",
+            "note": "Anthropic documents a Compliance API providing programmatic access to Claude activity logs, chat histories, and file content.",
+            "evidence_type": "api_docs",
+            "source_section": "What's included in the Enterprise plan?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A1005CC2EA78A9CD45",
+      "agent_id": "AI-0003",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5EFD9759FBAA57",
+          "SRC-C2EDF9EEDF0C6F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_enterprise",
+        "note": "Enterprise organizations using Research have Claude organization audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C2EDF9EEDF0C6F",
+            "note": "Anthropic documents Enterprise audit logs covering user actions, system events, and data access.",
+            "evidence_type": "security_trust",
+            "source_section": "What's included in the Enterprise plan?"
+          },
+          {
+            "source_id": "SRC-5EFD9759FBAA57",
+            "note": "Research is available within Claude Enterprise organizations.",
+            "evidence_type": "technical_docs",
+            "source_section": "Availability"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-85C317B1DFA08F8ABA",
+      "agent_id": "AI-0003",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5EFD9759FBAA57",
+          "SRC-F8A1B3DABF7CC0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_enterprise",
+        "note": "Claude Enterprise custom roles govern access and permissions in organizations where Research is available.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F8A1B3DABF7CC0",
+            "note": "Anthropic documents Enterprise custom roles with granular Claude capability and organization permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "What are custom roles?"
+          },
+          {
+            "source_id": "SRC-5EFD9759FBAA57",
+            "note": "Research is documented as available within Claude Enterprise.",
+            "evidence_type": "technical_docs",
+            "source_section": "Availability"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-944C796E2AE89E7641",
+      "agent_id": "AI-0003",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5EFD9759FBAA57",
+          "SRC-D619C2C742D81C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_team_enterprise",
+        "note": "Research is used inside Claude organizations governed by documented role-based permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5EFD9759FBAA57",
+            "note": "Anthropic documents Research as a feature inside paid Claude Team and Enterprise organizations.",
+            "evidence_type": "technical_docs",
+            "source_section": "Availability"
+          },
+          {
+            "source_id": "SRC-D619C2C742D81C",
+            "note": "Anthropic documents built-in Claude Team and Enterprise roles with distinct permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Roles and permissions"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2D7111B2850754DC8E",
+      "agent_id": "AI-0003",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-57EFDF29D38261",
+          "SRC-5EFD9759FBAA57"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_enterprise",
+        "note": "Claude Enterprise organizations using Research can provision users through SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5EFD9759FBAA57",
+            "note": "Anthropic documents Research as available to Enterprise users.",
+            "evidence_type": "technical_docs",
+            "source_section": "Availability"
+          },
+          {
+            "source_id": "SRC-57EFDF29D38261",
+            "note": "Anthropic documents SCIM provisioning and deprovisioning for Claude Enterprise organizations.",
+            "evidence_type": "technical_docs",
+            "source_section": "SCIM provisioning"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9DA1311CF544692F6E",
+      "agent_id": "AI-0003",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5EFD9759FBAA57",
+          "SRC-890B8BA2467F97"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_team_enterprise",
+        "note": "Team and Enterprise users accessing Research can use Claude's SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5EFD9759FBAA57",
+            "note": "Anthropic documents Research as available on Team and Enterprise plans.",
+            "evidence_type": "technical_docs",
+            "source_section": "Availability"
+          },
+          {
+            "source_id": "SRC-890B8BA2467F97",
+            "note": "Anthropic documents SAML SSO for Claude Team and Enterprise organizations.",
+            "evidence_type": "technical_docs",
+            "source_section": "Set up SSO with your Identity Provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0F3429D104EED78B20",
+      "agent_id": "AI-0003",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5EFD9759FBAA57",
+          "SRC-DCBA133490413C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_cloud_service",
+        "note": "Claude Research runs as an Anthropic-managed Claude service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5EFD9759FBAA57",
+            "note": "Anthropic documents Research as a Claude feature available through Claude on the web, desktop, and mobile.",
+            "evidence_type": "technical_docs",
+            "source_section": "Use research on Claude"
+          },
+          {
+            "source_id": "SRC-DCBA133490413C",
+            "note": "Anthropic documents Claude remote-connector traffic, including Research tool use, as originating from Anthropic cloud infrastructure.",
+            "evidence_type": "technical_docs",
+            "source_section": "Network requirements / Using Claude with Research"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-21F336109AAF9A503D",
       "agent_id": "AI-0003",
       "path": "identity.name",
@@ -1627,6 +1991,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-DFC7B1B9E7AF3775FD",
+      "agent_id": "AI-0003",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DCBA133490413C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_remote_connectors",
+        "note": "Claude Research can act as an MCP client through remote custom connectors.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DCBA133490413C",
+            "note": "Anthropic states Research can automatically invoke tools from custom connectors backed by remote MCP servers.",
+            "evidence_type": "technical_docs",
+            "source_section": "Using Claude with Research"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EC36FC6575B1921CF1",
+      "agent_id": "AI-0003",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0D219CDEB9B743"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_enterprise_content",
+        "note": "Eligible Enterprise organizations can protect Claude content used by Research with customer-managed encryption keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0D219CDEB9B743",
+            "note": "Anthropic documents customer-managed keys for Enterprise that encrypt Claude chats, projects, and files using keys controlled in the customer's cloud provider.",
+            "evidence_type": "security_trust",
+            "source_section": "What are customer-managed encryption keys?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BE8FF95A7BFCE4FFD6",
+      "agent_id": "AI-0003",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F2641DCD7047D8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_research_enterprise",
+        "note": "Claude Research used under Claude Enterprise inherits the Claude Enterprise SOC 2 Type 2 scope.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F2641DCD7047D8",
+            "note": "Anthropic's Trust Center lists Claude Enterprise as covered by SOC 2 Type 2.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance scope"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-594200F9C7A961A803",
@@ -9262,6 +9731,48 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-D987E764531EE8557A",
+      "agent_id": "AI-0014",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8EF7285FE5A0BD",
+          "SRC-BF95E774FAAB66"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "jules_rest_api",
+        "note": "Jules provides a documented REST API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8EF7285FE5A0BD",
+            "note": "Google documents the Jules REST API for programmatic creation and management of sources, sessions, activities, and development workflows.",
+            "evidence_type": "api_docs",
+            "source_section": "Quickstart / API concepts"
+          },
+          {
+            "source_id": "SRC-BF95E774FAAB66",
+            "note": "Google documents programmatic Jules access via HTTPS REST endpoints.",
+            "evidence_type": "official_release",
+            "source_section": "Introducing the Jules API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D51FBE42E66CB9A5B1",
       "agent_id": "AI-0014",
       "path": "audience",
@@ -9562,6 +10073,48 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BE8C652DFB792C3657",
+      "agent_id": "AI-0014",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-75D02149EA4997",
+          "SRC-C97232CD790B51"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "jules_task_runtime",
+        "note": "Jules tasks run in Google-managed cloud virtual machines.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C97232CD790B51",
+            "note": "Google states each Jules task runs inside a secure, short-lived virtual machine with preinstalled development tools.",
+            "evidence_type": "technical_docs",
+            "source_section": "Environment setup"
+          },
+          {
+            "source_id": "SRC-75D02149EA4997",
+            "note": "Google states Jules executes code in a secure cloud-based virtual machine.",
+            "evidence_type": "technical_docs",
+            "source_section": "How does Jules run code, and what should I know about security?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7B2D0A30B416555261",
       "agent_id": "AI-0014",
       "path": "identity.name",
@@ -9660,6 +10213,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-898DAE219CEDA63129",
+      "agent_id": "AI-0014",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0E280FC34E534C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "google_jules_sessions",
+        "note": "Jules acts as an MCP client for supported MCP server integrations.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0E280FC34E534C",
+            "note": "Google documents Jules connecting to supported MCP servers and invoking their tools during sessions.",
+            "evidence_type": "official_release",
+            "source_section": "MCP support comes to Jules"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-60458AC488DF2677F4",
