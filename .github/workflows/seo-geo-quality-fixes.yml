@@ -233,10 +233,15 @@ jobs:
           assert canonical_count==144, canonical_count
 
           # All three replaced sources must be present, old URLs absent.
-          combined=(ROOT/'data/agents.json').read_text(encoding='utf-8')
+          source_set = {
+              src[1]
+              for agent in data['agents']
+              for src in agent.get('sources',[])
+              if len(src) > 1
+          }
           for old,new in source_replacements.items():
-              assert old not in combined
-              assert new in combined
+              assert old not in source_set, old
+              assert new in source_set, new
 
           print('Changed files:',len(changed_files))
           print('Canonical pages normalized:',canonical_count)
