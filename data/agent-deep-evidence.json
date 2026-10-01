@@ -5402,6 +5402,28 @@
       ]
     },
     {
+      "agent_id": "AI-0048",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "hubspot_company_research_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "HubSpot Knowledge Base – Set up and use the company research agent",
+              "url": "https://knowledge.hubspot.com/ai/use-the-company-research-agent",
+              "note": "HubSpot documents the Company Research Agent as an agent installed, configured, and run inside HubSpot Agent Hub / HubSpot accounts.",
+              "evidence_type": "technical_docs",
+              "source_section": "Set up / Configure / Use the company research agent"
+            }
+          ],
+          "note": "The Company Research Agent is delivered and operated inside HubSpot's managed Agent Hub."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0049",
       "claims": [
         {
@@ -5711,6 +5733,28 @@
             }
           ],
           "note": "Manus documents SOC 2 Type 2 certification."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0053",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "gemini_spark",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google I/O 2026 – Gemini Spark",
+              "url": "https://blog.google/intl/de-de/unternehmen/technologie/sundar-pichai-io-2026/",
+              "note": "Google states Gemini Spark runs on dedicated virtual machines in Google Cloud and is available independently of the user's laptop.",
+              "evidence_type": "official_release",
+              "source_section": "Agents / Gemini Spark"
+            }
+          ],
+          "note": "Gemini Spark runs on Google-managed dedicated cloud VMs."
         }
       ]
     },
@@ -6450,6 +6494,28 @@
       ]
     },
     {
+      "agent_id": "AI-0058",
+      "claims": [
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "you_com_ari",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "You.com – Financial Services / ARI",
+              "url": "https://home.you.com/solutions/finance",
+              "note": "You.com lists ARI within its enterprise platform and explicitly states enterprise-grade trust includes SOC 2 Type II certification.",
+              "evidence_type": "security_trust",
+              "source_section": "You.com for Financial Services"
+            }
+          ],
+          "note": "You.com documents SOC 2 Type II coverage for the enterprise platform that includes ARI."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0064",
       "claims": [
         {
@@ -6743,6 +6809,72 @@
             }
           ],
           "note": "GitLab.com group membership used for Agent Platform access can be provisioned with SCIM."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0066",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "augment_code_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Meet Augment Agent",
+              "url": "https://www.augmentcode.com/blog/meet-augment-agent",
+              "note": "Augment states the Agent embraces MCP to access external tools and systems, with examples of infrastructure MCP integrations.",
+              "evidence_type": "official_release",
+              "source_section": "The Power of Context – Memories & Tools"
+            }
+          ],
+          "note": "Augment Agent consumes tools and context exposed through MCP."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0069",
+      "claims": [
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "mistral_vibe_code_local_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Vibe Code",
+              "url": "https://docs.mistral.ai/vibe/code/overview",
+              "note": "Mistral documents running Vibe Code against a local checkout through the CLI or VS Code extension with local filesystem and shell access.",
+              "evidence_type": "technical_docs",
+              "source_section": "Vibe Code overview"
+            }
+          ],
+          "note": "Vibe Code supports a local customer/user-managed runtime via CLI or VS Code."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0070",
+      "claims": [
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "warp_agent_cli_local_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – Agent CLI overview",
+              "url": "https://docs.warp.dev/agents/cli/",
+              "note": "Warp documents Agent CLI as a standalone terminal program that runs the Warp Agent and works in any terminal emulator, including over SSH.",
+              "evidence_type": "technical_docs",
+              "source_section": "What is the Warp Agent CLI?"
+            }
+          ],
+          "note": "Warp Agent CLI can run as a local/customer-managed terminal program."
         }
       ]
     },
@@ -7876,6 +8008,28 @@
       ]
     },
     {
+      "agent_id": "AI-0080",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "langsmith_deployment_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "LangChain – LangSmith Deployment",
+              "url": "https://www.langchain.com/langsmith/deployment",
+              "note": "LangChain explicitly describes LangSmith Deployment as the managed service for running agents at scale in production with one-click deployments and autoscaling.",
+              "evidence_type": "official_product_page",
+              "source_section": "FAQ / One-click deploy"
+            }
+          ],
+          "note": "LangSmith Deployment provides a managed agent runtime."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0081",
       "claims": [
         {
@@ -8617,6 +8771,28 @@
       ]
     },
     {
+      "agent_id": "AI-0084",
+      "claims": [
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "tray_platform_including_merlin_agent_builder",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Tray.ai Trust Center",
+              "url": "https://trust.tray.ai/",
+              "note": "Tray's Trust Center lists SOC 2 Type II for the Tray platform; Merlin Agent Builder is documented as native functionality on Tray.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance / SOC 2 Type II"
+            }
+          ],
+          "note": "Merlin Agent Builder runs on the Tray platform covered by Tray's SOC 2 Type II compliance posture."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0086",
       "claims": [
         {
@@ -8836,6 +9012,28 @@
             }
           ],
           "note": "Agent Framework deployments on the supported Azure Functions host can be placed behind private endpoints and VNet integration."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0087",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "mistral_vibe_work",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Mistral Docs – Release notes",
+              "url": "https://docs.mistral.ai/resources/release-notes",
+              "note": "Mistral marks Vibe Work General Availability as Mistral-Hosted.",
+              "evidence_type": "official_release",
+              "source_section": "A simpler Vibe experience / Hosting"
+            }
+          ],
+          "note": "Vibe Work is explicitly documented as Mistral-hosted."
         }
       ]
     },
@@ -9242,6 +9440,116 @@
       ]
     },
     {
+      "agent_id": "AI-0095",
+      "claims": [
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "monday_ai_agents_custom_agent_callbacks",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "monday Developer – Agents API",
+              "url": "https://developer.monday.com/api-reference/reference/agents",
+              "note": "monday.com documents custom agent callback URLs that receive HTTP POST trigger payloads and signed webhook events.",
+              "evidence_type": "api_docs",
+              "source_section": "Connect external agents / Receive a trigger"
+            }
+          ],
+          "note": "monday.com Agents support signed webhook/callback event delivery."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0098",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "snowflake_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake – CoWork",
+              "url": "https://www.snowflake.com/de/product/snowflake-cowork/",
+              "note": "Snowflake documents CoWork as a Snowflake AI Data Cloud product accessed through Snowflake's hosted service and ai.snowflake.com.",
+              "evidence_type": "official_product_page",
+              "source_section": "Snowflake CoWork für Ihr Unternehmen"
+            }
+          ],
+          "note": "Snowflake CoWork is delivered as a managed Snowflake cloud service."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0101",
+      "claims": [
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "11x_alice",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "11x Docs – Webhooks and API",
+              "url": "https://docs.11x.ai/integrations/webhooks",
+              "note": "11x states one API spans Alice and Julian and supports subscriptions to real-time events via webhooks/callbacks.",
+              "evidence_type": "api_docs",
+              "source_section": "Webhooks and API"
+            }
+          ],
+          "note": "Alice supports webhook event subscriptions through the shared 11x integration API."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0102",
+      "claims": [
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "artisan_ava_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Artisan – Ava 2.0",
+              "url": "https://www.artisan.co/blog/artisan-launches-ava-2-0-first-autonomous-ai-bdr",
+              "note": "Artisan explicitly states it is SOC 2 Type II audited in the enterprise security section for Ava 2.0.",
+              "evidence_type": "official_release",
+              "source_section": "Built for enterprise scale"
+            }
+          ],
+          "note": "Artisan documents SOC 2 Type II audit coverage for the platform delivering Ava."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0103",
+      "claims": [
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "qualified_platform_including_piper",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Qualified – Trust",
+              "url": "https://www.qualified.com/trust",
+              "note": "Qualified states it undergoes a SOC 2 Type II audit annually; the same Qualified platform page identifies Piper as its AI SDR agent.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance and Certification / SOC-2 Type II Report"
+            }
+          ],
+          "note": "Piper runs on the Qualified platform covered by Qualified's annual SOC 2 Type II audit."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0105",
       "claims": [
         {
@@ -9475,6 +9783,72 @@
             }
           ],
           "note": "Organizations choose the Snowflake account region that hosts Cortex Agents and can restrict inference to the home region."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0107",
+      "claims": [
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "lexis_plus_with_protege",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "LexisNexis – Protégé General AI privacy and security",
+              "url": "https://www.lexisnexis.com/blogs/amppage/136/inside-the-innovation-how-protege-general-ai-was-built-to-balance-power-privacy-and-choice",
+              "note": "LexisNexis states Protégé General AI adheres to SOC 2 Type II compliance standards.",
+              "evidence_type": "security_trust",
+              "source_section": "The Privacy Core: Building Trust into Every Layer"
+            }
+          ],
+          "note": "LexisNexis documents SOC 2 Type II compliance for Protégé."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0108",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "vlex_vincent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "vLex – Technical & Infrastructure Security",
+              "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-technical-and-infrastructure-security",
+              "note": "vLex states its platform is hosted on Amazon Web Services and describes responsibility for securing the application and customer data in that cloud environment.",
+              "evidence_type": "security_trust",
+              "source_section": "Cloud Architecture"
+            }
+          ],
+          "note": "Vincent is delivered on vLex's managed AWS-hosted platform."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0110",
+      "claims": [
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "rogo_platform_ai_analyst",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Rogo Trust Center",
+              "url": "https://trust.rogo.ai/",
+              "note": "Rogo's Trust Center lists SOC 2 Type 2 among its compliance certifications and product-security controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance"
+            }
+          ],
+          "note": "Rogo documents SOC 2 Type 2 compliance for the platform providing its AI Analyst."
         }
       ]
     }
