@@ -541,6 +541,57 @@
       "agent_id": "AI-0004",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "perplexity_enterprise_research",
+          "evidence": [
+            {
+              "title": "Perplexity Help – What is Enterprise Max?",
+              "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
+              "note": "Perplexity lists Audit Logs as an organization-wide Enterprise Max security feature.",
+              "evidence_type": "technical_docs",
+              "source_section": "Premium security features"
+            }
+          ],
+          "note": "Perplexity Enterprise provides audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "perplexity_enterprise_research",
+          "evidence": [
+            {
+              "title": "Perplexity – Finding Alpha with Perplexity",
+              "url": "https://www.perplexity.ai/en-GB/hub/workshops/finding-alpha-with-perplexity-how-finance-teams-use-spaces-labs-and-comet",
+              "note": "Perplexity documents role-based access controls for Enterprise organizations alongside its Research/Comet workflows.",
+              "evidence_type": "technical_docs",
+              "source_section": "Security & Privacy"
+            }
+          ],
+          "note": "Perplexity Enterprise provides role-based access controls.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "perplexity_enterprise_research",
+          "evidence": [
+            {
+              "title": "Perplexity Help – What is Enterprise Max?",
+              "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
+              "note": "Perplexity states Enterprise Max includes organization-wide SCIM and explicitly includes Research and Comet Assistant among its product capabilities.",
+              "evidence_type": "technical_docs",
+              "source_section": "Key Features / Premium security features"
+            }
+          ],
+          "note": "Perplexity Enterprise supports SCIM for the product suite including Research and Comet.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "perplexity_deep_research_in_computer",
@@ -556,6 +607,57 @@
             }
           ],
           "note": "Perplexity Deep Research is delivered as a managed Perplexity Computer capability."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "perplexity_enterprise_platform",
+          "evidence": [
+            {
+              "title": "Perplexity – Finding Alpha with Perplexity",
+              "url": "https://www.perplexity.ai/en-GB/hub/workshops/finding-alpha-with-perplexity-how-finance-teams-use-spaces-labs-and-comet",
+              "note": "Perplexity documents AES-256 encryption for data at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & Privacy"
+            }
+          ],
+          "note": "Perplexity documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.3",
+          "scope": "perplexity_enterprise_platform",
+          "evidence": [
+            {
+              "title": "Perplexity – Finding Alpha with Perplexity",
+              "url": "https://www.perplexity.ai/en-GB/hub/workshops/finding-alpha-with-perplexity-how-finance-teams-use-spaces-labs-and-comet",
+              "note": "Perplexity documents TLS 1.3 for data in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & Privacy"
+            }
+          ],
+          "note": "Perplexity documents TLS 1.3 encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "perplexity_enterprise_platform",
+          "evidence": [
+            {
+              "title": "Perplexity Help – What is Enterprise Max?",
+              "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
+              "note": "Perplexity states Enterprise Max has SOC 2 Type II certification.",
+              "evidence_type": "security_trust",
+              "source_section": "How safe is Enterprise Max?"
+            }
+          ],
+          "note": "Perplexity documents SOC 2 Type II compliance.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -1248,6 +1350,108 @@
       "agent_id": "AI-0009",
       "claims": [
         {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "cursor_enterprise",
+          "evidence": [
+            {
+              "title": "Cursor Docs – Compliance and Monitoring",
+              "url": "https://prod.cursor.com/docs/enterprise/compliance-and-monitoring",
+              "note": "Cursor documents Admin API endpoints GET /teams/audit-logs and GET /organizations/audit-logs.",
+              "evidence_type": "api_docs",
+              "source_section": "Accessing audit logs"
+            }
+          ],
+          "note": "Cursor exposes audit logs programmatically through the Admin API.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "cursor_enterprise",
+          "evidence": [
+            {
+              "title": "Cursor Docs – Compliance and Monitoring",
+              "url": "https://prod.cursor.com/docs/enterprise/compliance-and-monitoring",
+              "note": "Cursor documents Enterprise audit logs for sign-ins, membership, roles, settings, integrations, Cloud Agent environments, and related surfaces.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit logs"
+            }
+          ],
+          "note": "Cursor Enterprise provides administrative/security audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "cursor_enterprise",
+          "evidence": [
+            {
+              "title": "Cursor Docs – Compliance and Monitoring",
+              "url": "https://prod.cursor.com/docs/enterprise/compliance-and-monitoring",
+              "note": "Cursor documents streaming audit events to Splunk, Sumo Logic, HTTPS webhooks including SIEM endpoints, or S3.",
+              "evidence_type": "technical_docs",
+              "source_section": "Streaming audit logs"
+            }
+          ],
+          "note": "Cursor Enterprise can stream audit events to SIEM/security tooling.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "cursor_enterprise",
+          "evidence": [
+            {
+              "title": "Cursor Docs – Enterprise",
+              "url": "https://prod.cursor.com/docs/enterprise",
+              "note": "Cursor documents SCIM provisioning and access gating for Enterprise.",
+              "evidence_type": "technical_docs",
+              "source_section": "Identity and access / SCIM"
+            }
+          ],
+          "note": "Cursor Enterprise supports SCIM.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "cursor_teams_enterprise",
+          "evidence": [
+            {
+              "title": "Cursor – Pricing",
+              "url": "https://cursor.com/pricing",
+              "note": "Cursor explicitly lists SAML/OIDC SSO for Teams and Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Teams / Enterprise"
+            }
+          ],
+          "note": "Cursor supports OIDC SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "cursor_teams_enterprise",
+          "evidence": [
+            {
+              "title": "Cursor Docs – Enterprise",
+              "url": "https://prod.cursor.com/docs/enterprise",
+              "note": "Cursor documents SSO (SAML/OIDC) for Teams and Enterprise.",
+              "evidence_type": "technical_docs",
+              "source_section": "Plan Comparison / SSO (SAML/OIDC)"
+            }
+          ],
+          "note": "Cursor business plans support SAML SSO.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "protocols.mcp.client",
           "value": true,
           "scope": "cursor_agent",
@@ -1263,6 +1467,74 @@
             }
           ],
           "note": "Cursor Agent consumes tools and data from configured MCP servers."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "cursor_enterprise_cloud_agent_data",
+          "evidence": [
+            {
+              "title": "Cursor Docs – Privacy and Data Governance",
+              "url": "https://cursor.com/docs/enterprise/privacy-and-data-governance",
+              "note": "Cursor documents Customer Managed Encryption Keys for Enterprise, including Cloud Agent data encrypted with the customer key.",
+              "evidence_type": "security_trust",
+              "source_section": "Data encryption / CMEK"
+            }
+          ],
+          "note": "Cursor Enterprise supports CMEK for Cloud Agent data.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "cursor_infrastructure",
+          "evidence": [
+            {
+              "title": "Cursor Docs – Network Configuration",
+              "url": "https://prod.cursor.com/docs/enterprise/network-configuration",
+              "note": "Cursor documents AES-256 encryption for stored data, vector storage, and Cloud Agent code storage.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption / At rest"
+            }
+          ],
+          "note": "Cursor documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "cursor_services",
+          "evidence": [
+            {
+              "title": "Cursor Docs – Network Configuration",
+              "url": "https://prod.cursor.com/docs/enterprise/network-configuration",
+              "note": "Cursor documents TLS 1.2 or higher for connections to Cursor services.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption / In transit"
+            }
+          ],
+          "note": "Cursor documents TLS 1.2+ encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "cursor_platform",
+          "evidence": [
+            {
+              "title": "Cursor – Security",
+              "url": "https://cursor.com/en-US/security",
+              "note": "Cursor states it holds a SOC 2 Type II attestation.",
+              "evidence_type": "security_trust",
+              "source_section": "Certifications and third-party assessments"
+            }
+          ],
+          "note": "Cursor documents SOC 2 Type II compliance.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -5793,6 +6065,74 @@
       "agent_id": "AI-0038",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "perplexity_enterprise_computer",
+          "evidence": [
+            {
+              "title": "Perplexity Help – What is Enterprise Max?",
+              "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
+              "note": "Perplexity lists Audit Logs as an organization-wide Enterprise Max security feature.",
+              "evidence_type": "technical_docs",
+              "source_section": "Premium security features"
+            }
+          ],
+          "note": "Perplexity Enterprise provides audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "perplexity_enterprise_computer",
+          "evidence": [
+            {
+              "title": "Perplexity – Finding Alpha with Perplexity",
+              "url": "https://www.perplexity.ai/en-GB/hub/workshops/finding-alpha-with-perplexity-how-finance-teams-use-spaces-labs-and-comet",
+              "note": "Perplexity documents role-based access controls for Enterprise organizations alongside its Research/Comet workflows.",
+              "evidence_type": "technical_docs",
+              "source_section": "Security & Privacy"
+            }
+          ],
+          "note": "Perplexity Enterprise provides role-based access controls.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "perplexity_enterprise_computer",
+          "evidence": [
+            {
+              "title": "Perplexity Help – What is Enterprise Max?",
+              "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
+              "note": "Perplexity states Enterprise Max includes organization-wide SCIM and explicitly includes Research and Comet Assistant among its product capabilities.",
+              "evidence_type": "technical_docs",
+              "source_section": "Key Features / Premium security features"
+            }
+          ],
+          "note": "Perplexity Enterprise supports SCIM for the product suite including Research and Comet.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "perplexity_enterprise_computer",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Perplexity – How we built security into Computer",
+              "url": "https://www.perplexity.ai/de/hub/blog/how-we-built-security-into-computer",
+              "note": "Perplexity states Computer inherits Enterprise security features including SAML SSO.",
+              "evidence_type": "official_release",
+              "source_section": "Enterprise governance"
+            }
+          ],
+          "note": "Perplexity Computer inherits SAML SSO from the Enterprise platform."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "perplexity_computer",
@@ -5808,6 +6148,57 @@
             }
           ],
           "note": "Perplexity Computer is delivered as a managed Perplexity service."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "perplexity_enterprise_platform",
+          "evidence": [
+            {
+              "title": "Perplexity – Finding Alpha with Perplexity",
+              "url": "https://www.perplexity.ai/en-GB/hub/workshops/finding-alpha-with-perplexity-how-finance-teams-use-spaces-labs-and-comet",
+              "note": "Perplexity documents AES-256 encryption for data at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & Privacy"
+            }
+          ],
+          "note": "Perplexity documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.3",
+          "scope": "perplexity_enterprise_platform",
+          "evidence": [
+            {
+              "title": "Perplexity – Finding Alpha with Perplexity",
+              "url": "https://www.perplexity.ai/en-GB/hub/workshops/finding-alpha-with-perplexity-how-finance-teams-use-spaces-labs-and-comet",
+              "note": "Perplexity documents TLS 1.3 for data in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & Privacy"
+            }
+          ],
+          "note": "Perplexity documents TLS 1.3 encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "perplexity_enterprise_platform",
+          "evidence": [
+            {
+              "title": "Perplexity Help – What is Enterprise Max?",
+              "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
+              "note": "Perplexity states Enterprise Max has SOC 2 Type II certification.",
+              "evidence_type": "security_trust",
+              "source_section": "How safe is Enterprise Max?"
+            }
+          ],
+          "note": "Perplexity documents SOC 2 Type II compliance.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -7930,6 +8321,57 @@
       "agent_id": "AI-0055",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "perplexity_enterprise_comet",
+          "evidence": [
+            {
+              "title": "Perplexity Help – What is Enterprise Max?",
+              "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
+              "note": "Perplexity lists Audit Logs as an organization-wide Enterprise Max security feature.",
+              "evidence_type": "technical_docs",
+              "source_section": "Premium security features"
+            }
+          ],
+          "note": "Perplexity Enterprise provides audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "perplexity_enterprise_comet",
+          "evidence": [
+            {
+              "title": "Perplexity – Finding Alpha with Perplexity",
+              "url": "https://www.perplexity.ai/en-GB/hub/workshops/finding-alpha-with-perplexity-how-finance-teams-use-spaces-labs-and-comet",
+              "note": "Perplexity documents role-based access controls for Enterprise organizations alongside its Research/Comet workflows.",
+              "evidence_type": "technical_docs",
+              "source_section": "Security & Privacy"
+            }
+          ],
+          "note": "Perplexity Enterprise provides role-based access controls.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "perplexity_enterprise_comet",
+          "evidence": [
+            {
+              "title": "Perplexity Help – What is Enterprise Max?",
+              "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
+              "note": "Perplexity states Enterprise Max includes organization-wide SCIM and explicitly includes Research and Comet Assistant among its product capabilities.",
+              "evidence_type": "technical_docs",
+              "source_section": "Key Features / Premium security features"
+            }
+          ],
+          "note": "Perplexity Enterprise supports SCIM for the product suite including Research and Comet.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.self_hosted",
           "value": true,
           "scope": "perplexity_comet_local_browser",
@@ -7945,6 +8387,57 @@
             }
           ],
           "note": "The Comet browser and its browser-side agent surface run on the user's installed desktop browser environment."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "perplexity_enterprise_platform",
+          "evidence": [
+            {
+              "title": "Perplexity – Finding Alpha with Perplexity",
+              "url": "https://www.perplexity.ai/en-GB/hub/workshops/finding-alpha-with-perplexity-how-finance-teams-use-spaces-labs-and-comet",
+              "note": "Perplexity documents AES-256 encryption for data at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & Privacy"
+            }
+          ],
+          "note": "Perplexity documents AES-256 encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.3",
+          "scope": "perplexity_enterprise_platform",
+          "evidence": [
+            {
+              "title": "Perplexity – Finding Alpha with Perplexity",
+              "url": "https://www.perplexity.ai/en-GB/hub/workshops/finding-alpha-with-perplexity-how-finance-teams-use-spaces-labs-and-comet",
+              "note": "Perplexity documents TLS 1.3 for data in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & Privacy"
+            }
+          ],
+          "note": "Perplexity documents TLS 1.3 encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "perplexity_enterprise_platform",
+          "evidence": [
+            {
+              "title": "Perplexity Help – What is Enterprise Max?",
+              "url": "https://www.perplexity.ai/help-center/en/articles/12310544-what-is-enterprise-max",
+              "note": "Perplexity states Enterprise Max has SOC 2 Type II certification.",
+              "evidence_type": "security_trust",
+              "source_section": "How safe is Enterprise Max?"
+            }
+          ],
+          "note": "Perplexity documents SOC 2 Type II compliance.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -10401,6 +10894,74 @@
       "agent_id": "AI-0080",
       "claims": [
         {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "langsmith_enterprise",
+          "evidence": [
+            {
+              "title": "LangChain Support – Enabling Audit Logs in Self-Hosted LangSmith",
+              "url": "https://support.langchain.com/articles/5478528798-enabling-audit-logs-in-self-hosted-langsmith",
+              "note": "LangChain documents GET /api/v1/audit-logs for programmatic audit-log access.",
+              "evidence_type": "api_docs",
+              "source_section": "Accessing Logs"
+            }
+          ],
+          "note": "LangSmith exposes audit logs through API.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "langsmith_enterprise",
+          "evidence": [
+            {
+              "title": "LangChain Support – Enabling Audit Logs in Self-Hosted LangSmith",
+              "url": "https://support.langchain.com/articles/5478528798-enabling-audit-logs-in-self-hosted-langsmith",
+              "note": "LangChain documents LangSmith audit logs covering 70+ administrative operations.",
+              "evidence_type": "technical_docs",
+              "source_section": "What Gets Logged"
+            }
+          ],
+          "note": "LangSmith provides administrative audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "langsmith_enterprise",
+          "evidence": [
+            {
+              "title": "LangChain Support – Enabling Audit Logs in Self-Hosted LangSmith",
+              "url": "https://support.langchain.com/articles/5478528798-enabling-audit-logs-in-self-hosted-langsmith",
+              "note": "LangChain documents OCSF 1.7 audit-log format and compatibility with SIEM tools such as Splunk and Datadog.",
+              "evidence_type": "technical_docs",
+              "source_section": "What Gets Logged"
+            }
+          ],
+          "note": "LangSmith audit logs are SIEM-compatible.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "langsmith_enterprise",
+          "evidence": [
+            {
+              "title": "LangSmith – LLMOps",
+              "url": "https://info.langchain.com/Llm-ops",
+              "note": "LangChain explicitly documents role-based access control with organization-level permissions and project isolation.",
+              "evidence_type": "official_product_page",
+              "source_section": "Security and compliance at scale"
+            }
+          ],
+          "note": "LangSmith Enterprise supports RBAC.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "langsmith_deployment_cloud",
@@ -10416,6 +10977,108 @@
             }
           ],
           "note": "LangSmith Deployment provides a managed agent runtime."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "langsmith_byoc_self_hosted",
+          "evidence": [
+            {
+              "title": "LangChain – LangSmith BYOC on AWS is generally available",
+              "url": "https://www.langchain.com/blog/langsmith-byoc-is-now-generally-available-on-aws",
+              "note": "LangChain documents LangSmith BYOC in customer AWS accounts, with EKS audit logs and VPC flow logs remaining in customer-controlled infrastructure.",
+              "evidence_type": "official_release",
+              "source_section": "BYOC architecture"
+            }
+          ],
+          "note": "LangSmith supports customer-account/VPC deployment through BYOC/self-hosted models.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "langsmith_deployment_enterprise",
+          "evidence": [
+            {
+              "title": "LangChain Enterprise Hub – Self-Hosted Onboarding Overview",
+              "url": "https://enterprise-hub.langchain.com/onboarding/self-hosted-overview",
+              "note": "LangChain documents LangSmith Self-Hosted running entirely in the customer's own infrastructure.",
+              "evidence_type": "technical_docs",
+              "source_section": "What is LangSmith Self-Hosted?"
+            }
+          ],
+          "note": "LangSmith Deployment supports self-hosting.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "langsmith_saas_and_self_hosted",
+          "evidence": [
+            {
+              "title": "LangChain Academy – Introduction to LangSmith",
+              "url": "https://academy.langchain.com/courses/intro-to-langsmith",
+              "note": "LangChain documents LangSmith hosted data in the U.S. or Netherlands and Enterprise self-hosted deployment where data remains in the customer environment.",
+              "evidence_type": "technical_docs",
+              "source_section": "LangSmith FAQs / Where is my data stored?"
+            }
+          ],
+          "note": "LangSmith offers regional hosted instances and self-hosted residency options.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "langsmith_platform",
+          "evidence": [
+            {
+              "title": "LangChain Support – Security & Compliance Information",
+              "url": "https://support.langchain.com/articles/9852244333-how-to-access-langchain-security-compliance-information",
+              "note": "LangChain states LangSmith product data is encrypted at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Product Security"
+            }
+          ],
+          "note": "LangSmith documents encryption at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "langsmith_platform",
+          "evidence": [
+            {
+              "title": "LangChain Support – Security & Compliance Information",
+              "url": "https://support.langchain.com/articles/9852244333-how-to-access-langchain-security-compliance-information",
+              "note": "LangChain states LangSmith product data is encrypted in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Product Security"
+            }
+          ],
+          "note": "LangSmith documents encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "langsmith_entire_offering",
+          "evidence": [
+            {
+              "title": "LangChain Trust Center",
+              "url": "https://trust.langchain.com/",
+              "note": "LangChain states its 2026 SOC 2 Type II examination spans the entire LangSmith offering.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance / 2026 SOC 2 Type II Report"
+            }
+          ],
+          "note": "LangSmith is covered by SOC 2 Type II.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
@@ -12096,6 +12759,91 @@
       "agent_id": "AI-0093",
       "claims": [
         {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Audit Query API",
+              "url": "https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/audit-logs/audit-api/overview",
+              "note": "Adobe documents the Audit Query API for programmatically retrieving and monitoring audit event data.",
+              "evidence_type": "api_docs",
+              "source_section": "Audit Query API guide"
+            }
+          ],
+          "note": "Experience Platform audit logs are available through API.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Audit logs",
+              "url": "https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview",
+              "note": "Adobe documents audit logs for user activity across Experience Platform services and capabilities.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit logs"
+            }
+          ],
+          "note": "Experience Platform provides audit logs.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "adobe_experience_platform_audit_logs",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Audit logs",
+              "url": "https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview",
+              "note": "Adobe states audit logs are retained for 365 days.",
+              "evidence_type": "technical_docs",
+              "source_section": "Managing audit logs in the UI"
+            }
+          ],
+          "note": "Experience Platform retains audit logs for 365 days.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Manage roles",
+              "url": "https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/roles",
+              "note": "Adobe documents creating new custom roles and assigning resources and permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Create a new role"
+            }
+          ],
+          "note": "Experience Platform supports custom roles.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Access control overview",
+              "url": "https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home",
+              "note": "Adobe documents role-based access control through roles, permissions, policies, and sandbox assignments.",
+              "evidence_type": "technical_docs",
+              "source_section": "Roles / Access control hierarchy"
+            }
+          ],
+          "note": "Experience Platform provides RBAC for capabilities including Agent Orchestrator.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "adobe_experience_platform_agent_orchestrator",
@@ -12111,6 +12859,91 @@
             }
           ],
           "note": "Adobe Agent Orchestrator is delivered inside the managed Adobe Experience Platform."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Customer Journey Analytics data centers",
+              "url": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/data-centers",
+              "note": "Adobe documents Experience Platform data hosting across North America, Europe, and APAC regions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Hosting locations"
+            }
+          ],
+          "note": "Agent Orchestrator runs on Experience Platform, which supports regional data hosting.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Customer Journey Analytics data centers",
+              "url": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/data-centers",
+              "note": "Adobe states customers designate the region where their Adobe Experience Platform data will reside at provisioning.",
+              "evidence_type": "technical_docs",
+              "source_section": "Hosting locations"
+            }
+          ],
+          "note": "Customers can designate the region for Experience Platform data.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Customer Managed Keys",
+              "url": "https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys/overview",
+              "note": "Adobe documents customer-managed encryption keys for Experience Platform on Azure and AWS.",
+              "evidence_type": "security_trust",
+              "source_section": "Customer Managed Keys"
+            }
+          ],
+          "note": "Experience Platform supports customer-managed keys.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Data encryption",
+              "url": "https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption",
+              "note": "Adobe states all data used by Experience Platform is encrypted at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Data at rest"
+            }
+          ],
+          "note": "Experience Platform encrypts data at rest.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2",
+          "scope": "adobe_experience_platform_agent_orchestrator",
+          "evidence": [
+            {
+              "title": "Adobe Experience Platform – Data encryption",
+              "url": "https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption",
+              "note": "Adobe states all data in transit between Experience Platform and external components uses HTTPS TLS v1.2.",
+              "evidence_type": "security_trust",
+              "source_section": "Data in transit"
+            }
+          ],
+          "note": "Experience Platform documents TLS 1.2 encryption in transit.",
+          "confidence": "high",
+          "verified_at": "2026-10-01"
         }
       ]
     },
