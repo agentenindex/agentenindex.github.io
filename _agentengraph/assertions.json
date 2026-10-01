@@ -30581,6 +30581,83 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-A6EEB0EBAFC843287D",
+      "agent_id": "AI-0040",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0BC804A8DDEE9F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_ai_agents_api",
+        "note": "Zendesk AI Agents expose documented programmatic API endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0BC804A8DDEE9F",
+            "note": "Zendesk documents APIs for programmatically managing AI-powered conversations, ticket workflows, escalations, data exports, and user data.",
+            "evidence_type": "api_docs",
+            "source_section": "AI Agents API Introduction"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-677DF7877CE165CB7D",
+      "agent_id": "AI-0040",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A558EF4A299438",
+          "SRC-ACB5E1892A707A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_ai_agents_chat_and_ticket_api",
+        "note": "Zendesk AI Agents support webhook-based event delivery.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A558EF4A299438",
+            "note": "Zendesk documents asynchronous AI Agent Chat API events delivered to configured webhook endpoints.",
+            "evidence_type": "api_docs",
+            "source_section": "AI Agents Chat API Webhook"
+          },
+          {
+            "source_id": "SRC-ACB5E1892A707A",
+            "note": "Zendesk documents real-time AI Agent Ticket API webhook delivery.",
+            "evidence_type": "api_docs",
+            "source_section": "AI Agents Ticket API Webhook"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-563F3A211A7B5B1C8F",
       "agent_id": "AI-0040",
       "path": "audience",
@@ -30881,6 +30958,251 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-5EBD7992F1875C51CD",
+      "agent_id": "AI-0040",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-97CFD71884797C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_enterprise_account",
+        "note": "Zendesk exposes audit logs programmatically through documented API endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-97CFD71884797C",
+            "note": "Zendesk documents GET endpoints for listing/showing audit logs and a POST endpoint for exporting audit logs.",
+            "evidence_type": "api_docs",
+            "source_section": "List Audit Logs / Show Audit Log / Export Audit Logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-698F47612115B428A8",
+      "agent_id": "AI-0040",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-97CFD71884797C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_enterprise_account",
+        "note": "Zendesk Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-97CFD71884797C",
+            "note": "Zendesk documents Enterprise audit logs covering account changes since account creation.",
+            "evidence_type": "api_docs",
+            "source_section": "Audit Logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6370B830A746E68833",
+      "agent_id": "AI-0040",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-03EADCC57AFC37"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_enterprise",
+        "note": "Zendesk Enterprise supports custom roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-03EADCC57AFC37",
+            "note": "Zendesk documents creating Enterprise custom agent roles with granular permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Creating custom agent roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E9733EE1DEC8A25B11",
+      "agent_id": "AI-0040",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-46B102DB218C95"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_team_member_access",
+        "note": "Zendesk uses role-based permissions to govern product access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-46B102DB218C95",
+            "note": "Zendesk documents role-based product access and permissions for account owners, admins, agents, light agents, and custom roles.",
+            "evidence_type": "technical_docs",
+            "source_section": "About team member roles and access"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E603FF7C38526602FC",
+      "agent_id": "AI-0040",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4E5464514F444E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_user_provisioning",
+        "note": "Zendesk supports SCIM 2.0 provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4E5464514F444E",
+            "note": "Zendesk states it supports SCIM 2.0 through automated user provisioning with providers such as Okta and Microsoft Entra.",
+            "evidence_type": "technical_docs",
+            "source_section": "Answer"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EBDEC5590CD1A98BBF",
+      "agent_id": "AI-0040",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F1051E241923D0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_account_access_for_ai_agents_admins_and_users",
+        "note": "Zendesk supports OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F1051E241923D0",
+            "note": "Zendesk explicitly lists OpenID Connect (OIDC) as an enterprise SSO option.",
+            "evidence_type": "technical_docs",
+            "source_section": "Enterprise SSO options"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BB7CCB3731EDD2DB27",
+      "agent_id": "AI-0040",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4516222374FB39"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_account_access_for_ai_agents_admins_and_users",
+        "note": "Zendesk supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4516222374FB39",
+            "note": "Zendesk explicitly documents SAML enterprise SSO for Zendesk accounts.",
+            "evidence_type": "technical_docs",
+            "source_section": "Enabling SAML SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-03A512196868DB05C9",
       "agent_id": "AI-0040",
       "path": "identity.name",
@@ -30931,6 +31253,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-465CE65C724EC0C1DC",
+      "agent_id": "AI-0040",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-448C3D45C88BB2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_service_data_including_ai_agent_account_data",
+        "note": "Zendesk offers regional data-hosting options for eligible service data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-448C3D45C88BB2",
+            "note": "Zendesk documents multiple regional AWS hosting locations and regional data-hosting commitments for eligible service data.",
+            "evidence_type": "security_trust",
+            "source_section": "AWS Regions / Data locality agreements"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B8A5E517AF475DD0A3",
+      "agent_id": "AI-0040",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F6EC7B964B7DBD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_data_center_location_add_on",
+        "note": "Eligible Zendesk customers can select a supported hosting region for covered service data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F6EC7B964B7DBD",
+            "note": "Zendesk states eligible customers can purchase Data Center Location and select the region where some service data is hosted.",
+            "evidence_type": "technical_docs",
+            "source_section": "Answer"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-C4BDD38A6786992B55",
       "agent_id": "AI-0040",
       "path": "profile.depth",
@@ -30979,6 +31371,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-00715BD0EE768C2331",
+      "agent_id": "AI-0040",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-350D430CD927D0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_service_data",
+        "note": "Zendesk documents AES-256 encryption at rest for Service Data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-350D430CD927D0",
+            "note": "Zendesk states Service Data is encrypted at rest in AWS using AES-256.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption / At Rest"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F5E26BCFD48354D29A",
+      "agent_id": "AI-0040",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-350D430CD927D0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_ui_and_api_communications",
+        "note": "Zendesk documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-350D430CD927D0",
+            "note": "Zendesk states communications with the UI and APIs are encrypted via HTTPS/TLS 1.2 or higher over public networks.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption / In Transit"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-373A4FBC9D5B437542",
+      "agent_id": "AI-0040",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-350D430CD927D0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zendesk_platform",
+        "note": "Zendesk documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-350D430CD927D0",
+            "note": "Zendesk states it undergoes routine audits and maintains current SOC 2 Type II reports.",
+            "evidence_type": "security_trust",
+            "source_section": "Global Standards / SOC 2 Type II"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-496FB5C59F5201FA32",

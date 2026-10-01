@@ -3193,6 +3193,12 @@
         "access.description": [
           "Zendesk AI Agents; plan- und produktabhängig"
         ],
+        "api.rest": [
+          true
+        ],
+        "api.webhooks": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -3219,17 +3225,53 @@
           "Handover in bestehende Supportprozesse",
           "Mehrere Servicekanäle"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "identity.name": [
           "Zendesk AI Agents"
         ],
         "identity.provider": [
           "Zendesk"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "E-Mail-Support",
