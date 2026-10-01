@@ -4977,30 +4977,6 @@
       "agent_id": "AI-0056",
       "claims": [
         {
-          "path": "protocols.mcp.server",
-          "value": true,
-          "scope": "browser_use_cloud_and_local_mcp",
-          "confidence": "high",
-          "verified_at": "2026-10-01",
-          "evidence": [
-            {
-              "title": "Browser Use – MCP server for browser automation",
-              "url": "https://browser-use.com/mcp",
-              "note": "Browser Use documents a hosted HTTP MCP server plus a local stdio MCP server that expose browser-agent tools to MCP clients.",
-              "evidence_type": "technical_docs",
-              "source_section": "Cloud, or your own Chrome / The six tools"
-            },
-            {
-              "title": "Browser Use – MCP Server changelog",
-              "url": "https://browser-use.com/changelog/21-11-2025",
-              "note": "Browser Use documents the hosted MCP server endpoint and free open-source local stdio MCP server.",
-              "evidence_type": "official_release",
-              "source_section": "Cloud MCP Server"
-            }
-          ],
-          "note": "Browser Use exposes both hosted and local MCP servers."
-        },
-        {
           "path": "api.rest",
           "value": true,
           "scope": "browser_use_cloud_api_v4",
@@ -5107,38 +5083,79 @@
           "note": "Browser Use Enterprise offers an EU data-residency option for agents and browsers."
         },
         {
-          "path": "security.encryption.at_rest",
+          "path": "privacy.residency.customer_region_selectable",
           "value": true,
           "scope": "browser_use_enterprise_cloud",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "Browser Use – Vesta customer security case study",
-              "url": "https://browser-use.com/posts/vesta",
-              "note": "Browser Use states its enterprise security terms include encryption at rest for the Browser Use service used in production.",
-              "evidence_type": "official_release",
-              "source_section": "Why a mortgage LOS chose Browser Use"
+              "title": "Browser Use – Enterprise",
+              "url": "https://browser-use.com/enterprise",
+              "note": "Browser Use states EU data residency for browsers and agents is available to enterprise customers on request.",
+              "evidence_type": "security_trust",
+              "source_section": "Data control"
             }
           ],
-          "note": "Browser Use documents encryption at rest in its enterprise security commitments."
+          "note": "Enterprise customers can request EU residency for Browser Use agents and browsers, providing a customer-selected regional residency option."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "browser_use_cloud_and_local_mcp",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – MCP server for browser automation",
+              "url": "https://browser-use.com/mcp",
+              "note": "Browser Use documents a hosted HTTP MCP server plus a local stdio MCP server that expose browser-agent tools to MCP clients.",
+              "evidence_type": "technical_docs",
+              "source_section": "Cloud, or your own Chrome / The six tools"
+            },
+            {
+              "title": "Browser Use – MCP Server changelog",
+              "url": "https://browser-use.com/changelog/21-11-2025",
+              "note": "Browser Use documents the hosted MCP server endpoint and free open-source local stdio MCP server.",
+              "evidence_type": "official_release",
+              "source_section": "Cloud MCP Server"
+            }
+          ],
+          "note": "Browser Use exposes both hosted and local MCP servers."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "browser_use_enterprise_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Browser Use – Data Processing Addendum",
+              "url": "https://browser-use.com/dpa",
+              "note": "Browser Use states customer personal data at rest is encrypted with the industry-standard AES-256 algorithm.",
+              "evidence_type": "security_trust",
+              "source_section": "Annex – Specific Measures / Encryption"
+            }
+          ],
+          "note": "Browser Use documents AES-256 encryption at rest."
         },
         {
           "path": "security.encryption.in_transit",
-          "value": true,
+          "value": "TLS 1.2+",
           "scope": "browser_use_enterprise_cloud",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "Browser Use – Vesta customer security case study",
-              "url": "https://browser-use.com/posts/vesta",
-              "note": "Browser Use states its enterprise security terms include encryption in transit for the Browser Use service used in production.",
-              "evidence_type": "official_release",
-              "source_section": "Why a mortgage LOS chose Browser Use"
+              "title": "Browser Use – Data Processing Addendum",
+              "url": "https://browser-use.com/dpa",
+              "note": "Browser Use states all data in transit is secured using HTTPS with TLS 1.2 or greater.",
+              "evidence_type": "security_trust",
+              "source_section": "Annex – Specific Measures / Encryption"
             }
           ],
-          "note": "Browser Use documents encryption in transit in its enterprise security commitments."
+          "note": "Browser Use documents HTTPS/TLS 1.2+ encryption in transit."
         },
         {
           "path": "security.soc2_type2",
