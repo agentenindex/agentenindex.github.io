@@ -28,6 +28,7 @@ import unicodedata
 ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "data" / "agents.json"
 DEEP_INPUT = ROOT / "data" / "agent-deep-evidence.json"
+TAXONOMY_INPUT = ROOT / "data" / "agent-deep-taxonomy.json"
 OUT = ROOT / "_agentengraph"
 SNAP = OUT / "snapshots"
 
@@ -214,6 +215,7 @@ def main():
     data = json.loads(INPUT.read_text(encoding="utf-8"))
     agents = data["agents"]
     deep = load(DEEP_INPUT, {"schema_version":"1.0","updated":data.get("updated"),"agents":[]})
+    taxonomy = load(TAXONOMY_INPUT, {"schema_version":"1.0","paths":{},"completeness_profile":{"fields":[]}})
     deep_by_agent, deep_by_key = deep_claim_index(deep)
     known_agent_ids = {a["profile_id"] for a in agents}
     unknown_deep_agents = sorted(set(deep_by_agent) - known_agent_ids)
@@ -486,6 +488,46 @@ def main():
     profile_level = sum(1 for a in active_assertions if (a.get("evidence") or {}).get("binding") == "profile_source_set")
     agents_with_field_evidence = len({a["agent_id"] for a in active_assertions if (a.get("evidence") or {}).get("binding") == "field_level"})
 
+    completeness_fields = list((taxonomy.get("completeness_profile") or {}).get("fields") or [])
+    completeness_agents = {}
+    completeness_state_totals = Counter()
+    completeness_domain_totals = defaultdict(Counter)
+    for aid in sorted(known_agent_ids):
+        claims_by_path = defaultdict(list)
+        for claim in deep_by_agent.get(aid, []):
+            claims_by_path[claim.get("path")].append(claim.get("value"))
+        states = {}
+        for path in completeness_fields:
+            values = claims_by_path.get(path, [])
+            if not values:
+                state = "unknown"
+            elif values and all(value is False for value in values):
+                state = "documented_false"
+            else:
+                state = "documented_true_or_value"
+            states[path] = state
+            completeness_state_totals[state] += 1
+            completeness_domain_totals[path.split(".", 1)[0]][state] += 1
+        documented = sum(1 for state in states.values() if state != "unknown")
+        completeness_agents[aid] = {
+            "documented_fields": documented,
+            "unknown_fields": len(completeness_fields) - documented,
+            "coverage_pct": round((documented / len(completeness_fields) * 100), 2) if completeness_fields else 0.0,
+            "states": states,
+        }
+
+    deep_coverage = {
+        "graph_version": GRAPH_VERSION,
+        "as_of": as_of,
+        "taxonomy_schema_version": taxonomy.get("schema_version"),
+        "profile_version": (taxonomy.get("completeness_profile") or {}).get("version"),
+        "principle": "Missing field-level evidence is unknown, never false.",
+        "fields": completeness_fields,
+        "state_totals": dict(completeness_state_totals),
+        "domain_totals": {domain: dict(counts) for domain, counts in sorted(completeness_domain_totals.items())},
+        "agents": completeness_agents,
+    }
+
     coverage = {
         "graph_version": GRAPH_VERSION,
         "as_of": as_of,
@@ -499,6 +541,12 @@ def main():
         "active_assertions_by_path": dict(sorted(by_path.items())),
         "planned_enrichment_domains": PLANNED_DOMAINS,
         "important_limitation": "v1 imports existing AgentenProfil structure. Existing source lists are profile-level; exact field-level source bindings must be enriched explicitly and are never inferred automatically.",
+        "deep_completeness": {
+            "profile_version": deep_coverage.get("profile_version"),
+            "fields": len(completeness_fields),
+            "state_totals": deep_coverage.get("state_totals"),
+            "report": "_agentengraph/deep-coverage.json",
+        },
     }
 
     manifest = {
@@ -625,6 +673,7 @@ Infrastruktur, aber kein vertraulicher Datenspeicher.
     dump(OUT / "assertions.json", {"graph_version":GRAPH_VERSION,"as_of":as_of,"assertions":sorted(assertions,key=lambda x:(x["agent_id"],x["path"],x["valid_from"],x["assertion_id"]))})
     dump(OUT / "events.json", {"graph_version":GRAPH_VERSION,"as_of":as_of,"events":sorted(event_map.values(),key=lambda x:(x.get("date") or "",x["agent_id"],x["event_id"]))})
     dump(OUT / "coverage.json", coverage)
+    dump(OUT / "deep-coverage.json", deep_coverage)
     dump(OUT / "schema.json", schema)
     dump(SNAP / f"{as_of}.json", current_snapshot)
     dump(SNAP / "current.json", current_snapshot)
