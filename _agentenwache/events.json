@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T13:00:58Z",
+  "updated_at": "2026-10-01T13:03:08Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -270,6 +270,67 @@
         "baseline_health": true
       },
       "previous_checked_at": null,
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-A7C809CF3F15E4EE5F",
+      "detected_at": "2026-10-01T13:02:53Z",
+      "source_id": "SRC-34EAC6A2B5A5FB",
+      "agent_ids": [
+        "AI-0059"
+      ],
+      "source_title": "Google – NotebookLM Deep Research",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/notebooklm-deep-research-file-types/",
+      "change_type": "status_change",
+      "severity": "medium",
+      "metrics": {
+        "old_status": null,
+        "new_status": 200
+      },
+      "previous_checked_at": "2026-10-01T13:00:46Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-F36BAB18189DD54E15",
+      "detected_at": "2026-10-01T13:02:54Z",
+      "source_id": "SRC-A076947F623118",
+      "agent_ids": [
+        "AI-0002"
+      ],
+      "source_title": "Google – Introducing Deep Research and Deep Research Max",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
+      "change_type": "status_change",
+      "severity": "medium",
+      "metrics": {
+        "old_status": null,
+        "new_status": 200
+      },
+      "previous_checked_at": "2026-10-01T13:00:47Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-42C3BBF485CECAFB9D",
+      "detected_at": "2026-10-01T13:02:59Z",
+      "source_id": "SRC-4271C275BA8FED",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – AI-powered interface for work",
+      "url": "https://slack.com/blog/news/ai-powered-interface-for-work",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "new_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "simhash_distance": 2,
+        "old_token_count": 1494,
+        "new_token_count": 1470,
+        "token_delta_pct": -1.61
+      },
+      "previous_checked_at": "2026-10-01T13:00:52Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
