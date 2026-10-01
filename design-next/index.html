@@ -166,6 +166,11 @@ footer.sitefoot{border-top:1px solid var(--line);padding:36px 0 25px;background:
  .mrow{grid-template-columns:34px 1fr}.mrow p{grid-column:2}.footgrid{grid-template-columns:1fr}
  .profile-grid{padding-inline:16px}.profile-head,.profile-section,.profile-foot{padding-inline:16px}
 }
+
+.preview-provider-logo{position:absolute;right:22px;top:54px;width:54px;height:54px;border:1px solid #e4eaf3;border-radius:16px;background:rgba(255,255,255,.92);display:grid;place-items:center;box-shadow:0 8px 24px rgba(34,62,98,.07)}
+.preview-provider-logo img{width:32px;height:32px;object-fit:contain}
+.agent{position:relative}
+.agent .agent-title{padding-right:66px}
 </style>
 </head>
 <body>
@@ -220,7 +225,7 @@ footer.sitefoot{border-top:1px solid var(--line);padding:36px 0 25px;background:
 <section class="section"><div class="wrap">
  <div class="section-head"><div><p class="kicker">AgentenProfile</p><h2>Einheitlich strukturiert. Schnell vergleichbar.</h2></div><p>Jedes AgentenProfil zeigt dieselben Kerninformationen: Anbieter, Kategorie, Einsatz, Grenzen, Quellenstatus, Prüfdatum und Änderungsverlauf.</p></div>
  <div class="cards">
-  <a class="agent" href="/agenten/chatgpt-deep-research/">
+  <a class="agent" href="/agenten/chatgpt-deep-research/"><span class="preview-provider-logo" aria-hidden="true"><img src="/assets/provider-logos/openai.png" alt=""/></span>
    <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Recherche</span></div>
    <div class="agent-title"><h3>ChatGPT Deep Research</h3><span class="provider">OpenAI</span></div>
    <p class="agent-summary">Mehrstufige Recherche in ChatGPT mit Web, Dateien, steuerbaren Quellen und zitiertem Bericht.</p>
@@ -234,7 +239,7 @@ footer.sitefoot{border-top:1px solid var(--line);padding:36px 0 25px;background:
    <footer><div class="agent-id"><span><b>AI-0001</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
   </a>
 
-  <a class="agent" href="/agenten/claude-code/">
+  <a class="agent" href="/agenten/claude-code/"><span class="preview-provider-logo" aria-hidden="true"><img src="/assets/provider-logos/anthropic.svg" alt=""/></span>
    <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Coding</span></div>
    <div class="agent-title"><h3>Claude Code</h3><span class="provider">Anthropic</span></div>
    <p class="agent-summary">Agentischer Coding-Assistent für Terminal und Entwicklungsumgebung, der Code lesen, ändern und Befehle ausführen kann.</p>
@@ -248,7 +253,7 @@ footer.sitefoot{border-top:1px solid var(--line);padding:36px 0 25px;background:
    <footer><div class="agent-id"><span><b>AI-0007</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
   </a>
 
-  <a class="agent" href="/agenten/gemini-deep-research/">
+  <a class="agent" href="/agenten/gemini-deep-research/"><span class="preview-provider-logo" aria-hidden="true"><img src="/assets/provider-logos/google.svg" alt=""/></span>
    <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Recherche</span></div>
    <div class="agent-title"><h3>Gemini Deep Research</h3><span class="provider">Google</span></div>
    <p class="agent-summary">Agentische Recherche in Gemini mit Google Search und optional eigenen Google-Datenquellen.</p>
@@ -262,7 +267,7 @@ footer.sitefoot{border-top:1px solid var(--line);padding:36px 0 25px;background:
    <footer><div class="agent-id"><span><b>AI-0002</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
   </a>
 
-  <a class="agent" href="/agenten/devin/">
+  <a class="agent" href="/agenten/devin/"><span class="preview-provider-logo" aria-hidden="true"><img src="/assets/provider-logos/cognition.png" alt=""/></span>
    <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Coding</span></div>
    <div class="agent-title"><h3>Devin</h3><span class="provider">Cognition</span></div>
    <p class="agent-summary">Software-Engineering-Agent für delegierbare Entwicklungsaufgaben wie Änderungen, Migrationen und Wartungsarbeiten.</p>
@@ -276,7 +281,7 @@ footer.sitefoot{border-top:1px solid var(--line);padding:36px 0 25px;background:
    <footer><div class="agent-id"><span><b>AI-0012</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
   </a>
 
-  <a class="agent" href="/agenten/salesforce-agentforce/">
+  <a class="agent" href="/agenten/salesforce-agentforce/"><span class="preview-provider-logo" aria-hidden="true"><img src="/assets/provider-logos/salesforce.png" alt=""/></span>
    <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Enterprise</span></div>
    <div class="agent-title"><h3>Salesforce Agentforce</h3><span class="provider">Salesforce</span></div>
    <p class="agent-summary">Salesforce-Plattform zum Bauen und Betreiben von Agenten, die CRM-Daten, Geschäftslogik und Aktionen nutzen.</p>
@@ -290,7 +295,7 @@ footer.sitefoot{border-top:1px solid var(--line);padding:36px 0 25px;background:
    <footer><div class="agent-id"><span><b>AI-0029</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
   </a>
 
-  <a class="agent" href="/agenten/intercom-fin/">
+  <a class="agent" href="/agenten/intercom-fin/"><span class="preview-provider-logo" aria-hidden="true"><img src="/assets/provider-logos/intercom.svg" alt=""/></span>
    <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Kundenservice</span></div>
    <div class="agent-title"><h3>Intercom Fin</h3><span class="provider">Intercom</span></div>
    <p class="agent-summary">KI-Agent für Kundenservice, der Fragen beantwortet und definierte Aktionen oder Übergaben ausführen kann.</p>

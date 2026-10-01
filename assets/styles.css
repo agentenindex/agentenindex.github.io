@@ -480,3 +480,49 @@ html{scroll-padding-top:112px;overflow-x:clip}body{overflow-x:clip}.container,.n
     gap:.08em;
   }
 }
+
+
+/* AgentenIndex provider logos — local, reusable brand layer */
+.agent-list-card,
+.v73agent,
+.v73-related-card{position:relative}
+.agent-provider-mark{
+  width:46px;height:46px;border-radius:14px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.94);
+  border:1px solid #e4e7e0;
+  box-shadow:0 8px 24px rgba(24,31,26,.07);
+}
+.agent-provider-mark img{
+  width:28px;height:28px;object-fit:contain;display:block;
+}
+.agent-list-card .agent-provider-mark{
+  position:absolute;right:18px;top:18px;
+}
+.agent-list-card{
+  padding-right:82px!important;
+}
+.v73agent .agent-provider-mark{
+  position:absolute;right:20px;top:58px;
+}
+.v73agent h3{
+  padding-right:58px;
+}
+.v73-related-card .agent-provider-mark{
+  position:absolute;right:16px;top:16px;
+}
+.v7p-orbit-core{
+  background:#fff!important;
+  border:1px solid rgba(221,226,218,.9);
+  box-shadow:0 0 0 10px rgba(205,164,75,.08),0 18px 45px rgba(20,24,21,.14)!important;
+}
+.v7p-orbit-core img{
+  width:48px;height:48px;object-fit:contain;display:block;
+}
+@media(max-width:620px){
+  .agent-list-card .agent-provider-mark{width:40px;height:40px;right:14px;top:14px}
+  .agent-list-card .agent-provider-mark img{width:24px;height:24px}
+  .agent-list-card{padding-right:68px!important}
+  .v73agent .agent-provider-mark{width:40px;height:40px;right:16px;top:54px}
+  .v73agent .agent-provider-mark img{width:24px;height:24px}
+}
