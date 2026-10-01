@@ -22,9 +22,9 @@
     "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified. Discontinued products receive priority score 0 and no active research hints."
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 41,
+    "agents_below_target_with_deep_evidence": 39,
     "agents_without_deep_evidence": 0,
-    "agents_at_or_above_target": 68,
+    "agents_at_or_above_target": 70,
     "agents_discontinued": 1
   },
   "field_priorities": [
@@ -113,16 +113,16 @@
       "coverage_pct": 28.18
     },
     {
-      "path": "privacy.residency.customer_region_selectable",
-      "documented_agents": 37,
-      "unknown_agents": 73,
-      "coverage_pct": 33.64
+      "path": "governance.scim",
+      "documented_agents": 39,
+      "unknown_agents": 71,
+      "coverage_pct": 35.45
     },
     {
-      "path": "governance.scim",
-      "documented_agents": 38,
-      "unknown_agents": 72,
-      "coverage_pct": 34.55
+      "path": "privacy.residency.customer_region_selectable",
+      "documented_agents": 40,
+      "unknown_agents": 70,
+      "coverage_pct": 36.36
     },
     {
       "path": "protocols.mcp.client",
@@ -131,28 +131,28 @@
       "coverage_pct": 39.09
     },
     {
-      "path": "privacy.residency.available",
-      "documented_agents": 52,
-      "unknown_agents": 58,
-      "coverage_pct": 47.27
-    },
-    {
       "path": "governance.sso.saml",
       "documented_agents": 53,
       "unknown_agents": 57,
       "coverage_pct": 48.18
     },
     {
-      "path": "security.encryption.in_transit",
-      "documented_agents": 53,
-      "unknown_agents": 57,
-      "coverage_pct": 48.18
-    },
-    {
-      "path": "security.encryption.at_rest",
+      "path": "privacy.residency.available",
       "documented_agents": 55,
       "unknown_agents": 55,
       "coverage_pct": 50.0
+    },
+    {
+      "path": "security.encryption.in_transit",
+      "documented_agents": 56,
+      "unknown_agents": 54,
+      "coverage_pct": 50.91
+    },
+    {
+      "path": "security.encryption.at_rest",
+      "documented_agents": 58,
+      "unknown_agents": 52,
+      "coverage_pct": 52.73
     },
     {
       "path": "security.soc2_type2",
@@ -162,15 +162,15 @@
     },
     {
       "path": "governance.rbac",
-      "documented_agents": 73,
-      "unknown_agents": 37,
-      "coverage_pct": 66.36
+      "documented_agents": 75,
+      "unknown_agents": 35,
+      "coverage_pct": 68.18
     },
     {
       "path": "governance.audit_logs.available",
-      "documented_agents": 74,
-      "unknown_agents": 36,
-      "coverage_pct": 67.27
+      "documented_agents": 76,
+      "unknown_agents": 34,
+      "coverage_pct": 69.09
     },
     {
       "path": "hosting.managed",
@@ -1244,92 +1244,6 @@
       ]
     },
     {
-      "agent_id": "AI-0005",
-      "name": "Microsoft Copilot Researcher",
-      "provider_id": "PROV-MICROSOFT",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 94.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 9.0,
-        "unknown_share": 4.8,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
-      "fields_needed_for_40pct": 9,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Microsoft 365 Blog – Researcher and Analyst are now generally available",
-          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance sso oidc"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation hosting private_network"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
       "agent_id": "AI-0012",
       "name": "Devin",
       "provider_id": "PROV-COGNITION",
@@ -1498,92 +1412,6 @@
           "documented_agents": 21,
           "global_coverage_pct": 19.09,
           "suggested_query": "Gumloop Gumball official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0037",
-      "name": "Microsoft Copilot Analyst",
-      "provider_id": "PROV-MICROSOFT",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 94.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 9.0,
-        "unknown_share": 4.8,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
-      "fields_needed_for_40pct": 9,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Microsoft 365 Blog – Researcher and Analyst are now generally available",
-          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance sso oidc"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation hosting private_network"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance audit_logs api"
         }
       ]
     },
@@ -3211,9 +3039,9 @@
       ]
     },
     {
-      "agent_id": "AI-0070",
-      "name": "Warp Agent CLI",
-      "provider_id": "PROV-WARP",
+      "agent_id": "AI-0005",
+      "name": "Microsoft Copilot Researcher",
+      "provider_id": "PROV-MICROSOFT",
       "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 91.6,
@@ -3233,39 +3061,40 @@
         "protocols.a2a.supported",
         "protocols.mcp.server",
         "api.webhooks",
+        "governance.sso.oidc",
         "hosting.private_network",
-        "governance.audit_logs.api",
-        "governance.audit_logs.retention_days"
+        "governance.audit_logs.api"
       ],
       "available_primary_sources": [
         {
-          "title": "Warp Docs – Agent CLI overview",
-          "url": "https://docs.warp.dev/agents/cli/",
+          "title": "Microsoft 365 Blog – Researcher and Analyst are now generally available",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Microsoft Learn – Audit Microsoft 365 Copilot interactions",
+          "url": "https://learn.microsoft.com/en-us/purview/audit-copilot",
           "origin": "field_level_evidence",
           "evidence_type": "technical_docs"
         },
         {
-          "title": "Warp Docs – Enterprise overview",
-          "url": "https://docs.warp.dev/enterprise",
+          "title": "Microsoft Learn – Data, Privacy, and Security for Microsoft 365 Copilot",
+          "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
           "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
+          "evidence_type": "security_trust"
         },
         {
-          "title": "Warp Docs – MCP servers CLI reference",
-          "url": "https://docs.warp.dev/reference/cli/mcp-servers",
+          "title": "Microsoft Learn – Microsoft 365 Copilot architecture, data protection, and auditing",
+          "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing",
           "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
+          "evidence_type": "security_trust"
         },
         {
-          "title": "Warp Docs – Single Sign-On",
-          "url": "https://docs.warp.dev/enterprise/security-and-compliance/sso",
+          "title": "Microsoft Learn – Microsoft 365 Multi-Geo",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide",
           "origin": "field_level_evidence",
           "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Warp – Agent CLI",
-          "url": "https://www.warp.dev/agent-cli",
-          "origin": "profile_source"
         }
       ],
       "research_hints": [
@@ -3273,49 +3102,159 @@
           "path": "protocols.a2a.client",
           "documented_agents": 7,
           "global_coverage_pct": 6.36,
-          "suggested_query": "Warp Warp Agent CLI official documentation protocols a2a client"
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a client"
         },
         {
           "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
-          "suggested_query": "Warp Warp Agent CLI official documentation protocols a2a server"
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a server"
         },
         {
           "path": "protocols.a2a.supported",
           "documented_agents": 10,
           "global_coverage_pct": 9.09,
-          "suggested_query": "Warp Warp Agent CLI official documentation protocols a2a supported"
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a supported"
         },
         {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
-          "suggested_query": "Warp Warp Agent CLI official documentation protocols mcp server"
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols mcp server"
         },
         {
           "path": "api.webhooks",
           "documented_agents": 15,
           "global_coverage_pct": 13.64,
-          "suggested_query": "Warp Warp Agent CLI official documentation api webhooks"
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance sso oidc"
         },
         {
           "path": "hosting.private_network",
           "documented_agents": 18,
           "global_coverage_pct": 16.36,
-          "suggested_query": "Warp Warp Agent CLI official documentation hosting private_network"
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation hosting private_network"
         },
         {
           "path": "governance.audit_logs.api",
           "documented_agents": 21,
           "global_coverage_pct": 19.09,
-          "suggested_query": "Warp Warp Agent CLI official documentation governance audit_logs api"
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0037",
+      "name": "Microsoft Copilot Analyst",
+      "provider_id": "PROV-MICROSOFT",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 91.6,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 3.0,
+        "unknown_share": 3.6,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 7,
+      "unknown_fields": 18,
+      "coverage_pct": 28.0,
+      "fields_needed_for_40pct": 3,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "hosting.private_network",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Microsoft 365 Blog – Researcher and Analyst are now generally available",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
         },
         {
-          "path": "governance.audit_logs.retention_days",
+          "title": "Microsoft Learn – Audit Microsoft 365 Copilot interactions",
+          "url": "https://learn.microsoft.com/en-us/purview/audit-copilot",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Microsoft Learn – Data, Privacy, and Security for Microsoft 365 Copilot",
+          "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Microsoft Learn – Microsoft 365 Copilot architecture, data protection, and auditing",
+          "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Microsoft Learn – Microsoft 365 Multi-Geo",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance sso oidc"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation hosting private_network"
+        },
+        {
+          "path": "governance.audit_logs.api",
           "documented_agents": 21,
           "global_coverage_pct": 19.09,
-          "suggested_query": "Warp Warp Agent CLI official documentation governance audit_logs retention_days"
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance audit_logs api"
         }
       ]
     },
@@ -3545,121 +3484,6 @@
           "documented_agents": 21,
           "global_coverage_pct": 19.09,
           "suggested_query": "Qodo Qodo Git official documentation governance audit_logs retention_days"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0106",
-      "name": "Microsoft Fabric Data Agent",
-      "provider_id": "PROV-MICROSOFT",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 90.4,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 2.0,
-        "unknown_share": 3.4,
-        "source_readiness": 5.0
-      },
-      "documented_fields": 8,
-      "unknown_fields": 17,
-      "coverage_pct": 32.0,
-      "fields_needed_for_40pct": 2,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.api",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.siem_export"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Microsoft Learn – Auditing data agent interactions in Microsoft Purview",
-          "url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-purview-governance",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Microsoft Learn – Create a Fabric data agent",
-          "url": "https://learn.microsoft.com/en-us/fabric/data-science/how-to-create-data-agent",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Microsoft Learn – Customer-managed keys for Fabric workspaces",
-          "url": "https://learn.microsoft.com/en-us/fabric/security/workspace-customer-managed-keys",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "Microsoft Learn – Data security overview",
-          "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/fabric-onelake-security",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "MicrosoftDocs – Data agent as Model Context Protocol server",
-          "url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/data-agent-mcp-server.md",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_github"
-        },
-        {
-          "title": "MicrosoftDocs GitHub – Fabric Data Agent",
-          "url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/how-to-create-data-agent.md",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation protocols a2a supported"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs api"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "governance.audit_logs.siem_export",
-          "documented_agents": 29,
-          "global_coverage_pct": 26.36,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs siem_export"
         }
       ]
     },
@@ -7314,6 +7138,121 @@
       ]
     },
     {
+      "agent_id": "AI-0070",
+      "name": "Warp Agent CLI",
+      "provider_id": "PROV-WARP",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 28.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "hosting.private_network",
+        "governance.audit_logs.api",
+        "governance.audit_logs.retention_days"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Warp Docs – Agent CLI overview",
+          "url": "https://docs.warp.dev/agents/cli/",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Warp Docs – Enterprise overview",
+          "url": "https://docs.warp.dev/enterprise",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Warp Docs – MCP servers CLI reference",
+          "url": "https://docs.warp.dev/reference/cli/mcp-servers",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Warp Docs – Security Overview",
+          "url": "https://docs.warp.dev/enterprise/security-and-compliance/security-overview",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Warp Docs – Single Sign-On",
+          "url": "https://docs.warp.dev/enterprise/security-and-compliance/sso",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Warp – Agent CLI",
+          "url": "https://www.warp.dev/agent-cli",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Warp Warp Agent CLI official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Warp Warp Agent CLI official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Warp Warp Agent CLI official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Warp Warp Agent CLI official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "Warp Warp Agent CLI official documentation api webhooks"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Warp Warp Agent CLI official documentation hosting private_network"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 21,
+          "global_coverage_pct": 19.09,
+          "suggested_query": "Warp Warp Agent CLI official documentation governance audit_logs api"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 21,
+          "global_coverage_pct": 19.09,
+          "suggested_query": "Warp Warp Agent CLI official documentation governance audit_logs retention_days"
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0077",
       "name": "Google Agent Development Kit",
       "provider_id": "PROV-GOOGLE",
@@ -7703,8 +7642,8 @@
         "security.customer_managed_key",
         "governance.audit_logs.siem_export",
         "governance.custom_roles",
-        "privacy.residency.customer_region_selectable",
-        "governance.scim"
+        "governance.scim",
+        "privacy.residency.customer_region_selectable"
       ],
       "available_primary_sources": [
         {
@@ -7794,16 +7733,16 @@
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance custom_roles"
         },
         {
-          "path": "privacy.residency.customer_region_selectable",
-          "documented_agents": 37,
-          "global_coverage_pct": 33.64,
-          "suggested_query": "Microsoft Microsoft Agent Framework official documentation privacy residency customer_region_selectable"
+          "path": "governance.scim",
+          "documented_agents": 39,
+          "global_coverage_pct": 35.45,
+          "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance scim"
         },
         {
-          "path": "governance.scim",
-          "documented_agents": 38,
-          "global_coverage_pct": 34.55,
-          "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance scim"
+          "path": "privacy.residency.customer_region_selectable",
+          "documented_agents": 40,
+          "global_coverage_pct": 36.36,
+          "suggested_query": "Microsoft Microsoft Agent Framework official documentation privacy residency customer_region_selectable"
         }
       ]
     },
@@ -8558,6 +8497,127 @@
           "documented_agents": 21,
           "global_coverage_pct": 19.09,
           "suggested_query": "Snowflake Snowflake Cortex Agents official documentation governance audit_logs retention_days"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0106",
+      "name": "Microsoft Fabric Data Agent",
+      "provider_id": "PROV-MICROSOFT",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 28.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.api",
+        "governance.audit_logs.retention_days",
+        "governance.audit_logs.siem_export"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Microsoft Learn – Auditing data agent interactions in Microsoft Purview",
+          "url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-purview-governance",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Microsoft Learn – Create a Fabric data agent",
+          "url": "https://learn.microsoft.com/en-us/fabric/data-science/how-to-create-data-agent",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Microsoft Learn – Customer-managed keys for Fabric workspaces",
+          "url": "https://learn.microsoft.com/en-us/fabric/security/workspace-customer-managed-keys",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Microsoft Learn – Data security overview",
+          "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/fabric-onelake-security",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Microsoft Learn – Fabric security fundamentals",
+          "url": "https://learn.microsoft.com/en-us/fabric/security/security-fundamentals",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "MicrosoftDocs – Data agent as Model Context Protocol server",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/data-agent-mcp-server.md",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_github"
+        },
+        {
+          "title": "MicrosoftDocs GitHub – Fabric Data Agent",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/how-to-create-data-agent.md",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation protocols a2a supported"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 21,
+          "global_coverage_pct": 19.09,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs api"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 21,
+          "global_coverage_pct": 19.09,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "documented_agents": 29,
+          "global_coverage_pct": 26.36,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs siem_export"
         }
       ]
     },

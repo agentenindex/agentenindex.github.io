@@ -3941,6 +3941,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-F187ADF198284EA789",
+      "agent_id": "AI-0005",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CC3082A67883F1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot",
+        "note": "Microsoft 365 Copilot interactions are represented in Microsoft Purview audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CC3082A67883F1",
+            "note": "Microsoft documents audit records for Microsoft 365 Copilot user interactions and AI activities in Microsoft Purview Audit.",
+            "evidence_type": "technical_docs",
+            "source_section": "Copilot audit events"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3D74E8645974D4BD07",
+      "agent_id": "AI-0005",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-639F80A137CE56"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot",
+        "note": "Researcher/Analyst operate under Microsoft 365 role- and permission-based access controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-639F80A137CE56",
+            "note": "Microsoft states Copilot respects existing Microsoft 365 permissions, access controls, and identity authorization.",
+            "evidence_type": "security_trust",
+            "source_section": "Permissions and access controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-1BDA9E9BF4307D64D6",
       "agent_id": "AI-0005",
       "path": "hosting.managed",
@@ -4024,6 +4094,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-CCCA31EDD9C409A99A",
+      "agent_id": "AI-0005",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-002996855C5FF0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_service_boundary",
+        "note": "Microsoft 365 Copilot provides documented data-residency commitments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-002996855C5FF0",
+            "note": "Microsoft documents Microsoft 365 Copilot within the Microsoft 365 service boundary and applicable geographic/data residency commitments.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency and processing"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8FEBE668326AB83D0F",
+      "agent_id": "AI-0005",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-64F6534A175FE4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_multi_geo",
+        "note": "Eligible Microsoft 365 organizations can configure supported data geographies used by the Copilot service boundary.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-64F6534A175FE4",
+            "note": "Microsoft documents Multi-Geo controls for placing Microsoft 365 user data in selected supported geographies; Copilot operates within this service boundary.",
+            "evidence_type": "technical_docs",
+            "source_section": "Multi-Geo capabilities"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-72056C52F58A7EDCDA",
       "agent_id": "AI-0005",
       "path": "profile.depth",
@@ -4070,6 +4210,76 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-2F56E8A66025986A9F",
+      "agent_id": "AI-0005",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-639F80A137CE56"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_service_boundary",
+        "note": "Microsoft 365 Copilot data is protected by Microsoft 365 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-639F80A137CE56",
+            "note": "Microsoft states Copilot data is protected by Microsoft 365 encryption controls, including encryption at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2B3E6F79FA10466652",
+      "agent_id": "AI-0005",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-639F80A137CE56"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_service_boundary",
+        "note": "Microsoft 365 Copilot data is protected by Microsoft 365 encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-639F80A137CE56",
+            "note": "Microsoft states Copilot data is protected by Microsoft 365 encryption controls, including encryption in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0C39956BDF6CE48BEA",
@@ -33905,6 +34115,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-22505EC1892A9C2636",
+      "agent_id": "AI-0037",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CC3082A67883F1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot",
+        "note": "Microsoft 365 Copilot interactions are represented in Microsoft Purview audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CC3082A67883F1",
+            "note": "Microsoft documents audit records for Microsoft 365 Copilot user interactions and AI activities in Microsoft Purview Audit.",
+            "evidence_type": "technical_docs",
+            "source_section": "Copilot audit events"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AC100C0B71EF4A962E",
+      "agent_id": "AI-0037",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-639F80A137CE56"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot",
+        "note": "Researcher/Analyst operate under Microsoft 365 role- and permission-based access controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-639F80A137CE56",
+            "note": "Microsoft states Copilot respects existing Microsoft 365 permissions, access controls, and identity authorization.",
+            "evidence_type": "security_trust",
+            "source_section": "Permissions and access controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-8702128541DB364B36",
       "agent_id": "AI-0037",
       "path": "hosting.managed",
@@ -33988,6 +34268,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1FED0F54B5DC6D0683",
+      "agent_id": "AI-0037",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-002996855C5FF0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_service_boundary",
+        "note": "Microsoft 365 Copilot provides documented data-residency commitments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-002996855C5FF0",
+            "note": "Microsoft documents Microsoft 365 Copilot within the Microsoft 365 service boundary and applicable geographic/data residency commitments.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency and processing"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7132C9D03C27A86212",
+      "agent_id": "AI-0037",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-64F6534A175FE4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_multi_geo",
+        "note": "Eligible Microsoft 365 organizations can configure supported data geographies used by the Copilot service boundary.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-64F6534A175FE4",
+            "note": "Microsoft documents Multi-Geo controls for placing Microsoft 365 user data in selected supported geographies; Copilot operates within this service boundary.",
+            "evidence_type": "technical_docs",
+            "source_section": "Multi-Geo capabilities"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-25EFFD1FCC92903E96",
       "agent_id": "AI-0037",
       "path": "profile.depth",
@@ -34034,6 +34384,76 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-B764C15B7FE29895B8",
+      "agent_id": "AI-0037",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-639F80A137CE56"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_service_boundary",
+        "note": "Microsoft 365 Copilot data is protected by Microsoft 365 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-639F80A137CE56",
+            "note": "Microsoft states Copilot data is protected by Microsoft 365 encryption controls, including encryption at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6DEE79BC606B34BDB0",
+      "agent_id": "AI-0037",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-639F80A137CE56"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_service_boundary",
+        "note": "Microsoft 365 Copilot data is protected by Microsoft 365 encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-639F80A137CE56",
+            "note": "Microsoft states Copilot data is protected by Microsoft 365 encryption controls, including encryption in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-290BB3B034BCEE939F",
@@ -62006,6 +62426,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-C5901C04F12024D36F",
+      "agent_id": "AI-0070",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3ED389452B988F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_enterprise",
+        "note": "Warp Enterprise supports SCIM user lifecycle management.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3ED389452B988F",
+            "note": "Warp explicitly states Enterprise supports SCIM for user lifecycle management.",
+            "evidence_type": "technical_docs",
+            "source_section": "SCIM provisioning"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-BD9E93783E78DC7857",
       "agent_id": "AI-0070",
       "path": "governance.sso.oidc",
@@ -62269,6 +62724,76 @@
             "note": "Warp documents connecting Agent CLI agents to external MCP servers via the --mcp flag.",
             "evidence_type": "technical_docs",
             "source_section": "MCP servers"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C75ECB9628DD01AA77",
+      "agent_id": "AI-0070",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A6159816600BC9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_enterprise_cloud_data",
+        "note": "Warp documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A6159816600BC9",
+            "note": "Warp documents AES-256 encryption for cloud data at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F4113C052A069B9857",
+      "agent_id": "AI-0070",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A6159816600BC9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_enterprise_cloud_data",
+        "note": "Warp documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A6159816600BC9",
+            "note": "Warp documents TLS 1.2 or higher for data in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption"
           }
         ]
       },
@@ -94642,6 +95167,76 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-DACC35E398325D1331",
+      "agent_id": "AI-0106",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-835E6EE3B15A48"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_fabric_workspace_data_agent",
+        "note": "Microsoft Fabric supports geographic data residency for workspaces and workloads including Data Agent data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-835E6EE3B15A48",
+            "note": "Microsoft documents geographic data residency controls for Fabric workloads and customer data.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency and geography"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-297845A945EBB79F03",
+      "agent_id": "AI-0106",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-835E6EE3B15A48"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_fabric_workspace_data_agent",
+        "note": "Eligible Fabric organizations can place workspace content in supported geographic regions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-835E6EE3B15A48",
+            "note": "Microsoft documents capacity/workspace placement and Multi-Geo options that let organizations place Fabric content in supported geographic regions.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency and Multi-Geo"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-546B2A56FAA24DACF4",
