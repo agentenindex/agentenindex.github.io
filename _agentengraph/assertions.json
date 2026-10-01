@@ -59897,6 +59897,48 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-D0F06BFD6A4A45258D",
+      "agent_id": "AI-0067",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-88674E43AEE30B",
+          "SRC-D96DE14F246087"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "openhands_cloud_api",
+        "note": "OpenHands exposes documented REST-style HTTP API endpoints for agent conversations and automation.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D96DE14F246087",
+            "note": "OpenHands documents authenticated HTTP GET endpoints under /api/conversations for retrieving agent conversations and runtime status.",
+            "evidence_type": "api_docs",
+            "source_section": "GET /api/conversations/{conversation_id}"
+          },
+          {
+            "source_id": "SRC-88674E43AEE30B",
+            "note": "OpenHands documents authenticated GET /api/conversations for programmatic conversation search and automation.",
+            "evidence_type": "api_docs",
+            "source_section": "GET /api/conversations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3B5DB7F36EF446CBCC",
       "agent_id": "AI-0067",
       "path": "audience",
@@ -60513,6 +60555,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-4409DBFE0A46F45757",
+      "agent_id": "AI-0067",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4394D73D42A532"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "openhands_agent_sessions",
+        "note": "OpenHands agent sessions can connect to configured MCP servers through the runtime MCP router.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4394D73D42A532",
+            "note": "OpenHands documents MCP configuration with SSE, stdio, and streamable HTTP servers added to the MCP router inside the runtime container.",
+            "evidence_type": "api_docs",
+            "source_section": "mcp_config"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-7B1BBE9B9D32086BDF",

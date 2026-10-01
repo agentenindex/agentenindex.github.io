@@ -108,9 +108,9 @@
     },
     {
       "path": "api.rest",
-      "documented_agents": 32,
-      "unknown_agents": 78,
-      "coverage_pct": 29.09
+      "documented_agents": 33,
+      "unknown_agents": 77,
+      "coverage_pct": 30.0
     },
     {
       "path": "governance.scim",
@@ -126,9 +126,9 @@
     },
     {
       "path": "protocols.mcp.client",
-      "documented_agents": 43,
-      "unknown_agents": 67,
-      "coverage_pct": 39.09
+      "documented_agents": 44,
+      "unknown_agents": 66,
+      "coverage_pct": 40.0
     },
     {
       "path": "governance.sso.saml",
@@ -2827,109 +2827,6 @@
       ]
     },
     {
-      "agent_id": "AI-0067",
-      "name": "OpenHands",
-      "provider_id": "PROV-OPENHANDS",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 91.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 4.0,
-        "unknown_share": 3.8,
-        "source_readiness": 4.0
-      },
-      "documented_fields": 6,
-      "unknown_fields": 19,
-      "coverage_pct": 24.0,
-      "fields_needed_for_40pct": 4,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.api",
-        "governance.audit_logs.retention_days"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "OpenHands Enterprise",
-          "url": "https://www.openhands.dev/enterprise",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        },
-        {
-          "title": "OpenHands – Enterprise Agent Control Plane",
-          "url": "https://www.openhands.dev/blog/openhands-enterprise-agent-control-plane",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "OpenHands – Pricing",
-          "url": "https://www.openhands.dev/pricing",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        },
-        {
-          "title": "OpenHands",
-          "url": "https://openhands.dev/",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "OpenHands OpenHands official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "OpenHands OpenHands official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "OpenHands OpenHands official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "OpenHands OpenHands official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "OpenHands OpenHands official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "OpenHands OpenHands official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "OpenHands OpenHands official documentation governance audit_logs api"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "OpenHands OpenHands official documentation governance audit_logs retention_days"
-        }
-      ]
-    },
-    {
       "agent_id": "AI-0101",
       "name": "11x Alice",
       "provider_id": "PROV-11X",
@@ -3040,6 +2937,127 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "11x 11x Alice official documentation governance audit_logs retention_days"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0067",
+      "name": "OpenHands",
+      "provider_id": "PROV-OPENHANDS",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 90.4,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 2.0,
+        "unknown_share": 3.4,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 8,
+      "unknown_fields": 17,
+      "coverage_pct": 32.0,
+      "fields_needed_for_40pct": 2,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.api",
+        "governance.audit_logs.retention_days"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "OpenHands Docs – Get Conversation",
+          "url": "https://docs.openhands.dev/api-reference/get-conversation",
+          "origin": "field_level_evidence",
+          "evidence_type": "api_docs"
+        },
+        {
+          "title": "OpenHands Docs – Search Conversations",
+          "url": "https://docs.openhands.dev/api-reference/search-conversations",
+          "origin": "field_level_evidence",
+          "evidence_type": "api_docs"
+        },
+        {
+          "title": "OpenHands Docs – Store Settings",
+          "url": "https://docs.openhands.dev/api-reference/store-settings",
+          "origin": "field_level_evidence",
+          "evidence_type": "api_docs"
+        },
+        {
+          "title": "OpenHands Enterprise",
+          "url": "https://www.openhands.dev/enterprise",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "OpenHands – Enterprise Agent Control Plane",
+          "url": "https://www.openhands.dev/blog/openhands-enterprise-agent-control-plane",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "OpenHands – Pricing",
+          "url": "https://www.openhands.dev/pricing",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "OpenHands",
+          "url": "https://openhands.dev/",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "OpenHands OpenHands official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "OpenHands OpenHands official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "OpenHands OpenHands official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "OpenHands OpenHands official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "OpenHands OpenHands official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "OpenHands OpenHands official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "OpenHands OpenHands official documentation governance audit_logs api"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "OpenHands OpenHands official documentation governance audit_logs retention_days"
         }
       ]
     },
@@ -11125,8 +11143,8 @@
         },
         {
           "path": "api.rest",
-          "documented_agents": 32,
-          "global_coverage_pct": 29.09,
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
           "suggested_query": "Anthropic Claude Code official documentation api rest"
         }
       ]
@@ -12525,8 +12543,8 @@
         },
         {
           "path": "api.rest",
-          "documented_agents": 32,
-          "global_coverage_pct": 29.09,
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
           "suggested_query": "Augment Code Augment Code Agent official documentation api rest"
         }
       ]
