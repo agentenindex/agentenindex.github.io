@@ -10698,6 +10698,23 @@
       "agent_id": "AI-0060",
       "claims": [
         {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "grok_for_business",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "xAI – Grok for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "xAI explicitly lists SCIM among Grok for Business enterprise controls.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise-grade AI"
+            }
+          ],
+          "note": "Grok for Business supports SCIM."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "grok_deepsearch",
@@ -10713,6 +10730,40 @@
             }
           ],
           "note": "Grok DeepSearch is delivered through xAI's managed Grok service."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "grok_for_business_enterprise_vault",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "xAI – Grok for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "xAI states Enterprise Vault data is encrypted with customer-controlled keys.",
+              "evidence_type": "security_trust",
+              "source_section": "Secure, Enterprise Vault"
+            }
+          ],
+          "note": "Grok for Business documents customer-controlled encryption keys."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "grok_for_business",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "xAI – Grok for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "xAI explicitly lists SOC 2 Type II for Grok for Business.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise-grade security"
+            }
+          ],
+          "note": "Grok for Business documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -10735,6 +10786,108 @@
             }
           ],
           "note": "Elicit Research Agent has official programmatic API access."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "elicit_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Elicit – SOC 2 Type II compliance",
+              "url": "https://elicit.com/blog/elicit-achieves-soc-2",
+              "note": "Elicit states SAML 2.0 SSO is supported for larger organizations.",
+              "evidence_type": "security_trust",
+              "source_section": "Privacy controls"
+            }
+          ],
+          "note": "Elicit Enterprise supports SAML 2.0 SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "elicit_research_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Elicit – Introducing Elicit Research Agent",
+              "url": "https://elicit.com/blog/introducing-elicit-research-agent",
+              "note": "Elicit documents Research Agent as available directly through elicit.com as a hosted service.",
+              "evidence_type": "official_release",
+              "source_section": "Introducing Research Agent"
+            }
+          ],
+          "note": "Elicit Research Agent is delivered as a managed Elicit service."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "elicit_enterprise_single_tenant",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Elicit – SOC 2 Type II compliance",
+              "url": "https://elicit.com/blog/elicit-achieves-soc-2",
+              "note": "Elicit states Enterprise customers receive dedicated, logically isolated AWS clusters with single tenancy.",
+              "evidence_type": "security_trust",
+              "source_section": "Sensitive academic or corporate research materials"
+            }
+          ],
+          "note": "Elicit Enterprise provides dedicated logically isolated single-tenant AWS clusters."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256-GCM",
+          "scope": "elicit_enterprise_research_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Elicit – SOC 2 Type II compliance",
+              "url": "https://elicit.com/blog/elicit-achieves-soc-2",
+              "note": "Elicit states uploaded documents and research projects are encrypted at rest with AES-256-GCM.",
+              "evidence_type": "security_trust",
+              "source_section": "Sensitive academic or corporate research materials"
+            }
+          ],
+          "note": "Elicit documents AES-256-GCM encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "elicit_enterprise_research_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Elicit – SOC 2 Type II compliance",
+              "url": "https://elicit.com/blog/elicit-achieves-soc-2",
+              "note": "Elicit states uploaded documents and research projects are encrypted in transit using TLS 1.2+.",
+              "evidence_type": "security_trust",
+              "source_section": "Sensitive academic or corporate research materials"
+            }
+          ],
+          "note": "Elicit documents TLS 1.2+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "elicit_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Elicit – SOC 2 Type II compliance",
+              "url": "https://elicit.com/blog/elicit-achieves-soc-2",
+              "note": "Elicit states it achieved SOC 2 Type II compliance with a clean audit opinion.",
+              "evidence_type": "security_trust",
+              "source_section": "SOC 2 Type II Compliance"
+            }
+          ],
+          "note": "Elicit documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -15721,6 +15874,23 @@
       "agent_id": "AI-0088",
       "claims": [
         {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "grok_for_business",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "xAI – Grok for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "xAI explicitly lists SCIM among Grok for Business enterprise controls.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise-grade AI"
+            }
+          ],
+          "note": "Grok for Business supports SCIM."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "grok_bot",
@@ -15736,6 +15906,40 @@
             }
           ],
           "note": "Grok Bot is delivered as an xAI-managed persistent-agent service."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "grok_for_business_enterprise_vault",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "xAI – Grok for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "xAI states Enterprise Vault data is encrypted with customer-controlled keys.",
+              "evidence_type": "security_trust",
+              "source_section": "Secure, Enterprise Vault"
+            }
+          ],
+          "note": "Grok for Business documents customer-controlled encryption keys."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "grok_for_business",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "xAI – Grok for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "xAI explicitly lists SOC 2 Type II for Grok for Business.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise-grade security"
+            }
+          ],
+          "note": "Grok for Business documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -17833,6 +18037,40 @@
       "agent_id": "AI-0100",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "decagon_platform_ai_concierge",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Decagon – Security",
+              "url": "https://decagon.ai/security",
+              "note": "Decagon documents comprehensive tamper-protected audit logs capturing key platform events.",
+              "evidence_type": "security_trust",
+              "source_section": "Ensure safe, transparent, and accountable AI performance"
+            }
+          ],
+          "note": "Decagon provides tamper-protected audit logs."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "decagon_platform_ai_concierge",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Decagon – Security",
+              "url": "https://decagon.ai/security",
+              "note": "Decagon explicitly documents role-based access control for platform access.",
+              "evidence_type": "security_trust",
+              "source_section": "Authenticate users with precision and confidence"
+            }
+          ],
+          "note": "Decagon provides RBAC."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "decagon_ai_concierge",
@@ -17848,6 +18086,57 @@
             }
           ],
           "note": "Decagon AI Concierge is delivered as a managed Decagon service."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "decagon_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Decagon – Security",
+              "url": "https://decagon.ai/security",
+              "note": "Decagon states storage and backups are encrypted with AES-256.",
+              "evidence_type": "security_trust",
+              "source_section": "Protect your data"
+            }
+          ],
+          "note": "Decagon documents AES-256 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "decagon_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Decagon – Security",
+              "url": "https://decagon.ai/security",
+              "note": "Decagon states all network transmission uses TLS 1.2 or higher.",
+              "evidence_type": "security_trust",
+              "source_section": "Protect your data"
+            }
+          ],
+          "note": "Decagon documents TLS 1.2+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "decagon_platform_ai_concierge",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Decagon Trust Center",
+              "url": "https://trust.decagon.ai/",
+              "note": "Decagon's Trust Center lists SOC 2 Type II and current SOC 2 Type II reports.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance"
+            }
+          ],
+          "note": "Decagon documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -17978,6 +18267,91 @@
     {
       "agent_id": "AI-0102",
       "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "artisan_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Artisan – Pricing",
+              "url": "https://www.artisan.co/pricing",
+              "note": "Artisan Enterprise explicitly lists audit logs.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise security"
+            }
+          ],
+          "note": "Artisan Enterprise provides audit logs."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "artisan_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Artisan – Ava 2.0",
+              "url": "https://www.artisan.co/blog/artisan-launches-ava-2-0-first-autonomous-ai-bdr",
+              "note": "Artisan states Ava Enterprise includes role-based access control plus team/workspace permissions.",
+              "evidence_type": "official_release",
+              "source_section": "Built for enterprise scale"
+            }
+          ],
+          "note": "Artisan Enterprise provides RBAC."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "artisan_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Artisan – Official Site",
+              "url": "https://www.artisan.co/",
+              "note": "Artisan explicitly lists SAML & SCIM among enterprise-grade security controls.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise-grade security built in"
+            }
+          ],
+          "note": "Artisan Enterprise supports SCIM."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "artisan_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Artisan – Pricing",
+              "url": "https://www.artisan.co/pricing",
+              "note": "Artisan Enterprise explicitly lists SSO / SAML.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise security"
+            }
+          ],
+          "note": "Artisan Enterprise supports SAML SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "artisan_ava",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Artisan – Ava 2.0",
+              "url": "https://www.artisan.co/blog/artisan-launches-ava-2-0-first-autonomous-ai-bdr",
+              "note": "Artisan documents Ava as its autonomous AI BDR delivered through the Artisan platform for enterprise sales teams.",
+              "evidence_type": "official_release",
+              "source_section": "Ava 2.0"
+            }
+          ],
+          "note": "Ava is delivered as a managed Artisan service."
+        },
         {
           "path": "security.soc2_type2",
           "value": true,
