@@ -1533,6 +1533,34 @@
       "origin": "profile_changelog"
     },
     {
+      "event_id": "EVT-0ADBFA417D17248CB9",
+      "agent_id": "AI-0057",
+      "date": "2026-10-01",
+      "event_type": "source_maintenance",
+      "scope": "profile",
+      "description": "Zwei nicht mehr zuverlässig abrufbare Dust-Changelog-Quellen durch aktuelle offizielle Academy- und Enterprise-Primärquellen ersetzt.",
+      "origin": "profile_changelog"
+    },
+    {
+      "event_id": "EVT-A547DCF5F2583DC345",
+      "agent_id": "AI-0057",
+      "date": "2026-10-01",
+      "event_type": "source_set_change",
+      "scope": "evidence",
+      "before": [
+        "SRC-5F6A04D2B15B27",
+        "SRC-E86872397AB0AE",
+        "SRC-F62556DC35652C"
+      ],
+      "after": [
+        "SRC-4F3C7BA0964486",
+        "SRC-76DEF67AC893C6",
+        "SRC-E86872397AB0AE"
+      ],
+      "description": "Das Quellen-Set des AgentenProfils hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
       "event_id": "EVT-A1806E0481A815F01D",
       "agent_id": "AI-0066",
       "date": "2026-10-01",
@@ -1540,6 +1568,56 @@
       "scope": "profile",
       "description": "Quellenlink auf die aktuelle offizielle Anbieter-Dokumentation aktualisiert; inhaltliche Einordnung unverändert.",
       "origin": "profile_changelog"
+    },
+    {
+      "event_id": "EVT-4A3E7E0AF1C674E250",
+      "agent_id": "AI-0068",
+      "date": "2026-10-01",
+      "event_type": "source_set_change",
+      "scope": "evidence",
+      "before": [
+        "SRC-49A8940E5C2CE9"
+      ],
+      "after": [
+        "SRC-D61E92A7138D98"
+      ],
+      "description": "Das Quellen-Set des AgentenProfils hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-B6E8BEBA053EEE6FE2",
+      "agent_id": "AI-0068",
+      "date": "2026-10-01",
+      "event_type": "source_maintenance",
+      "scope": "profile",
+      "description": "Nicht mehr verfügbare Qodo-Git-Produkt-URL durch die aktuelle offizielle AI-Code-Review-Plattformseite ersetzt.",
+      "origin": "profile_changelog"
+    },
+    {
+      "event_id": "EVT-4BB17D93292BABD840",
+      "agent_id": "AI-0109",
+      "date": "2026-10-01",
+      "event_type": "source_maintenance",
+      "scope": "profile",
+      "description": "Nicht mehr zuverlässig abrufbare Agent-Lumi-Pressequelle durch eine aktuelle offizielle Agent-Lumi-Ressource ersetzt.",
+      "origin": "profile_changelog"
+    },
+    {
+      "event_id": "EVT-D9FD29673424D5EF8F",
+      "agent_id": "AI-0109",
+      "date": "2026-10-01",
+      "event_type": "source_set_change",
+      "scope": "evidence",
+      "before": [
+        "SRC-B172502290090F",
+        "SRC-BEFC59438EEE87"
+      ],
+      "after": [
+        "SRC-5A713F5BA417F8",
+        "SRC-B172502290090F"
+      ],
+      "description": "Das Quellen-Set des AgentenProfils hat sich geändert.",
+      "origin": "graph_diff"
     }
   ]
 }
