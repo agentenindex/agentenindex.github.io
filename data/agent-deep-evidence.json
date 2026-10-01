@@ -193,6 +193,66 @@
             }
           ],
           "note": "Codex workspace audit data can be exported into SIEM/data-lake workflows through the compliance interfaces."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "chatgpt_enterprise_including_codex",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI – Business data privacy, security, and compliance",
+              "url": "https://openai.com/business-data/",
+              "note": "OpenAI documents AES-256 encryption at rest for business data."
+            },
+            {
+              "title": "OpenAI – Enterprise admin getting started guide for Codex",
+              "url": "https://help.openai.com/en/articles/11390924",
+              "note": "OpenAI states Codex supports ChatGPT Enterprise security features."
+            }
+          ],
+          "note": "Codex under ChatGPT Enterprise inherits the documented enterprise encryption controls."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "chatgpt_enterprise_including_codex",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI – Business data privacy, security, and compliance",
+              "url": "https://openai.com/business-data/",
+              "note": "OpenAI documents TLS 1.2 or higher for business data in transit."
+            },
+            {
+              "title": "OpenAI – Enterprise admin getting started guide for Codex",
+              "url": "https://help.openai.com/en/articles/11390924",
+              "note": "OpenAI states Codex supports ChatGPT Enterprise security features."
+            }
+          ],
+          "note": "Codex under ChatGPT Enterprise inherits the documented enterprise transport encryption controls."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "chatgpt_enterprise_where_ekm_available",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenAI – Business data privacy, security, and compliance",
+              "url": "https://openai.com/business-data/",
+              "note": "OpenAI documents Enterprise Key Management for customers to manage their own encryption keys."
+            },
+            {
+              "title": "OpenAI – ChatGPT Enterprise admin quickstart",
+              "url": "https://help.openai.com/en/articles/20001264-chatgpt-enterprise-admin-quickstart",
+              "note": "The enterprise admin guide lists Enterprise Key Management among security and compliance controls used with Codex/ChatGPT Enterprise."
+            }
+          ],
+          "note": "Customer-managed encryption keys are available through OpenAI Enterprise Key Management where supported."
         }
       ]
     },
@@ -503,6 +563,36 @@
             }
           ],
           "note": "Programmatic audit-log access is documented through the Office 365 Management API."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "Microsoft-managed keys by default",
+          "scope": "copilot_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Configure customer-managed encryption keys",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-customer-managed-keys",
+              "note": "Microsoft documents that Copilot Studio customer data is encrypted at rest with Microsoft-managed keys by default."
+            }
+          ],
+          "note": "Copilot Studio encrypts stored customer data at rest by default."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "managed_power_platform_environments",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Configure customer-managed encryption keys",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-customer-managed-keys",
+              "note": "Copilot Studio supports the Power Platform customer-managed key implementation for Managed Environments."
+            }
+          ],
+          "note": "CMK is supported through the Power Platform implementation for Managed Environments."
         }
       ]
     },
@@ -688,6 +778,36 @@
             }
           ],
           "note": "Human approval steps can be added for oversight of agent actions."
+        },
+        {
+          "path": "api.async",
+          "value": true,
+          "scope": "external_agent_invocation",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Fusion AI – Enable applications to access Fusion Applications agents",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/access-agents-beyond-fusion.html",
+              "note": "Oracle documents external access to Fusion Applications agents through the /invokeAsync API."
+            }
+          ],
+          "note": "External applications can invoke agent teams asynchronously."
+        },
+        {
+          "path": "api.auth.oauth",
+          "value": true,
+          "scope": "external_agent_invocation",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Fusion AI – Enable applications to access Fusion Applications agents",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/access-agents-beyond-fusion.html",
+              "note": "Oracle requires OCI/Fusion IAM authentication with an OAuth 2.0 bearer token for /invokeAsync."
+            }
+          ],
+          "note": "OAuth 2.0 bearer-token authentication is documented for external agent invocation."
         }
       ]
     },
@@ -843,6 +963,41 @@
             }
           ],
           "note": "Agentforce execution tracing is documented through Agent Platform Tracing."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "agentforce_on_hyperforce_supported_regions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce – Agentforce 360 Platform global infrastructure",
+              "url": "https://www.salesforce.com/platform/infrastructure/",
+              "note": "Salesforce documents Hyperforce data residency and regional storage/processing controls for the platform powering Agentforce."
+            },
+            {
+              "title": "Salesforce – Agentforce local data residency on Hyperforce",
+              "url": "https://www.salesforce.com/ap/news/press-releases/2025/07/16/salesforce-brings-local-data-residency-for-agentforce-to-indonesia/",
+              "note": "Salesforce explicitly documents local data residency for Agentforce on Hyperforce."
+            }
+          ],
+          "note": "Agentforce can use Hyperforce regional data-residency capabilities where available."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "hyperforce_supported_regions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Salesforce – Agentforce 360 Platform global infrastructure",
+              "url": "https://www.salesforce.com/platform/infrastructure/",
+              "note": "Salesforce states customers can choose the geographic region where Salesforce customer data is stored and processed."
+            }
+          ],
+          "note": "Hyperforce provides customer choice of supported geographic regions."
         }
       ]
     },
@@ -938,6 +1093,36 @@
             }
           ],
           "note": "MCP destinations are governed through control-tower registration."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "joule_studio_classic",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – Assign Users to Roles",
+              "url": "https://help.sap.com/docs/joule-studio-classic/joule-studio-classic-edition/assign-users-to-roles",
+              "note": "SAP documents Joule Studio access through SAP BTP role collections, user groups, and permissions."
+            }
+          ],
+          "note": "Joule Studio access is controlled through assigned roles and role collections."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "joule_studio_classic",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – Implementing Functions / Audit Logging",
+              "url": "https://help.sap.com/docs/joule-studio-classic/joule-studio-classic-edition/implementing-functions?q=joule+studio",
+              "note": "SAP documents audit logging for Joule Studio, including configuration-change events."
+            }
+          ],
+          "note": "Joule Studio documents audit logging for product-specific events."
         }
       ]
     },
@@ -1093,6 +1278,36 @@
             }
           ],
           "note": "AI agent configuration and monitoring access is role-based."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2",
+          "scope": "now_assist_ai_workloads",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – User data usage policy for Now Assist",
+              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/enable-ai-experiences/user-data-usage-policy-now-assist.html",
+              "note": "ServiceNow documents TLS 1.2 for AI workloads sent from the instance to ServiceNow compute hubs."
+            }
+          ],
+          "note": "Now Assist AI workloads use TLS 1.2 in transit."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "now_assist_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Agentic AI security and governance",
+              "url": "https://www.servicenow.com/docs/r/platform-security/now-assist-security.html",
+              "note": "ServiceNow documents AI Control Tower and detailed agent activity logs for auditable agent traceability."
+            }
+          ],
+          "note": "Agent activity logs are documented for Now Assist AI agents."
         }
       ]
     },
@@ -1708,6 +1923,26 @@
             }
           ],
           "note": "This negative value is explicit and scoped only to inbound authentication on the agent endpoint."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "foundry_agent_service_resource_region",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Foundry Agent Service data, privacy, and security",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/agents/data-privacy-security",
+              "note": "Agent Service stores state in the geography of the customer-created Azure OpenAI/Foundry resource."
+            },
+            {
+              "title": "Microsoft Learn – Foundry Agent Service FAQ",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/faq",
+              "note": "Microsoft states Agent Service endpoints are regional and data is stored in the same region as the endpoint."
+            }
+          ],
+          "note": "The customer selects the Azure region when creating the Foundry resource/endpoint, determining agent-data residency."
         }
       ]
     },
@@ -2243,6 +2478,51 @@
             }
           ],
           "note": "Production session tracing is documented for deployed conversational agents."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "boomi_ai_services",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi – AI Security & Trust",
+              "url": "https://boomi.com/ai-security-trust/",
+              "note": "Boomi documents data residency for AI services and regional containment."
+            }
+          ],
+          "note": "Boomi documents data-residency controls for its AI services."
+        },
+        {
+          "path": "privacy.residency.region",
+          "value": "North America",
+          "scope": "boomi_agentstudio_and_agent_session_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi – AI Security & Trust",
+              "url": "https://boomi.com/ai-security-trust/",
+              "note": "Boomi states Agentstudio agents and agent session data operate within North American data centers and are not replicated outside those boundaries."
+            }
+          ],
+          "note": "Current Boomi documentation places Agentstudio and agent-session data in North American data centers."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "agentstudio_agent_sessions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Documentation – Agent management FAQ",
+              "url": "https://help.boomi.com/docs/atomsphere/platform/atm-boomiai_faq_8a8705a8-4773-44bd-92ed-41105186781c/",
+              "note": "Boomi documents audit trails for actions related to agent sessions, including access records."
+            }
+          ],
+          "note": "Agentstudio session actions are covered by documented audit trails."
         }
       ]
     },
