@@ -2293,11 +2293,26 @@
         "governance.rbac": [
           true
         ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          false
+        ],
+        "hosting.managed": [
+          true
+        ],
         "identity.name": [
           "SAP Joule Agents"
         ],
         "identity.provider": [
           "SAP"
+        ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
         ],
         "profile.depth": [
           "reference"
@@ -2313,6 +2328,9 @@
         ],
         "protocols.mcp.remote": [
           true
+        ],
+        "security.encryption.in_transit": [
+          "TLS"
         ],
         "use_case": [
           "Finance",

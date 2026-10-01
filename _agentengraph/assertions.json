@@ -21692,6 +21692,108 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-13CB4BCDCBEA3D8174",
+      "agent_id": "AI-0030",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7CF7DE75B0548"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "joule_btp_trust_configuration",
+        "note": "OIDC trust with SAP Identity Authentication is required for Joule.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7CF7DE75B0548",
+            "note": "SAP states Joule requires an OpenID Connect trust configuration with the SAP Identity Authentication tenant.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6349CFEA71AA46CD16",
+      "agent_id": "AI-0030",
+      "path": "governance.sso.saml",
+      "value": false,
+      "value_hash": "fcbcf165908dd18a",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F7CF7DE75B0548"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "joule_btp_trust_configuration",
+        "note": "Explicit negative: SAP documents that SAML-based trust is not supported for the Joule BTP trust configuration.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F7CF7DE75B0548",
+            "note": "SAP explicitly states that a SAML-based trust relationship is not supported for Joule; the required trust type is OIDC.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-098ED7F029DFD6C225",
+      "agent_id": "AI-0030",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-02F7FC81C3909F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sap_joule_btp_cloud_foundry",
+        "note": "SAP operates Joule as a managed multi-tenant service on SAP BTP Cloud Foundry.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-02F7FC81C3909F",
+            "note": "SAP documents Joule as a multi-tenant service running in SAP BTP Cloud Foundry.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-45DC99638EE8B86246",
       "agent_id": "AI-0030",
       "path": "identity.name",
@@ -21738,6 +21840,74 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-63C6698F8C1DE307FF",
+      "agent_id": "AI-0030",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BC9753A30D4168"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sap_joule_supported_data_centers",
+        "note": "Joule is available in region-specific data centers with documented subprocessor regions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BC9753A30D4168",
+            "note": "SAP lists Joule data centers and associated subprocessor regions across multiple geographies and discusses data-security and legal-compliance considerations when selecting a data center.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-79DF92F4B0B01CE776",
+      "agent_id": "AI-0030",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BC9753A30D4168"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sap_joule_cross_consumption_data_center_selection",
+        "note": "Customers can select a supported Joule data center when provisioning/cross-consuming Joule, subject to availability and product constraints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BC9753A30D4168",
+            "note": "SAP explicitly discusses customers choosing a Joule data center based on region, legal restrictions, hyperscaler preference and proximity to business applications.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-9CA5908E978DC7A6E5",
@@ -21911,6 +22081,46 @@
             "source_id": "SRC-42713129796692",
             "note": "SAP documents adding MCP servers to Joule agents to connect them with external applications.",
             "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-54565D02B9B2328BA0",
+      "agent_id": "AI-0030",
+      "path": "security.encryption.in_transit",
+      "value": "TLS",
+      "value_hash": "91fa68ecb3b75c03",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-02F7FC81C3909F",
+          "SRC-77DC13CB732922"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "joule_user_access_on_sap_btp",
+        "note": "Joule runs on SAP BTP Cloud Foundry, where SAP documents TLS protection for all user access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-02F7FC81C3909F",
+            "note": "SAP documents Joule as running on SAP BTP Cloud Foundry.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-77DC13CB732922",
+            "note": "SAP states all user access to SAP BTP is protected with transport layer security (TLS).",
+            "evidence_type": "security_trust"
           }
         ]
       },
