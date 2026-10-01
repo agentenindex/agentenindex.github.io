@@ -34,6 +34,8 @@ manuelle Zuordnung bei späteren Builds.
 - assertions.json — aktuelle und historische strukturierte Aussagen
 - events.json — Profil-Changelog plus automatisch erkannte Feldänderungen
 - coverage.json — Abdeckung und Evidenz-Reife
+- deep-coverage.json — explizite Kernfeld-Matrix mit documented/false/unknown
+- research-priority.json — automatisch priorisierte Recherche-Lücken pro Agent und Feld
 - schema.json — Schema für Assertions
 - snapshots/YYYY-MM-DD.json — beobachteter Datenzustand
 - snapshots/current.json — letzter Datenzustand

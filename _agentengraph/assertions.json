@@ -15749,6 +15749,46 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-05FF5B9CC389862DD8",
+      "agent_id": "AI-0025",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4B0F580FD9C699",
+          "SRC-C0C890182A1903"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "copilot_studio_direct_line_integration",
+        "note": "Copilot Studio agents can be integrated through the REST-based Direct Line API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4B0F580FD9C699",
+            "note": "Microsoft documents connecting external web or native applications to a Copilot Studio agent through the Direct Line API.",
+            "evidence_type": "api_docs"
+          },
+          {
+            "source_id": "SRC-C0C890182A1903",
+            "note": "Microsoft states Direct Line API 3.0 uses industry-standard REST and JSON over HTTPS.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-308902EF12C7924574",
       "agent_id": "AI-0025",
       "path": "audience",
@@ -22089,6 +22129,40 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-3657B4057840944975",
+      "agent_id": "AI-0031",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AD26DEECE25D9D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rovo_agent_creation_editing_and_usage",
+        "note": "Rovo agent administration and editing use explicit role-based permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AD26DEECE25D9D",
+            "note": "Atlassian documents Studio admin controls plus owner, editor and manager roles with distinct permissions for Rovo agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-C6C897DBA436C0011D",
       "agent_id": "AI-0031",
       "path": "governance.scim",
@@ -22331,6 +22405,40 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-8D4078EBE977140C94",
+      "agent_id": "AI-0031",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5029EFBF417C04"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rovo_out_of_box_third_party_mcp_agents",
+        "note": "Rovo can consume external MCP servers for agent tool invocation.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5029EFBF417C04",
+            "note": "Atlassian documents Rovo agents using vendor-provided MCP servers for tool invocation, with admins enabling each server in Rovo Admin Hub.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-C7616F5FD49CFBEC2E",
@@ -43203,6 +43311,86 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-700F73CCF9D3996318",
+      "agent_id": "AI-0065",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C2A723CD0E380",
+          "SRC-AFA45BAE1F777B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gitlab_duo_agent_platform_group_and_project_controls",
+        "note": "GitLab Duo Agent Platform administration and agent enablement are governed by GitLab roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AFA45BAE1F777B",
+            "note": "GitLab requires the Owner role to control Agent Platform availability at top-level group or instance scope.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-9C2A723CD0E380",
+            "note": "GitLab documents role-gated enablement and management of custom agents at group and project levels.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E64FFBBE63F998EF91",
+      "agent_id": "AI-0065",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2690A9BD42D8D0",
+          "SRC-AFA45BAE1F777B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gitlab_com_group_identity_governing_agent_platform_access",
+        "note": "GitLab.com group membership used for Agent Platform access can be provisioned with SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2690A9BD42D8D0",
+            "note": "GitLab supports SCIM provisioning and deprovisioning of group members through the group identity layer.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-AFA45BAE1F777B",
+            "note": "Agent Platform availability is controlled at GitLab group scope, so group identity membership governs access.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7611122978AC944002",
       "agent_id": "AI-0065",
       "path": "hosting.managed",
@@ -50284,6 +50472,40 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-6BC4DBCDC9255F8658",
+      "agent_id": "AI-0077",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1B53A4168972D7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_on_agent_runtime_with_agent_identity",
+        "note": "ADK agents deployed with Agent Identity use Google Cloud IAM roles and policies for resource access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1B53A4168972D7",
+            "note": "Google documents granting IAM roles directly to an agent identity, including Vertex AI Agent Engine identities.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-9487229F10F8862E7B",
       "agent_id": "AI-0077",
       "path": "governance.tracing",
@@ -50480,6 +50702,74 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-16008376D2A49759CD",
+      "agent_id": "AI-0077",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-88FF175FA2F7BF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_on_gemini_enterprise_agent_platform_runtime",
+        "note": "ADK agents deployed on Agent Platform can use regional agent infrastructure with documented data-at-rest residency.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-88FF175FA2F7BF",
+            "note": "Google documents that supported agent infrastructure locations provide data-at-rest residency for agent source code, deployment packages, sessions, memory and metadata.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EF67BC821ABB7B9780",
+      "agent_id": "AI-0077",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-88FF175FA2F7BF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_on_gemini_enterprise_agent_platform_runtime",
+        "note": "Customers select a supported Agent Platform location when deploying regional agent infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-88FF175FA2F7BF",
+            "note": "Google lists selectable zones, regions and multi-regions for Agent Platform runtime and related agent infrastructure.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-9380F04273603C93EA",
       "agent_id": "AI-0077",
       "path": "profile.depth",
@@ -50526,6 +50816,40 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-80810CFF6B6B2C9296",
+      "agent_id": "AI-0077",
+      "path": "protocols.a2a.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F1D3B44387F68E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_agents_built_with_agents_cli",
+        "note": "ADK agents created with the supported template can expose an A2A service endpoint.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F1D3B44387F68E",
+            "note": "Google states the ADK template exposes the A2A protocol out of the box so other agents can communicate with deployed ADK agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-BEB626A84F7F9A47FC",
