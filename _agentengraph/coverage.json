@@ -128,5 +128,14 @@
     "regions",
     "certifications"
   ],
-  "important_limitation": "v1 imports existing AgentenProfil structure. Existing source lists are profile-level; exact field-level source bindings must be enriched explicitly and are never inferred automatically."
+  "important_limitation": "v1 imports existing AgentenProfil structure. Existing source lists are profile-level; exact field-level source bindings must be enriched explicitly and are never inferred automatically.",
+  "deep_completeness": {
+    "profile_version": "1.0",
+    "fields": 25,
+    "state_totals": {
+      "unknown": 2658,
+      "documented_true_or_value": 92
+    },
+    "report": "_agentengraph/deep-coverage.json"
+  }
 }
