@@ -1598,6 +1598,40 @@
           "note": "Replit Enterprise provides audit logs."
         },
         {
+          "path": "governance.audit_logs.retention_days",
+          "value": 30,
+          "scope": "replit_enterprise_audit_logs_default",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit – Govern Replit at scale",
+              "url": "https://replit.com/blog/new-enterprise-governance-tools",
+              "note": "Replit states default audit-log retention is 30 days, with longer retention available by arrangement.",
+              "evidence_type": "official_release",
+              "source_section": "Audit logs that work with your existing tooling"
+            }
+          ],
+          "note": "Replit Enterprise audit logs have a documented 30-day default retention."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "replit_enterprise_agent_activity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Replit – Govern Replit at scale",
+              "url": "https://replit.com/blog/new-enterprise-governance-tools",
+              "note": "Replit documents native streaming of audit events, including agent activity, to Datadog, Splunk, Amazon S3, or generic HTTP endpoints.",
+              "evidence_type": "official_release",
+              "source_section": "Audit logs that work with your existing tooling"
+            }
+          ],
+          "note": "Replit Enterprise audit events including agent activity can stream to SIEM/observability destinations."
+        },
+        {
           "path": "governance.rbac",
           "value": true,
           "scope": "replit_enterprise_agent",
@@ -6541,6 +6575,23 @@
           "note": "Perplexity Computer is delivered as a managed Perplexity service."
         },
         {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "perplexity_computer",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Perplexity – Introducing Perplexity Computer workshop",
+              "url": "https://www.perplexity.ai/de/hub/workshops/introducing-perplexity-computer",
+              "note": "Perplexity explicitly states Computer supports custom local and remote MCP servers/connectors.",
+              "evidence_type": "technical_docs",
+              "source_section": "Connectors and integrations"
+            }
+          ],
+          "note": "Perplexity Computer can act as an MCP client for local or remote MCP servers."
+        },
+        {
           "path": "security.encryption.at_rest",
           "value": "AES-256",
           "scope": "perplexity_enterprise_platform",
@@ -7394,6 +7445,30 @@
       "agent_id": "AI-0044",
       "claims": [
         {
+          "path": "api.rest",
+          "value": true,
+          "scope": "gorgias_platform_ai_agent_data_and_actions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gorgias Developers – REST API access tokens",
+              "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+              "note": "Gorgias documents its REST API and role-scoped access tokens; the API exposes resources that include AI Agent-managed ticket fields and actions.",
+              "evidence_type": "api_docs",
+              "source_section": "Access Tokens / REST API"
+            },
+            {
+              "title": "Gorgias Developers – Update ticket fields values",
+              "url": "https://developers.gorgias.com/reference/update-ticket-custom-fields",
+              "note": "The Gorgias REST API explicitly documents system-managed AI Agent Outcome and AI Intent ticket fields.",
+              "evidence_type": "api_docs",
+              "source_section": "Update ticket fields values"
+            }
+          ],
+          "note": "Gorgias exposes REST API access to platform data that includes AI Agent-managed fields."
+        },
+        {
           "path": "governance.audit_logs.available",
           "value": true,
           "scope": "gorgias_ai_agent_and_helpdesk",
@@ -7501,6 +7576,23 @@
             }
           ],
           "note": "Gorgias AI Agent provides regional hosting, including EU hosting for EU merchants."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "gorgias_platform_including_ai_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gorgias Data Processing Agreement",
+              "url": "https://www.gorgias.com/legal/data-processing-agreement",
+              "note": "Gorgias documents industry-standard encryption technologies for Personal Data at rest as part of its Subscription Services security measures.",
+              "evidence_type": "security_trust",
+              "source_section": "Security of Personal Data / technical and organizational measures"
+            }
+          ],
+          "note": "Gorgias documents encryption at rest for Subscription Services data."
         },
         {
           "path": "security.encryption.in_transit",
