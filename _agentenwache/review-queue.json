@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T14:19:34Z",
-  "open_count": 6,
+  "updated_at": "2026-10-01T14:47:00Z",
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-0165DB21E9A6DBB929",
@@ -332,7 +332,7 @@
     },
     {
       "review_id": "REV-5224C43C4FE1DC7E75",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-01T13:00:46Z",
       "last_detected": "2026-10-01T13:00:46Z",
       "occurrences": 1,
@@ -368,9 +368,11 @@
         "simhash_distance": 0,
         "old_token_count": 448,
         "new_token_count": 448,
-        "token_delta_pct": 0.0
+        "token_delta_pct": 0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Dynamic site metadata changed while the indexed Cline product facts remained unchanged; no product update applied.",
+      "reviewed_at": "2026-10-01T14:47:00Z"
     },
     {
       "review_id": "REV-54DE68D061583AB44D",
@@ -484,7 +486,7 @@
     },
     {
       "review_id": "REV-66484F39574C8E3200",
-      "status": "open",
+      "status": "reviewed_no_product_change",
       "first_detected": "2026-10-01T11:47:50Z",
       "last_detected": "2026-10-01T14:16:54Z",
       "occurrences": 10,
@@ -522,11 +524,13 @@
         "new_token_count": 1494,
         "token_delta_pct": 1.63
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The current official Slack article still supports the indexed Slackbot capabilities; the small content change does not alter an indexed product fact.",
+      "reviewed_at": "2026-10-01T14:47:00Z"
     },
     {
       "review_id": "REV-745F3171F22424BA6E",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-01T14:10:19Z",
       "last_detected": "2026-10-01T14:17:00Z",
       "occurrences": 2,
@@ -562,9 +566,11 @@
         "simhash_distance": 2,
         "old_token_count": 1447,
         "new_token_count": 1447,
-        "token_delta_pct": 0.0
+        "token_delta_pct": 0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Minor community-page metadata/copy changed; the AI Control Tower governance description relevant to the index remains unchanged.",
+      "reviewed_at": "2026-10-01T14:47:00Z"
     },
     {
       "review_id": "REV-91C81ED1F805341CE6",
@@ -895,7 +901,7 @@
     },
     {
       "review_id": "REV-B4AF2DB2F1B3282B72",
-      "status": "open",
+      "status": "reviewed_no_product_change",
       "first_detected": "2026-10-01T13:00:52Z",
       "last_detected": "2026-10-01T13:00:52Z",
       "occurrences": 1,
@@ -933,7 +939,9 @@
         "new_token_count": 2154,
         "token_delta_pct": 2.43
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The current n8n AI Agents page still supports the indexed deployment, integration, and agent/workflow facts; copy changed without an indexed product-fact change.",
+      "reviewed_at": "2026-10-01T14:47:00Z"
     },
     {
       "review_id": "REV-BD391EEDBB06EBBBBE",
@@ -1057,7 +1065,7 @@
     },
     {
       "review_id": "REV-E5D74BB58A9399C244",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-01T11:41:55Z",
       "last_detected": "2026-10-01T14:19:26Z",
       "occurrences": 10,
@@ -1095,7 +1103,9 @@
         "new_token_count": 2649,
         "token_delta_pct": -0.38
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Replaced the redirected Lindy /tools source with the current official Lindy homepage; no product fact changed.",
+      "reviewed_at": "2026-10-01T14:47:00Z"
     },
     {
       "review_id": "REV-EAE8D697875A437E7D",
@@ -1139,7 +1149,7 @@
     },
     {
       "review_id": "REV-F187A1A9D6790D68CC",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-01T11:44:26Z",
       "last_detected": "2026-10-01T14:19:17Z",
       "occurrences": 3,
@@ -1173,7 +1183,9 @@
         "old_final_url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772",
         "new_final_url": "https://helpcenter.gorgias.com/en-US/ai-agent-explained-497772"
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Updated the Gorgias source to the current Help Center canonical URL after the documented redirect; no product fact changed.",
+      "reviewed_at": "2026-10-01T14:47:00Z"
     },
     {
       "review_id": "REV-FCE2FF2F1439740BD2",
