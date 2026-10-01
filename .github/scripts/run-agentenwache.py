@@ -170,54 +170,55 @@ def registrableish(host: str) -> str:
     common_second_level={"co.uk","org.uk","ac.uk","com.au","net.au","co.jp","co.nz","com.br"}
     return ".".join(parts[-3:]) if two in common_second_level and len(parts)>=3 else two
 
-def robots_allows(url: str, cache: dict[str, bool]) -> bool:
+def robots_allows(url: str, cache: dict[str, list[tuple[str, str]]]) -> bool:
     host = urlparse(url).netloc.lower()
-    if host in cache:
-        return cache[host]
-    # Conservative but resilient: only explicit AgentenIndex-Wache/User-agent:* Disallow matches block.
-    # If robots cannot be fetched, do not invent a prohibition.
-    try:
-        req = Request(robots_url(url), headers={"User-Agent": USER_AGENT, "Accept":"text/plain"})
-        with build_opener().open(req, timeout=8) as resp:
-            raw = resp.read(300_000).decode("utf-8", errors="replace")
-        path = urlparse(url).path or "/"
-        groups = []
-        current_agents = []
-        current_rules = []
-        for line in raw.splitlines():
-            line = line.split("#",1)[0].strip()
-            if not line or ":" not in line:
-                continue
-            k,v = [x.strip() for x in line.split(":",1)]
-            kl=k.lower()
-            if kl=="user-agent":
-                if current_rules:
-                    groups.append((current_agents,current_rules))
-                    current_agents=[]; current_rules=[]
-                current_agents.append(v.lower())
-            elif kl in {"allow","disallow"} and current_agents:
-                current_rules.append((kl,v))
-        if current_agents or current_rules:
-            groups.append((current_agents,current_rules))
-        ua="agentenindex-wache"
-        applicable=[]
-        for agents,rules in groups:
-            if any(a=="*" or a in ua for a in agents):
-                applicable.extend(rules)
-        matched=None
-        for kind,rule in applicable:
-            if not rule:
-                continue
-            rule_path=rule.split("*",1)[0].rstrip("$")
-            if path.startswith(rule_path):
-                candidate=(len(rule_path),kind)
-                if matched is None or candidate[0] > matched[0] or (candidate[0]==matched[0] and kind=="allow"):
-                    matched=candidate
-        allowed = not (matched and matched[1]=="disallow")
-    except Exception:
-        allowed = True
-    cache[host]=allowed
-    return allowed
+    # Cache parsed rules per host, never a path-specific allow/deny decision.
+    # A robots.txt file can allow one path and disallow another on the same host.
+    if host not in cache:
+        # Conservative but resilient: only explicit AgentenIndex-Wache/User-agent:* Disallow matches block.
+        # If robots cannot be fetched, do not invent a prohibition.
+        try:
+            req = Request(robots_url(url), headers={"User-Agent": USER_AGENT, "Accept":"text/plain"})
+            with build_opener().open(req, timeout=8) as resp:
+                raw = resp.read(300_000).decode("utf-8", errors="replace")
+            groups = []
+            current_agents = []
+            current_rules = []
+            for line in raw.splitlines():
+                line = line.split("#",1)[0].strip()
+                if not line or ":" not in line:
+                    continue
+                k,v = [x.strip() for x in line.split(":",1)]
+                kl=k.lower()
+                if kl=="user-agent":
+                    if current_rules:
+                        groups.append((current_agents,current_rules))
+                        current_agents=[]; current_rules=[]
+                    current_agents.append(v.lower())
+                elif kl in {"allow","disallow"} and current_agents:
+                    current_rules.append((kl,v))
+            if current_agents or current_rules:
+                groups.append((current_agents,current_rules))
+            ua="agentenindex-wache"
+            applicable=[]
+            for agents,rules in groups:
+                if any(a=="*" or a in ua for a in agents):
+                    applicable.extend(rules)
+            cache[host]=applicable
+        except Exception:
+            cache[host]=[]
+
+    path = urlparse(url).path or "/"
+    matched=None
+    for kind,rule in cache[host]:
+        if not rule:
+            continue
+        rule_path=rule.split("*",1)[0].rstrip("$")
+        if path.startswith(rule_path):
+            candidate=(len(rule_path),kind)
+            if matched is None or candidate[0] > matched[0] or (candidate[0]==matched[0] and kind=="allow"):
+                matched=candidate
+    return not (matched and matched[1]=="disallow")
 
 def fetch_source(source: dict, previous: dict | None, robots_cache: dict[str,bool]) -> dict:
     url=source["url"]
