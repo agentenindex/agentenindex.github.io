@@ -1305,6 +1305,236 @@
       ]
     },
     {
+      "agent_id": "AI-0021",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "relevance_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI – Product",
+              "url": "https://relevanceai.com/product",
+              "note": "Relevance AI documents that agents can access native connectors plus MCP support and MCP servers.",
+              "evidence_type": "official_product_page",
+              "source_section": "All of your agents on one stack / What can my agents access?"
+            }
+          ],
+          "note": "Relevance AI agents can consume MCP-connected tools and servers."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "relevance_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI Docs – Conversation API for Agents",
+              "url": "https://relevanceai.com/docs/build/agents/extend-your-agent/conversation",
+              "note": "Relevance AI documents HTTPS API endpoints for triggering agents, polling jobs, continuing conversations, and listing messages.",
+              "evidence_type": "api_docs",
+              "source_section": "Conversation API for Agents"
+            }
+          ],
+          "note": "Relevance AI exposes programmatic HTTP API access for agent execution and conversations."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "relevance_ai_agent_triggers",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI – Product",
+              "url": "https://relevanceai.com/product",
+              "note": "Relevance AI explicitly documents webhooks as a native trigger for agents alongside schedules and app events.",
+              "evidence_type": "official_product_page",
+              "source_section": "Triggers and scheduling"
+            }
+          ],
+          "note": "Relevance AI agents can be triggered through webhooks."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "relevance_ai_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI Docs – Features",
+              "url": "https://relevanceai.com/docs/features",
+              "note": "Relevance AI describes itself as a fully managed service handling infrastructure management, hosting, and scaling.",
+              "evidence_type": "technical_docs",
+              "source_section": "Fully Managed Service"
+            },
+            {
+              "title": "Relevance AI – API",
+              "url": "https://relevanceai.com/api",
+              "note": "Relevance AI documents fully managed infrastructure that auto-scales for agent API deployments.",
+              "evidence_type": "official_product_page",
+              "source_section": "Managed API / Fully managed services"
+            }
+          ],
+          "note": "Relevance AI provides managed hosting and scaling for agents."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "relevance_ai_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI – Enterprise",
+              "url": "https://relevanceai.com/enterprise",
+              "note": "Relevance AI explicitly lists data residency as an enterprise security and privacy capability.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & data privacy"
+            }
+          ],
+          "note": "Relevance AI Enterprise documents data-residency capability."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "relevance_ai_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI – Enterprise",
+              "url": "https://relevanceai.com/enterprise",
+              "note": "Relevance AI explicitly lists SSO / SAML under enterprise access controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Access & controls"
+            }
+          ],
+          "note": "Relevance AI Enterprise supports SAML SSO."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "relevance_ai_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI – Enterprise",
+              "url": "https://relevanceai.com/enterprise",
+              "note": "Relevance AI explicitly lists role-based access control as an enterprise capability.",
+              "evidence_type": "security_trust",
+              "source_section": "Access & controls"
+            }
+          ],
+          "note": "Relevance AI Enterprise supports role-based access control."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "relevance_ai_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI – Enterprise",
+              "url": "https://relevanceai.com/enterprise",
+              "note": "Relevance AI explicitly lists audit logs and audit trails among enterprise governance controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & data privacy"
+            }
+          ],
+          "note": "Relevance AI Enterprise provides audit logs."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "relevance_ai_enterprise_audit_stream",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI Docs – Changelog",
+              "url": "https://relevanceai.com/docs/changelog",
+              "note": "Relevance AI documents streaming AI audit logs and execution traces in OpenTelemetry format to a customer-controlled destination for enterprise governance and compliance.",
+              "evidence_type": "official_release",
+              "source_section": "OpenTelemetry Event Streaming for AI Audit Logs and Execution Traces"
+            },
+            {
+              "title": "Relevance AI – Product",
+              "url": "https://relevanceai.com/product",
+              "note": "Relevance AI lists OTEL and Delta Share export under enterprise monitoring and oversight.",
+              "evidence_type": "official_product_page",
+              "source_section": "Monitoring & oversight"
+            }
+          ],
+          "note": "Enterprise audit logs and traces can be exported to customer-controlled observability/SIEM destinations through OpenTelemetry."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "relevance_ai_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI – FAQ",
+              "url": "https://relevanceai.com/frequently-asked-questions",
+              "note": "Relevance AI states all data is encrypted at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "How does Relevance AI handle data security?"
+            }
+          ],
+          "note": "Relevance AI documents encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "relevance_ai_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI – FAQ",
+              "url": "https://relevanceai.com/frequently-asked-questions",
+              "note": "Relevance AI states all data is encrypted in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "How does Relevance AI handle data security?"
+            }
+          ],
+          "note": "Relevance AI documents encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "relevance_ai_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Relevance AI – Enterprise",
+              "url": "https://relevanceai.com/enterprise",
+              "note": "Relevance AI explicitly states SOC 2 Type II compliance.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise security"
+            },
+            {
+              "title": "Relevance AI Docs – Features",
+              "url": "https://relevanceai.com/docs/features",
+              "note": "Relevance AI states the platform is SOC 2 Type 2 certified.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise-Grade Security"
+            }
+          ],
+          "note": "Relevance AI documents SOC 2 Type II compliance."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0025",
       "claims": [
         {
