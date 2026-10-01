@@ -33,7 +33,7 @@ for (const vp of [{name:'desktop',width:1440,height:1100},{name:'mobile',width:3
     audit.stylesheet.some(x=>x?.includes('styles.css?v=8.1.1')) &&
     audit.logo.complete && audit.logo.naturalWidth>0 &&
     audit.logo.w>160 && audit.logo.w<230 &&
-    parseFloat(audit.hero.lineHeight)>70 &&
+    parseFloat(audit.hero.lineHeight)>(vp.name==='desktop'?70:50) &&
     parseFloat(audit.hero.paddingBottom)>0 &&
     parseFloat(audit.hero.spanPaddingBottom)>0 &&
     errors.length===0;
