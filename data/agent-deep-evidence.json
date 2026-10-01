@@ -3830,6 +3830,86 @@
       ]
     },
     {
+      "agent_id": "AI-0052",
+      "claims": [
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "manus_api_v2",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Manus API – Introduction",
+              "url": "https://open.manus.im/docs/v2/introduction",
+              "note": "Manus documents an HTTP API at api.manus.ai with endpoint-based task, file, webhook, skill, and agent operations.",
+              "evidence_type": "api_docs",
+              "source_section": "Base URL / API reference"
+            }
+          ],
+          "note": "Manus provides a programmatic HTTP API with resource/action endpoints."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "manus_api_v2_tasks",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Manus API – Webhooks Overview",
+              "url": "https://open.manus.im/docs/v2/webhooks-overview",
+              "note": "Manus documents HTTPS webhook callbacks for task creation and task state-change events.",
+              "evidence_type": "api_docs",
+              "source_section": "Webhooks Guide / How Webhook Events Work"
+            },
+            {
+              "title": "Manus API – webhook.create",
+              "url": "https://open.manus.im/docs/v2/webhook.create",
+              "note": "Manus documents creating webhook subscriptions that receive task-event POST notifications.",
+              "evidence_type": "api_docs",
+              "source_section": "webhook.create"
+            }
+          ],
+          "note": "Manus supports outbound webhooks for task lifecycle events."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "manus_team_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Manus – Team Plan",
+              "url": "https://manus.im/team",
+              "note": "Manus lists audit logs among Team/Enterprise governance and compliance capabilities.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise-Level security"
+            }
+          ],
+          "note": "Manus Team/Enterprise provides audit logs."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "manus_service",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Manus – Security",
+              "url": "https://manus.im/security",
+              "note": "Manus lists SOC 2 Type 2 certification and provides a SOC 2 Type 2 attestation resource.",
+              "evidence_type": "security_trust",
+              "source_section": "Security / Resources"
+            }
+          ],
+          "note": "Manus documents SOC 2 Type 2 certification."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0057",
       "claims": [
         {
