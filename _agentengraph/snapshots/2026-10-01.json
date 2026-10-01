@@ -537,11 +537,26 @@
           "Repository-Kontext",
           "Review über Pull Requests"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          180
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
+        "governance.observability": [
+          true
+        ],
         "identity.name": [
           "GitHub Copilot Coding Agent"
         ],
         "identity.provider": [
           "GitHub"
+        ],
+        "privacy.residency.available": [
+          true
         ],
         "profile.depth": [
           "reference"
@@ -1736,6 +1751,9 @@
         "classification.product_type": [
           "Enterprise Agent Orchestration"
         ],
+        "deployment.low_code": [
+          true
+        ],
         "description.summary": [
           "Enterprise-Plattform zum Erstellen, Orchestrieren und Governieren von KI-Agenten mit Tools, APIs und Frameworks."
         ],
@@ -1750,6 +1768,15 @@
           "No-Code und Pro-Code",
           "Orchestrierung mehrerer Agenten"
         ],
+        "governance.human_approval": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.tracing": [
+          true
+        ],
         "identity.name": [
           "IBM watsonx Orchestrate"
         ],
@@ -1761,6 +1788,9 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.a2a.supported": [
+          true
         ],
         "use_case": [
           "Agenten-Orchestrierung",
@@ -1918,6 +1948,21 @@
           "Human-in-the-loop",
           "Verbindung von Agenten und RPA"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          60
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.tracing": [
+          true
+        ],
         "identity.name": [
           "UiPath Agents"
         ],
@@ -1929,6 +1974,12 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "security.customer_managed_key": [
+          true
         ],
         "use_case": [
           "Agentic Automation",
@@ -2167,11 +2218,20 @@
           "Jira- und Confluence-Kontext",
           "Konfigurierbare Agentenrollen"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
         "identity.name": [
           "Atlassian Rovo Agents"
         ],
         "identity.provider": [
           "Atlassian"
+        ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
         ],
         "profile.depth": [
           "reference"
@@ -5206,6 +5266,12 @@
           "Multi-Agent-Muster",
           "Open Source"
         ],
+        "governance.tracing": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
         "identity.name": [
           "Google Agent Development Kit"
         ],
@@ -5217,6 +5283,12 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.a2a.supported": [
+          true
+        ],
+        "protocols.mcp.client": [
+          true
         ],
         "use_case": [
           "Agenten entwickeln",
@@ -6259,6 +6331,12 @@
         "access.description": [
           "Über Workday-Angebote; Funktionen und Verfügbarkeit abhängig von Workday-Vertrag und Rollout."
         ],
+        "api.auth.oauth": [
+          true
+        ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -6284,6 +6362,18 @@
           "Governance-Fokus",
           "Herstellerübergreifende Agentenverwaltung als Zielbild",
           "Zentrales Agentenregister"
+        ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.observability": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "identity.agent_identity": [
+          true
         ],
         "identity.name": [
           "Workday Agent System of Record"
@@ -7148,6 +7238,9 @@
         "access.description": [
           "In Snowflake; Verfügbarkeit, Kosten und unterstützte Regionen/Funktionen beachten."
         ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -7174,6 +7267,21 @@
           "Strukturierte und unstrukturierte Daten",
           "Tool- und Datenorchestrierung"
         ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.monitoring_access_control": [
+          true
+        ],
+        "governance.observability": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.tracing": [
+          true
+        ],
         "identity.name": [
           "Snowflake Cortex Agents"
         ],
@@ -7185,6 +7293,9 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
         ],
         "use_case": [
           "Analytische Agenten",

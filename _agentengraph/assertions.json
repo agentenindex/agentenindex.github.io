@@ -5013,6 +5013,142 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-610CCE60EBDA99BE8A",
+      "agent_id": "AI-0008",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0A0EC8408B34F5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "github_enterprise_agentic_activity",
+        "note": "Enterprise agentic activity is represented in GitHub audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0A0EC8408B34F5",
+            "note": "GitHub documents enterprise audit-log events for agentic activity, including the initiating user and agent session ID.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-48B49C2F536F8F11D8",
+      "agent_id": "AI-0008",
+      "path": "governance.audit_logs.retention_days",
+      "value": 180,
+      "value_hash": "7b69759630f869f2",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0A0EC8408B34F5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "github_enterprise_agentic_activity",
+        "note": "The documented enterprise agentic audit-log view covers 180 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0A0EC8408B34F5",
+            "note": "GitHub states enterprise owners can view agentic activity over the last 180 days.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-13D77CE301AAF34AD5",
+      "agent_id": "AI-0008",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-466F2566A989FE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "eligible_enterprises_public_preview",
+        "note": "Eligible enterprises can stream agentic audit events to an external destination.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-466F2566A989FE",
+            "note": "GitHub documents streaming agentic audit-log activity to an external destination; the feature is in public preview for specified enterprise configurations.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4D9AA06FA1918FEEF4",
+      "agent_id": "AI-0008",
+      "path": "governance.observability",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-466F2566A989FE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "github_enterprise_agent_monitoring",
+        "note": "GitHub Enterprise provides centralized agent-session and telemetry monitoring.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-466F2566A989FE",
+            "note": "GitHub documents enterprise views for recent agent sessions, audit-log tracking, and OpenTelemetry monitoring.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-26E62FAFA1E407896D",
       "agent_id": "AI-0008",
       "path": "identity.name",
@@ -5059,6 +5195,40 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-BD2E0F961546708170",
+      "agent_id": "AI-0008",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-00088F988EFE44"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "github_enterprise_cloud_with_data_residency",
+        "note": "Copilot supports regional processing/storage under GitHub Enterprise Cloud data-residency configurations.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-00088F988EFE44",
+            "note": "GitHub documents regional routing and storage for Copilot when enterprise data residency is enforced.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-DE36F1926D94E8F717",
@@ -15847,6 +16017,40 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-A29CF4988863683A3B",
+      "agent_id": "AI-0026",
+      "path": "deployment.low_code",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3CA0E547871DB4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate",
+        "note": "Low-code agent creation is documented alongside the Agent Development Kit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3CA0E547871DB4",
+            "note": "IBM documents both low-code and pro-code agent creation paths.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B88CC8F2D215AD9FCB",
       "agent_id": "AI-0026",
       "path": "description.summary",
@@ -16039,6 +16243,108 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-27D5DD33C6D68A0687",
+      "agent_id": "AI-0026",
+      "path": "governance.human_approval",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3CA0E547871DB4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentic_workflows",
+        "note": "Human approval steps are a documented workflow capability.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3CA0E547871DB4",
+            "note": "IBM documents human-in-the-loop workflow approvals that pause, capture context, and resume with audit-ready traceability.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A4BF900E57061A312E",
+      "agent_id": "AI-0026",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3CA0E547871DB4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate",
+        "note": "Role-based access is documented for the platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3CA0E547871DB4",
+            "note": "IBM lists role-based access among the platform controls for securely scaling agents.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D3D3B21A4FC9400588",
+      "agent_id": "AI-0026",
+      "path": "governance.tracing",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3CA0E547871DB4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate",
+        "note": "OpenTelemetry traces are documented for agent observability.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3CA0E547871DB4",
+            "note": "IBM documents real-time monitoring with OpenTelemetry traces and audit-ready dashboards.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-0A9B2F0C1BF803DD23",
       "agent_id": "AI-0026",
       "path": "identity.name",
@@ -16133,6 +16439,40 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-1E58E5C554984DDD8F",
+      "agent_id": "AI-0026",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3CA0E547871DB4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "watsonx_orchestrate_control_plane",
+        "note": "watsonx Orchestrate explicitly supports external A2A agents in its governed agent portfolio.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3CA0E547871DB4",
+            "note": "IBM states that native, imported LangGraph, and external A2A agents can be governed in the same control plane.",
+            "evidence_type": "official_product_page"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-364D7AB9904CC7DC2E",
@@ -17619,6 +17959,176 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-622D1499B946BBC254",
+      "agent_id": "AI-0028",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-55422519A0A337"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "automation_cloud_audit",
+        "note": "Automation Cloud exposes audit logs through documented APIs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-55422519A0A337",
+            "note": "UiPath provides organization- and tenant-level APIs to list and download audit events.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3480F8898FCBF926AB",
+      "agent_id": "AI-0028",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0D31CC87420883"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "uipath_agent_activity",
+        "note": "Agent activities have documented platform logging and audit support.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0D31CC87420883",
+            "note": "UiPath states that agent activities, including tool usage and data passed to tools, are logged within the platform.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-59DE4A4D70237B4C0B",
+      "agent_id": "AI-0028",
+      "path": "governance.audit_logs.retention_days",
+      "value": 60,
+      "value_hash": "39fa9ec190eee7b6",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C8EB6629C5266"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "ai_trust_layer_agent_operations",
+        "note": "The documented AI Trust Layer log window for agent operations is 60 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9C8EB6629C5266",
+            "note": "UiPath states AI Trust Layer audit entries are viewable for the last 60 days and include Agents inputs and outputs.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FB042AF88F9485ECD8",
+      "agent_id": "AI-0028",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0D31CC87420883"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "uipath_agents_and_mcp_integrations",
+        "note": "RBAC is documented for controlling agent integration access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0D31CC87420883",
+            "note": "UiPath explicitly directs administrators to use Orchestrator RBAC and least-privilege roles for agent/MCP integrations.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4A8D39937ABE0E8FD6",
+      "agent_id": "AI-0028",
+      "path": "governance.tracing",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A2105280418C73"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "uipath_agents",
+        "note": "Agent traces provide detailed run-level observability and auditability.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A2105280418C73",
+            "note": "UiPath documents complete agent-run traces covering steps, decisions, inputs/outputs, errors, and metadata.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-1CA3C7BAADB61D30B3",
       "agent_id": "AI-0028",
       "path": "identity.name",
@@ -17713,6 +18223,74 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-AAC81F66F1C1119AD3",
+      "agent_id": "AI-0028",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-25FC47A896FAF7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "uipath_agents",
+        "note": "UiPath Agents can consume MCP servers as tools.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-25FC47A896FAF7",
+            "note": "UiPath documents adding UiPath-hosted and external MCP servers as tools in Agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-71E3DCEB658E91B5BF",
+      "agent_id": "AI-0028",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A2105280418C73"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_traces_opt_in",
+        "note": "CMK encryption is available for Agent trace data as an opt-in feature.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A2105280418C73",
+            "note": "UiPath documents optional Customer-Managed Key encryption for Agent trace data.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-16793C53AFBAACF1E7",
@@ -20093,6 +20671,40 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E6ACB43A65939A2EA8",
+      "agent_id": "AI-0031",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9426998C9F7364"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rovo_admin_and_user_actions",
+        "note": "Rovo actions are recorded in the Atlassian audit log with plan-dependent access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9426998C9F7364",
+            "note": "Atlassian documents Rovo admin and user actions in the organization audit log, with availability depending on Atlassian Guard plan.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-91985140DE81F0C52D",
       "agent_id": "AI-0031",
       "path": "identity.name",
@@ -20139,6 +20751,74 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-1BBDBFCA3CB319C805",
+      "agent_id": "AI-0031",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C7796AE5743B6F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rovo_in_scope_data",
+        "note": "Rovo supports data residency for in-scope data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C7796AE5743B6F",
+            "note": "Atlassian documents data-residency controls for Rovo and pinning of in-scope Rovo data.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6141E04A6BDAE7582C",
+      "agent_id": "AI-0031",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9426998C9F7364"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rovo_in_scope_data",
+        "note": "Organizations can select the supported Rovo data region through Atlassian data-residency controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9426998C9F7364",
+            "note": "Atlassian states customers can pin Rovo data to the same selected region as Jira or Confluence data.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-668FCBD670141BA579",
@@ -47720,6 +48400,74 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9487229F10F8862E7B",
+      "agent_id": "AI-0077",
+      "path": "governance.tracing",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EAF3198C733969"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_on_agent_runtime",
+        "note": "ADK deployments on Agent Runtime support OpenTelemetry-based tracing.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EAF3198C733969",
+            "note": "Google documents enabling OpenTelemetry traces and logs for AdkApp deployments on Agent Runtime.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EF329E8FB3AF3DA421",
+      "agent_id": "AI-0077",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FD453A2A2AA839"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_agent_runtime",
+        "note": "ADK agents can be deployed to Google Agent Runtime as a fully managed runtime.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FD453A2A2AA839",
+            "note": "Google documents Agent Runtime as a fully managed deployment target for ADK agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-AAB7D9EFE27296DA02",
       "agent_id": "AI-0077",
       "path": "identity.name",
@@ -47814,6 +48562,74 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-BEB626A84F7F9A47FC",
+      "agent_id": "AI-0077",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F742F0ED820B09"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_agents",
+        "note": "A2A is a documented first-party interoperability mode for ADK agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F742F0ED820B09",
+            "note": "Google states that A2A is built into every ADK agent template in Agents CLI.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8CAF24E6B30C67B344",
+      "agent_id": "AI-0077",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5216B2211FAB92"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "adk_agents",
+        "note": "ADK agents can consume MCP servers through the documented MCP toolset.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5216B2211FAB92",
+            "note": "Google documents configuring an ADK agent with McpToolset and a remote MCP server over Streamable HTTP.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-07DCDE07FAAB752D4B",
@@ -57631,6 +58447,74 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9B06D4A9B35EF04A52",
+      "agent_id": "AI-0091",
+      "path": "api.auth.oauth",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F668D92341B66C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_authentication",
+        "note": "OAuth 2.0 is documented in the Workday agent authentication flow.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F668D92341B66C",
+            "note": "Workday documents OAuth 2.0 token exchange for agent authentication in delegate mode.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D93FDE7BC791B05C33",
+      "agent_id": "AI-0091",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F668D92341B66C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_tool_access_and_external_agent_definition",
+        "note": "Workday agents use secured REST API endpoints for data/tool access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F668D92341B66C",
+            "note": "Workday states agent access to Workday data is carried out through REST API endpoints secured by domain or business-process policies.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7C8CF5E8FC70F6379B",
       "agent_id": "AI-0091",
       "path": "audience",
@@ -57917,6 +58801,142 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-E9A7B5A38B2E3B6423",
+      "agent_id": "AI-0091",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AF02879EDE2698"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_system_of_record",
+        "note": "Agent actions and security activity have documented audit-trail support in ASOR.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AF02879EDE2698",
+            "note": "Workday describes ASOR as a control center for governance, security and auditing and recommends reviewing the audit log for agent actions.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-17FAC921DC5B47C128",
+      "agent_id": "AI-0091",
+      "path": "governance.observability",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AF02879EDE2698"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_system_of_record",
+        "note": "ASOR exposes agent monitoring and analytics.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AF02879EDE2698",
+            "note": "Workday documents monitoring, agent analytics, usage and performance reporting in ASOR.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B0B6FB2F53CACE9B91",
+      "agent_id": "AI-0091",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9F4352BB860ED2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_system_of_record",
+        "note": "ASOR administration is governed by Workday security groups and domain permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9F4352BB860ED2",
+            "note": "Workday documents domain security policies, security groups, and View/Modify permissions for ASOR administration.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A1D65303B295A773C3",
+      "agent_id": "AI-0091",
+      "path": "identity.agent_identity",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "identity",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-123BE3F053329B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workday_agent_security",
+        "note": "Workday Agent Security assigns agents distinct managed identities.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-123BE3F053329B",
+            "note": "Workday documents unique agent identities through Agent System User (ASU) accounts.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-A9F536BFE83157E09F",
@@ -65498,6 +66518,40 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9D258FC10E12A39745",
+      "agent_id": "AI-0105",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B0355671BE4C22"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cortex_agents_agent_run",
+        "note": "Cortex Agents expose a documented agent:run API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B0355671BE4C22",
+            "note": "Snowflake documents the Cortex Agents agent:run API and the roles/privileges required to call it.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-5B7B4EEFFC701C98C7",
       "agent_id": "AI-0105",
       "path": "audience",
@@ -65798,6 +66852,176 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-A87405553E509EE5DE",
+      "agent_id": "AI-0105",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B0355671BE4C22"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cortex_agents",
+        "note": "Custom Snowflake roles can be used to scope Cortex Agent access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B0355671BE4C22",
+            "note": "Snowflake documents granting the CORTEX_AGENT_USER database role to a custom role for selected users.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-04C7D4EEE493722983",
+      "agent_id": "AI-0105",
+      "path": "governance.monitoring_access_control",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E9FAE03CDB7602"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cortex_agents",
+        "note": "Monitoring access is explicitly privilege-gated.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E9FAE03CDB7602",
+            "note": "Viewing Cortex Agent logs requires OWNERSHIP or MONITOR on the AGENT plus the CORTEX_USER database role.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7CB9EBB1CBE45E7A10",
+      "agent_id": "AI-0105",
+      "path": "governance.observability",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E9FAE03CDB7602"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cortex_agents",
+        "note": "Cortex Agent observability includes production conversations and execution telemetry.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E9FAE03CDB7602",
+            "note": "Snowflake documents live conversation history, execution traces, planning, tool calls, responses, and feedback for Cortex Agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2EC481F73C58C8D979",
+      "agent_id": "AI-0105",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B0355671BE4C22"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cortex_agents",
+        "note": "Cortex Agent access uses Snowflake RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B0355671BE4C22",
+            "note": "Snowflake explicitly states access to Cortex Agents is governed by Snowflake role-based access control.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D1880BE2420A504E1C",
+      "agent_id": "AI-0105",
+      "path": "governance.tracing",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E9FAE03CDB7602"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cortex_agents",
+        "note": "Cortex Agent runs produce OpenTelemetry-style trace data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E9FAE03CDB7602",
+            "note": "Snowflake stores OpenTelemetry-style traces and spans for Cortex Agent turns in AI_OBSERVABILITY_EVENTS.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-22F2498A34143D0E3E",
       "agent_id": "AI-0105",
       "path": "identity.name",
@@ -65896,6 +67120,40 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-C9C2D965963CA285CD",
+      "agent_id": "AI-0105",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-40C3105FE8B3E1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cortex_agents",
+        "note": "Cortex Agents can consume MCP servers as agent tools.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-40C3105FE8B3E1",
+            "note": "Snowflake documents connecting multiple MCP servers to a Cortex Agent and monitoring resulting tool activity.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-598758A72DBBAB5732",
