@@ -8674,6 +8674,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-656256F6AC6CDD8966",
+      "agent_id": "AI-0010",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3B44F4D0CB0AEF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_enterprise_analytics",
+        "note": "Windsurf Enterprise exposes REST-style analytics API endpoints covering Cascade usage.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3B44F4D0CB0AEF",
+            "note": "Windsurf documents authenticated HTTP API endpoints for Enterprise analytics and usage data that include Cascade activity.",
+            "evidence_type": "api_docs",
+            "source_section": "API Reference / Introduction"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-E66AFF08916911D863",
       "agent_id": "AI-0010",
       "path": "audience",
@@ -8962,6 +8997,146 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-76A5485A4EB4D242BE",
+      "agent_id": "AI-0010",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F33C6158F6825A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_enterprise",
+        "note": "Windsurf Enterprise provides RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F33C6158F6825A",
+            "note": "Windsurf explicitly lists RBAC as an Enterprise governance control.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-92D76B74C2AC7ABCEE",
+      "agent_id": "AI-0010",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F33C6158F6825A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_enterprise",
+        "note": "Windsurf Enterprise supports SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F33C6158F6825A",
+            "note": "Windsurf explicitly lists SCIM/SSO as Enterprise identity controls.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C680735B598D4D0C18",
+      "agent_id": "AI-0010",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F33C6158F6825A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_enterprise_cloud",
+        "note": "Windsurf Cascade is available through a managed cloud deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F33C6158F6825A",
+            "note": "Windsurf documents Cloud deployment as an Enterprise deployment choice for Windsurf/Cascade.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise & Deployment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D8ED67B2D4FEBAC554",
+      "agent_id": "AI-0010",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F33C6158F6825A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_enterprise",
+        "note": "Windsurf Enterprise supports self-hosted deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F33C6158F6825A",
+            "note": "Windsurf explicitly lists Hybrid and Self-hosted Enterprise deployment choices.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise & Deployment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-34C6979BC6718384C9",
       "agent_id": "AI-0010",
       "path": "identity.name",
@@ -9008,6 +9183,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-A52B3016B744A26D64",
+      "agent_id": "AI-0010",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F33C6158F6825A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_enterprise",
+        "note": "Windsurf Enterprise provides an EU residency option.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F33C6158F6825A",
+            "note": "Windsurf explicitly lists an EU cluster / EU residency option for Enterprise.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise & Deployment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9A2FB78A325B34E1F4",
+      "agent_id": "AI-0010",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F33C6158F6825A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_enterprise_deployment",
+        "note": "Enterprise customers can choose the documented EU cluster deployment option.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F33C6158F6825A",
+            "note": "Windsurf presents EU cluster/residency as an Enterprise deployment choice alongside Cloud, Hybrid, and Self-hosted options.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise & Deployment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-DF9E92B2BC28AAB9AC",
@@ -9081,6 +9326,76 @@
             "note": "The current official Cascade documentation describes MCP servers as extensions to the agent's capabilities.",
             "evidence_type": "technical_docs",
             "source_section": "Cascade / MCP"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-39C0F7129CF0DF141A",
+      "agent_id": "AI-0010",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9CC137A2E5E11A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_customer_data",
+        "note": "Windsurf documents encryption of customer data in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9CC137A2E5E11A",
+            "note": "Windsurf states Customer Data is encrypted during transit as part of its security safeguards.",
+            "evidence_type": "security_trust",
+            "source_section": "Security / Customer Data"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-58281699414EF25DAF",
+      "agent_id": "AI-0010",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F33C6158F6825A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_enterprise",
+        "note": "Windsurf documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F33C6158F6825A",
+            "note": "Windsurf explicitly lists SOC 2 Type II among Enterprise compliance controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Enterprise security and compliance"
           }
         ]
       },
@@ -10187,6 +10502,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-D663E428E9AE083673",
+      "agent_id": "AI-0012",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3C45BBC70C8E59"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_api_v3",
+        "note": "Devin exposes a documented HTTPS REST-style API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3C45BBC70C8E59",
+            "note": "Devin documents authenticated HTTPS API endpoints such as POST /v3/organizations/{org_id}/sessions for creating sessions.",
+            "evidence_type": "api_docs",
+            "source_section": "API endpoint examples"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-8C71455B19D19E85B5",
       "agent_id": "AI-0012",
       "path": "audience",
@@ -10475,6 +10825,111 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E41650F136CFCA8CF2",
+      "agent_id": "AI-0012",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3C45BBC70C8E59"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_enterprise_api",
+        "note": "Devin Enterprise exposes audit-related resources through its API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3C45BBC70C8E59",
+            "note": "Devin documents Enterprise service-user access to /v3/enterprise/* and organization endpoints including audit-log resources.",
+            "evidence_type": "api_docs",
+            "source_section": "Enterprise service users"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1A683143A6FBECC3DA",
+      "agent_id": "AI-0012",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-371B865137C764"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_enterprise_and_government",
+        "note": "Devin provides audit trails for human and AI activity.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-371B865137C764",
+            "note": "Cognition documents audit trails that distinguish human actions from AI actions.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and auditability"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-51FDF6C16A1FA75C51",
+      "agent_id": "AI-0012",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3C45BBC70C8E59"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_enterprise_api",
+        "note": "Devin Enterprise uses role-based permissions for API/service identities.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3C45BBC70C8E59",
+            "note": "Devin documents service-user roles that determine which API endpoints and organization resources the identity can access.",
+            "evidence_type": "api_docs",
+            "source_section": "Service user roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-66B92C924D95FC72F1",
       "agent_id": "AI-0012",
       "path": "hosting.managed",
@@ -10498,6 +10953,76 @@
             "note": "Cognition presents Devin Cloud as the hosted environment where users delegate engineering work to Devin.",
             "evidence_type": "official_product_page",
             "source_section": "Devin Cloud"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D5445C21CDC6BAFFE6",
+      "agent_id": "AI-0012",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E221F01C0B54A5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_vpc",
+        "note": "Devin Enterprise supports customer-VPC execution.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E221F01C0B54A5",
+            "note": "Cognition documents Devin DevBoxes running inside the customer's VPC so repository and service access can stay within customer-controlled networking.",
+            "evidence_type": "technical_docs",
+            "source_section": "In-VPC DevBox architecture"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D66CFEF6AA7251A925",
+      "agent_id": "AI-0012",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-371B865137C764"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_government_onprem_airgapped",
+        "note": "Devin supports on-premises and air-gapped deployment in its government/regulated offering.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-371B865137C764",
+            "note": "Cognition documents Devin deployment in customer environments including GovCloud, on-premises, and air-gapped operation.",
+            "evidence_type": "official_product_page",
+            "source_section": "On-Prem & Air-Gapped"
           }
         ]
       },
@@ -10604,6 +11129,146 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-3CE5F42D0F03508DAF",
+      "agent_id": "AI-0012",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B4E63A3A5A7522"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_sessions",
+        "note": "Devin sessions can use tools exposed through MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B4E63A3A5A7522",
+            "note": "Devin documents automation templates that connect Devin to external systems through MCP servers, including Notion, Atlassian, CircleCI, and Stripe.",
+            "evidence_type": "technical_docs",
+            "source_section": "MCP integrations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-483E41D42AA40AB593",
+      "agent_id": "AI-0012",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E221F01C0B54A5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_enterprise_vpc",
+        "note": "Devin documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E221F01C0B54A5",
+            "note": "Cognition documents AES-256 encryption for Devin enterprise/VPC data at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-830C13F250544E0010",
+      "agent_id": "AI-0012",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.3+",
+      "value_hash": "803c5ee04348654b",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E221F01C0B54A5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_enterprise_vpc",
+        "note": "Devin documents TLS 1.3+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E221F01C0B54A5",
+            "note": "Cognition documents TLS 1.3 or higher for data in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-41D9501CEDFB3B8C13",
+      "agent_id": "AI-0012",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-371B865137C764"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_platform",
+        "note": "Devin documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-371B865137C764",
+            "note": "Cognition lists SOC 2 Type II among Devin's security/compliance assurances.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-525898ECD9598A838E",
