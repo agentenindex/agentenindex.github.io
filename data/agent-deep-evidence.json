@@ -682,6 +682,40 @@
       "agent_id": "AI-0005",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "microsoft_365_copilot",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Audit Microsoft 365 Copilot interactions",
+              "url": "https://learn.microsoft.com/en-us/purview/audit-copilot",
+              "note": "Microsoft documents audit records for Microsoft 365 Copilot user interactions and AI activities in Microsoft Purview Audit.",
+              "evidence_type": "technical_docs",
+              "source_section": "Copilot audit events"
+            }
+          ],
+          "note": "Microsoft 365 Copilot interactions are represented in Microsoft Purview audit logs."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "microsoft_365_copilot",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Microsoft 365 Copilot architecture, data protection, and auditing",
+              "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing",
+              "note": "Microsoft states Copilot respects existing Microsoft 365 permissions, access controls, and identity authorization.",
+              "evidence_type": "security_trust",
+              "source_section": "Permissions and access controls"
+            }
+          ],
+          "note": "Researcher/Analyst operate under Microsoft 365 role- and permission-based access controls."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "microsoft_365_copilot_researcher",
@@ -697,6 +731,74 @@
             }
           ],
           "note": "Researcher is delivered as a managed agent inside Microsoft 365 Copilot."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "microsoft_365_copilot_service_boundary",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Data, Privacy, and Security for Microsoft 365 Copilot",
+              "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+              "note": "Microsoft documents Microsoft 365 Copilot within the Microsoft 365 service boundary and applicable geographic/data residency commitments.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency and processing"
+            }
+          ],
+          "note": "Microsoft 365 Copilot provides documented data-residency commitments."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "microsoft_365_multi_geo",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Microsoft 365 Multi-Geo",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide",
+              "note": "Microsoft documents Multi-Geo controls for placing Microsoft 365 user data in selected supported geographies; Copilot operates within this service boundary.",
+              "evidence_type": "technical_docs",
+              "source_section": "Multi-Geo capabilities"
+            }
+          ],
+          "note": "Eligible Microsoft 365 organizations can configure supported data geographies used by the Copilot service boundary."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "microsoft_365_copilot_service_boundary",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Microsoft 365 Copilot architecture, data protection, and auditing",
+              "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing",
+              "note": "Microsoft states Copilot data is protected by Microsoft 365 encryption controls, including encryption at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection"
+            }
+          ],
+          "note": "Microsoft 365 Copilot data is protected by Microsoft 365 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "microsoft_365_copilot_service_boundary",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Microsoft 365 Copilot architecture, data protection, and auditing",
+              "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing",
+              "note": "Microsoft states Copilot data is protected by Microsoft 365 encryption controls, including encryption in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection"
+            }
+          ],
+          "note": "Microsoft 365 Copilot data is protected by Microsoft 365 encryption in transit."
         }
       ]
     },
@@ -6451,6 +6553,40 @@
       "agent_id": "AI-0037",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "microsoft_365_copilot",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Audit Microsoft 365 Copilot interactions",
+              "url": "https://learn.microsoft.com/en-us/purview/audit-copilot",
+              "note": "Microsoft documents audit records for Microsoft 365 Copilot user interactions and AI activities in Microsoft Purview Audit.",
+              "evidence_type": "technical_docs",
+              "source_section": "Copilot audit events"
+            }
+          ],
+          "note": "Microsoft 365 Copilot interactions are represented in Microsoft Purview audit logs."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "microsoft_365_copilot",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Microsoft 365 Copilot architecture, data protection, and auditing",
+              "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing",
+              "note": "Microsoft states Copilot respects existing Microsoft 365 permissions, access controls, and identity authorization.",
+              "evidence_type": "security_trust",
+              "source_section": "Permissions and access controls"
+            }
+          ],
+          "note": "Researcher/Analyst operate under Microsoft 365 role- and permission-based access controls."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "microsoft_365_copilot_analyst",
@@ -6466,6 +6602,74 @@
             }
           ],
           "note": "Analyst is delivered as a managed agent inside Microsoft 365 Copilot."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "microsoft_365_copilot_service_boundary",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Data, Privacy, and Security for Microsoft 365 Copilot",
+              "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+              "note": "Microsoft documents Microsoft 365 Copilot within the Microsoft 365 service boundary and applicable geographic/data residency commitments.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency and processing"
+            }
+          ],
+          "note": "Microsoft 365 Copilot provides documented data-residency commitments."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "microsoft_365_multi_geo",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Microsoft 365 Multi-Geo",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide",
+              "note": "Microsoft documents Multi-Geo controls for placing Microsoft 365 user data in selected supported geographies; Copilot operates within this service boundary.",
+              "evidence_type": "technical_docs",
+              "source_section": "Multi-Geo capabilities"
+            }
+          ],
+          "note": "Eligible Microsoft 365 organizations can configure supported data geographies used by the Copilot service boundary."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "microsoft_365_copilot_service_boundary",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Microsoft 365 Copilot architecture, data protection, and auditing",
+              "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing",
+              "note": "Microsoft states Copilot data is protected by Microsoft 365 encryption controls, including encryption at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection"
+            }
+          ],
+          "note": "Microsoft 365 Copilot data is protected by Microsoft 365 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "microsoft_365_copilot_service_boundary",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Microsoft 365 Copilot architecture, data protection, and auditing",
+              "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing",
+              "note": "Microsoft states Copilot data is protected by Microsoft 365 encryption controls, including encryption in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection"
+            }
+          ],
+          "note": "Microsoft 365 Copilot data is protected by Microsoft 365 encryption in transit."
         }
       ]
     },
@@ -11038,6 +11242,23 @@
           "note": "Warp Enterprise provides role-based access control."
         },
         {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "warp_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – Single Sign-On",
+              "url": "https://docs.warp.dev/enterprise/security-and-compliance/sso",
+              "note": "Warp explicitly states Enterprise supports SCIM for user lifecycle management.",
+              "evidence_type": "technical_docs",
+              "source_section": "SCIM provisioning"
+            }
+          ],
+          "note": "Warp Enterprise supports SCIM user lifecycle management."
+        },
+        {
           "path": "governance.sso.oidc",
           "value": true,
           "scope": "warp_enterprise",
@@ -11121,6 +11342,40 @@
             }
           ],
           "note": "Warp Agent CLI acts as an MCP client."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "warp_enterprise_cloud_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – Security Overview",
+              "url": "https://docs.warp.dev/enterprise/security-and-compliance/security-overview",
+              "note": "Warp documents AES-256 encryption for cloud data at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption"
+            }
+          ],
+          "note": "Warp documents AES-256 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "warp_enterprise_cloud_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – Security Overview",
+              "url": "https://docs.warp.dev/enterprise/security-and-compliance/security-overview",
+              "note": "Warp documents TLS 1.2 or higher for data in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption"
+            }
+          ],
+          "note": "Warp documents TLS 1.2+ encryption in transit."
         },
         {
           "path": "security.soc2_type2",
@@ -17140,6 +17395,40 @@
             }
           ],
           "note": "Fabric supports private-link network access for workspaces hosting data-agent data."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "microsoft_fabric_workspace_data_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Fabric security fundamentals",
+              "url": "https://learn.microsoft.com/en-us/fabric/security/security-fundamentals",
+              "note": "Microsoft documents geographic data residency controls for Fabric workloads and customer data.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency and geography"
+            }
+          ],
+          "note": "Microsoft Fabric supports geographic data residency for workspaces and workloads including Data Agent data."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "microsoft_fabric_workspace_data_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Fabric security fundamentals",
+              "url": "https://learn.microsoft.com/en-us/fabric/security/security-fundamentals",
+              "note": "Microsoft documents capacity/workspace placement and Multi-Geo options that let organizations place Fabric content in supported geographic regions.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency and Multi-Geo"
+            }
+          ],
+          "note": "Eligible Fabric organizations can place workspace content in supported geographic regions."
         },
         {
           "path": "protocols.mcp.server",
