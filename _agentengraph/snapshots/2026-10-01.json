@@ -336,6 +336,9 @@
         "access.description": [
           "Über OpenAI-Produkte; Zugriff abhängig von Plan und Oberfläche"
         ],
+        "api.admin": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -363,17 +366,50 @@
           "Editor- und Terminalnähe",
           "Mehrstufige Softwareaufgaben"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
+        "hosting.cloud": [
+          true
+        ],
+        "hosting.local": [
+          true
+        ],
         "identity.name": [
           "OpenAI Codex"
         ],
         "identity.provider": [
           "OpenAI"
         ],
+        "identity.service_accounts": [
+          true
+        ],
+        "privacy.residency.available": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
         ],
         "use_case": [
           "Bugs beheben",
@@ -1606,17 +1642,35 @@
           "Low-Code plus Erweiterbarkeit",
           "Microsoft-Ökosystem"
         ],
+        "governance.dlp": [
+          true
+        ],
+        "identity.agent_identity": [
+          true
+        ],
+        "identity.agent_identity.provider": [
+          "Microsoft Entra Agent ID"
+        ],
         "identity.name": [
           "Microsoft Copilot Studio"
         ],
         "identity.provider": [
           "Microsoft"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
         ],
         "use_case": [
           "Business-Prozesse",
@@ -1718,6 +1772,9 @@
         "classification.product_type": [
           "Enterprise Agent Builder"
         ],
+        "deployment.import_export": [
+          true
+        ],
         "description.summary": [
           "Agentenstudio für Oracle Fusion Applications zum Erstellen, Erweitern und Orchestrieren von KI-Agenten in Geschäftsprozessen."
         ],
@@ -1732,6 +1789,15 @@
           "Multi-Agent- und Tool-Funktionen",
           "Tiefe Oracle-Fusion-Integration"
         ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.monitoring_access_control": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
         "identity.name": [
           "Oracle AI Agent Studio"
         ],
@@ -1743,6 +1809,9 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "tools.external_rest": [
+          true
         ],
         "use_case": [
           "ERP-Prozesse",
@@ -1858,6 +1927,15 @@
           "CRM- und Datenkontext",
           "Tiefe Salesforce-Integration"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.permission_sets": [
+          true
+        ],
+        "identity.agent_user": [
+          true
+        ],
         "identity.name": [
           "Salesforce Agentforce"
         ],
@@ -1869,6 +1947,15 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "protocols.mcp.remote": [
+          true
+        ],
+        "protocols.mcp.server": [
+          true
         ],
         "use_case": [
           "CRM-Automation",
@@ -1895,6 +1982,9 @@
         "access.description": [
           "SAP Joule / unterstützte SAP-Lösungen; lizenzabhängig"
         ],
+        "api.async": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -1906,6 +1996,9 @@
         ],
         "classification.product_type": [
           "Business Agents"
+        ],
+        "deployment.low_code": [
+          true
         ],
         "description.summary": [
           "SAP-Geschäftsagenten, die auf Unternehmenskontext, SAP-Daten und Geschäftsprozesse zugeschnitten sind."
@@ -1932,6 +2025,12 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.a2a": [
+          true
+        ],
+        "protocols.mcp.client": [
+          true
         ],
         "use_case": [
           "Finance",
@@ -2238,6 +2337,15 @@
           "Tiefe Now-Platform-Integration",
           "Zentrale Agentensteuerung"
         ],
+        "governance.ai_control_tower": [
+          true
+        ],
+        "governance.observability": [
+          true
+        ],
+        "governance.policy_controls": [
+          true
+        ],
         "identity.name": [
           "ServiceNow AI Agents"
         ],
@@ -2249,6 +2357,15 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.a2a": [
+          true
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "protocols.mcp.server": [
+          true
         ],
         "use_case": [
           "Customer Service",
@@ -5045,17 +5162,50 @@
           "Managed Service",
           "Unterstützung mehrerer Agenten- und Toolmuster"
         ],
+        "governance.rbac": [
+          true
+        ],
+        "hosting.byo_vnet": [
+          true
+        ],
+        "hosting.customer_managed_storage": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
+        "hosting.managed_vnet": [
+          true
+        ],
+        "hosting.private_network": [
+          true
+        ],
         "identity.name": [
           "Microsoft Foundry Agent Service"
         ],
         "identity.provider": [
           "Microsoft"
         ],
+        "privacy.residency.available": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.a2a.client": [
+          true
+        ],
+        "protocols.a2a.server": [
+          true
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
         ],
         "use_case": [
           "Agenten bereitstellen",
@@ -5109,6 +5259,24 @@
           "Identitäts- und Observability-Bausteine",
           "Managed Agent Runtime"
         ],
+        "governance.logs.cloudwatch": [
+          true
+        ],
+        "governance.logs.firehose_export": [
+          true
+        ],
+        "governance.logs.s3_export": [
+          true
+        ],
+        "governance.observability": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
+        "hosting.private_network": [
+          true
+        ],
         "identity.name": [
           "Amazon Bedrock AgentCore"
         ],
@@ -5120,6 +5288,24 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.auth.api_key": [
+          true
+        ],
+        "protocols.mcp.auth.iam": [
+          true
+        ],
+        "protocols.mcp.auth.oauth": [
+          true
+        ],
+        "protocols.mcp.gateway": [
+          true
+        ],
+        "protocols.mcp.remote": [
+          true
+        ],
+        "protocols.mcp.server": [
+          true
         ],
         "use_case": [
           "Agenten produktiv betreiben",
@@ -5274,6 +5460,9 @@
         "access.description": [
           "Über Boomi Enterprise-Angebote; Funktionen und Lizenzen abhängig vom Vertrag."
         ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -5300,6 +5489,15 @@
           "Integrationserfahrung von Boomi",
           "Zentrale Verwaltung"
         ],
+        "governance.ai_control_tower": [
+          true
+        ],
+        "governance.observability": [
+          true
+        ],
+        "governance.roles": [
+          true
+        ],
         "identity.name": [
           "Boomi Agentstudio"
         ],
@@ -5311,6 +5509,27 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.auth.basic": [
+          true
+        ],
+        "protocols.mcp.auth.jwt": [
+          true
+        ],
+        "protocols.mcp.auth.oauth": [
+          true
+        ],
+        "protocols.mcp.auth.token": [
+          true
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "protocols.mcp.registry": [
+          true
+        ],
+        "protocols.mcp.remote": [
+          true
         ],
         "use_case": [
           "Agenten und Workflows orchestrieren",
