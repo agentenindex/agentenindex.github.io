@@ -55,6 +55,12 @@
       "mode": "manual_only",
       "reason": "Official SAP Joule Studio documentation exposes the product-specific Audit Logging section but robots.txt disallows automated monitoring of this path; retain as the field-level primary source for audit logging.",
       "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://www.servicenow.com/platform/otto.html",
+      "mode": "manual_only",
+      "reason": "Official ServiceNow Otto product page explicitly documents that Otto actions are logged and governed but returns HTTP 403 to AgentenIndex-Wache; retain as the field-level primary source for Otto action logging.",
+      "verified_at": "2026-10-01"
     }
   ]
 }
