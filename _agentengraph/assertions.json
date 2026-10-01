@@ -2958,7 +2958,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -3286,17 +3286,17 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-D7C707A66DAA8A"
+          "SRC-F6FCC24DC0D8B2"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
         "confidence": "high",
         "scope": "enterprise_and_edu",
-        "note": "Audit logs are retrievable via API.",
+        "note": "Compliance API access is documented in the enterprise feature matrix.",
         "evidence_items": [
           {
-            "source_id": "SRC-D7C707A66DAA8A",
-            "note": "Authorized admins can retrieve Codex-related workspace audit logs through the Compliance API."
+            "source_id": "SRC-F6FCC24DC0D8B2",
+            "note": "The Enterprise/Edu feature matrix lists the Compliance API alongside audit logs."
           }
         ]
       },
@@ -3319,17 +3319,17 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-D7C707A66DAA8A"
+          "SRC-F6FCC24DC0D8B2"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
         "confidence": "high",
         "scope": "enterprise_and_edu",
-        "note": "Audit logs cover Codex policy changes.",
+        "note": "Enterprise/Edu audit logs are documented in the Codex/ChatGPT feature matrix.",
         "evidence_items": [
           {
-            "source_id": "SRC-D7C707A66DAA8A",
-            "note": "Codex policy/configuration changes are recorded in workspace audit logs."
+            "source_id": "SRC-F6FCC24DC0D8B2",
+            "note": "The Enterprise/Edu feature matrix lists Compliance API and audit logs."
           }
         ]
       },
@@ -3615,7 +3615,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -17637,6 +17637,39 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-14CD4923F72035FD5E",
+      "agent_id": "AI-0029",
+      "path": "protocols.mcp.registry",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-64A7B651F6B38A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentforce_registry",
+        "note": "Agentforce provides an MCP server registry and governed tool allowlisting.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-64A7B651F6B38A",
+            "note": "Salesforce documents registering Salesforce-hosted and external MCP servers in Agentforce Registry and allowlisting tools."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-95FD9EDAA7CF11351F",
       "agent_id": "AI-0029",
       "path": "protocols.mcp.remote",
@@ -17697,7 +17730,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -18364,17 +18397,17 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-CD9E230AA2C47D"
+          "SRC-E61E1B88E97A77"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
         "confidence": "high",
         "scope": "joule_studio_agent_builder",
-        "note": "Joule Studio agents can consume MCP servers.",
+        "note": "SAP's official Joule Studio sample demonstrates MCP server tools used by a Joule agent.",
         "evidence_items": [
           {
-            "source_id": "SRC-CD9E230AA2C47D",
-            "note": "SAP documents adding MCP servers to a Joule agent and exposing their tools to the agent."
+            "source_id": "SRC-E61E1B88E97A77",
+            "note": "SAP's official sample shows a Joule Studio Agent Builder configuration using Tavily and Exa MCP server tools."
           }
         ]
       },
@@ -21108,7 +21141,7 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-E82AD1DBE378DD"
+          "SRC-12C67F58FD88B1"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
@@ -21117,8 +21150,8 @@
         "note": "Centralized AI governance is documented.",
         "evidence_items": [
           {
-            "source_id": "SRC-E82AD1DBE378DD",
-            "note": "AI Control Tower is positioned as the central governance layer for AI assets."
+            "source_id": "SRC-12C67F58FD88B1",
+            "note": "ServiceNow's employee-authored guide describes AI Control Tower as the central platform for discover, govern, secure, observe and measure."
           }
         ]
       },
@@ -21141,7 +21174,7 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-E82AD1DBE378DD"
+          "SRC-12C67F58FD88B1"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
@@ -21150,8 +21183,8 @@
         "note": "Agent observability is documented.",
         "evidence_items": [
           {
-            "source_id": "SRC-E82AD1DBE378DD",
-            "note": "AI Control Tower continuously monitors AI-agent performance through metrics and log traces."
+            "source_id": "SRC-12C67F58FD88B1",
+            "note": "The guide describes monitoring agent/model performance through metrics and log traces."
           }
         ]
       },
@@ -21174,7 +21207,7 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-E82AD1DBE378DD"
+          "SRC-12C67F58FD88B1"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
@@ -21183,8 +21216,8 @@
         "note": "Policy/governance controls are documented.",
         "evidence_items": [
           {
-            "source_id": "SRC-E82AD1DBE378DD",
-            "note": "AI Control Tower describes lifecycle governance, integrated controls and compliance gates."
+            "source_id": "SRC-12C67F58FD88B1",
+            "note": "The guide describes risk assessments, lifecycle management, compliance frameworks, playbooks and inline guardrails."
           }
         ]
       },
