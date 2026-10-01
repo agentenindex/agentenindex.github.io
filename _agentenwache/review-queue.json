@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:53:11Z",
-  "open_count": 1,
+  "updated_at": "2026-10-01T15:55:00Z",
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -974,7 +974,7 @@
     },
     {
       "review_id": "REV-ACEE0155EB0C469D5B",
-      "status": "open",
+      "status": "reviewed_no_product_change",
       "first_detected": "2026-10-01T15:52:41Z",
       "last_detected": "2026-10-01T15:52:41Z",
       "occurrences": 1,
@@ -1012,7 +1012,9 @@
         "new_token_count": 3587,
         "token_delta_pct": -0.75
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "GitLab removed a feature-flag detail from the MCP Server history, while the documented GitLab MCP server and Duo Agent Platform toolset capability remain intact; no indexed product fact changed.",
+      "reviewed_at": "2026-10-01T15:55:00Z"
     },
     {
       "review_id": "REV-AD6F59ECA3A74FA288",
