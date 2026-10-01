@@ -4060,6 +4060,256 @@
       ]
     },
     {
+      "agent_id": "AI-0040",
+      "claims": [
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "zendesk_ai_agents_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Developer Docs – AI Agents API Introduction",
+              "url": "https://developer.zendesk.com/api-reference/ai-agents/introduction/",
+              "note": "Zendesk documents APIs for programmatically managing AI-powered conversations, ticket workflows, escalations, data exports, and user data.",
+              "evidence_type": "api_docs",
+              "source_section": "AI Agents API Introduction"
+            }
+          ],
+          "note": "Zendesk AI Agents expose documented programmatic API endpoints."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "zendesk_ai_agents_chat_and_ticket_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Developer Docs – AI Agents Chat API Webhook",
+              "url": "https://developer.zendesk.com/api-reference/ai-agents/chat/chat-webhook/",
+              "note": "Zendesk documents asynchronous AI Agent Chat API events delivered to configured webhook endpoints.",
+              "evidence_type": "api_docs",
+              "source_section": "AI Agents Chat API Webhook"
+            },
+            {
+              "title": "Zendesk Developer Docs – AI Agents Ticket API Webhook",
+              "url": "https://developer.zendesk.com/api-reference/ai-agents/ticket/ticket-webhook/",
+              "note": "Zendesk documents real-time AI Agent Ticket API webhook delivery.",
+              "evidence_type": "api_docs",
+              "source_section": "AI Agents Ticket API Webhook"
+            }
+          ],
+          "note": "Zendesk AI Agents support webhook-based event delivery."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "zendesk_service_data_including_ai_agent_account_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Help – Data Hosting Locations",
+              "url": "https://support.zendesk.com/hc/en-us/articles/4408825765530-Data-Hosting-Locations-for-Your-Zendesk-Service-Data",
+              "note": "Zendesk documents multiple regional AWS hosting locations and regional data-hosting commitments for eligible service data.",
+              "evidence_type": "security_trust",
+              "source_section": "AWS Regions / Data locality agreements"
+            }
+          ],
+          "note": "Zendesk offers regional data-hosting options for eligible service data."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "zendesk_data_center_location_add_on",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Help – Choose account data hosting location",
+              "url": "https://support.zendesk.com/hc/en-us/articles/4408833725722-Can-I-choose-the-location-where-my-account-data-is-hosted",
+              "note": "Zendesk states eligible customers can purchase Data Center Location and select the region where some service data is hosted.",
+              "evidence_type": "technical_docs",
+              "source_section": "Answer"
+            }
+          ],
+          "note": "Eligible Zendesk customers can select a supported hosting region for covered service data."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "zendesk_account_access_for_ai_agents_admins_and_users",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Help – Enabling SAML single sign-on",
+              "url": "https://support.zendesk.com/hc/en-us/articles/4408887505690-Enabling-SAML-single-sign-on",
+              "note": "Zendesk explicitly documents SAML enterprise SSO for Zendesk accounts.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enabling SAML SSO"
+            }
+          ],
+          "note": "Zendesk supports SAML SSO."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "zendesk_account_access_for_ai_agents_admins_and_users",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Help – Single sign-on options",
+              "url": "https://support.zendesk.com/hc/en-us/articles/4408883587226-Single-sign-on-SSO-options-in-Zendesk",
+              "note": "Zendesk explicitly lists OpenID Connect (OIDC) as an enterprise SSO option.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enterprise SSO options"
+            }
+          ],
+          "note": "Zendesk supports OIDC SSO."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "zendesk_user_provisioning",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Help – Does Zendesk support SCIM?",
+              "url": "https://support.zendesk.com/hc/en-us/articles/8966513066138-Does-Zendesk-support-SCIM",
+              "note": "Zendesk states it supports SCIM 2.0 through automated user provisioning with providers such as Okta and Microsoft Entra.",
+              "evidence_type": "technical_docs",
+              "source_section": "Answer"
+            }
+          ],
+          "note": "Zendesk supports SCIM 2.0 provisioning."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "zendesk_team_member_access",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Help – Setting roles and access in Admin Center",
+              "url": "https://support.zendesk.com/hc/en-us/articles/4408824375450-Setting-roles-and-access-in-Zendesk-Admin-Center",
+              "note": "Zendesk documents role-based product access and permissions for account owners, admins, agents, light agents, and custom roles.",
+              "evidence_type": "technical_docs",
+              "source_section": "About team member roles and access"
+            }
+          ],
+          "note": "Zendesk uses role-based permissions to govern product access."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "zendesk_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Help – Creating custom roles and assigning agents",
+              "url": "https://support.zendesk.com/hc/en-us/articles/4408882153882-Creating-custom-roles-and-assigning-agents",
+              "note": "Zendesk documents creating Enterprise custom agent roles with granular permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Creating custom agent roles"
+            }
+          ],
+          "note": "Zendesk Enterprise supports custom roles."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "zendesk_enterprise_account",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Developer Docs – Audit Logs",
+              "url": "https://developer.zendesk.com/api-reference/ticketing/account-configuration/audit_logs/",
+              "note": "Zendesk documents Enterprise audit logs covering account changes since account creation.",
+              "evidence_type": "api_docs",
+              "source_section": "Audit Logs"
+            }
+          ],
+          "note": "Zendesk Enterprise provides audit logs."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "zendesk_enterprise_account",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Developer Docs – Audit Logs",
+              "url": "https://developer.zendesk.com/api-reference/ticketing/account-configuration/audit_logs/",
+              "note": "Zendesk documents GET endpoints for listing/showing audit logs and a POST endpoint for exporting audit logs.",
+              "evidence_type": "api_docs",
+              "source_section": "List Audit Logs / Show Audit Log / Export Audit Logs"
+            }
+          ],
+          "note": "Zendesk exposes audit logs programmatically through documented API endpoints."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "zendesk_service_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Trust Center",
+              "url": "https://www.zendesk.com/trust-center/",
+              "note": "Zendesk states Service Data is encrypted at rest in AWS using AES-256.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption / At Rest"
+            }
+          ],
+          "note": "Zendesk documents AES-256 encryption at rest for Service Data."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "zendesk_ui_and_api_communications",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Trust Center",
+              "url": "https://www.zendesk.com/trust-center/",
+              "note": "Zendesk states communications with the UI and APIs are encrypted via HTTPS/TLS 1.2 or higher over public networks.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption / In Transit"
+            }
+          ],
+          "note": "Zendesk documents TLS 1.2+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "zendesk_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Zendesk Trust Center",
+              "url": "https://www.zendesk.com/trust-center/",
+              "note": "Zendesk states it undergoes routine audits and maintains current SOC 2 Type II reports.",
+              "evidence_type": "security_trust",
+              "source_section": "Global Standards / SOC 2 Type II"
+            }
+          ],
+          "note": "Zendesk documents SOC 2 Type II compliance."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0052",
       "claims": [
         {
