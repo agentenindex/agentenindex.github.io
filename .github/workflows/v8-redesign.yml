@@ -1,0 +1,46 @@
+name: Roll out AgentenIndex v8
+
+on:
+  push:
+    paths:
+      - "_v8-redesign/trigger"
+
+permissions:
+  contents: write
+
+jobs:
+  rollout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply v8 modern light design
+        run: python .github/scripts/rollout-v8-modern-light.py
+
+      - name: Install browser smoke test dependency
+        run: npm install --no-save puppeteer-core@latest
+
+      - name: Start local site
+        run: |
+          python -m http.server 8080 >/tmp/agentenindex-v8-http.log 2>&1 &
+          echo $! > /tmp/agentenindex-v8-http.pid
+          sleep 2
+
+      - name: Browser smoke test
+        run: node .github/scripts/v8-smoke.mjs
+
+      - name: Commit tested redesign
+        run: |
+          rm -rf _v8-redesign
+          rm -f .github/workflows/v8-redesign.yml
+          rm -f .github/scripts/rollout-v8-modern-light.py
+          rm -f .github/scripts/v8-smoke.mjs
+          rm -rf node_modules package-lock.json package.json
+          git config user.name "AgentenIndex"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --stat
+          git commit -m "Roll out AgentenIndex v8 modern light design [skip ci]"
+          git push origin main
