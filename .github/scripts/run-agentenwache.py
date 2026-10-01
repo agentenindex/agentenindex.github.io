@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[2]
 GRAPH_SOURCES = ROOT / "_agentengraph" / "sources.json"
 OUT = ROOT / "_agentenwache"
 STATE_FILE = OUT / "source-states.json"
+OVERRIDES_FILE = OUT / "monitoring-overrides.json"
 QUEUE_FILE = OUT / "review-queue.json"
 EVENT_FILE = OUT / "events.json"
 SUMMARY_FILE = OUT / "last-run.json"
@@ -372,19 +373,37 @@ def main():
     sources=[s for s in graph.get("sources",[]) if s.get("active")]
     OUT.mkdir(parents=True,exist_ok=True)
     state_doc=load(STATE_FILE,{"watch_version":VERSION,"states":[]})
+    override_doc=load(OVERRIDES_FILE,{"version":1,"overrides":[]})
     queue_doc=load(QUEUE_FILE,{"watch_version":VERSION,"items":[]})
     events_doc=load(EVENT_FILE,{"watch_version":VERSION,"events":[]})
 
     prior={s["source_id"]:s for s in state_doc.get("states",[])}
+    overrides={o["url"]:o for o in override_doc.get("overrides",[]) if o.get("url")}
     queue={i["review_id"]:i for i in queue_doc.get("items",[])}
     events={e["event_id"]:e for e in events_doc.get("events",[])}
 
     by_host=defaultdict(list)
+    results=[]
+    manual_source_ids=set()
     for source in sources:
+        override=overrides.get(source["url"])
+        if override and override.get("mode")=="manual_only":
+            sid=source["source_id"]
+            manual_source_ids.add(sid)
+            results.append((source,{
+                "source_id":sid,
+                "checked_at":now_iso(),
+                "url":source["url"],
+                "result":"manual_only",
+                "ok":False,
+                "monitoring_mode":"manual_only",
+                "manual_reason":override.get("reason"),
+                "manual_verified_at":override.get("verified_at"),
+            }))
+            continue
         by_host[urlparse(source["url"]).netloc.lower()].append(source)
 
     robots_cache={}
-    results=[]
     def process_host(items):
         out=[]
         for idx,source in enumerate(items):
@@ -404,7 +423,10 @@ def main():
     for source,current in results:
         sid=source["source_id"]
         previous=prior.get(sid)
-        change_type,severity,metrics=classify(previous,current)
+        if current.get("result")=="manual_only":
+            change_type,severity,metrics=None,None,{}
+        else:
+            change_type,severity,metrics=classify(previous,current)
         counts[current.get("result","unknown")]+=1
         if change_type=="baseline":
             counts["baseline"]+=1
@@ -482,8 +504,14 @@ def main():
                 }
             changes.append({"source_id":sid,"type":change_type,"severity":severity,"agents":source.get("agent_ids",[])})
 
+        # Manual-only sources are intentionally excluded from automated fetches and are not failures.
+        if current.get("result")=="manual_only":
+            current["consecutive_failures"]=0
+            current["source_title"]=source.get("title")
+            current["agent_ids"]=source.get("agent_ids",[])
+            new_states[sid]=current
         # Preserve last successful fingerprint across transient failures, while recording the latest check.
-        if not current.get("ok") and previous and previous.get("ok"):
+        elif not current.get("ok") and previous and previous.get("ok"):
             merged=dict(previous)
             merged["checked_at"]=current.get("checked_at")
             merged["last_check_result"]=current.get("result")
@@ -557,6 +585,19 @@ def main():
     for sid,state in new_states.items():
         if sid in active_ids:
             state["active"]=True
+
+    # Technical availability reviews are no longer actionable once a source is inactive
+    # or explicitly classified as manual_only. Keep the history, but acknowledge the queue item.
+    technical_change_types={"status_change","availability_change","availability_restored","source_unavailable"}
+    acknowledged_at=now_iso()
+    for item in queue.values():
+        if item.get("status")!="open" or item.get("change_type") not in technical_change_types:
+            continue
+        sid=item.get("source_id")
+        if sid in manual_source_ids or sid not in active_ids:
+            item["status"]="acknowledged"
+            item["acknowledged_at"]=acknowledged_at
+            item["resolution"]="Source is inactive or explicitly manual_only; no automated availability action remains."
 
     open_items=[i for i in queue.values() if i.get("status")=="open"]
     open_items.sort(key=lambda x:({"high":0,"medium":1,"low":2}.get(x.get("severity"),3),x.get("first_detected","")))
