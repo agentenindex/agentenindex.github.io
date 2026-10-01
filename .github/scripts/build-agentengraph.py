@@ -562,22 +562,27 @@ def main():
     # Research hints are derived only from already-registered profile sources and
     # explicit field-level evidence. They are discovery aids, never evidence by themselves.
     source_hints_by_agent = defaultdict(list)
-    seen_source_hints = defaultdict(set)
+    source_hint_index_by_agent = defaultdict(dict)
 
     def add_research_source_hint(aid: str, title: str | None, url: str | None, origin: str, evidence_type: str | None = None) -> None:
         if not aid or not title or not url:
             return
-        key = (title.strip(), url.strip(), origin, evidence_type or "")
-        if key in seen_source_hints[aid]:
-            return
-        seen_source_hints[aid].add(key)
+        clean_title = title.strip()
+        clean_url = url.strip()
+        existing_index = source_hint_index_by_agent[aid].get(clean_url)
         item = {
-            "title": title.strip(),
-            "url": url.strip(),
+            "title": clean_title,
+            "url": clean_url,
             "origin": origin,
         }
         if evidence_type:
             item["evidence_type"] = evidence_type
+        if existing_index is not None:
+            existing = source_hints_by_agent[aid][existing_index]
+            if origin == "field_level_evidence" and existing.get("origin") != "field_level_evidence":
+                source_hints_by_agent[aid][existing_index] = item
+            return
+        source_hint_index_by_agent[aid][clean_url] = len(source_hints_by_agent[aid])
         source_hints_by_agent[aid].append(item)
 
     for a in agents:
