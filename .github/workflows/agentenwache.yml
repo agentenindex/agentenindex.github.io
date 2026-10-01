@@ -1,0 +1,53 @@
+name: AgentenWache
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "_agentengraph/sources.json"
+      - "_agentenwache-v1/trigger"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agentenwache-main
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Monitor registered primary sources
+        run: python .github/scripts/run-agentenwache.py
+
+      - name: Validate AgentenWache state
+        run: python .github/scripts/validate-agentenwache.py
+
+      - name: Show run summary
+        run: cat _agentenwache/last-run.json
+
+      - name: Persist monitoring state
+        run: |
+          rm -rf _agentenwache-v1
+          git config user.name "AgentenIndex"
+          git config user.email "actions@users.noreply.github.com"
+          git add _agentenwache
+          if git diff --cached --quiet; then
+            echo "AgentenWache state unchanged."
+            exit 0
+          fi
+          git commit -m "Update AgentenWache source monitoring [skip ci]"
+          git push origin main
