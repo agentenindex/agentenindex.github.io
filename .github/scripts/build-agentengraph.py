@@ -198,6 +198,12 @@ def field_level_evidence(claim: dict) -> dict:
         item = {"source_id": sid}
         if ev.get("note"):
             item["note"] = ev["note"]
+        if ev.get("evidence_type"):
+            item["evidence_type"] = ev["evidence_type"]
+        if ev.get("source_section"):
+            item["source_section"] = ev["source_section"]
+        if ev.get("product_version"):
+            item["product_version"] = ev["product_version"]
         items.append(item)
     payload = {
         "binding": "field_level",
@@ -311,12 +317,18 @@ def main():
                         "active": True,
                         "agent_ids": [],
                         "provenance": "AgentenGraph field-level evidence",
+                        "evidence_types": [],
                     }
                 else:
                     source_records[sid]["url"] = url
                     source_records[sid]["title"] = title
                     source_records[sid]["last_seen"] = as_of
                     source_records[sid]["active"] = True
+                rec_types = set(source_records[sid].get("evidence_types") or [])
+                if ev.get("evidence_type"):
+                    rec_types.add(ev["evidence_type"])
+                if rec_types:
+                    source_records[sid]["evidence_types"] = sorted(rec_types)
 
     for sid, rec in source_records.items():
         current_agents = seen_source_agents.get(sid, set())
