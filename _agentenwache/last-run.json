@@ -1,20 +1,62 @@
 {
   "name": "AgentenWache",
   "version": "1.0",
-  "started_at": "2026-10-01T14:54:33Z",
-  "finished_at": "2026-10-01T14:54:55Z",
+  "started_at": "2026-10-01T15:11:12Z",
+  "finished_at": "2026-10-01T15:12:06Z",
   "source_registry": "_agentengraph/sources.json",
-  "active_sources": 245,
-  "hosts": 107,
+  "active_sources": 286,
+  "hosts": 109,
   "counts": {
-    "baseline": 1,
-    "changes": 1,
-    "fetched": 129,
+    "baseline": 41,
+    "changes": 6,
+    "fetched": 175,
+    "http_error": 1,
     "manual_only": 9,
-    "not_modified": 107,
-    "severity_low": 1
+    "not_modified": 101,
+    "severity_low": 6
   },
-  "open_review_items": 0,
-  "changes_this_run": [],
+  "open_review_items": 5,
+  "changes_this_run": [
+    {
+      "source_id": "SRC-0D31CC87420883",
+      "type": "content_change",
+      "severity": "low",
+      "agents": [
+        "AI-0028"
+      ]
+    },
+    {
+      "source_id": "SRC-25FC47A896FAF7",
+      "type": "content_change",
+      "severity": "low",
+      "agents": [
+        "AI-0028"
+      ]
+    },
+    {
+      "source_id": "SRC-A2105280418C73",
+      "type": "content_change",
+      "severity": "low",
+      "agents": [
+        "AI-0028"
+      ]
+    },
+    {
+      "source_id": "SRC-E785CAF26D5119",
+      "type": "content_change",
+      "severity": "low",
+      "agents": [
+        "AI-0028"
+      ]
+    },
+    {
+      "source_id": "SRC-12C67F58FD88B1",
+      "type": "content_change",
+      "severity": "low",
+      "agents": [
+        "AI-0035"
+      ]
+    }
+  ],
   "principle": "Monitoring detects source changes only. No detected change becomes an AgentenIndex product fact without editorial verification."
 }
