@@ -89,6 +89,45 @@ for item in rp_agents:
     if aid not in deep_agent_ids and item.get("priority")!="P1_start_zero_coverage":
         errors.append(f"{aid}: zero-coverage agent not marked P1")
 
+    score=item.get("priority_score")
+    if not isinstance(score,(int,float)) or isinstance(score,bool) or not (0 <= score <= 100):
+        errors.append(f"{aid}: invalid priority score {score!r}")
+
+    source_hints=item.get("available_primary_sources") or []
+    hint_urls=[]
+    for hint in source_hints:
+        if not isinstance(hint,dict) or not hint.get("title") or not hint.get("url") or hint.get("origin") not in {"profile_source","field_level_evidence"}:
+            errors.append(f"{aid}: malformed research source hint {hint!r}")
+            continue
+        hint_urls.append(hint["url"])
+        if hint["url"] not in source_by_url:
+            errors.append(f"{aid}: research source hint not present in source registry {hint['url']}")
+    if len(hint_urls) != len(set(hint_urls)):
+        errors.append(f"{aid}: duplicate research source hint URL")
+
+    expected_fields_needed=max(0,target.get("minimum_documented_fields",0)-report.get("documented_fields",0))
+    if item.get("fields_needed_for_40pct") != expected_fields_needed:
+        errors.append(f"{aid}: fields_needed_for_40pct mismatch")
+
+    tier_base={"P0_raise_existing_to_40pct":80.0,"P1_start_zero_coverage":60.0,"P2_maintain_or_deepen":20.0}
+    gap_component=round((expected_fields_needed/max(1,target.get("minimum_documented_fields",1)))*10.0,2)
+    unknown_component=round((report.get("unknown_fields",0)/max(1,len(expected_completeness_fields)))*5.0,2)
+    source_component=float(min(5,len(source_hints)))
+    expected_score=round(min(100.0,tier_base.get(item.get("priority"),0)+gap_component+unknown_component+source_component),2)
+    if score != expected_score:
+        errors.append(f"{aid}: priority score {score!r} != reproducible score {expected_score}")
+
+    recommended=item.get("recommended_unknown_paths") or []
+    states=report.get("states") or {}
+    if any(states.get(path)!="unknown" for path in recommended):
+        errors.append(f"{aid}: recommended research path is not unknown")
+    for hint in item.get("research_hints") or []:
+        path=hint.get("path") if isinstance(hint,dict) else None
+        if path not in recommended:
+            errors.append(f"{aid}: research hint path {path!r} not in recommended_unknown_paths")
+        if not isinstance(hint,dict) or not hint.get("suggested_query"):
+            errors.append(f"{aid}: malformed research field hint {hint!r}")
+
 # Curated deep evidence must be explicit, deduplicated and resolve to known agents/sources.
 deep_keys=set()
 deep_claims=[]
