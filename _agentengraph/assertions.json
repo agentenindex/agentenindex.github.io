@@ -3352,7 +3352,7 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-7292D8A81AB607"
+          "SRC-6959106E44077C"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
@@ -3361,8 +3361,8 @@
         "note": "The documented Compliance Logs Platform retention window is 30 days.",
         "evidence_items": [
           {
-            "source_id": "SRC-7292D8A81AB607",
-            "note": "OpenAI states that Codex policy/configuration changes are recorded in workspace audit logs and that the Compliance Logs Platform retains data for 30 days."
+            "source_id": "SRC-6959106E44077C",
+            "note": "OpenAI documents a 30-day availability window for records in the Compliance Logs Platform and discusses Codex activity within the same enterprise governance context."
           }
         ]
       },
@@ -3385,7 +3385,7 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-7292D8A81AB607"
+          "SRC-59486C298C47B1"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
@@ -3394,8 +3394,8 @@
         "note": "Codex workspace audit data can be exported into SIEM/data-lake workflows through the compliance interfaces.",
         "evidence_items": [
           {
-            "source_id": "SRC-7292D8A81AB607",
-            "note": "OpenAI documents connecting Compliance Platform logs and metadata to SIEM tools and retrieving Codex workspace audit logs through the Compliance API."
+            "source_id": "SRC-59486C298C47B1",
+            "note": "OpenAI documents exporting auditable records through the Compliance API and ingesting or streaming them into SIEM and data-lake systems."
           }
         ]
       },
@@ -17964,7 +17964,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -17997,7 +17997,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -18024,6 +18024,39 @@
           {
             "source_id": "SRC-9AA78722138C24",
             "note": "Agent-context execution requires explicit permission grants through permission sets."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2BDCD8703F27685C82",
+      "agent_id": "AI-0029",
+      "path": "governance.tracing",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-34C5942A075D99"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agent_platform_tracing",
+        "note": "Agentforce execution tracing is documented through Agent Platform Tracing.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-34C5942A075D99",
+            "note": "Salesforce's official repository documents Agent Platform Tracing as backend execution traces represented as OpenTelemetry-style spans in Data Cloud."
           }
         ]
       },
@@ -18307,17 +18340,17 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-B0F471004CA2CC"
+          "SRC-C02137EB0C0E38"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
         "confidence": "high",
         "scope": "agentforce_development",
-        "note": "A first-party Agentforce Python SDK is documented.",
+        "note": "A first-party Agentforce Python SDK is documented in Salesforce's official repository.",
         "evidence_items": [
           {
-            "source_id": "SRC-B0F471004CA2CC",
-            "note": "Salesforce lists the Agentforce Python SDK for programmatic agent creation and management."
+            "source_id": "SRC-C02137EB0C0E38",
+            "note": "Salesforce's official Agentforce SDK repository documents the Python SDK for creating, managing, testing, and deploying agents."
           }
         ]
       },
