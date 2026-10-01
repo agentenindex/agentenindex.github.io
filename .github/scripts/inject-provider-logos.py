@@ -10,7 +10,7 @@ for slug,a in agents.items():
         continue
     s=p.read_text(encoding='utf-8')
     img=f'<img src="{a["provider_logo"]}" alt="" aria-hidden="true" loading="eager" decoding="async"/>'
-    s=s.replace('<div class="v7p-orbit-core">AI</div>',f'<div class="v7p-orbit-core">{img}</div>')
+    s=re.sub(r'<div class="v7p-orbit-core">.*?</div>',f'<div class="v7p-orbit-core">{img}</div>',s,count=1,flags=re.S)
     p.write_text(s,encoding='utf-8')
 
 target_classes=('agent-list-card','v73agent','v73-related-card')
