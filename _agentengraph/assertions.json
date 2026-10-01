@@ -28098,6 +28098,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-AB190A1D1FB9D37BF3",
+      "agent_id": "AI-0033",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8E9379B633BD3D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_including_agents",
+        "note": "Notion Enterprise provides workspace and organization audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8E9379B633BD3D",
+            "note": "Notion documents Enterprise organization/workspace audit logs and agent-attributed activity.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit log"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-79E6ADCFF9192EC340",
+      "agent_id": "AI-0033",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8E9379B633BD3D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_audit_log",
+        "note": "Notion documents 365 days of audit-log history.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8E9379B633BD3D",
+            "note": "Notion states audit-log history is retained for up to 365 days.",
+            "evidence_type": "technical_docs",
+            "source_section": "Filter audit logs / Date"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F43E43D67409BE58CF",
+      "agent_id": "AI-0033",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8E9379B633BD3D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_audit_log",
+        "note": "Notion audit events can be streamed to a customer SIEM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8E9379B633BD3D",
+            "note": "Notion documents a custom SIEM integration that streams audit events as they occur.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit log / real-time events"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E6B859475670234C4F",
+      "agent_id": "AI-0033",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-05E3CCFBA42F20"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_including_agents",
+        "note": "Notion Enterprise supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-05E3CCFBA42F20",
+            "note": "Notion documents Enterprise SCIM provisioning for users, groups, and memberships.",
+            "evidence_type": "technical_docs",
+            "source_section": "Prerequisites for SCIM with Notion"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8C16DB92B0C1B8E5B1",
+      "agent_id": "AI-0033",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-259FA4A51A72D5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_business_enterprise_including_agents",
+        "note": "Notion supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-259FA4A51A72D5",
+            "note": "Notion documents SAML 2.0 SSO for Business and Enterprise workspaces.",
+            "evidence_type": "technical_docs",
+            "source_section": "SAML SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-88B5139DC4D494FCD2",
       "agent_id": "AI-0033",
       "path": "hosting.managed",
@@ -28181,6 +28356,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-28A63A8A837B688BA8",
+      "agent_id": "AI-0033",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EDD90620987FCE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_including_agents",
+        "note": "Notion Enterprise provides data-residency options.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EDD90620987FCE",
+            "note": "Notion documents Enterprise data-residency options for storing workspace data in supported data regions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Who is eligible?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-CFBCB32B630E9D3ECE",
+      "agent_id": "AI-0033",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EDD90620987FCE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_including_agents",
+        "note": "Eligible Enterprise customers can choose/request a Notion data region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EDD90620987FCE",
+            "note": "Notion states eligible Enterprise workspace owners can request migration of existing workspace data to a chosen data region.",
+            "evidence_type": "technical_docs",
+            "source_section": "Who is eligible?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B04E850206BCC21703",
       "agent_id": "AI-0033",
       "path": "profile.depth",
@@ -28227,6 +28472,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-31D14BF706F429B981",
+      "agent_id": "AI-0033",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-79397B7548E324"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_platform_data_including_agent_content",
+        "note": "Notion documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-79397B7548E324",
+            "note": "Notion documents AES-256 encryption at rest for Customer Data.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection and architecture"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-72A9266F46A44ADB52",
+      "agent_id": "AI-0033",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-79397B7548E324"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_platform_data_including_agent_content",
+        "note": "Notion documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-79397B7548E324",
+            "note": "Notion documents TLS 1.2 or higher encryption in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection and architecture"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-01975917EDFCD448CF",
@@ -28720,6 +29035,181 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-03A8DE78351BF2C441",
+      "agent_id": "AI-0034",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8E9379B633BD3D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_audit_log",
+        "note": "Notion documents 365 days of audit-log history.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8E9379B633BD3D",
+            "note": "Notion states audit-log history is retained for up to 365 days.",
+            "evidence_type": "technical_docs",
+            "source_section": "Filter audit logs / Date"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FED889D1E8C5B396CC",
+      "agent_id": "AI-0034",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8E9379B633BD3D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_audit_log",
+        "note": "Notion audit events can be streamed to a customer SIEM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8E9379B633BD3D",
+            "note": "Notion documents a custom SIEM integration that streams audit events as they occur.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit log / real-time events"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5A8F89F45937F4C5B9",
+      "agent_id": "AI-0034",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-05E3CCFBA42F20"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_including_agents",
+        "note": "Notion Enterprise supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-05E3CCFBA42F20",
+            "note": "Notion documents Enterprise SCIM provisioning for users, groups, and memberships.",
+            "evidence_type": "technical_docs",
+            "source_section": "Prerequisites for SCIM with Notion"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-80D99144826203C7E9",
+      "agent_id": "AI-0034",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-259FA4A51A72D5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_business_enterprise_including_agents",
+        "note": "Notion supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-259FA4A51A72D5",
+            "note": "Notion documents SAML 2.0 SSO for Business and Enterprise workspaces.",
+            "evidence_type": "technical_docs",
+            "source_section": "SAML SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FA7C1965F6FF012B8C",
+      "agent_id": "AI-0034",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-45A7BE3F9322E6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_platform_including_agents",
+        "note": "Notion Agents run on Notion's managed AWS-hosted platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-45A7BE3F9322E6",
+            "note": "Notion documents that its infrastructure and customer data are hosted on AWS in its secured production environment.",
+            "evidence_type": "security_trust",
+            "source_section": "Infrastructure"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B45F53553C8F7B4644",
       "agent_id": "AI-0034",
       "path": "identity.name",
@@ -28768,6 +29258,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-56101A418CE7683C6E",
+      "agent_id": "AI-0034",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EDD90620987FCE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_including_agents",
+        "note": "Notion Enterprise provides data-residency options.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EDD90620987FCE",
+            "note": "Notion documents Enterprise data-residency options for storing workspace data in supported data regions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Who is eligible?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8FBF3CEA8FE623842A",
+      "agent_id": "AI-0034",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EDD90620987FCE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_enterprise_including_agents",
+        "note": "Eligible Enterprise customers can choose/request a Notion data region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EDD90620987FCE",
+            "note": "Notion states eligible Enterprise workspace owners can request migration of existing workspace data to a chosen data region.",
+            "evidence_type": "technical_docs",
+            "source_section": "Who is eligible?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-CBD6EC4EC93C5C65D4",
       "agent_id": "AI-0034",
       "path": "profile.depth",
@@ -28814,6 +29374,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-2F8CBD7AAE51C7C53A",
+      "agent_id": "AI-0034",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-79397B7548E324"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_platform_data_including_agent_content",
+        "note": "Notion documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-79397B7548E324",
+            "note": "Notion documents AES-256 encryption at rest for Customer Data.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection and architecture"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3993D1B8F33A2A3833",
+      "agent_id": "AI-0034",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-79397B7548E324"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_platform_data_including_agent_content",
+        "note": "Notion documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-79397B7548E324",
+            "note": "Notion documents TLS 1.2 or higher encryption in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection and architecture"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0B46549DB4737F737C",
@@ -35202,6 +35832,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-4E1BE8C38F6AE6D601",
+      "agent_id": "AI-0042",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D95746AD5DEBCE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_account_including_ai_features",
+        "note": "HubSpot provides centralized account audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D95746AD5DEBCE",
+            "note": "HubSpot documents centralized audit logs for reviewing, filtering, and exporting user actions and security-related account activity.",
+            "evidence_type": "technical_docs",
+            "source_section": "View, filter, and export a centralized audit log"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AE80C0E67DA3F09F9B",
+      "agent_id": "AI-0042",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7F709D813BAB7D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports custom reusable permission sets/roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7F709D813BAB7D",
+            "note": "HubSpot documents creating custom permission sets from templates or from scratch with granular permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create a permission set"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F72C79B18E888D23C2",
+      "agent_id": "AI-0042",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7F709D813BAB7D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise provides role-oriented permission sets for access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7F709D813BAB7D",
+            "note": "HubSpot documents reusable permission sets based on roles that grant consistent access to users.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create a permission set"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C0ABADE6DBF300514E",
+      "agent_id": "AI-0042",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports SCIM-based provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot explicitly documents SCIM-based provisioning through Okta.",
+            "evidence_type": "security_trust",
+            "source_section": "Frequently Asked Questions / identity provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C2BE97E37961E5E9B6",
+      "agent_id": "AI-0042",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot explicitly documents SAML-based SSO for major identity providers.",
+            "evidence_type": "security_trust",
+            "source_section": "Frequently Asked Questions / identity provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-9387830B99C8804DE0",
       "agent_id": "AI-0042",
       "path": "hosting.managed",
@@ -35285,6 +36090,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-34C3329E65A60BF2FD",
+      "agent_id": "AI-0042",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-296C79444D4504"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_breeze_agents",
+        "note": "HubSpot provides regional data-hosting options for the platform that hosts Breeze agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-296C79444D4504",
+            "note": "HubSpot documents regional product infrastructure and account hosting in US, EU, Canada, and Australia.",
+            "evidence_type": "security_trust",
+            "source_section": "Where is HubSpot's product infrastructure hosted?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-35FB01EB661EB13D21",
+      "agent_id": "AI-0042",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-296C79444D4504"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_paid_accounts",
+        "note": "Eligible paid HubSpot customers can change their account data-center region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-296C79444D4504",
+            "note": "HubSpot states Starter, Professional, and Enterprise accounts can change their assigned data center.",
+            "evidence_type": "technical_docs",
+            "source_section": "How are data centers assigned?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F8432E06F2380470E7",
       "agent_id": "AI-0042",
       "path": "profile.depth",
@@ -35331,6 +36206,111 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-5B2C3D9A2F24BE0E37",
+      "agent_id": "AI-0042",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EAD7BD396867"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EAD7BD396867",
+            "note": "HubSpot documents AES-256 encryption for product-server disks and long-term storage such as AWS S3.",
+            "evidence_type": "security_trust",
+            "source_section": "How does HubSpot encrypt data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DA6F36E6FC2ED317BF",
+      "agent_id": "AI-0042",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EAD7BD396867"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EAD7BD396867",
+            "note": "HubSpot documents TLS 1.2 or 1.3 for sensitive product interactions including API calls and authenticated sessions.",
+            "evidence_type": "security_trust",
+            "source_section": "How does HubSpot encrypt data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2F686A4EF30B690B12",
+      "agent_id": "AI-0042",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents SOC 2 Type II coverage for the platform hosting its AI features.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot states its Trust Center provides the HubSpot SOC 2 Type II report and that HubSpot AI runs on the same secure platform infrastructure.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & compliance / HubSpot AI"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-73812E8A6B9C5DA2BE",
@@ -36963,6 +37943,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-85CE1233D8C03A113C",
+      "agent_id": "AI-0045",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D95746AD5DEBCE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_account_including_ai_features",
+        "note": "HubSpot provides centralized account audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D95746AD5DEBCE",
+            "note": "HubSpot documents centralized audit logs for reviewing, filtering, and exporting user actions and security-related account activity.",
+            "evidence_type": "technical_docs",
+            "source_section": "View, filter, and export a centralized audit log"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3CA370EB820F178F6D",
+      "agent_id": "AI-0045",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7F709D813BAB7D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports custom reusable permission sets/roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7F709D813BAB7D",
+            "note": "HubSpot documents creating custom permission sets from templates or from scratch with granular permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create a permission set"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8C628DE0C46BFB600C",
+      "agent_id": "AI-0045",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7F709D813BAB7D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise provides role-oriented permission sets for access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7F709D813BAB7D",
+            "note": "HubSpot documents reusable permission sets based on roles that grant consistent access to users.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create a permission set"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EB43BF1F33792A082C",
+      "agent_id": "AI-0045",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports SCIM-based provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot explicitly documents SCIM-based provisioning through Okta.",
+            "evidence_type": "security_trust",
+            "source_section": "Frequently Asked Questions / identity provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-12DD5DDCADA36A82D0",
+      "agent_id": "AI-0045",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot explicitly documents SAML-based SSO for major identity providers.",
+            "evidence_type": "security_trust",
+            "source_section": "Frequently Asked Questions / identity provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4EDF286B0581D55A5C",
       "agent_id": "AI-0045",
       "path": "hosting.managed",
@@ -37046,6 +38201,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1D5C807CBFF73042FA",
+      "agent_id": "AI-0045",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-296C79444D4504"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_breeze_agents",
+        "note": "HubSpot provides regional data-hosting options for the platform that hosts Breeze agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-296C79444D4504",
+            "note": "HubSpot documents regional product infrastructure and account hosting in US, EU, Canada, and Australia.",
+            "evidence_type": "security_trust",
+            "source_section": "Where is HubSpot's product infrastructure hosted?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0978B309DC403B01CE",
+      "agent_id": "AI-0045",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-296C79444D4504"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_paid_accounts",
+        "note": "Eligible paid HubSpot customers can change their account data-center region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-296C79444D4504",
+            "note": "HubSpot states Starter, Professional, and Enterprise accounts can change their assigned data center.",
+            "evidence_type": "technical_docs",
+            "source_section": "How are data centers assigned?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-73675EAFB2367551B2",
       "agent_id": "AI-0045",
       "path": "profile.depth",
@@ -37092,6 +38317,111 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-1442CE5CAF10E8527A",
+      "agent_id": "AI-0045",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EAD7BD396867"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EAD7BD396867",
+            "note": "HubSpot documents AES-256 encryption for product-server disks and long-term storage such as AWS S3.",
+            "evidence_type": "security_trust",
+            "source_section": "How does HubSpot encrypt data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7CB546D2C8C433A7E5",
+      "agent_id": "AI-0045",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EAD7BD396867"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EAD7BD396867",
+            "note": "HubSpot documents TLS 1.2 or 1.3 for sensitive product interactions including API calls and authenticated sessions.",
+            "evidence_type": "security_trust",
+            "source_section": "How does HubSpot encrypt data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-965375458582B1F8F7",
+      "agent_id": "AI-0045",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents SOC 2 Type II coverage for the platform hosting its AI features.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot states its Trust Center provides the HubSpot SOC 2 Type II report and that HubSpot AI runs on the same secure platform infrastructure.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & compliance / HubSpot AI"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0A114728B5C4708676",
@@ -38137,6 +39467,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-87523AE0104A65DE0E",
+      "agent_id": "AI-0047",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D95746AD5DEBCE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_account_including_ai_features",
+        "note": "HubSpot provides centralized account audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D95746AD5DEBCE",
+            "note": "HubSpot documents centralized audit logs for reviewing, filtering, and exporting user actions and security-related account activity.",
+            "evidence_type": "technical_docs",
+            "source_section": "View, filter, and export a centralized audit log"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1280BEF11463E6B247",
+      "agent_id": "AI-0047",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7F709D813BAB7D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports custom reusable permission sets/roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7F709D813BAB7D",
+            "note": "HubSpot documents creating custom permission sets from templates or from scratch with granular permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create a permission set"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-47D4019022A810DB38",
+      "agent_id": "AI-0047",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7F709D813BAB7D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise provides role-oriented permission sets for access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7F709D813BAB7D",
+            "note": "HubSpot documents reusable permission sets based on roles that grant consistent access to users.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create a permission set"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-10275A76D660D48CE3",
+      "agent_id": "AI-0047",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports SCIM-based provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot explicitly documents SCIM-based provisioning through Okta.",
+            "evidence_type": "security_trust",
+            "source_section": "Frequently Asked Questions / identity provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-384C78DF35DF80E1DA",
+      "agent_id": "AI-0047",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot explicitly documents SAML-based SSO for major identity providers.",
+            "evidence_type": "security_trust",
+            "source_section": "Frequently Asked Questions / identity provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-37A02184E7E5518C50",
       "agent_id": "AI-0047",
       "path": "hosting.managed",
@@ -38220,6 +39725,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-34AF8840DFC268208F",
+      "agent_id": "AI-0047",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-296C79444D4504"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_breeze_agents",
+        "note": "HubSpot provides regional data-hosting options for the platform that hosts Breeze agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-296C79444D4504",
+            "note": "HubSpot documents regional product infrastructure and account hosting in US, EU, Canada, and Australia.",
+            "evidence_type": "security_trust",
+            "source_section": "Where is HubSpot's product infrastructure hosted?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-786B1EA58FA031F236",
+      "agent_id": "AI-0047",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-296C79444D4504"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_paid_accounts",
+        "note": "Eligible paid HubSpot customers can change their account data-center region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-296C79444D4504",
+            "note": "HubSpot states Starter, Professional, and Enterprise accounts can change their assigned data center.",
+            "evidence_type": "technical_docs",
+            "source_section": "How are data centers assigned?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-5FBE0DA511F5E195D9",
       "agent_id": "AI-0047",
       "path": "profile.depth",
@@ -38266,6 +39841,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-33D06BBF234732D09D",
+      "agent_id": "AI-0047",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EAD7BD396867"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EAD7BD396867",
+            "note": "HubSpot documents AES-256 encryption for product-server disks and long-term storage such as AWS S3.",
+            "evidence_type": "security_trust",
+            "source_section": "How does HubSpot encrypt data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A227A2A0D54B61950E",
+      "agent_id": "AI-0047",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EAD7BD396867"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EAD7BD396867",
+            "note": "HubSpot documents TLS 1.2 or 1.3 for sensitive product interactions including API calls and authenticated sessions.",
+            "evidence_type": "security_trust",
+            "source_section": "How does HubSpot encrypt data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5F0B61A977EE51DCE4",
+      "agent_id": "AI-0047",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents SOC 2 Type II coverage for the platform hosting its AI features.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot states its Trust Center provides the HubSpot SOC 2 Type II report and that HubSpot AI runs on the same secure platform infrastructure.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & compliance / HubSpot AI"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-387A4BC518C5186335",
@@ -38737,6 +40417,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-B29C027E0E5FE8E0C5",
+      "agent_id": "AI-0048",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D95746AD5DEBCE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_account_including_ai_features",
+        "note": "HubSpot provides centralized account audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D95746AD5DEBCE",
+            "note": "HubSpot documents centralized audit logs for reviewing, filtering, and exporting user actions and security-related account activity.",
+            "evidence_type": "technical_docs",
+            "source_section": "View, filter, and export a centralized audit log"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F318C7364E77774EB0",
+      "agent_id": "AI-0048",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7F709D813BAB7D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports custom reusable permission sets/roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7F709D813BAB7D",
+            "note": "HubSpot documents creating custom permission sets from templates or from scratch with granular permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create a permission set"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-13E555F5736FF616EA",
+      "agent_id": "AI-0048",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7F709D813BAB7D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise provides role-oriented permission sets for access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7F709D813BAB7D",
+            "note": "HubSpot documents reusable permission sets based on roles that grant consistent access to users.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create a permission set"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-612927FC07F043F78A",
+      "agent_id": "AI-0048",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports SCIM-based provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot explicitly documents SCIM-based provisioning through Okta.",
+            "evidence_type": "security_trust",
+            "source_section": "Frequently Asked Questions / identity provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9FBE481829E185BB36",
+      "agent_id": "AI-0048",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_enterprise_including_breeze_agents",
+        "note": "HubSpot Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot explicitly documents SAML-based SSO for major identity providers.",
+            "evidence_type": "security_trust",
+            "source_section": "Frequently Asked Questions / identity provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-DBEAC4475EAFB966ED",
       "agent_id": "AI-0048",
       "path": "hosting.managed",
@@ -38822,6 +40677,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9F0362779F83AFF2F5",
+      "agent_id": "AI-0048",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-296C79444D4504"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_breeze_agents",
+        "note": "HubSpot provides regional data-hosting options for the platform that hosts Breeze agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-296C79444D4504",
+            "note": "HubSpot documents regional product infrastructure and account hosting in US, EU, Canada, and Australia.",
+            "evidence_type": "security_trust",
+            "source_section": "Where is HubSpot's product infrastructure hosted?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-945225F89971C6441E",
+      "agent_id": "AI-0048",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-296C79444D4504"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_paid_accounts",
+        "note": "Eligible paid HubSpot customers can change their account data-center region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-296C79444D4504",
+            "note": "HubSpot states Starter, Professional, and Enterprise accounts can change their assigned data center.",
+            "evidence_type": "technical_docs",
+            "source_section": "How are data centers assigned?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-0A7AF4D1F27B970F6F",
       "agent_id": "AI-0048",
       "path": "profile.depth",
@@ -38870,6 +40795,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-4DD6F3DEE8B8263689",
+      "agent_id": "AI-0048",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EAD7BD396867"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EAD7BD396867",
+            "note": "HubSpot documents AES-256 encryption for product-server disks and long-term storage such as AWS S3.",
+            "evidence_type": "security_trust",
+            "source_section": "How does HubSpot encrypt data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1B2BA2F44193C2BEB5",
+      "agent_id": "AI-0048",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D2EAD7BD396867"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D2EAD7BD396867",
+            "note": "HubSpot documents TLS 1.2 or 1.3 for sensitive product interactions including API calls and authenticated sessions.",
+            "evidence_type": "security_trust",
+            "source_section": "How does HubSpot encrypt data?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E661CB07AEB9BA2A41",
+      "agent_id": "AI-0048",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-13F8241ED1BFDF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_platform_including_ai_features",
+        "note": "HubSpot documents SOC 2 Type II coverage for the platform hosting its AI features.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-13F8241ED1BFDF",
+            "note": "HubSpot states its Trust Center provides the HubSpot SOC 2 Type II report and that HubSpot AI runs on the same secure platform infrastructure.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & compliance / HubSpot AI"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-176FC240084C0D5FCB",
