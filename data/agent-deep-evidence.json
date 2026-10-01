@@ -15,6 +15,269 @@
   },
   "agents": [
     {
+      "agent_id": "AI-0002",
+      "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "gemini_apps_deep_research",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Gemini Apps Help – Use Deep Research in Gemini Apps",
+              "url": "https://support.google.com/gemini/answer/15719111?hl=en",
+              "note": "Google documents Deep Research as a feature of the hosted Gemini Apps service, used while signed in to the Gemini app and producing research reports in the service.",
+              "evidence_type": "technical_docs",
+              "source_section": "Use Deep Research in Gemini Apps / What you need"
+            }
+          ],
+          "note": "Gemini Deep Research is delivered as a Google-managed Gemini Apps service."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "gemini_deep_research_workspace_core_service",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Gemini Apps Help – Use Gemini Apps with a work or school Google Account",
+              "url": "https://support.google.com/gemini/answer/14620100?co=DASHER._Family%3DBusiness-Enterprise&hl=en",
+              "note": "Google documents Deep Research availability inside Gemini Apps for Workspace users and states Workspace licenses that include Gemini Apps as a core service provide enterprise-grade data protections.",
+              "evidence_type": "technical_docs",
+              "source_section": "Gemini Apps by Workspace editions / Check if you have enterprise-grade data protections"
+            },
+            {
+              "title": "Google Workspace – Digital Data Sovereignty",
+              "url": "https://workspace.google.com/security/digital-sovereignty/",
+              "note": "Google Workspace lists SOC 1/2/3 among the industry standards/certifications applying to the Workspace cloud service.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance with industry standards"
+            }
+          ],
+          "note": "For Workspace deployments where Gemini Apps is a core service, Deep Research is covered by the Workspace service security/compliance posture that includes SOC 2."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0003",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "claude_research_remote_connectors",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Get started with custom connectors using remote MCP",
+              "url": "https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp",
+              "note": "Anthropic states Research can automatically invoke tools from custom connectors backed by remote MCP servers.",
+              "evidence_type": "technical_docs",
+              "source_section": "Using Claude with Research"
+            }
+          ],
+          "note": "Claude Research can act as an MCP client through remote custom connectors."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "claude_research_cloud_service",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Use research on Claude",
+              "url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+              "note": "Anthropic documents Research as a Claude feature available through Claude on the web, desktop, and mobile.",
+              "evidence_type": "technical_docs",
+              "source_section": "Use research on Claude"
+            },
+            {
+              "title": "Claude Help – Get started with custom connectors using remote MCP",
+              "url": "https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp",
+              "note": "Anthropic documents Claude remote-connector traffic, including Research tool use, as originating from Anthropic cloud infrastructure.",
+              "evidence_type": "technical_docs",
+              "source_section": "Network requirements / Using Claude with Research"
+            }
+          ],
+          "note": "Claude Research runs as an Anthropic-managed Claude service."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "claude_research_team_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Use research on Claude",
+              "url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+              "note": "Anthropic documents Research as available on Team and Enterprise plans.",
+              "evidence_type": "technical_docs",
+              "source_section": "Availability"
+            },
+            {
+              "title": "Claude Help – Set up single sign-on (SSO)",
+              "url": "https://support.claude.com/en/articles/13132885-set-up-single-sign-on-sso",
+              "note": "Anthropic documents SAML SSO for Claude Team and Enterprise organizations.",
+              "evidence_type": "technical_docs",
+              "source_section": "Set up SSO with your Identity Provider"
+            }
+          ],
+          "note": "Team and Enterprise users accessing Research can use Claude's SAML SSO."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "claude_research_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Use research on Claude",
+              "url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+              "note": "Anthropic documents Research as available to Enterprise users.",
+              "evidence_type": "technical_docs",
+              "source_section": "Availability"
+            },
+            {
+              "title": "Claude Help – Set up JIT or SCIM provisioning",
+              "url": "https://support.claude.com/en/articles/13133195-set-up-jit-or-scim-provisioning",
+              "note": "Anthropic documents SCIM provisioning and deprovisioning for Claude Enterprise organizations.",
+              "evidence_type": "technical_docs",
+              "source_section": "SCIM provisioning"
+            }
+          ],
+          "note": "Claude Enterprise organizations using Research can provision users through SCIM."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "claude_research_team_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Use research on Claude",
+              "url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+              "note": "Anthropic documents Research as a feature inside paid Claude Team and Enterprise organizations.",
+              "evidence_type": "technical_docs",
+              "source_section": "Availability"
+            },
+            {
+              "title": "Claude Help – Roles and permissions",
+              "url": "https://support.claude.com/en/articles/9267276-roles-and-permissions",
+              "note": "Anthropic documents built-in Claude Team and Enterprise roles with distinct permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Roles and permissions"
+            }
+          ],
+          "note": "Research is used inside Claude organizations governed by documented role-based permissions."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "claude_research_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Manage custom roles on Enterprise plans",
+              "url": "https://support.claude.com/en/articles/13930452-manage-custom-roles-on-enterprise-plans",
+              "note": "Anthropic documents Enterprise custom roles with granular Claude capability and organization permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "What are custom roles?"
+            },
+            {
+              "title": "Claude Help – Use research on Claude",
+              "url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+              "note": "Research is documented as available within Claude Enterprise.",
+              "evidence_type": "technical_docs",
+              "source_section": "Availability"
+            }
+          ],
+          "note": "Claude Enterprise custom roles govern access and permissions in organizations where Research is available."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "claude_research_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – What is the Enterprise plan?",
+              "url": "https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan",
+              "note": "Anthropic documents Enterprise audit logs covering user actions, system events, and data access.",
+              "evidence_type": "security_trust",
+              "source_section": "What's included in the Enterprise plan?"
+            },
+            {
+              "title": "Claude Help – Use research on Claude",
+              "url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+              "note": "Research is available within Claude Enterprise organizations.",
+              "evidence_type": "technical_docs",
+              "source_section": "Availability"
+            }
+          ],
+          "note": "Enterprise organizations using Research have Claude organization audit logs."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "claude_research_enterprise_compliance_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – What is the Enterprise plan?",
+              "url": "https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan",
+              "note": "Anthropic documents a Compliance API providing programmatic access to Claude activity logs, chat histories, and file content.",
+              "evidence_type": "api_docs",
+              "source_section": "What's included in the Enterprise plan?"
+            }
+          ],
+          "note": "Claude Enterprise exposes organization activity logs programmatically through the Compliance API."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "claude_research_enterprise_content",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – What are customer-managed encryption keys (CMEK)?",
+              "url": "https://support.claude.com/en/articles/15505325-what-are-customer-managed-encryption-keys-cmek",
+              "note": "Anthropic documents customer-managed keys for Enterprise that encrypt Claude chats, projects, and files using keys controlled in the customer's cloud provider.",
+              "evidence_type": "security_trust",
+              "source_section": "What are customer-managed encryption keys?"
+            }
+          ],
+          "note": "Eligible Enterprise organizations can protect Claude content used by Research with customer-managed encryption keys."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "claude_research_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Anthropic Trust Center",
+              "url": "https://trust.anthropic.com/",
+              "note": "Anthropic's Trust Center lists Claude Enterprise as covered by SOC 2 Type 2.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance scope"
+            }
+          ],
+          "note": "Claude Research used under Claude Enterprise inherits the Claude Enterprise SOC 2 Type 2 scope."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0006",
       "claims": [
         {
@@ -853,6 +1116,76 @@
             }
           ],
           "note": "Supported Amazon Q Developer Pro features can use customer-managed AWS KMS keys."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0014",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "google_jules_sessions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Jules Docs – MCP support comes to Jules",
+              "url": "https://jules.google/docs/changelog/2026-02-02",
+              "note": "Google documents Jules connecting to supported MCP servers and invoking their tools during sessions.",
+              "evidence_type": "official_release",
+              "source_section": "MCP support comes to Jules"
+            }
+          ],
+          "note": "Jules acts as an MCP client for supported MCP server integrations."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "jules_rest_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Jules Docs – REST API Quickstart",
+              "url": "https://jules.google/docs/api/reference/",
+              "note": "Google documents the Jules REST API for programmatic creation and management of sources, sessions, activities, and development workflows.",
+              "evidence_type": "api_docs",
+              "source_section": "Quickstart / API concepts"
+            },
+            {
+              "title": "Jules Docs – Introducing the Jules API",
+              "url": "https://jules.google/docs/changelog/2025-10-03/",
+              "note": "Google documents programmatic Jules access via HTTPS REST endpoints.",
+              "evidence_type": "official_release",
+              "source_section": "Introducing the Jules API"
+            }
+          ],
+          "note": "Jules provides a documented REST API."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "jules_task_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Jules Docs – Environment setup",
+              "url": "https://jules.google/docs/environment/",
+              "note": "Google states each Jules task runs inside a secure, short-lived virtual machine with preinstalled development tools.",
+              "evidence_type": "technical_docs",
+              "source_section": "Environment setup"
+            },
+            {
+              "title": "Jules Docs – FAQ",
+              "url": "https://jules.google/docs/faq/",
+              "note": "Google states Jules executes code in a secure cloud-based virtual machine.",
+              "evidence_type": "technical_docs",
+              "source_section": "How does Jules run code, and what should I know about security?"
+            }
+          ],
+          "note": "Jules tasks run in Google-managed cloud virtual machines."
         }
       ]
     },
