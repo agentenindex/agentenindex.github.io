@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:26:46Z",
+  "updated_at": "2026-10-01T15:53:11Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -1478,6 +1478,29 @@
         "token_delta_pct": 0.0
       },
       "previous_checked_at": "2026-10-01T15:18:39Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-35229E3E36CBE201AB",
+      "detected_at": "2026-10-01T15:52:41Z",
+      "source_id": "SRC-66E1E550D020F2",
+      "agent_ids": [
+        "AI-0065"
+      ],
+      "source_title": "GitLab Docs – GitLab MCP server",
+      "url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "574957dad75c1d2d0a6888113a95f407e0bb1511e5951dbe215ab45b91561894",
+        "new_hash": "6361d12c1eb83776280f85a22ccfd11e5e018cd569c7fdd6957b8d73367c3b35",
+        "simhash_distance": 0,
+        "old_token_count": 3614,
+        "new_token_count": 3587,
+        "token_delta_pct": -0.75
+      },
+      "previous_checked_at": "2026-10-01T15:26:01Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }

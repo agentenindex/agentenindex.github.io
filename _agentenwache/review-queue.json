@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:26:46Z",
-  "open_count": 0,
+  "updated_at": "2026-10-01T15:53:11Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -971,6 +971,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:21:10Z",
       "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
+    },
+    {
+      "review_id": "REV-ACEE0155EB0C469D5B",
+      "status": "open",
+      "first_detected": "2026-10-01T15:52:41Z",
+      "last_detected": "2026-10-01T15:52:41Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-66E1E550D020F2",
+      "source_title": "GitLab Docs – GitLab MCP server",
+      "url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+      "agent_ids": [
+        "AI-0065"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+        "text_hash": "574957dad75c1d2d0a6888113a95f407e0bb1511e5951dbe215ab45b91561894",
+        "simhash64": "cbcfb677a5e84bb2",
+        "token_count": 3614,
+        "text_sample": "/ GitLab MCP server Tier : Free, Premium, Ultimate Offering : GitLab.com, GitLab Self-Managed, GitLab Dedicated Status : Beta History Introduced as an experiment in GitLab 18.3 with feature flags named mcp_server and oauth_dynamic_client_registration . Disabled by default. Changed from experiment to beta in GitLab 18.6. Feature flags mcp_server and oauth_dynamic_client_registration removed. Support for 2025-03-26 and 2025-06-18 MCP protocol specifications added in GitLab 18.7. Support for the 2025-11-25 MCP protocol specification added in GitLab 18.7. Changed to a separate setting and moved from GitLab Premium to GitLab Free in GitLab 19.2. Toolset selection added in GitLab 19.5 with a feature flag named mcp_toolsets . Disabled by default. To provide feedback on this feature, leave a comment on issue 630189 . With the GitLab Model Context Protocol (MCP) server, you can securely connect AI tools and applications to your GitLab instance. AI assistants like Claude Desktop, Claude Code, Cursor, and other MCP-compatible tools can then access your GitLab data and perform actions on your behalf. The GitLab MCP server provides a standardized way for AI tools to: Access GitLab project infor"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+        "text_hash": "6361d12c1eb83776280f85a22ccfd11e5e018cd569c7fdd6957b8d73367c3b35",
+        "simhash64": "cbcfb677a5e84bb2",
+        "token_count": 3587,
+        "text_sample": "/ GitLab MCP server Tier : Free, Premium, Ultimate Offering : GitLab.com, GitLab Self-Managed, GitLab Dedicated Status : Beta History Introduced as an experiment in GitLab 18.3 with feature flags named mcp_server and oauth_dynamic_client_registration . Disabled by default. Changed from experiment to beta in GitLab 18.6. Feature flags mcp_server and oauth_dynamic_client_registration removed. Support for 2025-03-26 and 2025-06-18 MCP protocol specifications added in GitLab 18.7. Support for the 2025-11-25 MCP protocol specification added in GitLab 18.7. Changed to a separate setting and moved from GitLab Premium to GitLab Free in GitLab 19.2. Toolset selection added in GitLab 19.5. To provide feedback on this feature, leave a comment on issue 630189 . With the GitLab Model Context Protocol (MCP) server, you can securely connect AI tools and applications to your GitLab instance. AI assistants like Claude Desktop, Claude Code, Cursor, and other MCP-compatible tools can then access your GitLab data and perform actions on your behalf. The GitLab MCP server provides a standardized way for AI tools to: Access GitLab project information. Retrieve issue and merge request data. Interact with ",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "574957dad75c1d2d0a6888113a95f407e0bb1511e5951dbe215ab45b91561894",
+        "new_hash": "6361d12c1eb83776280f85a22ccfd11e5e018cd569c7fdd6957b8d73367c3b35",
+        "simhash_distance": 0,
+        "old_token_count": 3614,
+        "new_token_count": 3587,
+        "token_delta_pct": -0.75
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-AD6F59ECA3A74FA288",
