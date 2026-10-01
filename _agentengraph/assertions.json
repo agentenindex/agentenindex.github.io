@@ -52102,6 +52102,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-C174AA07D5F56EBA0F",
+      "agent_id": "AI-0076",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-36840E02B3374D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_amp_deployed_crews",
+        "note": "CrewAI AMP exposes deployed crews through REST API endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-36840E02B3374D",
+            "note": "CrewAI AMP documents REST API access for deployed crews and generated API endpoints.",
+            "evidence_type": "api_docs",
+            "source_section": "API Access"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-424DD2A9F9D5EBC510",
+      "agent_id": "AI-0076",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-36840E02B3374D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_amp_runtime_events",
+        "note": "CrewAI AMP supports webhook streaming of runtime events and updates.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-36840E02B3374D",
+            "note": "CrewAI AMP documents Webhook Streaming for real-time events and updates to external systems.",
+            "evidence_type": "api_docs",
+            "source_section": "Webhook Streaming"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-AE4B0AF705CBEE6546",
       "agent_id": "AI-0076",
       "path": "audience",
@@ -52427,6 +52497,202 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-D543D5C776372F0D32",
+      "agent_id": "AI-0076",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-575CD88A1576DE",
+          "SRC-DF1E9D33B07A8A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_amp_enterprise",
+        "note": "CrewAI AMP documents audit trails for governed agent execution.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DF1E9D33B07A8A",
+            "note": "CrewAI describes immutable audit trails in the Control Plane alongside RBAC.",
+            "evidence_type": "official_product_page",
+            "source_section": "Govern"
+          },
+          {
+            "source_id": "SRC-575CD88A1576DE",
+            "note": "CrewAI documents full audit trails for human-in-the-loop requests, responses, and decisions in AMP.",
+            "evidence_type": "official_release",
+            "source_section": "Enterprise AMP"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4F2F3641CF9E3C4AA8",
+      "agent_id": "AI-0076",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DF1E9D33B07A8A",
+          "SRC-E721DC23892C01"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_amp_enterprise",
+        "note": "CrewAI AMP provides role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E721DC23892C01",
+            "note": "CrewAI Enterprise lists RBAC as a governance capability.",
+            "evidence_type": "official_product_page",
+            "source_section": "Governance from the start"
+          },
+          {
+            "source_id": "SRC-DF1E9D33B07A8A",
+            "note": "CrewAI states its control plane provides RBAC and granular governance controls.",
+            "evidence_type": "official_product_page",
+            "source_section": "Govern"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4377E4EF1029276FB2",
+      "agent_id": "AI-0076",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-36840E02B3374D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_amp",
+        "note": "CrewAI AMP provides managed deployment infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-36840E02B3374D",
+            "note": "CrewAI AMP documents deploying crews to managed infrastructure.",
+            "evidence_type": "technical_docs",
+            "source_section": "Crew Deployments"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B9367043AEB1A863D3",
+      "agent_id": "AI-0076",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-283CEAA107266C",
+          "SRC-E721DC23892C01"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_factory_customer_vpc",
+        "note": "CrewAI Enterprise supports deployment in customer-controlled VPC/private infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-283CEAA107266C",
+            "note": "CrewAI documents deployment in customer AWS/Azure VPCs and on-premises environments.",
+            "evidence_type": "official_release",
+            "source_section": "Deploy anywhere"
+          },
+          {
+            "source_id": "SRC-E721DC23892C01",
+            "note": "CrewAI Enterprise lists dedicated VPC deployment on CrewAI or customer infrastructure.",
+            "evidence_type": "official_product_page",
+            "source_section": "Deployment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9E4BA3264E0550A2A7",
+      "agent_id": "AI-0076",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-283CEAA107266C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_factory_customer_infrastructure",
+        "note": "CrewAI Enterprise can run on customer-managed infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-283CEAA107266C",
+            "note": "CrewAI documents Enterprise deployment on customer infrastructure, including data centers and customer-managed Kubernetes environments.",
+            "evidence_type": "official_release",
+            "source_section": "Deploy anywhere"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-34CBA0576B4238DEB0",
       "agent_id": "AI-0076",
       "path": "identity.name",
@@ -52525,6 +52791,181 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-3291CDDD0FF5E77FF0",
+      "agent_id": "AI-0076",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-44DFC517AD68C0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_framework_deployed_in_amp",
+        "note": "CrewAI agents can consume tools from configured MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-44DFC517AD68C0",
+            "note": "CrewAI documents MCP integration through mcp_server_params and get_mcp_tools(), which starts an MCP adapter and hydrates tools from configured MCP servers.",
+            "evidence_type": "technical_docs",
+            "source_section": "MCP integration"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-45A854D097435FEB29",
+      "agent_id": "AI-0076",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E721DC23892C01"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_amp_enterprise",
+        "note": "CrewAI workflows can be exported as MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E721DC23892C01",
+            "note": "CrewAI lists 'Export as MCP server' as a supported capability.",
+            "evidence_type": "official_product_page",
+            "source_section": "Build and integrate"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-681E4A10B2D7B9179D",
+      "agent_id": "AI-0076",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-283CEAA107266C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_factory_customer_infrastructure",
+        "note": "CrewAI Factory documents encryption for stored data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-283CEAA107266C",
+            "note": "CrewAI explicitly lists encrypted storage as a CrewAI Factory security capability.",
+            "evidence_type": "official_release",
+            "source_section": "CrewAI Factory"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E916BF13F8C716199D",
+      "agent_id": "AI-0076",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-283CEAA107266C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_factory_customer_infrastructure",
+        "note": "CrewAI Factory documents encrypted communications.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-283CEAA107266C",
+            "note": "CrewAI explicitly lists encrypted communication as a CrewAI Factory security capability.",
+            "evidence_type": "official_release",
+            "source_section": "CrewAI Factory"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8B6F841A8259B2BCB9",
+      "agent_id": "AI-0076",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8DDFEDDC9E9097"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "crewai_platform",
+        "note": "CrewAI documents SOC 2 Type 2 certification.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8DDFEDDC9E9097",
+            "note": "CrewAI states it maintains a SOC 2 Type 2 certified security program and publishes a SOC 2 Type 2 report in its Trust Center.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-359FEDAD7F7037C925",
