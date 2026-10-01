@@ -96,17 +96,33 @@ h1,h2,h3,p{margin-top:0}
 .section h2{font-size:clamp(2.8rem,5vw,4.8rem);line-height:.97;letter-spacing:-.065em;margin:0}
 .section-head p{color:#68748b;margin:0}
 .kicker{font-size:.65rem;text-transform:uppercase;letter-spacing:.13em;color:var(--blue);font-weight:850;margin-bottom:11px}
-.cards{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
-.agent{grid-column:span 4;min-height:315px;border:1px solid var(--line);border-radius:22px;padding:22px;background:#fff;text-decoration:none;display:flex;flex-direction:column;box-shadow:0 7px 24px rgba(34,62,98,.035);transition:.18s}
-.agent.featured{grid-column:span 8;background:linear-gradient(140deg,#fff,#f5f9ff)}
-.agent:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.atop{display:flex;justify-content:space-between;gap:12px}
-.verified{font-size:.58rem;text-transform:uppercase;letter-spacing:.07em;color:#078670;background:#e9f9f4;border-radius:999px;padding:5px 8px;font-weight:830}
-.category{font-size:.58rem;text-transform:uppercase;letter-spacing:.08em;color:#1764dc;font-weight:830}
-.agent h3{font-size:1.65rem;letter-spacing:-.045em;margin:30px 0 4px}.agent.featured h3{font-size:2.35rem}
-.provider{text-transform:uppercase;color:#8a7442;font-size:.61rem;letter-spacing:.07em;font-weight:820}
-.agent p{font-size:.82rem;color:#626e85;max-width:580px}
-.agent footer{margin-top:auto;border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;font-size:.67rem;font-weight:780}.agent footer span:last-child{color:var(--blue)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.agent{border:1px solid #e4eaf3;border-radius:24px;padding:24px;background:#fff;text-decoration:none;display:flex;flex-direction:column;box-shadow:0 8px 28px rgba(34,62,98,.045);transition:.18s;min-width:0}
+.agent:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#cfdcf1}
+.agent:nth-child(1){background:linear-gradient(145deg,#fff,#f7faff)}
+.agent:nth-child(2){background:linear-gradient(145deg,#fff,#fbfdff)}
+.atop{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.verified{font-size:.58rem;text-transform:uppercase;letter-spacing:.07em;color:#078670;background:#e9f9f4;border-radius:999px;padding:6px 9px;font-weight:830}
+.category{font-size:.58rem;text-transform:uppercase;letter-spacing:.09em;color:#1764dc;font-weight:850}
+.agent-title{margin:24px 0 0}
+.agent h3{font-size:1.85rem;line-height:1.03;letter-spacing:-.05em;margin:0 0 6px}
+.provider{text-transform:uppercase;color:#8a7442;font-size:.61rem;letter-spacing:.08em;font-weight:850}
+.agent-summary{font-size:.83rem;color:#626e85;line-height:1.55;margin:12px 0 16px}
+.usechips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px}
+.usechips span{font-size:.61rem;line-height:1;padding:7px 9px;border-radius:999px;background:#f5f8fc;border:1px solid #e5ebf3;color:#536178;font-weight:720}
+.rich-meta{display:grid;grid-template-columns:1fr 1fr;border:1px solid #e8edf4;border-radius:16px;overflow:hidden;background:rgba(250,252,255,.82);margin-top:auto}
+.rich-meta>div{padding:11px 12px;min-width:0}
+.rich-meta>div:nth-child(odd){border-right:1px solid #e8edf4}
+.rich-meta>div:nth-child(n+3){border-top:1px solid #e8edf4}
+.rich-meta small{display:block;font-size:.53rem;text-transform:uppercase;letter-spacing:.075em;color:#8a94a6;font-weight:800;margin-bottom:3px}
+.rich-meta b{display:block;font-size:.7rem;line-height:1.25;color:#24314c;overflow-wrap:anywhere}
+.agent footer{margin-top:16px;border-top:1px solid #e8edf4;padding-top:14px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}
+.agent-id{display:flex;flex-wrap:wrap;gap:7px 14px;color:#758097;font-size:.6rem}
+.agent-id b{color:#34415c;font:750 .61rem ui-monospace,SFMono-Regular,Menlo,monospace}
+.agent-link{color:#1764dc;font-size:.7rem;font-weight:850;white-space:nowrap}
+@media(max-width:980px){
+ .cards{grid-template-columns:1fr}
+}
 .knowledge{background:linear-gradient(180deg,#f6faff,#fbfdff);border-block:1px solid #e8eef7}
 .knowledge-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:12px}
 .knowledge-main{background:#fff;border:1px solid #e4ebf4;border-radius:25px;padding:29px;min-height:335px;text-decoration:none;display:flex;flex-direction:column;position:relative;overflow:hidden}
@@ -204,11 +220,89 @@ footer.sitefoot{border-top:1px solid var(--line);padding:36px 0 25px;background:
 <section class="section"><div class="wrap">
  <div class="section-head"><div><p class="kicker">AgentenProfile</p><h2>Einheitlich strukturiert. Schnell vergleichbar.</h2></div><p>Jedes AgentenProfil zeigt dieselben Kerninformationen: Anbieter, Kategorie, Einsatz, Grenzen, Quellenstatus, Prüfdatum und Änderungsverlauf.</p></div>
  <div class="cards">
-  <a class="agent featured" href="/agenten/chatgpt-deep-research/"><div class="atop"><span class="verified">✓ geprüft</span><span class="category">Recherche</span></div><h3>ChatGPT Deep Research</h3><span class="provider">OpenAI</span><p>Mehrstufige Recherche mit Web, Dateien, steuerbaren Quellen und zitiertem Bericht.</p><footer><span>Recherche & Analyse</span><span>AgentenProfil →</span></footer></a>
-  <a class="agent" href="/agenten/claude-code/"><div class="atop"><span class="verified">✓ geprüft</span><span class="category">Coding</span></div><h3>Claude Code</h3><span class="provider">Anthropic</span><p>Agentischer Coding-Assistent für Terminal und Entwicklungsumgebung.</p><footer><span>Code & Tools</span><span>Profil →</span></footer></a>
-  <a class="agent" href="/agenten/gemini-deep-research/"><div class="atop"><span class="verified">✓ geprüft</span><span class="category">Recherche</span></div><h3>Gemini Deep Research</h3><span class="provider">Google</span><p>Agentische Recherche im Gemini-Ökosystem mit offiziellen Google-Quellen.</p><footer><span>Recherche</span><span>Profil →</span></footer></a>
-  <a class="agent" href="/agenten/devin/"><div class="atop"><span class="verified">✓ geprüft</span><span class="category">Coding</span></div><h3>Devin</h3><span class="provider">Cognition</span><p>Software-Engineering-Agent für delegierbare Entwicklungsaufgaben.</p><footer><span>Software</span><span>Profil →</span></footer></a>
-  <a class="agent" href="/agenten/salesforce-agentforce/"><div class="atop"><span class="verified">✓ geprüft</span><span class="category">Enterprise</span></div><h3>Salesforce Agentforce</h3><span class="provider">Salesforce</span><p>Plattform für Unternehmensagenten mit CRM-Kontext und Aktionen.</p><footer><span>CRM & Prozesse</span><span>Profil →</span></footer></a>
+  <a class="agent" href="/agenten/chatgpt-deep-research/">
+   <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Recherche</span></div>
+   <div class="agent-title"><h3>ChatGPT Deep Research</h3><span class="provider">OpenAI</span></div>
+   <p class="agent-summary">Mehrstufige Recherche in ChatGPT mit Web, Dateien, steuerbaren Quellen und zitiertem Bericht.</p>
+   <div class="usechips"><span>Kaufrecherche</span><span>Produktvergleich</span><span>Reiseplanung</span><span>Hintergrundrecherche</span></div>
+   <div class="rich-meta">
+    <div><small>Produkttyp</small><b>Integrierter Recherche-Agent</b></div>
+    <div><small>Zielgruppe</small><b>Privat & Unternehmen</b></div>
+    <div><small>Primärquellen</small><b>2 dokumentiert</b></div>
+    <div><small>Prüfdatum</small><b>30.09.2026</b></div>
+   </div>
+   <footer><div class="agent-id"><span><b>AI-0001</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
+  </a>
+
+  <a class="agent" href="/agenten/claude-code/">
+   <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Coding</span></div>
+   <div class="agent-title"><h3>Claude Code</h3><span class="provider">Anthropic</span></div>
+   <p class="agent-summary">Agentischer Coding-Assistent für Terminal und Entwicklungsumgebung, der Code lesen, ändern und Befehle ausführen kann.</p>
+   <div class="usechips"><span>Codebasis analysieren</span><span>Implementieren</span><span>Debugging</span><span>Terminal-Automation</span></div>
+   <div class="rich-meta">
+    <div><small>Produkttyp</small><b>Coding-Agent</b></div>
+    <div><small>Zielgruppe</small><b>Entwickler & Teams</b></div>
+    <div><small>Primärquellen</small><b>2 dokumentiert</b></div>
+    <div><small>Prüfdatum</small><b>30.09.2026</b></div>
+   </div>
+   <footer><div class="agent-id"><span><b>AI-0007</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
+  </a>
+
+  <a class="agent" href="/agenten/gemini-deep-research/">
+   <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Recherche</span></div>
+   <div class="agent-title"><h3>Gemini Deep Research</h3><span class="provider">Google</span></div>
+   <p class="agent-summary">Agentische Recherche in Gemini mit Google Search und optional eigenen Google-Datenquellen.</p>
+   <div class="usechips"><span>Reiseplanung</span><span>Kaufrecherche</span><span>Lernen</span><span>Eigene Unterlagen</span></div>
+   <div class="rich-meta">
+    <div><small>Produkttyp</small><b>Integrierter Recherche-Agent</b></div>
+    <div><small>Zielgruppe</small><b>Privat & Unternehmen</b></div>
+    <div><small>Primärquellen</small><b>2 dokumentiert</b></div>
+    <div><small>Prüfdatum</small><b>01.10.2026</b></div>
+   </div>
+   <footer><div class="agent-id"><span><b>AI-0002</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
+  </a>
+
+  <a class="agent" href="/agenten/devin/">
+   <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Coding</span></div>
+   <div class="agent-title"><h3>Devin</h3><span class="provider">Cognition</span></div>
+   <p class="agent-summary">Software-Engineering-Agent für delegierbare Entwicklungsaufgaben wie Änderungen, Migrationen und Wartungsarbeiten.</p>
+   <div class="usechips"><span>Backlog-Aufgaben</span><span>Migrationen</span><span>Bugfixes</span><span>Engineering-Automation</span></div>
+   <div class="rich-meta">
+    <div><small>Produkttyp</small><b>Autonomer Software-Agent</b></div>
+    <div><small>Zielgruppe</small><b>Teams & Unternehmen</b></div>
+    <div><small>Primärquellen</small><b>1 dokumentiert</b></div>
+    <div><small>Prüfdatum</small><b>30.09.2026</b></div>
+   </div>
+   <footer><div class="agent-id"><span><b>AI-0012</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
+  </a>
+
+  <a class="agent" href="/agenten/salesforce-agentforce/">
+   <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Enterprise</span></div>
+   <div class="agent-title"><h3>Salesforce Agentforce</h3><span class="provider">Salesforce</span></div>
+   <p class="agent-summary">Salesforce-Plattform zum Bauen und Betreiben von Agenten, die CRM-Daten, Geschäftslogik und Aktionen nutzen.</p>
+   <div class="usechips"><span>Customer Service</span><span>Sales</span><span>CRM-Automation</span><span>Mitarbeiterprozesse</span></div>
+   <div class="rich-meta">
+    <div><small>Produkttyp</small><b>Enterprise Agent Platform</b></div>
+    <div><small>Zielgruppe</small><b>Unternehmen</b></div>
+    <div><small>Primärquellen</small><b>2 dokumentiert</b></div>
+    <div><small>Prüfdatum</small><b>30.09.2026</b></div>
+   </div>
+   <footer><div class="agent-id"><span><b>AI-0029</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
+  </a>
+
+  <a class="agent" href="/agenten/intercom-fin/">
+   <div class="atop"><span class="verified">✓ geprüft</span><span class="category">Kundenservice</span></div>
+   <div class="agent-title"><h3>Intercom Fin</h3><span class="provider">Intercom</span></div>
+   <p class="agent-summary">KI-Agent für Kundenservice, der Fragen beantwortet und definierte Aktionen oder Übergaben ausführen kann.</p>
+   <div class="usechips"><span>Kundenservice</span><span>FAQ-Automation</span><span>Support-Triage</span><span>Service-Aktionen</span></div>
+   <div class="rich-meta">
+    <div><small>Produkttyp</small><b>Customer Service Agent</b></div>
+    <div><small>Zielgruppe</small><b>Unternehmen</b></div>
+    <div><small>Primärquellen</small><b>2 dokumentiert</b></div>
+    <div><small>Prüfdatum</small><b>30.09.2026</b></div>
+   </div>
+   <footer><div class="agent-id"><span><b>AI-0039</b></span><span>Version 2.0</span><span>Changelog</span></div><span class="agent-link">AgentenProfil →</span></footer>
+  </a>
  </div>
 </div></section>
 
