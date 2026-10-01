@@ -1100,6 +1100,28 @@
             }
           ],
           "note": "CMK is supported through the Power Platform implementation for Managed Environments."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "copilot_studio_direct_line_integration",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Integrate Copilot Studio with web or native apps",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-integrate-web-or-native-app-m365-agents-sdk",
+              "note": "Microsoft documents connecting external web or native applications to a Copilot Studio agent through the Direct Line API.",
+              "evidence_type": "api_docs"
+            },
+            {
+              "title": "Microsoft Learn – Direct Line API 3.0 reference",
+              "url": "https://learn.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-api-reference?view=azure-bot-service-4.0",
+              "note": "Microsoft states Direct Line API 3.0 uses industry-standard REST and JSON over HTTPS.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "Copilot Studio agents can be integrated through the REST-based Direct Line API."
         }
       ]
     },
@@ -2308,6 +2330,38 @@
             }
           ],
           "note": "Atlassian documents completed SOC 2 assessment for Rovo and AI."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "rovo_agent_creation_editing_and_usage",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian Support – Rovo agent permissions and governance",
+              "url": "https://support.atlassian.com/rovo/docs/rovo-agent-permissions-and-governance/",
+              "note": "Atlassian documents Studio admin controls plus owner, editor and manager roles with distinct permissions for Rovo agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Rovo agent administration and editing use explicit role-based permissions."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "rovo_out_of_box_third_party_mcp_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian Support – Out-of-the-box third-party MCP agents",
+              "url": "https://support.atlassian.com/rovo/docs/out-of-the-box-third-party-mcp-agents/",
+              "note": "Atlassian documents Rovo agents using vendor-provided MCP servers for tool invocation, with admins enabling each server in Rovo Admin Hub.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Rovo can consume external MCP servers for agent tool invocation."
         }
       ]
     },
@@ -3028,6 +3082,50 @@
             }
           ],
           "note": "GitLab can stream AI audit events to external destinations suitable for SIEM ingestion."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "gitlab_duo_agent_platform_group_and_project_controls",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – Control GitLab Duo Agent Platform availability",
+              "url": "https://docs.gitlab.com/user/duo_agent_platform/turn_on_off/",
+              "note": "GitLab requires the Owner role to control Agent Platform availability at top-level group or instance scope.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "GitLab Docs – Custom agents",
+              "url": "https://docs.gitlab.com/user/duo_agent_platform/agents/custom/",
+              "note": "GitLab documents role-gated enablement and management of custom agents at group and project levels.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "GitLab Duo Agent Platform administration and agent enablement are governed by GitLab roles."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "gitlab_com_group_identity_governing_agent_platform_access",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitLab Docs – Configure SCIM for GitLab.com groups",
+              "url": "https://docs.gitlab.com/user/group/saml_sso/scim_setup/",
+              "note": "GitLab supports SCIM provisioning and deprovisioning of group members through the group identity layer.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "GitLab Docs – Control GitLab Duo Agent Platform availability",
+              "url": "https://docs.gitlab.com/user/duo_agent_platform/turn_on_off/",
+              "note": "Agent Platform availability is controlled at GitLab group scope, so group identity membership governs access.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "GitLab.com group membership used for Agent Platform access can be provisioned with SCIM."
         }
       ]
     },
@@ -3163,6 +3261,70 @@
             }
           ],
           "note": "ADK supports local/customer-managed runtime execution in addition to managed Agent Runtime deployment."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "adk_agents_built_with_agents_cli",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Agents CLI – Use Cases",
+              "url": "https://google.github.io/agents-cli/guide/use-cases/",
+              "note": "Google states the ADK template exposes the A2A protocol out of the box so other agents can communicate with deployed ADK agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ADK agents created with the supported template can expose an A2A service endpoint."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "adk_on_agent_runtime_with_agent_identity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud IAM – Authenticate using an agent's own authority",
+              "url": "https://docs.cloud.google.com/iam/docs/auth-agent-own-identity",
+              "note": "Google documents granting IAM roles directly to an agent identity, including Vertex AI Agent Engine identities.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ADK agents deployed with Agent Identity use Google Cloud IAM roles and policies for resource access."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "adk_on_gemini_enterprise_agent_platform_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Supported locations for agents in Agent Platform",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/agent-locations",
+              "note": "Google documents that supported agent infrastructure locations provide data-at-rest residency for agent source code, deployment packages, sessions, memory and metadata.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "ADK agents deployed on Agent Platform can use regional agent infrastructure with documented data-at-rest residency."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "adk_on_gemini_enterprise_agent_platform_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Supported locations for agents in Agent Platform",
+              "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/agent-locations",
+              "note": "Google lists selectable zones, regions and multi-regions for Agent Platform runtime and related agent infrastructure.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Customers select a supported Agent Platform location when deploying regional agent infrastructure."
         }
       ]
     },
