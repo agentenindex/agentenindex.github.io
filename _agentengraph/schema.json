@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentenindex.de/internal/agentengraph/v1/schema",
+  "title": "AgentenGraph v1 Assertion",
+  "type": "object",
+  "required": [
+    "assertion_id",
+    "agent_id",
+    "path",
+    "value",
+    "value_hash",
+    "claim_nature",
+    "evidence",
+    "first_seen",
+    "last_seen",
+    "valid_from",
+    "origin"
+  ],
+  "properties": {
+    "assertion_id": {
+      "type": "string",
+      "pattern": "^AST-"
+    },
+    "agent_id": {
+      "type": "string",
+      "pattern": "^AI-[0-9]{4}$"
+    },
+    "path": {
+      "type": "string"
+    },
+    "value": {},
+    "value_hash": {
+      "type": "string"
+    },
+    "claim_nature": {
+      "type": "string"
+    },
+    "review_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "binding",
+        "source_ids",
+        "field_level_verified"
+      ],
+      "properties": {
+        "binding": {
+          "enum": [
+            "profile_source_set",
+            "field_level"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^SRC-"
+          }
+        },
+        "field_level_verified": {
+          "type": "boolean"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "first_seen": {
+      "type": "string",
+      "format": "date"
+    },
+    "last_seen": {
+      "type": "string",
+      "format": "date"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date"
+    },
+    "valid_to": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "last_verified": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "profile_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "origin": {
+      "type": "string"
+    }
+  }
+}
