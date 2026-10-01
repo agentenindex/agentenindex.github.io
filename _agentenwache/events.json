@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T11:44:34Z",
+  "updated_at": "2026-10-01T11:47:57Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -117,6 +117,48 @@
         "baseline_health": true
       },
       "previous_checked_at": null,
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-5980AA2F0DBCE67889",
+      "detected_at": "2026-10-01T11:47:47Z",
+      "source_id": "SRC-F01113D0D2514F",
+      "agent_ids": [
+        "AI-0044"
+      ],
+      "source_title": "Gorgias Docs – AI Agent Explained",
+      "url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772",
+      "change_type": "redirect_change",
+      "severity": "medium",
+      "metrics": {
+        "old_final_url": "https://helpcenter.gorgias.com/en-US/ai-agent-explained-497772",
+        "new_final_url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772"
+      },
+      "previous_checked_at": "2026-10-01T11:44:26Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-47DFE0956CAC4C6F4C",
+      "detected_at": "2026-10-01T11:47:50Z",
+      "source_id": "SRC-4271C275BA8FED",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – AI-powered interface for work",
+      "url": "https://slack.com/blog/news/ai-powered-interface-for-work",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "new_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "simhash_distance": 2,
+        "old_token_count": 1494,
+        "new_token_count": 1470,
+        "token_delta_pct": -1.61
+      },
+      "previous_checked_at": "2026-10-01T11:44:29Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }

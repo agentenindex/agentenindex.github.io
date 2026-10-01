@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T11:44:34Z",
-  "open_count": 6,
+  "updated_at": "2026-10-01T11:47:57Z",
+  "open_count": 7,
   "items": [
     {
       "review_id": "REV-0E528BB51ED396EA2E",
@@ -56,6 +56,48 @@
         "baseline_health": true
       },
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+    },
+    {
+      "review_id": "REV-66484F39574C8E3200",
+      "status": "open",
+      "first_detected": "2026-10-01T11:47:50Z",
+      "last_detected": "2026-10-01T11:47:50Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-4271C275BA8FED",
+      "source_title": "Slack – AI-powered interface for work",
+      "url": "https://slack.com/blog/news/ai-powered-interface-for-work",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/blog/news/ai-powered-interface-for-work",
+        "text_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "simhash64": "8a353cc5b4aa6e30",
+        "token_count": 1494,
+        "text_sample": "6 Min. Lesezeit Diese Woche auf der Dreamforce haben wir Slack eines seiner bisher größten Upgrades verpasst: die vernetzte Oberfläche für KI und Salesforce, die für dein gesamtes Team funktioniert. Jedes Unternehmen investiert gerade in KI, doch es fehlen zwei entscheidende Dinge. Erstens: der Kontext aus Unterhaltungen, der ein langfristiges Gedächtnis und Einblicke liefert und KI damit präziser, handlungsfähiger und vertrauenswürdiger macht. Zweitens: eine kollaborative Oberfläche, die es Mitarbeitenden ermöglicht, diese KI-Tools gemeinsam zu nutzen und voneinander zu lernen. In Slack kommt beides zusammen. So ist Slack zum Betriebssystem für die Arbeit geworden, das alle Mitarbeitenden, Agenten und Plattformen miteinander vernetzt – mit Slackbot als KI-Teammitglied, das dich durch deinen Arbeitsalltag begleitet. Genau das macht Slack zum Einstieg in das agentbasierte Unternehmen – und für Salesforce-Kund:innen auch für Salesforce selbst. Vorhang auf für Slackforce: Der zentrale Einstieg in Salesforce Seit 25 Jahren bauen Salesforce-Kund:innen umfangreiche Kundendaten und Workflows auf, um ihr Geschäft zu steuern. Jetzt können diese Daten dort zum Einsatz kommen, wo Entscheidung"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/blog/news/ai-powered-interface-for-work",
+        "text_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "simhash64": "9a353ccdb4aa6e30",
+        "token_count": 1470,
+        "text_sample": "6 Min. Lesezeit Diese Woche auf der Dreamforce haben wir Slack eines seiner bisher größten Upgrades verpasst: die vernetzte Oberfläche für KI und Salesforce, die für dein gesamtes Team funktioniert. Jedes Unternehmen investiert gerade in KI, doch es fehlen zwei entscheidende Dinge. Erstens: der Kontext aus Unterhaltungen, der ein langfristiges Gedächtnis und Einblicke liefert und KI damit präziser, handlungsfähiger und vertrauenswürdiger macht. Zweitens: eine kollaborative Oberfläche, die es Mitarbeitenden ermöglicht, diese KI-Tools gemeinsam zu nutzen und voneinander zu lernen. In Slack kommt beides zusammen. So ist Slack zum Betriebssystem für die Arbeit geworden, das alle Mitarbeitenden, Agenten und Plattformen miteinander vernetzt – mit Slackbot als KI-Teammitglied, das dich durch deinen Arbeitsalltag begleitet. Genau das macht Slack zum Einstieg in das agentbasierte Unternehmen – und für Salesforce-Kund:innen auch für Salesforce selbst. Vorhang auf für Slackforce: Der zentrale Einstieg in Salesforce Seit 25 Jahren bauen Salesforce-Kund:innen umfangreiche Kundendaten und Workflows auf, um ihr Geschäft zu steuern. Jetzt können diese Daten dort zum Einsatz kommen, wo Entscheidung",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "new_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "simhash_distance": 2,
+        "old_token_count": 1494,
+        "new_token_count": 1470,
+        "token_delta_pct": -1.61
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-95E664B028E0749FC5",
@@ -157,8 +199,8 @@
       "review_id": "REV-F187A1A9D6790D68CC",
       "status": "open",
       "first_detected": "2026-10-01T11:44:26Z",
-      "last_detected": "2026-10-01T11:44:26Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-01T11:47:47Z",
+      "occurrences": 2,
       "severity": "medium",
       "change_type": "redirect_change",
       "source_id": "SRC-F01113D0D2514F",
@@ -177,18 +219,17 @@
       },
       "current": {
         "status_code": 200,
-        "final_url": "https://helpcenter.gorgias.com/en-US/ai-agent-explained-497772",
-        "text_hash": "990472c214a97c6a7f5439b4e8e0c9a65179cf9a02013e8161b30ff51882b2a2",
-        "simhash64": "89b7bbde30db315d",
-        "token_count": 1137,
-        "text_sample": "AI Agent explained | Gorgias Help Center Ask anything Browse topics Get Started AI Agent & Automation Productivity Channels Integrations Account Setup Daily Operations Reporting & Analytics Resources AI Agent explained Updated September 8, 2026 AI Agent helps your shoppers browse, buy, and get support automatically and in your brand's voice, so your team can focus on the conversations where they're needed most. You get a dedicated AI Agent for each Shopify store you connect. It works across email, chat, SMS, and social media channels, helping new shoppers find products and resolving post-purchase questions like returns, order changes, and shipping updates. You shape what AI Agent does by giving it knowledge about your store, skills for the conversations you want it to handle, a tone of voice that matches your brand, and actions that let it make changes in your connected tools. This article explains what AI Agent is and what it includes. In this article, you'll learn: What AI Agent does — the conversations it handles What shapes AI Agent's behavior — knowledge, skills, actions, and more Where AI Agent works — channels and surfaces How you stay in control — handover, reasoning, and f",
+        "final_url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772",
+        "text_hash": "c6eee17fe79f822b8de3b7626d8339659eb963e8742d201684d6bc7f6cc94463",
+        "simhash64": "89b79adeb0db315f",
+        "token_count": 1102,
+        "text_sample": "AI Agent explained Updated 23 days ago AI Agent helps your shoppers browse, buy, and get support automatically and in your brand's voice, so your team can focus on the conversations where they're needed most. You get a dedicated AI Agent for each Shopify store you connect. It works across email, chat, SMS, and social media channels, helping new shoppers find products and resolving post-purchase questions like returns, order changes, and shipping updates. You shape what AI Agent does by giving it knowledge about your store, skills for the conversations you want it to handle, a tone of voice that matches your brand, and actions that let it make changes in your connected tools. This article explains what AI Agent is and what it includes. In this article, you'll learn: What AI Agent does — the conversations it handles What shapes AI Agent's behavior — knowledge, skills, actions, and more Where AI Agent works — channels and surfaces How you stay in control — handover, reasoning, and feedback FAQ — common questions about how AI Agent fits with the rest of Gorgias What AI Agent does AI Agent plays two roles, both included in your AI Agent subscription: Support agent — resolves post-purcha",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_final_url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772",
-        "new_final_url": "https://helpcenter.gorgias.com/en-US/ai-agent-explained-497772",
-        "severity_note": "Redirect bleibt innerhalb der registrierbaren Domain gorgias.com."
+        "old_final_url": "https://helpcenter.gorgias.com/en-US/ai-agent-explained-497772",
+        "new_final_url": "https://docs.gorgias.com/en-US/ai-agent-explained-497772"
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     }
