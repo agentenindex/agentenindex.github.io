@@ -44312,6 +44312,48 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-43550058335843672A",
+      "agent_id": "AI-0064",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-78FF71BDFA7F24",
+          "SRC-D532CB78204BA5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_cli_enterprise_telemetry",
+        "note": "Gemini CLI audit telemetry can be exported through OpenTelemetry to external observability/SIEM-compatible backends.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-78FF71BDFA7F24",
+            "note": "Google documents exporting Gemini CLI logs, metrics, and traces through OpenTelemetry to external backends including Datadog and other OTLP-compatible systems.",
+            "evidence_type": "technical_docs",
+            "source_section": "OpenTelemetry integration / Configuration"
+          },
+          {
+            "source_id": "SRC-D532CB78204BA5",
+            "note": "Google frames centralized telemetry as an enterprise auditing and monitoring mechanism for tracking tool usage and other events.",
+            "evidence_type": "technical_docs",
+            "source_section": "Telemetry and auditing"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-BA20B03618A5ED21E8",
       "agent_id": "AI-0064",
       "path": "hosting.self_hosted",
@@ -44441,6 +44483,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-37CE5ED097447E138F",
+      "agent_id": "AI-0064",
+      "path": "protocols.a2a.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D367C86B1C54A8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_cli_remote_subagents",
+        "note": "Gemini CLI acts as an A2A client when delegating to remote subagents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D367C86B1C54A8",
+            "note": "Google documents Gemini CLI connecting to compliant remote subagents using the Agent-to-Agent (A2A) protocol and delegating tasks to them.",
+            "evidence_type": "technical_docs",
+            "source_section": "Remote Subagents / Agent-to-Agent (A2A)"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-24075230E34CC850A5",

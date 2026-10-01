@@ -32,8 +32,8 @@
     "security.soc2_type2"
   ],
   "state_totals": {
-    "unknown": 2482,
-    "documented_true_or_value": 267,
+    "unknown": 2480,
+    "documented_true_or_value": 269,
     "documented_false": 1
   },
   "domain_totals": {
@@ -42,8 +42,8 @@
       "documented_true_or_value": 19
     },
     "governance": {
-      "unknown": 893,
-      "documented_true_or_value": 96,
+      "unknown": 892,
+      "documented_true_or_value": 97,
       "documented_false": 1
     },
     "hosting": {
@@ -55,8 +55,8 @@
       "documented_true_or_value": 29
     },
     "protocols": {
-      "unknown": 499,
-      "documented_true_or_value": 51
+      "unknown": 498,
+      "documented_true_or_value": 52
     },
     "security": {
       "unknown": 397,
@@ -2081,14 +2081,14 @@
       }
     },
     "AI-0064": {
-      "documented_fields": 3,
-      "unknown_fields": 22,
-      "coverage_pct": 12.0,
+      "documented_fields": 5,
+      "unknown_fields": 20,
+      "coverage_pct": 20.0,
       "states": {
         "protocols.mcp.client": "documented_true_or_value",
         "protocols.mcp.server": "unknown",
         "protocols.a2a.supported": "unknown",
-        "protocols.a2a.client": "unknown",
+        "protocols.a2a.client": "documented_true_or_value",
         "protocols.a2a.server": "unknown",
         "api.rest": "unknown",
         "api.webhooks": "unknown",
@@ -2105,7 +2105,7 @@
         "governance.audit_logs.available": "documented_true_or_value",
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",
-        "governance.audit_logs.siem_export": "unknown",
+        "governance.audit_logs.siem_export": "documented_true_or_value",
         "security.encryption.at_rest": "unknown",
         "security.encryption.in_transit": "unknown",
         "security.customer_managed_key": "unknown",
