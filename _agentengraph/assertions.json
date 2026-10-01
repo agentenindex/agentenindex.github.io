@@ -12066,6 +12066,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-45CFBFC4F5E851C3A5",
+      "agent_id": "AI-0015",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4A34D214D7990F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_enterprise",
+        "note": "Kiro Enterprise provides activity and prompt logging for audit/monitoring.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4A34D214D7990F",
+            "note": "Kiro documents user activity reports, prompt logs, AWS CloudTrail events, and CloudWatch monitoring for enterprise activity.",
+            "evidence_type": "technical_docs",
+            "source_section": "Monitoring and tracking"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-52DCE05BBB03269B9A",
+      "agent_id": "AI-0015",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C6A1BC52E0D136"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_enterprise_prompt_logs",
+        "note": "Kiro enterprise prompt logs can be exported to customer-controlled S3 for downstream SIEM/analytics workflows.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6A1BC52E0D136",
+            "note": "Kiro stores enterprise prompt logs in a customer-selected Amazon S3 bucket, enabling downstream enterprise security/analytics ingestion.",
+            "evidence_type": "technical_docs",
+            "source_section": "About prompt logs / Enabling prompt logging"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-C0CE1B066B82BC36EC",
       "agent_id": "AI-0015",
       "path": "hosting.managed",
@@ -12087,6 +12157,41 @@
           {
             "source_id": "SRC-0240F4CC9E9F26",
             "note": "Kiro documents Web and Mobile sessions running the agent harness in a managed cloud sandbox, and IDE/CLI sessions can also create and attach to cloud sessions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Where the agent runs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4887E3241E7BA1C24C",
+      "agent_id": "AI-0015",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0240F4CC9E9F26"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_ide_cli_local_runtime",
+        "note": "Kiro IDE/CLI can run in the user's local/customer-managed environment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0240F4CC9E9F26",
+            "note": "Kiro documents IDE and CLI agent sessions running on the user's local environment, distinct from managed cloud sessions.",
             "evidence_type": "technical_docs",
             "source_section": "Where the agent runs"
           }
@@ -12195,6 +12300,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-8FD7404D24C7B90697",
+      "agent_id": "AI-0015",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-60BA8523B4E055"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_ide_cli_web",
+        "note": "Kiro acts as an MCP client.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-60BA8523B4E055",
+            "note": "Kiro documents configuring MCP servers whose tools become available to the Kiro agent.",
+            "evidence_type": "technical_docs",
+            "source_section": "MCP / Configuration"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0305F29567765B86AC",
@@ -57402,6 +57542,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BE2E74439D1D018533",
+      "agent_id": "AI-0067",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-59870F3FE77BCF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "openhands_enterprise_agent_control_plane",
+        "note": "OpenHands Enterprise provides centralized auditability for agent activity.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-59870F3FE77BCF",
+            "note": "OpenHands introduces Enterprise as an agent control plane built to provide centralized visibility and reliable audit trails for organization-wide agent activity.",
+            "evidence_type": "official_release",
+            "source_section": "From Agents to Systems / control and observe"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-90D070151090E6635A",
+      "agent_id": "AI-0067",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B29034AD37975E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "openhands_enterprise",
+        "note": "OpenHands Enterprise provides RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B29034AD37975E",
+            "note": "OpenHands explicitly lists RBAC and multi-user support as built-in Enterprise capabilities.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise integrations included"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-41F69EBA29EE1366AE",
+      "agent_id": "AI-0067",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A7BC6E28E4D2A9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "openhands_enterprise",
+        "note": "OpenHands Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A7BC6E28E4D2A9",
+            "note": "OpenHands lists Enterprise SAML / SSO for its enterprise offering.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B1BD560677351390D5",
+      "agent_id": "AI-0067",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A7BC6E28E4D2A9"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "openhands_saas",
+        "note": "OpenHands offers a managed SaaS runtime.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A7BC6E28E4D2A9",
+            "note": "OpenHands documents hosted SaaS cloud access alongside local and self-hosted options.",
+            "evidence_type": "official_product_page",
+            "source_section": "SaaS / Individual"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-85BBF9EE59CEC934B4",
+      "agent_id": "AI-0067",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B29034AD37975E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "openhands_enterprise",
+        "note": "OpenHands Enterprise supports deployment inside a customer VPC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B29034AD37975E",
+            "note": "OpenHands documents Enterprise self-hosting inside the customer's VPC via Kubernetes.",
+            "evidence_type": "official_product_page",
+            "source_section": "Self-hosted in your VPC"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-92B42F8DE31344DC56",
       "agent_id": "AI-0067",
       "path": "hosting.self_hosted",
@@ -59563,6 +59878,146 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-6AB3DB815DAB8ED621",
+      "agent_id": "AI-0070",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2E10FB3BA729C8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_enterprise",
+        "note": "Warp Enterprise provides role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2E10FB3BA729C8",
+            "note": "Warp documents Team Owner, Team Admin, and Member roles with differentiated permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Enterprise administration"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BD9E93783E78DC7857",
+      "agent_id": "AI-0070",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3ED389452B988F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_enterprise",
+        "note": "Warp Enterprise supports OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3ED389452B988F",
+            "note": "Warp supports any OpenID Connect compatible identity provider for Enterprise SSO.",
+            "evidence_type": "technical_docs",
+            "source_section": "Supported identity providers"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3A682E440653EC3994",
+      "agent_id": "AI-0070",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3ED389452B988F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_enterprise",
+        "note": "Warp Enterprise supports SAML 2.0 SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3ED389452B988F",
+            "note": "Warp supports any SAML 2.0 compatible identity provider for Enterprise SSO.",
+            "evidence_type": "technical_docs",
+            "source_section": "Supported identity providers"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4626A332445D356CD0",
+      "agent_id": "AI-0070",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C092A474063D59"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_cloud_agents",
+        "note": "Warp provides managed cloud-agent execution in addition to local Agent CLI.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C092A474063D59",
+            "note": "Warp documents cloud-agent execution via agent run-cloud alongside local Agent CLI execution.",
+            "evidence_type": "technical_docs",
+            "source_section": "Cloud agents / --mcp"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7D9D22E945326D652A",
       "agent_id": "AI-0070",
       "path": "hosting.self_hosted",
@@ -59696,6 +60151,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-46227FD51CCF1C116A",
+      "agent_id": "AI-0070",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C092A474063D59"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_agent_cli",
+        "note": "Warp Agent CLI acts as an MCP client.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C092A474063D59",
+            "note": "Warp documents connecting Agent CLI agents to external MCP servers via the --mcp flag.",
+            "evidence_type": "technical_docs",
+            "source_section": "MCP servers"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-80A630D0372CD3D3A2",
+      "agent_id": "AI-0070",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2E10FB3BA729C8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_enterprise",
+        "note": "Warp documents SOC 2 Type II certification.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2E10FB3BA729C8",
+            "note": "Warp states it is SOC 2 Type II certified.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0B8D884FE431B755FC",
@@ -60184,6 +60709,286 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-071CF1B0F6D5EBAF10",
+      "agent_id": "AI-0071",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-59607E83868EE1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_enterprise",
+        "note": "Factory Enterprise provides audit events and workflow logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-59607E83868EE1",
+            "note": "Factory documents enterprise audit events and workflow logs for monitoring.",
+            "evidence_type": "security_trust",
+            "source_section": "Telemetry & Analytics"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-50440E3D8D5B1B431C",
+      "agent_id": "AI-0071",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D8CF9D6FA3FB1A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_enterprise_telemetry",
+        "note": "Factory telemetry can be exported to customer-controlled observability/SIEM infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D8CF9D6FA3FB1A",
+            "note": "Factory documents exporting OpenTelemetry metrics/traces to a customer-owned OTLP-compatible collector, with examples including enterprise observability systems.",
+            "evidence_type": "technical_docs",
+            "source_section": "Self-hosted OTEL metrics export"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0DDD745592FD247140",
+      "agent_id": "AI-0071",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AD64D5B4116CF6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_enterprise",
+        "note": "Factory Enterprise provides role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AD64D5B4116CF6",
+            "note": "Factory documents user/group roles controlling access and policies.",
+            "evidence_type": "technical_docs",
+            "source_section": "Identity model and roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0CAEF025075324B175",
+      "agent_id": "AI-0071",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AD64D5B4116CF6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_enterprise",
+        "note": "Factory Enterprise supports SCIM directory synchronization.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AD64D5B4116CF6",
+            "note": "Factory documents Directory Sync/SCIM for enterprise identity management.",
+            "evidence_type": "technical_docs",
+            "source_section": "SSO and SCIM directory sync"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7C56ED1D1A586C82ED",
+      "agent_id": "AI-0071",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AD64D5B4116CF6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_enterprise",
+        "note": "Factory Enterprise supports OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AD64D5B4116CF6",
+            "note": "Factory documents SSO using SAML/OIDC.",
+            "evidence_type": "technical_docs",
+            "source_section": "Identity model / SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8A15A1FE12F2E68C29",
+      "agent_id": "AI-0071",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AD64D5B4116CF6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_enterprise",
+        "note": "Factory Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AD64D5B4116CF6",
+            "note": "Factory documents human users authenticating through SSO using SAML/OIDC.",
+            "evidence_type": "technical_docs",
+            "source_section": "Identity model / SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-03B697A18CBBB06199",
+      "agent_id": "AI-0071",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-999DE2F9FD9A95"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_managed_droid_computers",
+        "note": "Factory offers managed cloud compute for Droid sessions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-999DE2F9FD9A95",
+            "note": "Factory documents Managed Droid Computers provisioned and managed by Factory.",
+            "evidence_type": "technical_docs",
+            "source_section": "Managed Droid Computers"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DB03841EF4FB4808FF",
+      "agent_id": "AI-0071",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7BA6686A9B29E5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_enterprise_hybrid_airgapped",
+        "note": "Factory supports private-network and fully airgapped Droid deployments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7BA6686A9B29E5",
+            "note": "Factory documents Hybrid deployments inside customer VMs/containers/CI and fully airgapped deployments with no outbound network dependency.",
+            "evidence_type": "technical_docs",
+            "source_section": "Hybrid / Fully airgapped"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-40ABAF8026268FEBED",
       "agent_id": "AI-0071",
       "path": "hosting.self_hosted",
@@ -60267,6 +61072,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-A527DB784CF6E5733A",
+      "agent_id": "AI-0071",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7BA6686A9B29E5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_enterprise",
+        "note": "Factory Enterprise offers EU data residency.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7BA6686A9B29E5",
+            "note": "Factory documents a dedicated EU deployment with session content stored in Europe and EU-only inference endpoints.",
+            "evidence_type": "technical_docs",
+            "source_section": "EU deployment and data residency"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8782B1A486921FBD7E",
+      "agent_id": "AI-0071",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7BA6686A9B29E5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_enterprise_org",
+        "note": "Enterprise organizations can be provisioned into the supported EU regional deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7BA6686A9B29E5",
+            "note": "Factory documents organizations pinned to Global or EU regional deployments, with Enterprise customers provisioned into the EU region on request.",
+            "evidence_type": "technical_docs",
+            "source_section": "Region enforcement / EU deployment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-69082ACD07AD9A2B40",
       "agent_id": "AI-0071",
       "path": "profile.depth",
@@ -60313,6 +61188,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-7C3A758940C0A09E30",
+      "agent_id": "AI-0071",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7423DF77738AEA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "factory_droid",
+        "note": "Factory Droid acts as an MCP client.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7423DF77738AEA",
+            "note": "Factory documents Droid connecting to MCP servers over stdio, HTTP, and SSE and using their tools.",
+            "evidence_type": "technical_docs",
+            "source_section": "Model Context Protocol"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0EA7B4AFC9E26AC6A7",
