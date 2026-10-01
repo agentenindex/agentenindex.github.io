@@ -37882,6 +37882,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-DBEAC4475EAFB966ED",
+      "agent_id": "AI-0048",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D7AC715E61B5BE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_company_research_agent",
+        "note": "The Company Research Agent is delivered and operated inside HubSpot's managed Agent Hub.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D7AC715E61B5BE",
+            "note": "HubSpot documents the Company Research Agent as an agent installed, configured, and run inside HubSpot Agent Hub / HubSpot accounts.",
+            "evidence_type": "technical_docs",
+            "source_section": "Set up / Configure / Use the company research agent"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D22B307923000D0C9E",
       "agent_id": "AI-0048",
       "path": "identity.name",
@@ -41416,6 +41451,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-41A52403ED57283979",
+      "agent_id": "AI-0053",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BE966A5EB0C0A7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_spark",
+        "note": "Gemini Spark runs on Google-managed dedicated cloud VMs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BE966A5EB0C0A7",
+            "note": "Google states Gemini Spark runs on dedicated virtual machines in Google Cloud and is available independently of the user's laptop.",
+            "evidence_type": "official_release",
+            "source_section": "Agents / Gemini Spark"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-C974AE5D272FE30A5C",
@@ -46046,6 +46116,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-B304B947F2208D10FE",
+      "agent_id": "AI-0058",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8686F43DFDD762"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "you_com_ari",
+        "note": "You.com documents SOC 2 Type II coverage for the enterprise platform that includes ARI.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8686F43DFDD762",
+            "note": "You.com lists ARI within its enterprise platform and explicitly states enterprise-grade trust includes SOC 2 Type II certification.",
+            "evidence_type": "security_trust",
+            "source_section": "You.com for Financial Services"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-3EE35EEC2F88F65298",
@@ -51231,6 +51336,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-5C4692D9C029E7AAAB",
+      "agent_id": "AI-0066",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2C2C9367591C42"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_code_agent",
+        "note": "Augment Agent consumes tools and context exposed through MCP.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2C2C9367591C42",
+            "note": "Augment states the Agent embraces MCP to access external tools and systems, with examples of infrastructure MCP integrations.",
+            "evidence_type": "official_release",
+            "source_section": "The Power of Context – Memories & Tools"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-35B3AFFF675CE20CEA",
       "agent_id": "AI-0066",
       "path": "use_case",
@@ -52858,6 +52998,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-ED05DA99FE0A2CDE4F",
+      "agent_id": "AI-0069",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9858FF9E41B0DA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "mistral_vibe_code_local_runtime",
+        "note": "Vibe Code supports a local customer/user-managed runtime via CLI or VS Code.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9858FF9E41B0DA",
+            "note": "Mistral documents running Vibe Code against a local checkout through the CLI or VS Code extension with local filesystem and shell access.",
+            "evidence_type": "technical_docs",
+            "source_section": "Vibe Code overview"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-45A82062479A7E3E19",
       "agent_id": "AI-0069",
       "path": "identity.name",
@@ -53456,6 +53631,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-7D9D22E945326D652A",
+      "agent_id": "AI-0070",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7F24130EF3928B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "warp_agent_cli_local_runtime",
+        "note": "Warp Agent CLI can run as a local/customer-managed terminal program.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7F24130EF3928B",
+            "note": "Warp documents Agent CLI as a standalone terminal program that runs the Warp Agent and works in any terminal emulator, including over SSH.",
+            "evidence_type": "technical_docs",
+            "source_section": "What is the Warp Agent CLI?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-61BA086C0AACF3DB13",
@@ -61530,6 +61740,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-5A94E3D167D7F48C48",
+      "agent_id": "AI-0080",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C04421DBB1F46"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "langsmith_deployment_cloud",
+        "note": "LangSmith Deployment provides a managed agent runtime.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9C04421DBB1F46",
+            "note": "LangChain explicitly describes LangSmith Deployment as the managed service for running agents at scale in production with one-click deployments and autoscaling.",
+            "evidence_type": "official_product_page",
+            "source_section": "FAQ / One-click deploy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7E667D7F683703FA5F",
       "agent_id": "AI-0080",
       "path": "identity.name",
@@ -65363,6 +65608,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-263401A8CD6405CEC8",
+      "agent_id": "AI-0084",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-181D8563DBD9D8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_platform_including_merlin_agent_builder",
+        "note": "Merlin Agent Builder runs on the Tray platform covered by Tray's SOC 2 Type II compliance posture.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-181D8563DBD9D8",
+            "note": "Tray's Trust Center lists SOC 2 Type II for the Tray platform; Merlin Agent Builder is documented as native functionality on Tray.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance / SOC 2 Type II"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-12D7F393EA0CF8E2E8",
       "agent_id": "AI-0084",
       "path": "use_case",
@@ -67507,6 +67787,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-48384F5747CFB88943",
+      "agent_id": "AI-0087",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-614783A992CCEF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "mistral_vibe_work",
+        "note": "Vibe Work is explicitly documented as Mistral-hosted.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-614783A992CCEF",
+            "note": "Mistral marks Vibe Work General Availability as Mistral-Hosted.",
+            "evidence_type": "official_release",
+            "source_section": "A simpler Vibe experience / Hosting"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-5CAD41E372FCF454E2",
@@ -72477,6 +72792,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-86B2EDD35743140ACC",
+      "agent_id": "AI-0095",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F66C4A661BF2D1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_ai_agents_custom_agent_callbacks",
+        "note": "monday.com Agents support signed webhook/callback event delivery.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F66C4A661BF2D1",
+            "note": "monday.com documents custom agent callback URLs that receive HTTP POST trigger payloads and signed webhook events.",
+            "evidence_type": "api_docs",
+            "source_section": "Connect external agents / Receive a trigger"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-EADA9F0F7632E3C8E2",
       "agent_id": "AI-0095",
       "path": "audience",
@@ -74456,6 +74806,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E7A15F6B387B507E71",
+      "agent_id": "AI-0098",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EDBC70D612C899"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_cowork",
+        "note": "Snowflake CoWork is delivered as a managed Snowflake cloud service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EDBC70D612C899",
+            "note": "Snowflake documents CoWork as a Snowflake AI Data Cloud product accessed through Snowflake's hosted service and ai.snowflake.com.",
+            "evidence_type": "official_product_page",
+            "source_section": "Snowflake CoWork für Ihr Unternehmen"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-524EB64F7929BD6FD4",
       "agent_id": "AI-0098",
       "path": "identity.name",
@@ -75835,6 +76220,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-98D29950188E7AAA98",
+      "agent_id": "AI-0101",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-11DBB8C3767857"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "11x_alice",
+        "note": "Alice supports webhook event subscriptions through the shared 11x integration API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-11DBB8C3767857",
+            "note": "11x states one API spans Alice and Julian and supports subscriptions to real-time events via webhooks/callbacks.",
+            "evidence_type": "api_docs",
+            "source_section": "Webhooks and API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-6C43BBFD339D2A8A92",
       "agent_id": "AI-0101",
       "path": "audience",
@@ -76810,6 +77230,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-20F669C73F3A5FE84C",
+      "agent_id": "AI-0102",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-463315DB73CF86"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "artisan_ava_platform",
+        "note": "Artisan documents SOC 2 Type II audit coverage for the platform delivering Ava.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-463315DB73CF86",
+            "note": "Artisan explicitly states it is SOC 2 Type II audited in the enterprise security section for Ava 2.0.",
+            "evidence_type": "official_release",
+            "source_section": "Built for enterprise scale"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-69BB8AA926B08B4352",
       "agent_id": "AI-0102",
       "path": "use_case",
@@ -77383,6 +77838,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-5FE381C85FBD0CC403",
+      "agent_id": "AI-0103",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-540D903D3A0FB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qualified_platform_including_piper",
+        "note": "Piper runs on the Qualified platform covered by Qualified's annual SOC 2 Type II audit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-540D903D3A0FB8",
+            "note": "Qualified states it undergoes a SOC 2 Type II audit annually; the same Qualified platform page identifies Piper as its AI SDR agent.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance and Certification / SOC-2 Type II Report"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-5A2E071213FFD033A5",
@@ -80105,6 +80595,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-061A0CE3B841C2F74F",
+      "agent_id": "AI-0107",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2B406F05288AFE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "lexis_plus_with_protege",
+        "note": "LexisNexis documents SOC 2 Type II compliance for Protégé.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2B406F05288AFE",
+            "note": "LexisNexis states Protégé General AI adheres to SOC 2 Type II compliance standards.",
+            "evidence_type": "security_trust",
+            "source_section": "The Privacy Core: Building Trust into Every Layer"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-1ABB3ACA9CD1AEC6C6",
       "agent_id": "AI-0107",
       "path": "use_case",
@@ -80578,6 +81103,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-661EF6F40E23DEB0D3",
+      "agent_id": "AI-0108",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-94BD652E5CB26B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "vlex_vincent_platform",
+        "note": "Vincent is delivered on vLex's managed AWS-hosted platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-94BD652E5CB26B",
+            "note": "vLex states its platform is hosted on Amazon Web Services and describes responsibility for securing the application and customer data in that cloud environment.",
+            "evidence_type": "security_trust",
+            "source_section": "Cloud Architecture"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-32E176DFC353550123",
@@ -81805,6 +82365,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-E8B61DCDEEF3BDDD9D",
+      "agent_id": "AI-0110",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3A1026F072C510"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rogo_platform_ai_analyst",
+        "note": "Rogo documents SOC 2 Type 2 compliance for the platform providing its AI Analyst.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3A1026F072C510",
+            "note": "Rogo's Trust Center lists SOC 2 Type 2 among its compliance certifications and product-security controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-01A76AF5A45269D0DE",
