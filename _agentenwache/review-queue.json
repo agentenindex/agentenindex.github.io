@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T15:18:00Z",
-  "open_count": 0,
+  "updated_at": "2026-10-01T15:19:22Z",
+  "open_count": 2,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -184,6 +184,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:26:37Z",
       "resolution": "Source is healthy again; technical recovery acknowledged without asserting a product change."
+    },
+    {
+      "review_id": "REV-204DFA87F15A057E4B",
+      "status": "open",
+      "first_detected": "2026-10-01T15:18:35Z",
+      "last_detected": "2026-10-01T15:18:35Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-9C04421DBB1F46",
+      "source_title": "LangChain – LangSmith Deployment",
+      "url": "https://www.langchain.com/langsmith/deployment",
+      "agent_ids": [
+        "AI-0080"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://www.langchain.com/langsmith/deployment",
+        "text_hash": "fda98dff7764a6775487e895576017c17496f32194efeb583eacd4b6ed14a6a2",
+        "simhash64": "2225bddff9ec97bb",
+        "token_count": 498,
+        "text_sample": "LangSmith Deployment Run agents at scale LangSmith Deployment is purpose-built infrastructure for running agents in production and standardizes how your organization builds, deploys, and governs agents. Start building Get a demo Helping top teams ship great agents Use cases in production Three ways to build, from full harness to full control Each package solves a different problem. Choose whereyou want to start, then compose the rest ofthestack around it. APIs APIs to handle real-world agent interactions Run human-in-the-loop approvals, background tasks, and multi-agent coordination on a durable runtime with built-in fault tolerance. Deploy with one click Production-ready APIs for HIL, memory, and conversation threading Stream type-safe messages, UI components, and custom events See how to deploy an agent Standardize Align agent deployment, org wide Manage agents through a centralized registry with versioning, instant rollbacks, and native A2A, MCP, and Agent Protocol support. Learn about building with Deployment Workloads at scale Scale without rebuilding infrastructure Running agents gets harder at scale. Handle bursty, long-running, and complex agent workloads with horizontal sc"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://www.langchain.com/langsmith/deployment",
+        "text_hash": "ce60148fbfafa90bede0da12f773dea31be6ac53596becdba7b88eca3f80a261",
+        "simhash64": "22a5fddff9ec97bb",
+        "token_count": 498,
+        "text_sample": "LangSmith Deployment Run agents at scale LangSmith Deployment is framework-agnostic infrastructure for running agents in production and standardizes how your organization builds, deploys, and governs agents. Start building Get a demo Helping top teams ship great agents Use cases in production Three ways to build, from full harness to full control Each package solves a different problem. Choose whereyou want to start, then compose the rest ofthestack around it. APIs APIs to handle real-world agent interactions Run human-in-the-loop approvals, background tasks, and multi-agent coordination on a durable runtime with built-in fault tolerance. Deploy with one click Production-ready APIs for HIL, memory, and conversation threading Stream type-safe messages, UI components, and custom events See how to deploy an agent Standardize Align agent deployment, org wide Manage agents through a centralized registry with versioning, instant rollbacks, and native A2A, MCP, and Agent Protocol support. Learn about building with Deployment Workloads at scale Scale without rebuilding infrastructure Running agents gets harder at scale. Handle bursty, long-running, and complex agent workloads with horizont",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "fda98dff7764a6775487e895576017c17496f32194efeb583eacd4b6ed14a6a2",
+        "new_hash": "ce60148fbfafa90bede0da12f773dea31be6ac53596becdba7b88eca3f80a261",
+        "simhash_distance": 2,
+        "old_token_count": 498,
+        "new_token_count": 498,
+        "token_delta_pct": 0.0
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-22CE71D67D9C131BAD",
@@ -664,9 +706,9 @@
     },
     {
       "review_id": "REV-745F3171F22424BA6E",
-      "status": "dismissed_noise",
-      "first_detected": "2026-10-01T15:11:37Z",
-      "last_detected": "2026-10-01T15:11:37Z",
+      "status": "open",
+      "first_detected": "2026-10-01T15:18:39Z",
+      "last_detected": "2026-10-01T15:18:39Z",
       "occurrences": 1,
       "severity": "low",
       "change_type": "content_change",
@@ -679,7 +721,7 @@
       "previous": {
         "status_code": 200,
         "final_url": "https://www.servicenow.com/community/ai-control-tower-articles/ai-control-tower-welcome-guide/ta-p/3560221",
-        "text_hash": "77957273d68d22c6d2643b8102d4ce624e3f54c051760262db8a2ea32ca48aed",
+        "text_hash": "b432b472f8a7bbfbf5b8b2d806bd0d7fea8503401bfa19e6c80f19c1b86b8190",
         "simhash64": "95e420e8a0a16dd4",
         "token_count": 1447,
         "text_sample": "AI Control Tower Welcome Guide - ServiceNow Community Interested in a ServiceNow event built for developers? Registration for now[dev]26 is officially open! Join the Community ServiceNow Community Products Platform AI Control Tower AI Control Tower articles AI Control Tower Welcome Guide Options Subscribe to RSS Feed Mark as New Mark as Read Bookmark Subscribe Printer Friendly Page Report Inappropriate Content AI Control Tower Welcome Guide Ashley Snyder ServiceNow Employee Options Post History Subscribe to RSS Feed Mark as New Mark as Read Bookmark Subscribe Printer Friendly Page Report Inappropriate Content ‎06-16-2026 02:30 PM - edited ‎07-16-2026 11:47 AM What is AI Control Tower? AI Control Tower (AICT) is ServiceNow's AI governance platform. It gives organizations a central hub to discover, govern, secure, observe, and measure all AI assets across the enterprise — both ServiceNow AI and third-party AI deployed in hyperscalers, SaaS platforms, and development environments. AI assets are tracked as configuration items in the ServiceNow CMDB, making AICT a native extension of your existing IT governance processes. 📋 Quick Overview This guide covers what AICT is, what you need be"
@@ -687,24 +729,22 @@
       "current": {
         "status_code": 200,
         "final_url": "https://www.servicenow.com/community/ai-control-tower-articles/ai-control-tower-welcome-guide/ta-p/3560221",
-        "text_hash": "b432b472f8a7bbfbf5b8b2d806bd0d7fea8503401bfa19e6c80f19c1b86b8190",
-        "simhash64": "95e420e8a0a16dd4",
+        "text_hash": "87640d1d225599136124f1ca023b1479706d64ff9ec0bfc4a6ed012b8da6705b",
+        "simhash64": "95e420eaa0a16dd4",
         "token_count": 1447,
         "text_sample": "AI Control Tower Welcome Guide - ServiceNow Community Interested in a ServiceNow event built for developers? Registration for now[dev]26 is officially open! Join the Community ServiceNow Community Products Platform AI Control Tower AI Control Tower articles AI Control Tower Welcome Guide Options Subscribe to RSS Feed Mark as New Mark as Read Bookmark Subscribe Printer Friendly Page Report Inappropriate Content AI Control Tower Welcome Guide Ashley Snyder ServiceNow Employee Options Post History Subscribe to RSS Feed Mark as New Mark as Read Bookmark Subscribe Printer Friendly Page Report Inappropriate Content ‎06-16-2026 02:30 PM - edited ‎07-16-2026 11:47 AM What is AI Control Tower? AI Control Tower (AICT) is ServiceNow's AI governance platform. It gives organizations a central hub to discover, govern, secure, observe, and measure all AI assets across the enterprise — both ServiceNow AI and third-party AI deployed in hyperscalers, SaaS platforms, and development environments. AI assets are tracked as configuration items in the ServiceNow CMDB, making AICT a native extension of your existing IT governance processes. 📋 Quick Overview This guide covers what AICT is, what you need be",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "77957273d68d22c6d2643b8102d4ce624e3f54c051760262db8a2ea32ca48aed",
-        "new_hash": "b432b472f8a7bbfbf5b8b2d806bd0d7fea8503401bfa19e6c80f19c1b86b8190",
-        "simhash_distance": 0,
+        "old_hash": "b432b472f8a7bbfbf5b8b2d806bd0d7fea8503401bfa19e6c80f19c1b86b8190",
+        "new_hash": "87640d1d225599136124f1ca023b1479706d64ff9ec0bfc4a6ed012b8da6705b",
+        "simhash_distance": 1,
         "old_token_count": 1447,
         "new_token_count": 1447,
-        "token_delta_pct": 0
+        "token_delta_pct": 0.0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "resolution": "The ServiceNow Community page changed hash while token count and simhash remained effectively unchanged; the indexed AI Control Tower governance content is unchanged.",
-      "reviewed_at": "2026-10-01T15:14:00Z"
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-84E669952E01DA60F2",
@@ -1451,7 +1491,9 @@
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Lindy homepage changed promotional trial wording, but the indexed profile only states platform access is plan-dependent; no indexed product fact changed.",
-      "reviewed_at": "2026-10-01T15:18:00Z"
+      "reviewed_at": "2026-10-01T15:18:00Z",
+      "last_seen_after_review": "2026-10-01T15:18:35Z",
+      "suppressed_reoccurrences": 1
     },
     {
       "review_id": "REV-FCE2FF2F1439740BD2",
