@@ -32,9 +32,9 @@
     "security.soc2_type2"
   ],
   "state_totals": {
-    "unknown": 1930,
-    "documented_true_or_value": 819,
-    "documented_false": 1
+    "unknown": 1928,
+    "documented_true_or_value": 820,
+    "documented_false": 2
   },
   "domain_totals": {
     "api": {
@@ -42,8 +42,8 @@
       "unknown": 177
     },
     "governance": {
-      "documented_true_or_value": 326,
-      "unknown": 663,
+      "documented_true_or_value": 327,
+      "unknown": 662,
       "documented_false": 1
     },
     "hosting": {
@@ -52,7 +52,8 @@
     },
     "privacy": {
       "documented_true_or_value": 83,
-      "unknown": 137
+      "unknown": 136,
+      "documented_false": 1
     },
     "protocols": {
       "unknown": 474,
@@ -3137,9 +3138,9 @@
       }
     },
     "AI-0097": {
-      "documented_fields": 8,
-      "unknown_fields": 17,
-      "coverage_pct": 32.0,
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
       "states": {
         "protocols.mcp.client": "unknown",
         "protocols.mcp.server": "unknown",
@@ -3151,11 +3152,11 @@
         "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "unknown",
         "hosting.private_network": "unknown",
-        "privacy.residency.available": "unknown",
+        "privacy.residency.available": "documented_false",
         "privacy.residency.customer_region_selectable": "unknown",
         "governance.sso.saml": "documented_true_or_value",
         "governance.sso.oidc": "unknown",
-        "governance.scim": "unknown",
+        "governance.scim": "documented_true_or_value",
         "governance.rbac": "documented_true_or_value",
         "governance.custom_roles": "unknown",
         "governance.audit_logs.available": "documented_true_or_value",

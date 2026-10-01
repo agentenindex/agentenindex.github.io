@@ -22,9 +22,9 @@
     "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified. Discontinued products receive priority score 0 and no active research hints."
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 46,
+    "agents_below_target_with_deep_evidence": 45,
     "agents_without_deep_evidence": 0,
-    "agents_at_or_above_target": 63,
+    "agents_at_or_above_target": 64,
     "agents_discontinued": 1
   },
   "field_priorities": [
@@ -113,16 +113,16 @@
       "coverage_pct": 27.27
     },
     {
-      "path": "governance.scim",
+      "path": "privacy.residency.customer_region_selectable",
       "documented_agents": 36,
       "unknown_agents": 74,
       "coverage_pct": 32.73
     },
     {
-      "path": "privacy.residency.customer_region_selectable",
-      "documented_agents": 36,
-      "unknown_agents": 74,
-      "coverage_pct": 32.73
+      "path": "governance.scim",
+      "documented_agents": 37,
+      "unknown_agents": 73,
+      "coverage_pct": 33.64
     },
     {
       "path": "protocols.mcp.client",
@@ -144,9 +144,9 @@
     },
     {
       "path": "privacy.residency.available",
-      "documented_agents": 47,
-      "unknown_agents": 63,
-      "coverage_pct": 42.73
+      "documented_agents": 48,
+      "unknown_agents": 62,
+      "coverage_pct": 43.64
     },
     {
       "path": "governance.sso.saml",
@@ -4461,104 +4461,6 @@
       ]
     },
     {
-      "agent_id": "AI-0097",
-      "name": "Dropbox Dash",
-      "provider_id": "PROV-DROPBOX",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 88.4,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 2.0,
-        "unknown_share": 3.4,
-        "source_readiness": 3.0
-      },
-      "documented_fields": 8,
-      "unknown_fields": 17,
-      "coverage_pct": 32.0,
-      "fields_needed_for_40pct": 2,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Dropbox Dash – Security",
-          "url": "https://dash.dropbox.com/security",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "Dropbox Dash – Security Architecture Overview",
-          "url": "https://www.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "Dropbox – Dash AI information",
-          "url": "https://dash.dropbox.com/ai-info-page",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Dropbox Dropbox Dash official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Dropbox Dropbox Dash official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Dropbox Dropbox Dash official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Dropbox Dropbox Dash official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Dropbox Dropbox Dash official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Dropbox Dropbox Dash official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 17,
-          "global_coverage_pct": 15.45,
-          "suggested_query": "Dropbox Dropbox Dash official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 17,
-          "global_coverage_pct": 15.45,
-          "suggested_query": "Dropbox Dropbox Dash official documentation hosting private_network"
-        }
-      ]
-    },
-    {
       "agent_id": "AI-0003",
       "name": "Claude Research",
       "provider_id": "PROV-ANTHROPIC",
@@ -7850,8 +7752,8 @@
         "security.customer_managed_key",
         "governance.audit_logs.siem_export",
         "governance.custom_roles",
-        "governance.scim",
-        "privacy.residency.customer_region_selectable"
+        "privacy.residency.customer_region_selectable",
+        "governance.scim"
       ],
       "available_primary_sources": [
         {
@@ -7941,16 +7843,16 @@
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance custom_roles"
         },
         {
-          "path": "governance.scim",
-          "documented_agents": 36,
-          "global_coverage_pct": 32.73,
-          "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance scim"
-        },
-        {
           "path": "privacy.residency.customer_region_selectable",
           "documented_agents": 36,
           "global_coverage_pct": 32.73,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation privacy residency customer_region_selectable"
+        },
+        {
+          "path": "governance.scim",
+          "documented_agents": 37,
+          "global_coverage_pct": 33.64,
+          "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance scim"
         }
       ]
     },
@@ -11776,6 +11678,110 @@
           "documented_agents": 27,
           "global_coverage_pct": 24.55,
           "suggested_query": "Snowflake Snowflake CoWork official documentation governance audit_logs siem_export"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0097",
+      "name": "Dropbox Dash",
+      "provider_id": "PROV-DROPBOX",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 27.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 4.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Dropbox Dash – Security",
+          "url": "https://dash.dropbox.com/security",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Dropbox Dash – Security Architecture Overview",
+          "url": "https://www.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Dropbox Security Whitepaper",
+          "url": "https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/business/solutions/solutions/dfb_security_whitepaper.pdf",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Dropbox – Dash AI information",
+          "url": "https://dash.dropbox.com/ai-info-page",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Dropbox Dropbox Dash official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Dropbox Dropbox Dash official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Dropbox Dropbox Dash official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Dropbox Dropbox Dash official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "Dropbox Dropbox Dash official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "Dropbox Dropbox Dash official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 17,
+          "global_coverage_pct": 15.45,
+          "suggested_query": "Dropbox Dropbox Dash official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 17,
+          "global_coverage_pct": 15.45,
+          "suggested_query": "Dropbox Dropbox Dash official documentation hosting private_network"
         }
       ]
     },

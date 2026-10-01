@@ -86016,6 +86016,48 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-4603238DA3DB3C4CF8",
+      "agent_id": "AI-0097",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-458D9B98644CAF",
+          "SRC-AC245CAF4B1AD6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash_via_core_dropbox_identity",
+        "note": "Dash uses core Dropbox Identity, whose team identity layer supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC245CAF4B1AD6",
+            "note": "Dropbox documents Dash using the core Dropbox Identity platform for authentication and account identity.",
+            "evidence_type": "security_trust",
+            "source_section": "Identity and authentication"
+          },
+          {
+            "source_id": "SRC-458D9B98644CAF",
+            "note": "Dropbox documents SCIM integration for provisioning and managing users and groups in Dropbox team accounts.",
+            "evidence_type": "security_trust",
+            "source_section": "System for Cross-domain Identity Management (SCIM)"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-6BD59B7B458902B3ED",
       "agent_id": "AI-0097",
       "path": "governance.sso.saml",
@@ -86132,6 +86174,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-62AABDD8332F988619",
+      "agent_id": "AI-0097",
+      "path": "privacy.residency.available",
+      "value": false,
+      "value_hash": "fcbcf165908dd18a",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC245CAF4B1AD6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash_storage",
+        "note": "Official Dash security documentation explicitly states that storage outside the US is not currently offered.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC245CAF4B1AD6",
+            "note": "Dropbox explicitly states Dash is a multi-tenant SaaS service and currently does not offer data storage outside the United States.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency / architecture"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-8FC188FA4D756E73AB",
