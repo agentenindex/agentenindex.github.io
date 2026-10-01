@@ -620,6 +620,70 @@
             }
           ],
           "note": "A built-in security audit capability is documented."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "n8n_ai_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – MCP Client Tool",
+              "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolmcp",
+              "note": "n8n documents the MCP Client Tool as an MCP client that exposes external MCP server tools to n8n AI Agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "n8n AI agents can consume tools from external MCP servers."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "n8n_workflows_and_tools",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – MCP Server Trigger",
+              "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.mcptrigger",
+              "note": "n8n documents an MCP Server Trigger that makes n8n tools and workflows available to MCP clients over SSE or streamable HTTP.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "n8n can expose workflows and tools as an MCP server."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "n8n_workflows",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Webhook node",
+              "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook",
+              "note": "n8n documents production webhook URLs that receive HTTP requests and trigger workflows.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "Published n8n workflows can expose production webhooks."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "n8n_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Choose how to use n8n",
+              "url": "https://docs.n8n.io/choose-how-to-use-n8n",
+              "note": "n8n explicitly describes n8n Cloud as fully managed, with hosting, updates and scaling handled by n8n.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "n8n Cloud is an official fully managed deployment option."
         }
       ]
     },
@@ -3365,6 +3429,82 @@
             }
           ],
           "note": "AWS CloudTrail provides audit records for AgentCore Runtime API activity."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "agentcore_resources_via_aws_iam",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Identity and access management for AgentCore",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/security-iam.html",
+              "note": "AWS documents IAM identities and policies as the mechanism for controlling authentication and authorization to AgentCore resources.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "AWS Docs – IAM permissions for AgentCore Runtime",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-permissions.html",
+              "note": "AWS documents IAM user/role and execution-role permissions for AgentCore Runtime.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "AgentCore access is governed through AWS IAM roles and policies."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "agentcore_runtime_instances",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Security model for Runtime Instances",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-instances-security.html",
+              "note": "AWS states Runtime Instances run on EC2 instances in the customer's own AWS account and VPC.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "AgentCore Runtime Instances provide a customer-account/VPC deployment mode in addition to serverless managed Runtime."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "agentcore_runtime_instances",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Security model for Runtime Instances",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-instances-security.html",
+              "note": "AWS explicitly states agents run in the Region the customer specifies and session data and EBS volumes remain in the customer's account.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Runtime Instances provide explicit regional data-residency control."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "agentcore_runtime_instances",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Security model for Runtime Instances",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-instances-security.html",
+              "note": "AWS states agents run in the VPC, subnets, account, and Region specified by the customer.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "AWS Docs – Supported AWS Regions for AgentCore",
+              "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html",
+              "note": "AWS lists the supported AgentCore regions customers can deploy into.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Customers select a supported AWS Region for AgentCore Runtime Instances."
         }
       ]
     },
