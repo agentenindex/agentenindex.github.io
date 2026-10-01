@@ -453,7 +453,26 @@ def main():
             }
             events[eid]=event
             existing=queue.get(rid)
-            if existing and existing.get("status")=="open":
+            reviewed_hashes=set()
+            if existing and existing.get("status")!="open":
+                for reviewed_state in (existing.get("previous") or {}, existing.get("current") or {}):
+                    if reviewed_state.get("text_hash"):
+                        reviewed_hashes.add(reviewed_state["text_hash"])
+            replayed_reviewed_content=(
+                change_type=="content_change"
+                and existing
+                and existing.get("status")!="open"
+                and current.get("text_hash")
+                and current.get("text_hash") in reviewed_hashes
+            )
+            if replayed_reviewed_content:
+                # Dynamic pages can oscillate between previously reviewed render variants.
+                # Preserve the editorial decision and suppress only an already-reviewed hash;
+                # any genuinely new hash still creates/reopens a review item.
+                events.pop(eid,None)
+                existing["last_seen_after_review"]=detected
+                existing["suppressed_reoccurrences"]=int(existing.get("suppressed_reoccurrences",0))+1
+            elif existing and existing.get("status")=="open":
                 existing["last_detected"]=detected
                 existing["occurrences"]=int(existing.get("occurrences",1))+1
                 existing["severity"]=severity
@@ -502,7 +521,8 @@ def main():
                     "latest_metrics":metrics,
                     "editorial_action":"Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
                 }
-            changes.append({"source_id":sid,"type":change_type,"severity":severity,"agents":source.get("agent_ids",[])})
+            if not replayed_reviewed_content:
+                changes.append({"source_id":sid,"type":change_type,"severity":severity,"agents":source.get("agent_ids",[])})
 
         # Manual-only sources are intentionally excluded from automated fetches and are not failures.
         if current.get("result")=="manual_only":
