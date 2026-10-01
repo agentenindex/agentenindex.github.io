@@ -1,0 +1,31 @@
+{
+  "name": "AgentenFinder",
+  "version": "1.0",
+  "updated": "2026-10-01",
+  "url": "https://agentenindex.de/finder/",
+  "source_dataset": "https://agentenindex.de/data/agents.json",
+  "agent_count": 110,
+  "engine": "deterministic_client_side",
+  "purpose": "Vorauswahl von KI-Agenten auf Basis dokumentierter AgentenProfil-Felder; keine Qualitätsbewertung und kein bezahltes Ranking.",
+  "hard_filters": {
+    "category": "filters.category",
+    "audience": "filters.audience",
+    "provider": "provider"
+  },
+  "text_scoring": {
+    "name_or_provider": 7,
+    "product_type_or_category": 5,
+    "use_cases": 6,
+    "strengths": 3,
+    "summary": 2,
+    "access": 1
+  },
+  "tie_breaker": "Bei gleichem Score alphabetisch nach Agentenname.",
+  "result_limit_initial": 3,
+  "privacy": "Auswahl und Freitext werden nicht an einen Empfehlungsdienst gesendet; die Auswertung erfolgt im Browser auf Basis der veröffentlichten AgentenIndex-Daten.",
+  "limitations": [
+    "Die Vorauswahl ist keine allgemeine Qualitätsbewertung.",
+    "Preise, Datenschutz, Verfügbarkeit und konkrete Eignung müssen im AgentenProfil und in den verlinkten Primärquellen geprüft werden.",
+    "Nicht strukturierte Merkmale werden nicht als Auswahlkriterium erfunden."
+  ]
+}
