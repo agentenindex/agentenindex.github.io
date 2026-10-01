@@ -8,7 +8,10 @@
       "high",
       "medium",
       "low"
-    ]
+    ],
+    "taxonomy": "data/agent-deep-taxonomy.json",
+    "unknown_semantics": "A missing canonical field is unknown. False is allowed only when an explicit reliable primary source documents nonexistence or a restriction.",
+    "canonical_path_policy": "New curated claims must use active canonical taxonomy paths; deprecated aliases are rejected."
   },
   "agents": [
     {
@@ -305,7 +308,7 @@
           "note": "Docker deployment is documented."
         },
         {
-          "path": "api.public",
+          "path": "api.public_access",
           "value": true,
           "scope": "platform",
           "confidence": "high",
@@ -1020,7 +1023,7 @@
           "note": "SAP's official Joule Studio sample demonstrates MCP server tools used by a Joule agent."
         },
         {
-          "path": "protocols.a2a",
+          "path": "protocols.a2a.supported",
           "value": true,
           "scope": "joule_studio_and_code_editor",
           "confidence": "high",
@@ -1158,21 +1161,6 @@
             }
           ],
           "note": "ServiceNow provides MCP server capability at platform level."
-        },
-        {
-          "path": "protocols.a2a",
-          "value": true,
-          "scope": "servicenow_ai_agents",
-          "confidence": "high",
-          "verified_at": "2026-10-01",
-          "evidence": [
-            {
-              "title": "ServiceNow Docs – Integrating external AI agents",
-              "url": "https://www.servicenow.com/docs/r/intelligent-experiences/external-agent-protocols.html",
-              "note": "ServiceNow documents bidirectional A2A integration between the ServiceNow AI Platform and external AI agents."
-            }
-          ],
-          "note": "A2A integration is documented in both inbound and outbound directions."
         },
         {
           "path": "governance.ai_control_tower",
@@ -1425,36 +1413,6 @@
           "note": "Remote MCP servers are supported."
         },
         {
-          "path": "api.public",
-          "value": true,
-          "scope": "business_and_enterprise",
-          "confidence": "high",
-          "verified_at": "2026-10-01",
-          "evidence": [
-            {
-              "title": "Dust – Enterprise AI Agents",
-              "url": "https://dust.tt/home/enterprise",
-              "note": "Dust lists an Open API and a RESTful API for custom integrations."
-            }
-          ],
-          "note": "A developer-facing API is documented."
-        },
-        {
-          "path": "api.type",
-          "value": "REST",
-          "scope": "business_and_enterprise",
-          "confidence": "high",
-          "verified_at": "2026-10-01",
-          "evidence": [
-            {
-              "title": "Dust – Enterprise AI Agents",
-              "url": "https://dust.tt/home/enterprise",
-              "note": "The integration architecture explicitly lists a RESTful API."
-            }
-          ],
-          "note": "REST is a documented API interface."
-        },
-        {
           "path": "api.webhooks",
           "value": true,
           "scope": "business_and_enterprise",
@@ -1678,6 +1636,26 @@
             }
           ],
           "note": "Encryption in transit is documented as TLS 1.3."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust lists an Open API and a RESTful API for custom integrations."
+            },
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "The integration architecture explicitly lists a RESTful API."
+            }
+          ],
+          "note": "Dust documents a developer-facing RESTful API; the former api.public/api.type split is consolidated into api.rest."
         }
       ]
     },
@@ -2175,7 +2153,7 @@
           "note": "A2A endpoints support OAuth 2.0 bearer-token authentication."
         },
         {
-          "path": "api.http",
+          "path": "api.rest",
           "value": true,
           "scope": "agentcore_runtime",
           "confidence": "high",
@@ -2390,7 +2368,7 @@
           "note": "REST APIs are documented."
         },
         {
-          "path": "governance.roles",
+          "path": "governance.rbac",
           "value": true,
           "scope": "agentstudio",
           "confidence": "high",
@@ -2575,7 +2553,7 @@
           "note": "API-key authentication for MCP connections is documented."
         },
         {
-          "path": "protocols.a2a",
+          "path": "protocols.a2a.supported",
           "value": true,
           "scope": "framework",
           "confidence": "high",
@@ -2648,21 +2626,6 @@
             }
           ],
           "note": "OpenAI-compatible serving endpoints are documented."
-        },
-        {
-          "path": "tools.mcp",
-          "value": true,
-          "scope": "framework",
-          "confidence": "high",
-          "verified_at": "2026-10-01",
-          "evidence": [
-            {
-              "title": "Microsoft Learn – Agent Framework overview",
-              "url": "https://learn.microsoft.com/en-us/agent-framework/overview/",
-              "note": "The framework overview lists MCP clients for tool integration."
-            }
-          ],
-          "note": "MCP tools are a first-class Agent Framework integration."
         }
       ]
     }
