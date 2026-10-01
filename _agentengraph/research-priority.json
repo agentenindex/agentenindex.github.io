@@ -8,9 +8,9 @@
     "core_fields": 25
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 9,
+    "agents_below_target_with_deep_evidence": 7,
     "agents_without_deep_evidence": 87,
-    "agents_at_or_above_target": 14
+    "agents_at_or_above_target": 16
   },
   "field_priorities": [
     {
@@ -116,34 +116,34 @@
       "coverage_pct": 7.27
     },
     {
-      "path": "security.encryption.at_rest",
-      "documented_agents": 8,
-      "unknown_agents": 102,
-      "coverage_pct": 7.27
-    },
-    {
       "path": "governance.sso.saml",
       "documented_agents": 9,
       "unknown_agents": 101,
       "coverage_pct": 8.18
     },
     {
-      "path": "hosting.managed",
+      "path": "security.encryption.at_rest",
       "documented_agents": 9,
       "unknown_agents": 101,
       "coverage_pct": 8.18
     },
     {
-      "path": "api.rest",
-      "documented_agents": 12,
-      "unknown_agents": 98,
-      "coverage_pct": 10.91
+      "path": "hosting.managed",
+      "documented_agents": 10,
+      "unknown_agents": 100,
+      "coverage_pct": 9.09
     },
     {
-      "path": "privacy.residency.available",
+      "path": "api.rest",
       "documented_agents": 13,
       "unknown_agents": 97,
       "coverage_pct": 11.82
+    },
+    {
+      "path": "privacy.residency.available",
+      "documented_agents": 14,
+      "unknown_agents": 96,
+      "coverage_pct": 12.73
     },
     {
       "path": "governance.audit_logs.available",
@@ -286,26 +286,6 @@
       ]
     },
     {
-      "agent_id": "AI-0027",
-      "name": "Oracle AI Agent Studio",
-      "provider_id": "PROV-ORACLE",
-      "priority": "P0_raise_existing_to_40pct",
-      "documented_fields": 7,
-      "unknown_fields": 18,
-      "coverage_pct": 28.0,
-      "fields_needed_for_40pct": 3,
-      "recommended_unknown_paths": [
-        "api.webhooks",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "security.soc2_type2",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.siem_export",
-        "governance.audit_logs.api",
-        "security.encryption.in_transit"
-      ]
-    },
-    {
       "agent_id": "AI-0035",
       "name": "ServiceNow AI Agents",
       "provider_id": "PROV-SERVICENOW",
@@ -322,26 +302,6 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
         "governance.audit_logs.api",
-        "protocols.a2a.supported"
-      ]
-    },
-    {
-      "agent_id": "AI-0018",
-      "name": "n8n Agents",
-      "provider_id": "PROV-N8N",
-      "priority": "P0_raise_existing_to_40pct",
-      "documented_fields": 9,
-      "unknown_fields": 16,
-      "coverage_pct": 36.0,
-      "fields_needed_for_40pct": 1,
-      "recommended_unknown_paths": [
-        "hosting.private_network",
-        "security.soc2_type2",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.siem_export",
-        "protocols.a2a.client",
-        "governance.audit_logs.api",
-        "protocols.a2a.server",
         "protocols.a2a.supported"
       ]
     },
@@ -2106,6 +2066,26 @@
       ]
     },
     {
+      "agent_id": "AI-0018",
+      "name": "n8n Agents",
+      "provider_id": "PROV-N8N",
+      "priority": "P2_maintain_or_deepen",
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "hosting.private_network",
+        "security.soc2_type2",
+        "governance.audit_logs.retention_days",
+        "governance.audit_logs.siem_export",
+        "protocols.a2a.client",
+        "governance.audit_logs.api",
+        "protocols.a2a.server",
+        "protocols.a2a.supported"
+      ]
+    },
+    {
       "agent_id": "AI-0025",
       "name": "Microsoft Copilot Studio",
       "provider_id": "PROV-MICROSOFT",
@@ -2141,6 +2121,26 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.siem_export",
         "protocols.a2a.client",
+        "governance.audit_logs.api",
+        "security.encryption.in_transit"
+      ]
+    },
+    {
+      "agent_id": "AI-0027",
+      "name": "Oracle AI Agent Studio",
+      "provider_id": "PROV-ORACLE",
+      "priority": "P2_maintain_or_deepen",
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "api.webhooks",
+        "governance.sso.oidc",
+        "hosting.private_network",
+        "security.soc2_type2",
+        "governance.audit_logs.retention_days",
+        "governance.audit_logs.siem_export",
         "governance.audit_logs.api",
         "security.encryption.in_transit"
       ]

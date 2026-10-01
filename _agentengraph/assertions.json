@@ -11264,6 +11264,40 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-FA1121B012F2A4E132",
+      "agent_id": "AI-0018",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-550A777FEB6DDE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "n8n_public_api",
+        "note": "n8n exposes a documented public REST API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-550A777FEB6DDE",
+            "note": "n8n explicitly documents the n8n public REST API and states it can programmatically perform many GUI tasks.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F6BE049A54689363FB",
       "agent_id": "AI-0018",
       "path": "api.webhooks",
@@ -18371,6 +18405,46 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-E01D0BFE60F404588B",
+      "agent_id": "AI-0027",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-12EB39557C6F65",
+          "SRC-26723936D895F5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "oracle_fusion_ai_platform_for_ai_agent_studio",
+        "note": "AI Agent Studio runs as a native capability of Oracle Fusion Cloud Applications on the Oracle AI Platform for Fusion Applications.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-26723936D895F5",
+            "note": "Oracle documents a securely partitioned Oracle-managed AI platform instance for each organization in its local OCI region.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-12EB39557C6F65",
+            "note": "Oracle states AI Agent Studio is a native component of Oracle Fusion Cloud Applications and operates within the same security framework and data model.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-5F263ADBD1399E2699",
       "agent_id": "AI-0027",
       "path": "identity.name",
@@ -18417,6 +18491,40 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-1D8C99213F4C78651C",
+      "agent_id": "AI-0027",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-26723936D895F5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "fusion_ai_platform_instance_local_oci_region_at_rest",
+        "note": "The Fusion AI platform instance is region-local. This claim does not assert that generative-model processing always remains in the local OCI region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-26723936D895F5",
+            "note": "Oracle states each organization receives a securely partitioned platform instance within its local OCI region; model input/output processing may occur in a secure OCI environment outside that local region.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-11BA0758F43D841050",
@@ -18693,6 +18801,46 @@
             "source_id": "SRC-F2E87F68774622",
             "note": "Oracle lists StreamableHTTP as an MCP transport type.",
             "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-37155B9DD955A4B4F5",
+      "agent_id": "AI-0027",
+      "path": "security.encryption.at_rest",
+      "value": "Oracle Transparent Data Encryption (TDE)",
+      "value_hash": "3ae4851878f2cd3e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0CDF7FD60FDA12",
+          "SRC-12EB39557C6F65"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "oracle_fusion_applications_data_layer_used_by_ai_agent_studio",
+        "note": "AI Agent Studio's native Fusion Applications data layer is protected by Oracle TDE at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-12EB39557C6F65",
+            "note": "Oracle states AI Agent Studio is native to Fusion Cloud Applications and uses the same security framework and data model.",
+            "evidence_type": "technical_docs"
+          },
+          {
+            "source_id": "SRC-0CDF7FD60FDA12",
+            "note": "Oracle documents Transparent Data Encryption for Fusion Applications data at rest, including database files, backups, temporary files, redo and undo data.",
+            "evidence_type": "security_trust"
           }
         ]
       },
