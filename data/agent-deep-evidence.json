@@ -6964,6 +6964,125 @@
       "agent_id": "AI-0043",
       "claims": [
         {
+          "path": "api.rest",
+          "value": true,
+          "scope": "sierra_agent_integrations_and_invocation",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Sierra – Your agent, laid bare",
+              "url": "https://sierra.ai/jp/blog/your-agent-laid-bare-and-why-it-matters",
+              "note": "Sierra documents agent integrations through REST and states other agents can invoke Sierra capabilities through APIs.",
+              "evidence_type": "official_release",
+              "source_section": "Build on what you already have"
+            }
+          ],
+          "note": "Sierra supports REST/API integration and agent invocation."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "sierra_agent_observability",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Sierra – Your agent, laid bare",
+              "url": "https://sierra.ai/jp/blog/your-agent-laid-bare-and-why-it-matters",
+              "note": "Sierra documents export APIs for conversation logs and performance data.",
+              "evidence_type": "api_docs",
+              "source_section": "Keep the value it creates"
+            }
+          ],
+          "note": "Sierra exposes agent observability/history data through export APIs."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "sierra_agent_observability",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Sierra – Your agent, laid bare",
+              "url": "https://sierra.ai/jp/blog/your-agent-laid-bare-and-why-it-matters",
+              "note": "Sierra documents conversation logs, traces, version history, performance data, and a complete record for investigating agent decisions.",
+              "evidence_type": "official_release",
+              "source_section": "Know exactly what happened / Keep the value it creates"
+            }
+          ],
+          "note": "Sierra provides detailed agent logs and trace history."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "sierra_agent_observability",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Sierra – Your agent, laid bare",
+              "url": "https://sierra.ai/jp/blog/your-agent-laid-bare-and-why-it-matters",
+              "note": "Sierra documents sending agent data to external observability/data infrastructure through OpenTelemetry, Amazon EventBridge, Google Cloud Pub/Sub, or export API.",
+              "evidence_type": "technical_docs",
+              "source_section": "Use the tools you trust"
+            }
+          ],
+          "note": "Sierra agent telemetry can be exported to external observability/SIEM infrastructure."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "sierra_platform_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Sierra – Your agent, laid bare",
+              "url": "https://sierra.ai/jp/blog/your-agent-laid-bare-and-why-it-matters",
+              "note": "Sierra explicitly documents roles and permissions controlling who can change agents and release changes.",
+              "evidence_type": "official_release",
+              "source_section": "Keep the value it creates"
+            }
+          ],
+          "note": "Sierra provides role- and permission-based governance."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "sierra_platform_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Sierra Trust Center",
+              "url": "https://trust.sierra.ai/",
+              "note": "Sierra lists AWS cloud hosting with localization available in the US, EU, Southeast Asia, Japan, and Australia.",
+              "evidence_type": "security_trust",
+              "source_section": "Subprocessors / AWS"
+            }
+          ],
+          "note": "Sierra documents localized hosting availability in multiple regions."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "sierra_agents_integrations",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Sierra – Your agent, laid bare",
+              "url": "https://sierra.ai/jp/blog/your-agent-laid-bare-and-why-it-matters",
+              "note": "Sierra states agents connect existing systems through MCP, REST, GraphQL, or custom integrations and can call tools elsewhere in the customer's stack.",
+              "evidence_type": "official_release",
+              "source_section": "Build on what you already have"
+            }
+          ],
+          "note": "Sierra agents can consume external tools/systems through MCP."
+        },
+        {
           "path": "security.soc2_type2",
           "value": true,
           "scope": "sierra_platform_agents",
@@ -6985,6 +7104,132 @@
     {
       "agent_id": "AI-0044",
       "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "gorgias_ai_agent_and_helpdesk",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gorgias Help – View event logs for AI Agent Actions",
+              "url": "https://docs.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
+              "note": "Gorgias documents per-action event logs whenever AI Agent makes an HTTP request to a connected app.",
+              "evidence_type": "technical_docs",
+              "source_section": "View an Action's event logs"
+            },
+            {
+              "title": "Gorgias Help – View an audit log of changes to your account",
+              "url": "https://helpcenter.gorgias.com/en-US/view-an-audit-log-of-changes-to-your-account-81841",
+              "note": "Gorgias documents chronological account audit logs.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit logs"
+            }
+          ],
+          "note": "Gorgias provides AI-action event logs and account audit logs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "gorgias_account_audit_logs",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gorgias Help – View an audit log of changes to your account",
+              "url": "https://helpcenter.gorgias.com/en-US/view-an-audit-log-of-changes-to-your-account-81841",
+              "note": "Gorgias states audit-log events are available for the past 12 months and are not kept beyond that period.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit log retention"
+            }
+          ],
+          "note": "Gorgias account audit logs are retained for 12 months (365 days)."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "gorgias_helpdesk_including_ai_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gorgias – Security Policy",
+              "url": "https://www.gorgias.com/security",
+              "note": "Gorgias documents user roles and permissions controlling access to helpdesk areas and actions.",
+              "evidence_type": "security_trust",
+              "source_section": "User roles and permissions"
+            }
+          ],
+          "note": "Gorgias provides role-based permissions."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "gorgias_helpdesk_including_ai_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gorgias Help – Set up custom SSO",
+              "url": "https://helpcenter.gorgias.com/en-US/set-up-custom-sso-for-gorgias-2553083",
+              "note": "Gorgias documents custom SSO using the OpenID Connect Discovery Protocol.",
+              "evidence_type": "technical_docs",
+              "source_section": "Configure Gorgias as an OIDC app"
+            }
+          ],
+          "note": "Gorgias supports OIDC SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "gorgias_ai_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gorgias Docs – How Gorgias's AI Agent works",
+              "url": "https://docs.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817",
+              "note": "Gorgias states AI Agent data is maintained on Google Cloud Platform with globally distributed servers.",
+              "evidence_type": "technical_docs",
+              "source_section": "Regional hosting"
+            }
+          ],
+          "note": "Gorgias AI Agent is delivered on Gorgias-managed GCP infrastructure."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "gorgias_ai_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gorgias Help – Security and privacy FAQ for Gorgias AI Agent",
+              "url": "https://helpcenter.gorgias.com/en-US/security-and-privacy-faq-for-gorgias-ai-agent-1997987",
+              "note": "Gorgias states AI Agent data is hosted on the closest regional server and EU merchants are hosted in the EU.",
+              "evidence_type": "security_trust",
+              "source_section": "Where Is My Data Stored?"
+            }
+          ],
+          "note": "Gorgias AI Agent provides regional hosting, including EU hosting for EU merchants."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS",
+          "scope": "gorgias_platform_including_ai_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gorgias – Security Policy",
+              "url": "https://www.gorgias.com/security",
+              "note": "Gorgias states app data is sent exclusively through HTTPS TLS-encrypted connections.",
+              "evidence_type": "security_trust",
+              "source_section": "Security controls"
+            }
+          ],
+          "note": "Gorgias documents TLS-encrypted connections."
+        },
         {
           "path": "security.soc2_type2",
           "value": true,
@@ -15953,6 +16198,23 @@
       "agent_id": "AI-0101",
       "claims": [
         {
+          "path": "api.rest",
+          "value": true,
+          "scope": "11x_alice_shared_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "11x Docs – Webhooks and REST API",
+              "url": "https://docs.11x.ai/integrations/webhooks",
+              "note": "11x documents one bi-directional API across Alice and Julian for pushing data, pulling outcomes, and triggering motions; the page is explicitly titled Webhooks and REST API.",
+              "evidence_type": "api_docs",
+              "source_section": "Webhooks and API"
+            }
+          ],
+          "note": "Alice uses the shared 11x REST API."
+        },
+        {
           "path": "api.webhooks",
           "value": true,
           "scope": "11x_alice",
@@ -15968,6 +16230,91 @@
             }
           ],
           "note": "Alice supports webhook event subscriptions through the shared 11x integration API."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "11x_alice",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "11x – Audit and Oversight",
+              "url": "https://docs.11x.ai/security/audit-and-oversight",
+              "note": "11x documents audit trails across recordings/transcripts, quality assessments, knowledge-base version history, approval trails, and CRM write-back.",
+              "evidence_type": "security_trust",
+              "source_section": "The five audit surfaces"
+            }
+          ],
+          "note": "11x provides multiple audit surfaces for Alice activity and outcomes."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "11x_alice_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "11x Security and Data Handling",
+              "url": "https://docs.11x.ai/security/overview",
+              "note": "11x documents platform hosting in AWS high-security facilities and dynamically scaled containerized deployments.",
+              "evidence_type": "security_trust",
+              "source_section": "Platform controls"
+            }
+          ],
+          "note": "Alice runs on the managed 11x AWS-hosted platform."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "11x_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "11x Security and Data Handling",
+              "url": "https://docs.11x.ai/security/overview",
+              "note": "11x states data at rest is encrypted with AES-256 in AWS RDS.",
+              "evidence_type": "security_trust",
+              "source_section": "Platform controls"
+            }
+          ],
+          "note": "11x documents AES-256 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS",
+          "scope": "11x_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "11x Security and Data Handling",
+              "url": "https://docs.11x.ai/security/overview",
+              "note": "11x states data in transit is protected with TLS.",
+              "evidence_type": "security_trust",
+              "source_section": "Platform controls"
+            }
+          ],
+          "note": "11x documents TLS encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "11x_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "11x Security and Compliance",
+              "url": "https://docs.11x.ai/help-center/overview/security-and-compliance",
+              "note": "11x states it holds SOC 2 Type II certification, audited annually.",
+              "evidence_type": "security_trust",
+              "source_section": "Certifications"
+            }
+          ],
+          "note": "11x documents SOC 2 Type II certification."
         }
       ]
     },
@@ -16365,6 +16712,57 @@
     {
       "agent_id": "AI-0110",
       "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "rogo_platform_ai_analyst",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Rogo Trust Center",
+              "url": "https://trust.rogo.ai/",
+              "note": "Rogo's Trust Center lists Audit Logging as a Product Security control.",
+              "evidence_type": "security_trust",
+              "source_section": "Product Security"
+            }
+          ],
+          "note": "Rogo documents audit logging as a product security control."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "rogo_platform_ai_analyst",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Rogo Trust Center",
+              "url": "https://trust.rogo.ai/",
+              "note": "Rogo's Trust Center lists Encryption-at-rest under Data Security controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Data Security"
+            }
+          ],
+          "note": "Rogo documents encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "rogo_platform_ai_analyst",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Rogo Trust Center",
+              "url": "https://trust.rogo.ai/",
+              "note": "Rogo's Trust Center lists Encryption-in-transit under Data Security controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Data Security"
+            }
+          ],
+          "note": "Rogo documents encryption in transit."
+        },
         {
           "path": "security.soc2_type2",
           "value": true,
