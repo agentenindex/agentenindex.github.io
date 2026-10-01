@@ -5765,6 +5765,9 @@
         "access.description": [
           "Über Augment Code; IDE- und Planverfügbarkeit abhängig vom Angebot."
         ],
+        "api.webhooks": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -5792,11 +5795,41 @@
           "Integration in Entwicklerwerkzeuge",
           "Mehrdatei-Änderungen"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
+        "hosting.private_network": [
+          true
+        ],
+        "hosting.self_hosted": [
+          true
+        ],
         "identity.name": [
           "Augment Code Agent"
         ],
         "identity.provider": [
           "Augment Code"
+        ],
+        "privacy.residency.available": [
+          true
         ],
         "profile.depth": [
           "reference"
@@ -5805,6 +5838,12 @@
           "2.0"
         ],
         "protocols.mcp.client": [
+          true
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.soc2_type2": [
           true
         ],
         "use_case": [
@@ -5941,7 +5980,22 @@
           "Integration in Pull-Request-Workflows",
           "Kontextbezogene Vorschläge"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "hosting.managed": [
+          true
+        ],
+        "hosting.private_network": [
+          true
+        ],
+        "hosting.self_hosted": [
           true
         ],
         "identity.name": [
@@ -5955,6 +6009,12 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.in_transit": [
+          true
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Codequalität prüfen",
@@ -6421,7 +6481,28 @@
           "Review-Fokus",
           "Teamorientierte Codequalität"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "hosting.managed": [
+          true
+        ],
+        "hosting.private_network": [
+          true
+        ],
+        "hosting.self_hosted": [
           true
         ],
         "identity.name": [
@@ -6430,11 +6511,20 @@
         "identity.provider": [
           "CodeRabbit"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Code Reviews",

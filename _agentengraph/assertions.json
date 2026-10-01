@@ -56596,6 +56596,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-0808A6298338018118",
+      "agent_id": "AI-0066",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_cloud_agents",
+        "note": "Augment Cloud Agents support webhook-triggered automation.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment documents event-driven Cloud Agent automation triggered from webhooks, schedules, and repository/security events.",
+            "evidence_type": "official_product_page",
+            "source_section": "Event driven Automation"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-105D7BF9C7C19DE554",
       "agent_id": "AI-0066",
       "path": "audience",
@@ -56921,6 +56956,321 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-B0797E385B87F4A2AF",
+      "agent_id": "AI-0066",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise",
+        "note": "Augment Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists audit logs and versioned/auditable agent configuration history.",
+            "evidence_type": "official_product_page",
+            "source_section": "History / Audit logs + SIEM"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-134CFFC89F803A47E9",
+      "agent_id": "AI-0066",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise",
+        "note": "Augment Enterprise supports audit/SIEM integration.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists 'Audit logs + SIEM' as an enterprise capability.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise security capabilities"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DEB7136C60F59511C7",
+      "agent_id": "AI-0066",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise",
+        "note": "Augment Enterprise provides granular RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists granular RBAC.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise security capabilities"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D139418B16B1A08B18",
+      "agent_id": "AI-0066",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise",
+        "note": "Augment Enterprise supports SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists SCIM among enterprise identity controls.",
+            "evidence_type": "official_product_page",
+            "source_section": "SAML / OIDC / SCIM"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9FEB234B5EB65F16CC",
+      "agent_id": "AI-0066",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise",
+        "note": "Augment Enterprise supports OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists OIDC enterprise SSO.",
+            "evidence_type": "official_product_page",
+            "source_section": "SAML / OIDC / SCIM"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-05E6233D20B32F0266",
+      "agent_id": "AI-0066",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise",
+        "note": "Augment Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists SAML enterprise SSO.",
+            "evidence_type": "official_product_page",
+            "source_section": "SAML / OIDC / SCIM"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8CE271826B76C05BC5",
+      "agent_id": "AI-0066",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_cloud_agents",
+        "note": "Augment provides managed Cloud Agent execution.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment documents managed Cloud Agents with sandboxed agent execution.",
+            "evidence_type": "official_product_page",
+            "source_section": "Cloud Agents / Sandboxed agent execution"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-363835363DFC12784E",
+      "agent_id": "AI-0066",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise",
+        "note": "Augment Enterprise supports VPC/private deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists VPC deployment and single-tenant instances.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise security capabilities"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-71F14A5FBAD33820F9",
+      "agent_id": "AI-0066",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise",
+        "note": "Augment Enterprise supports on-prem deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists on-prem deployment as an enterprise capability.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise security capabilities"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-FCF98454A0AAF5DDE8",
       "agent_id": "AI-0066",
       "path": "identity.name",
@@ -56969,6 +57319,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-52A5200E122EDF49A4",
+      "agent_id": "AI-0066",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise",
+        "note": "Augment Enterprise provides data-residency controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists data-residency controls among enterprise capabilities.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise security capabilities"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-B6EEAFF8E23648DB68",
@@ -57044,6 +57429,76 @@
             "note": "Augment states the Agent embraces MCP to access external tools and systems, with examples of infrastructure MCP integrations.",
             "evidence_type": "official_release",
             "source_section": "The Power of Context – Memories & Tools"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-20DDA6CCD8E696110B",
+      "agent_id": "AI-0066",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-733EC6530451B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_enterprise_cmek",
+        "note": "Augment Enterprise supports customer-managed encryption keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-733EC6530451B5",
+            "note": "Augment explicitly lists CMEK encryption among enterprise security capabilities.",
+            "evidence_type": "security_trust",
+            "source_section": "CMEK encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6BEB7FC0287682DF8C",
+      "agent_id": "AI-0066",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-40D35CA0BA5AE8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "augment_platform",
+        "note": "Augment documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-40D35CA0BA5AE8",
+            "note": "Augment states it is SOC 2 Type II attested.",
+            "evidence_type": "security_trust",
+            "source_section": "Certifications & Compliance"
           }
         ]
       },
@@ -58328,6 +58783,125 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-15E3ADF9DAEBE16EE1",
+      "agent_id": "AI-0068",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-273A1EF80066EF",
+          "SRC-28C2AC4EB25B53"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qodo_git_enterprise",
+        "note": "Qodo Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-273A1EF80066EF",
+            "note": "Qodo Enterprise explicitly includes audit logs.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise"
+          },
+          {
+            "source_id": "SRC-28C2AC4EB25B53",
+            "note": "Qodo describes an audit trail recording issues and compliance flags for traceability.",
+            "evidence_type": "official_product_page",
+            "source_section": "Governance layer / Audit trail"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-09EC93C80879AB4936",
+      "agent_id": "AI-0068",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-23DA75BEBA09A9",
+          "SRC-E70FCA0623DED7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qodo_git_enterprise",
+        "note": "Qodo provides role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E70FCA0623DED7",
+            "note": "Qodo documents RBAC for its enterprise code-review platform.",
+            "evidence_type": "official_product_page",
+            "source_section": "Secure and compliant"
+          },
+          {
+            "source_id": "SRC-23DA75BEBA09A9",
+            "note": "Qodo documents organization and team roles with scoped permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Understanding User Roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5DB0AAB1B5603C87D8",
+      "agent_id": "AI-0068",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-273A1EF80066EF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qodo_git_enterprise",
+        "note": "Qodo Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-273A1EF80066EF",
+            "note": "Qodo Enterprise explicitly includes SSO / SAML.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise / security & deployment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-C0F4ACC9FECEC2889D",
       "agent_id": "AI-0068",
       "path": "hosting.managed",
@@ -58351,6 +58925,76 @@
             "note": "Qodo documents Qodo Git as its AI PR review system integrated into pull-request workflows and offered as part of Qodo's product platform.",
             "evidence_type": "official_product_page",
             "source_section": "AI code review built for real issues"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0D5043D9685836A2D9",
+      "agent_id": "AI-0068",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D823FB57B889C0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qodo_git_enterprise",
+        "note": "Qodo supports private VPC and air-gapped deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D823FB57B889C0",
+            "note": "Qodo documents VPC and air-gapped enterprise deployment options.",
+            "evidence_type": "official_product_page",
+            "source_section": "Secure, Private, and Enterprise-Ready"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-75AB39B5A22B5C51C7",
+      "agent_id": "AI-0068",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E70FCA0623DED7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qodo_git_enterprise",
+        "note": "Qodo Git supports on-premises deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E70FCA0623DED7",
+            "note": "Qodo documents on-prem deployment for Qodo's enterprise code-review platform.",
+            "evidence_type": "official_product_page",
+            "source_section": "Deploy anywhere / Enterprise security"
           }
         ]
       },
@@ -58457,6 +59101,76 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-33FB16EC7118074B5B",
+      "agent_id": "AI-0068",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D823FB57B889C0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qodo_enterprise",
+        "note": "Qodo documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D823FB57B889C0",
+            "note": "Qodo states enterprise data is encrypted in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-401C1695483BC057D7",
+      "agent_id": "AI-0068",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-28C2AC4EB25B53"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "qodo_platform",
+        "note": "Qodo documents SOC 2 Type II certification.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-28C2AC4EB25B53",
+            "note": "Qodo states it is SOC 2 Type II certified through independent audit.",
+            "evidence_type": "security_trust",
+            "source_section": "Security & compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-5CDA0ECA34C65F0465",
@@ -62903,6 +63617,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1D33F90566870B5C28",
+      "agent_id": "AI-0074",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DC38E5EEBC7B9C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise",
+        "note": "CodeRabbit Enterprise provides audit logging.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DC38E5EEBC7B9C",
+            "note": "CodeRabbit Enterprise explicitly includes audit logging.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2D92A7DA669E8CD73F",
+      "agent_id": "AI-0074",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-70DD51D2CED6F2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise",
+        "note": "CodeRabbit Enterprise audit logs are exportable for security/compliance workflows.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-70DD51D2CED6F2",
+            "note": "CodeRabbit states its Enterprise tier includes exportable audit logs and enterprise governance controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Enterprise explainability and governance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-CD94B583359F4540AC",
+      "agent_id": "AI-0074",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DC38E5EEBC7B9C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise",
+        "note": "CodeRabbit Enterprise provides customizable role-based access controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DC38E5EEBC7B9C",
+            "note": "CodeRabbit explicitly describes its Enterprise access control as custom RBAC.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E42D5EC6BC013F68D8",
+      "agent_id": "AI-0074",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DC38E5EEBC7B9C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise",
+        "note": "CodeRabbit Enterprise provides RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DC38E5EEBC7B9C",
+            "note": "CodeRabbit Enterprise explicitly includes custom RBAC.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2430AE0A3857D56A71",
+      "agent_id": "AI-0074",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E9FA3CA6986F00"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise",
+        "note": "CodeRabbit Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E9FA3CA6986F00",
+            "note": "CodeRabbit documents SSO and SAML support for Enterprise.",
+            "evidence_type": "security_trust",
+            "source_section": "Identity and access controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B501A3961B2352B7FA",
       "agent_id": "AI-0074",
       "path": "hosting.managed",
@@ -62926,6 +63815,76 @@
             "note": "CodeRabbit documents its automated review and agent services as the CodeRabbit application integrated with GitHub and GitLab repositories and operated through app.coderabbit.ai.",
             "evidence_type": "official_product_page",
             "source_section": "Review every PR automatically / Get started"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EB8B56CEEFD4BA84A6",
+      "agent_id": "AI-0074",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E9FA3CA6986F00"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise_self_hosted",
+        "note": "CodeRabbit can be self-hosted within a customer network perimeter.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E9FA3CA6986F00",
+            "note": "CodeRabbit describes its self-hosted Enterprise option for organizations that require code to remain within their network perimeter.",
+            "evidence_type": "official_release",
+            "source_section": "Identity and access controls / self-hosting"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A9A4B327AB9AAE300A",
+      "agent_id": "AI-0074",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DC38E5EEBC7B9C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise",
+        "note": "CodeRabbit Enterprise supports self-hosting.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DC38E5EEBC7B9C",
+            "note": "CodeRabbit Enterprise explicitly includes a self-hosting option.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise"
           }
         ]
       },
@@ -62986,6 +63945,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-851CA2A2AEA40CA38B",
+      "agent_id": "AI-0074",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DC38E5EEBC7B9C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise_saas",
+        "note": "CodeRabbit Enterprise offers an EU SaaS deployment option.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DC38E5EEBC7B9C",
+            "note": "CodeRabbit Enterprise explicitly lists an EU SaaS deployment option.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2BCF4174F8B405DBB8",
+      "agent_id": "AI-0074",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DC38E5EEBC7B9C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise_saas",
+        "note": "Enterprise customers can select the documented EU SaaS deployment option.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DC38E5EEBC7B9C",
+            "note": "CodeRabbit exposes EU SaaS deployment as an Enterprise deployment choice.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-E284ECBFC2487AE408",
       "agent_id": "AI-0074",
       "path": "profile.depth",
@@ -63032,6 +64061,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-112C6220FE61D92BDE",
+      "agent_id": "AI-0074",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-70DD51D2CED6F2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "coderabbit_enterprise",
+        "note": "CodeRabbit documents SOC 2 Type II certification.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-70DD51D2CED6F2",
+            "note": "CodeRabbit states its Enterprise tier includes SOC 2 Type II certification.",
+            "evidence_type": "security_trust",
+            "source_section": "Enterprise tier"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0767E39A7BA1165E37",
