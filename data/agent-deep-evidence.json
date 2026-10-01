@@ -3830,21 +3830,45 @@
       "agent_id": "AI-0064",
       "claims": [
         {
-          "path": "protocols.mcp.client",
+          "path": "governance.audit_logs.available",
           "value": true,
-          "scope": "gemini_cli",
+          "scope": "gemini_cli_enterprise_telemetry",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "Gemini CLI Docs – MCP servers",
-              "url": "https://geminicli.com/docs/tools/mcp-server/",
-              "note": "Google documents Gemini CLI discovering, connecting to, and executing tools from configured MCP servers.",
+              "title": "Gemini CLI Docs – Gemini CLI for the enterprise",
+              "url": "https://geminicli.com/docs/cli/enterprise/",
+              "note": "Google documents a Telemetry and auditing configuration for Gemini CLI that sends telemetry to a central location and tracks tool usage and other events.",
               "evidence_type": "technical_docs",
-              "source_section": "Core integration architecture / MCP server configuration"
+              "source_section": "Telemetry and auditing"
             }
           ],
-          "note": "Gemini CLI acts as an MCP client for configured MCP servers."
+          "note": "Gemini CLI provides configurable centralized telemetry specifically documented for auditing and monitoring."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "gemini_cli_enterprise_telemetry",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gemini CLI Docs – Observability with OpenTelemetry",
+              "url": "https://geminicli.com/docs/cli/telemetry/",
+              "note": "Google documents exporting Gemini CLI logs, metrics, and traces through OpenTelemetry to external backends including Datadog and other OTLP-compatible systems.",
+              "evidence_type": "technical_docs",
+              "source_section": "OpenTelemetry integration / Configuration"
+            },
+            {
+              "title": "Gemini CLI Docs – Gemini CLI for the enterprise",
+              "url": "https://geminicli.com/docs/cli/enterprise/",
+              "note": "Google frames centralized telemetry as an enterprise auditing and monitoring mechanism for tracking tool usage and other events.",
+              "evidence_type": "technical_docs",
+              "source_section": "Telemetry and auditing"
+            }
+          ],
+          "note": "Gemini CLI audit telemetry can be exported through OpenTelemetry to external observability/SIEM-compatible backends."
         },
         {
           "path": "hosting.self_hosted",
@@ -3864,21 +3888,38 @@
           "note": "Gemini CLI can run on user/customer-managed local infrastructure rather than requiring a managed hosted agent runtime."
         },
         {
-          "path": "governance.audit_logs.available",
+          "path": "protocols.a2a.client",
           "value": true,
-          "scope": "gemini_cli_enterprise_telemetry",
+          "scope": "gemini_cli_remote_subagents",
           "confidence": "high",
           "verified_at": "2026-10-01",
           "evidence": [
             {
-              "title": "Gemini CLI Docs – Gemini CLI for the enterprise",
-              "url": "https://geminicli.com/docs/cli/enterprise/",
-              "note": "Google documents a Telemetry and auditing configuration for Gemini CLI that sends telemetry to a central location and tracks tool usage and other events.",
+              "title": "Gemini CLI Docs – Remote Subagents",
+              "url": "https://geminicli.com/docs/core/remote-agents/",
+              "note": "Google documents Gemini CLI connecting to compliant remote subagents using the Agent-to-Agent (A2A) protocol and delegating tasks to them.",
               "evidence_type": "technical_docs",
-              "source_section": "Telemetry and auditing"
+              "source_section": "Remote Subagents / Agent-to-Agent (A2A)"
             }
           ],
-          "note": "Gemini CLI provides configurable centralized telemetry specifically documented for auditing and monitoring."
+          "note": "Gemini CLI acts as an A2A client when delegating to remote subagents."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "gemini_cli",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Gemini CLI Docs – MCP servers",
+              "url": "https://geminicli.com/docs/tools/mcp-server/",
+              "note": "Google documents Gemini CLI discovering, connecting to, and executing tools from configured MCP servers.",
+              "evidence_type": "technical_docs",
+              "source_section": "Core integration architecture / MCP server configuration"
+            }
+          ],
+          "note": "Gemini CLI acts as an MCP client for configured MCP servers."
         }
       ]
     },
