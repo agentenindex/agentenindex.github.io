@@ -3910,6 +3910,223 @@
       ]
     },
     {
+      "agent_id": "AI-0054",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "claude_cowork_remote_connectors",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Get started with custom connectors using remote MCP",
+              "url": "https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp",
+              "note": "Anthropic states custom connectors using remote MCP are available in Cowork and let Claude connect to and use existing remote MCP servers.",
+              "evidence_type": "technical_docs",
+              "source_section": "Custom connectors / Remote MCP servers"
+            }
+          ],
+          "note": "Claude Cowork can act as an MCP client through remote custom connectors."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "claude_cowork_cloud_sessions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Use Claude Cowork on Team and Enterprise plans",
+              "url": "https://support.claude.com/en/articles/13455879-use-claude-cowork-on-team-and-enterprise-plans",
+              "note": "Anthropic documents Cowork cloud sessions running on Anthropic infrastructure.",
+              "evidence_type": "technical_docs",
+              "source_section": "Where Cowork runs"
+            }
+          ],
+          "note": "Cowork supports Anthropic-managed cloud execution."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "claude_cowork_local_sessions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Use Claude Cowork on Team and Enterprise plans",
+              "url": "https://support.claude.com/en/articles/13455879-use-claude-cowork-on-team-and-enterprise-plans",
+              "note": "Anthropic documents local Cowork sessions that execute on the user's computer in an isolated virtual machine.",
+              "evidence_type": "technical_docs",
+              "source_section": "Where Cowork runs"
+            }
+          ],
+          "note": "Cowork supports local execution on customer/user-managed computers."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "claude_team_enterprise_access_to_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Set up single sign-on (SSO)",
+              "url": "https://support.claude.com/en/articles/13132885-set-up-single-sign-on-sso",
+              "note": "Anthropic documents SAML SSO setup for Claude Team and Enterprise organizations, including Okta, Entra ID, Google, OneLogin, JumpCloud, and Duo SAML configurations.",
+              "evidence_type": "technical_docs",
+              "source_section": "Set up SSO with your Identity Provider"
+            },
+            {
+              "title": "Claude Help – Use Claude Cowork on Team and Enterprise plans",
+              "url": "https://support.claude.com/en/articles/13455879-use-claude-cowork-on-team-and-enterprise-plans",
+              "note": "Cowork is available within Team and Enterprise organizations and governed through organization controls.",
+              "evidence_type": "technical_docs",
+              "source_section": "Availability / Admin controls"
+            }
+          ],
+          "note": "Team and Enterprise users accessing Cowork can use Claude's documented SAML SSO."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "claude_enterprise_access_to_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Set up JIT or SCIM provisioning",
+              "url": "https://support.claude.com/en/articles/13133195-set-up-jit-or-scim-provisioning",
+              "note": "Anthropic documents SCIM directory sync for Enterprise organizations, including provisioning, deprovisioning, groups, and role mappings.",
+              "evidence_type": "technical_docs",
+              "source_section": "SCIM provisioning"
+            },
+            {
+              "title": "Claude Help – Manage custom roles on Enterprise plans",
+              "url": "https://support.claude.com/en/articles/13930452-manage-custom-roles-on-enterprise-plans",
+              "note": "Anthropic documents Cowork as a capability controlled through Enterprise custom roles and groups.",
+              "evidence_type": "technical_docs",
+              "source_section": "What are custom roles?"
+            }
+          ],
+          "note": "Enterprise organizations can provision Cowork users and groups through SCIM."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "claude_team_enterprise_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Roles and permissions",
+              "url": "https://support.claude.com/en/articles/9267276-roles-and-permissions",
+              "note": "Anthropic documents built-in Team/Enterprise roles and their permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Roles and permissions"
+            },
+            {
+              "title": "Claude Help – Use Claude Cowork on Team and Enterprise plans",
+              "url": "https://support.claude.com/en/articles/13455879-use-claude-cowork-on-team-and-enterprise-plans",
+              "note": "Anthropic documents organization- and group-level controls for enabling Cowork and Cowork cloud execution.",
+              "evidence_type": "technical_docs",
+              "source_section": "Admin controls"
+            }
+          ],
+          "note": "Cowork access is governed through Claude organization roles and permissions."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "claude_enterprise_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Manage custom roles on Enterprise plans",
+              "url": "https://support.claude.com/en/articles/13930452-manage-custom-roles-on-enterprise-plans",
+              "note": "Anthropic explicitly documents custom roles that can grant or restrict access to Claude Cowork and other capabilities.",
+              "evidence_type": "technical_docs",
+              "source_section": "What are custom roles?"
+            }
+          ],
+          "note": "Claude Enterprise custom roles can explicitly control Cowork access."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "claude_enterprise_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Access audit logs",
+              "url": "https://support.claude.com/en/articles/9970975-access-audit-logs",
+              "note": "Anthropic documents Enterprise organization audit logs and states audit-log events are available in the Compliance API.",
+              "evidence_type": "security_trust",
+              "source_section": "Access audit logs"
+            },
+            {
+              "title": "Claude Help – Monitor Claude Cowork activity with OpenTelemetry",
+              "url": "https://support.claude.com/en/articles/14477985-monitor-claude-cowork-activity-with-opentelemetry",
+              "note": "Anthropic states the Compliance API covers Cowork and provides one audit trail with sessions attributable to individual users.",
+              "evidence_type": "security_trust",
+              "source_section": "Joining OpenTelemetry data with the Compliance API"
+            }
+          ],
+          "note": "Claude Enterprise provides audit logs that cover Cowork activity."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "claude_enterprise_cowork_compliance_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Access audit logs",
+              "url": "https://support.claude.com/en/articles/9970975-access-audit-logs",
+              "note": "Anthropic explicitly states audit log events are available in the Compliance API.",
+              "evidence_type": "api_docs",
+              "source_section": "Access audit logs"
+            },
+            {
+              "title": "Claude Help – Monitor Claude Cowork activity with OpenTelemetry",
+              "url": "https://support.claude.com/en/articles/14477985-monitor-claude-cowork-activity-with-opentelemetry",
+              "note": "Anthropic states the Compliance API covers Cowork sessions.",
+              "evidence_type": "api_docs",
+              "source_section": "Joining OpenTelemetry data with the Compliance API"
+            }
+          ],
+          "note": "Cowork audit/session data is available programmatically through Anthropic's Compliance API."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "claude_team_enterprise_cowork_events",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help – Use Claude Cowork on Team and Enterprise plans",
+              "url": "https://support.claude.com/en/articles/13455879-use-claude-cowork-on-team-and-enterprise-plans",
+              "note": "Anthropic states Team and Enterprise owners can stream Cowork events to SIEM and observability tools through OpenTelemetry.",
+              "evidence_type": "security_trust",
+              "source_section": "OpenTelemetry"
+            },
+            {
+              "title": "Claude Help – Monitor Claude Cowork activity with OpenTelemetry",
+              "url": "https://support.claude.com/en/articles/14477985-monitor-claude-cowork-activity-with-opentelemetry",
+              "note": "Anthropic documents configuring an OTLP endpoint for Cowork security events and routing them to SIEM/observability systems.",
+              "evidence_type": "security_trust",
+              "source_section": "Configure OpenTelemetry / Security and privacy considerations"
+            }
+          ],
+          "note": "Cowork security and activity events can be exported to SIEM tooling through OpenTelemetry."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0057",
       "claims": [
         {
