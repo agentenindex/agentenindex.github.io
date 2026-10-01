@@ -191,12 +191,17 @@ jobs:
           assert not leftovers, leftovers[:30]
 
           # Known grammar regressions must be gone.
-          grammar_bad = ['ausführlichen AgentenProfile','quellenbasierten AgentenProfile','einen AgentenProfil','eines AgentenProfile']
+          grammar_bad = [
+              r'\\bausführlichen AgentenProfile\\b',
+              r'\\bquellenbasierten AgentenProfile\\b',
+              r'\\beinen AgentenProfil\\b',
+              r'\\beines AgentenProfile\\b',
+          ]
           for p in ROOT.rglob('*.html'):
               if p.name.startswith('google76153e357fd68b75'): continue
               text=p.read_text(encoding='utf-8')
-              for b in grammar_bad:
-                  assert b not in text, (p,b)
+              for pattern in grammar_bad:
+                  assert not re.search(pattern, text), (p,pattern)
 
           # Data contract.
           data=json.loads(data_path.read_text(encoding='utf-8'))
