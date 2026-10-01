@@ -41416,6 +41416,90 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-EDCF8EBC72306B37A5",
+      "agent_id": "AI-0056",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-14F0B6490BE841",
+          "SRC-DFD1C626824305"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_cloud_api_v4",
+        "note": "Browser Use provides a documented REST API for hosted agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DFD1C626824305",
+            "note": "Browser Use documents its API V4 REST interface for fully managed hosted web agents.",
+            "evidence_type": "api_docs",
+            "source_section": "Hosted Web Agents / API V4"
+          },
+          {
+            "source_id": "SRC-14F0B6490BE841",
+            "note": "Browser Use documents REST and SDK access to create and manage agent runs.",
+            "evidence_type": "api_docs",
+            "source_section": "Web agent API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-97F8F45B1D2362F049",
+      "agent_id": "AI-0056",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-14F0B6490BE841",
+          "SRC-DFD1C626824305"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_cloud_events",
+        "note": "Browser Use Cloud supports webhook delivery of agent events.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DFD1C626824305",
+            "note": "Browser Use lists Webhooks as a first-party developer interface alongside API V4, SDK, MCP, and OpenAPI.",
+            "evidence_type": "api_docs",
+            "source_section": "Developer toolkit"
+          },
+          {
+            "source_id": "SRC-14F0B6490BE841",
+            "note": "Browser Use states webhooks deliver agent events to customer backends.",
+            "evidence_type": "api_docs",
+            "source_section": "MCP, n8n, webhooks?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-434ED03616FAE76AAC",
       "agent_id": "AI-0056",
       "path": "audience",
@@ -41741,6 +41825,83 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-ECFA4D3FB85C1B2DF6",
+      "agent_id": "AI-0056",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-27B3C17BFC8252",
+          "SRC-DFD1C626824305"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_cloud_agents",
+        "note": "Browser Use offers fully managed hosted agents and browser infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DFD1C626824305",
+            "note": "Browser Use describes Hosted Web Agents as fully managed and running on managed browser infrastructure.",
+            "evidence_type": "official_product_page",
+            "source_section": "Hosted Web Agents"
+          },
+          {
+            "source_id": "SRC-27B3C17BFC8252",
+            "note": "The official Browser Use repository describes Cloud as the fully hosted product where remote browsers and agents are spun up on demand.",
+            "evidence_type": "official_github",
+            "source_section": "What is Browser Use Cloud?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7533BF7E7F2EA2D0E8",
+      "agent_id": "AI-0056",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-06269DC8C7B3F5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_open_source_agent",
+        "note": "Browser Use's open-source agent can run on customer-managed local or server infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-06269DC8C7B3F5",
+            "note": "The official Browser Use repository documents running the open-source Browser Use agent locally from Python and states the Python library and browsers can be hosted on customer infrastructure.",
+            "evidence_type": "official_github",
+            "source_section": "Path 3: Python Library / FAQ"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-38D495889A9E4BAE42",
       "agent_id": "AI-0056",
       "path": "identity.name",
@@ -41791,6 +41952,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-10A62D99C0671E86D4",
+      "agent_id": "AI-0056",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5A4B9B563A6D8F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_enterprise_cloud",
+        "note": "Browser Use Enterprise offers an EU data-residency option for agents and browsers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5A4B9B563A6D8F",
+            "note": "Browser Use states EU data residency for browsers and agents is available to enterprise customers on request.",
+            "evidence_type": "security_trust",
+            "source_section": "Data control"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4C3CA8309159398EC3",
       "agent_id": "AI-0056",
       "path": "profile.depth",
@@ -41839,6 +42035,153 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-3BB16BA6614C270A19",
+      "agent_id": "AI-0056",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AF4F9AAE9433C0",
+          "SRC-CA7E47CF4A0754"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_cloud_and_local_mcp",
+        "note": "Browser Use exposes both hosted and local MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AF4F9AAE9433C0",
+            "note": "Browser Use documents a hosted HTTP MCP server plus a local stdio MCP server that expose browser-agent tools to MCP clients.",
+            "evidence_type": "technical_docs",
+            "source_section": "Cloud, or your own Chrome / The six tools"
+          },
+          {
+            "source_id": "SRC-CA7E47CF4A0754",
+            "note": "Browser Use documents the hosted MCP server endpoint and free open-source local stdio MCP server.",
+            "evidence_type": "official_release",
+            "source_section": "Cloud MCP Server"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FDA17CCCAEDF0444D1",
+      "agent_id": "AI-0056",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-36A327E43FB4EF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_enterprise_cloud",
+        "note": "Browser Use documents encryption at rest in its enterprise security commitments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-36A327E43FB4EF",
+            "note": "Browser Use states its enterprise security terms include encryption at rest for the Browser Use service used in production.",
+            "evidence_type": "official_release",
+            "source_section": "Why a mortgage LOS chose Browser Use"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-18F5B125A199955112",
+      "agent_id": "AI-0056",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-36A327E43FB4EF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_enterprise_cloud",
+        "note": "Browser Use documents encryption in transit in its enterprise security commitments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-36A327E43FB4EF",
+            "note": "Browser Use states its enterprise security terms include encryption in transit for the Browser Use service used in production.",
+            "evidence_type": "official_release",
+            "source_section": "Why a mortgage LOS chose Browser Use"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-37C7E3FB37B59A6B36",
+      "agent_id": "AI-0056",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D764BFE58FAEE2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_cloud",
+        "note": "Browser Use documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D764BFE58FAEE2",
+            "note": "Browser Use states it is SOC 2 Type II compliant and provides the audit period and report-access details.",
+            "evidence_type": "security_trust",
+            "source_section": "SOC 2 Type II compliant"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-3D451C17B10B1F3A11",
