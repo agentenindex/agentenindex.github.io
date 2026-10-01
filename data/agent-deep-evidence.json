@@ -3891,6 +3891,40 @@
           "note": "Manus Team/Enterprise provides audit logs."
         },
         {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "manus_team",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Manus Help – Team roles and functions",
+              "url": "https://help.manus.im/en/articles/11711764-what-roles-are-in-the-team-version-and-what-are-the-functions-of-each-role",
+              "note": "Manus documents distinct Team roles—Owner, Super Admin, Admin, and Member—with different access and management permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Team roles"
+            }
+          ],
+          "note": "Manus Team uses documented role-based permissions for team administration and access."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "manus_standard_sandbox_and_cloud_computer",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Manus Help – What is the Cloud Computer?",
+              "url": "https://help.manus.im/en/articles/15392111-what-is-the-cloud-computer",
+              "note": "Manus documents its standard temporary sandbox and a fully isolated cloud-hosted persistent virtual machine used by Manus for execution.",
+              "evidence_type": "technical_docs",
+              "source_section": "How It Differs from the Temporary Sandbox / Cloud Computer vs. Manus Desktop"
+            }
+          ],
+          "note": "Manus provides managed cloud execution environments for agent tasks."
+        },
+        {
           "path": "security.soc2_type2",
           "value": true,
           "scope": "manus_service",
