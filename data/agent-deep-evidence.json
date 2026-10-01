@@ -1,0 +1,615 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-10-01",
+  "field_model": {
+    "principle": "Only explicitly supported values are stored. Absence of evidence is unknown, not false.",
+    "evidence_binding": "field_level",
+    "confidence_values": [
+      "high",
+      "medium",
+      "low"
+    ]
+  },
+  "agents": [
+    {
+      "agent_id": "AI-0057",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust states agents can connect to company tools through MCP servers."
+            }
+          ],
+          "note": "Dust acts as an MCP client for agent tool access."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – MCP and Enterprise Agents",
+              "url": "https://dust.tt/blog/mcp-and-enterprise-agents-building-the-ai-operating-system-for-work",
+              "note": "Dust explicitly describes its approach as both an MCP client and server."
+            }
+          ],
+          "note": "Dust documents MCP server capability in addition to client use."
+        },
+        {
+          "path": "protocols.mcp.remote",
+          "value": true,
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Pricing",
+              "url": "https://dust.tt/home/pricing",
+              "note": "The plan comparison explicitly lists native and remote MCP servers."
+            }
+          ],
+          "note": "Remote MCP servers are supported."
+        },
+        {
+          "path": "api.public",
+          "value": true,
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust lists an Open API and a RESTful API for custom integrations."
+            }
+          ],
+          "note": "A developer-facing API is documented."
+        },
+        {
+          "path": "api.type",
+          "value": "REST",
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "The integration architecture explicitly lists a RESTful API."
+            }
+          ],
+          "note": "REST is a documented API interface."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust lists webhook support for event-driven workflows."
+            }
+          ],
+          "note": "Webhook-based integrations are supported."
+        },
+        {
+          "path": "hosting.single_tenant",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Pricing",
+              "url": "https://dust.tt/home/pricing",
+              "note": "Enterprise includes single-tenant deployment."
+            }
+          ],
+          "note": "A single-tenant deployment option is documented."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Pricing",
+              "url": "https://dust.tt/home/pricing",
+              "note": "Dust lists US and EU data residency."
+            }
+          ],
+          "note": "Regional data residency is documented."
+        },
+        {
+          "path": "privacy.residency.region",
+          "value": "US",
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Pricing",
+              "url": "https://dust.tt/home/pricing",
+              "note": "US is listed as a supported data-residency region."
+            }
+          ],
+          "note": "US residency is available."
+        },
+        {
+          "path": "privacy.residency.region",
+          "value": "EU",
+          "scope": "business_and_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Pricing",
+              "url": "https://dust.tt/home/pricing",
+              "note": "EU is listed as a supported data-residency region."
+            }
+          ],
+          "note": "EU residency is available."
+        },
+        {
+          "path": "privacy.training.customer_data",
+          "value": false,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust states zero model training on customer data."
+            }
+          ],
+          "note": "Customer data is documented as not used for model training."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust explicitly lists SSO with SAML."
+            }
+          ],
+          "note": "SAML SSO is documented."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust explicitly lists SSO with OIDC."
+            }
+          ],
+          "note": "OIDC SSO is documented."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust lists SCIM provisioning."
+            }
+          ],
+          "note": "SCIM provisioning is documented."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust lists role-based access control/permissions."
+            }
+          ],
+          "note": "RBAC is documented."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust lists audit logs as an enterprise security capability."
+            }
+          ],
+          "note": "Audit logs are documented."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust specifies 365-day audit-log retention."
+            }
+          ],
+          "note": "Audit-log retention is documented as 365 days."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust states SOC 2 Type II certification."
+            }
+          ],
+          "note": "SOC 2 Type II is documented."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust specifies AES-256 encryption at rest."
+            }
+          ],
+          "note": "Encryption at rest is documented as AES-256."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.3",
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dust – Enterprise AI Agents",
+              "url": "https://dust.tt/home/enterprise",
+              "note": "Dust specifies TLS 1.3 in transit."
+            }
+          ],
+          "note": "Encryption in transit is documented as TLS 1.3."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0018",
+      "claims": [
+        {
+          "path": "hosting.cloud",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Overview",
+              "url": "https://docs.n8n.io/",
+              "note": "n8n documentation presents Cloud as a supported deployment option."
+            }
+          ],
+          "note": "n8n Cloud is available."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Overview",
+              "url": "https://docs.n8n.io/",
+              "note": "n8n documentation explicitly presents self-hosting as an option."
+            }
+          ],
+          "note": "Self-hosting is supported."
+        },
+        {
+          "path": "hosting.docker",
+          "value": true,
+          "scope": "self_hosted",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Overview",
+              "url": "https://docs.n8n.io/",
+              "note": "n8n documentation lists Docker as an installation option."
+            }
+          ],
+          "note": "Docker deployment is documented."
+        },
+        {
+          "path": "api.public",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Security audit",
+              "url": "https://docs.n8n.io/hosting/securing/security-audit/",
+              "note": "The security-audit documentation explicitly describes use through the public API."
+            }
+          ],
+          "note": "A public API is documented."
+        },
+        {
+          "path": "api.auth.api_key",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Source control environments",
+              "url": "https://docs.n8n.io/source-control-environments/create-environments/",
+              "note": "The official source-control tutorial authenticates an n8n API call with X-N8N-API-KEY."
+            }
+          ],
+          "note": "API-key authentication is documented."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – SAML setup",
+              "url": "https://docs.n8n.io/user-management/saml/n8n-saml-with-okta.pdf",
+              "note": "Official n8n documentation demonstrates SAML 2.0 SSO setup."
+            }
+          ],
+          "note": "SAML SSO is supported."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – OIDC setup",
+              "url": "https://docs.n8n.io/user-management/oidc/n8n-oidc-with-okta.pdf",
+              "note": "Official n8n documentation demonstrates OIDC SSO setup."
+            }
+          ],
+          "note": "OIDC SSO is supported."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Role-based access control",
+              "url": "https://docs.n8n.io/user-management/rbac/",
+              "note": "n8n documents role-based access control with instance and project roles."
+            }
+          ],
+          "note": "Role-based access control is documented."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Role-based access control",
+              "url": "https://docs.n8n.io/user-management/rbac/",
+              "note": "The RBAC documentation includes custom roles."
+            }
+          ],
+          "note": "Custom roles are documented."
+        },
+        {
+          "path": "security.security_audit",
+          "value": true,
+          "scope": "platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Security audit",
+              "url": "https://docs.n8n.io/hosting/securing/security-audit/",
+              "note": "n8n provides a security audit via CLI, public API, or n8n node."
+            }
+          ],
+          "note": "A built-in security audit capability is documented."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0086",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "framework",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Using MCP tools with Agents",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/user-guide/model-context-protocol/using-mcp-tools",
+              "note": "Microsoft documents connecting Agent Framework agents to MCP servers and using their tools."
+            }
+          ],
+          "note": "Agent Framework includes MCP client integration."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "framework",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft GitHub – Agent Framework MCP examples",
+              "url": "https://github.com/microsoft/agent-framework/blob/main/python/samples/02-agents/mcp/README.md",
+              "note": "The official MCP examples include exposing an Agent Framework agent as an MCP server."
+            }
+          ],
+          "note": "Agents can be exposed as MCP servers."
+        },
+        {
+          "path": "protocols.mcp.auth.api_key",
+          "value": true,
+          "scope": "framework",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft GitHub – Agent Framework MCP examples",
+              "url": "https://github.com/microsoft/agent-framework/blob/main/python/samples/02-agents/mcp/README.md",
+              "note": "The official MCP examples include API-key authentication for MCP connections."
+            }
+          ],
+          "note": "API-key authentication for MCP connections is documented."
+        },
+        {
+          "path": "protocols.a2a",
+          "value": true,
+          "scope": "framework",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Hosting Agent Framework applications",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/",
+              "note": "Microsoft documents A2A hosting and remote A2A agent services."
+            }
+          ],
+          "note": "A2A integration/hosting is documented."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "framework",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Hosting Agent Framework applications",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/",
+              "note": "Microsoft documents self-hosting Agent Framework applications."
+            }
+          ],
+          "note": "Self-hosting is supported."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "framework",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Hosting Agent Framework applications",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/",
+              "note": "Microsoft documents Foundry Hosted Agents as a managed hosting path."
+            }
+          ],
+          "note": "Managed hosting through Microsoft Foundry is documented."
+        },
+        {
+          "path": "hosting.managed_provider",
+          "value": "Microsoft Foundry",
+          "scope": "framework",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Hosting Agent Framework applications",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/",
+              "note": "Foundry Hosted Agents are the documented managed hosting option."
+            }
+          ],
+          "note": "Microsoft Foundry is a documented managed host."
+        },
+        {
+          "path": "api.openai_compatible",
+          "value": true,
+          "scope": "self_hosted_and_managed",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Hosting Agent Framework applications",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/",
+              "note": "The hosting documentation describes OpenAI-compatible Responses and Chat Completions endpoints."
+            }
+          ],
+          "note": "OpenAI-compatible serving endpoints are documented."
+        },
+        {
+          "path": "tools.mcp",
+          "value": true,
+          "scope": "framework",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Agent Framework overview",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/overview/",
+              "note": "The framework overview lists MCP clients for tool integration."
+            }
+          ],
+          "note": "MCP tools are a first-class Agent Framework integration."
+        }
+      ]
+    }
+  ]
+}
