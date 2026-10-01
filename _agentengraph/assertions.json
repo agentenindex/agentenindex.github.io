@@ -25223,6 +25223,40 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-5748F9FB406E9DCBD2",
+      "agent_id": "AI-0035",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-303FCA868F761D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_ai_agents_external_agent_protocols",
+        "note": "ServiceNow AI agents support A2A interoperability with external agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-303FCA868F761D",
+            "note": "ServiceNow documents bidirectional Agent2Agent integration for ServiceNow AI agents and external agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-CA11DF75559608F927",
       "agent_id": "AI-0035",
       "path": "protocols.mcp.auth.required",
@@ -25313,6 +25347,86 @@
             "source_id": "SRC-E4F0C801C5696C",
             "note": "ServiceNow describes its generally available MCP Server exposing governed enterprise actions.",
             "evidence_type": "official_release"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9D02442813700B650E",
+      "agent_id": "AI-0035",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-656F68A074D98B",
+          "SRC-AB0623B905B4E3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_platform_encryption_for_ai_agent_accessible_data",
+        "note": "ServiceNow platform data used by AI agents can be protected with the platform's customer-managed-key/BYOK encryption option where licensed.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AB0623B905B4E3",
+            "note": "ServiceNow documents Key Management Framework and Field Encryption as data-protection controls for Now Assist and AI-agent workflows.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-656F68A074D98B",
+            "note": "ServiceNow documents customer-managed keys/BYOK for ServiceNow Cloud Encryption, including customer key rotation and withdrawal controls.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D0A5BCCADD0F995600",
+      "agent_id": "AI-0035",
+      "path": "security.encryption.at_rest",
+      "value": "ServiceNow Field Encryption for protected instance fields",
+      "value_hash": "8fa4256447592ba5",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AB0623B905B4E3",
+          "SRC-E76A095A834D43"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sensitive_instance_fields_accessed_by_now_assist_ai_agents",
+        "note": "Sensitive ServiceNow instance fields used by AI agents can be protected at rest with ServiceNow Field Encryption.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AB0623B905B4E3",
+            "note": "ServiceNow documents Field Encryption for sensitive data at rest and explicitly states AI agents require appropriate permissions to access encrypted fields.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-E76A095A834D43",
+            "note": "ServiceNow states Now Assist AI agents inherit the ServiceNow AI Platform security model and its data-protection controls.",
+            "evidence_type": "security_trust"
           }
         ]
       },

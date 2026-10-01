@@ -2670,6 +2670,9 @@
         "protocols.a2a.server": [
           true
         ],
+        "protocols.a2a.supported": [
+          true
+        ],
         "protocols.mcp.auth.required": [
           true
         ],
@@ -2678,6 +2681,12 @@
         ],
         "protocols.mcp.server": [
           true
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "ServiceNow Field Encryption for protected instance fields"
         ],
         "security.encryption.in_transit": [
           "TLS 1.2"

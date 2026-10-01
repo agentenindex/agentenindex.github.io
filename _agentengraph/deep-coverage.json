@@ -32,8 +32,8 @@
     "security.soc2_type2"
   ],
   "state_totals": {
-    "unknown": 2543,
-    "documented_true_or_value": 207
+    "unknown": 2540,
+    "documented_true_or_value": 210
   },
   "domain_totals": {
     "api": {
@@ -53,12 +53,12 @@
       "documented_true_or_value": 22
     },
     "protocols": {
-      "unknown": 507,
-      "documented_true_or_value": 43
+      "unknown": 506,
+      "documented_true_or_value": 44
     },
     "security": {
-      "unknown": 414,
-      "documented_true_or_value": 26
+      "unknown": 412,
+      "documented_true_or_value": 28
     }
   },
   "agents": {
@@ -1151,13 +1151,13 @@
       }
     },
     "AI-0035": {
-      "documented_fields": 7,
-      "unknown_fields": 18,
-      "coverage_pct": 28.0,
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
       "states": {
         "protocols.mcp.client": "documented_true_or_value",
         "protocols.mcp.server": "documented_true_or_value",
-        "protocols.a2a.supported": "unknown",
+        "protocols.a2a.supported": "documented_true_or_value",
         "protocols.a2a.client": "documented_true_or_value",
         "protocols.a2a.server": "documented_true_or_value",
         "api.rest": "unknown",
@@ -1176,9 +1176,9 @@
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",
         "governance.audit_logs.siem_export": "unknown",
-        "security.encryption.at_rest": "unknown",
+        "security.encryption.at_rest": "documented_true_or_value",
         "security.encryption.in_transit": "documented_true_or_value",
-        "security.customer_managed_key": "unknown",
+        "security.customer_managed_key": "documented_true_or_value",
         "security.soc2_type2": "unknown"
       }
     },
