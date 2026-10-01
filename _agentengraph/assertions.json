@@ -41987,6 +41987,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-FB2CB989236928D801",
+      "agent_id": "AI-0056",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5A4B9B563A6D8F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_enterprise_cloud",
+        "note": "Enterprise customers can request EU residency for Browser Use agents and browsers, providing a customer-selected regional residency option.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5A4B9B563A6D8F",
+            "note": "Browser Use states EU data residency for browsers and agents is available to enterprise customers on request.",
+            "evidence_type": "security_trust",
+            "source_section": "Data control"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4C3CA8309159398EC3",
       "agent_id": "AI-0056",
       "path": "profile.depth",
@@ -42079,6 +42114,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-18C2D9BCB939210429",
+      "agent_id": "AI-0056",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-92CB0CBBAE2D96"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_enterprise_cloud",
+        "note": "Browser Use documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-92CB0CBBAE2D96",
+            "note": "Browser Use states customer personal data at rest is encrypted with the industry-standard AES-256 algorithm.",
+            "evidence_type": "security_trust",
+            "source_section": "Annex – Specific Measures / Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-FDA17CCCAEDF0444D1",
       "agent_id": "AI-0056",
       "path": "security.encryption.at_rest",
@@ -42108,7 +42178,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-01",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-01",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -42137,6 +42207,41 @@
             "note": "Browser Use states its enterprise security terms include encryption in transit for the Browser Use service used in production.",
             "evidence_type": "official_release",
             "source_section": "Why a mortgage LOS chose Browser Use"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-10-01",
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C61448B9847C63C3F5",
+      "agent_id": "AI-0056",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-92CB0CBBAE2D96"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "browser_use_enterprise_cloud",
+        "note": "Browser Use documents HTTPS/TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-92CB0CBBAE2D96",
+            "note": "Browser Use states all data in transit is secured using HTTPS with TLS 1.2 or greater.",
+            "evidence_type": "security_trust",
+            "source_section": "Annex – Specific Measures / Encryption"
           }
         ]
       },

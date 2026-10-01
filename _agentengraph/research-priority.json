@@ -21,9 +21,9 @@
     "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified."
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 5,
+    "agents_below_target_with_deep_evidence": 4,
     "agents_without_deep_evidence": 73,
-    "agents_at_or_above_target": 32
+    "agents_at_or_above_target": 33
   },
   "field_priorities": [
     {
@@ -111,16 +111,16 @@
       "coverage_pct": 12.73
     },
     {
-      "path": "privacy.residency.customer_region_selectable",
+      "path": "security.soc2_type2",
       "documented_agents": 15,
       "unknown_agents": 95,
       "coverage_pct": 13.64
     },
     {
-      "path": "security.soc2_type2",
-      "documented_agents": 15,
-      "unknown_agents": 95,
-      "coverage_pct": 13.64
+      "path": "privacy.residency.customer_region_selectable",
+      "documented_agents": 16,
+      "unknown_agents": 94,
+      "coverage_pct": 14.55
     },
     {
       "path": "security.encryption.in_transit",
@@ -641,133 +641,6 @@
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Google Gemini CLI official documentation governance custom_roles"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0056",
-      "name": "Browser Use Agent",
-      "provider_id": "PROV-BROWSER-USE",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 89.2,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 1.0,
-        "unknown_share": 3.2,
-        "source_readiness": 5.0
-      },
-      "documented_fields": 9,
-      "unknown_fields": 16,
-      "coverage_pct": 36.0,
-      "fields_needed_for_40pct": 1,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "governance.audit_logs.api",
-        "governance.audit_logs.siem_export"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Browser Use GitHub – CLOUD.md",
-          "url": "https://github.com/browser-use/browser-use/blob/main/CLOUD.md",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_github"
-        },
-        {
-          "title": "Browser Use GitHub – README",
-          "url": "https://github.com/browser-use/browser-use/blob/main/README.md",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_github"
-        },
-        {
-          "title": "Browser Use – Developers",
-          "url": "https://browser-use.com/developers",
-          "origin": "field_level_evidence",
-          "evidence_type": "api_docs"
-        },
-        {
-          "title": "Browser Use – Enterprise",
-          "url": "https://browser-use.com/enterprise",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "Browser Use – MCP Server changelog",
-          "url": "https://browser-use.com/changelog/21-11-2025",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "Browser Use – MCP server for browser automation",
-          "url": "https://browser-use.com/mcp",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Browser Use – SOC 2 Compliance",
-          "url": "https://browser-use.com/security/soc2",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "Browser Use – Vesta customer security case study",
-          "url": "https://browser-use.com/posts/vesta",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 5,
-          "global_coverage_pct": 4.55,
-          "suggested_query": "Browser Use Browser Use Agent official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Browser Use Browser Use Agent official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Browser Use Browser Use Agent official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Browser Use Browser Use Agent official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "Browser Use Browser Use Agent official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Browser Use Browser Use Agent official documentation protocols a2a supported"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Browser Use Browser Use Agent official documentation governance audit_logs api"
-        },
-        {
-          "path": "governance.audit_logs.siem_export",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Browser Use Browser Use Agent official documentation governance audit_logs siem_export"
         }
       ]
     },
@@ -8785,6 +8658,133 @@
       ]
     },
     {
+      "agent_id": "AI-0056",
+      "name": "Browser Use Agent",
+      "provider_id": "PROV-BROWSER-USE",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 28.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "governance.audit_logs.api",
+        "governance.audit_logs.siem_export"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Browser Use GitHub – CLOUD.md",
+          "url": "https://github.com/browser-use/browser-use/blob/main/CLOUD.md",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_github"
+        },
+        {
+          "title": "Browser Use GitHub – README",
+          "url": "https://github.com/browser-use/browser-use/blob/main/README.md",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_github"
+        },
+        {
+          "title": "Browser Use – Data Processing Addendum",
+          "url": "https://browser-use.com/dpa",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Browser Use – Developers",
+          "url": "https://browser-use.com/developers",
+          "origin": "field_level_evidence",
+          "evidence_type": "api_docs"
+        },
+        {
+          "title": "Browser Use – Enterprise",
+          "url": "https://browser-use.com/enterprise",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Browser Use – MCP Server changelog",
+          "url": "https://browser-use.com/changelog/21-11-2025",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Browser Use – MCP server for browser automation",
+          "url": "https://browser-use.com/mcp",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Browser Use – SOC 2 Compliance",
+          "url": "https://browser-use.com/security/soc2",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 5,
+          "global_coverage_pct": 4.55,
+          "suggested_query": "Browser Use Browser Use Agent official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Browser Use Browser Use Agent official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Browser Use Browser Use Agent official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Browser Use Browser Use Agent official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 9,
+          "global_coverage_pct": 8.18,
+          "suggested_query": "Browser Use Browser Use Agent official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Browser Use Browser Use Agent official documentation protocols a2a supported"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Browser Use Browser Use Agent official documentation governance audit_logs api"
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Browser Use Browser Use Agent official documentation governance audit_logs siem_export"
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0065",
       "name": "GitLab Duo Agent Platform",
       "provider_id": "PROV-GITLAB",
@@ -9189,7 +9189,7 @@
         "governance.custom_roles",
         "governance.scim",
         "security.customer_managed_key",
-        "privacy.residency.customer_region_selectable"
+        "security.soc2_type2"
       ],
       "available_primary_sources": [
         {
@@ -9285,10 +9285,10 @@
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation security customer_managed_key"
         },
         {
-          "path": "privacy.residency.customer_region_selectable",
+          "path": "security.soc2_type2",
           "documented_agents": 15,
           "global_coverage_pct": 13.64,
-          "suggested_query": "Microsoft Microsoft Agent Framework official documentation privacy residency customer_region_selectable"
+          "suggested_query": "Microsoft Microsoft Agent Framework official documentation security soc2_type2"
         }
       ]
     },
@@ -10409,8 +10409,8 @@
         },
         {
           "path": "privacy.residency.customer_region_selectable",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Anthropic Claude Code official documentation privacy residency customer_region_selectable"
         }
       ]

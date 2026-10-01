@@ -6298,6 +6298,22 @@
       "origin": "graph_diff"
     },
     {
+      "event_id": "EVT-653D5BE0B6F018E017",
+      "agent_id": "AI-0056",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.in_transit",
+      "before": [
+        true
+      ],
+      "after": [
+        "TLS 1.2+"
+      ],
+      "description": "Strukturierter Wert für security.encryption.in_transit hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
       "event_id": "EVT-836D39B07221780EB0",
       "agent_id": "AI-0056",
       "date": "2026-10-01",
@@ -6379,6 +6395,36 @@
         true
       ],
       "description": "Strukturierter Wert für protocols.mcp.server hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-C2B83D7DDF13B628C7",
+      "agent_id": "AI-0056",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.at_rest",
+      "before": [
+        true
+      ],
+      "after": [
+        "AES-256"
+      ],
+      "description": "Strukturierter Wert für security.encryption.at_rest hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-C58907004EAC241223",
+      "agent_id": "AI-0056",
+      "date": "2026-10-01",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "privacy.residency.customer_region_selectable",
+      "before": [],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für privacy.residency.customer_region_selectable hat sich geändert.",
       "origin": "graph_diff"
     },
     {
