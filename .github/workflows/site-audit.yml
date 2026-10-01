@@ -197,7 +197,12 @@ jobs:
           urls=[]
           for a in data.get('agents',[]):
               for s in a.get('sources',[]):
-                  u=s.get('url') if isinstance(s,dict) else None
+                  if isinstance(s,dict):
+                      u=s.get('url')
+                  elif isinstance(s,(list,tuple)) and len(s)>=2:
+                      u=s[1]
+                  else:
+                      u=None
                   if u and u.startswith(('http://','https://')):
                       urls.append((a.get('slug','?'),u))
           seen={}
