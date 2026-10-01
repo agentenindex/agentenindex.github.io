@@ -22,6 +22,7 @@ assertions=load("assertions.json")
 events=load("events.json")
 coverage=load("coverage.json")
 deep_coverage=load("deep-coverage.json")
+research_priority=load("research-priority.json")
 snapshot=json.loads((OUT/"snapshots"/"current.json").read_text(encoding="utf-8"))
 
 errors=[]
@@ -62,6 +63,31 @@ for aid, report in (deep_coverage.get("agents") or {}).items():
         errors.append(f"{aid}: invalid deep completeness states {sorted(bad)}")
     if report.get("unknown_fields") != sum(1 for state in states.values() if state=="unknown"):
         errors.append(f"{aid}: unknown field count mismatch")
+
+# Research priority report must stay aligned with deep coverage.
+rp_agents=research_priority.get("agents") or []
+if {item.get("agent_id") for item in rp_agents} != agent_ids:
+    errors.append("Research priority agent set mismatch")
+target=research_priority.get("target") or {}
+if target.get("core_fields") != len(expected_completeness_fields):
+    errors.append("Research priority core field count mismatch")
+if target.get("minimum_core_coverage_pct") != 40:
+    errors.append("Research priority minimum coverage target must be 40")
+valid_priorities={"P0_raise_existing_to_40pct","P1_start_zero_coverage","P2_maintain_or_deepen"}
+deep_agent_ids={entry.get("agent_id") for entry in DEEP.get("agents",[])}
+for item in rp_agents:
+    aid=item.get("agent_id")
+    if item.get("priority") not in valid_priorities:
+        errors.append(f"{aid}: invalid research priority {item.get('priority')}")
+    report=(deep_coverage.get("agents") or {}).get(aid) or {}
+    if item.get("documented_fields") != report.get("documented_fields"):
+        errors.append(f"{aid}: research priority documented count mismatch")
+    if item.get("unknown_fields") != report.get("unknown_fields"):
+        errors.append(f"{aid}: research priority unknown count mismatch")
+    if aid in deep_agent_ids and report.get("coverage_pct",0) < 40 and item.get("priority")!="P0_raise_existing_to_40pct":
+        errors.append(f"{aid}: below-target deep agent not marked P0")
+    if aid not in deep_agent_ids and item.get("priority")!="P1_start_zero_coverage":
+        errors.append(f"{aid}: zero-coverage agent not marked P1")
 
 # Curated deep evidence must be explicit, deduplicated and resolve to known agents/sources.
 deep_keys=set()
