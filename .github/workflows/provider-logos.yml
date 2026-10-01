@@ -1,0 +1,318 @@
+name: Install provider logo system
+
+on:
+  push:
+    paths:
+      - '_provider-logos/trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build local provider logo library
+        shell: bash
+        run: |
+          npm install --no-save simple-icons@latest >/dev/null 2>&1
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+
+          (async () => {
+            const mod = await import('simple-icons');
+            const icons = Object.values(mod).filter(x =>
+              x && typeof x === 'object' && typeof x.title === 'string' &&
+              typeof x.path === 'string' && typeof x.hex === 'string'
+            );
+
+            const norm = s => String(s || '')
+              .normalize('NFKD')
+              .replace(/[\u0300-\u036f]/g,'')
+              .toLowerCase()
+              .replace(/&/g,'and')
+              .replace(/\.com/g,'dotcom')
+              .replace(/[^a-z0-9]/g,'');
+
+            const aliases = {
+              'AWS':'Amazon Web Services',
+              'Google Cloud':'Google Cloud',
+              'monday.com':'monday.com',
+              'Mistral AI':'Mistral AI',
+              'NiCE Cognigy':'Cognigy',
+              'Zendesk / Forethought':'Zendesk',
+              'Thomson Reuters':'Thomson Reuters',
+              'Relay.app':'Relay',
+              'Relevance AI':'Relevance AI',
+              'Tray.ai':'Tray.io',
+              'Kore.ai':'Kore.ai',
+              'xAI':'xAI',
+              'You.com':'You.com'
+            };
+
+            const byNorm = new Map();
+            for (const i of icons) byNorm.set(norm(i.title), i);
+
+            const dataPath = 'data/agents.json';
+            const data = JSON.parse(fs.readFileSync(dataPath,'utf8'));
+            fs.mkdirSync('assets/provider-logos',{recursive:true});
+
+            function providerSlug(name){
+              return name.toLowerCase()
+                .normalize('NFKD').replace(/[\u0300-\u036f]/g,'')
+                .replace(/&/g,'and')
+                .replace(/[^a-z0-9]+/g,'-')
+                .replace(/^-+|-+$/g,'');
+            }
+
+            function firstOfficialUrl(agent){
+              for (const s of (agent.sources || [])){
+                let u = null;
+                if (Array.isArray(s) && s.length >= 2) u = s[1];
+                else if (s && typeof s === 'object') u = s.url;
+                if (typeof u === 'string' && /^https?:\/\//.test(u)) return u;
+              }
+              return null;
+            }
+
+            function initials(name){
+              const bits = name.replace(/\/.*$/,'').split(/[^A-Za-z0-9]+/).filter(Boolean);
+              if (!bits.length) return 'AI';
+              if (bits.length === 1) return bits[0].slice(0,2).toUpperCase();
+              return (bits[0][0] + bits[1][0]).toUpperCase();
+            }
+
+            function fallbackSvg(name){
+              const label = initials(name);
+              const hue = [...name].reduce((n,c)=>n+c.charCodeAt(0),0) % 360;
+              return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="${name.replace(/&/g,'&amp;')}"><rect width="128" height="128" rx="30" fill="hsl(${hue} 58% 94%)"/><rect x="1" y="1" width="126" height="126" rx="29" fill="none" stroke="hsl(${hue} 38% 80%)" stroke-width="2"/><text x="64" y="76" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="800" fill="hsl(${hue} 55% 32%)">${label}</text></svg>`;
+            }
+
+            const providerAgents = new Map();
+            for (const a of data.agents){
+              if (!providerAgents.has(a.provider)) providerAgents.set(a.provider,a);
+            }
+
+            const logoMap = {};
+            let simpleCount=0, faviconCount=0, fallbackCount=0;
+
+            for (const [provider, agent] of providerAgents.entries()){
+              const slug = providerSlug(provider);
+              const wanted = aliases[provider] || provider;
+              let icon = byNorm.get(norm(wanted));
+
+              if (icon){
+                const file = `assets/provider-logos/${slug}.svg`;
+                const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="${provider.replace(/&/g,'&amp;')}"><path fill="#${icon.hex}" d="${icon.path}"/></svg>`;
+                fs.writeFileSync(file,svg);
+                logoMap[provider] = {path:'/'+file,type:'brand',source:'simple-icons',title:icon.title};
+                simpleCount++;
+                continue;
+              }
+
+              const sourceUrl = firstOfficialUrl(agent);
+              let faviconOk = false;
+              if (sourceUrl){
+                try{
+                  const fav = `https://www.google.com/s2/favicons?domain_url=${encodeURIComponent(sourceUrl)}&sz=128`;
+                  const res = await fetch(fav,{headers:{'User-Agent':'AgentenIndexLogoBuilder/1.0'}});
+                  if (res.ok){
+                    const buf = Buffer.from(await res.arrayBuffer());
+                    if (buf.length > 150){
+                      const file = `assets/provider-logos/${slug}.png`;
+                      fs.writeFileSync(file,buf);
+                      logoMap[provider] = {path:'/'+file,type:'favicon',source:sourceUrl};
+                      faviconCount++;
+                      faviconOk = true;
+                    }
+                  }
+                }catch(e){}
+              }
+              if (faviconOk) continue;
+
+              const file = `assets/provider-logos/${slug}.svg`;
+              fs.writeFileSync(file,fallbackSvg(provider));
+              logoMap[provider] = {path:'/'+file,type:'monogram',source:null};
+              fallbackCount++;
+            }
+
+            for (const a of data.agents){
+              const entry = logoMap[a.provider];
+              a.provider_logo = entry.path;
+              a.provider_logo_type = entry.type;
+            }
+            data.schema_version = '5.2';
+            data.updated = '2026-10-01';
+            fs.writeFileSync(dataPath,JSON.stringify(data,null,2)+'\n');
+
+            fs.writeFileSync('data/provider-logos.json',JSON.stringify({
+              updated:'2026-10-01',
+              providers:Object.keys(logoMap).length,
+              logos:logoMap
+            },null,2)+'\n');
+
+            console.log(JSON.stringify({
+              providers:Object.keys(logoMap).length,
+              simple_icons:simpleCount,
+              favicons:faviconCount,
+              monograms:fallbackCount
+            }));
+          })().catch(e=>{console.error(e);process.exit(1)});
+          NODE
+
+      - name: Add logos to agent cards and profiles
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,re
+
+          data=json.loads(Path('data/agents.json').read_text(encoding='utf-8'))
+          agents={a['slug']:a for a in data['agents']}
+
+          # Individual AgentenProfil hero: replace generic AI core with real provider mark.
+          for slug,a in agents.items():
+              p=Path('agenten')/slug/'index.html'
+              if not p.exists():
+                  continue
+              s=p.read_text(encoding='utf-8')
+              img=f'<img src="{a["provider_logo"]}" alt="" aria-hidden="true" loading="eager" decoding="async"/>'
+              s=s.replace('<div class="v7p-orbit-core">AI</div>',f'<div class="v7p-orbit-core">{img}</div>')
+              p.write_text(s,encoding='utf-8')
+
+          # Any agent card on home, index, category and related sections.
+          target_classes=('agent-list-card','v73agent','v73-related-card')
+          for p in Path('.').rglob('*.html'):
+              if '.git' in p.parts:
+                  continue
+              s=p.read_text(encoding='utf-8')
+              original=s
+              for slug,a in agents.items():
+                  href=f'/agenten/{slug}/'
+                  if href not in s:
+                      continue
+                  pattern=re.compile(rf'<a\b[^>]*href="{re.escape(href)}"[^>]*>',re.I)
+                  def repl(m):
+                      tag=m.group(0)
+                      cm=re.search(r'class="([^"]*)"',tag,re.I)
+                      if not cm or not any(c in cm.group(1).split() for c in target_classes):
+                          return tag
+                      # Don't duplicate on reruns.
+                      after=s[m.end():m.end()+180]
+                      if 'agent-provider-mark' in after:
+                          return tag
+                      logo=(f'<span class="agent-provider-mark" aria-hidden="true">'
+                            f'<img src="{a["provider_logo"]}" alt="" loading="lazy" decoding="async"/>'
+                            f'</span>')
+                      return tag+logo
+                  s=pattern.sub(repl,s)
+              if s!=original:
+                  p.write_text(s,encoding='utf-8')
+
+          # Design preview uses its own CSS/markup; add logos to the six preview cards too.
+          preview=Path('design-next/index.html')
+          if preview.exists():
+              s=preview.read_text(encoding='utf-8')
+              for slug in ['chatgpt-deep-research','claude-code','gemini-deep-research','devin','salesforce-agentforce','intercom-fin']:
+                  a=agents[slug]
+                  href=f'/agenten/{slug}/'
+                  pat=re.compile(rf'(<a class="agent" href="{re.escape(href)}">)(?!\s*<span class="preview-provider-logo")')
+                  logo=f'<span class="preview-provider-logo" aria-hidden="true"><img src="{a["provider_logo"]}" alt=""/></span>'
+                  s=pat.sub(r'\1'+logo,s)
+              if '.preview-provider-logo{' not in s:
+                  s=s.replace('</style>','''
+.preview-provider-logo{position:absolute;right:22px;top:54px;width:54px;height:54px;border:1px solid #e4eaf3;border-radius:16px;background:rgba(255,255,255,.92);display:grid;place-items:center;box-shadow:0 8px 24px rgba(34,62,98,.07)}
+.preview-provider-logo img{width:32px;height:32px;object-fit:contain}
+.agent{position:relative}
+.agent .agent-title{padding-right:66px}
+</style>''')
+              preview.write_text(s,encoding='utf-8')
+
+          css_path=Path('assets/styles.css')
+          css=css_path.read_text(encoding='utf-8')
+          block='''
+
+/* AgentenIndex provider logos — local, reusable brand layer */
+.agent-list-card,
+.v73agent,
+.v73-related-card{position:relative}
+.agent-provider-mark{
+  width:46px;height:46px;border-radius:14px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.94);
+  border:1px solid #e4e7e0;
+  box-shadow:0 8px 24px rgba(24,31,26,.07);
+}
+.agent-provider-mark img{
+  width:28px;height:28px;object-fit:contain;display:block;
+}
+.agent-list-card .agent-provider-mark{
+  position:absolute;right:18px;top:18px;
+}
+.agent-list-card{
+  padding-right:82px!important;
+}
+.v73agent .agent-provider-mark{
+  position:absolute;right:20px;top:58px;
+}
+.v73agent h3{
+  padding-right:58px;
+}
+.v73-related-card .agent-provider-mark{
+  position:absolute;right:16px;top:16px;
+}
+.v7p-orbit-core{
+  background:#fff!important;
+  border:1px solid rgba(221,226,218,.9);
+  box-shadow:0 0 0 10px rgba(205,164,75,.08),0 18px 45px rgba(20,24,21,.14)!important;
+}
+.v7p-orbit-core img{
+  width:48px;height:48px;object-fit:contain;display:block;
+}
+@media(max-width:620px){
+  .agent-list-card .agent-provider-mark{width:40px;height:40px;right:14px;top:14px}
+  .agent-list-card .agent-provider-mark img{width:24px;height:24px}
+  .agent-list-card{padding-right:68px!important}
+  .v73agent .agent-provider-mark{width:40px;height:40px;right:16px;top:54px}
+  .v73agent .agent-provider-mark img{width:24px;height:24px}
+}
+'''
+          if 'AgentenIndex provider logos — local, reusable brand layer' not in css:
+              css_path.write_text(css+block,encoding='utf-8')
+
+          # Validation
+          for slug,a in agents.items():
+              p=Path('agenten')/slug/'index.html'
+              assert p.exists(),slug
+              s=p.read_text(encoding='utf-8')
+              assert a['provider_logo'] in s,(slug,a['provider_logo'])
+              logo_path=Path(a['provider_logo'].lstrip('/'))
+              assert logo_path.exists(),logo_path
+
+          idx=Path('agenten/index.html').read_text(encoding='utf-8')
+          assert idx.count('agent-provider-mark') >= 100, idx.count('agent-provider-mark')
+          print('Profiles with provider logos:',len(agents))
+          print('Agent index card logos:',idx.count('agent-provider-mark'))
+          PY
+
+      - name: Commit logo system
+        shell: bash
+        run: |
+          rm -rf _provider-logos
+          rm -f .github/workflows/provider-logos.yml
+          rm -rf node_modules package-lock.json package.json
+          git config user.name "AgentenIndex"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --stat
+          git commit -m "Add provider logos across AgentenIndex [skip ci]"
+          git push origin main
