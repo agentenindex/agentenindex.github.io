@@ -32,8 +32,8 @@
     "security.soc2_type2"
   ],
   "state_totals": {
-    "unknown": 2485,
-    "documented_true_or_value": 264,
+    "unknown": 2482,
+    "documented_true_or_value": 267,
     "documented_false": 1
   },
   "domain_totals": {
@@ -42,21 +42,21 @@
       "documented_true_or_value": 19
     },
     "governance": {
-      "unknown": 894,
-      "documented_true_or_value": 95,
+      "unknown": 893,
+      "documented_true_or_value": 96,
       "documented_false": 1
     },
     "hosting": {
-      "unknown": 302,
-      "documented_true_or_value": 28
+      "unknown": 301,
+      "documented_true_or_value": 29
     },
     "privacy": {
       "unknown": 191,
       "documented_true_or_value": 29
     },
     "protocols": {
-      "unknown": 500,
-      "documented_true_or_value": 50
+      "unknown": 499,
+      "documented_true_or_value": 51
     },
     "security": {
       "unknown": 397,
@@ -2081,11 +2081,11 @@
       }
     },
     "AI-0064": {
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
+      "documented_fields": 3,
+      "unknown_fields": 22,
+      "coverage_pct": 12.0,
       "states": {
-        "protocols.mcp.client": "unknown",
+        "protocols.mcp.client": "documented_true_or_value",
         "protocols.mcp.server": "unknown",
         "protocols.a2a.supported": "unknown",
         "protocols.a2a.client": "unknown",
@@ -2093,7 +2093,7 @@
         "api.rest": "unknown",
         "api.webhooks": "unknown",
         "hosting.managed": "unknown",
-        "hosting.self_hosted": "unknown",
+        "hosting.self_hosted": "documented_true_or_value",
         "hosting.private_network": "unknown",
         "privacy.residency.available": "unknown",
         "privacy.residency.customer_region_selectable": "unknown",
@@ -2102,7 +2102,7 @@
         "governance.scim": "unknown",
         "governance.rbac": "unknown",
         "governance.custom_roles": "unknown",
-        "governance.audit_logs.available": "unknown",
+        "governance.audit_logs.available": "documented_true_or_value",
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",
         "governance.audit_logs.siem_export": "unknown",

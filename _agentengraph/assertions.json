@@ -44277,6 +44277,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-D5E9A6D58EC7BA5CB1",
+      "agent_id": "AI-0064",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D532CB78204BA5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_cli_enterprise_telemetry",
+        "note": "Gemini CLI provides configurable centralized telemetry specifically documented for auditing and monitoring.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D532CB78204BA5",
+            "note": "Google documents a Telemetry and auditing configuration for Gemini CLI that sends telemetry to a central location and tracks tool usage and other events.",
+            "evidence_type": "technical_docs",
+            "source_section": "Telemetry and auditing"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BA20B03618A5ED21E8",
+      "agent_id": "AI-0064",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D08F663F2DAFCD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_cli_local_runtime",
+        "note": "Gemini CLI can run on user/customer-managed local infrastructure rather than requiring a managed hosted agent runtime.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D08F663F2DAFCD",
+            "note": "Google documents installing Gemini CLI on macOS, Windows, or Linux and running it locally with the gemini command, including execution from source or in a local container.",
+            "evidence_type": "technical_docs",
+            "source_section": "Install Gemini CLI / Run Gemini CLI"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F90A87F1B65A9AE5DE",
       "agent_id": "AI-0064",
       "path": "identity.name",
@@ -44371,6 +44441,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-24075230E34CC850A5",
+      "agent_id": "AI-0064",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7392FD2C0C700B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_cli",
+        "note": "Gemini CLI acts as an MCP client for configured MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7392FD2C0C700B",
+            "note": "Google documents Gemini CLI discovering, connecting to, and executing tools from configured MCP servers.",
+            "evidence_type": "technical_docs",
+            "source_section": "Core integration architecture / MCP server configuration"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-1224ADB91C40E3DD35",

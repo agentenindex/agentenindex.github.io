@@ -21,8 +21,8 @@
     "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified."
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 0,
-    "agents_without_deep_evidence": 85,
+    "agents_below_target_with_deep_evidence": 1,
+    "agents_without_deep_evidence": 84,
     "agents_at_or_above_target": 25
   },
   "field_priorities": [
@@ -81,12 +81,6 @@
       "coverage_pct": 7.27
     },
     {
-      "path": "hosting.self_hosted",
-      "documented_agents": 8,
-      "unknown_agents": 102,
-      "coverage_pct": 7.27
-    },
-    {
       "path": "protocols.a2a.server",
       "documented_agents": 8,
       "unknown_agents": 102,
@@ -106,6 +100,12 @@
     },
     {
       "path": "governance.scim",
+      "documented_agents": 9,
+      "unknown_agents": 101,
+      "coverage_pct": 8.18
+    },
+    {
+      "path": "hosting.self_hosted",
       "documented_agents": 9,
       "unknown_agents": 101,
       "coverage_pct": 8.18
@@ -160,15 +160,15 @@
     },
     {
       "path": "governance.audit_logs.available",
-      "documented_agents": 19,
-      "unknown_agents": 91,
-      "coverage_pct": 17.27
+      "documented_agents": 20,
+      "unknown_agents": 90,
+      "coverage_pct": 18.18
     },
     {
       "path": "protocols.mcp.client",
-      "documented_agents": 21,
-      "unknown_agents": 89,
-      "coverage_pct": 19.09
+      "documented_agents": 22,
+      "unknown_agents": 88,
+      "coverage_pct": 20.0
     },
     {
       "path": "governance.rbac",
@@ -178,6 +178,108 @@
     }
   ],
   "agents": [
+    {
+      "agent_id": "AI-0064",
+      "name": "Gemini CLI",
+      "provider_id": "PROV-GOOGLE",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 95.4,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 7.0,
+        "unknown_share": 4.4,
+        "source_readiness": 4.0
+      },
+      "documented_fields": 3,
+      "unknown_fields": 22,
+      "coverage_pct": 12.0,
+      "fields_needed_for_40pct": 7,
+      "recommended_unknown_paths": [
+        "api.webhooks",
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.audit_logs.siem_export",
+        "governance.sso.oidc",
+        "hosting.private_network",
+        "security.soc2_type2",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Gemini CLI Docs – Gemini CLI for the enterprise",
+          "url": "https://geminicli.com/docs/cli/enterprise/",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Gemini CLI Docs – Installation, execution, and releases",
+          "url": "https://geminicli.com/docs/get-started/installation/",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Gemini CLI Docs – MCP servers",
+          "url": "https://geminicli.com/docs/tools/mcp-server/",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Google – Gemini CLI",
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "api.webhooks",
+          "documented_agents": 4,
+          "global_coverage_pct": 3.64,
+          "suggested_query": "Google Gemini CLI official documentation api webhooks"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 4,
+          "global_coverage_pct": 3.64,
+          "suggested_query": "Google Gemini CLI official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 5,
+          "global_coverage_pct": 4.55,
+          "suggested_query": "Google Gemini CLI official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "documented_agents": 6,
+          "global_coverage_pct": 5.45,
+          "suggested_query": "Google Gemini CLI official documentation governance audit_logs siem_export"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 6,
+          "global_coverage_pct": 5.45,
+          "suggested_query": "Google Gemini CLI official documentation governance sso oidc"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 6,
+          "global_coverage_pct": 5.45,
+          "suggested_query": "Google Gemini CLI official documentation hosting private_network"
+        },
+        {
+          "path": "security.soc2_type2",
+          "documented_agents": 6,
+          "global_coverage_pct": 5.45,
+          "suggested_query": "Google Gemini CLI official documentation security soc2_type2"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Google Gemini CLI official documentation governance audit_logs api"
+        }
+      ]
+    },
     {
       "agent_id": "AI-0052",
       "name": "Manus Agent",
@@ -5557,90 +5659,6 @@
       ]
     },
     {
-      "agent_id": "AI-0064",
-      "name": "Gemini CLI",
-      "provider_id": "PROV-GOOGLE",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "api.webhooks",
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.audit_logs.siem_export",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "security.soc2_type2",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Google – Gemini CLI",
-          "url": "https://github.com/google-gemini/gemini-cli",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "api.webhooks",
-          "documented_agents": 4,
-          "global_coverage_pct": 3.64,
-          "suggested_query": "Google Gemini CLI official documentation api webhooks"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 4,
-          "global_coverage_pct": 3.64,
-          "suggested_query": "Google Gemini CLI official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 5,
-          "global_coverage_pct": 4.55,
-          "suggested_query": "Google Gemini CLI official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.audit_logs.siem_export",
-          "documented_agents": 6,
-          "global_coverage_pct": 5.45,
-          "suggested_query": "Google Gemini CLI official documentation governance audit_logs siem_export"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 6,
-          "global_coverage_pct": 5.45,
-          "suggested_query": "Google Gemini CLI official documentation governance sso oidc"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 6,
-          "global_coverage_pct": 5.45,
-          "suggested_query": "Google Gemini CLI official documentation hosting private_network"
-        },
-        {
-          "path": "security.soc2_type2",
-          "documented_agents": 6,
-          "global_coverage_pct": 5.45,
-          "suggested_query": "Google Gemini CLI official documentation security soc2_type2"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Google Gemini CLI official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
       "agent_id": "AI-0067",
       "name": "OpenHands",
       "provider_id": "PROV-OPENHANDS",
@@ -7512,7 +7530,7 @@
         "security.soc2_type2",
         "governance.audit_logs.api",
         "governance.custom_roles",
-        "hosting.self_hosted"
+        "protocols.a2a.server"
       ],
       "available_primary_sources": [
         {
@@ -7608,10 +7626,10 @@
           "suggested_query": "GitHub GitHub Copilot Coding Agent official documentation governance custom_roles"
         },
         {
-          "path": "hosting.self_hosted",
+          "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
-          "suggested_query": "GitHub GitHub Copilot Coding Agent official documentation hosting self_hosted"
+          "suggested_query": "GitHub GitHub Copilot Coding Agent official documentation protocols a2a server"
         }
       ]
     },
@@ -8013,7 +8031,7 @@
         "governance.sso.oidc",
         "hosting.private_network",
         "security.soc2_type2",
-        "hosting.self_hosted"
+        "protocols.a2a.server"
       ],
       "available_primary_sources": [
         {
@@ -8109,10 +8127,10 @@
           "suggested_query": "Microsoft Microsoft Copilot Studio official documentation security soc2_type2"
         },
         {
-          "path": "hosting.self_hosted",
+          "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
-          "suggested_query": "Microsoft Microsoft Copilot Studio official documentation hosting self_hosted"
+          "suggested_query": "Microsoft Microsoft Copilot Studio official documentation protocols a2a server"
         }
       ]
     },
@@ -8267,7 +8285,7 @@
         "hosting.private_network",
         "security.soc2_type2",
         "governance.audit_logs.api",
-        "hosting.self_hosted"
+        "protocols.mcp.server"
       ],
       "available_primary_sources": [
         {
@@ -8363,10 +8381,10 @@
           "suggested_query": "Oracle Oracle AI Agent Studio official documentation governance audit_logs api"
         },
         {
-          "path": "hosting.self_hosted",
+          "path": "protocols.mcp.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
-          "suggested_query": "Oracle Oracle AI Agent Studio official documentation hosting self_hosted"
+          "suggested_query": "Oracle Oracle AI Agent Studio official documentation protocols mcp server"
         }
       ]
     },
@@ -8394,7 +8412,7 @@
         "hosting.private_network",
         "security.soc2_type2",
         "governance.custom_roles",
-        "hosting.self_hosted"
+        "protocols.a2a.server"
       ],
       "available_primary_sources": [
         {
@@ -8490,10 +8508,10 @@
           "suggested_query": "UiPath UiPath Agents official documentation governance custom_roles"
         },
         {
-          "path": "hosting.self_hosted",
+          "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
-          "suggested_query": "UiPath UiPath Agents official documentation hosting self_hosted"
+          "suggested_query": "UiPath UiPath Agents official documentation protocols a2a server"
         }
       ]
     },
@@ -8900,9 +8918,9 @@
         "protocols.a2a.client",
         "hosting.private_network",
         "governance.custom_roles",
-        "hosting.self_hosted",
         "protocols.a2a.server",
-        "protocols.a2a.supported"
+        "protocols.a2a.supported",
+        "protocols.mcp.server"
       ],
       "available_primary_sources": [
         {
@@ -8986,12 +9004,6 @@
           "suggested_query": "ServiceNow ServiceNow Otto official documentation governance custom_roles"
         },
         {
-          "path": "hosting.self_hosted",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "ServiceNow ServiceNow Otto official documentation hosting self_hosted"
-        },
-        {
           "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
@@ -9002,6 +9014,12 @@
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
           "suggested_query": "ServiceNow ServiceNow Otto official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "ServiceNow ServiceNow Otto official documentation protocols mcp server"
         }
       ]
     },
@@ -9664,7 +9682,7 @@
         "hosting.private_network",
         "security.soc2_type2",
         "governance.audit_logs.api",
-        "hosting.self_hosted"
+        "protocols.a2a.server"
       ],
       "available_primary_sources": [
         {
@@ -9758,10 +9776,10 @@
           "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation governance audit_logs api"
         },
         {
-          "path": "hosting.self_hosted",
+          "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
-          "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation hosting self_hosted"
+          "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation protocols a2a server"
         }
       ]
     },
@@ -9789,7 +9807,7 @@
         "hosting.private_network",
         "security.soc2_type2",
         "governance.audit_logs.api",
-        "hosting.self_hosted"
+        "protocols.a2a.server"
       ],
       "available_primary_sources": [
         {
@@ -9885,10 +9903,10 @@
           "suggested_query": "Snowflake Snowflake Cortex Agents official documentation governance audit_logs api"
         },
         {
-          "path": "hosting.self_hosted",
+          "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
-          "suggested_query": "Snowflake Snowflake Cortex Agents official documentation hosting self_hosted"
+          "suggested_query": "Snowflake Snowflake Cortex Agents official documentation protocols a2a server"
         }
       ]
     },
@@ -9916,7 +9934,7 @@
         "governance.sso.oidc",
         "hosting.private_network",
         "governance.custom_roles",
-        "hosting.self_hosted"
+        "protocols.a2a.server"
       ],
       "available_primary_sources": [
         {
@@ -10012,10 +10030,10 @@
           "suggested_query": "Atlassian Atlassian Rovo Agents official documentation governance custom_roles"
         },
         {
-          "path": "hosting.self_hosted",
+          "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
-          "suggested_query": "Atlassian Atlassian Rovo Agents official documentation hosting self_hosted"
+          "suggested_query": "Atlassian Atlassian Rovo Agents official documentation protocols a2a server"
         }
       ]
     },
@@ -10043,7 +10061,7 @@
         "security.soc2_type2",
         "governance.audit_logs.api",
         "governance.custom_roles",
-        "hosting.self_hosted"
+        "protocols.a2a.supported"
       ],
       "available_primary_sources": [
         {
@@ -10138,10 +10156,10 @@
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
         },
         {
-          "path": "hosting.self_hosted",
+          "path": "protocols.a2a.supported",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
-          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation hosting self_hosted"
+          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation protocols a2a supported"
         }
       ]
     },
@@ -10167,9 +10185,9 @@
         "governance.sso.oidc",
         "hosting.private_network",
         "security.soc2_type2",
-        "hosting.self_hosted",
         "protocols.a2a.server",
-        "protocols.a2a.supported"
+        "protocols.a2a.supported",
+        "protocols.mcp.server"
       ],
       "available_primary_sources": [
         {
@@ -10246,12 +10264,6 @@
           "suggested_query": "OpenAI OpenAI Codex official documentation security soc2_type2"
         },
         {
-          "path": "hosting.self_hosted",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "OpenAI OpenAI Codex official documentation hosting self_hosted"
-        },
-        {
           "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
@@ -10262,6 +10274,12 @@
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
           "suggested_query": "OpenAI OpenAI Codex official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "OpenAI OpenAI Codex official documentation protocols mcp server"
         }
       ]
     },
@@ -10533,9 +10551,9 @@
         "hosting.private_network",
         "governance.audit_logs.api",
         "governance.custom_roles",
-        "hosting.self_hosted",
         "protocols.a2a.server",
-        "protocols.a2a.supported"
+        "protocols.a2a.supported",
+        "hosting.self_hosted"
       ],
       "available_primary_sources": [
         {
@@ -10599,12 +10617,6 @@
           "suggested_query": "Dust Dust Agents official documentation governance custom_roles"
         },
         {
-          "path": "hosting.self_hosted",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Dust Dust Agents official documentation hosting self_hosted"
-        },
-        {
           "path": "protocols.a2a.server",
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
@@ -10615,6 +10627,12 @@
           "documented_agents": 8,
           "global_coverage_pct": 7.27,
           "suggested_query": "Dust Dust Agents official documentation protocols a2a supported"
+        },
+        {
+          "path": "hosting.self_hosted",
+          "documented_agents": 9,
+          "global_coverage_pct": 8.18,
+          "suggested_query": "Dust Dust Agents official documentation hosting self_hosted"
         }
       ]
     }
