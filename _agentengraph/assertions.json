@@ -37986,6 +37986,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-271AF0D7BCDF7E6BFC",
+      "agent_id": "AI-0043",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2B7158FD4F2960"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sierra_agent_integrations_and_invocation",
+        "note": "Sierra supports REST/API integration and agent invocation.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2B7158FD4F2960",
+            "note": "Sierra documents agent integrations through REST and states other agents can invoke Sierra capabilities through APIs.",
+            "evidence_type": "official_release",
+            "source_section": "Build on what you already have"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-635BB33244CB6EBB91",
       "agent_id": "AI-0043",
       "path": "audience",
@@ -38274,6 +38309,146 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-AD51BE7DC691DF6476",
+      "agent_id": "AI-0043",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2B7158FD4F2960"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sierra_agent_observability",
+        "note": "Sierra exposes agent observability/history data through export APIs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2B7158FD4F2960",
+            "note": "Sierra documents export APIs for conversation logs and performance data.",
+            "evidence_type": "api_docs",
+            "source_section": "Keep the value it creates"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E6D979D5C66ADED00B",
+      "agent_id": "AI-0043",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2B7158FD4F2960"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sierra_agent_observability",
+        "note": "Sierra provides detailed agent logs and trace history.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2B7158FD4F2960",
+            "note": "Sierra documents conversation logs, traces, version history, performance data, and a complete record for investigating agent decisions.",
+            "evidence_type": "official_release",
+            "source_section": "Know exactly what happened / Keep the value it creates"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7F5DE2463936631FF6",
+      "agent_id": "AI-0043",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2B7158FD4F2960"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sierra_agent_observability",
+        "note": "Sierra agent telemetry can be exported to external observability/SIEM infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2B7158FD4F2960",
+            "note": "Sierra documents sending agent data to external observability/data infrastructure through OpenTelemetry, Amazon EventBridge, Google Cloud Pub/Sub, or export API.",
+            "evidence_type": "technical_docs",
+            "source_section": "Use the tools you trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FEFE79CCC22CD02782",
+      "agent_id": "AI-0043",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2B7158FD4F2960"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sierra_platform_agents",
+        "note": "Sierra provides role- and permission-based governance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2B7158FD4F2960",
+            "note": "Sierra explicitly documents roles and permissions controlling who can change agents and release changes.",
+            "evidence_type": "official_release",
+            "source_section": "Keep the value it creates"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-FF66B44B78DC7B7815",
       "agent_id": "AI-0043",
       "path": "identity.name",
@@ -38322,6 +38497,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-705CC0E8B554DE05B3",
+      "agent_id": "AI-0043",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E4D6FCE15FCD8F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sierra_platform_agents",
+        "note": "Sierra documents localized hosting availability in multiple regions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E4D6FCE15FCD8F",
+            "note": "Sierra lists AWS cloud hosting with localization available in the US, EU, Southeast Asia, Japan, and Australia.",
+            "evidence_type": "security_trust",
+            "source_section": "Subprocessors / AWS"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D7E80C08418A93DB9F",
       "agent_id": "AI-0043",
       "path": "profile.depth",
@@ -38368,6 +38578,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-E1519C23D0ED10859A",
+      "agent_id": "AI-0043",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2B7158FD4F2960"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sierra_agents_integrations",
+        "note": "Sierra agents can consume external tools/systems through MCP.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2B7158FD4F2960",
+            "note": "Sierra states agents connect existing systems through MCP, REST, GraphQL, or custom integrations and can call tools elsewhere in the customer's stack.",
+            "evidence_type": "official_release",
+            "source_section": "Build on what you already have"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-64C7DEB1DC2C6745A8",
@@ -38861,6 +39106,188 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E5E9CBF813E56B579B",
+      "agent_id": "AI-0044",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9172020652E3C9",
+          "SRC-C24AACE565E1EB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_ai_agent_and_helpdesk",
+        "note": "Gorgias provides AI-action event logs and account audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9172020652E3C9",
+            "note": "Gorgias documents per-action event logs whenever AI Agent makes an HTTP request to a connected app.",
+            "evidence_type": "technical_docs",
+            "source_section": "View an Action's event logs"
+          },
+          {
+            "source_id": "SRC-C24AACE565E1EB",
+            "note": "Gorgias documents chronological account audit logs.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8A46F087079887D6D7",
+      "agent_id": "AI-0044",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C24AACE565E1EB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_account_audit_logs",
+        "note": "Gorgias account audit logs are retained for 12 months (365 days).",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C24AACE565E1EB",
+            "note": "Gorgias states audit-log events are available for the past 12 months and are not kept beyond that period.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit log retention"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7D188B536FB07A9924",
+      "agent_id": "AI-0044",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8364EDC3BA4587"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_helpdesk_including_ai_agent",
+        "note": "Gorgias provides role-based permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8364EDC3BA4587",
+            "note": "Gorgias documents user roles and permissions controlling access to helpdesk areas and actions.",
+            "evidence_type": "security_trust",
+            "source_section": "User roles and permissions"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8FE4B477445FEFAE6F",
+      "agent_id": "AI-0044",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A110F251E48244"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_helpdesk_including_ai_agent",
+        "note": "Gorgias supports OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A110F251E48244",
+            "note": "Gorgias documents custom SSO using the OpenID Connect Discovery Protocol.",
+            "evidence_type": "technical_docs",
+            "source_section": "Configure Gorgias as an OIDC app"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-806AD9AF141E219091",
+      "agent_id": "AI-0044",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8EA13B30C102B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_ai_agent",
+        "note": "Gorgias AI Agent is delivered on Gorgias-managed GCP infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8EA13B30C102B5",
+            "note": "Gorgias states AI Agent data is maintained on Google Cloud Platform with globally distributed servers.",
+            "evidence_type": "technical_docs",
+            "source_section": "Regional hosting"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-9D096A0B9F2BA9464B",
       "agent_id": "AI-0044",
       "path": "identity.name",
@@ -38909,6 +39336,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-6200DC335102E51C45",
+      "agent_id": "AI-0044",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-887E718A48F64D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_ai_agent",
+        "note": "Gorgias AI Agent provides regional hosting, including EU hosting for EU merchants.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-887E718A48F64D",
+            "note": "Gorgias states AI Agent data is hosted on the closest regional server and EU merchants are hosted in the EU.",
+            "evidence_type": "security_trust",
+            "source_section": "Where Is My Data Stored?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-B7BE68F73AFD46869D",
       "agent_id": "AI-0044",
       "path": "profile.depth",
@@ -38955,6 +39417,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-415C637E1CC93E5F5C",
+      "agent_id": "AI-0044",
+      "path": "security.encryption.in_transit",
+      "value": "TLS",
+      "value_hash": "91fa68ecb3b75c03",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8364EDC3BA4587"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gorgias_platform_including_ai_agent",
+        "note": "Gorgias documents TLS-encrypted connections.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8364EDC3BA4587",
+            "note": "Gorgias states app data is sent exclusively through HTTPS TLS-encrypted connections.",
+            "evidence_type": "security_trust",
+            "source_section": "Security controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-BFA678D59E8EB6D4AC",
@@ -89087,6 +89584,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-57ACA02BCC99C9B3D8",
+      "agent_id": "AI-0101",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-11DBB8C3767857"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "11x_alice_shared_api",
+        "note": "Alice uses the shared 11x REST API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-11DBB8C3767857",
+            "note": "11x documents one bi-directional API across Alice and Julian for pushing data, pulling outcomes, and triggering motions; the page is explicitly titled Webhooks and REST API.",
+            "evidence_type": "api_docs",
+            "source_section": "Webhooks and API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-98D29950188E7AAA98",
       "agent_id": "AI-0101",
       "path": "api.webhooks",
@@ -89422,6 +89954,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-B688AC61ACE304F860",
+      "agent_id": "AI-0101",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2304ACADCB3C1A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "11x_alice",
+        "note": "11x provides multiple audit surfaces for Alice activity and outcomes.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2304ACADCB3C1A",
+            "note": "11x documents audit trails across recordings/transcripts, quality assessments, knowledge-base version history, approval trails, and CRM write-back.",
+            "evidence_type": "security_trust",
+            "source_section": "The five audit surfaces"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EC7304A6855892EAF4",
+      "agent_id": "AI-0101",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B97D765D03CA04"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "11x_alice_platform",
+        "note": "Alice runs on the managed 11x AWS-hosted platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B97D765D03CA04",
+            "note": "11x documents platform hosting in AWS high-security facilities and dynamically scaled containerized deployments.",
+            "evidence_type": "security_trust",
+            "source_section": "Platform controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-BC7379A3D6AACE84D7",
       "agent_id": "AI-0101",
       "path": "identity.name",
@@ -89520,6 +90122,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-C2B01EA8EC87B65C26",
+      "agent_id": "AI-0101",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B97D765D03CA04"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "11x_platform",
+        "note": "11x documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B97D765D03CA04",
+            "note": "11x states data at rest is encrypted with AES-256 in AWS RDS.",
+            "evidence_type": "security_trust",
+            "source_section": "Platform controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D054DCCF488C7F054E",
+      "agent_id": "AI-0101",
+      "path": "security.encryption.in_transit",
+      "value": "TLS",
+      "value_hash": "91fa68ecb3b75c03",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B97D765D03CA04"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "11x_platform",
+        "note": "11x documents TLS encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B97D765D03CA04",
+            "note": "11x states data in transit is protected with TLS.",
+            "evidence_type": "security_trust",
+            "source_section": "Platform controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-148D418E2E0895455A",
+      "agent_id": "AI-0101",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-74B30271329A63"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "11x_platform",
+        "note": "11x documents SOC 2 Type II certification.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-74B30271329A63",
+            "note": "11x states it holds SOC 2 Type II certification, audited annually.",
+            "evidence_type": "security_trust",
+            "source_section": "Certifications"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-11A4DB2F8A2D769E20",
@@ -95239,6 +95946,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1771C5CAA083A33D1A",
+      "agent_id": "AI-0110",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3A1026F072C510"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rogo_platform_ai_analyst",
+        "note": "Rogo documents audit logging as a product security control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3A1026F072C510",
+            "note": "Rogo's Trust Center lists Audit Logging as a Product Security control.",
+            "evidence_type": "security_trust",
+            "source_section": "Product Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-EAA0A7EFD1037F997B",
       "agent_id": "AI-0110",
       "path": "identity.name",
@@ -95337,6 +96079,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-79034B4F4FA97FD493",
+      "agent_id": "AI-0110",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3A1026F072C510"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rogo_platform_ai_analyst",
+        "note": "Rogo documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3A1026F072C510",
+            "note": "Rogo's Trust Center lists Encryption-at-rest under Data Security controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Data Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-90389E2FE53E4825A9",
+      "agent_id": "AI-0110",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3A1026F072C510"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "rogo_platform_ai_analyst",
+        "note": "Rogo documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3A1026F072C510",
+            "note": "Rogo's Trust Center lists Encryption-in-transit under Data Security controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Data Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-E8B61DCDEEF3BDDD9D",

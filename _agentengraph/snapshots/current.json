@@ -3853,6 +3853,9 @@
         "access.description": [
           "Sierra; Enterprise-Angebot"
         ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -3879,17 +3882,35 @@
           "Enterprise-Ausrichtung",
           "Marken- und Richtlinienkontext"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
         "identity.name": [
           "Sierra Agent"
         ],
         "identity.provider": [
           "Sierra"
         ],
+        "privacy.residency.available": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
         ],
         "security.soc2_type2": [
           true
@@ -3945,17 +3966,38 @@
           "Support plus Verkaufsassistenz",
           "Viele Integrationen"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          365
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
         "identity.name": [
           "Gorgias AI Agent"
         ],
         "identity.provider": [
           "Gorgias"
         ],
+        "privacy.residency.available": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.in_transit": [
+          "TLS"
         ],
         "security.soc2_type2": [
           true
@@ -9053,6 +9095,9 @@
         "access.description": [
           "Über 11x; Enterprise-/Sales-Vertrag und Integrationen erforderlich."
         ],
+        "api.rest": [
+          true
+        ],
         "api.webhooks": [
           true
         ],
@@ -9082,6 +9127,12 @@
           "End-to-End-SDR-Workflow",
           "Personalisierte Outreach-Abläufe"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
         "identity.name": [
           "11x Alice"
         ],
@@ -9093,6 +9144,15 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Follow-up-Sequenzen",
@@ -9715,6 +9775,9 @@
           "Research plus Workflow-Automation",
           "Spezialisierung auf Financial Services"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
         "identity.name": [
           "Rogo AI Analyst"
         ],
@@ -9726,6 +9789,12 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          true
+        ],
+        "security.encryption.in_transit": [
+          true
         ],
         "security.soc2_type2": [
           true
