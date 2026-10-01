@@ -387,7 +387,7 @@ def main():
             counts[f"severity_{severity}"]+=1
             detected=current["checked_at"]
             fingerprint=current.get("text_hash") or current.get("binary_hash") or current.get("result","")
-            rid=stable_id("REV-",sid,change_type,fingerprint,detected[:10])
+            rid=stable_id("REV-",sid,change_type)
             eid=stable_id("WAT-",sid,change_type,fingerprint,detected)
             event={
                 "event_id":eid,
@@ -405,10 +405,21 @@ def main():
             }
             events[eid]=event
             existing=queue.get(rid)
-            if existing:
+            if existing and existing.get("status")=="open":
                 existing["last_detected"]=detected
                 existing["occurrences"]=int(existing.get("occurrences",1))+1
+                existing["severity"]=severity
                 existing["latest_metrics"]=metrics
+                existing["current"]={
+                    "status_code":current.get("status_code"),
+                    "final_url":current.get("final_url"),
+                    "text_hash":current.get("text_hash"),
+                    "simhash64":current.get("simhash64"),
+                    "token_count":current.get("token_count"),
+                    "text_sample":current.get("text_sample"),
+                    "result":current.get("result"),
+                    "error":current.get("error"),
+                }
             else:
                 queue[rid]={
                     "review_id":rid,
