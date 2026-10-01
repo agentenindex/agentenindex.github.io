@@ -8492,6 +8492,57 @@
       "agent_id": "AI-0050",
       "claims": [
         {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "cocounsel_legal",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Thomson Reuters – CoCounsel Legal",
+              "url": "https://legal.thomsonreuters.com/en/products/cocounsel-legal",
+              "note": "Thomson Reuters documents CoCounsel Legal as its hosted legal AI product with secure access across web and Microsoft integrations.",
+              "evidence_type": "official_product_page",
+              "source_section": "CoCounsel Legal"
+            }
+          ],
+          "note": "CoCounsel Legal is delivered as a managed Thomson Reuters service."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "cocounsel_legal_user_content",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Thomson Reuters – CoCounsel",
+              "url": "https://www.thomsonreuters.com/en/cocounsel",
+              "note": "Thomson Reuters states symmetric AES-256 encryption protects CoCounsel user data at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "How does Thomson Reuters protect user privacy and data?"
+            }
+          ],
+          "note": "CoCounsel documents AES-256 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2",
+          "scope": "cocounsel_legal_user_content",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Thomson Reuters – CoCounsel",
+              "url": "https://www.thomsonreuters.com/en/cocounsel",
+              "note": "Thomson Reuters states CoCounsel data in transit is secured using TLS 1.2.",
+              "evidence_type": "security_trust",
+              "source_section": "How does Thomson Reuters protect user privacy and data?"
+            }
+          ],
+          "note": "CoCounsel documents TLS 1.2 encryption in transit."
+        },
+        {
           "path": "security.soc2_type2",
           "value": true,
           "scope": "cocounsel_legal",
@@ -17072,6 +17123,74 @@
       "agent_id": "AI-0107",
       "claims": [
         {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "lexis_plus_with_protege",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lexis+ with Protégé",
+              "url": "https://www.lexisnexis.com/en-us/products/lexis-plus-protege.page",
+              "note": "LexisNexis documents Protégé as a cloud-based Lexis+ legal AI service operated on enterprise-grade cloud providers.",
+              "evidence_type": "official_product_page",
+              "source_section": "Data Security, Privacy, and Governance"
+            }
+          ],
+          "note": "Lexis+ with Protégé is delivered as a managed LexisNexis cloud service."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "lexis_plus_with_protege_france_mistral",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "LexisNexis – Mistral integration in Lexis+ with Protégé in France",
+              "url": "https://www.lexisnexis.com/community/pressroom/b/news/posts/lexisnexis-announces-the-integration-of-mistral-in-lexis-with-protege-in-france",
+              "note": "LexisNexis documents the France Mistral integration as operating in an encrypted framework hosted within the European Union.",
+              "evidence_type": "official_release",
+              "source_section": "EU hosting"
+            }
+          ],
+          "note": "A documented EU-hosted Protégé deployment is available in the France/Mistral offering."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "lexis_plus_with_protege",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "LexisNexis – Protégé comparison/security guide",
+              "url": "https://www.lexisnexis.com/supportandtraining/cfs-file/__key/telligent-evolution-components-attachments/01-88-00-00-00-00-13-49/protege_2D00_comparison_2D00_chatgpt.PDF",
+              "note": "LexisNexis states Lexis+ AI/Protégé uses AES-256 encryption.",
+              "evidence_type": "security_trust",
+              "source_section": "Security Certifications"
+            }
+          ],
+          "note": "LexisNexis documents AES-256 encryption for Lexis+ AI/Protégé."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2",
+          "scope": "lexis_plus_with_protege",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "LexisNexis – Protégé comparison/security guide",
+              "url": "https://www.lexisnexis.com/supportandtraining/cfs-file/__key/telligent-evolution-components-attachments/01-88-00-00-00-00-13-49/protege_2D00_comparison_2D00_chatgpt.PDF",
+              "note": "LexisNexis states Lexis+ AI/Protégé uses TLS 1.2 encryption.",
+              "evidence_type": "security_trust",
+              "source_section": "Security Certifications"
+            }
+          ],
+          "note": "LexisNexis documents TLS 1.2 encryption for Lexis+ AI/Protégé."
+        },
+        {
           "path": "security.soc2_type2",
           "value": true,
           "scope": "lexis_plus_with_protege",
@@ -17094,6 +17213,57 @@
       "agent_id": "AI-0108",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "vlex_vincent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "vLex – Core Security Measures",
+              "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
+              "note": "vLex documents detailed third-party-managed audit logs of all access to data.",
+              "evidence_type": "security_trust",
+              "source_section": "Operational Security"
+            }
+          ],
+          "note": "Vincent provides detailed audit logs."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "vlex_vincent_conversation_logs_and_files_default",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "vLex – Core Security Measures",
+              "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
+              "note": "vLex states customer-configurable retention for conversation logs and files defaults to one year.",
+              "evidence_type": "security_trust",
+              "source_section": "Customizable Data Retention"
+            }
+          ],
+          "note": "Vincent's documented default retention for conversation logs and files is one year (365 days)."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "vlex_vincent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "vLex – Core Security Measures",
+              "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
+              "note": "vLex explicitly documents role-based access control protecting systems and data.",
+              "evidence_type": "security_trust",
+              "source_section": "Operational Security"
+            }
+          ],
+          "note": "Vincent uses role-based access control."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "vlex_vincent_platform",
@@ -17109,12 +17279,114 @@
             }
           ],
           "note": "Vincent is delivered on vLex's managed AWS-hosted platform."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "vlex_vincent_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "vLex – Core Security Measures",
+              "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
+              "note": "vLex documents configurable Vincent data residency in US, AU, or EU regions.",
+              "evidence_type": "security_trust",
+              "source_section": "Data Protection & Encryption"
+            }
+          ],
+          "note": "Vincent supports regional data residency."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "vlex_vincent_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "vLex – Core Security Measures",
+              "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
+              "note": "vLex states customers can configure their account so data and encryption keys are hosted in a selected US, AU, or EU region.",
+              "evidence_type": "security_trust",
+              "source_section": "You Control Your Data's Location"
+            }
+          ],
+          "note": "Vincent customers can select a supported data region."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "vlex_vincent_customer_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "vLex – Core Security Measures",
+              "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
+              "note": "vLex states Vincent customer data is continuously encrypted at rest using a FIPS 140-2 compliant cryptographic suite.",
+              "evidence_type": "security_trust",
+              "source_section": "Data Protection & Encryption"
+            }
+          ],
+          "note": "Vincent encrypts customer data at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "vlex_vincent_customer_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "vLex – Core Security Measures",
+              "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
+              "note": "vLex states Vincent customer data is continuously encrypted in transit using a FIPS 140-2 compliant cryptographic suite.",
+              "evidence_type": "security_trust",
+              "source_section": "Data Protection & Encryption"
+            }
+          ],
+          "note": "Vincent encrypts customer data in transit."
         }
       ]
     },
     {
       "agent_id": "AI-0109",
       "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "luminance_platform_including_lumi",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Luminance – Security",
+              "url": "https://www.luminance.com/security",
+              "note": "Luminance explicitly lists audit logging among configurable enterprise access/security controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Granular access, controlled by you"
+            }
+          ],
+          "note": "Luminance provides audit logging."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "luminance_platform_including_lumi",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Luminance – Security",
+              "url": "https://www.luminance.com/security",
+              "note": "Luminance documents configurable role-based access and granular controls for customer access.",
+              "evidence_type": "security_trust",
+              "source_section": "Granular access, controlled by you"
+            }
+          ],
+          "note": "Luminance provides role-based access control."
+        },
         {
           "path": "hosting.managed",
           "value": true,
@@ -17131,6 +17403,57 @@
             }
           ],
           "note": "Lumi is delivered as a managed capability within Luminance's enterprise legal platform."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "luminance_platform_including_lumi",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Luminance – Security",
+              "url": "https://www.luminance.com/security",
+              "note": "Luminance states AWS-hosted data at rest is encrypted using AES-256 with AWS KMS.",
+              "evidence_type": "security_trust",
+              "source_section": "Encrypted at every stage"
+            }
+          ],
+          "note": "Luminance documents AES-256 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "luminance_platform_including_lumi",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Luminance – Security",
+              "url": "https://www.luminance.com/security",
+              "note": "Luminance states data in transit uses TLS 1.2 or higher.",
+              "evidence_type": "security_trust",
+              "source_section": "Encrypted at every stage"
+            }
+          ],
+          "note": "Luminance documents TLS 1.2+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "luminance_platform_including_lumi",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Luminance – Security",
+              "url": "https://www.luminance.com/security",
+              "note": "Luminance states it undergoes regular SOC 2 Type II examinations.",
+              "evidence_type": "security_trust",
+              "source_section": "Independently assessed security"
+            }
+          ],
+          "note": "Luminance documents SOC 2 Type II assurance."
         }
       ]
     },
