@@ -1,0 +1,134 @@
+name: Final schema and accessibility polish
+
+on:
+  push:
+    paths:
+      - '_final-polish/trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  polish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add AgentenProfil breadcrumbs and finish contrast fixes
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, re
+
+          root=Path('.')
+          data=json.loads((root/'data/agents.json').read_text(encoding='utf-8'))
+
+          category_labels={
+              'recherche':'Recherche-Agenten',
+              'coding':'Coding-Agenten',
+              'automatisierung':'Agenten für Automatisierung',
+              'unternehmen':'Enterprise- & Produktivitäts-Agenten',
+              'service-sales':'Agenten für Service, Sales & Daten',
+              'recht':'Legal- & Professional-Services-Agenten',
+          }
+
+          changed=0
+          for agent in data['agents']:
+              slug=agent['slug']
+              category=agent['category']
+              path=root/'agenten'/slug/'index.html'
+              text=path.read_text(encoding='utf-8')
+
+              m=re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S)
+              if not m:
+                  raise SystemExit(f'No JSON-LD in {path}')
+              doc=json.loads(m.group(1))
+              graph=doc.get('@graph')
+              if not isinstance(graph,list):
+                  raise SystemExit(f'No @graph in {path}')
+
+              # Remove a previous breadcrumb object if this is ever rerun.
+              graph[:]=[x for x in graph if x.get('@type')!='BreadcrumbList']
+              graph.append({
+                  '@type':'BreadcrumbList',
+                  '@id':f'https://agentenindex.de/agenten/{slug}/#breadcrumb',
+                  'itemListElement':[
+                      {
+                          '@type':'ListItem','position':1,'name':'Start',
+                          'item':'https://agentenindex.de/'
+                      },
+                      {
+                          '@type':'ListItem','position':2,'name':'Agenten',
+                          'item':'https://agentenindex.de/agenten/'
+                      },
+                      {
+                          '@type':'ListItem','position':3,'name':category_labels[category],
+                          'item':f'https://agentenindex.de/agenten/{category}/'
+                      },
+                      {
+                          '@type':'ListItem','position':4,'name':agent['name'],
+                          'item':f'https://agentenindex.de/agenten/{slug}/'
+                      }
+                  ]
+              })
+
+              encoded=json.dumps(doc,ensure_ascii=False,separators=(',',':'))
+              new=text[:m.start(1)]+encoded+text[m.end(1):]
+              if new!=text:
+                  path.write_text(new,encoding='utf-8')
+                  changed+=1
+
+          assert changed==110, changed
+
+          css_path=root/'assets/styles.css'
+          css=css_path.read_text(encoding='utf-8')
+          replacements={
+              'color:#747c72;font-size:.76rem':'color:#8f978c;font-size:.76rem',
+              '.footer-note{color:#666e64;':'.footer-note{color:#a0a79f;',
+              '.breadcrumbs{font-size:.78rem;color:#7a8177;':'.breadcrumbs{font-size:.78rem;color:#596057;',
+              '.fact small{display:block;text-transform:uppercase;letter-spacing:.07em;color:#777d74;':'.fact small{display:block;text-transform:uppercase;letter-spacing:.07em;color:#626861;',
+              '.passport-grid small{display:block;text-transform:uppercase;letter-spacing:.07em;color:#777d74;':'.passport-grid small{display:block;text-transform:uppercase;letter-spacing:.07em;color:#60675e;',
+          }
+          for old,new in replacements.items():
+              if old not in css:
+                  raise SystemExit('CSS pattern not found: '+old)
+              css=css.replace(old,new,1)
+          css_path.write_text(css,encoding='utf-8')
+
+          # Validate every AgentenProfil has one valid breadcrumb object and matching canonical item.
+          for agent in data['agents']:
+              slug=agent['slug']
+              p=root/'agenten'/slug/'index.html'
+              text=p.read_text(encoding='utf-8')
+              m=re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S)
+              doc=json.loads(m.group(1))
+              crumbs=[x for x in doc['@graph'] if x.get('@type')=='BreadcrumbList']
+              assert len(crumbs)==1,(slug,len(crumbs))
+              items=crumbs[0]['itemListElement']
+              assert [x['position'] for x in items]==[1,2,3,4]
+              assert items[-1]['name']==agent['name']
+              assert items[-1]['item']==f'https://agentenindex.de/agenten/{slug}/'
+              assert items[2]['item']==f'https://agentenindex.de/agenten/{agent["category"]}/'
+
+          print('AgentenProfile with BreadcrumbList:',changed)
+          print('Accessibility contrast rules updated:',len(replacements))
+          PY
+
+      - name: Remove one-time polish workflow
+        shell: bash
+        run: |
+          rm -rf _final-polish
+          rm -f .github/workflows/final-schema-polish.yml
+
+      - name: Commit final polish
+        shell: bash
+        run: |
+          git config user.name "AgentenIndex"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --stat
+          git commit -m "Add AgentenProfil breadcrumbs and accessibility polish [skip ci]"
+          git push origin main
