@@ -42288,6 +42288,40 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-FA1FDFF703A0039C9C",
+      "agent_id": "AI-0065",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D3F0B10C68B8AE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "duo_agent_platform_flows",
+        "note": "Duo Agent Platform flows have a documented API surface.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D3F0B10C68B8AE",
+            "note": "GitLab documents API endpoints for creating, managing, and triggering Duo Agent Platform flows.",
+            "evidence_type": "api_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-60D093603528C7A7DE",
       "agent_id": "AI-0065",
       "path": "audience",
@@ -42613,6 +42647,182 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-D72A67D378DC528EFD",
+      "agent_id": "AI-0065",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2CF7F23EC27620",
+          "SRC-3FFCD571C2248D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "duo_related_gitlab_audit_events",
+        "note": "Duo-related audit events are accessible through GitLab audit-event APIs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2CF7F23EC27620",
+            "note": "GitLab documents access to project audit events through the Audit Events API and identifies AI agent sessions as audit events.",
+            "evidence_type": "api_docs"
+          },
+          {
+            "source_id": "SRC-3FFCD571C2248D",
+            "note": "GitLab documents duo_related audit-event fields for Duo Agent Platform activity, enabling identification in API/SIEM workflows.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-20681C843A513862CB",
+      "agent_id": "AI-0065",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C2F3C9DFD66786"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "duo_agent_sessions",
+        "note": "Duo Agent Platform sessions generate dedicated AI audit events.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C2F3C9DFD66786",
+            "note": "GitLab documents a unified audit record for Duo agent activity, with comprehensive audit artifacts per agent session.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7D7622194D32890FA7",
+      "agent_id": "AI-0065",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E717E7C78949E3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gitlab_self_managed_and_dedicated_ai_audit_events",
+        "note": "GitLab can stream AI audit events to external destinations suitable for SIEM ingestion.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E717E7C78949E3",
+            "note": "GitLab documents streaming Duo Agent Platform AI audit events to active external audit-event destinations on Self-Managed and Dedicated.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7611122978AC944002",
+      "agent_id": "AI-0065",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F2C7DD91874F30"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gitlab_com",
+        "note": "GitLab.com provides a vendor-managed Duo Agent Platform deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F2C7DD91874F30",
+            "note": "GitLab lists GitLab.com as a supported offering for Duo Agent Platform agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-97221044AEDF4EA733",
+      "agent_id": "AI-0065",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F2C7DD91874F30"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gitlab_self_managed",
+        "note": "Duo Agent Platform is supported on GitLab Self-Managed.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F2C7DD91874F30",
+            "note": "GitLab lists GitLab Self-Managed as a supported offering for Duo Agent Platform agents.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F25DD2DE9FC8E7C023",
       "agent_id": "AI-0065",
       "path": "identity.name",
@@ -42711,6 +42921,74 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-F7B9705BC6B3AF4319",
+      "agent_id": "AI-0065",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8F1956E563A07A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gitlab_duo_agent_platform",
+        "note": "GitLab Duo Agent Platform features can consume external MCP tools as MCP clients.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8F1956E563A07A",
+            "note": "GitLab documents Duo Agentic Chat and Software Development Flow as MCP clients that connect to external MCP servers.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3757A6218BCD605557",
+      "agent_id": "AI-0065",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-66E1E550D020F2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gitlab_instance_with_duo_agent_platform_toolset",
+        "note": "GitLab exposes an MCP server with a Duo Agent Platform toolset.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-66E1E550D020F2",
+            "note": "GitLab documents its MCP server and an opt-in duo_agent_platform toolset for exposing Duo Agent Platform operations to MCP-compatible clients.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-3F50D996B17964E2AE",
@@ -60930,6 +61208,108 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9123FB99110E69F2D8",
+      "agent_id": "AI-0092",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6327A5BB244F8E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_enterprise_agent_platform",
+        "note": "Agent Platform produces Google Cloud Audit Logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6327A5BB244F8E",
+            "note": "Google documents Admin Activity, System Event, and optional Data Access Cloud Audit Logs for Agent Platform.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-21D5839AE9F5AEFB49",
+      "agent_id": "AI-0092",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-138DA097204E65"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_enterprise_agent_platform",
+        "note": "Custom IAM roles can grant fine-grained Agent Platform permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-138DA097204E65",
+            "note": "Google explicitly documents using custom IAM roles for user-defined permission sets on Agent Platform operations.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EDC3C046FDE3C17325",
+      "agent_id": "AI-0092",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-138DA097204E65"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_enterprise_agent_platform",
+        "note": "Agent Platform access is governed through Google Cloud IAM roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-138DA097204E65",
+            "note": "Google documents IAM roles and permissions governing principals' access to Agent Platform resources.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-16626785BE94C223C6",
       "agent_id": "AI-0092",
       "path": "identity.name",
@@ -60980,6 +61360,74 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-3C6122831B99611D89",
+      "agent_id": "AI-0092",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-72E6FE02C66DC8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_enterprise_agent_platform",
+        "note": "Agent Platform provides documented data-residency controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-72E6FE02C66DC8",
+            "note": "Google documents that data stored at rest remains in the customer-selected Agent Platform location and describes regional processing controls.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-28E692B73F8FADEB90",
+      "agent_id": "AI-0092",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-72E6FE02C66DC8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_enterprise_agent_platform",
+        "note": "Customers select supported Agent Platform locations/endpoints for residency.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-72E6FE02C66DC8",
+            "note": "Google states customers choose the location in which Agent Platform data is stored at rest and can use jurisdictional or locational endpoints for processing.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-9D0BFCAF7812EEF1EC",
       "agent_id": "AI-0092",
       "path": "profile.depth",
@@ -61028,6 +61476,176 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-7605ED2D06E1D193A0",
+      "agent_id": "AI-0092",
+      "path": "protocols.a2a.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-173D4D4B12CD5C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_enterprise_invoking_registered_a2a_agents",
+        "note": "Gemini Enterprise acts as an A2A client when invoking registered agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-173D4D4B12CD5C",
+            "note": "Google documents Gemini Enterprise invoking registered A2A agents with service IAM and optional end-user OAuth credentials.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B12697D807D7476126",
+      "agent_id": "AI-0092",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-173D4D4B12CD5C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_enterprise",
+        "note": "Gemini Enterprise supports A2A agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-173D4D4B12CD5C",
+            "note": "Google documents registering A2A agents hosted on any platform so Gemini Enterprise users can invoke them.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D7F085B0EA82AD137F",
+      "agent_id": "AI-0092",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E068C3E7C2EE47"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_enterprise_apps_via_agent_gateway",
+        "note": "Gemini Enterprise apps can consume governed MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E068C3E7C2EE47",
+            "note": "Google documents importing governed MCP servers into Gemini Enterprise apps through Agent Registry and Agent Gateway.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-356C0882856CBE345E",
+      "agent_id": "AI-0092",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0F8F250CC7DB2B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "supported_gemini_enterprise_agent_platform_resources",
+        "note": "Supported Agent Platform resources can use customer-managed encryption keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0F8F250CC7DB2B",
+            "note": "Google documents Cloud KMS customer-managed encryption keys for CMEK-integrated Agent Platform resources.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E94C45FAF9DBB8712F",
+      "agent_id": "AI-0092",
+      "path": "security.encryption.at_rest",
+      "value": "Google default encryption",
+      "value_hash": "6f011b7321d77142",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0F8F250CC7DB2B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gemini_enterprise_agent_platform_customer_content",
+        "note": "Agent Platform customer content is encrypted at rest by default.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0F8F250CC7DB2B",
+            "note": "Google states Agent Platform encrypts customer content at rest by default using Google-managed encryption.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-7EE9D78D5F71BD38CD",

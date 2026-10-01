@@ -4569,6 +4569,9 @@
         "access.description": [
           "In GitLab-Angeboten mit Agent-Platform-Zugang; Lizenz und Verfügbarkeit planabhängig."
         ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "entwickler",
           "unternehmen"
@@ -4596,6 +4599,21 @@
           "Direkter GitLab-Kontext",
           "Enterprise-Governance"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
+        "hosting.self_hosted": [
+          true
+        ],
         "identity.name": [
           "GitLab Duo Agent Platform"
         ],
@@ -4607,6 +4625,12 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "protocols.mcp.server": [
+          true
         ],
         "use_case": [
           "Agentische Softwareprozesse",
@@ -6559,17 +6583,47 @@
           "Google-Cloud-Integration",
           "Plattform für eigene und Partneragenten"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
         "identity.name": [
           "Gemini Enterprise Agent Platform"
         ],
         "identity.provider": [
           "Google Cloud"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.a2a.client": [
+          true
+        ],
+        "protocols.a2a.supported": [
+          true
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "Google default encryption"
         ],
         "use_case": [
           "Agenten katalogisieren",
