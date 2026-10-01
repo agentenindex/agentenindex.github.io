@@ -12,6 +12,7 @@ def load(name):
     return json.loads((WATCH/name).read_text(encoding="utf-8"))
 
 states_doc=load("source-states.json")
+overrides_doc=load("monitoring-overrides.json") if (WATCH/"monitoring-overrides.json").exists() else {"overrides":[]}
 queue_doc=load("review-queue.json")
 events_doc=load("events.json")
 summary=load("last-run.json")
@@ -19,6 +20,7 @@ summary=load("last-run.json")
 all_sources={s["source_id"]:s for s in GRAPH["sources"]}
 active_sources={sid:s for sid,s in all_sources.items() if s.get("active")}
 states={s["source_id"]:s for s in states_doc.get("states",[])}
+manual_urls={o.get("url") for o in overrides_doc.get("overrides",[]) if o.get("mode")=="manual_only" and o.get("url")}
 errors=[]
 
 if len(states_doc.get("states",[])) != len(states):
@@ -63,6 +65,7 @@ for event in events_doc.get("events",[]):
         errors.append(f"{eid}: safety policy missing")
 
 successful=0
+manual_only=0
 blocked_or_failed=0
 for sid,src in active_sources.items():
     state=states.get(sid)
@@ -70,6 +73,15 @@ for sid,src in active_sources.items():
         continue
     if state.get("active") is not True:
         errors.append(f"{sid}: active graph source not marked active in watch state")
+    if state.get("result")=="manual_only":
+        manual_only+=1
+        if state.get("monitoring_mode")!="manual_only":
+            errors.append(f"{sid}: manual_only state missing monitoring_mode")
+        if src.get("url") not in manual_urls:
+            errors.append(f"{sid}: manual_only state has no matching override")
+        if not state.get("manual_reason"):
+            errors.append(f"{sid}: manual_only state missing reason")
+        continue
     if state.get("ok"):
         successful+=1
         ct=(state.get("content_type") or "").lower()
@@ -91,6 +103,7 @@ print(json.dumps({
     "status":"AGENTENWACHE_VALID",
     "active_sources":len(active_sources),
     "successful_states":successful,
+    "manual_only_states":manual_only,
     "blocked_or_failed_states":blocked_or_failed,
     "events":len(events_doc.get("events",[])),
     "open_review_items":summary.get("open_review_items",0),
