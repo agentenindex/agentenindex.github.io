@@ -1,0 +1,49 @@
+name: Roll out AgentenFinder v1
+
+on:
+  push:
+    paths:
+      - "_finder-v1/trigger"
+
+permissions:
+  contents: write
+
+jobs:
+  rollout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Apply AgentenFinder SEO GEO rollout
+        run: python .github/scripts/rollout-finder-v1.py
+
+      - name: Install browser test dependency
+        run: npm install --no-save puppeteer-core@latest
+
+      - name: Start local site
+        run: |
+          python -m http.server 8080 >/tmp/agentenindex-finder-http.log 2>&1 &
+          sleep 2
+
+      - name: Browser and functional smoke test
+        run: node .github/scripts/finder-v1-smoke.mjs
+
+      - name: Commit tested AgentenFinder
+        run: |
+          rm -rf _finder-v1
+          rm -f .github/workflows/finder-v1.yml
+          rm -f .github/scripts/rollout-finder-v1.py
+          rm -f .github/scripts/finder-v1-smoke.mjs
+          rm -rf node_modules package-lock.json package.json
+          git config user.name "AgentenIndex"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --stat
+          git commit -m "Launch AgentenFinder with SEO GEO integration [skip ci]"
+          git push origin main
