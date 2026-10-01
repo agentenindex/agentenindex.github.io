@@ -1,48 +1,20 @@
 {
   "name": "AgentenWache",
   "version": "1.0",
-  "started_at": "2026-10-01T14:49:11Z",
-  "finished_at": "2026-10-01T14:49:41Z",
+  "started_at": "2026-10-01T14:54:33Z",
+  "finished_at": "2026-10-01T14:54:55Z",
   "source_registry": "_agentengraph/sources.json",
-  "active_sources": 246,
-  "hosts": 110,
+  "active_sources": 245,
+  "hosts": 107,
   "counts": {
-    "baseline": 38,
-    "changes": 3,
-    "fetched": 135,
-    "http_error": 3,
-    "manual_only": 6,
-    "not_modified": 100,
-    "robots_disallowed": 2,
-    "severity_low": 2,
-    "severity_medium": 1
+    "baseline": 1,
+    "changes": 1,
+    "fetched": 129,
+    "manual_only": 9,
+    "not_modified": 107,
+    "severity_low": 1
   },
-  "open_review_items": 3,
-  "changes_this_run": [
-    {
-      "source_id": "SRC-8B382C103B95EA",
-      "type": "content_change",
-      "severity": "medium",
-      "agents": [
-        "AI-0018"
-      ]
-    },
-    {
-      "source_id": "SRC-4271C275BA8FED",
-      "type": "content_change",
-      "severity": "low",
-      "agents": [
-        "AI-0090"
-      ]
-    },
-    {
-      "source_id": "SRC-12C67F58FD88B1",
-      "type": "content_change",
-      "severity": "low",
-      "agents": [
-        "AI-0035"
-      ]
-    }
-  ],
+  "open_review_items": 0,
+  "changes_this_run": [],
   "principle": "Monitoring detects source changes only. No detected change becomes an AgentenIndex product fact without editorial verification."
 }
