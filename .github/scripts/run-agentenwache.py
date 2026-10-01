@@ -161,6 +161,15 @@ def robots_url(url: str) -> str:
     p = urlparse(url)
     return f"{p.scheme}://{p.netloc}/robots.txt"
 
+def registrableish(host: str) -> str:
+    host=(host or "").lower().split(":")[0].strip(".")
+    parts=[p for p in host.split(".") if p]
+    if len(parts) <= 2:
+        return host
+    two=".".join(parts[-2:])
+    common_second_level={"co.uk","org.uk","ac.uk","com.au","net.au","co.jp","co.nz","com.br"}
+    return ".".join(parts[-3:]) if two in common_second_level and len(parts)>=3 else two
+
 def robots_allows(url: str, cache: dict[str, bool]) -> bool:
     host = urlparse(url).netloc.lower()
     if host in cache:
@@ -305,7 +314,7 @@ def classify(previous: dict | None, current: dict) -> tuple[str | None, str | No
         metrics["old_final_url"]=old_final; metrics["new_final_url"]=new_final
         old_host=urlparse(old_final).netloc.lower()
         new_host=urlparse(new_final).netloc.lower()
-        sev="high" if old_host != new_host else "medium"
+        sev="high" if registrableish(old_host) != registrableish(new_host) else "medium"
         return "redirect_change",sev,metrics
 
     if previous.get("ok") and not current.get("ok"):
