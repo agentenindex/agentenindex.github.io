@@ -1,18 +1,29 @@
 {
   "name": "AgentenWache",
   "version": "1.0",
-  "started_at": "2026-10-01T11:40:27Z",
-  "finished_at": "2026-10-01T11:40:41Z",
+  "started_at": "2026-10-01T11:41:48Z",
+  "finished_at": "2026-10-01T11:42:00Z",
   "source_registry": "_agentengraph/sources.json",
   "active_sources": 175,
   "hosts": 113,
   "counts": {
-    "baseline": 175,
-    "fetched": 116,
+    "changes": 1,
+    "fetched": 55,
     "http_error": 15,
-    "robots_disallowed": 44
+    "not_modified": 61,
+    "robots_disallowed": 44,
+    "severity_low": 1
   },
-  "open_review_items": 0,
-  "changes_this_run": [],
+  "open_review_items": 1,
+  "changes_this_run": [
+    {
+      "source_id": "SRC-15C5A1E3CDD01B",
+      "type": "content_change",
+      "severity": "low",
+      "agents": [
+        "AI-0020"
+      ]
+    }
+  ],
   "principle": "Monitoring detects source changes only. No detected change becomes an AgentenIndex product fact without editorial verification."
 }
