@@ -28,6 +28,11 @@ snapshot=json.loads((OUT/"snapshots"/"current.json").read_text(encoding="utf-8")
 errors=[]
 
 agent_ids={a["profile_id"] for a in DATA["agents"]}
+lifecycle_by_agent={a["profile_id"]:a.get("lifecycle_status","active") for a in DATA["agents"]}
+valid_lifecycle_statuses={"active","discontinued"}
+for aid,status in lifecycle_by_agent.items():
+    if status not in valid_lifecycle_statuses:
+        errors.append(f"{aid}: invalid lifecycle status {status!r}")
 entity_ids={a["agent_id"] for a in entities["agents"]}
 provider_names={a["provider"] for a in DATA["agents"]}
 source_ids={s["source_id"] for s in sources["sources"]}
@@ -73,21 +78,28 @@ if target.get("core_fields") != len(expected_completeness_fields):
     errors.append("Research priority core field count mismatch")
 if target.get("minimum_core_coverage_pct") != 40:
     errors.append("Research priority minimum coverage target must be 40")
-valid_priorities={"P0_raise_existing_to_40pct","P1_start_zero_coverage","P2_maintain_or_deepen"}
+valid_priorities={"P0_raise_existing_to_40pct","P1_start_zero_coverage","P2_maintain_or_deepen","P3_discontinued"}
 deep_agent_ids={entry.get("agent_id") for entry in DEEP.get("agents",[])}
 for item in rp_agents:
     aid=item.get("agent_id")
     if item.get("priority") not in valid_priorities:
         errors.append(f"{aid}: invalid research priority {item.get('priority')}")
     report=(deep_coverage.get("agents") or {}).get(aid) or {}
+    lifecycle_status=lifecycle_by_agent.get(aid,"active")
+    if item.get("lifecycle_status") != lifecycle_status:
+        errors.append(f"{aid}: research priority lifecycle status mismatch")
     if item.get("documented_fields") != report.get("documented_fields"):
         errors.append(f"{aid}: research priority documented count mismatch")
     if item.get("unknown_fields") != report.get("unknown_fields"):
         errors.append(f"{aid}: research priority unknown count mismatch")
-    if aid in deep_agent_ids and report.get("coverage_pct",0) < 40 and item.get("priority")!="P0_raise_existing_to_40pct":
-        errors.append(f"{aid}: below-target deep agent not marked P0")
-    if aid not in deep_agent_ids and item.get("priority")!="P1_start_zero_coverage":
-        errors.append(f"{aid}: zero-coverage agent not marked P1")
+    if lifecycle_status=="discontinued":
+        if item.get("priority")!="P3_discontinued":
+            errors.append(f"{aid}: discontinued agent not marked P3")
+    else:
+        if aid in deep_agent_ids and report.get("coverage_pct",0) < 40 and item.get("priority")!="P0_raise_existing_to_40pct":
+            errors.append(f"{aid}: below-target deep agent not marked P0")
+        if aid not in deep_agent_ids and item.get("priority")!="P1_start_zero_coverage":
+            errors.append(f"{aid}: zero-coverage active agent not marked P1")
 
     score=item.get("priority_score")
     if not isinstance(score,(int,float)) or isinstance(score,bool) or not (0 <= score <= 100):
@@ -105,19 +117,29 @@ for item in rp_agents:
     if len(hint_urls) != len(set(hint_urls)):
         errors.append(f"{aid}: duplicate research source hint URL")
 
-    expected_fields_needed=max(0,target.get("minimum_documented_fields",0)-report.get("documented_fields",0))
+    expected_fields_needed=0 if lifecycle_status=="discontinued" else max(0,target.get("minimum_documented_fields",0)-report.get("documented_fields",0))
     if item.get("fields_needed_for_40pct") != expected_fields_needed:
         errors.append(f"{aid}: fields_needed_for_40pct mismatch")
 
-    tier_base={"P0_raise_existing_to_40pct":80.0,"P1_start_zero_coverage":60.0,"P2_maintain_or_deepen":20.0}
-    gap_component=round((expected_fields_needed/max(1,target.get("minimum_documented_fields",1)))*10.0,2)
-    unknown_component=round((report.get("unknown_fields",0)/max(1,len(expected_completeness_fields)))*5.0,2)
-    source_component=float(min(5,len(source_hints)))
-    expected_score=round(min(100.0,tier_base.get(item.get("priority"),0)+gap_component+unknown_component+source_component),2)
+    tier_base={"P0_raise_existing_to_40pct":80.0,"P1_start_zero_coverage":60.0,"P2_maintain_or_deepen":20.0,"P3_discontinued":0.0}
+    if lifecycle_status=="discontinued":
+        gap_component=0.0
+        unknown_component=0.0
+        source_component=0.0
+        expected_score=0.0
+    else:
+        gap_component=round((expected_fields_needed/max(1,target.get("minimum_documented_fields",1)))*10.0,2)
+        unknown_component=round((report.get("unknown_fields",0)/max(1,len(expected_completeness_fields)))*5.0,2)
+        source_component=float(min(5,len(source_hints)))
+        expected_score=round(min(100.0,tier_base.get(item.get("priority"),0)+gap_component+unknown_component+source_component),2)
     if score != expected_score:
         errors.append(f"{aid}: priority score {score!r} != reproducible score {expected_score}")
 
     recommended=item.get("recommended_unknown_paths") or []
+    if lifecycle_status=="discontinued" and recommended:
+        errors.append(f"{aid}: discontinued agent must not have active research recommendations")
+    if lifecycle_status=="discontinued" and (item.get("research_hints") or []):
+        errors.append(f"{aid}: discontinued agent must not have active research hints")
     states=report.get("states") or {}
     if any(states.get(path)!="unknown" for path in recommended):
         errors.append(f"{aid}: recommended research path is not unknown")
