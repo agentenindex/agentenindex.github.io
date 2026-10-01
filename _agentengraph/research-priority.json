@@ -22,9 +22,9 @@
     "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified. Discontinued products receive priority score 0 and no active research hints."
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 58,
+    "agents_below_target_with_deep_evidence": 56,
     "agents_without_deep_evidence": 0,
-    "agents_at_or_above_target": 51,
+    "agents_at_or_above_target": 53,
     "agents_discontinued": 1
   },
   "field_priorities": [
@@ -59,16 +59,16 @@
       "coverage_pct": 10.0
     },
     {
-      "path": "governance.audit_logs.retention_days",
+      "path": "protocols.mcp.server",
       "documented_agents": 12,
       "unknown_agents": 98,
       "coverage_pct": 10.91
     },
     {
-      "path": "protocols.mcp.server",
-      "documented_agents": 12,
-      "unknown_agents": 98,
-      "coverage_pct": 10.91
+      "path": "governance.audit_logs.retention_days",
+      "documented_agents": 13,
+      "unknown_agents": 97,
+      "coverage_pct": 11.82
     },
     {
       "path": "api.webhooks",
@@ -78,27 +78,27 @@
     },
     {
       "path": "security.customer_managed_key",
-      "documented_agents": 18,
-      "unknown_agents": 92,
-      "coverage_pct": 16.36
+      "documented_agents": 19,
+      "unknown_agents": 91,
+      "coverage_pct": 17.27
     },
     {
       "path": "governance.audit_logs.api",
-      "documented_agents": 19,
-      "unknown_agents": 91,
-      "coverage_pct": 17.27
+      "documented_agents": 20,
+      "unknown_agents": 90,
+      "coverage_pct": 18.18
     },
     {
       "path": "governance.audit_logs.siem_export",
-      "documented_agents": 19,
-      "unknown_agents": 91,
-      "coverage_pct": 17.27
+      "documented_agents": 20,
+      "unknown_agents": 90,
+      "coverage_pct": 18.18
     },
     {
       "path": "governance.custom_roles",
-      "documented_agents": 21,
-      "unknown_agents": 89,
-      "coverage_pct": 19.09
+      "documented_agents": 22,
+      "unknown_agents": 88,
+      "coverage_pct": 20.0
     },
     {
       "path": "hosting.self_hosted",
@@ -114,21 +114,15 @@
     },
     {
       "path": "privacy.residency.customer_region_selectable",
-      "documented_agents": 28,
-      "unknown_agents": 82,
-      "coverage_pct": 25.45
+      "documented_agents": 30,
+      "unknown_agents": 80,
+      "coverage_pct": 27.27
     },
     {
       "path": "governance.scim",
-      "documented_agents": 31,
-      "unknown_agents": 79,
-      "coverage_pct": 28.18
-    },
-    {
-      "path": "governance.sso.saml",
-      "documented_agents": 35,
-      "unknown_agents": 75,
-      "coverage_pct": 31.82
+      "documented_agents": 33,
+      "unknown_agents": 77,
+      "coverage_pct": 30.0
     },
     {
       "path": "protocols.mcp.client",
@@ -137,46 +131,52 @@
       "coverage_pct": 31.82
     },
     {
+      "path": "governance.sso.saml",
+      "documented_agents": 37,
+      "unknown_agents": 73,
+      "coverage_pct": 33.64
+    },
+    {
       "path": "security.encryption.in_transit",
-      "documented_agents": 35,
-      "unknown_agents": 75,
-      "coverage_pct": 31.82
+      "documented_agents": 37,
+      "unknown_agents": 73,
+      "coverage_pct": 33.64
     },
     {
       "path": "privacy.residency.available",
-      "documented_agents": 37,
-      "unknown_agents": 73,
-      "coverage_pct": 33.64
+      "documented_agents": 39,
+      "unknown_agents": 71,
+      "coverage_pct": 35.45
     },
     {
       "path": "security.encryption.at_rest",
-      "documented_agents": 37,
-      "unknown_agents": 73,
-      "coverage_pct": 33.64
+      "documented_agents": 39,
+      "unknown_agents": 71,
+      "coverage_pct": 35.45
     },
     {
       "path": "security.soc2_type2",
-      "documented_agents": 42,
-      "unknown_agents": 68,
-      "coverage_pct": 38.18
+      "documented_agents": 44,
+      "unknown_agents": 66,
+      "coverage_pct": 40.0
     },
     {
       "path": "governance.audit_logs.available",
-      "documented_agents": 49,
-      "unknown_agents": 61,
-      "coverage_pct": 44.55
-    },
-    {
-      "path": "governance.rbac",
       "documented_agents": 50,
       "unknown_agents": 60,
       "coverage_pct": 45.45
     },
     {
+      "path": "governance.rbac",
+      "documented_agents": 51,
+      "unknown_agents": 59,
+      "coverage_pct": 46.36
+    },
+    {
       "path": "hosting.managed",
-      "documented_agents": 70,
-      "unknown_agents": 40,
-      "coverage_pct": 63.64
+      "documented_agents": 71,
+      "unknown_agents": 39,
+      "coverage_pct": 64.55
     }
   ],
   "agents": [
@@ -203,8 +203,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -269,16 +269,16 @@
           "suggested_query": "Google Gemini Deep Research official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Google Gemini Deep Research official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Google Gemini Deep Research official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Google Gemini Deep Research official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -311,8 +311,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -365,16 +365,16 @@
           "suggested_query": "You.com You.com ARI official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "You.com You.com ARI official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "You.com You.com ARI official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "You.com You.com ARI official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -407,8 +407,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -461,16 +461,16 @@
           "suggested_query": "Tray.ai Tray Merlin Agent Builder official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Tray.ai Tray Merlin Agent Builder official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Tray.ai Tray Merlin Agent Builder official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Tray.ai Tray Merlin Agent Builder official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -503,8 +503,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "security.customer_managed_key"
       ],
       "available_primary_sources": [
@@ -557,21 +557,21 @@
           "suggested_query": "11x 11x Alice official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "11x 11x Alice official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "11x 11x Alice official documentation protocols mcp server"
         },
         {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "11x 11x Alice official documentation governance audit_logs retention_days"
+        },
+        {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "11x 11x Alice official documentation security customer_managed_key"
         }
       ]
@@ -599,8 +599,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -653,16 +653,16 @@
           "suggested_query": "Qualified Qualified Piper official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Qualified Qualified Piper official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Qualified Qualified Piper official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Qualified Qualified Piper official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -695,8 +695,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -749,16 +749,16 @@
           "suggested_query": "LexisNexis Lexis+ with Protégé official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "LexisNexis Lexis+ with Protégé official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -791,8 +791,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -845,16 +845,16 @@
           "suggested_query": "vLex Vincent AI official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "vLex Vincent AI official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "vLex Vincent AI official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "vLex Vincent AI official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -887,8 +887,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -941,16 +941,16 @@
           "suggested_query": "Rogo Rogo AI Analyst official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Rogo Rogo AI Analyst official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Rogo Rogo AI Analyst official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Rogo Rogo AI Analyst official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -983,8 +983,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1061,16 +1061,16 @@
           "suggested_query": "Google Google Jules official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Google Google Jules official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Google Google Jules official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Google Google Jules official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1103,8 +1103,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1152,16 +1152,16 @@
           "suggested_query": "Windsurf Windsurf Cascade official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Windsurf Windsurf Cascade official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Windsurf Windsurf Cascade official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Windsurf Windsurf Cascade official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1194,8 +1194,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1243,16 +1243,16 @@
           "suggested_query": "AWS Kiro official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "AWS Kiro official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "AWS Kiro official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "AWS Kiro official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1285,8 +1285,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1334,16 +1334,16 @@
           "suggested_query": "Make Make AI Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Make Make AI Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Make Make AI Agents official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Make Make AI Agents official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1376,8 +1376,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1425,16 +1425,16 @@
           "suggested_query": "Sierra Sierra Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Sierra Sierra Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Sierra Sierra Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Sierra Sierra Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1467,8 +1467,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1516,16 +1516,16 @@
           "suggested_query": "Gorgias Gorgias AI Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Gorgias Gorgias AI Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Gorgias Gorgias AI Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Gorgias Gorgias AI Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1558,8 +1558,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1607,16 +1607,16 @@
           "suggested_query": "Google Gemini Spark official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Google Gemini Spark official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Google Gemini Spark official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Google Gemini Spark official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1649,8 +1649,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1698,16 +1698,16 @@
           "suggested_query": "JetBrains JetBrains Junie official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "JetBrains JetBrains Junie official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "JetBrains JetBrains Junie official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "JetBrains JetBrains Junie official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1740,8 +1740,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1789,16 +1789,16 @@
           "suggested_query": "Augment Code Augment Code Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Augment Code Augment Code Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Augment Code Augment Code Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Augment Code Augment Code Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1831,8 +1831,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1880,16 +1880,16 @@
           "suggested_query": "OpenHands OpenHands official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "OpenHands OpenHands official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "OpenHands OpenHands official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "OpenHands OpenHands official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -1922,8 +1922,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -1971,16 +1971,16 @@
           "suggested_query": "Qodo Qodo Git official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Qodo Qodo Git official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Qodo Qodo Git official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Qodo Qodo Git official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -2013,8 +2013,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -2062,16 +2062,16 @@
           "suggested_query": "Warp Warp Agent CLI official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Warp Warp Agent CLI official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Warp Warp Agent CLI official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Warp Warp Agent CLI official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -2104,8 +2104,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -2153,16 +2153,16 @@
           "suggested_query": "Factory Factory Droids official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Factory Factory Droids official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Factory Factory Droids official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Factory Factory Droids official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -2195,8 +2195,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -2244,16 +2244,16 @@
           "suggested_query": "Genspark Genspark Code official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Genspark Genspark Code official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Genspark Genspark Code official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Genspark Genspark Code official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -2286,8 +2286,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -2335,16 +2335,16 @@
           "suggested_query": "Genspark Genspark Super Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Genspark Genspark Super Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Genspark Genspark Super Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Genspark Genspark Super Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -2377,8 +2377,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -2426,204 +2426,22 @@
           "suggested_query": "AWS Strands Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "AWS Strands Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "AWS Strands Agents official documentation protocols mcp server"
         },
         {
-          "path": "api.webhooks",
-          "documented_agents": 14,
-          "global_coverage_pct": 12.73,
-          "suggested_query": "AWS Strands Agents official documentation api webhooks"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0090",
-      "name": "Slackbot AI Teammate",
-      "provider_id": "PROV-SLACK",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 95.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 9.0,
-        "unknown_share": 4.8,
-        "source_readiness": 2.0
-      },
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
-      "fields_needed_for_40pct": 9,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "governance.sso.oidc",
-        "protocols.a2a.supported",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days",
-        "protocols.mcp.server",
-        "api.webhooks"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Slack – Slack is where your team works. Now it’s where your agents work too.",
-          "url": "https://slack.com/blog/news/slack-is-where-agents-work",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "Slack – AI-powered interface for work",
-          "url": "https://slack.com/blog/news/ai-powered-interface-for-work",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Slack Slackbot AI Teammate official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Slack Slackbot AI Teammate official documentation protocols a2a server"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "Slack Slackbot AI Teammate official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Slack Slackbot AI Teammate official documentation protocols a2a supported"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Slack Slackbot AI Teammate official documentation hosting private_network"
-        },
-        {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Slack Slackbot AI Teammate official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Slack Slackbot AI Teammate official documentation protocols mcp server"
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "AWS Strands Agents official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
           "documented_agents": 14,
           "global_coverage_pct": 12.73,
-          "suggested_query": "Slack Slackbot AI Teammate official documentation api webhooks"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0095",
-      "name": "monday.com AI Agents",
-      "provider_id": "PROV-MONDAY-COM",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 95.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 9.0,
-        "unknown_share": 4.8,
-        "source_readiness": 2.0
-      },
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
-      "fields_needed_for_40pct": 9,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "governance.sso.oidc",
-        "protocols.a2a.supported",
-        "hosting.private_network",
-        "governance.audit_logs.retention_days",
-        "protocols.mcp.server",
-        "security.customer_managed_key"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "monday Developer – Agents API",
-          "url": "https://developer.monday.com/api-reference/reference/agents",
-          "origin": "field_level_evidence",
-          "evidence_type": "api_docs"
-        },
-        {
-          "title": "monday.com – AI Work Platform",
-          "url": "https://ir.monday.com/news-and-events/news-releases/news-details/2026/monday-com-Goes-All-In-on-AI-From-Work-Management-Platform-to-AI-Work-Platform/default.aspx",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "monday.com monday.com AI Agents official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "monday.com monday.com AI Agents official documentation protocols a2a server"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "monday.com monday.com AI Agents official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "monday.com monday.com AI Agents official documentation protocols a2a supported"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "monday.com monday.com AI Agents official documentation hosting private_network"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "monday.com monday.com AI Agents official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "monday.com monday.com AI Agents official documentation protocols mcp server"
-        },
-        {
-          "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "monday.com monday.com AI Agents official documentation security customer_managed_key"
+          "suggested_query": "AWS Strands Agents official documentation api webhooks"
         }
       ]
     },
@@ -2650,8 +2468,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -2699,16 +2517,16 @@
           "suggested_query": "Snowflake Snowflake CoWork official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Snowflake Snowflake CoWork official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Snowflake Snowflake CoWork official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Snowflake Snowflake CoWork official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -2741,8 +2559,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -2790,16 +2608,16 @@
           "suggested_query": "Artisan Artisan Ava official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Artisan Artisan Ava official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -2882,8 +2700,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs retention_days"
         },
         {
@@ -2894,8 +2712,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation security customer_managed_key"
         }
       ]
@@ -2923,8 +2741,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -2967,16 +2785,16 @@
           "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3009,8 +2827,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3053,16 +2871,16 @@
           "suggested_query": "Replit Replit Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Replit Replit Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Replit Replit Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Replit Replit Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3095,8 +2913,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3139,16 +2957,16 @@
           "suggested_query": "Cognition Devin official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Cognition Devin official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Cognition Devin official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Cognition Devin official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3181,8 +2999,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3225,16 +3043,16 @@
           "suggested_query": "Gumloop Gumball official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Gumloop Gumball official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Gumloop Gumball official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Gumloop Gumball official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3267,8 +3085,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3311,16 +3129,16 @@
           "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3353,8 +3171,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3397,16 +3215,16 @@
           "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3439,8 +3257,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3483,16 +3301,16 @@
           "suggested_query": "Salesforce Salesforce Prospecting Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Salesforce Salesforce Prospecting Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Salesforce Salesforce Prospecting Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Salesforce Salesforce Prospecting Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3525,8 +3343,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3569,16 +3387,16 @@
           "suggested_query": "Thomson Reuters CoCounsel Legal official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3611,8 +3429,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3655,16 +3473,16 @@
           "suggested_query": "Google NotebookLM Deep Research official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Google NotebookLM Deep Research official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Google NotebookLM Deep Research official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Google NotebookLM Deep Research official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3697,8 +3515,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3741,16 +3559,16 @@
           "suggested_query": "xAI Grok DeepSearch official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "xAI Grok DeepSearch official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "xAI Grok DeepSearch official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "xAI Grok DeepSearch official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3783,8 +3601,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3827,16 +3645,16 @@
           "suggested_query": "Elicit Elicit Research Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Elicit Elicit Research Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Elicit Elicit Research Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Elicit Elicit Research Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3869,8 +3687,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3913,16 +3731,16 @@
           "suggested_query": "Consensus Consensus Research Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Consensus Consensus Research Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Consensus Consensus Research Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Consensus Consensus Research Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -3955,8 +3773,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -3999,16 +3817,16 @@
           "suggested_query": "OpenCode OpenCode official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "OpenCode OpenCode official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "OpenCode OpenCode official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "OpenCode OpenCode official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4041,8 +3859,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4085,16 +3903,16 @@
           "suggested_query": "CodeRabbit CodeRabbit Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "CodeRabbit CodeRabbit Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "CodeRabbit CodeRabbit Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "CodeRabbit CodeRabbit Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4127,8 +3945,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4171,16 +3989,16 @@
           "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4213,8 +4031,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4257,16 +4075,16 @@
           "suggested_query": "xAI Grok Bot official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "xAI Grok Bot official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "xAI Grok Bot official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "xAI Grok Bot official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4299,8 +4117,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4343,16 +4161,16 @@
           "suggested_query": "Box Box Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Box Box Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Box Box Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Box Box Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4385,8 +4203,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "security.customer_managed_key"
       ],
       "available_primary_sources": [
@@ -4429,21 +4247,21 @@
           "suggested_query": "Moveworks Moveworks Agent Studio official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Moveworks Moveworks Agent Studio official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Moveworks Moveworks Agent Studio official documentation protocols mcp server"
         },
         {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Moveworks Moveworks Agent Studio official documentation governance audit_logs retention_days"
+        },
+        {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Moveworks Moveworks Agent Studio official documentation security customer_managed_key"
         }
       ]
@@ -4471,8 +4289,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4515,16 +4333,16 @@
           "suggested_query": "Zoom ZoomMate official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Zoom ZoomMate official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Zoom ZoomMate official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Zoom ZoomMate official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4557,8 +4375,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4601,16 +4419,16 @@
           "suggested_query": "Dropbox Dropbox Dash official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Dropbox Dropbox Dash official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Dropbox Dropbox Dash official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Dropbox Dropbox Dash official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4643,8 +4461,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4687,16 +4505,16 @@
           "suggested_query": "NiCE Cognigy NiCE Cognigy AI Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "NiCE Cognigy NiCE Cognigy AI Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "NiCE Cognigy NiCE Cognigy AI Agents official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "NiCE Cognigy NiCE Cognigy AI Agents official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4729,8 +4547,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4773,16 +4591,16 @@
           "suggested_query": "Decagon Decagon AI Concierge official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Decagon Decagon AI Concierge official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Decagon Decagon AI Concierge official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Decagon Decagon AI Concierge official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4815,8 +4633,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4859,16 +4677,16 @@
           "suggested_query": "Clay Claygent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Clay Claygent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Clay Claygent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Clay Claygent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4901,8 +4719,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -4945,16 +4763,16 @@
           "suggested_query": "Luminance Luminance Agent Lumi official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -4987,8 +4805,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "security.customer_managed_key"
       ],
       "available_primary_sources": [
@@ -5072,21 +4890,21 @@
           "suggested_query": "Manus Manus Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Manus Manus Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Manus Manus Agent official documentation protocols mcp server"
         },
         {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Manus Manus Agent official documentation governance audit_logs retention_days"
+        },
+        {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Manus Manus Agent official documentation security customer_managed_key"
         }
       ]
@@ -5112,8 +4930,8 @@
         "protocols.a2a.server",
         "governance.sso.oidc",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "security.customer_managed_key",
         "governance.audit_logs.api"
@@ -5175,16 +4993,16 @@
           "suggested_query": "Google Gemini CLI official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Google Gemini CLI official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Google Gemini CLI official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Google Gemini CLI official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -5194,14 +5012,14 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Google Gemini CLI official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Gemini CLI official documentation governance audit_logs api"
         }
       ]
@@ -5229,8 +5047,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -5296,16 +5114,16 @@
           "suggested_query": "Perplexity Perplexity Computer official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Perplexity Perplexity Computer official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Perplexity Perplexity Computer official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Perplexity Perplexity Computer official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -5338,8 +5156,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -5394,16 +5212,16 @@
           "suggested_query": "Perplexity Perplexity Deep Research official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Perplexity Perplexity Deep Research official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Perplexity Perplexity Deep Research official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -5436,8 +5254,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -5492,16 +5310,16 @@
           "suggested_query": "Perplexity Perplexity Comet Assistant official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Perplexity Perplexity Comet Assistant official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Perplexity Perplexity Comet Assistant official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Perplexity Perplexity Comet Assistant official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -5534,8 +5352,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -5620,16 +5438,16 @@
           "suggested_query": "Anthropic Claude Research official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Anthropic Claude Research official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Anthropic Claude Research official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Anthropic Claude Research official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -5761,8 +5579,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "GitHub GitHub Copilot Coding Agent official documentation security customer_managed_key"
         }
       ]
@@ -5789,8 +5607,8 @@
         "protocols.a2a.server",
         "governance.sso.oidc",
         "protocols.a2a.supported",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "governance.audit_logs.api"
       ],
@@ -5870,16 +5688,16 @@
           "suggested_query": "AWS Amazon Q Developer official documentation protocols a2a supported"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "AWS Amazon Q Developer official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "AWS Amazon Q Developer official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "AWS Amazon Q Developer official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -5889,8 +5707,8 @@
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "AWS Amazon Q Developer official documentation governance audit_logs api"
         }
       ]
@@ -5916,8 +5734,8 @@
         "protocols.a2a.client",
         "protocols.a2a.server",
         "protocols.a2a.supported",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "security.customer_managed_key",
         "governance.audit_logs.api"
@@ -5985,16 +5803,16 @@
           "suggested_query": "Cline Cline official documentation protocols a2a supported"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Cline Cline official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Cline Cline official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Cline Cline official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -6004,14 +5822,14 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Cline Cline official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Cline Cline official documentation governance audit_logs api"
         }
       ]
@@ -6120,26 +5938,26 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "n8n n8n Agents official documentation governance audit_logs retention_days"
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "n8n n8n Agents official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "n8n n8n Agents official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "n8n n8n Agents official documentation governance audit_logs siem_export"
         }
       ]
@@ -6265,8 +6083,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Zapier AI by Zapier (ehemals Zapier Agents) official documentation security customer_managed_key"
         }
       ]
@@ -6294,8 +6112,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "security.customer_managed_key"
       ],
       "available_primary_sources": [
@@ -6373,21 +6191,21 @@
           "suggested_query": "Lindy Lindy official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Lindy Lindy official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Lindy Lindy official documentation protocols mcp server"
         },
         {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Lindy Lindy official documentation governance audit_logs retention_days"
+        },
+        {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Lindy Lindy official documentation security customer_managed_key"
         }
       ]
@@ -6414,8 +6232,8 @@
         "protocols.a2a.server",
         "governance.sso.oidc",
         "protocols.a2a.supported",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "security.customer_managed_key",
         "governance.audit_logs.api"
       ],
@@ -6487,27 +6305,27 @@
           "suggested_query": "Gumloop Gumloop Agents official documentation protocols a2a supported"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Gumloop Gumloop Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Gumloop Gumloop Agents official documentation protocols mcp server"
         },
         {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Gumloop Gumloop Agents official documentation governance audit_logs retention_days"
+        },
+        {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Gumloop Gumloop Agents official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Gumloop Gumloop Agents official documentation governance audit_logs api"
         }
       ]
@@ -6535,8 +6353,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -6621,16 +6439,16 @@
           "suggested_query": "Microsoft Microsoft Copilot Studio official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Microsoft Microsoft Copilot Studio official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Microsoft Microsoft Copilot Studio official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Microsoft Microsoft Copilot Studio official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -6661,8 +6479,8 @@
         "protocols.a2a.client",
         "governance.sso.oidc",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "security.customer_managed_key",
         "governance.audit_logs.api",
         "governance.audit_logs.siem_export"
@@ -6737,33 +6555,33 @@
           "suggested_query": "IBM IBM watsonx Orchestrate official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "IBM IBM watsonx Orchestrate official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "IBM IBM watsonx Orchestrate official documentation protocols mcp server"
         },
         {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "IBM IBM watsonx Orchestrate official documentation governance audit_logs retention_days"
+        },
+        {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "IBM IBM watsonx Orchestrate official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "IBM IBM watsonx Orchestrate official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "IBM IBM watsonx Orchestrate official documentation governance audit_logs siem_export"
         }
       ]
@@ -6788,8 +6606,8 @@
       "recommended_unknown_paths": [
         "governance.sso.oidc",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "security.customer_managed_key",
         "governance.audit_logs.api",
@@ -6859,16 +6677,16 @@
           "suggested_query": "Oracle Oracle AI Agent Studio official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Oracle Oracle AI Agent Studio official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Oracle Oracle AI Agent Studio official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Oracle Oracle AI Agent Studio official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -6878,20 +6696,20 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Oracle Oracle AI Agent Studio official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Oracle Oracle AI Agent Studio official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Oracle Oracle AI Agent Studio official documentation governance audit_logs siem_export"
         }
       ]
@@ -7018,8 +6836,8 @@
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "UiPath UiPath Agents official documentation governance audit_logs siem_export"
         }
       ]
@@ -7047,8 +6865,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -7133,16 +6951,16 @@
           "suggested_query": "Salesforce Salesforce Agentforce official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Salesforce Salesforce Agentforce official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Salesforce Salesforce Agentforce official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Salesforce Salesforce Agentforce official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -7173,8 +6991,8 @@
         "protocols.a2a.client",
         "protocols.a2a.server",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "security.customer_managed_key",
         "governance.audit_logs.api"
@@ -7249,16 +7067,16 @@
           "suggested_query": "SAP SAP Joule Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "SAP SAP Joule Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "SAP SAP Joule Agents official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "SAP SAP Joule Agents official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -7268,14 +7086,14 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "SAP SAP Joule Agents official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "SAP SAP Joule Agents official documentation governance audit_logs api"
         }
       ]
@@ -7390,8 +7208,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Notion Notion Agent official documentation security customer_managed_key"
         }
       ]
@@ -7511,8 +7329,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Notion Notion Custom Agents official documentation security customer_managed_key"
         }
       ]
@@ -7609,8 +7427,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance audit_logs retention_days"
         },
         {
@@ -7621,20 +7439,20 @@
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance audit_logs siem_export"
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance custom_roles"
         },
         {
@@ -7667,8 +7485,8 @@
         "protocols.a2a.server",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "governance.custom_roles"
       ],
@@ -7748,16 +7566,16 @@
           "suggested_query": "ServiceNow ServiceNow Otto official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "ServiceNow ServiceNow Otto official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "ServiceNow ServiceNow Otto official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "ServiceNow ServiceNow Otto official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -7767,8 +7585,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
           "suggested_query": "ServiceNow ServiceNow Otto official documentation governance custom_roles"
         }
       ]
@@ -7796,8 +7614,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -7882,16 +7700,16 @@
           "suggested_query": "Anthropic Claude Cowork official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Anthropic Claude Cowork official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Anthropic Claude Cowork official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Anthropic Claude Cowork official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -8011,20 +7829,20 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "Browser Use Browser Use Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Browser Use Browser Use Agent official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Browser Use Browser Use Agent official documentation governance audit_logs api"
         }
       ]
@@ -8139,8 +7957,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "GitLab GitLab Duo Agent Platform official documentation governance audit_logs retention_days"
         },
         {
@@ -8151,8 +7969,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "GitLab GitLab Duo Agent Platform official documentation security customer_managed_key"
         }
       ]
@@ -8180,8 +7998,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -8266,16 +8084,16 @@
           "suggested_query": "Mistral AI Mistral Vibe Code official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Mistral AI Mistral Vibe Code official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Mistral AI Mistral Vibe Code official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Mistral AI Mistral Vibe Code official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -8305,8 +8123,8 @@
       "recommended_unknown_paths": [
         "protocols.a2a.client",
         "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "governance.audit_logs.api",
         "governance.audit_logs.siem_export",
@@ -8376,16 +8194,16 @@
           "suggested_query": "Google Google Agent Development Kit official documentation governance sso oidc"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Google Google Agent Development Kit official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Google Google Agent Development Kit official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Google Google Agent Development Kit official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -8395,20 +8213,20 @@
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Google Agent Development Kit official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Google Agent Development Kit official documentation governance audit_logs siem_export"
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
           "suggested_query": "Google Google Agent Development Kit official documentation governance custom_roles"
         }
       ]
@@ -8436,8 +8254,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -8522,16 +8340,16 @@
           "suggested_query": "Boomi Boomi Agentstudio official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Boomi Boomi Agentstudio official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Boomi Boomi Agentstudio official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Boomi Boomi Agentstudio official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -8627,44 +8445,44 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance audit_logs retention_days"
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance audit_logs siem_export"
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance custom_roles"
         },
         {
           "path": "privacy.residency.customer_region_selectable",
-          "documented_agents": 28,
-          "global_coverage_pct": 25.45,
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation privacy residency customer_region_selectable"
         },
         {
           "path": "governance.scim",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance scim"
         }
       ]
@@ -8692,8 +8510,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -8778,16 +8596,16 @@
           "suggested_query": "Mistral AI Mistral Vibe Work official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Mistral AI Mistral Vibe Work official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Mistral AI Mistral Vibe Work official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Mistral AI Mistral Vibe Work official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -8818,8 +8636,8 @@
         "protocols.a2a.client",
         "governance.sso.oidc",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "security.customer_managed_key",
         "governance.audit_logs.api"
@@ -8894,16 +8712,16 @@
           "suggested_query": "Workday Workday Agent System of Record official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Workday Workday Agent System of Record official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Workday Workday Agent System of Record official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Workday Workday Agent System of Record official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -8913,14 +8731,14 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Workday Workday Agent System of Record official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Workday Workday Agent System of Record official documentation governance audit_logs api"
         }
       ]
@@ -8946,8 +8764,8 @@
         "protocols.a2a.server",
         "governance.sso.oidc",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "governance.audit_logs.api",
         "governance.audit_logs.siem_export"
@@ -9020,16 +8838,16 @@
           "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -9039,14 +8857,14 @@
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation governance audit_logs siem_export"
         }
       ]
@@ -9073,8 +8891,8 @@
         "protocols.a2a.server",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "security.customer_managed_key"
       ],
@@ -9154,16 +8972,16 @@
           "suggested_query": "Snowflake Snowflake Cortex Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Snowflake Snowflake Cortex Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Snowflake Snowflake Cortex Agents official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Snowflake Snowflake Cortex Agents official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -9173,8 +8991,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Snowflake Snowflake Cortex Agents official documentation security customer_managed_key"
         }
       ]
@@ -9201,8 +9019,8 @@
         "protocols.a2a.server",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "governance.custom_roles"
       ],
@@ -9281,16 +9099,16 @@
           "suggested_query": "Cursor Cursor Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Cursor Cursor Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Cursor Cursor Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Cursor Cursor Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -9300,8 +9118,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
           "suggested_query": "Cursor Cursor Agent official documentation governance custom_roles"
         }
       ]
@@ -9329,8 +9147,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -9415,16 +9233,16 @@
           "suggested_query": "Atlassian Atlassian Rovo Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Atlassian Atlassian Rovo Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Atlassian Atlassian Rovo Agents official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Atlassian Atlassian Rovo Agents official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -9556,8 +9374,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Intercom Intercom Fin official documentation security customer_managed_key"
         }
       ]
@@ -9585,8 +9403,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -9659,16 +9477,16 @@
           "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -9701,8 +9519,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -9775,16 +9593,16 @@
           "suggested_query": "HubSpot HubSpot Breeze Prospecting Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "HubSpot HubSpot Breeze Prospecting Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "HubSpot HubSpot Breeze Prospecting Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "HubSpot HubSpot Breeze Prospecting Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -9817,8 +9635,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -9891,16 +9709,16 @@
           "suggested_query": "HubSpot HubSpot Data Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "HubSpot HubSpot Data Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "HubSpot HubSpot Data Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "HubSpot HubSpot Data Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -9933,8 +9751,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -10017,16 +9835,16 @@
           "suggested_query": "HubSpot HubSpot Company Research Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "HubSpot HubSpot Company Research Agent official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "HubSpot HubSpot Company Research Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "HubSpot HubSpot Company Research Agent official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -10059,8 +9877,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks"
       ],
       "available_primary_sources": [
@@ -10125,16 +9943,16 @@
           "suggested_query": "Harvey Harvey Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Harvey Harvey Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Harvey Harvey Agents official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Harvey Harvey Agents official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -10235,8 +10053,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance audit_logs retention_days"
         },
         {
@@ -10247,20 +10065,20 @@
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance audit_logs siem_export"
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
         },
         {
@@ -10293,8 +10111,8 @@
         "protocols.a2a.server",
         "governance.sso.oidc",
         "protocols.a2a.supported",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "api.webhooks",
         "security.customer_managed_key"
       ],
@@ -10374,16 +10192,16 @@
           "suggested_query": "LangChain LangSmith Deployment official documentation protocols a2a supported"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "LangChain LangSmith Deployment official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "LangChain LangSmith Deployment official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "LangChain LangSmith Deployment official documentation governance audit_logs retention_days"
         },
         {
           "path": "api.webhooks",
@@ -10393,8 +10211,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "LangChain LangSmith Deployment official documentation security customer_managed_key"
         }
       ]
@@ -10521,9 +10339,136 @@
         },
         {
           "path": "governance.audit_logs.siem_export",
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
+          "suggested_query": "Adobe Adobe Agent Orchestrator official documentation governance audit_logs siem_export"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0095",
+      "name": "monday.com AI Agents",
+      "provider_id": "PROV-MONDAY-COM",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 27.8,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 2.8,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 11,
+      "unknown_fields": 14,
+      "coverage_pct": 44.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "governance.sso.oidc",
+        "protocols.a2a.supported",
+        "hosting.private_network",
+        "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
+        "security.customer_managed_key"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "monday Developer – Agents API",
+          "url": "https://developer.monday.com/api-reference/reference/agents",
+          "origin": "field_level_evidence",
+          "evidence_type": "api_docs"
+        },
+        {
+          "title": "monday.com Support – AI Permissions and Governance",
+          "url": "https://support.monday.com/hc/en-us/articles/30934592475410-AI-Permissions-and-Governance",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "monday.com Support – Account permissions",
+          "url": "https://support.monday.com/hc/en-us/articles/360003457320-Account-permissions",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "monday.com Support – SAML Single Sign-on",
+          "url": "https://support.monday.com/hc/en-us/articles/360000460605-SAML-Single-Sign-on",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "monday.com Trust Center – Data Security",
+          "url": "https://monday.com/trustcenter/datasecure",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "monday.com – SOC 2 Report",
+          "url": "https://monday.com/terms/soc2",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "monday.com – Security and Privacy FAQs",
+          "url": "https://monday.com/trustcenter/faqs",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "monday.com – AI Work Platform",
+          "url": "https://ir.monday.com/news-and-events/news-releases/news-details/2026/monday-com-Goes-All-In-on-AI-From-Work-Management-Platform-to-AI-Work-Platform/default.aspx",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "monday.com monday.com AI Agents official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "monday.com monday.com AI Agents official documentation protocols a2a server"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 9,
+          "global_coverage_pct": 8.18,
+          "suggested_query": "monday.com monday.com AI Agents official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "monday.com monday.com AI Agents official documentation protocols a2a supported"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "monday.com monday.com AI Agents official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "monday.com monday.com AI Agents official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "monday.com monday.com AI Agents official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "security.customer_managed_key",
           "documented_agents": 19,
           "global_coverage_pct": 17.27,
-          "suggested_query": "Adobe Adobe Agent Orchestrator official documentation governance audit_logs siem_export"
+          "suggested_query": "monday.com monday.com AI Agents official documentation security customer_managed_key"
         }
       ]
     },
@@ -10550,8 +10495,8 @@
         "governance.sso.oidc",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "security.customer_managed_key"
       ],
       "available_primary_sources": [
@@ -10635,21 +10580,21 @@
           "suggested_query": "Relevance AI Relevance AI Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Relevance AI Relevance AI Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Relevance AI Relevance AI Agents official documentation protocols mcp server"
         },
         {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Relevance AI Relevance AI Agents official documentation governance audit_logs retention_days"
+        },
+        {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Relevance AI Relevance AI Agents official documentation security customer_managed_key"
         }
       ]
@@ -10757,26 +10702,26 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "CrewAI CrewAI AMP official documentation governance audit_logs retention_days"
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "CrewAI CrewAI AMP official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "CrewAI CrewAI AMP official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "CrewAI CrewAI AMP official documentation governance audit_logs siem_export"
         }
       ]
@@ -11004,8 +10949,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "Anthropic Claude Code official documentation governance audit_logs retention_days"
         },
         {
@@ -11120,8 +11065,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance audit_logs retention_days"
         },
         {
@@ -11132,21 +11077,149 @@
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance audit_logs siem_export"
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance custom_roles"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0090",
+      "name": "Slackbot AI Teammate",
+      "provider_id": "PROV-SLACK",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 27.4,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 2.4,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 13,
+      "unknown_fields": 12,
+      "coverage_pct": 52.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "governance.sso.oidc",
+        "protocols.a2a.supported",
+        "hosting.private_network",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.custom_roles"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Slack Help – Audit logs in Slack",
+          "url": "https://slack.com/help/articles/360000394286-Audit-logs-in-Slack",
+          "origin": "field_level_evidence",
+          "evidence_type": "api_docs"
+        },
+        {
+          "title": "Slack Help – Data residency for Slack",
+          "url": "https://slack.com/help/articles/360035633934-Data-residency-for-Slack",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Slack Help – Manage members with SCIM provisioning",
+          "url": "https://slack.com/help/articles/212572638-Manage-members-with-SCIM-provisioning/1000",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Slack Help – Set up SAML single sign-on",
+          "url": "https://slack.com/help/articles/203772216-Set-up-SAML-single-sign-on-for-Slack",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Slack Help – Slack Enterprise Key Management",
+          "url": "https://slack.com/help/articles/360019110974-Slack-Enterprise-Key-Management",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Slack – Data Request Overview",
+          "url": "https://slack.com/trust/data-requests",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Slack – Security",
+          "url": "https://slack.com/trust/security",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Slack – Slack is where your team works. Now it’s where your agents work too.",
+          "url": "https://slack.com/blog/news/slack-is-where-agents-work",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Slack Slackbot AI Teammate official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Slack Slackbot AI Teammate official documentation protocols a2a server"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 9,
+          "global_coverage_pct": 8.18,
+          "suggested_query": "Slack Slackbot AI Teammate official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Slack Slackbot AI Teammate official documentation protocols a2a supported"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Slack Slackbot AI Teammate official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Slack Slackbot AI Teammate official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 14,
+          "global_coverage_pct": 12.73,
+          "suggested_query": "Slack Slackbot AI Teammate official documentation api webhooks"
+        },
+        {
+          "path": "governance.custom_roles",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Slack Slackbot AI Teammate official documentation governance custom_roles"
         }
       ]
     },
@@ -11172,8 +11245,8 @@
         "protocols.a2a.server",
         "protocols.a2a.supported",
         "hosting.private_network",
-        "governance.audit_logs.retention_days",
         "protocols.mcp.server",
+        "governance.audit_logs.retention_days",
         "security.customer_managed_key",
         "governance.audit_logs.siem_export"
       ],
@@ -11253,27 +11326,27 @@
           "suggested_query": "Zendesk Zendesk AI Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Zendesk Zendesk AI Agents official documentation governance audit_logs retention_days"
-        },
-        {
           "path": "protocols.mcp.server",
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Zendesk Zendesk AI Agents official documentation protocols mcp server"
         },
         {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Zendesk Zendesk AI Agents official documentation governance audit_logs retention_days"
+        },
+        {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Zendesk Zendesk AI Agents official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Zendesk Zendesk AI Agents official documentation governance audit_logs siem_export"
         }
       ]
@@ -11484,26 +11557,26 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
+          "documented_agents": 19,
+          "global_coverage_pct": 17.27,
           "suggested_query": "Dust Dust Agents official documentation security customer_managed_key"
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Dust Dust Agents official documentation governance audit_logs api"
         },
         {
           "path": "governance.audit_logs.siem_export",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Dust Dust Agents official documentation governance audit_logs siem_export"
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
           "suggested_query": "Dust Dust Agents official documentation governance custom_roles"
         }
       ]
@@ -11739,14 +11812,14 @@
         },
         {
           "path": "governance.audit_logs.api",
-          "documented_agents": 19,
-          "global_coverage_pct": 17.27,
+          "documented_agents": 20,
+          "global_coverage_pct": 18.18,
           "suggested_query": "Glean Glean Agents official documentation governance audit_logs api"
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 21,
-          "global_coverage_pct": 19.09,
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
           "suggested_query": "Glean Glean Agents official documentation governance custom_roles"
         }
       ]
@@ -11840,8 +11913,8 @@
         },
         {
           "path": "governance.audit_logs.retention_days",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
           "suggested_query": "Workato Workato Agentic official documentation governance audit_logs retention_days"
         },
         {

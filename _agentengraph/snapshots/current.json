@@ -7767,6 +7767,24 @@
           "Niedrige Hürde für Teams",
           "Tool- und App-Anbindung"
         ],
+        "governance.audit_logs.api": [
+          true
+        ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          730
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "hosting.managed": [
           true
         ],
@@ -7776,11 +7794,29 @@
         "identity.provider": [
           "Slack"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          true
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Arbeitsfragen beantworten",
@@ -8195,17 +8231,47 @@
           "Niedrige Einstiegshürde für monday.com-Nutzer",
           "Nutzung vorhandener Boards und Daten"
         ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
+        "hosting.managed": [
+          true
+        ],
         "identity.name": [
           "monday.com AI Agents"
         ],
         "identity.provider": [
           "monday.com"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Board-Aufgaben",

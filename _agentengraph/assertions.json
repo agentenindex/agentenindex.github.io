@@ -75980,6 +75980,216 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-8BFB1A16247BF92AD3",
+      "agent_id": "AI-0090",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A394799F343C5E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_enterprise",
+        "note": "Slack exposes Enterprise audit events through API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A394799F343C5E",
+            "note": "Slack documents the Audit Logs API for programmatic monitoring.",
+            "evidence_type": "api_docs",
+            "source_section": "Use the Audit Logs API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-095702395BB7AB789D",
+      "agent_id": "AI-0090",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A394799F343C5E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_enterprise",
+        "note": "Slack Enterprise provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A394799F343C5E",
+            "note": "Slack documents Enterprise audit logs for organization changes and usage.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-36EAE802F2169008CD",
+      "agent_id": "AI-0090",
+      "path": "governance.audit_logs.retention_days",
+      "value": 730,
+      "value_hash": "61182f39851829ca",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A394799F343C5E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_enterprise",
+        "note": "Slack documents up to two years (730 days) of Enterprise audit-log retention.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A394799F343C5E",
+            "note": "Slack states audit logs are retained for a maximum of two years for Enterprise customers as of April 30, 2026.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-895F5E0CF14DC1A7D7",
+      "agent_id": "AI-0090",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A394799F343C5E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_enterprise",
+        "note": "Slack audit logs can feed SIEM tooling.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A394799F343C5E",
+            "note": "Slack explicitly documents sending Audit Logs API data to SIEM tools.",
+            "evidence_type": "technical_docs",
+            "source_section": "Use the Audit Logs API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2CF9BDE3F43FA78BAA",
+      "agent_id": "AI-0090",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B969F44FC88CEF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_business_enterprise",
+        "note": "Slack supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B969F44FC88CEF",
+            "note": "Slack documents SCIM-based member and group provisioning.",
+            "evidence_type": "technical_docs",
+            "source_section": "Manage members"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6B3D3A582F55823A5B",
+      "agent_id": "AI-0090",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-79B77EB6493435"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_business_enterprise",
+        "note": "Slack supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-79B77EB6493435",
+            "note": "Slack documents SAML 2.0 SSO for Business+ and Enterprise organizations.",
+            "evidence_type": "technical_docs",
+            "source_section": "Set up SAML SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-0DC1666DF54A72194A",
       "agent_id": "AI-0090",
       "path": "hosting.managed",
@@ -76063,6 +76273,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E377554CECCD4FA857",
+      "agent_id": "AI-0090",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BE0611954D92C0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_enterprise_including_slackbot_data",
+        "note": "Slack provides regional data-residency controls covering bot-generated content.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BE0611954D92C0",
+            "note": "Slack documents data residency across multiple geographic regions, including bot-generated messages and files.",
+            "evidence_type": "technical_docs",
+            "source_section": "Data stored in the data region"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-98A4F2531D146F8280",
+      "agent_id": "AI-0090",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BE0611954D92C0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_business_enterprise",
+        "note": "Eligible Slack customers can select a supported data region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BE0611954D92C0",
+            "note": "Slack states organizations can choose the region where covered data at rest is stored.",
+            "evidence_type": "technical_docs",
+            "source_section": "Data residency / available regions"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7B31E9F5A44C8302FF",
       "agent_id": "AI-0090",
       "path": "profile.depth",
@@ -76109,6 +76389,146 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-A5218FF37266D1DEB3",
+      "agent_id": "AI-0090",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0AFEB1ABDC060C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_enterprise_key_management",
+        "note": "Slack Enterprise supports customer-controlled encryption keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0AFEB1ABDC060C",
+            "note": "Slack documents customer-controlled encryption keys stored in the customer's AWS account for messages, Slackbot conversations, files, and other data.",
+            "evidence_type": "security_trust",
+            "source_section": "Data encrypted with customer-controlled keys"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-706240C46D5CBFEB88",
+      "agent_id": "AI-0090",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-25A776F0C3D2EF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_customer_data",
+        "note": "Slack documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-25A776F0C3D2EF",
+            "note": "Slack states customer data is encrypted at rest by default.",
+            "evidence_type": "security_trust",
+            "source_section": "Data protection"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D294E9BFA4646BF489",
+      "agent_id": "AI-0090",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2",
+      "value_hash": "a080d1f9d6a8ac35",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C70C2F3DD42BB7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_customer_data",
+        "note": "Slack documents TLS 1.2 for data in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C70C2F3DD42BB7",
+            "note": "Slack states it uses TLS 1.2 over HTTPS for secure data transport.",
+            "evidence_type": "security_trust",
+            "source_section": "How does Slack protect data in motion and data at rest?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8AD12D1D25F096CEB0",
+      "agent_id": "AI-0090",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-25A776F0C3D2EF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "slack_platform",
+        "note": "Slack documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-25A776F0C3D2EF",
+            "note": "Slack lists SOC 2 Type II among its compliance certifications.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance certifications and attestations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-124DB7F0B50AFE25A6",
@@ -80072,6 +80492,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-DDB2DD8B47449B06BC",
+      "agent_id": "AI-0095",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B536967534A9B3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_enterprise",
+        "note": "monday.com Enterprise supports custom roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B536967534A9B3",
+            "note": "monday.com documents Enterprise custom roles with specific account permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Create custom roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B5C8391918B6F4C9C9",
+      "agent_id": "AI-0095",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2E8BA202DEDC5F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_enterprise_ai_agents",
+        "note": "monday.com Enterprise provides role-based access controls for AI agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2E8BA202DEDC5F",
+            "note": "monday.com documents role-based permissions for AI agent types, allowing access by selected account roles and individual agents.",
+            "evidence_type": "technical_docs",
+            "source_section": "AI permissions"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9B9A22620AB1100B66",
+      "agent_id": "AI-0095",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FEACD78424A011"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_enterprise",
+        "note": "monday.com Enterprise supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FEACD78424A011",
+            "note": "monday.com documents SCIM provisioning for Enterprise accounts.",
+            "evidence_type": "technical_docs",
+            "source_section": "Provisioning"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F72FDC12AF4A2140DC",
+      "agent_id": "AI-0095",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FEACD78424A011"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_enterprise",
+        "note": "monday.com Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FEACD78424A011",
+            "note": "monday.com documents SAML 2.0 SSO for Enterprise.",
+            "evidence_type": "technical_docs",
+            "source_section": "SAML Single Sign-on"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1CAC06C1FA79AD9618",
+      "agent_id": "AI-0095",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DB665555B6401C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_ai_agents",
+        "note": "monday AI Agents run on monday.com's managed cloud platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DB665555B6401C",
+            "note": "monday.com states it is a cloud-based solution with no on-premise infrastructure.",
+            "evidence_type": "security_trust",
+            "source_section": "Physical Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-CAC40EB11A5CE670B6",
       "agent_id": "AI-0095",
       "path": "identity.name",
@@ -80122,6 +80717,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-853C2779DBF4048D77",
+      "agent_id": "AI-0095",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-408D7233F2A4F1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_enterprise",
+        "note": "monday.com Enterprise provides a regional data-hosting option.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-408D7233F2A4F1",
+            "note": "monday.com documents an EU data-center option for Enterprise customers.",
+            "evidence_type": "security_trust",
+            "source_section": "Where are monday.com’s data centers located?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-60F03AC6640C190142",
+      "agent_id": "AI-0095",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-408D7233F2A4F1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_enterprise",
+        "note": "Enterprise customers can choose EU data hosting.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-408D7233F2A4F1",
+            "note": "monday.com states Enterprise customers can choose to host data in its EU data center in Frankfurt.",
+            "evidence_type": "security_trust",
+            "source_section": "Where are monday.com’s data centers located?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-FC97E36D871DB1909B",
       "agent_id": "AI-0095",
       "path": "profile.depth",
@@ -80170,6 +80835,111 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-C88E20100EC1555270",
+      "agent_id": "AI-0095",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DB665555B6401C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_platform",
+        "note": "monday.com documents AES-256-or-better encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DB665555B6401C",
+            "note": "monday.com states user data at rest is encrypted with AES-256 or better.",
+            "evidence_type": "security_trust",
+            "source_section": "Data Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2EC4C8D71E8F4B16BF",
+      "agent_id": "AI-0095",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DB665555B6401C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_platform",
+        "note": "monday.com documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DB665555B6401C",
+            "note": "monday.com states traffic uses TLS 1.3 with TLS 1.2 minimum.",
+            "evidence_type": "security_trust",
+            "source_section": "Data Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-029A0064D4730FEB8D",
+      "agent_id": "AI-0095",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A4DEA9EE1AB2B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "monday_platform",
+        "note": "monday.com documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A4DEA9EE1AB2B5",
+            "note": "monday.com states it undergoes an annual SOC 2 Type II audit.",
+            "evidence_type": "security_trust",
+            "source_section": "Service Organization Control (SOC) 2 Report"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-665E118534800588DF",
