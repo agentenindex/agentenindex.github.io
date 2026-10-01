@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     }
 
-    if (!state.category && !state.audience && !state.provider && !qTokens.length) return null;
+    if (!state.category && !state.provider && !qTokens.length) return null;
     return { a, score, reasons:[...new Set(reasons)].slice(0,4), textMatches };
   }
 
