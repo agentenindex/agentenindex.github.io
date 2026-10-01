@@ -3144,6 +3144,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-3C32E1704844AC7EAF",
+      "agent_id": "AI-0004",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-58F221166ED513"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise",
+        "note": "Perplexity Enterprise supports custom roles with granular permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-58F221166ED513",
+            "note": "Perplexity documents Enterprise custom roles with granular permissions, SCIM group sync, and per-group controls.",
+            "evidence_type": "official_release",
+            "source_section": "Control Enterprise access with custom roles and SCIM groups"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-270F52CBDC05AFBFED",
       "agent_id": "AI-0004",
       "path": "governance.rbac",
@@ -33711,6 +33746,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-AE6507A50C095DE841",
+      "agent_id": "AI-0038",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-58F221166ED513"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise",
+        "note": "Perplexity Enterprise supports custom roles with granular permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-58F221166ED513",
+            "note": "Perplexity documents Enterprise custom roles with granular permissions, SCIM group sync, and per-group controls.",
+            "evidence_type": "official_release",
+            "source_section": "Control Enterprise access with custom roles and SCIM groups"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-AF52DE3B95C4CF80B8",
       "agent_id": "AI-0038",
       "path": "governance.rbac",
@@ -47818,6 +47888,41 @@
             "note": "Perplexity lists Audit Logs as an organization-wide Enterprise Max security feature.",
             "evidence_type": "technical_docs",
             "source_section": "Premium security features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D1AC765C018B7BBB85",
+      "agent_id": "AI-0055",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-58F221166ED513"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_enterprise",
+        "note": "Perplexity Enterprise supports custom roles with granular permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-58F221166ED513",
+            "note": "Perplexity documents Enterprise custom roles with granular permissions, SCIM group sync, and per-group controls.",
+            "evidence_type": "official_release",
+            "source_section": "Control Enterprise access with custom roles and SCIM groups"
           }
         ]
       },
@@ -71578,6 +71683,237 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-A590934EA9622498DB",
+      "agent_id": "AI-0084",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-180B7F57A612AC",
+          "SRC-7E4C5A111EEAC0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_platform_including_merlin",
+        "note": "Tray provides agent execution logs and platform audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-180B7F57A612AC",
+            "note": "Tray documents detailed logs for each agent request and execution.",
+            "evidence_type": "technical_docs",
+            "source_section": "Logs and Debugging"
+          },
+          {
+            "source_id": "SRC-7E4C5A111EEAC0",
+            "note": "Tray documents comprehensive audit logs across its application and infrastructure.",
+            "evidence_type": "security_trust",
+            "source_section": "Security Policies"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2155EDB40FF0B96E50",
+      "agent_id": "AI-0084",
+      "path": "governance.audit_logs.retention_days",
+      "value": 30,
+      "value_hash": "624b60c58c9d8bfb",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-823D81D11BA025",
+          "SRC-EC6A5A980EC518"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_default_workflow_logs_used_by_merlin",
+        "note": "The documented default workflow-log retention used by Merlin Agent Builder is 30 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-823D81D11BA025",
+            "note": "Tray states customers can reduce workflow-log retention from 30 days to 24 hours; Merlin Agent Builder stores conversation inputs and outputs in workflow logs.",
+            "evidence_type": "security_trust",
+            "source_section": "Additional Safeguards"
+          },
+          {
+            "source_id": "SRC-EC6A5A980EC518",
+            "note": "Merlin Agent Builder conversation inputs and outputs follow the existing workflow-log retention period.",
+            "evidence_type": "technical_docs",
+            "source_section": "Merlin Agent Builder"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F7EF0B8F291DD45EB1",
+      "agent_id": "AI-0084",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BA75E8F36CC5E2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_platform_logs",
+        "note": "Tray can stream audit and execution logs to external observability/SIEM systems.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BA75E8F36CC5E2",
+            "note": "Tray documents streaming execution, step, and audit logs to external systems such as Datadog, Sentry, New Relic, or Kibana.",
+            "evidence_type": "technical_docs",
+            "source_section": "Log Streaming / Audit event type"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-171653D687F1034D80",
+      "agent_id": "AI-0084",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-827112EFF0EA83",
+          "SRC-C54E9C61FB54B5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_platform_including_merlin",
+        "note": "Merlin Agent Builder access operates within Tray's RBAC model.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-827112EFF0EA83",
+            "note": "Tray documents Owner, Admin, Contributor, and Viewer roles with an RBAC permission matrix.",
+            "evidence_type": "technical_docs",
+            "source_section": "Role-Based Access Control (RBAC)"
+          },
+          {
+            "source_id": "SRC-C54E9C61FB54B5",
+            "note": "Tray requires workspace/project permissions to access Merlin Agent Builder.",
+            "evidence_type": "technical_docs",
+            "source_section": "Prerequisites"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B9305CAC42AA2027C4",
+      "agent_id": "AI-0084",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-97755CD431183F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_enterprise_including_merlin",
+        "note": "Tray Enterprise supports SAML 2.0 SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-97755CD431183F",
+            "note": "Tray documents SSO with any SAML 2.0-compatible identity provider for Enterprise organizations.",
+            "evidence_type": "technical_docs",
+            "source_section": "Single Sign-On"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4548043600B9900E0B",
+      "agent_id": "AI-0084",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EC6A5A980EC518"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_merlin_agent_builder",
+        "note": "Merlin Agent Builder runs on Tray-managed cloud infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EC6A5A980EC518",
+            "note": "Tray explicitly states Merlin Agent Builder runs within Tray's cloud infrastructure.",
+            "evidence_type": "technical_docs",
+            "source_section": "Merlin Agent Builder"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F3826B3E952A81426B",
       "agent_id": "AI-0084",
       "path": "identity.name",
@@ -71628,6 +71964,83 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-8C4203B0C08CBD05C7",
+      "agent_id": "AI-0084",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A9D5D5B28183B2",
+          "SRC-EC6A5A980EC518"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_merlin_agent_builder",
+        "note": "Merlin Agent Builder is available on Tray's region-aware hosting platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A9D5D5B28183B2",
+            "note": "Tray documents US, EU, and APAC data regions for Tray instances.",
+            "evidence_type": "technical_docs",
+            "source_section": "Regional Hosting"
+          },
+          {
+            "source_id": "SRC-EC6A5A980EC518",
+            "note": "Tray documents Merlin Agent Builder processing in region-aware Tray infrastructure and regional Bedrock inference boundaries.",
+            "evidence_type": "technical_docs",
+            "source_section": "Cross-Region AI Processing"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-43767D3B9B2D8FB6B6",
+      "agent_id": "AI-0084",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A9D5D5B28183B2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_organization_instance",
+        "note": "Customers can select among supported Tray data regions for their organization instance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A9D5D5B28183B2",
+            "note": "Tray states a Tray instance can be hosted in one of US, EU, or APAC data regions, with Enterprise access to all regions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Regional Hosting"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-58522D6F9CD8E464ED",
       "agent_id": "AI-0084",
       "path": "profile.depth",
@@ -71676,6 +72089,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-7FB15D1ABA9CB559E3",
+      "agent_id": "AI-0084",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7E4C5A111EEAC0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_platform_including_merlin",
+        "note": "Tray documents encryption at rest for stored platform data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7E4C5A111EEAC0",
+            "note": "Tray states all stored data is encrypted at rest, with additional encryption for sensitive workflow authentications.",
+            "evidence_type": "security_trust",
+            "source_section": "Security Measures"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FFEF6ED1C37CC8926A",
+      "agent_id": "AI-0084",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7E4C5A111EEAC0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "tray_platform_including_merlin",
+        "note": "Tray documents encrypted TLS/SSL transport for data sent to the platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7E4C5A111EEAC0",
+            "note": "Tray states all data sent to Tray is encrypted and endpoints are TLS/SSL-only.",
+            "evidence_type": "security_trust",
+            "source_section": "Security Measures"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-263401A8CD6405CEC8",
