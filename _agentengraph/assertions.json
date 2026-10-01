@@ -57317,6 +57317,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-35F2DDACB2F1AA3CA6",
+      "agent_id": "AI-0081",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A8448634827E39"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agent_studio",
+        "note": "Workato exposes Agent Studio resources through documented REST APIs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A8448634827E39",
+            "note": "Workato documents REST endpoints to create, manage, start, and stop Agent Studio genies and related assets.",
+            "evidence_type": "api_docs",
+            "source_section": "Agent Studio APIs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4639334ADE12C77612",
       "agent_id": "AI-0081",
       "path": "audience",
@@ -57605,6 +57640,349 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BFA87075211DF54220",
+      "agent_id": "AI-0081",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC5875DE02CC09"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_genie_conversation_history",
+        "note": "Eligible Workato plans provide API access to query genie conversation history.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC5875DE02CC09",
+            "note": "Workato documents API access for querying genie conversation history programmatically on eligible plans.",
+            "evidence_type": "api_docs",
+            "source_section": "Genie conversation observability"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DC31E36FD8CE5E8A6F",
+      "agent_id": "AI-0081",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-00D4BD7A8421B8",
+          "SRC-AC5875DE02CC09"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agent_studio_and_platform",
+        "note": "Workato Agentic provides audit trails and conversation/job history.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-00D4BD7A8421B8",
+            "note": "Workato documents audit trails for all actions taken in Agent Studio.",
+            "evidence_type": "technical_docs",
+            "source_section": "Enterprise-grade security features"
+          },
+          {
+            "source_id": "SRC-AC5875DE02CC09",
+            "note": "Workato documents full genie conversation history and per-skill job history for observability.",
+            "evidence_type": "technical_docs",
+            "source_section": "Genie conversation observability"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8C8617466555DC63FB",
+      "agent_id": "AI-0081",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AB7218E6318A7C",
+          "SRC-AC5875DE02CC09"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agentic_and_platform_logs",
+        "note": "Workato Agentic logs can be streamed to external SIEM/observability destinations.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC5875DE02CC09",
+            "note": "Workato documents genie conversation log streaming to destinations including Splunk and Datadog.",
+            "evidence_type": "technical_docs",
+            "source_section": "Genie conversation observability"
+          },
+          {
+            "source_id": "SRC-AB7218E6318A7C",
+            "note": "Workato documents streaming MCP activity logs to any SIEM application.",
+            "evidence_type": "security_trust",
+            "source_section": "Observability / Server-level logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6C88594CE9A6AF7243",
+      "agent_id": "AI-0081",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C6E5D2BEEFB93B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_workspace_and_agentic_assets",
+        "note": "Workato supports custom roles for granular platform and asset permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6E5D2BEEFB93B",
+            "note": "Workato documents environment roles, project roles, and custom roles for granular access to platform assets.",
+            "evidence_type": "security_trust",
+            "source_section": "Controlling user access through RBAC"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-952537322717AC6DA6",
+      "agent_id": "AI-0081",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-00D4BD7A8421B8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agent_studio",
+        "note": "Agent Studio has explicit role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-00D4BD7A8421B8",
+            "note": "Workato documents RBAC for genies and knowledge bases, including collaborator privileges and access to test mode and conversation history.",
+            "evidence_type": "technical_docs",
+            "source_section": "Enterprise-grade security features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-13FE15F3FAFFA3AE05",
+      "agent_id": "AI-0081",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CEFC8EC40C59CA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_workspace_identity",
+        "note": "Workato supports SCIM 2.0 provisioning and deprovisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CEFC8EC40C59CA",
+            "note": "Workato documents SCIM 2.0 provisioning, deprovisioning, and role/group synchronization.",
+            "evidence_type": "technical_docs",
+            "source_section": "Configure SCIM in Workato"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FA9077D237E2B3CB68",
+      "agent_id": "AI-0081",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1E45DB0253B6F6",
+          "SRC-3ECC9028D0BFAF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_identity_agent_studio",
+        "note": "Agent Studio supports SAML SSO through Workato Identity.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1E45DB0253B6F6",
+            "note": "Workato documents SAML-based SSO for Workato Identity, which is used by Agent Studio and other agentic features.",
+            "evidence_type": "technical_docs",
+            "source_section": "SAML-based SSO"
+          },
+          {
+            "source_id": "SRC-3ECC9028D0BFAF",
+            "note": "Workato states Workato Identity is available for Agent Studio, Workato GO, MCP, and the API developer portal.",
+            "evidence_type": "technical_docs",
+            "source_section": "Prerequisites"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E8F7DF30017348102A",
+      "agent_id": "AI-0081",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D9C0F34198D441"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agent_studio_genies",
+        "note": "Workato hosts and manages Agent Studio genies.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D9C0F34198D441",
+            "note": "Workato states that genies are AI agents hosted and managed by Workato.",
+            "evidence_type": "technical_docs",
+            "source_section": "When should I use Workato genies vs. external AI clients with MCP?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A6048DFBDE3309D9CE",
+      "agent_id": "AI-0081",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-53F32D33149908",
+          "SRC-6B8CEBDE536C37"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_private_connectivity_and_vpw",
+        "note": "Workato supports private connectivity and dedicated VPC deployment options.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-53F32D33149908",
+            "note": "Workato documents AWS PrivateLink, Azure Private Link, on-prem agent connectivity, and Virtual Private Workato for private network connectivity.",
+            "evidence_type": "security_trust",
+            "source_section": "Private connectivity"
+          },
+          {
+            "source_id": "SRC-6B8CEBDE536C37",
+            "note": "Workato documents dedicated isolated VPW environments in AWS VPCs with VPC peering/transit connectivity to customer private networks.",
+            "evidence_type": "security_trust",
+            "source_section": "Virtual Private Workato"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-39B538EFF3E07D5E7F",
       "agent_id": "AI-0081",
       "path": "identity.name",
@@ -57653,6 +58031,83 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9BB43CC71907A5A0A1",
+      "agent_id": "AI-0081",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AE1C428DEE0F12"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agent_studio_genies",
+        "note": "Agent Studio supports regional deployment/data-residency options.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AE1C428DEE0F12",
+            "note": "Workato documents Agent Studio/genie availability across US, EU, AU, SG, and JP data centers and regional model hosting for data-residency requirements.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3CB1479CC699B76475",
+      "agent_id": "AI-0081",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AE1C428DEE0F12",
+          "SRC-D84EFDE157CAD5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_workspace_region",
+        "note": "Customers choose the regional Workato data center in which their Agent Studio workspace operates.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D84EFDE157CAD5",
+            "note": "Workato documents regional data centers and states each account is hosted in a single selected regional data center, with separate accounts used for multiple regions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Workato across regions"
+          },
+          {
+            "source_id": "SRC-AE1C428DEE0F12",
+            "note": "Workato lists the regional data centers in which genies are available.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4D8E5321F6F8E802E4",
       "agent_id": "AI-0081",
       "path": "profile.depth",
@@ -57699,6 +58154,300 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-689A5EB38D360E8C67",
+      "agent_id": "AI-0081",
+      "path": "protocols.a2a.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5B6CE756EC7878",
+          "SRC-AC5875DE02CC09"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agent_studio_genies",
+        "note": "Workato genies can act as A2A clients when delegating tasks to external agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC5875DE02CC09",
+            "note": "Workato states genies can call any A2A Protocol-compliant agent and delegate tasks to external agents.",
+            "evidence_type": "technical_docs",
+            "source_section": "Workato Agent Registry"
+          },
+          {
+            "source_id": "SRC-5B6CE756EC7878",
+            "note": "Workato documents invoking compliant A2A agent servers synchronously or asynchronously over HTTP/JSON-RPC.",
+            "evidence_type": "technical_docs",
+            "source_section": "A2A Protocol"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D4AE27742AC1C683A2",
+      "agent_id": "AI-0081",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC5875DE02CC09"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agentic",
+        "note": "A2A is a documented interoperability protocol in Workato Agentic.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC5875DE02CC09",
+            "note": "Workato documents Agent Studio genies collaborating with external agents using the Agent-to-Agent (A2A) protocol.",
+            "evidence_type": "technical_docs",
+            "source_section": "Workato Agent Registry"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FF1D6F868F8C4FB8CD",
+      "agent_id": "AI-0081",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E0B927265CE3EE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agent_studio_genies",
+        "note": "Workato genies can act as MCP clients.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E0B927265CE3EE",
+            "note": "Workato documents Agent Studio genies consuming Workato-hosted and external MCP servers as tools.",
+            "evidence_type": "technical_docs",
+            "source_section": "Genies as MCP clients"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-ECB1994FB6C51E60F1",
+      "agent_id": "AI-0081",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-11681E4B20AA0F",
+          "SRC-D631FFB713C1C7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_agentic_and_enterprise_mcp",
+        "note": "Workato can expose Workato capabilities and genies through MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D631FFB713C1C7",
+            "note": "Workato documents authenticated remote MCP servers that expose Workato endpoints and tools to AI agents and clients.",
+            "evidence_type": "technical_docs",
+            "source_section": "MCP servers"
+          },
+          {
+            "source_id": "SRC-11681E4B20AA0F",
+            "note": "Workato documents exposing a genie as an MCP server for external AI clients.",
+            "evidence_type": "technical_docs",
+            "source_section": "Using an external AI client?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E04B2E37A7F37DEBEF",
+      "agent_id": "AI-0081",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC47BBAA0EABA4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_enterprise_key_management",
+        "note": "Workato supports customer-managed/BYOK encryption keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC47BBAA0EABA4",
+            "note": "Workato documents customer-managed Customer Main Keys where customers own and manage the key supplied to Workato.",
+            "evidence_type": "security_trust",
+            "source_section": "Top level"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-EB117BDA83F2BC6890",
+      "agent_id": "AI-0081",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C6E5D2BEEFB93B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_platform_data_including_agentic_data",
+        "note": "Workato encrypts platform data at rest with AES-256.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6E5D2BEEFB93B",
+            "note": "Workato documents AES-256 encryption for data at rest, including job history and audit logs.",
+            "evidence_type": "security_trust",
+            "source_section": "Data encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-619CE42E57A332083A",
+      "agent_id": "AI-0081",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C6E5D2BEEFB93B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_platform_data_including_agentic_data",
+        "note": "Workato encrypts platform data in transit and supports TLS 1.2/1.3 for API endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C6E5D2BEEFB93B",
+            "note": "Workato states all platform data is encrypted in transit and documents TLS 1.2/1.3 for API Platform endpoints.",
+            "evidence_type": "security_trust",
+            "source_section": "TLS and HTTP standards / Data encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8B39BF2FDD3A7DBDB4",
+      "agent_id": "AI-0081",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6B8CEBDE536C37"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workato_platform",
+        "note": "Workato documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6B8CEBDE536C37",
+            "note": "Workato lists SOC 2 Type II among supported compliance frameworks.",
+            "evidence_type": "security_trust",
+            "source_section": "VPW key features"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-322055C3EF50A70245",
