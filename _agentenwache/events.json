@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T13:48:22Z",
+  "updated_at": "2026-10-01T13:51:14Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -976,6 +976,29 @@
         "token_delta_pct": 0.38
       },
       "previous_checked_at": "2026-10-01T13:39:38Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-4D147CEEF2C62C8A4D",
+      "detected_at": "2026-10-01T13:51:02Z",
+      "source_id": "SRC-4271C275BA8FED",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – AI-powered interface for work",
+      "url": "https://slack.com/blog/news/ai-powered-interface-for-work",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "2e0c1feeea54c9172ee0e4196e56bbdbaa902d92f49e1151986c6015935c0ae2",
+        "new_hash": "31057660b1dfa41922b0c5b8a890347403ef261b47f66adf88b01f114f493844",
+        "simhash_distance": 2,
+        "old_token_count": 1470,
+        "new_token_count": 1494,
+        "token_delta_pct": 1.63
+      },
+      "previous_checked_at": "2026-10-01T13:48:14Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
