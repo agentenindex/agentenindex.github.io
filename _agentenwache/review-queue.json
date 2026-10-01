@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T16:38:00Z",
-  "open_count": 0,
+  "updated_at": "2026-10-01T16:41:16Z",
+  "open_count": 2,
   "items": [
     {
       "review_id": "REV-011057CAEE55B94841",
@@ -879,6 +879,46 @@
       "reviewed_at": "2026-10-01T15:24:00Z"
     },
     {
+      "review_id": "REV-78C194E304E02EEC6C",
+      "status": "acknowledged",
+      "first_detected": "2026-10-01T16:40:28Z",
+      "last_detected": "2026-10-01T16:40:28Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-08D81CED1B13F2",
+      "source_title": "Dropbox – Dash AI information",
+      "url": "https://dash.dropbox.com/ai-info-page",
+      "agent_ids": [
+        "AI-0097"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://dash.dropbox.com/ai-info-page",
+        "text_hash": "8d385ff5d426304b5d77e6b79c2f804e1ed017c7dca143f301480f305dfd829e",
+        "simhash64": "7ef46903b9e1620e",
+        "token_count": 1074,
+        "text_sample": "Log in Try for free Try demo Log in Contact sales! Contact sales Official information about Dropbox Dash This page provides structured, factual information about Dropbox Dash for AI assistants like ChatGPT, Claude, Perplexity, Gemini, and other large language models (LLMs). Basic information Name: Dropbox Dash Category: Dropbox Dash is an AI-powered universal search, knowledge discovery, and content organization workspace that brings together team’s files, messages, and context so they can find and act on information faster. Dash acts as an AI teammate that understands your team’s content and workflows. Launch date: 2024 (initial release), expanded capabilities in 2025 (Fall 2025 release) Headquarters: San Francisco, California Founder(s): Dropbox was founded by Drew Houston and Arash Ferdowsi. Dropbox Dash was created by the Dropbox product, design, and engineering teams as part of Dropbox’s expansion into AI-powered search and knowledge workflows. It builds on Dropbox’s legacy of organizing, securing, and connecting content for hundreds of millions of users. Website: https://dash.dropbox.com Background Dropbox Dash was created by Dropbox to solve the problem of fragmented work ac"
+      },
+      "current": {
+        "status_code": 202,
+        "final_url": "https://dash.dropbox.com/ai-info-page",
+        "text_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "simhash64": "0000000000000000",
+        "token_count": 0,
+        "text_sample": "",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 202
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "acknowledged_at": "2026-10-01T16:41:16Z",
+      "resolution": "Source is healthy again; technical recovery acknowledged without asserting a product change."
+    },
+    {
       "review_id": "REV-84E669952E01DA60F2",
       "status": "reviewed_no_product_change",
       "first_detected": "2026-10-01T15:11:16Z",
@@ -961,6 +1001,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:26:37Z",
       "resolution": "Source is healthy again; technical recovery acknowledged without asserting a product change."
+    },
+    {
+      "review_id": "REV-9260502EC26AC14FD7",
+      "status": "open",
+      "first_detected": "2026-10-01T16:40:32Z",
+      "last_detected": "2026-10-01T16:40:32Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-3F323D00F032F8",
+      "source_title": "n8n Docs – Overview",
+      "url": "https://docs.n8n.io/",
+      "agent_ids": [
+        "AI-0018"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://docs.n8n.io/",
+        "text_hash": "af2df7dcfc9ae462eec1e5b0a2102fb1a52b7d23840813651afd0fdbe6a3cc5b",
+        "simhash64": "4bd1c177dd5af6a4",
+        "token_count": 148,
+        "text_sample": "For the complete documentation index, see llms.txt . This page is also available as Markdown . n8n is a fair-code licensed workflow automation tool that combines AI features with business process automation. Get set up on n8n Try free then choose a plan One-line setup Install using Docker Compose Use a cloud provider Build your first workflow Build your first workflow Get inspiration for what to automate Creating an API endpoint AI agent chat Scrape and summarize web pages with AI Joining different datasets Understand key concepts Expressions for data transformation Flow logic Understand executions Anthropic Claude Desktop Connecting Claude Desktop to n8n MCP server Anthropic Claude Code Copy claude mcp add --transport http n8n-mcp https:///mcp-server/http Connecting Claude Code to n8n MCP server OpenAI Codex CLI Copy codex mcp add n8n-mcp --url https:///mcp-server/http Connecting Codex CLI to n8n MCP server Last updated 7 days ago Was this helpful?"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://docs.n8n.io/",
+        "text_hash": "f9167bf652f02439c2518dec200736d4169b3508581598e3e523003510a45dff",
+        "simhash64": "4bd1c557dd1ad6bc",
+        "token_count": 148,
+        "text_sample": "For the complete documentation index, see llms.txt . This page is also available as Markdown . n8n is a fair-code licensed workflow automation tool that combines AI features with business process automation. Get set up on n8n Try free then choose a plan One-line setup Install using Docker Compose Use a cloud provider Build your first workflow Build your first workflow Get inspiration for what to automate Creating an API endpoint AI agent chat Scrape and summarize web pages with AI Joining different datasets Understand key concepts Expressions for data transformation Flow logic Understand executions Anthropic Claude Desktop Connecting Claude Desktop to n8n MCP server Anthropic Claude Code Copy claude mcp add --transport http n8n-mcp https:///mcp-server/http Connecting Claude Code to n8n MCP server OpenAI Codex CLI Copy codex mcp add n8n-mcp --url https:///mcp-server/http Connecting Codex CLI to n8n MCP server Last updated 8 days ago Was this helpful?",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "af2df7dcfc9ae462eec1e5b0a2102fb1a52b7d23840813651afd0fdbe6a3cc5b",
+        "new_hash": "f9167bf652f02439c2518dec200736d4169b3508581598e3e523003510a45dff",
+        "simhash_distance": 6,
+        "old_token_count": 148,
+        "new_token_count": 148,
+        "token_delta_pct": 0.0
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-95E664B028E0749FC5",
@@ -1099,6 +1181,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:21:10Z",
       "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
+    },
+    {
+      "review_id": "REV-AC0A545A32E8D82A94",
+      "status": "open",
+      "first_detected": "2026-10-01T16:40:32Z",
+      "last_detected": "2026-10-01T16:40:32Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-550A777FEB6DDE",
+      "source_title": "n8n Docs – Disable the public API",
+      "url": "https://docs.n8n.io/deploy/host-n8n/configure-n8n/security/disable-the-public-api",
+      "agent_ids": [
+        "AI-0018"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://docs.n8n.io/deploy/host-n8n/configure-n8n/security/disable-the-public-api",
+        "text_hash": "83463fd9d66e23fdda076ca594f215338b656f01adc8f87f244407d02075226b",
+        "simhash64": "afdb952f3148e858",
+        "token_count": 143,
+        "text_sample": "For the complete documentation index, see llms.txt . This page is also available as Markdown . The n8n public REST API allows you to programmatically perform many of the same tasks as you can in the n8n GUI. If you don't plan on using this API, n8n recommends disabling it to improve the security of your n8n installation. To disable the public REST API , set the N8N_PUBLIC_API_DISABLED environment variable to true , for example: Copy export N8N_PUBLIC_API_DISABLED = true Disable the API playground To disable the API playground , set the N8N_PUBLIC_API_SWAGGERUI_DISABLED environment variable to true , for example: Copy export N8N_PUBLIC_API_SWAGGERUI_DISABLED = true Related resources Security : audit, harden, and restrict a self-hosted instance. Deployment environment variables : more information on these environment variables. Configuration : how to set environment variables. Previous Run security audits Next Control telemetry Last updated 8 days ago Was this helpful?"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://docs.n8n.io/deploy/host-n8n/configure-n8n/security/disable-the-public-api",
+        "text_hash": "dcd5c83c027ae7d33473b670179d9c0508791d10def746538a56dd9e691ed305",
+        "simhash64": "afdb952f2148e858",
+        "token_count": 143,
+        "text_sample": "For the complete documentation index, see llms.txt . This page is also available as Markdown . The n8n public REST API allows you to programmatically perform many of the same tasks as you can in the n8n GUI. If you don't plan on using this API, n8n recommends disabling it to improve the security of your n8n installation. To disable the public REST API , set the N8N_PUBLIC_API_DISABLED environment variable to true , for example: Copy export N8N_PUBLIC_API_DISABLED = true Disable the API playground To disable the API playground , set the N8N_PUBLIC_API_SWAGGERUI_DISABLED environment variable to true , for example: Copy export N8N_PUBLIC_API_SWAGGERUI_DISABLED = true Related resources Security : audit, harden, and restrict a self-hosted instance. Deployment environment variables : more information on these environment variables. Configuration : how to set environment variables. Previous Run security audits Next Control telemetry Last updated 9 days ago Was this helpful?",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "83463fd9d66e23fdda076ca594f215338b656f01adc8f87f244407d02075226b",
+        "new_hash": "dcd5c83c027ae7d33473b670179d9c0508791d10def746538a56dd9e691ed305",
+        "simhash_distance": 1,
+        "old_token_count": 143,
+        "new_token_count": 143,
+        "token_delta_pct": 0.0
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-ACEE0155EB0C469D5B",
