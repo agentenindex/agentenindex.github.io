@@ -2319,6 +2319,108 @@
             }
           ],
           "note": "Joule Studio documents audit logging for product-specific events."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "sap_joule_btp_cloud_foundry",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – What Is Joule?",
+              "url": "https://help.sap.com/docs/joule/serviceguide/guidelines-for-capability-development",
+              "note": "SAP documents Joule as a multi-tenant service running in SAP BTP Cloud Foundry.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "SAP operates Joule as a managed multi-tenant service on SAP BTP Cloud Foundry."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "sap_joule_supported_data_centers",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – Data Centers Supported by Joule",
+              "url": "https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule",
+              "note": "SAP lists Joule data centers and associated subprocessor regions across multiple geographies and discusses data-security and legal-compliance considerations when selecting a data center.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Joule is available in region-specific data centers with documented subprocessor regions."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "sap_joule_cross_consumption_data_center_selection",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – Data Centers Supported by Joule",
+              "url": "https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule",
+              "note": "SAP explicitly discusses customers choosing a Joule data center based on region, legal restrictions, hyperscaler preference and proximity to business applications.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Customers can select a supported Joule data center when provisioning/cross-consuming Joule, subject to availability and product constraints."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "joule_btp_trust_configuration",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – Constraints for Joule",
+              "url": "https://help.sap.com/docs/joule/integrating-joule-with-sap/constraints-for-joule?locale=en-US&state=PRODUCTION&version=CLOUD",
+              "note": "SAP states Joule requires an OpenID Connect trust configuration with the SAP Identity Authentication tenant.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "OIDC trust with SAP Identity Authentication is required for Joule."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": false,
+          "scope": "joule_btp_trust_configuration",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – Constraints for Joule",
+              "url": "https://help.sap.com/docs/joule/integrating-joule-with-sap/constraints-for-joule?locale=en-US&state=PRODUCTION&version=CLOUD",
+              "note": "SAP explicitly states that a SAML-based trust relationship is not supported for Joule; the required trust type is OIDC.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Explicit negative: SAP documents that SAML-based trust is not supported for the Joule BTP trust configuration."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS",
+          "scope": "joule_user_access_on_sap_btp",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "SAP Help – What Is Joule?",
+              "url": "https://help.sap.com/docs/joule/serviceguide/guidelines-for-capability-development",
+              "note": "SAP documents Joule as running on SAP BTP Cloud Foundry.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "SAP BTP Administrator's Guide – Security Concepts",
+              "url": "https://help.sap.com/docs/btp/btp-admin-guide/security-concepts?version=Cloud",
+              "note": "SAP states all user access to SAP BTP is protected with transport layer security (TLS).",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Joule runs on SAP BTP Cloud Foundry, where SAP documents TLS protection for all user access."
         }
       ]
     },
