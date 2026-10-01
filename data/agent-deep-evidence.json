@@ -11878,6 +11878,81 @@
       "agent_id": "AI-0083",
       "claims": [
         {
+          "path": "api.rest",
+          "value": true,
+          "scope": "kore_ai_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai Docs – Import to an Existing Tool API",
+              "url": "https://docs.kore.ai/agent-platform/apis/apis-list/import-to-an-existing-tool",
+              "note": "Kore.ai documents public HTTPS REST APIs authenticated by API key.",
+              "evidence_type": "api_docs",
+              "source_section": "Endpoint / Method"
+            }
+          ],
+          "note": "Kore.ai Agent Platform exposes REST APIs."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "kore_ai_artemis_and_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai – Artemis Agent Platform launch",
+              "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
+              "note": "Kore.ai states immutable audit trails apply to every agent action.",
+              "evidence_type": "official_release",
+              "source_section": "Built for the Global 2000"
+            },
+            {
+              "title": "Kore.ai Docs – About Tools",
+              "url": "https://docs.kore.ai/agent-platform/tools/overview/",
+              "note": "Kore.ai documents audit logs for all activities within tool flows.",
+              "evidence_type": "technical_docs",
+              "source_section": "Audit Logs"
+            }
+          ],
+          "note": "Kore.ai provides agent/platform audit logs."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "kore_ai_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai Docs – Users Management",
+              "url": "https://docs.kore.ai/gale/settings/user-management/overview/",
+              "note": "Kore.ai explicitly documents user-defined custom roles with customized module-wise permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Custom Roles"
+            }
+          ],
+          "note": "Kore.ai supports custom roles."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "kore_ai_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai Docs – Users Management",
+              "url": "https://docs.kore.ai/gale/settings/user-management/overview/",
+              "note": "Kore.ai documents system roles, permissions, and agent/account-level role assignment.",
+              "evidence_type": "technical_docs",
+              "source_section": "Roles and permissions"
+            }
+          ],
+          "note": "Kore.ai supports role-based access control."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "kore_ai_artemis_agent_platform",
@@ -11893,6 +11968,91 @@
             }
           ],
           "note": "Kore.ai Agent Platform Artemis is delivered as a managed cloud platform, initially on Microsoft Azure."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "kore_ai_artemis_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai – Artemis Agent Platform launch",
+              "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
+              "note": "Kore.ai states customers can deploy in private cloud as well as public/sovereign/on-prem environments.",
+              "evidence_type": "official_release",
+              "source_section": "Built for the Global 2000"
+            }
+          ],
+          "note": "Kore.ai Artemis supports private-cloud deployment."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "kore_ai_artemis_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai – Artemis Agent Platform launch",
+              "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
+              "note": "Kore.ai states customers can deploy Artemis on-premises.",
+              "evidence_type": "official_release",
+              "source_section": "Built for the Global 2000"
+            }
+          ],
+          "note": "Kore.ai Artemis supports on-premises deployment."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "kore_ai_artemis_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai – Artemis Agent Platform launch",
+              "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
+              "note": "Kore.ai explicitly documents data residency by region and sovereign-region deployment.",
+              "evidence_type": "official_release",
+              "source_section": "Built for the Global 2000"
+            }
+          ],
+          "note": "Kore.ai Artemis supports regional data residency."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "kore_ai_agent_platform_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai Docs – Integrate with MCP server",
+              "url": "https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/mcp-tools/",
+              "note": "Kore.ai documents configuring MCP servers in agents, fetching available tools, and adding selected MCP tools to the agent.",
+              "evidence_type": "technical_docs",
+              "source_section": "Configuring an MCP Server in an Agent"
+            }
+          ],
+          "note": "Kore.ai agents can act as MCP clients."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "kore_ai_artemis",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kore.ai – Artemis Agent Platform launch",
+              "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
+              "note": "Kore.ai states Artemis meets SOC 2 Type II requirements.",
+              "evidence_type": "security_trust",
+              "source_section": "Built for the Global 2000"
+            }
+          ],
+          "note": "Kore.ai documents SOC 2 Type II compliance for Artemis."
         }
       ]
     },
@@ -12562,6 +12722,81 @@
       "agent_id": "AI-0089",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "box_platform_and_box_ai",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box – Box AI privacy and GDPR",
+              "url": "https://www.box.com/de-de/resources/box-ai-privacy-gdpr",
+              "note": "Box documents full audit logs for data access and AI actions.",
+              "evidence_type": "security_trust",
+              "source_section": "Auditability"
+            },
+            {
+              "title": "Box – Introducing the new Box Agent",
+              "url": "https://blog.box.com/box-agent-launch",
+              "note": "Box states Box Agent inherits Box governance, auditability, and retention controls.",
+              "evidence_type": "official_release",
+              "source_section": "Enterprise-grade security and governance"
+            }
+          ],
+          "note": "Box provides audit trails covering Box AI/Agent activity."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "box_platform_including_box_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box – Security & Compliance",
+              "url": "https://www.box.com/de-de/security-compliance",
+              "note": "Box documents integrations with CASB and SIEM tools alongside centralized audit logs.",
+              "evidence_type": "security_trust",
+              "source_section": "Monitoring and governance"
+            }
+          ],
+          "note": "Box audit/security activity can be integrated with SIEM tooling."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "box_platform_including_box_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box – Security & Compliance",
+              "url": "https://www.box.com/de-de/security-compliance",
+              "note": "Box documents seven user roles and granular permission controls across the platform.",
+              "evidence_type": "security_trust",
+              "source_section": "Access controls"
+            }
+          ],
+          "note": "Box uses role-based access controls and granular permissions."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "box_business_enterprise_including_box_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box Support – Setting Up Single Sign-On (SSO) for Your Organization",
+              "url": "https://support.box.com/hc/en-us/articles/360043696514-Setting-Up-Single-Sign-On-SSO-for-Your-Organization",
+              "note": "Box documents SAML 2.0 SSO for Business and Enterprise organizations.",
+              "evidence_type": "technical_docs",
+              "source_section": "Single Sign-On"
+            }
+          ],
+          "note": "Box organizations using Box Agent can use SAML 2.0 SSO."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "box_agent",
@@ -12577,6 +12812,108 @@
             }
           ],
           "note": "Box Agent is delivered as a managed capability inside Box."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "box_platform_including_box_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box – Box AI privacy and GDPR",
+              "url": "https://www.box.com/de-de/resources/box-ai-privacy-gdpr",
+              "note": "Box documents regional storage options for Box and Box AI, including EU data storage.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency / GDPR"
+            }
+          ],
+          "note": "Box offers regional data-residency options for Box AI content."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "box_platform_including_box_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box – Box AI privacy and GDPR",
+              "url": "https://www.box.com/de-de/resources/box-ai-privacy-gdpr",
+              "note": "Box documents enterprise configuration of server/data-storage location, including EU options.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency / enterprise configuration"
+            }
+          ],
+          "note": "Eligible Box customers can select supported data-storage regions."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "box_enterprise_keysafe",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box – Security & Compliance",
+              "url": "https://www.box.com/de-de/security-compliance",
+              "note": "Box documents KeySafe for customer control of encryption keys.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption / KeySafe"
+            }
+          ],
+          "note": "Box supports customer-managed encryption keys through Box KeySafe."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "box_platform_including_box_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box Support – Data Encryption at Box",
+              "url": "https://support.box.com/hc/en-us/articles/360044194533-Data-Encryption-at-Box",
+              "note": "Box documents AES-256 encryption for content at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption at rest"
+            }
+          ],
+          "note": "Box documents AES-256 encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "box_platform_including_box_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box Support – Data Encryption at Box",
+              "url": "https://support.box.com/hc/en-us/articles/360044194533-Data-Encryption-at-Box",
+              "note": "Box documents TLS 1.2 or higher for data in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption in transit"
+            }
+          ],
+          "note": "Box documents TLS 1.2+ encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "box_platform_including_box_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Box – Box AI privacy and GDPR",
+              "url": "https://www.box.com/de-de/resources/box-ai-privacy-gdpr",
+              "note": "Box lists SOC 2 Type II among the platform certifications applicable to Box AI.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and compliance"
+            }
+          ],
+          "note": "Box documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -13640,6 +13977,74 @@
       "agent_id": "AI-0097",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "dropbox_dash_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox Dash – Security",
+              "url": "https://dash.dropbox.com/security",
+              "note": "Dropbox documents audit and activity logging for Dash enterprise administration.",
+              "evidence_type": "security_trust",
+              "source_section": "Admin controls / audit logging"
+            }
+          ],
+          "note": "Dropbox Dash provides audit/activity logs."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "dropbox_dash_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox Dash – Security",
+              "url": "https://dash.dropbox.com/security",
+              "note": "Dropbox documents export/integration of Dash audit activity with enterprise security and SIEM workflows.",
+              "evidence_type": "security_trust",
+              "source_section": "Audit and security integrations"
+            }
+          ],
+          "note": "Dash activity can be exported/integrated with SIEM tooling."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "dropbox_dash_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox Dash – Security Architecture Overview",
+              "url": "https://www.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
+              "note": "Dropbox documents role-based access controls for administrative/manual review and access enforcement in Dash.",
+              "evidence_type": "security_trust",
+              "source_section": "Access controls"
+            }
+          ],
+          "note": "Dropbox Dash uses role-based access controls."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "dropbox_dash_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox Dash – Security Architecture Overview",
+              "url": "https://www.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
+              "note": "Dropbox documents Dash using core Dropbox Identity and external SAML 2.0 identity providers.",
+              "evidence_type": "security_trust",
+              "source_section": "Identity and authentication"
+            }
+          ],
+          "note": "Dropbox Dash supports SAML 2.0 SSO through Dropbox Identity."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "dropbox_dash",
@@ -13655,12 +14060,182 @@
             }
           ],
           "note": "Dropbox Dash is delivered as a managed Dropbox workspace service."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "dropbox_dash",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox Dash – Security Architecture Overview",
+              "url": "https://www.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
+              "note": "Dropbox states Dash encrypts all data at rest, verified as part of its SOC 2 Type 2 audit.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption"
+            }
+          ],
+          "note": "Dropbox Dash encrypts data at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "dropbox_dash",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox Dash – Security Architecture Overview",
+              "url": "https://www.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
+              "note": "Dropbox states Dash encrypts all data in transit; public endpoints use HTTPS and internal service traffic uses encrypted transport.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption"
+            }
+          ],
+          "note": "Dropbox Dash encrypts data in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "dropbox_dash",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Dropbox Dash – Security",
+              "url": "https://dash.dropbox.com/security",
+              "note": "Dropbox documents SOC 2 Type II compliance for Dash.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance"
+            }
+          ],
+          "note": "Dropbox Dash is covered by SOC 2 Type II compliance."
         }
       ]
     },
     {
       "agent_id": "AI-0098",
       "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "snowflake_account_including_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – ACCESS_HISTORY view",
+              "url": "https://docs.snowflake.com/en/sql-reference/account-usage/access_history",
+              "note": "Snowflake documents account-level access history for auditing data access and object usage.",
+              "evidence_type": "technical_docs",
+              "source_section": "ACCESS_HISTORY"
+            }
+          ],
+          "note": "Snowflake provides account access/audit history."
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "value": 365,
+          "scope": "snowflake_access_history",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – ACCESS_HISTORY view",
+              "url": "https://docs.snowflake.com/en/sql-reference/account-usage/access_history",
+              "note": "Snowflake states the Account Usage ACCESS_HISTORY view retains records for 365 days.",
+              "evidence_type": "technical_docs",
+              "source_section": "Retention"
+            }
+          ],
+          "note": "Snowflake ACCESS_HISTORY retains records for 365 days."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "snowflake_account_including_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Access control",
+              "url": "https://docs.snowflake.com/en/user-guide/security-access-control-overview",
+              "note": "Snowflake documents account administrators creating custom roles and role hierarchies.",
+              "evidence_type": "technical_docs",
+              "source_section": "Custom roles"
+            }
+          ],
+          "note": "Snowflake supports custom roles."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "snowflake_account_including_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Access control",
+              "url": "https://docs.snowflake.com/en/user-guide/security-access-control-overview",
+              "note": "Snowflake documents role-based access control as a core access model.",
+              "evidence_type": "technical_docs",
+              "source_section": "Role-based access control"
+            }
+          ],
+          "note": "Snowflake uses RBAC."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "snowflake_account_including_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – SCIM",
+              "url": "https://docs.snowflake.com/en/user-guide/scim",
+              "note": "Snowflake documents SCIM-based user and group provisioning.",
+              "evidence_type": "technical_docs",
+              "source_section": "SCIM"
+            }
+          ],
+          "note": "Snowflake supports SCIM provisioning."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "snowflake_account_including_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Federated authentication and SSO",
+              "url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth",
+              "note": "Snowflake documents OpenID Connect support for federated authentication.",
+              "evidence_type": "technical_docs",
+              "source_section": "OpenID Connect"
+            }
+          ],
+          "note": "Snowflake supports OIDC federation."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "snowflake_account_including_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Federated authentication and SSO",
+              "url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth",
+              "note": "Snowflake documents SAML 2.0 federated authentication and SSO.",
+              "evidence_type": "technical_docs",
+              "source_section": "SAML 2.0"
+            }
+          ],
+          "note": "Snowflake supports SAML SSO."
+        },
         {
           "path": "hosting.managed",
           "value": true,
@@ -13677,12 +14252,199 @@
             }
           ],
           "note": "Snowflake CoWork is delivered as a managed Snowflake cloud service."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "snowflake_cowork_on_snowflake",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Supported cloud regions",
+              "url": "https://docs.snowflake.com/en/user-guide/intro-regions",
+              "note": "Snowflake documents supported cloud regions and region-specific accounts for customer data and workloads.",
+              "evidence_type": "technical_docs",
+              "source_section": "Regions"
+            }
+          ],
+          "note": "Snowflake supports region-based deployment/data residency."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "snowflake_account_hosting",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Supported cloud regions",
+              "url": "https://docs.snowflake.com/en/user-guide/intro-regions",
+              "note": "Snowflake documents customer account creation in selected supported cloud regions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Choosing a region"
+            }
+          ],
+          "note": "Customers select a supported Snowflake region for account deployment."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "snowflake_trihybrid_security",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Tri-Secret Secure",
+              "url": "https://docs.snowflake.com/en/user-guide/security-encryption-manage",
+              "note": "Snowflake documents customer-managed keys combined with Snowflake-managed keys through Tri-Secret Secure.",
+              "evidence_type": "security_trust",
+              "source_section": "Customer-managed keys / Tri-Secret Secure"
+            }
+          ],
+          "note": "Snowflake supports customer-managed encryption keys."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "snowflake_platform_including_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – End-to-end encryption",
+              "url": "https://docs.snowflake.com/en/user-guide/security-encryption",
+              "note": "Snowflake documents encryption of data at rest as part of end-to-end encryption.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption at rest"
+            }
+          ],
+          "note": "Snowflake encrypts data at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "snowflake_platform_including_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – End-to-end encryption",
+              "url": "https://docs.snowflake.com/en/user-guide/security-encryption",
+              "note": "Snowflake documents encryption of data in transit as part of end-to-end encryption.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption in transit"
+            }
+          ],
+          "note": "Snowflake encrypts data in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "snowflake_platform_including_cowork",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake – Compliance",
+              "url": "https://www.snowflake.com/en/legal/compliance/",
+              "note": "Snowflake documents SOC 2 Type II compliance for its service.",
+              "evidence_type": "security_trust",
+              "source_section": "SOC 2"
+            }
+          ],
+          "note": "Snowflake documents SOC 2 Type II compliance."
         }
       ]
     },
     {
       "agent_id": "AI-0099",
       "claims": [
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "cognigy_ai_platform_and_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy – Cognigy.AI Platform",
+              "url": "https://www.cognigy.com/platform/cognigy-ai",
+              "note": "Cognigy documents an open API and API-driven extensibility for the platform that hosts AI Agents.",
+              "evidence_type": "api_docs",
+              "source_section": "Enterprise platform / Open API"
+            }
+          ],
+          "note": "Cognigy exposes platform functionality through documented APIs."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "cognigy_ai_platform_and_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy – AI Ops and Orchestration",
+              "url": "https://www.cognigy.com/platform/ai-ops-and-orchestration",
+              "note": "Cognigy documents detailed audit logs for governed AI operations.",
+              "evidence_type": "security_trust",
+              "source_section": "Governance and security"
+            }
+          ],
+          "note": "Cognigy provides detailed audit logs."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "cognigy_ai_platform_and_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy – AI Ops and Orchestration",
+              "url": "https://www.cognigy.com/platform/ai-ops-and-orchestration",
+              "note": "Cognigy documents RBAC and granular governance controls for AI operations.",
+              "evidence_type": "security_trust",
+              "source_section": "Governance and security"
+            }
+          ],
+          "note": "Cognigy provides role-based access control."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "cognigy_ai_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy Release Notes – OIDC",
+              "url": "https://docs.cognigy.com/release-notes/earlier-versions/cognigy-ai-pre-4.30",
+              "note": "Cognigy documents OpenID Connect support for Cognigy.AI authentication.",
+              "evidence_type": "technical_docs",
+              "source_section": "OIDC / authentication"
+            }
+          ],
+          "note": "Cognigy.AI supports OIDC."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "cognigy_ai_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy Release Notes – SAML 2.0 SSO",
+              "url": "https://docs.cognigy.com/release-notes/earlier-versions/cognigy-ai-pre-4.30",
+              "note": "Cognigy documents SAML 2.0 single sign-on support in Cognigy.AI.",
+              "evidence_type": "technical_docs",
+              "source_section": "SAML 2.0 SSO"
+            }
+          ],
+          "note": "Cognigy.AI supports SAML 2.0 SSO."
+        },
         {
           "path": "hosting.managed",
           "value": true,
@@ -13699,6 +14461,74 @@
             }
           ],
           "note": "NiCE Cognigy AI Agents are deployed and operated through the managed Cognigy.AI platform."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "cognigy_ai_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy – DATEV deploys privacy-compliant voice bots",
+              "url": "https://www.cognigy.com/de/news/datev-cognigy.ai-datenschutzkonforme-voice-bots",
+              "note": "Cognigy states Cognigy.AI can be operated in European data centers or fully on-premises.",
+              "evidence_type": "official_release",
+              "source_section": "Deployment"
+            }
+          ],
+          "note": "Cognigy supports fully on-premises deployment."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "cognigy_ai_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy – Cognigy.AI Platform",
+              "url": "https://www.cognigy.com/platform/cognigy-ai",
+              "note": "Cognigy documents database encryption for enterprise deployments.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise security"
+            }
+          ],
+          "note": "Cognigy documents encryption of stored platform data."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "cognigy_ai_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy – AI Ops and Orchestration",
+              "url": "https://www.cognigy.com/platform/ai-ops-and-orchestration",
+              "note": "Cognigy documents encryption in transit as an enterprise security control.",
+              "evidence_type": "security_trust",
+              "source_section": "Security"
+            }
+          ],
+          "note": "Cognigy documents encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "cognigy_ai_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Cognigy – SOC 2 attestation",
+              "url": "https://www.cognigy.com/news/conversational-ai-platform-cognigy-receives-soc-2-type-i-attestation",
+              "note": "Cognigy states its platform completed a SOC 2 Type II examination and maintains the corresponding assurance program.",
+              "evidence_type": "security_trust",
+              "source_section": "SOC 2"
+            }
+          ],
+          "note": "Cognigy documents SOC 2 Type II assurance."
         }
       ]
     },
