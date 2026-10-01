@@ -1874,6 +1874,40 @@
       "agent_id": "AI-0015",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "kiro_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – Monitoring and tracking",
+              "url": "https://kiro.dev/docs/enterprise/monitor-and-track/",
+              "note": "Kiro documents user activity reports, prompt logs, AWS CloudTrail events, and CloudWatch monitoring for enterprise activity.",
+              "evidence_type": "technical_docs",
+              "source_section": "Monitoring and tracking"
+            }
+          ],
+          "note": "Kiro Enterprise provides activity and prompt logging for audit/monitoring."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "kiro_enterprise_prompt_logs",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – Logging user prompts",
+              "url": "https://kiro.dev/docs/enterprise/monitor-and-track/prompt-logging/",
+              "note": "Kiro stores enterprise prompt logs in a customer-selected Amazon S3 bucket, enabling downstream enterprise security/analytics ingestion.",
+              "evidence_type": "technical_docs",
+              "source_section": "About prompt logs / Enabling prompt logging"
+            }
+          ],
+          "note": "Kiro enterprise prompt logs can be exported to customer-controlled S3 for downstream SIEM/analytics workflows."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "kiro_cloud_sessions",
@@ -1889,6 +1923,40 @@
             }
           ],
           "note": "Kiro supports a managed cloud-sandbox runtime."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "kiro_ide_cli_local_runtime",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – How Kiro works",
+              "url": "https://kiro.dev/docs/how-kiro-works/",
+              "note": "Kiro documents IDE and CLI agent sessions running on the user's local environment, distinct from managed cloud sessions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Where the agent runs"
+            }
+          ],
+          "note": "Kiro IDE/CLI can run in the user's local/customer-managed environment."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "kiro_ide_cli_web",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Kiro Docs – MCP",
+              "url": "https://kiro.dev/docs/mcp/",
+              "note": "Kiro documents configuring MCP servers whose tools become available to the Kiro agent.",
+              "evidence_type": "technical_docs",
+              "source_section": "MCP / Configuration"
+            }
+          ],
+          "note": "Kiro acts as an MCP client."
         }
       ]
     },
@@ -9618,6 +9686,91 @@
       "agent_id": "AI-0067",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "openhands_enterprise_agent_control_plane",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenHands – Enterprise Agent Control Plane",
+              "url": "https://www.openhands.dev/blog/openhands-enterprise-agent-control-plane",
+              "note": "OpenHands introduces Enterprise as an agent control plane built to provide centralized visibility and reliable audit trails for organization-wide agent activity.",
+              "evidence_type": "official_release",
+              "source_section": "From Agents to Systems / control and observe"
+            }
+          ],
+          "note": "OpenHands Enterprise provides centralized auditability for agent activity."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "openhands_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenHands Enterprise",
+              "url": "https://www.openhands.dev/enterprise",
+              "note": "OpenHands explicitly lists RBAC and multi-user support as built-in Enterprise capabilities.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise integrations included"
+            }
+          ],
+          "note": "OpenHands Enterprise provides RBAC."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "openhands_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenHands – Pricing",
+              "url": "https://www.openhands.dev/pricing",
+              "note": "OpenHands lists Enterprise SAML / SSO for its enterprise offering.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "OpenHands Enterprise supports SAML SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "openhands_saas",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenHands – Pricing",
+              "url": "https://www.openhands.dev/pricing",
+              "note": "OpenHands documents hosted SaaS cloud access alongside local and self-hosted options.",
+              "evidence_type": "official_product_page",
+              "source_section": "SaaS / Individual"
+            }
+          ],
+          "note": "OpenHands offers a managed SaaS runtime."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "openhands_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "OpenHands Enterprise",
+              "url": "https://www.openhands.dev/enterprise",
+              "note": "OpenHands documents Enterprise self-hosting inside the customer's VPC via Kubernetes.",
+              "evidence_type": "official_product_page",
+              "source_section": "Self-hosted in your VPC"
+            }
+          ],
+          "note": "OpenHands Enterprise supports deployment inside a customer VPC."
+        },
+        {
           "path": "hosting.self_hosted",
           "value": true,
           "scope": "openhands_open_source_and_enterprise",
@@ -9837,6 +9990,74 @@
       "agent_id": "AI-0070",
       "claims": [
         {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "warp_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – Enterprise overview",
+              "url": "https://docs.warp.dev/enterprise",
+              "note": "Warp documents Team Owner, Team Admin, and Member roles with differentiated permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Enterprise administration"
+            }
+          ],
+          "note": "Warp Enterprise provides role-based access control."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "warp_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – Single Sign-On",
+              "url": "https://docs.warp.dev/enterprise/security-and-compliance/sso",
+              "note": "Warp supports any OpenID Connect compatible identity provider for Enterprise SSO.",
+              "evidence_type": "technical_docs",
+              "source_section": "Supported identity providers"
+            }
+          ],
+          "note": "Warp Enterprise supports OIDC SSO."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "warp_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – Single Sign-On",
+              "url": "https://docs.warp.dev/enterprise/security-and-compliance/sso",
+              "note": "Warp supports any SAML 2.0 compatible identity provider for Enterprise SSO.",
+              "evidence_type": "technical_docs",
+              "source_section": "Supported identity providers"
+            }
+          ],
+          "note": "Warp Enterprise supports SAML 2.0 SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "warp_cloud_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – MCP servers CLI reference",
+              "url": "https://docs.warp.dev/reference/cli/mcp-servers",
+              "note": "Warp documents cloud-agent execution via agent run-cloud alongside local Agent CLI execution.",
+              "evidence_type": "technical_docs",
+              "source_section": "Cloud agents / --mcp"
+            }
+          ],
+          "note": "Warp provides managed cloud-agent execution in addition to local Agent CLI."
+        },
+        {
           "path": "hosting.self_hosted",
           "value": true,
           "scope": "warp_agent_cli_local_runtime",
@@ -9852,12 +10073,182 @@
             }
           ],
           "note": "Warp Agent CLI can run as a local/customer-managed terminal program."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "warp_agent_cli",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – MCP servers CLI reference",
+              "url": "https://docs.warp.dev/reference/cli/mcp-servers",
+              "note": "Warp documents connecting Agent CLI agents to external MCP servers via the --mcp flag.",
+              "evidence_type": "technical_docs",
+              "source_section": "MCP servers"
+            }
+          ],
+          "note": "Warp Agent CLI acts as an MCP client."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "warp_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Warp Docs – Enterprise overview",
+              "url": "https://docs.warp.dev/enterprise",
+              "note": "Warp states it is SOC 2 Type II certified.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and compliance"
+            }
+          ],
+          "note": "Warp documents SOC 2 Type II certification."
         }
       ]
     },
     {
       "agent_id": "AI-0071",
       "claims": [
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "factory_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Security",
+              "url": "https://docs.factory.ai/enterprise/security",
+              "note": "Factory documents enterprise audit events and workflow logs for monitoring.",
+              "evidence_type": "security_trust",
+              "source_section": "Telemetry & Analytics"
+            }
+          ],
+          "note": "Factory Enterprise provides audit events and workflow logs."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "factory_enterprise_telemetry",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Telemetry & Analytics",
+              "url": "https://docs.factory.ai/enterprise/telemetry",
+              "note": "Factory documents exporting OpenTelemetry metrics/traces to a customer-owned OTLP-compatible collector, with examples including enterprise observability systems.",
+              "evidence_type": "technical_docs",
+              "source_section": "Self-hosted OTEL metrics export"
+            }
+          ],
+          "note": "Factory telemetry can be exported to customer-controlled observability/SIEM infrastructure."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "factory_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Identity & Access",
+              "url": "https://docs.factory.ai/enterprise/identity-and-access",
+              "note": "Factory documents user/group roles controlling access and policies.",
+              "evidence_type": "technical_docs",
+              "source_section": "Identity model and roles"
+            }
+          ],
+          "note": "Factory Enterprise provides role-based access control."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "factory_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Identity & Access",
+              "url": "https://docs.factory.ai/enterprise/identity-and-access",
+              "note": "Factory documents Directory Sync/SCIM for enterprise identity management.",
+              "evidence_type": "technical_docs",
+              "source_section": "SSO and SCIM directory sync"
+            }
+          ],
+          "note": "Factory Enterprise supports SCIM directory synchronization."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "factory_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Identity & Access",
+              "url": "https://docs.factory.ai/enterprise/identity-and-access",
+              "note": "Factory documents SSO using SAML/OIDC.",
+              "evidence_type": "technical_docs",
+              "source_section": "Identity model / SSO"
+            }
+          ],
+          "note": "Factory Enterprise supports OIDC SSO."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "factory_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Identity & Access",
+              "url": "https://docs.factory.ai/enterprise/identity-and-access",
+              "note": "Factory documents human users authenticating through SSO using SAML/OIDC.",
+              "evidence_type": "technical_docs",
+              "source_section": "Identity model / SSO"
+            }
+          ],
+          "note": "Factory Enterprise supports SAML SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "factory_managed_droid_computers",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Droid Computers",
+              "url": "https://docs.factory.ai/droid-computers/overview",
+              "note": "Factory documents Managed Droid Computers provisioned and managed by Factory.",
+              "evidence_type": "technical_docs",
+              "source_section": "Managed Droid Computers"
+            }
+          ],
+          "note": "Factory offers managed cloud compute for Droid sessions."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "factory_enterprise_hybrid_airgapped",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Deployment Patterns",
+              "url": "https://docs.factory.ai/enterprise/network-and-deployment",
+              "note": "Factory documents Hybrid deployments inside customer VMs/containers/CI and fully airgapped deployments with no outbound network dependency.",
+              "evidence_type": "technical_docs",
+              "source_section": "Hybrid / Fully airgapped"
+            }
+          ],
+          "note": "Factory supports private-network and fully airgapped Droid deployments."
+        },
         {
           "path": "hosting.self_hosted",
           "value": true,
@@ -9874,6 +10265,57 @@
             }
           ],
           "note": "Factory Droids support customer-managed and fully airgapped deployment."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "factory_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Deployment Patterns",
+              "url": "https://docs.factory.ai/enterprise/network-and-deployment",
+              "note": "Factory documents a dedicated EU deployment with session content stored in Europe and EU-only inference endpoints.",
+              "evidence_type": "technical_docs",
+              "source_section": "EU deployment and data residency"
+            }
+          ],
+          "note": "Factory Enterprise offers EU data residency."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "factory_enterprise_org",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Deployment Patterns",
+              "url": "https://docs.factory.ai/enterprise/network-and-deployment",
+              "note": "Factory documents organizations pinned to Global or EU regional deployments, with Enterprise customers provisioned into the EU region on request.",
+              "evidence_type": "technical_docs",
+              "source_section": "Region enforcement / EU deployment"
+            }
+          ],
+          "note": "Enterprise organizations can be provisioned into the supported EU regional deployment."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "factory_droid",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Factory Docs – Model Context Protocol",
+              "url": "https://docs.factory.ai/harness/mcp",
+              "note": "Factory documents Droid connecting to MCP servers over stdio, HTTP, and SSE and using their tools.",
+              "evidence_type": "technical_docs",
+              "source_section": "Model Context Protocol"
+            }
+          ],
+          "note": "Factory Droid acts as an MCP client."
         }
       ]
     },
