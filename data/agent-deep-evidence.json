@@ -278,6 +278,225 @@
       ]
     },
     {
+      "agent_id": "AI-0007",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "claude_code",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Code Docs – Connect Claude Code to tools via MCP",
+              "url": "https://code.claude.com/docs/en/mcp",
+              "note": "Anthropic documents Claude Code connecting to remote and local MCP servers to access tools, databases, and APIs.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Claude Code is a documented MCP client."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "claude_code_stdio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Code Docs – Connect Claude Code to tools via MCP",
+              "url": "https://code.claude.com/docs/en/mcp",
+              "note": "Anthropic documents `claude mcp serve`, which runs Claude Code itself as a stdio MCP server for other applications.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Claude Code can expose its tools as an MCP server."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "claude_code_cloud_sessions_anthropic_hosted",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Code Docs – Security",
+              "url": "https://code.claude.com/docs/en/security",
+              "note": "Anthropic documents cloud sessions running in isolated Anthropic-managed virtual machines.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Claude Code cloud sessions can run in Anthropic-managed environments."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "claude_code_cloud_sessions_self_hosted_environment",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Code Docs – Security",
+              "url": "https://code.claude.com/docs/en/security",
+              "note": "Anthropic explicitly documents organization-routed cloud sessions running in a self-hosted environment on customer infrastructure.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Organizations can route Claude Code cloud sessions to a self-hosted environment."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "claude_enterprise_including_claude_code",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Anthropic – Claude Enterprise",
+              "url": "https://claude.com/solutions/enterprise",
+              "note": "Anthropic lists single sign-on (SSO/SAML) as an Enterprise security and administration control and includes Claude Code in the Enterprise suite.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "Claude Code under Claude Enterprise is governed by Enterprise SSO/SAML."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "claude_enterprise_including_claude_code",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Anthropic – Claude Enterprise",
+              "url": "https://claude.com/solutions/enterprise",
+              "note": "Anthropic documents SCIM provisioning for Claude Enterprise and states Claude Code is included under the same enterprise identity and admin controls.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "Claude Enterprise SCIM provisioning governs Claude Code users."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "claude_enterprise_including_claude_code",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Anthropic – Claude Enterprise",
+              "url": "https://claude.com/solutions/enterprise",
+              "note": "Anthropic documents role-based access control for fine-grained user, feature, and spend management, with Claude Code included in Enterprise entitlements.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "Claude Code Enterprise access and entitlements are governed through RBAC."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "claude_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Help Center – Claude Code on Console to Enterprise migration",
+              "url": "https://support.claude.com/en/articles/14128775-claude-code-on-console-to-enterprise-migration",
+              "note": "Anthropic explicitly documents custom roles (RBAC) in Claude Enterprise for scoping feature and administrative access.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Claude Enterprise supports custom roles applicable to Claude Code governance."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "claude_code_enterprise_and_cloud_sessions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Code Docs – Security",
+              "url": "https://code.claude.com/docs/en/security",
+              "note": "Anthropic states all operations in Anthropic-hosted Claude Code cloud sessions are logged for compliance and audit purposes.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "Anthropic – Claude Enterprise",
+              "url": "https://claude.com/solutions/enterprise",
+              "note": "Anthropic lists audit logs as an Enterprise visibility and logging control covering the Enterprise suite including Claude Code.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "Claude Code activity has documented audit logging in cloud sessions and Enterprise governance."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "claude_enterprise_including_claude_code",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Anthropic – Claude Enterprise",
+              "url": "https://claude.com/solutions/enterprise",
+              "note": "Anthropic documents the Compliance API for programmatic access to activity logs, chats, files, and projects.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "Claude Enterprise exposes programmatic audit/activity access through the Compliance API."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "claude_code_opentelemetry",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Code Docs – Monitoring",
+              "url": "https://code.claude.com/docs/en/monitoring-usage",
+              "note": "Anthropic documents Claude Code OpenTelemetry audit events and states OTLP logs can be delivered to any SIEM with an OTLP receiver or via an OpenTelemetry Collector.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Claude Code audit events can be exported to SIEM systems through OpenTelemetry."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "claude_enterprise_including_claude_code",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Anthropic – Claude Enterprise",
+              "url": "https://claude.com/solutions/enterprise",
+              "note": "Anthropic lists customer-managed encryption keys among Enterprise data controls and includes Claude Code in the same Enterprise suite.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Claude Enterprise offers customer-managed encryption keys for its Enterprise suite."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "claude_code_security_program",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Claude Code Docs – Security",
+              "url": "https://code.claude.com/docs/en/security",
+              "note": "Anthropic's Claude Code security documentation explicitly references its SOC 2 Type 2 report in the Trust Center.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Claude Code is covered by Anthropic's documented SOC 2 Type 2 security program."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0008",
       "claims": [
         {
