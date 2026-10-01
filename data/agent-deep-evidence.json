@@ -4524,6 +4524,54 @@
             }
           ],
           "note": "Agentstudio session actions are covered by documented audit trails."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "boomi_agent_garden_runtime_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Documentation – Deploying agents",
+              "url": "https://help.boomi.com/docs/Atomsphere/Platform/ai-deploying_agents",
+              "note": "Boomi documents deploying Agentstudio agents to runtime clouds in the US, UK, Japan, and Australia and states regional deployment keeps data within regional boundaries for compliance.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Agentstudio users select supported regional runtime clouds when deploying agents."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "boomi_ai_including_agentstudio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Documentation – Agent management FAQ",
+              "url": "https://help.boomi.com/docs/atomsphere/platform/atm-boomiai_faq_8a8705a8-4773-44bd-92ed-41105186781c/",
+              "note": "Boomi explicitly states all Boomi AI data is encrypted at rest and that Agentstudio sensitive data also uses a customer account-specific encryption key.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Boomi documents at-rest encryption for all Boomi AI data, including Agentstudio."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "boomi_ai_including_agentstudio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Boomi Documentation – Agent management FAQ",
+              "url": "https://help.boomi.com/docs/atomsphere/platform/atm-boomiai_faq_8a8705a8-4773-44bd-92ed-41105186781c/",
+              "note": "Boomi explicitly states all Boomi AI data is encrypted in transit.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Boomi documents in-transit encryption for all Boomi AI data, including Agentstudio."
         }
       ]
     },
