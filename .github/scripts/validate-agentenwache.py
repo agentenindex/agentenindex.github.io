@@ -41,7 +41,7 @@ for item in queue_doc.get("items",[]):
     source=active_sources.get(item.get("source_id"))
     if source and sorted(item.get("agent_ids",[])) != sorted(source.get("agent_ids",[])):
         errors.append(f"{rid}: agent mapping differs from AgentenGraph source registry")
-    if item.get("change_type") not in {"content_change","status_change","redirect_change","availability_change","availability_restored"}:
+    if item.get("change_type") not in {"content_change","status_change","redirect_change","availability_change","availability_restored","source_unavailable"}:
         errors.append(f"{rid}: invalid change type {item.get('change_type')}")
     if item.get("severity") not in {"low","medium","high"}:
         errors.append(f"{rid}: invalid severity {item.get('severity')}")
