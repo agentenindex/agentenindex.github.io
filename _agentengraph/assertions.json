@@ -20483,6 +20483,46 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-9294540CCB7054A926",
+      "agent_id": "AI-0029",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-703A822A6F00E8",
+          "SRC-83D7EFA13AD08F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentforce_salesforce_org_access",
+        "note": "Agentforce access and agent capabilities are governed by Salesforce role/permission controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-703A822A6F00E8",
+            "note": "Salesforce states Agentforce administrators configure access through Profiles, Permission Sets, field-level security and least-privilege controls.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-83D7EFA13AD08F",
+            "note": "Salesforce states Agentforce agents respect standard Salesforce access controls.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-2BDCD8703F27685C82",
       "agent_id": "AI-0029",
       "path": "governance.tracing",
@@ -20505,6 +20545,40 @@
             "source_id": "SRC-34C5942A075D99",
             "note": "Salesforce's official repository documents Agent Platform Tracing as backend execution traces represented as OpenTelemetry-style spans in Data Cloud.",
             "evidence_type": "official_github"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-93516088850BCDA9BB",
+      "agent_id": "AI-0029",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2E3B5AC07451A4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentforce_on_hyperforce",
+        "note": "Agentforce is offered on Salesforce-managed Hyperforce cloud infrastructure.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2E3B5AC07451A4",
+            "note": "Salesforce describes Hyperforce as the cloud-native infrastructure that runs Agentforce and Customer 360 on trusted public-cloud infrastructure.",
+            "evidence_type": "official_product_page"
           }
         ]
       },
@@ -20878,6 +20952,108 @@
             "source_id": "SRC-C02137EB0C0E38",
             "note": "Salesforce's official Agentforce SDK repository documents the Python SDK for creating, managing, testing, and deploying agents.",
             "evidence_type": "official_github"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-162FC7115CD711BB54",
+      "agent_id": "AI-0029",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2E3B5AC07451A4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentforce_customer_data_on_hyperforce",
+        "note": "Customer data supporting Agentforce on Hyperforce is covered by Hyperforce encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2E3B5AC07451A4",
+            "note": "Salesforce explicitly states Hyperforce, which runs Agentforce, includes encryption at rest.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DD6B7ECB54D64B627B",
+      "agent_id": "AI-0029",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2E3B5AC07451A4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentforce_customer_data_on_hyperforce",
+        "note": "Customer data supporting Agentforce on Hyperforce is covered by Hyperforce encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2E3B5AC07451A4",
+            "note": "Salesforce explicitly states Hyperforce, which runs Agentforce, includes encryption in transit.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1F4B7C4EB955E6D29C",
+      "agent_id": "AI-0029",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A253520D56D6F5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "einstein_platform_and_agentforce_on_hyperforce",
+        "note": "Salesforce publishes SOC 2 coverage specifically for Agentforce on Hyperforce.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A253520D56D6F5",
+            "note": "Salesforce publishes a current SOC 2 report specifically covering Einstein Platform and Agentforce on Hyperforce.",
+            "evidence_type": "security_trust"
           }
         ]
       },
