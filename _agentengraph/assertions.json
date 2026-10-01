@@ -38567,6 +38567,363 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-0D2A98816EFE7A9ACB",
+      "agent_id": "AI-0054",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1EA54E4367295E",
+          "SRC-46C922DA47117F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise_cowork_compliance_api",
+        "note": "Cowork audit/session data is available programmatically through Anthropic's Compliance API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-46C922DA47117F",
+            "note": "Anthropic explicitly states audit log events are available in the Compliance API.",
+            "evidence_type": "api_docs",
+            "source_section": "Access audit logs"
+          },
+          {
+            "source_id": "SRC-1EA54E4367295E",
+            "note": "Anthropic states the Compliance API covers Cowork sessions.",
+            "evidence_type": "api_docs",
+            "source_section": "Joining OpenTelemetry data with the Compliance API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-08BBCE3030E9FDB091",
+      "agent_id": "AI-0054",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1EA54E4367295E",
+          "SRC-46C922DA47117F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise_cowork",
+        "note": "Claude Enterprise provides audit logs that cover Cowork activity.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-46C922DA47117F",
+            "note": "Anthropic documents Enterprise organization audit logs and states audit-log events are available in the Compliance API.",
+            "evidence_type": "security_trust",
+            "source_section": "Access audit logs"
+          },
+          {
+            "source_id": "SRC-1EA54E4367295E",
+            "note": "Anthropic states the Compliance API covers Cowork and provides one audit trail with sessions attributable to individual users.",
+            "evidence_type": "security_trust",
+            "source_section": "Joining OpenTelemetry data with the Compliance API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A3EF565830CB626D3A",
+      "agent_id": "AI-0054",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1EA54E4367295E",
+          "SRC-CE0320E417C7C5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_team_enterprise_cowork_events",
+        "note": "Cowork security and activity events can be exported to SIEM tooling through OpenTelemetry.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CE0320E417C7C5",
+            "note": "Anthropic states Team and Enterprise owners can stream Cowork events to SIEM and observability tools through OpenTelemetry.",
+            "evidence_type": "security_trust",
+            "source_section": "OpenTelemetry"
+          },
+          {
+            "source_id": "SRC-1EA54E4367295E",
+            "note": "Anthropic documents configuring an OTLP endpoint for Cowork security events and routing them to SIEM/observability systems.",
+            "evidence_type": "security_trust",
+            "source_section": "Configure OpenTelemetry / Security and privacy considerations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3B0B4664609851D3C1",
+      "agent_id": "AI-0054",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-F8A1B3DABF7CC0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise_cowork",
+        "note": "Claude Enterprise custom roles can explicitly control Cowork access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-F8A1B3DABF7CC0",
+            "note": "Anthropic explicitly documents custom roles that can grant or restrict access to Claude Cowork and other capabilities.",
+            "evidence_type": "technical_docs",
+            "source_section": "What are custom roles?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8447DA3ABF8D75E350",
+      "agent_id": "AI-0054",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CE0320E417C7C5",
+          "SRC-D619C2C742D81C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_team_enterprise_cowork",
+        "note": "Cowork access is governed through Claude organization roles and permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D619C2C742D81C",
+            "note": "Anthropic documents built-in Team/Enterprise roles and their permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Roles and permissions"
+          },
+          {
+            "source_id": "SRC-CE0320E417C7C5",
+            "note": "Anthropic documents organization- and group-level controls for enabling Cowork and Cowork cloud execution.",
+            "evidence_type": "technical_docs",
+            "source_section": "Admin controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-05A5989A5E1266E982",
+      "agent_id": "AI-0054",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-57EFDF29D38261",
+          "SRC-F8A1B3DABF7CC0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_enterprise_access_to_cowork",
+        "note": "Enterprise organizations can provision Cowork users and groups through SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-57EFDF29D38261",
+            "note": "Anthropic documents SCIM directory sync for Enterprise organizations, including provisioning, deprovisioning, groups, and role mappings.",
+            "evidence_type": "technical_docs",
+            "source_section": "SCIM provisioning"
+          },
+          {
+            "source_id": "SRC-F8A1B3DABF7CC0",
+            "note": "Anthropic documents Cowork as a capability controlled through Enterprise custom roles and groups.",
+            "evidence_type": "technical_docs",
+            "source_section": "What are custom roles?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9FF4938CC7515F371A",
+      "agent_id": "AI-0054",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-890B8BA2467F97",
+          "SRC-CE0320E417C7C5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_team_enterprise_access_to_cowork",
+        "note": "Team and Enterprise users accessing Cowork can use Claude's documented SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-890B8BA2467F97",
+            "note": "Anthropic documents SAML SSO setup for Claude Team and Enterprise organizations, including Okta, Entra ID, Google, OneLogin, JumpCloud, and Duo SAML configurations.",
+            "evidence_type": "technical_docs",
+            "source_section": "Set up SSO with your Identity Provider"
+          },
+          {
+            "source_id": "SRC-CE0320E417C7C5",
+            "note": "Cowork is available within Team and Enterprise organizations and governed through organization controls.",
+            "evidence_type": "technical_docs",
+            "source_section": "Availability / Admin controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A3A15AF5104D0B1BBE",
+      "agent_id": "AI-0054",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CE0320E417C7C5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_cowork_cloud_sessions",
+        "note": "Cowork supports Anthropic-managed cloud execution.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CE0320E417C7C5",
+            "note": "Anthropic documents Cowork cloud sessions running on Anthropic infrastructure.",
+            "evidence_type": "technical_docs",
+            "source_section": "Where Cowork runs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3FC88EC1EB27D08A1C",
+      "agent_id": "AI-0054",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CE0320E417C7C5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_cowork_local_sessions",
+        "note": "Cowork supports local execution on customer/user-managed computers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CE0320E417C7C5",
+            "note": "Anthropic documents local Cowork sessions that execute on the user's computer in an isolated virtual machine.",
+            "evidence_type": "technical_docs",
+            "source_section": "Where Cowork runs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-465F979EC0279346DD",
       "agent_id": "AI-0054",
       "path": "identity.name",
@@ -38669,6 +39026,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-F987BF098B5443F00C",
+      "agent_id": "AI-0054",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DCBA133490413C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "claude_cowork_remote_connectors",
+        "note": "Claude Cowork can act as an MCP client through remote custom connectors.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DCBA133490413C",
+            "note": "Anthropic states custom connectors using remote MCP are available in Cowork and let Claude connect to and use existing remote MCP servers.",
+            "evidence_type": "technical_docs",
+            "source_section": "Custom connectors / Remote MCP servers"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-07498DE8E762D46F9B",
