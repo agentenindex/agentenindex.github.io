@@ -7221,6 +7221,9 @@
         "access.description": [
           "Über Kore.ai; Enterprise-Zugang und Funktionen vertraglich abhängig."
         ],
+        "api.rest": [
+          true
+        ],
         "audience": [
           "unternehmen"
         ],
@@ -7247,7 +7250,22 @@
           "Governance und Lifecycle",
           "Mehrere Agenten und Geschäftsprozesse"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
         "hosting.managed": [
+          true
+        ],
+        "hosting.private_network": [
+          true
+        ],
+        "hosting.self_hosted": [
           true
         ],
         "identity.name": [
@@ -7256,11 +7274,20 @@
         "identity.provider": [
           "Kore.ai"
         ],
+        "privacy.residency.available": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.mcp.client": [
+          true
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Agenten-Governance",
@@ -7740,6 +7767,18 @@
           "Integration in bestehende Dokumentenabläufe",
           "Mehrstufige Content-Aufgaben"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "hosting.managed": [
           true
         ],
@@ -7749,11 +7788,29 @@
         "identity.provider": [
           "Box"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Content-Workflows",
@@ -8429,6 +8486,18 @@
           "KI-gestützte Wissensarbeit",
           "Suche über verbundene Arbeitsquellen"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.siem_export": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "hosting.managed": [
           true
         ],
@@ -8443,6 +8512,15 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          true
+        ],
+        "security.encryption.in_transit": [
+          true
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Arbeitsinformationen finden",
@@ -8496,6 +8574,27 @@
           "Snowflake-Datenkontext",
           "Unternehmensgovernance"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.audit_logs.retention_days": [
+          365
+        ],
+        "governance.custom_roles": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.scim": [
+          true
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "hosting.managed": [
           true
         ],
@@ -8505,11 +8604,29 @@
         "identity.provider": [
           "Snowflake"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          true
+        ],
+        "security.encryption.in_transit": [
+          true
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Aktionen über verbundene Tools",
@@ -8535,6 +8652,9 @@
       "claims": {
         "access.description": [
           "Über Cognigy/NiCE Enterprise-Angebote; Kanäle und Funktionen abhängig vom Vertrag."
+        ],
+        "api.rest": [
+          true
         ],
         "audience": [
           "unternehmen"
@@ -8562,7 +8682,22 @@
           "Human-Handoff",
           "Voice- und Digital-Kanäle"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
+        "governance.rbac": [
+          true
+        ],
+        "governance.sso.oidc": [
+          true
+        ],
+        "governance.sso.saml": [
+          true
+        ],
         "hosting.managed": [
+          true
+        ],
+        "hosting.self_hosted": [
           true
         ],
         "identity.name": [
@@ -8576,6 +8711,15 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "security.encryption.at_rest": [
+          true
+        ],
+        "security.encryption.in_transit": [
+          true
+        ],
+        "security.soc2_type2": [
+          true
         ],
         "use_case": [
           "Kundenservice",

@@ -70795,6 +70795,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-ECA585464419E432FA",
+      "agent_id": "AI-0083",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-637AF33493F19B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_agent_platform",
+        "note": "Kore.ai Agent Platform exposes REST APIs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-637AF33493F19B",
+            "note": "Kore.ai documents public HTTPS REST APIs authenticated by API key.",
+            "evidence_type": "api_docs",
+            "source_section": "Endpoint / Method"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-5D6E941BBFAA5E5F3F",
       "agent_id": "AI-0083",
       "path": "audience",
@@ -71083,6 +71118,118 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-393D067FAD0F9B88AC",
+      "agent_id": "AI-0083",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-48A90C74D9B346",
+          "SRC-8C47B9A9710123"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_artemis_and_agent_platform",
+        "note": "Kore.ai provides agent/platform audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8C47B9A9710123",
+            "note": "Kore.ai states immutable audit trails apply to every agent action.",
+            "evidence_type": "official_release",
+            "source_section": "Built for the Global 2000"
+          },
+          {
+            "source_id": "SRC-48A90C74D9B346",
+            "note": "Kore.ai documents audit logs for all activities within tool flows.",
+            "evidence_type": "technical_docs",
+            "source_section": "Audit Logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2A07310C31482C0AFC",
+      "agent_id": "AI-0083",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7E837E8E9B3BC5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_agent_platform",
+        "note": "Kore.ai supports custom roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7E837E8E9B3BC5",
+            "note": "Kore.ai explicitly documents user-defined custom roles with customized module-wise permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Custom Roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3797248ECB25ECF93A",
+      "agent_id": "AI-0083",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7E837E8E9B3BC5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_agent_platform",
+        "note": "Kore.ai supports role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7E837E8E9B3BC5",
+            "note": "Kore.ai documents system roles, permissions, and agent/account-level role assignment.",
+            "evidence_type": "technical_docs",
+            "source_section": "Roles and permissions"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-21C1A0247B80D6A84A",
       "agent_id": "AI-0083",
       "path": "hosting.managed",
@@ -71106,6 +71253,76 @@
             "note": "Kore.ai documents the Artemis generation of Kore.ai Agent Platform launching initially on Microsoft Azure as the enterprise foundation for building and operating agents.",
             "evidence_type": "official_release",
             "source_section": "Kore.ai Agent Platform Artemis edition"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BEDCD65E122F145385",
+      "agent_id": "AI-0083",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8C47B9A9710123"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_artemis_enterprise",
+        "note": "Kore.ai Artemis supports private-cloud deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8C47B9A9710123",
+            "note": "Kore.ai states customers can deploy in private cloud as well as public/sovereign/on-prem environments.",
+            "evidence_type": "official_release",
+            "source_section": "Built for the Global 2000"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B8D6E55ED797E1877B",
+      "agent_id": "AI-0083",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8C47B9A9710123"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_artemis_enterprise",
+        "note": "Kore.ai Artemis supports on-premises deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8C47B9A9710123",
+            "note": "Kore.ai states customers can deploy Artemis on-premises.",
+            "evidence_type": "official_release",
+            "source_section": "Built for the Global 2000"
           }
         ]
       },
@@ -71166,6 +71383,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-6F7FDFF1D76C3EE088",
+      "agent_id": "AI-0083",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8C47B9A9710123"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_artemis_enterprise",
+        "note": "Kore.ai Artemis supports regional data residency.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8C47B9A9710123",
+            "note": "Kore.ai explicitly documents data residency by region and sovereign-region deployment.",
+            "evidence_type": "official_release",
+            "source_section": "Built for the Global 2000"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-540AEA12544C6A4027",
       "agent_id": "AI-0083",
       "path": "profile.depth",
@@ -71212,6 +71464,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-F5ACDE2C2FFF7309F7",
+      "agent_id": "AI-0083",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7CE73CD6B1727C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_agent_platform_agents",
+        "note": "Kore.ai agents can act as MCP clients.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7CE73CD6B1727C",
+            "note": "Kore.ai documents configuring MCP servers in agents, fetching available tools, and adding selected MCP tools to the agent.",
+            "evidence_type": "technical_docs",
+            "source_section": "Configuring an MCP Server in an Agent"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2F7773ADBC12E71B99",
+      "agent_id": "AI-0083",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8C47B9A9710123"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kore_ai_artemis",
+        "note": "Kore.ai documents SOC 2 Type II compliance for Artemis.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8C47B9A9710123",
+            "note": "Kore.ai states Artemis meets SOC 2 Type II requirements.",
+            "evidence_type": "security_trust",
+            "source_section": "Built for the Global 2000"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-25D02A51461F6542A5",
@@ -75876,6 +76198,153 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-119F08B7E0675CDAED",
+      "agent_id": "AI-0089",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-54EBBFCB2F566A",
+          "SRC-D034C1CD97F757"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_platform_and_box_ai",
+        "note": "Box provides audit trails covering Box AI/Agent activity.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D034C1CD97F757",
+            "note": "Box documents full audit logs for data access and AI actions.",
+            "evidence_type": "security_trust",
+            "source_section": "Auditability"
+          },
+          {
+            "source_id": "SRC-54EBBFCB2F566A",
+            "note": "Box states Box Agent inherits Box governance, auditability, and retention controls.",
+            "evidence_type": "official_release",
+            "source_section": "Enterprise-grade security and governance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2F344FBF518E50B842",
+      "agent_id": "AI-0089",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D1812BA7D4B305"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_platform_including_box_agent",
+        "note": "Box audit/security activity can be integrated with SIEM tooling.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D1812BA7D4B305",
+            "note": "Box documents integrations with CASB and SIEM tools alongside centralized audit logs.",
+            "evidence_type": "security_trust",
+            "source_section": "Monitoring and governance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-456C39A9CD6D965A41",
+      "agent_id": "AI-0089",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D1812BA7D4B305"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_platform_including_box_agent",
+        "note": "Box uses role-based access controls and granular permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D1812BA7D4B305",
+            "note": "Box documents seven user roles and granular permission controls across the platform.",
+            "evidence_type": "security_trust",
+            "source_section": "Access controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-87823EB0A14CF6CE7A",
+      "agent_id": "AI-0089",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1469D063AD27A3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_business_enterprise_including_box_agent",
+        "note": "Box organizations using Box Agent can use SAML 2.0 SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1469D063AD27A3",
+            "note": "Box documents SAML 2.0 SSO for Business and Enterprise organizations.",
+            "evidence_type": "technical_docs",
+            "source_section": "Single Sign-On"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-FCE88AAFC17E1F6FE4",
       "agent_id": "AI-0089",
       "path": "hosting.managed",
@@ -75959,6 +76428,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-577A9778379C801B4D",
+      "agent_id": "AI-0089",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D034C1CD97F757"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_platform_including_box_agent",
+        "note": "Box offers regional data-residency options for Box AI content.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D034C1CD97F757",
+            "note": "Box documents regional storage options for Box and Box AI, including EU data storage.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency / GDPR"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C9D0674C1B8413C5FA",
+      "agent_id": "AI-0089",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D034C1CD97F757"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_platform_including_box_agent",
+        "note": "Eligible Box customers can select supported data-storage regions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D034C1CD97F757",
+            "note": "Box documents enterprise configuration of server/data-storage location, including EU options.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency / enterprise configuration"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-BA3F1B3DFCEA4BF088",
       "agent_id": "AI-0089",
       "path": "profile.depth",
@@ -76005,6 +76544,146 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-A75A617B189EAA6F31",
+      "agent_id": "AI-0089",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D1812BA7D4B305"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_enterprise_keysafe",
+        "note": "Box supports customer-managed encryption keys through Box KeySafe.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D1812BA7D4B305",
+            "note": "Box documents KeySafe for customer control of encryption keys.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption / KeySafe"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-50814624E56509B9A8",
+      "agent_id": "AI-0089",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E576302016D94B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_platform_including_box_agent",
+        "note": "Box documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E576302016D94B",
+            "note": "Box documents AES-256 encryption for content at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption at rest"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C19AB61A5C5E4BD019",
+      "agent_id": "AI-0089",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E576302016D94B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_platform_including_box_agent",
+        "note": "Box documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E576302016D94B",
+            "note": "Box documents TLS 1.2 or higher for data in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption in transit"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2B9C8F9B830DA86FBD",
+      "agent_id": "AI-0089",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D034C1CD97F757"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "box_platform_including_box_agent",
+        "note": "Box documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D034C1CD97F757",
+            "note": "Box lists SOC 2 Type II among the platform certifications applicable to Box AI.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-286055E4FB751723E0",
@@ -82474,6 +83153,146 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-DAD989D4C51573A2C9",
+      "agent_id": "AI-0097",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EDC4CDE6CDD3C1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash_enterprise",
+        "note": "Dropbox Dash provides audit/activity logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EDC4CDE6CDD3C1",
+            "note": "Dropbox documents audit and activity logging for Dash enterprise administration.",
+            "evidence_type": "security_trust",
+            "source_section": "Admin controls / audit logging"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-89A23C4F70F14F50B4",
+      "agent_id": "AI-0097",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EDC4CDE6CDD3C1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash_enterprise",
+        "note": "Dash activity can be exported/integrated with SIEM tooling.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EDC4CDE6CDD3C1",
+            "note": "Dropbox documents export/integration of Dash audit activity with enterprise security and SIEM workflows.",
+            "evidence_type": "security_trust",
+            "source_section": "Audit and security integrations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AA74035DEA88B6DE40",
+      "agent_id": "AI-0097",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC245CAF4B1AD6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash_enterprise",
+        "note": "Dropbox Dash uses role-based access controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC245CAF4B1AD6",
+            "note": "Dropbox documents role-based access controls for administrative/manual review and access enforcement in Dash.",
+            "evidence_type": "security_trust",
+            "source_section": "Access controls"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6BD59B7B458902B3ED",
+      "agent_id": "AI-0097",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC245CAF4B1AD6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash_enterprise",
+        "note": "Dropbox Dash supports SAML 2.0 SSO through Dropbox Identity.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC245CAF4B1AD6",
+            "note": "Dropbox documents Dash using core Dropbox Identity and external SAML 2.0 identity providers.",
+            "evidence_type": "security_trust",
+            "source_section": "Identity and authentication"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7C649434D25B286C2B",
       "agent_id": "AI-0097",
       "path": "hosting.managed",
@@ -82603,6 +83422,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-D50196975C6A12A259",
+      "agent_id": "AI-0097",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC245CAF4B1AD6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash",
+        "note": "Dropbox Dash encrypts data at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC245CAF4B1AD6",
+            "note": "Dropbox states Dash encrypts all data at rest, verified as part of its SOC 2 Type 2 audit.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2F01C5AB836EECDC05",
+      "agent_id": "AI-0097",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AC245CAF4B1AD6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash",
+        "note": "Dropbox Dash encrypts data in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AC245CAF4B1AD6",
+            "note": "Dropbox states Dash encrypts all data in transit; public endpoints use HTTPS and internal service traffic uses encrypted transport.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-17A112359FAB5F5639",
+      "agent_id": "AI-0097",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EDC4CDE6CDD3C1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "dropbox_dash",
+        "note": "Dropbox Dash is covered by SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EDC4CDE6CDD3C1",
+            "note": "Dropbox documents SOC 2 Type II compliance for Dash.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-A0312D32241D25CF49",
@@ -83074,6 +83998,251 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-8D030C32C3774B734C",
+      "agent_id": "AI-0098",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D283AD7C530B46"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_including_cowork",
+        "note": "Snowflake provides account access/audit history.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D283AD7C530B46",
+            "note": "Snowflake documents account-level access history for auditing data access and object usage.",
+            "evidence_type": "technical_docs",
+            "source_section": "ACCESS_HISTORY"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9B597E2E77F9DF4A26",
+      "agent_id": "AI-0098",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D283AD7C530B46"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_access_history",
+        "note": "Snowflake ACCESS_HISTORY retains records for 365 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D283AD7C530B46",
+            "note": "Snowflake states the Account Usage ACCESS_HISTORY view retains records for 365 days.",
+            "evidence_type": "technical_docs",
+            "source_section": "Retention"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C4B385E4DF3CF187B3",
+      "agent_id": "AI-0098",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8DA34F2728B567"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_including_cowork",
+        "note": "Snowflake supports custom roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8DA34F2728B567",
+            "note": "Snowflake documents account administrators creating custom roles and role hierarchies.",
+            "evidence_type": "technical_docs",
+            "source_section": "Custom roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3764A3EA396D448200",
+      "agent_id": "AI-0098",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8DA34F2728B567"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_including_cowork",
+        "note": "Snowflake uses RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8DA34F2728B567",
+            "note": "Snowflake documents role-based access control as a core access model.",
+            "evidence_type": "technical_docs",
+            "source_section": "Role-based access control"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A110F2458D609C656E",
+      "agent_id": "AI-0098",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-054AA81A127B4B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_including_cowork",
+        "note": "Snowflake supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-054AA81A127B4B",
+            "note": "Snowflake documents SCIM-based user and group provisioning.",
+            "evidence_type": "technical_docs",
+            "source_section": "SCIM"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A4EADAA4B4099C0E90",
+      "agent_id": "AI-0098",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A6D839CA139670"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_including_cowork",
+        "note": "Snowflake supports OIDC federation.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A6D839CA139670",
+            "note": "Snowflake documents OpenID Connect support for federated authentication.",
+            "evidence_type": "technical_docs",
+            "source_section": "OpenID Connect"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-27DEFEA939DCD76EAB",
+      "agent_id": "AI-0098",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A6D839CA139670"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_including_cowork",
+        "note": "Snowflake supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A6D839CA139670",
+            "note": "Snowflake documents SAML 2.0 federated authentication and SSO.",
+            "evidence_type": "technical_docs",
+            "source_section": "SAML 2.0"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-E7A15F6B387B507E71",
       "agent_id": "AI-0098",
       "path": "hosting.managed",
@@ -83159,6 +84328,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-4AE406B07C01DF88EF",
+      "agent_id": "AI-0098",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8A66997AA652CC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_cowork_on_snowflake",
+        "note": "Snowflake supports region-based deployment/data residency.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8A66997AA652CC",
+            "note": "Snowflake documents supported cloud regions and region-specific accounts for customer data and workloads.",
+            "evidence_type": "technical_docs",
+            "source_section": "Regions"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-35FE11528178B157AF",
+      "agent_id": "AI-0098",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8A66997AA652CC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_account_hosting",
+        "note": "Customers select a supported Snowflake region for account deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8A66997AA652CC",
+            "note": "Snowflake documents customer account creation in selected supported cloud regions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Choosing a region"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-1C9671317631753921",
       "agent_id": "AI-0098",
       "path": "profile.depth",
@@ -83207,6 +84446,146 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-BC4053F7FB4B30E66C",
+      "agent_id": "AI-0098",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-954B2C2CD1CDF5"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_trihybrid_security",
+        "note": "Snowflake supports customer-managed encryption keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-954B2C2CD1CDF5",
+            "note": "Snowflake documents customer-managed keys combined with Snowflake-managed keys through Tri-Secret Secure.",
+            "evidence_type": "security_trust",
+            "source_section": "Customer-managed keys / Tri-Secret Secure"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-88ADCA5ED01335CE50",
+      "agent_id": "AI-0098",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-884ECA70AC820B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_platform_including_cowork",
+        "note": "Snowflake encrypts data at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-884ECA70AC820B",
+            "note": "Snowflake documents encryption of data at rest as part of end-to-end encryption.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption at rest"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-555F9FD8FE54C533D2",
+      "agent_id": "AI-0098",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-884ECA70AC820B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_platform_including_cowork",
+        "note": "Snowflake encrypts data in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-884ECA70AC820B",
+            "note": "Snowflake documents encryption of data in transit as part of end-to-end encryption.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption in transit"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-040DC9A95E78F0FABC",
+      "agent_id": "AI-0098",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9DB92C7AB4F9AC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "snowflake_platform_including_cowork",
+        "note": "Snowflake documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9DB92C7AB4F9AC",
+            "note": "Snowflake documents SOC 2 Type II compliance for its service.",
+            "evidence_type": "security_trust",
+            "source_section": "SOC 2"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-A06440A749FF867854",
@@ -83381,6 +84760,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-41191DEBF264AE199D",
+      "agent_id": "AI-0099",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0D47DF37D18D7C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_platform_and_agents",
+        "note": "Cognigy exposes platform functionality through documented APIs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0D47DF37D18D7C",
+            "note": "Cognigy documents an open API and API-driven extensibility for the platform that hosts AI Agents.",
+            "evidence_type": "api_docs",
+            "source_section": "Enterprise platform / Open API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0D66F5E34C8098BD66",
@@ -83671,6 +85085,146 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-9DECFBCD045A7A88AD",
+      "agent_id": "AI-0099",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-02EBB3869DEF8E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_platform_and_agents",
+        "note": "Cognigy provides detailed audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-02EBB3869DEF8E",
+            "note": "Cognigy documents detailed audit logs for governed AI operations.",
+            "evidence_type": "security_trust",
+            "source_section": "Governance and security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-6F89A1FEF5B9EA51F0",
+      "agent_id": "AI-0099",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-02EBB3869DEF8E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_platform_and_agents",
+        "note": "Cognigy provides role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-02EBB3869DEF8E",
+            "note": "Cognigy documents RBAC and granular governance controls for AI operations.",
+            "evidence_type": "security_trust",
+            "source_section": "Governance and security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DDD5BCEA95AB2DE2AF",
+      "agent_id": "AI-0099",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BC8A4C3E39A832"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_platform",
+        "note": "Cognigy.AI supports OIDC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BC8A4C3E39A832",
+            "note": "Cognigy documents OpenID Connect support for Cognigy.AI authentication.",
+            "evidence_type": "technical_docs",
+            "source_section": "OIDC / authentication"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1D7E21D726CF5FC289",
+      "agent_id": "AI-0099",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BC8A4C3E39A832"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_platform",
+        "note": "Cognigy.AI supports SAML 2.0 SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BC8A4C3E39A832",
+            "note": "Cognigy documents SAML 2.0 single sign-on support in Cognigy.AI.",
+            "evidence_type": "technical_docs",
+            "source_section": "SAML 2.0 SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F4739BA032EFA888F2",
       "agent_id": "AI-0099",
       "path": "hosting.managed",
@@ -83694,6 +85248,41 @@
             "note": "Cognigy documents deploying AI Agents through Cognigy.AI endpoints to Webchat, WhatsApp, Voice Gateway, Amazon, Twilio, and other channels.",
             "evidence_type": "technical_docs",
             "source_section": "Deploying your AI Agents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B047303DD7FCAF71F9",
+      "agent_id": "AI-0099",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D088FF6128AF51"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_enterprise",
+        "note": "Cognigy supports fully on-premises deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D088FF6128AF51",
+            "note": "Cognigy states Cognigy.AI can be operated in European data centers or fully on-premises.",
+            "evidence_type": "official_release",
+            "source_section": "Deployment"
           }
         ]
       },
@@ -83800,6 +85389,111 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-3111678EB22D1C888A",
+      "agent_id": "AI-0099",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0D47DF37D18D7C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_platform_data",
+        "note": "Cognigy documents encryption of stored platform data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0D47DF37D18D7C",
+            "note": "Cognigy documents database encryption for enterprise deployments.",
+            "evidence_type": "security_trust",
+            "source_section": "Enterprise security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-0F9375C41A711665C8",
+      "agent_id": "AI-0099",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-02EBB3869DEF8E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_platform_data",
+        "note": "Cognigy documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-02EBB3869DEF8E",
+            "note": "Cognigy documents encryption in transit as an enterprise security control.",
+            "evidence_type": "security_trust",
+            "source_section": "Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2D84E9B5F45A48FB03",
+      "agent_id": "AI-0099",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-689AF8276FEC5C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cognigy_ai_platform",
+        "note": "Cognigy documents SOC 2 Type II assurance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-689AF8276FEC5C",
+            "note": "Cognigy states its platform completed a SOC 2 Type II examination and maintains the corresponding assurance program.",
+            "evidence_type": "security_trust",
+            "source_section": "SOC 2"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-0A0673DF82C3738B32",
