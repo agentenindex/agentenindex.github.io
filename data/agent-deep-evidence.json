@@ -1638,6 +1638,216 @@
       ]
     },
     {
+      "agent_id": "AI-0020",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "lindy_hosted_mcp_integrations",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy – Official Site",
+              "url": "https://www.lindy.ai/",
+              "note": "Lindy states that hosted MCP servers can plug into Lindy as integrations.",
+              "evidence_type": "official_product_page",
+              "source_section": "What does Lindy connect to?"
+            }
+          ],
+          "note": "Lindy can consume tools/services exposed through hosted MCP servers."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "lindy_webhook_trigger",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy – Changelog",
+              "url": "https://www.lindy.ai/changelog",
+              "note": "Lindy documents a Webhook Trigger that lets a Lindy be triggered by an API call.",
+              "evidence_type": "official_release",
+              "source_section": "Lindy Webhooks"
+            }
+          ],
+          "note": "Lindy agents support inbound webhook/API-call triggers."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "lindy_platform_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy Enterprise",
+              "url": "https://www.lindy.ai/enterprise",
+              "note": "Lindy documents a centralized hosted workspace for deploying and managing agents, integrations, guardrails, roles, memory, and team sources.",
+              "evidence_type": "official_product_page",
+              "source_section": "Centralized management"
+            },
+            {
+              "title": "Lindy Enterprise: The new standard for enterprise AI",
+              "url": "https://www.lindy.ai/blog/lindy-enterprise-announcement",
+              "note": "Lindy documents centrally managed agents deployed and governed through Lindy Enterprise.",
+              "evidence_type": "official_release",
+              "source_section": "Centrally Managed Agents"
+            }
+          ],
+          "note": "Lindy provides a managed platform for deploying and operating agents."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "lindy_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy – Enterprise Security & Compliance",
+              "url": "https://www.lindy.ai/security",
+              "note": "Lindy explicitly states that data residency requirements are supported as part of its privacy controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Privacy Controls"
+            }
+          ],
+          "note": "Lindy supports enterprise data-residency requirements."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "lindy_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy Enterprise",
+              "url": "https://www.lindy.ai/enterprise",
+              "note": "Lindy explicitly documents SCIM user provisioning through the enterprise identity provider.",
+              "evidence_type": "official_product_page",
+              "source_section": "SSO & SCIM"
+            },
+            {
+              "title": "Lindy Enterprise: The new standard for enterprise AI",
+              "url": "https://www.lindy.ai/blog/lindy-enterprise-announcement",
+              "note": "Lindy documents SCIM as an Enterprise access-management capability.",
+              "evidence_type": "official_release",
+              "source_section": "Security & Governance"
+            }
+          ],
+          "note": "Lindy Enterprise supports SCIM provisioning."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "lindy_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy Enterprise",
+              "url": "https://www.lindy.ai/enterprise",
+              "note": "Lindy documents workspace roles and seats with distinct permissions, including who can approve external actions.",
+              "evidence_type": "official_product_page",
+              "source_section": "Roles and seats"
+            },
+            {
+              "title": "Lindy Enterprise: The new standard for enterprise AI",
+              "url": "https://www.lindy.ai/blog/lindy-enterprise-announcement",
+              "note": "Lindy documents centralized agent management and precise per-user app permissions controlled by admins.",
+              "evidence_type": "official_release",
+              "source_section": "Security & Governance"
+            }
+          ],
+          "note": "Lindy Enterprise uses role-based permissions for workspace and agent governance."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "lindy_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy Enterprise",
+              "url": "https://www.lindy.ai/enterprise",
+              "note": "Lindy states every action Lindy takes is logged with what happened, when, and why.",
+              "evidence_type": "official_product_page",
+              "source_section": "Audit visibility"
+            },
+            {
+              "title": "Lindy – Pricing",
+              "url": "https://www.lindy.ai/pricing",
+              "note": "Lindy lists audit logs as an Enterprise capability.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "Lindy Enterprise provides action-level audit logs."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "lindy_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy Enterprise",
+              "url": "https://www.lindy.ai/enterprise",
+              "note": "Lindy states data is encrypted at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection"
+            }
+          ],
+          "note": "Lindy documents encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "lindy_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy Enterprise",
+              "url": "https://www.lindy.ai/enterprise",
+              "note": "Lindy states data is encrypted in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Data protection"
+            }
+          ],
+          "note": "Lindy documents encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "lindy_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Lindy – Enterprise Security & Compliance",
+              "url": "https://www.lindy.ai/security",
+              "note": "Lindy states it is SOC 2 Type II certified and independently audited.",
+              "evidence_type": "security_trust",
+              "source_section": "Compliance & Certifications"
+            },
+            {
+              "title": "Lindy Enterprise",
+              "url": "https://www.lindy.ai/enterprise",
+              "note": "Lindy lists SOC 2 Type II as independently audited enterprise security compliance.",
+              "evidence_type": "security_trust",
+              "source_section": "Security by design"
+            }
+          ],
+          "note": "Lindy documents SOC 2 Type II certification."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0021",
       "claims": [
         {
