@@ -21,8 +21,8 @@
     "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified."
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 21,
-    "agents_without_deep_evidence": 51,
+    "agents_below_target_with_deep_evidence": 37,
+    "agents_without_deep_evidence": 35,
     "agents_at_or_above_target": 38
   },
   "field_priorities": [
@@ -136,9 +136,9 @@
     },
     {
       "path": "api.rest",
-      "documented_agents": 24,
-      "unknown_agents": 86,
-      "coverage_pct": 21.82
+      "documented_agents": 25,
+      "unknown_agents": 85,
+      "coverage_pct": 22.73
     },
     {
       "path": "privacy.residency.available",
@@ -153,28 +153,28 @@
       "coverage_pct": 23.64
     },
     {
-      "path": "protocols.mcp.client",
-      "documented_agents": 32,
-      "unknown_agents": 78,
-      "coverage_pct": 29.09
-    },
-    {
       "path": "governance.audit_logs.available",
-      "documented_agents": 33,
-      "unknown_agents": 77,
-      "coverage_pct": 30.0
-    },
-    {
-      "path": "hosting.managed",
       "documented_agents": 34,
       "unknown_agents": 76,
       "coverage_pct": 30.91
+    },
+    {
+      "path": "protocols.mcp.client",
+      "documented_agents": 35,
+      "unknown_agents": 75,
+      "coverage_pct": 31.82
     },
     {
       "path": "governance.rbac",
       "documented_agents": 37,
       "unknown_agents": 73,
       "coverage_pct": 33.64
+    },
+    {
+      "path": "hosting.managed",
+      "documented_agents": 45,
+      "unknown_agents": 65,
+      "coverage_pct": 40.91
     }
   ],
   "agents": [
@@ -1260,6 +1260,546 @@
       ]
     },
     {
+      "agent_id": "AI-0009",
+      "name": "Cursor Agent",
+      "provider_id": "PROV-CURSOR",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 95.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Cursor Docs – Model Context Protocol (MCP)",
+          "url": "https://cursor.com/docs/mcp",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Cursor Docs – Agent",
+          "url": "https://cursor.com/docs/agent/overview",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Cursor Cursor Agent official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Cursor Cursor Agent official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Cursor Cursor Agent official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Cursor Cursor Agent official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Cursor Cursor Agent official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Cursor Cursor Agent official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Cursor Cursor Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Cursor Cursor Agent official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0010",
+      "name": "Windsurf Cascade",
+      "provider_id": "PROV-WINDSURF",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 95.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Devin Docs – Cascade",
+          "url": "https://docs.devin.ai/desktop/cascade/cascade",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Windsurf Docs – Cascade",
+          "url": "https://docs.windsurf.com/windsurf/cascade",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Windsurf Windsurf Cascade official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Windsurf Windsurf Cascade official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Windsurf Windsurf Cascade official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Windsurf Windsurf Cascade official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Windsurf Windsurf Cascade official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Windsurf Windsurf Cascade official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Windsurf Windsurf Cascade official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Windsurf Windsurf Cascade official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0015",
+      "name": "Kiro",
+      "provider_id": "PROV-AWS",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 95.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Kiro Docs – How Kiro works",
+          "url": "https://kiro.dev/docs/how-kiro-works/",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Kiro – IDE",
+          "url": "https://kiro.dev/ide/",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "AWS Kiro official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "AWS Kiro official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "AWS Kiro official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "AWS Kiro official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "AWS Kiro official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "AWS Kiro official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "AWS Kiro official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "AWS Kiro official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0017",
+      "name": "Make AI Agents",
+      "provider_id": "PROV-MAKE",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 95.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Make Help – Create your first AI agent",
+          "url": "https://help.make.com/create-your-first-ai-agent",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Make Help – AI Agents",
+          "url": "https://help.make.com/introduction-to-make-ai-agent-new",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Make Make AI Agents official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Make Make AI Agents official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Make Make AI Agents official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Make Make AI Agents official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Make Make AI Agents official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Make Make AI Agents official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Make Make AI Agents official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Make Make AI Agents official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0034",
+      "name": "Notion Custom Agents",
+      "provider_id": "PROV-NOTION",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 95.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Notion Help – Workspace audit log",
+          "url": "https://www.notion.com/help/audit-log",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Notion – Custom Agents",
+          "url": "https://www.notion.com/de/product/agents",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Notion Notion Custom Agents official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Notion Notion Custom Agents official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Notion Notion Custom Agents official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Notion Notion Custom Agents official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Notion Notion Custom Agents official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Notion Notion Custom Agents official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Notion Notion Custom Agents official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Notion Notion Custom Agents official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0038",
+      "name": "Perplexity Computer",
+      "provider_id": "PROV-PERPLEXITY",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 95.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Perplexity – Computer",
+          "url": "https://www.perplexity.ai/products/computer",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "Perplexity – Computer",
+          "url": "https://www.perplexity.ai/de/products/computer",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Perplexity Perplexity Computer official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Perplexity Perplexity Computer official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Perplexity Perplexity Computer official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Perplexity Perplexity Computer official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Perplexity Perplexity Computer official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Perplexity Perplexity Computer official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Perplexity Perplexity Computer official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Perplexity Perplexity Computer official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0053",
       "name": "Gemini Spark",
       "provider_id": "PROV-GOOGLE",
@@ -1980,6 +2520,856 @@
       ]
     },
     {
+      "agent_id": "AI-0001",
+      "name": "ChatGPT Deep Research",
+      "provider_id": "PROV-OPENAI",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "OpenAI Developers – Deep research",
+          "url": "https://developers.openai.com/api/docs/guides/deep-research",
+          "origin": "field_level_evidence",
+          "evidence_type": "api_docs"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "OpenAI ChatGPT Deep Research official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "OpenAI ChatGPT Deep Research official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "OpenAI ChatGPT Deep Research official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "OpenAI ChatGPT Deep Research official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "OpenAI ChatGPT Deep Research official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "OpenAI ChatGPT Deep Research official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "OpenAI ChatGPT Deep Research official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "OpenAI ChatGPT Deep Research official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0004",
+      "name": "Perplexity Deep Research",
+      "provider_id": "PROV-PERPLEXITY",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Perplexity – Deep Research",
+          "url": "https://www.perplexity.ai/de/hub/products/deep-research",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Perplexity Perplexity Deep Research official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Perplexity Perplexity Deep Research official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Perplexity Perplexity Deep Research official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Perplexity Perplexity Deep Research official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0005",
+      "name": "Microsoft Copilot Researcher",
+      "provider_id": "PROV-MICROSOFT",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Microsoft 365 Blog – Researcher and Analyst are now generally available",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0011",
+      "name": "Replit Agent",
+      "provider_id": "PROV-REPLIT",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Replit – Agent",
+          "url": "https://replit.com/products/agent",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Replit Replit Agent official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Replit Replit Agent official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Replit Replit Agent official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Replit Replit Agent official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Replit Replit Agent official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Replit Replit Agent official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Replit Replit Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Replit Replit Agent official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0012",
+      "name": "Devin",
+      "provider_id": "PROV-COGNITION",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Devin – Official Site",
+          "url": "https://devin.ai/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Cognition Devin official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Cognition Devin official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Cognition Devin official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Cognition Devin official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Cognition Devin official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Cognition Devin official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Cognition Devin official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Cognition Devin official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0024",
+      "name": "Gumball",
+      "provider_id": "PROV-GUMLOOP",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Gumloop – Meet Gumball",
+          "url": "https://www.gumloop.com/blog/meet-gumball",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Gumloop Gumball official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Gumloop Gumball official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Gumloop Gumball official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Gumloop Gumball official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Gumloop Gumball official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Gumloop Gumball official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Gumloop Gumball official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Gumloop Gumball official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0033",
+      "name": "Notion Agent",
+      "provider_id": "PROV-NOTION",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Notion Help – Notion Agent",
+          "url": "https://www.notion.com/de/help/notion-agent",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Notion Notion Agent official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Notion Notion Agent official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Notion Notion Agent official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Notion Notion Agent official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Notion Notion Agent official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Notion Notion Agent official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Notion Notion Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Notion Notion Agent official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0037",
+      "name": "Microsoft Copilot Analyst",
+      "provider_id": "PROV-MICROSOFT",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Microsoft 365 Blog – Researcher and Analyst are now generally available",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0041",
+      "name": "Forethought AI Agents by Zendesk",
+      "provider_id": "PROV-ZENDESK-FORETHOUGHT",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Zendesk Help – Announcing Forethought AI agents by Zendesk for customers",
+          "url": "https://support.zendesk.com/hc/en-us/articles/10850639885082-Announcing-Forethought-AI-agents-by-Zendesk-for-customers",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0042",
+      "name": "HubSpot Breeze Customer Agent",
+      "provider_id": "PROV-HUBSPOT",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.8,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 9.0,
+        "unknown_share": 4.8,
+        "source_readiness": 1.0
+      },
+      "documented_fields": 1,
+      "unknown_fields": 24,
+      "coverage_pct": 4.0,
+      "fields_needed_for_40pct": 9,
+      "recommended_unknown_paths": [
+        "governance.audit_logs.retention_days",
+        "protocols.a2a.client",
+        "governance.sso.oidc",
+        "protocols.a2a.server",
+        "hosting.private_network",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "HubSpot Marketplace – Customer Agent",
+          "url": "https://ecosystem.hubspot.com/marketplace/listing/customer-agent",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols a2a client"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation governance sso oidc"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols a2a server"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation hosting private_network"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0052",
       "name": "Manus Agent",
       "provider_id": "PROV-MANUS",
@@ -2220,762 +3610,6 @@
       ]
     },
     {
-      "agent_id": "AI-0001",
-      "name": "ChatGPT Deep Research",
-      "provider_id": "PROV-OPENAI",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "OpenAI Developers – Deep research",
-          "url": "https://developers.openai.com/api/docs/guides/deep-research",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "OpenAI ChatGPT Deep Research official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "OpenAI ChatGPT Deep Research official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "OpenAI ChatGPT Deep Research official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "OpenAI ChatGPT Deep Research official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "OpenAI ChatGPT Deep Research official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "OpenAI ChatGPT Deep Research official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "OpenAI ChatGPT Deep Research official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "OpenAI ChatGPT Deep Research official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0004",
-      "name": "Perplexity Deep Research",
-      "provider_id": "PROV-PERPLEXITY",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Perplexity – Deep Research",
-          "url": "https://www.perplexity.ai/de/hub/products/deep-research",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Perplexity Perplexity Deep Research official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Perplexity Perplexity Deep Research official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Perplexity Perplexity Deep Research official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Perplexity Perplexity Deep Research official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0005",
-      "name": "Microsoft Copilot Researcher",
-      "provider_id": "PROV-MICROSOFT",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Microsoft 365 Blog – Researcher and Analyst GA",
-          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0009",
-      "name": "Cursor Agent",
-      "provider_id": "PROV-CURSOR",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Cursor Docs – Agent",
-          "url": "https://cursor.com/docs/agent/overview",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Cursor Cursor Agent official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Cursor Cursor Agent official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Cursor Cursor Agent official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Cursor Cursor Agent official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Cursor Cursor Agent official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Cursor Cursor Agent official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Cursor Cursor Agent official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Cursor Cursor Agent official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0010",
-      "name": "Windsurf Cascade",
-      "provider_id": "PROV-WINDSURF",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Windsurf Docs – Cascade",
-          "url": "https://docs.windsurf.com/windsurf/cascade",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Windsurf Windsurf Cascade official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Windsurf Windsurf Cascade official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Windsurf Windsurf Cascade official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Windsurf Windsurf Cascade official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Windsurf Windsurf Cascade official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Windsurf Windsurf Cascade official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Windsurf Windsurf Cascade official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Windsurf Windsurf Cascade official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0011",
-      "name": "Replit Agent",
-      "provider_id": "PROV-REPLIT",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Replit – Agent",
-          "url": "https://replit.com/products/agent",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Replit Replit Agent official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Replit Replit Agent official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Replit Replit Agent official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Replit Replit Agent official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Replit Replit Agent official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Replit Replit Agent official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Replit Replit Agent official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Replit Replit Agent official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0012",
-      "name": "Devin",
-      "provider_id": "PROV-COGNITION",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Cognition – Devin",
-          "url": "https://devin.ai/",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Cognition Devin official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Cognition Devin official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Cognition Devin official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Cognition Devin official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Cognition Devin official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Cognition Devin official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Cognition Devin official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Cognition Devin official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0015",
-      "name": "Kiro",
-      "provider_id": "PROV-AWS",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Kiro – IDE",
-          "url": "https://kiro.dev/ide/",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "AWS Kiro official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "AWS Kiro official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "AWS Kiro official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "AWS Kiro official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "AWS Kiro official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "AWS Kiro official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "AWS Kiro official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "AWS Kiro official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0017",
-      "name": "Make AI Agents",
-      "provider_id": "PROV-MAKE",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Make Help – AI Agents",
-          "url": "https://help.make.com/introduction-to-make-ai-agent-new",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Make Make AI Agents official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Make Make AI Agents official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Make Make AI Agents official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Make Make AI Agents official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Make Make AI Agents official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Make Make AI Agents official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Make Make AI Agents official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Make Make AI Agents official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
       "agent_id": "AI-0022",
       "name": "Relay.app",
       "provider_id": "PROV-RELAY-APP",
@@ -3056,594 +3690,6 @@
           "documented_agents": 12,
           "global_coverage_pct": 10.91,
           "suggested_query": "Relay.app Relay.app official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0024",
-      "name": "Gumball",
-      "provider_id": "PROV-GUMLOOP",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Gumloop – Meet Gumball",
-          "url": "https://www.gumloop.com/blog/meet-gumball",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Gumloop Gumball official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Gumloop Gumball official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Gumloop Gumball official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Gumloop Gumball official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Gumloop Gumball official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Gumloop Gumball official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Gumloop Gumball official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Gumloop Gumball official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0033",
-      "name": "Notion Agent",
-      "provider_id": "PROV-NOTION",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Notion Help – Notion Agent",
-          "url": "https://www.notion.com/de/help/notion-agent",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Notion Notion Agent official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Notion Notion Agent official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Notion Notion Agent official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Notion Notion Agent official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Notion Notion Agent official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Notion Notion Agent official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Notion Notion Agent official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Notion Notion Agent official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0034",
-      "name": "Notion Custom Agents",
-      "provider_id": "PROV-NOTION",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Notion – Custom Agents",
-          "url": "https://www.notion.com/de/product/agents",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Notion Notion Custom Agents official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Notion Notion Custom Agents official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Notion Notion Custom Agents official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Notion Notion Custom Agents official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Notion Notion Custom Agents official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Notion Notion Custom Agents official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Notion Notion Custom Agents official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Notion Notion Custom Agents official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0037",
-      "name": "Microsoft Copilot Analyst",
-      "provider_id": "PROV-MICROSOFT",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Microsoft 365 Blog – Researcher and Analyst GA",
-          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0038",
-      "name": "Perplexity Computer",
-      "provider_id": "PROV-PERPLEXITY",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Perplexity – Computer",
-          "url": "https://www.perplexity.ai/de/products/computer",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Perplexity Perplexity Computer official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Perplexity Perplexity Computer official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Perplexity Perplexity Computer official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Perplexity Perplexity Computer official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Perplexity Perplexity Computer official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Perplexity Perplexity Computer official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Perplexity Perplexity Computer official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Perplexity Perplexity Computer official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0041",
-      "name": "Forethought AI Agents by Zendesk",
-      "provider_id": "PROV-ZENDESK-FORETHOUGHT",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Zendesk – Forethought AI agents announcement",
-          "url": "https://support.zendesk.com/hc/en-us/articles/10850639885082-Announcing-Forethought-AI-agents-by-Zendesk-for-customers",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0042",
-      "name": "HubSpot Breeze Customer Agent",
-      "provider_id": "PROV-HUBSPOT",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "HubSpot Marketplace – Customer Agent",
-          "url": "https://ecosystem.hubspot.com/marketplace/listing/customer-agent",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation governance audit_logs api"
         }
       ]
     },

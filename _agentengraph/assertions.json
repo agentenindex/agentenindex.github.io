@@ -27,6 +27,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-43BCA411FDE37D0429",
+      "agent_id": "AI-0001",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8729D0DB57FF55"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "openai_deep_research_responses_api",
+        "note": "OpenAI deep research is programmatically available through the Responses API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8729D0DB57FF55",
+            "note": "OpenAI documents running deep-research workflows through the Responses API, including HTTPS requests to /v1/responses.",
+            "evidence_type": "api_docs",
+            "source_section": "Deep research / Kick off a deep research task"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7B5901902C364D299C",
       "agent_id": "AI-0001",
       "path": "audience",
@@ -2584,6 +2619,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-2BB4DA6EB61BDA69EC",
+      "agent_id": "AI-0004",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-05696F16512E74"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_deep_research_in_computer",
+        "note": "Perplexity Deep Research is delivered as a managed Perplexity Computer capability.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-05696F16512E74",
+            "note": "Perplexity documents Deep Research as a capability inside its Computer product, launched and used through Perplexity's hosted product surface.",
+            "evidence_type": "official_product_page",
+            "source_section": "Deep Research – entwickelt für die schwierigsten Fragen / Erste Schritte"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-6FFB20D33393045769",
       "agent_id": "AI-0004",
       "path": "identity.name",
@@ -3134,6 +3204,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-1BDA9E9BF4307D64D6",
+      "agent_id": "AI-0005",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CCF09CEC930C02"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_researcher",
+        "note": "Researcher is delivered as a managed agent inside Microsoft 365 Copilot.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CCF09CEC930C02",
+            "note": "Microsoft documents Researcher as a built-in, pre-pinned reasoning agent in the Microsoft 365 Copilot app for licensed users.",
+            "evidence_type": "official_release",
+            "source_section": "How to get started with Researcher and Analyst"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-645A7272C1EADE548A",
@@ -6952,6 +7057,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-73EAE810CC942B98AD",
+      "agent_id": "AI-0009",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-50BE7DD56E69AE"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "cursor_agent",
+        "note": "Cursor Agent consumes tools and data from configured MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-50BE7DD56E69AE",
+            "note": "Cursor documents that MCP enables Cursor to connect to external tools and data sources and that the Agent automatically uses available MCP tools.",
+            "evidence_type": "technical_docs",
+            "source_section": "What is MCP? / Using MCP in chat"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3F0D9C58BFB88F5FC8",
       "agent_id": "AI-0009",
       "path": "use_case",
@@ -7504,6 +7644,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-82CA6CB9ADC7C4BE92",
+      "agent_id": "AI-0010",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A2464C58B71895"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "windsurf_cascade",
+        "note": "Cascade can consume capabilities exposed through configured MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A2464C58B71895",
+            "note": "The current official Cascade documentation describes MCP servers as extensions to the agent's capabilities.",
+            "evidence_type": "technical_docs",
+            "source_section": "Cascade / MCP"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-09898DEE3FE2965B5D",
       "agent_id": "AI-0010",
       "path": "use_case",
@@ -7982,6 +8157,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-39D8DAFC1A5A8E8588",
+      "agent_id": "AI-0011",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-974A16D902D5EF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "replit_agent",
+        "note": "Replit Agent is delivered within Replit's managed application platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-974A16D902D5EF",
+            "note": "Replit documents Agent as part of the Replit platform where users build, refine, and launch production-ready apps from one workspace.",
+            "evidence_type": "official_product_page",
+            "source_section": "Build & refine your app with Agent / Turn your next idea into a working app"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-992AEE298CF6613BA5",
@@ -8534,6 +8744,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-66B92C924D95FC72F1",
+      "agent_id": "AI-0012",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2A40D519EE4084"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "devin_cloud",
+        "note": "Devin is available as Cognition's managed Devin Cloud service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2A40D519EE4084",
+            "note": "Cognition presents Devin Cloud as the hosted environment where users delegate engineering work to Devin.",
+            "evidence_type": "official_product_page",
+            "source_section": "Devin Cloud"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-648DB9048CE3FD35E5",
@@ -10736,6 +10981,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-C0CE1B066B82BC36EC",
+      "agent_id": "AI-0015",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0240F4CC9E9F26"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "kiro_cloud_sessions",
+        "note": "Kiro supports a managed cloud-sandbox runtime.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0240F4CC9E9F26",
+            "note": "Kiro documents Web and Mobile sessions running the agent harness in a managed cloud sandbox, and IDE/CLI sessions can also create and attach to cloud sessions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Where the agent runs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-19F554B9593E0B161F",
       "agent_id": "AI-0015",
       "path": "identity.name",
@@ -12312,6 +12592,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-FBE14C63F82A4B8B7E",
+      "agent_id": "AI-0017",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-124B67471CD44C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "make_ai_agent_new",
+        "note": "Make AI Agent (New) can act as an MCP client for configured MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-124B67471CD44C",
+            "note": "Make documents adding MCP servers and selecting MCP tools for Make AI Agent (New), which then uses those tools during tasks.",
+            "evidence_type": "technical_docs",
+            "source_section": "Add MCP servers"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-3B66F7D22A11A10D63",
@@ -18370,6 +18685,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-743F72C1FD1F2558A9",
+      "agent_id": "AI-0024",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1EC095A4B31108"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_gumball_cloud",
+        "note": "Gumball runs as a cloud-hosted agent.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1EC095A4B31108",
+            "note": "Gumloop explicitly states Gumball works in the cloud and keeps working in the background when the user's laptop is closed.",
+            "evidence_type": "official_release",
+            "source_section": "An always-active agent for your own cloud"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-C5C045AF48EB13BA94",
@@ -27628,6 +27978,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-88B5139DC4D494FCD2",
+      "agent_id": "AI-0033",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A8FE98CEC0C4C8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_agent",
+        "note": "Notion Agent is delivered as a managed capability inside Notion.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A8FE98CEC0C4C8",
+            "note": "Notion documents Notion Agent as an AI teammate built into Notion and available as a Notion AI capability on Business and Enterprise plans.",
+            "evidence_type": "technical_docs",
+            "source_section": "Notion Agent"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4E4B85617750636092",
       "agent_id": "AI-0033",
       "path": "identity.name",
@@ -28178,6 +28563,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-672500DB9D36F4AB7D",
+      "agent_id": "AI-0034",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8E9379B633BD3D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "notion_custom_agents_enterprise",
+        "note": "Notion Enterprise records Custom Agent governance and execution-related events in the workspace audit log.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8E9379B633BD3D",
+            "note": "Notion documents dedicated Custom Agent audit-log events covering configuration, access, triggers, executions, and agent-attributed page actions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Custom Agent events"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-B45F53553C8F7B4644",
@@ -30845,6 +31265,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-8702128541DB364B36",
+      "agent_id": "AI-0037",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CCF09CEC930C02"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "microsoft_365_copilot_analyst",
+        "note": "Analyst is delivered as a managed agent inside Microsoft 365 Copilot.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CCF09CEC930C02",
+            "note": "Microsoft documents Analyst as a built-in, pre-pinned reasoning agent in the Microsoft 365 Copilot app for licensed users.",
+            "evidence_type": "official_release",
+            "source_section": "How to get started with Researcher and Analyst"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F7611219809F2A3A46",
       "agent_id": "AI-0037",
       "path": "identity.name",
@@ -31419,6 +31874,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-27AADD191C39D22C98",
+      "agent_id": "AI-0038",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FA18782EB999E6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "perplexity_computer",
+        "note": "Perplexity Computer is delivered as a managed Perplexity service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FA18782EB999E6",
+            "note": "Perplexity documents Computer as its subscription digital-worker product available across desktop, mobile, Slack, and Microsoft 365 and capable of persistent background execution.",
+            "evidence_type": "official_product_page",
+            "source_section": "What Computer does for you / Put Computer to work"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-A50D231C1F182D72C1",
@@ -34005,6 +34495,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-3FDD796C2CAFA175FD",
+      "agent_id": "AI-0041",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9B5C701800A854"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "forethought_ai_agents_by_zendesk",
+        "note": "Forethought AI agents are delivered as a managed Zendesk add-on service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9B5C701800A854",
+            "note": "Zendesk documents Forethought AI agents as a purchasable Zendesk add-on that autonomously responds to and resolves customer inquiries.",
+            "evidence_type": "official_release",
+            "source_section": "What's changing?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-47F5CDE4B750946DDC",
       "agent_id": "AI-0041",
       "path": "identity.name",
@@ -34555,6 +35080,41 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-9387830B99C8804DE0",
+      "agent_id": "AI-0042",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2F65198A56F38D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hubspot_breeze_customer_agent",
+        "note": "Breeze Customer Agent is delivered as a managed HubSpot agent.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2F65198A56F38D",
+            "note": "HubSpot lists Customer Agent as a HubSpot-built Agent installed into the HubSpot environment and used across its supported channels.",
+            "evidence_type": "official_product_page",
+            "source_section": "Customer Agent / Overview"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-E6A0687C3EDBB68C7E",
