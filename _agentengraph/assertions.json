@@ -40245,6 +40245,181 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-523A572EA6E25FB364",
+      "agent_id": "AI-0046",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E49E7F414B9845"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_org_including_agentforce",
+        "note": "Salesforce provides audit trails that include Agentforce-mediated setup actions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E49E7F414B9845",
+            "note": "Salesforce documents Setup Audit Trail and explicitly records changes made through AI agents in Setup with Agentforce.",
+            "evidence_type": "technical_docs",
+            "source_section": "Setup Audit Trail"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-35BDF3F431C95D580F",
+      "agent_id": "AI-0046",
+      "path": "governance.audit_logs.retention_days",
+      "value": 180,
+      "value_hash": "7b69759630f869f2",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E49E7F414B9845"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_setup_audit_trail",
+        "note": "Salesforce Setup Audit Trail retains setup records for 180 days.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E49E7F414B9845",
+            "note": "Salesforce states complete setup history is downloadable for the past 180 days and setup records are deleted after 180 days.",
+            "evidence_type": "technical_docs",
+            "source_section": "Setup Audit Trail retention"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-E66D0D6BD6EB17747E",
+      "agent_id": "AI-0046",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CE899E39AA5B43"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_org_including_agentforce_prospecting",
+        "note": "Salesforce organizations support administrator-defined roles and role hierarchies.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CE899E39AA5B43",
+            "note": "Salesforce documents creating and managing user roles within a role hierarchy to define record access.",
+            "evidence_type": "technical_docs",
+            "source_section": "Extend Record Access Vertically with the Role Hierarchy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D7CFCD1D1795209442",
+      "agent_id": "AI-0046",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-93A19448D8B14F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_org_including_agentforce_prospecting",
+        "note": "Salesforce provides role-based access control through roles, profiles, and permission sets.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-93A19448D8B14F",
+            "note": "Salesforce documents role hierarchy, profiles, permission sets, and sharing rules as layered role/access controls.",
+            "evidence_type": "technical_docs",
+            "source_section": "Role hierarchy / permissions"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A0C73DDC6C3E0FA7E6",
+      "agent_id": "AI-0046",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-72E141D95F835A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_org_including_agentforce_prospecting",
+        "note": "Salesforce supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-72E141D95F835A",
+            "note": "Salesforce documents SAML-based SSO for Salesforce organizations.",
+            "evidence_type": "technical_docs",
+            "source_section": "SAML SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-E53CA46E62974305FF",
       "agent_id": "AI-0046",
       "path": "hosting.managed",
@@ -40328,6 +40503,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1F36ACBDF2709D7D4E",
+      "agent_id": "AI-0046",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2805BA0BD26C93"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_hyperforce_org_including_agentforce",
+        "note": "Salesforce Hyperforce provides data-residency options for Salesforce organizations.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2805BA0BD26C93",
+            "note": "Salesforce documents Hyperforce as giving customers choice and control over where organization data resides.",
+            "evidence_type": "technical_docs",
+            "source_section": "What Is Salesforce Hyperforce?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BF0DCAC54288920109",
+      "agent_id": "AI-0046",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2805BA0BD26C93"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_hyperforce_org_including_agentforce",
+        "note": "Hyperforce customers can choose supported data regions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2805BA0BD26C93",
+            "note": "Salesforce states customers can choose the region where their data resides on Hyperforce.",
+            "evidence_type": "technical_docs",
+            "source_section": "Hyperforce benefits"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-EE3A3B01A5A517DB66",
       "agent_id": "AI-0046",
       "path": "profile.depth",
@@ -40374,6 +40619,76 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-353ADDF017E67C8CCA",
+      "agent_id": "AI-0046",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DB7170B5A59F4E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_shield_platform_encryption",
+        "note": "Salesforce supports customer-managed encryption keys through Shield Platform Encryption.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DB7170B5A59F4E",
+            "note": "Salesforce documents Platform Encryption with AES-256 field/file encryption at rest and customer-managed keys.",
+            "evidence_type": "security_trust",
+            "source_section": "Shield FAQ"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9F7C0A5EA5B3E217A8",
+      "agent_id": "AI-0046",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8735D59CD2D60F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "salesforce_hyperforce_org_including_agentforce",
+        "note": "Hyperforce encrypts data at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8735D59CD2D60F",
+            "note": "Salesforce states all Hyperforce data is encrypted at rest at the infrastructure level.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption at rest"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-1764147DA33A10990F",
@@ -81054,6 +81369,230 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-FB7FEDFBBC1E28511E",
+      "agent_id": "AI-0094",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-562392FD44042A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_agent_studio",
+        "note": "Agent Studio provides audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-562392FD44042A",
+            "note": "Moveworks documents Agent Studio audit logs for developer activity and connections to business systems.",
+            "evidence_type": "official_release",
+            "source_section": "Audit how developers are using Agent Studio"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-038B89A79A7BC7AB87",
+      "agent_id": "AI-0094",
+      "path": "governance.audit_logs.retention_days",
+      "value": 60,
+      "value_hash": "39fa9ec190eee7b6",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-39526D4A27372A",
+          "SRC-95F42F1B44ED1F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_configuration_and_permissions_logs",
+        "note": "Moveworks documents 60-day retention for key administrative audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-39526D4A27372A",
+            "note": "Moveworks documents 60-day retention for configuration change audit logs.",
+            "evidence_type": "technical_docs",
+            "source_section": "Retention"
+          },
+          {
+            "source_id": "SRC-95F42F1B44ED1F",
+            "note": "Moveworks documents 60-day retention for permissions audit logs.",
+            "evidence_type": "technical_docs",
+            "source_section": "Retention"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AAB3A7967CC1863C86",
+      "agent_id": "AI-0094",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EE7AF67DAA67D2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_agent_studio",
+        "note": "Agent Studio uses role-based access controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EE7AF67DAA67D2",
+            "note": "Moveworks documents Agent Studio User, Agent Studio Analytics Viewer, Log Viewer, and Elevated Log Viewer roles with distinct permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Agent Studio roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AF85BC4AE6BDC67378",
+      "agent_id": "AI-0094",
+      "path": "governance.sso.oidc",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B1D3668A96CA12"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_studio",
+        "note": "Moveworks Studio supports OIDC SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B1D3668A96CA12",
+            "note": "Moveworks documents OpenID Connect as a supported SSO protocol for MyMoveworks applications, including Agent Studio.",
+            "evidence_type": "technical_docs",
+            "source_section": "MyMoveworks SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8BF58708E789CF346A",
+      "agent_id": "AI-0094",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-82ED4CE85C3AD3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_studio",
+        "note": "Moveworks Studio supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-82ED4CE85C3AD3",
+            "note": "Moveworks explicitly documents a SAML configuration whose Moveworks Product is 'studio'.",
+            "evidence_type": "technical_docs",
+            "source_section": "Add SAML Configuration in MyMoveworks"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2014E3969A4164A810",
+      "agent_id": "AI-0094",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-28FB1FE223E6D8",
+          "SRC-2C403231ABF735"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_agent_studio",
+        "note": "Agent Studio is delivered as part of the managed Moveworks Platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2C403231ABF735",
+            "note": "Moveworks documents Agent Studio as an application within the Moveworks platform used to build, test, and publish plugins and agents.",
+            "evidence_type": "technical_docs",
+            "source_section": "Agent Studio Overview"
+          },
+          {
+            "source_id": "SRC-28FB1FE223E6D8",
+            "note": "Moveworks distinguishes the hosted Moveworks Platform from the optional on-premises connector agent installed behind a customer firewall.",
+            "evidence_type": "technical_docs",
+            "source_section": "Overview"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-6F8861D2F966772E88",
       "agent_id": "AI-0094",
       "path": "identity.name",
@@ -81148,6 +81687,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-FF806A502687BEF3CE",
+      "agent_id": "AI-0094",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BF5FCDF46D5B73"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_platform_including_agent_studio",
+        "note": "Moveworks documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BF5FCDF46D5B73",
+            "note": "Moveworks states customer data is encrypted at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8924CB6DB74485D63E",
+      "agent_id": "AI-0094",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BF5FCDF46D5B73"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_platform_including_agent_studio",
+        "note": "Moveworks documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BF5FCDF46D5B73",
+            "note": "Moveworks states customer data is encrypted in transit.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A0AC7E4D0B46E6ADD9",
+      "agent_id": "AI-0094",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-BF5FCDF46D5B73"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "moveworks_platform_including_agent_studio",
+        "note": "Moveworks documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-BF5FCDF46D5B73",
+            "note": "Moveworks lists SOC 2 Type 2 among its platform certifications.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-31119E460145475CF6",
@@ -82564,6 +83208,146 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-7F1680B32B84A1543F",
+      "agent_id": "AI-0096",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-40FA5E5B2DCA0D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zoom_account_including_zoommate",
+        "note": "Zoom provides account administrative audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-40FA5E5B2DCA0D",
+            "note": "Zoom documents review and export of an audit log containing admin actions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Admin Activity Logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B3517D95F92E68797B",
+      "agent_id": "AI-0096",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-27B452DAA444AF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zoom_account_including_zoommate",
+        "note": "Zoom supports administrator-defined/custom role assignments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-27B452DAA444AF",
+            "note": "Zoom documents mapping users to Zoom user roles and groups and supports custom administrative role models.",
+            "evidence_type": "technical_docs",
+            "source_section": "Advanced SAML mapping"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-587E903CD0BF09EB11",
+      "agent_id": "AI-0096",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-40FA5E5B2DCA0D"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zoom_account_including_zoommate",
+        "note": "Zoom provides role-based administrative access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-40FA5E5B2DCA0D",
+            "note": "Zoom documents account owners, admins, and customized roles with controlled access to account administration.",
+            "evidence_type": "technical_docs",
+            "source_section": "Admin activity logs / permissions"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-98E77FC28905319CCF",
+      "agent_id": "AI-0096",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-27B452DAA444AF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zoom_account_including_zoommate",
+        "note": "Zoom accounts support SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-27B452DAA444AF",
+            "note": "Zoom documents SAML SSO and SAML-based assignment of licenses, add-ons, user roles, and groups.",
+            "evidence_type": "technical_docs",
+            "source_section": "Advanced SAML mapping"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-B45255528A9F056247",
