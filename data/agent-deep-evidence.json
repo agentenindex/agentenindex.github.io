@@ -3006,6 +3006,126 @@
             }
           ],
           "note": "Where the relevant ServiceNow encryption option is licensed, platform data used by Otto can be protected with customer-managed/BYOK keys."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "servicenow_ai_platform_users_accessing_otto",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Multi-Provider single sign-on (SSO)",
+              "url": "https://www.servicenow.com/docs/r/platform-security/authentication/c_MultipleProviderSingleSignOn.html",
+              "note": "ServiceNow documents SAML 2.0 as a supported SSO method for access to ServiceNow instances.",
+              "evidence_type": "technical_docs",
+              "source_section": "Supported SSO methods"
+            },
+            {
+              "title": "ServiceNow – What is the ServiceNow AI Platform?",
+              "url": "https://www.servicenow.com/platform/what-is-servicenow-ai-platform.html",
+              "note": "ServiceNow states Otto is built on and operates through the ServiceNow AI Platform.",
+              "evidence_type": "official_product_page",
+              "source_section": "ServiceNow Otto"
+            }
+          ],
+          "note": "Users accessing Otto through the ServiceNow AI Platform can use the platform's documented SAML 2.0 SSO."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "servicenow_ai_platform_users_accessing_otto",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow Docs – Create an OIDC configuration for SSO",
+              "url": "https://www.servicenow.com/docs/r/platform-security/authentication/create-OIDC-configuration-SSO.html",
+              "note": "ServiceNow documents OpenID Connect SSO for users logging in to ServiceNow applications.",
+              "evidence_type": "technical_docs",
+              "source_section": "OpenID Connect SSO"
+            },
+            {
+              "title": "ServiceNow – What is the ServiceNow AI Platform?",
+              "url": "https://www.servicenow.com/platform/what-is-servicenow-ai-platform.html",
+              "note": "ServiceNow states Otto is built on and operates through the ServiceNow AI Platform.",
+              "evidence_type": "official_product_page",
+              "source_section": "ServiceNow Otto"
+            }
+          ],
+          "note": "Users accessing Otto through the ServiceNow AI Platform can use the platform's documented OIDC SSO."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "servicenow_instance_logs_including_otto_actions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow – What is the ServiceNow AI Platform?",
+              "url": "https://www.servicenow.com/platform/what-is-servicenow-ai-platform.html",
+              "note": "ServiceNow states every Otto action is logged and governed.",
+              "evidence_type": "official_product_page",
+              "source_section": "ServiceNow Otto"
+            },
+            {
+              "title": "ServiceNow – Securing the Now Platform",
+              "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/ebook/ebk-how-servicenow-delivers-safe-and-secure-cloud-services.pdf",
+              "note": "ServiceNow documents direct web-service access to log tables as a supported method for exporting platform log and audit data.",
+              "evidence_type": "security_trust",
+              "source_section": "Logging and monitoring"
+            }
+          ],
+          "note": "Otto actions are logged, and ServiceNow platform log/audit tables can be accessed through web services for export."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "servicenow_instance_logs_including_otto_actions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow – What is the ServiceNow AI Platform?",
+              "url": "https://www.servicenow.com/platform/what-is-servicenow-ai-platform.html",
+              "note": "ServiceNow states every Otto action is logged and governed.",
+              "evidence_type": "official_product_page",
+              "source_section": "ServiceNow Otto"
+            },
+            {
+              "title": "ServiceNow – Securing the Now Platform",
+              "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/ebook/ebk-how-servicenow-delivers-safe-and-secure-cloud-services.pdf",
+              "note": "ServiceNow documents forwarding logs/events to customer logging or SIEM systems via syslog probe, MID Server, web-service calls, or Log Export Service.",
+              "evidence_type": "security_trust",
+              "source_section": "Logging and monitoring"
+            }
+          ],
+          "note": "ServiceNow platform logs that include governed Otto activity can be exported to external SIEM/logging systems."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "servicenow_ai_environment_including_otto_ai_workloads",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow – Securing the Now Platform",
+              "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/ebook/ebk-how-servicenow-delivers-safe-and-secure-cloud-services.pdf",
+              "note": "ServiceNow states its Artificial Intelligence services environment has a SOC 2 Type 2 attestation covering the GenAI stack, AI/ML stack, and DART environment.",
+              "evidence_type": "security_trust",
+              "source_section": "Artificial Intelligence (AI) Products"
+            },
+            {
+              "title": "ServiceNow – ServiceNow Otto",
+              "url": "https://www.servicenow.com/platform/otto.html",
+              "note": "ServiceNow documents Otto as the AI experience operating on the ServiceNow AI Platform.",
+              "evidence_type": "official_product_page",
+              "source_section": "What is ServiceNow Otto?"
+            }
+          ],
+          "note": "Otto AI workloads run on ServiceNow's attested AI environment, which ServiceNow documents as SOC 2 Type 2."
         }
       ]
     },
@@ -4915,6 +5035,64 @@
             }
           ],
           "note": "Microsoft Agent Framework agents can be exposed as A2A servers."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "agent_framework_openai_compatible_http_endpoints",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – OpenAI-Compatible Endpoints",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/self-hosting/openai-endpoints",
+              "note": "Microsoft documents exposing Agent Framework agents through OpenAI-compatible HTTP Chat Completions and Responses endpoints, including POST examples and custom API paths.",
+              "evidence_type": "api_docs",
+              "source_section": "Hosting Agents as OpenAI Endpoints"
+            }
+          ],
+          "note": "Agent Framework can expose agents through documented HTTP/REST-style API endpoints."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "agent_framework_durable_extension_event_driven_hosts",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Durable Extension",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/azure-functions",
+              "note": "Microsoft lists webhooks alongside triggers, queues, timers, and application events as supported event-driven orchestration inputs for durable Agent Framework agents.",
+              "evidence_type": "technical_docs",
+              "source_section": "When to use durable agents"
+            }
+          ],
+          "note": "The Durable Extension supports webhook-driven Agent Framework orchestration."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "agent_framework_on_azure_functions_supported_host",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Microsoft Learn – Durable Extension",
+              "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/azure-functions",
+              "note": "Microsoft documents Azure Functions as a supported hosting model for Agent Framework durable agents.",
+              "evidence_type": "technical_docs",
+              "source_section": "Azure Functions hosting"
+            },
+            {
+              "title": "Microsoft Learn – Azure Functions networking options",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-options",
+              "note": "Microsoft documents Azure Functions hosting plans with private endpoints, inbound access restrictions, and outbound virtual-network connectivity.",
+              "evidence_type": "technical_docs",
+              "source_section": "Compare hosting options"
+            }
+          ],
+          "note": "Agent Framework deployments on the supported Azure Functions host can be placed behind private endpoints and VNet integration."
         }
       ]
     },
@@ -5080,6 +5258,78 @@
             }
           ],
           "note": "ASOR/Agent Gateway authentication and agent API traffic use HTTPS endpoints."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "workday_enterprise_products_including_asor",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday – Compliance and Third-Party Assessments",
+              "url": "https://www.workday.com/en-us/why-workday/trust/compliance.html",
+              "note": "Workday documents an annual SOC 2 Type II report applying to Workday Enterprise Products and assessing controls for systems containing customer data.",
+              "evidence_type": "security_trust",
+              "source_section": "SOC 2"
+            },
+            {
+              "title": "Workday Admin Guide – About Workday Agents",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/setup-considerations--agent-system-of-record.html?toc=0",
+              "note": "Workday documents ASOR as a centralized framework delivered within Workday tenants for governance, security, auditing, and agent management.",
+              "evidence_type": "technical_docs",
+              "source_section": "Workday Agent System of Record (ASOR)"
+            }
+          ],
+          "note": "ASOR is part of the Workday enterprise tenant environment covered by Workday's Enterprise Products SOC 2 Type II program."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "workday_cloud_tenant_hosting_asor",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday – Better Together: Workday and AWS",
+              "url": "https://www.workday.com/content/dam/web/en-us/documents/solution-brief/workday-aws-cloud-solution-brief.pdf",
+              "note": "Workday documents regional deployment flexibility specifically to address data-residency requirements.",
+              "evidence_type": "security_trust",
+              "source_section": "Why run Workday on AWS?"
+            },
+            {
+              "title": "Workday Admin Guide – Set Up Agent System of Record",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/set-up-agent-system-of-record.html",
+              "note": "Workday documents ASOR as a tenant-level functional area configured in each Workday tenant.",
+              "evidence_type": "technical_docs",
+              "source_section": "Set Up Agent System of Record"
+            }
+          ],
+          "note": "ASOR resides in the Workday tenant and can benefit from Workday regional hosting options designed for data residency."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "workday_cloud_tenant_hosting_asor",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Workday – Better Together: Workday and AWS",
+              "url": "https://www.workday.com/content/dam/web/en-us/documents/solution-brief/workday-aws-cloud-solution-brief.pdf",
+              "note": "Workday states customers have flexibility to choose a deployment region to meet data-residency requirements.",
+              "evidence_type": "security_trust",
+              "source_section": "Workday and AWS"
+            },
+            {
+              "title": "Workday Admin Guide – Set Up Agent System of Record",
+              "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/set-up-agent-system-of-record.html",
+              "note": "Workday documents ASOR as tenant-local configuration and states it must be configured separately in each tenant.",
+              "evidence_type": "technical_docs",
+              "source_section": "Set Up Agent System of Record"
+            }
+          ],
+          "note": "Workday customers can choose supported regional deployment for the tenant in which ASOR is configured."
         }
       ]
     },
