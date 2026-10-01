@@ -903,6 +903,22 @@
             }
           ],
           "note": "n8n Cloud is an official fully managed deployment option."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "n8n_public_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "n8n Docs – Disable the public API",
+              "url": "https://docs.n8n.io/deploy/host-n8n/configure-n8n/security/disable-the-public-api",
+              "note": "n8n explicitly documents the n8n public REST API and states it can programmatically perform many GUI tasks.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "n8n exposes a documented public REST API."
         }
       ]
     },
@@ -1628,6 +1644,66 @@
             }
           ],
           "note": "External applications can invoke Fusion AI agent teams through documented REST endpoints."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "oracle_fusion_ai_platform_for_ai_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Oracle AI Platform for Fusion Applications",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/aiaqa/what-is-the-oracle-fusion-ai-platform.html",
+              "note": "Oracle documents a securely partitioned Oracle-managed AI platform instance for each organization in its local OCI region.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Oracle Docs – AI Agent Studio adoption principles",
+              "url": "https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/epmce/adoption_principles.html",
+              "note": "Oracle states AI Agent Studio is a native component of Oracle Fusion Cloud Applications and operates within the same security framework and data model.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "AI Agent Studio runs as a native capability of Oracle Fusion Cloud Applications on the Oracle AI Platform for Fusion Applications."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "fusion_ai_platform_instance_local_oci_region_at_rest",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Oracle AI Platform for Fusion Applications",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/aiaqa/what-is-the-oracle-fusion-ai-platform.html",
+              "note": "Oracle states each organization receives a securely partitioned platform instance within its local OCI region; model input/output processing may occur in a secure OCI environment outside that local region.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "The Fusion AI platform instance is region-local. This claim does not assert that generative-model processing always remains in the local OCI region."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "Oracle Transparent Data Encryption (TDE)",
+          "scope": "oracle_fusion_applications_data_layer_used_by_ai_agent_studio",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – AI Agent Studio adoption principles",
+              "url": "https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/epmce/adoption_principles.html",
+              "note": "Oracle states AI Agent Studio is native to Fusion Cloud Applications and uses the same security framework and data model.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Oracle Docs – Advanced Data Security",
+              "url": "https://docs.oracle.com/en/cloud/saas/applications-common/25c/facsa/advanced-data-security.html",
+              "note": "Oracle documents Transparent Data Encryption for Fusion Applications data at rest, including database files, backups, temporary files, redo and undo data.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "AI Agent Studio's native Fusion Applications data layer is protected by Oracle TDE at rest."
         }
       ]
     },
