@@ -9664,6 +9664,193 @@
       "agent_id": "AI-0066",
       "claims": [
         {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "augment_cloud_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment documents event-driven Cloud Agent automation triggered from webhooks, schedules, and repository/security events.",
+              "evidence_type": "official_product_page",
+              "source_section": "Event driven Automation"
+            }
+          ],
+          "note": "Augment Cloud Agents support webhook-triggered automation."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "augment_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists audit logs and versioned/auditable agent configuration history.",
+              "evidence_type": "official_product_page",
+              "source_section": "History / Audit logs + SIEM"
+            }
+          ],
+          "note": "Augment Enterprise provides audit logs."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "augment_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists 'Audit logs + SIEM' as an enterprise capability.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise security capabilities"
+            }
+          ],
+          "note": "Augment Enterprise supports audit/SIEM integration."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "augment_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists granular RBAC.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise security capabilities"
+            }
+          ],
+          "note": "Augment Enterprise provides granular RBAC."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "augment_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists SCIM among enterprise identity controls.",
+              "evidence_type": "official_product_page",
+              "source_section": "SAML / OIDC / SCIM"
+            }
+          ],
+          "note": "Augment Enterprise supports SCIM."
+        },
+        {
+          "path": "governance.sso.oidc",
+          "value": true,
+          "scope": "augment_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists OIDC enterprise SSO.",
+              "evidence_type": "official_product_page",
+              "source_section": "SAML / OIDC / SCIM"
+            }
+          ],
+          "note": "Augment Enterprise supports OIDC SSO."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "augment_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists SAML enterprise SSO.",
+              "evidence_type": "official_product_page",
+              "source_section": "SAML / OIDC / SCIM"
+            }
+          ],
+          "note": "Augment Enterprise supports SAML SSO."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "augment_cloud_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment documents managed Cloud Agents with sandboxed agent execution.",
+              "evidence_type": "official_product_page",
+              "source_section": "Cloud Agents / Sandboxed agent execution"
+            }
+          ],
+          "note": "Augment provides managed Cloud Agent execution."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "augment_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists VPC deployment and single-tenant instances.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise security capabilities"
+            }
+          ],
+          "note": "Augment Enterprise supports VPC/private deployment."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "augment_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists on-prem deployment as an enterprise capability.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise security capabilities"
+            }
+          ],
+          "note": "Augment Enterprise supports on-prem deployment."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "augment_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists data-residency controls among enterprise capabilities.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise security capabilities"
+            }
+          ],
+          "note": "Augment Enterprise provides data-residency controls."
+        },
+        {
           "path": "protocols.mcp.client",
           "value": true,
           "scope": "augment_code_agent",
@@ -9679,6 +9866,40 @@
             }
           ],
           "note": "Augment Agent consumes tools and context exposed through MCP."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "augment_enterprise_cmek",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Cloud Agents",
+              "url": "https://www.augmentcode.com/product/cloud-agents",
+              "note": "Augment explicitly lists CMEK encryption among enterprise security capabilities.",
+              "evidence_type": "security_trust",
+              "source_section": "CMEK encryption"
+            }
+          ],
+          "note": "Augment Enterprise supports customer-managed encryption keys."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "augment_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Augment Code – Security & Privacy",
+              "url": "https://www.augmentcode.com/security",
+              "note": "Augment states it is SOC 2 Type II attested.",
+              "evidence_type": "security_trust",
+              "source_section": "Certifications & Compliance"
+            }
+          ],
+          "note": "Augment documents SOC 2 Type II compliance."
         }
       ]
     },
@@ -9793,6 +10014,71 @@
       "agent_id": "AI-0068",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "qodo_git_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Qodo – Pricing",
+              "url": "https://www.qodo.ai/pricing/",
+              "note": "Qodo Enterprise explicitly includes audit logs.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            },
+            {
+              "title": "Qodo – Official Site",
+              "url": "https://www.qodo.ai/",
+              "note": "Qodo describes an audit trail recording issues and compliance flags for traceability.",
+              "evidence_type": "official_product_page",
+              "source_section": "Governance layer / Audit trail"
+            }
+          ],
+          "note": "Qodo Enterprise provides audit logs."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "qodo_git_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Qodo – Qodo Git",
+              "url": "https://www.qodo.ai/features/qodo-git/",
+              "note": "Qodo documents RBAC for its enterprise code-review platform.",
+              "evidence_type": "official_product_page",
+              "source_section": "Secure and compliant"
+            },
+            {
+              "title": "Qodo Docs – Users",
+              "url": "https://docs.qodo.ai/qodo-documentation/management-portal/users",
+              "note": "Qodo documents organization and team roles with scoped permissions.",
+              "evidence_type": "technical_docs",
+              "source_section": "Understanding User Roles"
+            }
+          ],
+          "note": "Qodo provides role-based access control."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "qodo_git_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Qodo – Pricing",
+              "url": "https://www.qodo.ai/pricing/",
+              "note": "Qodo Enterprise explicitly includes SSO / SAML.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise / security & deployment"
+            }
+          ],
+          "note": "Qodo Enterprise supports SAML SSO."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "qodo_git",
@@ -9808,6 +10094,74 @@
             }
           ],
           "note": "Qodo Git is delivered as a managed Qodo code-review service."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "qodo_git_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Qodo – Enterprise",
+              "url": "https://www.qodo.ai/solutions/enterprise/",
+              "note": "Qodo documents VPC and air-gapped enterprise deployment options.",
+              "evidence_type": "official_product_page",
+              "source_section": "Secure, Private, and Enterprise-Ready"
+            }
+          ],
+          "note": "Qodo supports private VPC and air-gapped deployment."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "qodo_git_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Qodo – Qodo Git",
+              "url": "https://www.qodo.ai/features/qodo-git/",
+              "note": "Qodo documents on-prem deployment for Qodo's enterprise code-review platform.",
+              "evidence_type": "official_product_page",
+              "source_section": "Deploy anywhere / Enterprise security"
+            }
+          ],
+          "note": "Qodo Git supports on-premises deployment."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "qodo_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Qodo – Enterprise",
+              "url": "https://www.qodo.ai/solutions/enterprise/",
+              "note": "Qodo states enterprise data is encrypted in transit.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and compliance"
+            }
+          ],
+          "note": "Qodo documents encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "qodo_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Qodo – Official Site",
+              "url": "https://www.qodo.ai/",
+              "note": "Qodo states it is SOC 2 Type II certified through independent audit.",
+              "evidence_type": "security_trust",
+              "source_section": "Security & compliance"
+            }
+          ],
+          "note": "Qodo documents SOC 2 Type II certification."
         }
       ]
     },
@@ -10367,6 +10721,91 @@
       "agent_id": "AI-0074",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "coderabbit_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – Pricing",
+              "url": "https://www.coderabbit.ai/pricing",
+              "note": "CodeRabbit Enterprise explicitly includes audit logging.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "CodeRabbit Enterprise provides audit logging."
+        },
+        {
+          "path": "governance.audit_logs.siem_export",
+          "value": true,
+          "scope": "coderabbit_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – AI agent explainability",
+              "url": "https://www.coderabbit.ai/guides/ai-agent-explainability",
+              "note": "CodeRabbit states its Enterprise tier includes exportable audit logs and enterprise governance controls.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise explainability and governance"
+            }
+          ],
+          "note": "CodeRabbit Enterprise audit logs are exportable for security/compliance workflows."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "coderabbit_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – Pricing",
+              "url": "https://www.coderabbit.ai/pricing",
+              "note": "CodeRabbit explicitly describes its Enterprise access control as custom RBAC.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "CodeRabbit Enterprise provides customizable role-based access controls."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "coderabbit_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – Pricing",
+              "url": "https://www.coderabbit.ai/pricing",
+              "note": "CodeRabbit Enterprise explicitly includes custom RBAC.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "CodeRabbit Enterprise provides RBAC."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "coderabbit_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – Vercel breach lessons",
+              "url": "https://www.coderabbit.ai/blog/vercel-breach-enterprise-code-security",
+              "note": "CodeRabbit documents SSO and SAML support for Enterprise.",
+              "evidence_type": "security_trust",
+              "source_section": "Identity and access controls"
+            }
+          ],
+          "note": "CodeRabbit Enterprise supports SAML SSO."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "coderabbit_agent",
@@ -10382,6 +10821,91 @@
             }
           ],
           "note": "CodeRabbit Agent is delivered as a managed CodeRabbit service."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "coderabbit_enterprise_self_hosted",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – Vercel breach lessons",
+              "url": "https://www.coderabbit.ai/blog/vercel-breach-enterprise-code-security",
+              "note": "CodeRabbit describes its self-hosted Enterprise option for organizations that require code to remain within their network perimeter.",
+              "evidence_type": "official_release",
+              "source_section": "Identity and access controls / self-hosting"
+            }
+          ],
+          "note": "CodeRabbit can be self-hosted within a customer network perimeter."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "coderabbit_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – Pricing",
+              "url": "https://www.coderabbit.ai/pricing",
+              "note": "CodeRabbit Enterprise explicitly includes a self-hosting option.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "CodeRabbit Enterprise supports self-hosting."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "coderabbit_enterprise_saas",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – Pricing",
+              "url": "https://www.coderabbit.ai/pricing",
+              "note": "CodeRabbit Enterprise explicitly lists an EU SaaS deployment option.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "CodeRabbit Enterprise offers an EU SaaS deployment option."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "coderabbit_enterprise_saas",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – Pricing",
+              "url": "https://www.coderabbit.ai/pricing",
+              "note": "CodeRabbit exposes EU SaaS deployment as an Enterprise deployment choice.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise"
+            }
+          ],
+          "note": "Enterprise customers can select the documented EU SaaS deployment option."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "coderabbit_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "CodeRabbit – AI agent explainability",
+              "url": "https://www.coderabbit.ai/guides/ai-agent-explainability",
+              "note": "CodeRabbit states its Enterprise tier includes SOC 2 Type II certification.",
+              "evidence_type": "security_trust",
+              "source_section": "Enterprise tier"
+            }
+          ],
+          "note": "CodeRabbit documents SOC 2 Type II certification."
         }
       ]
     },
