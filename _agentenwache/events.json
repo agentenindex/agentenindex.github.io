@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-01T13:39:50Z",
+  "updated_at": "2026-10-01T13:48:22Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -953,6 +953,29 @@
         "token_delta_pct": -0.38
       },
       "previous_checked_at": "2026-10-01T13:37:46Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-95F73EB107E1D350AE",
+      "detected_at": "2026-10-01T13:48:17Z",
+      "source_id": "SRC-15C5A1E3CDD01B",
+      "agent_ids": [
+        "AI-0020"
+      ],
+      "source_title": "Lindy – AI Tools",
+      "url": "https://www.lindy.ai/tools",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "21c01502bea74b5e011a45bf76c697bc6ac92163baea649e7f8e3a5ca9813ced",
+        "new_hash": "636ebb8165c292082152d0acf7cb56f4cf292b62a7f5e6ad6885f13946d58b52",
+        "simhash_distance": 5,
+        "old_token_count": 2649,
+        "new_token_count": 2659,
+        "token_delta_pct": 0.38
+      },
+      "previous_checked_at": "2026-10-01T13:39:38Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
