@@ -13951,6 +13951,258 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-3D30C1158F5A396DEA",
+      "agent_id": "AI-0019",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C292D938B27D8E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_team_enterprise",
+        "note": "Zapier provides account-wide audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C292D938B27D8E",
+            "note": "Zapier documents account-wide audit logs for Team and Enterprise plans.",
+            "evidence_type": "technical_docs",
+            "source_section": "View account activity"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-926444191B96D63455",
+      "agent_id": "AI-0019",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C292D938B27D8E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_enterprise_audit_log",
+        "note": "Enterprise audit-log history is documented as 12 months (365 days).",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C292D938B27D8E",
+            "note": "Zapier states Enterprise audit-log access covers the past 12 months.",
+            "evidence_type": "technical_docs",
+            "source_section": "Limitations"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-99160B77F177E65881",
+      "agent_id": "AI-0019",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4D5A44BB749EEB",
+          "SRC-91D9CAD733D654"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_enterprise_log_streams",
+        "note": "Zapier Enterprise can stream audit/operational activity to external monitoring or SIEM tooling.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4D5A44BB749EEB",
+            "note": "Zapier documents Enterprise log streams that send real-time account and execution events to customer HTTPS endpoints for monitoring and alerting.",
+            "evidence_type": "technical_docs",
+            "source_section": "Log streams / Available event types"
+          },
+          {
+            "source_id": "SRC-91D9CAD733D654",
+            "note": "Zapier describes real-time activity data being sent to monitoring tools through Log Streaming.",
+            "evidence_type": "security_trust",
+            "source_section": "Governance and observability"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B036DDDE32A760F475",
+      "agent_id": "AI-0019",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-55FF1A76E58541"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_team_enterprise_including_ai_by_zapier",
+        "note": "Zapier uses documented role-based permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-55FF1A76E58541",
+            "note": "Zapier documents Owner, Super Admin, Admin, and Member roles with distinct permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Account user roles / Account permissions by role"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-98BD91A4A47F5337E3",
+      "agent_id": "AI-0019",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-83591C9C9777C3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_enterprise_including_ai_by_zapier",
+        "note": "Zapier Enterprise supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-83591C9C9777C3",
+            "note": "Zapier documents organization-level SCIM provisioning for Enterprise workspaces.",
+            "evidence_type": "technical_docs",
+            "source_section": "SAML and SCIM configuration"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-492E32A4CD17F902AE",
+      "agent_id": "AI-0019",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A054067438DF08"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_enterprise_including_ai_by_zapier",
+        "note": "Zapier Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A054067438DF08",
+            "note": "Zapier documents SAML SSO configuration for Enterprise accounts.",
+            "evidence_type": "technical_docs",
+            "source_section": "Manually configure SSO with SAML"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-72F15AAFE79B1F556D",
+      "agent_id": "AI-0019",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-91D9CAD733D654"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_platform_including_ai_by_zapier",
+        "note": "AI by Zapier runs within Zapier's managed cloud platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-91D9CAD733D654",
+            "note": "Zapier states its products are hosted on Amazon Web Services and describes AI-powered automation as part of the managed Zapier platform.",
+            "evidence_type": "security_trust",
+            "source_section": "FAQs / Cloud service provider"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-A87E798F685EDC5143",
       "agent_id": "AI-0019",
       "path": "identity.name",
@@ -14049,6 +14301,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-11303BE263CF3AB5D4",
+      "agent_id": "AI-0019",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-91D9CAD733D654"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_platform_including_ai_by_zapier",
+        "note": "Zapier documents AES-256 encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-91D9CAD733D654",
+            "note": "Zapier states data at rest is encrypted with AES-256.",
+            "evidence_type": "security_trust",
+            "source_section": "Data security / FAQ"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FD863AAEC05CA3C825",
+      "agent_id": "AI-0019",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-91D9CAD733D654"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_platform_including_ai_by_zapier",
+        "note": "Zapier documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-91D9CAD733D654",
+            "note": "Zapier states web application communications use TLS 1.2 and above.",
+            "evidence_type": "security_trust",
+            "source_section": "FAQ"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F591F7F1FB62364024",
+      "agent_id": "AI-0019",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-EB3FF50777D274"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "zapier_platform_including_ai_by_zapier",
+        "note": "Zapier documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-EB3FF50777D274",
+            "note": "Zapier documents independent SOC 2 Type II certification and annual audits.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and Compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-1552A50945D73B5624",
@@ -16779,6 +17136,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-D94DC54D2B0FDE0723",
+      "agent_id": "AI-0023",
+      "path": "api.rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6CB917F7CCA283"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_agents_api",
+        "note": "Gumloop provides programmatic API access for agents and workflows.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6CB917F7CCA283",
+            "note": "Gumloop documents API keys for triggering workflows and agents programmatically and links to its API Reference.",
+            "evidence_type": "api_docs",
+            "source_section": "API key / Related Docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7F318332F9545860B5",
+      "agent_id": "AI-0023",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-6CB917F7CCA283"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_agent_workflow_triggers",
+        "note": "Gumloop provides webhook endpoints for agent-containing workflows.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-6CB917F7CCA283",
+            "note": "Gumloop documents ready-to-use webhook URLs for triggering workflows that can contain agents.",
+            "evidence_type": "api_docs",
+            "source_section": "Webhook Button"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F76F3ADA20C21CCA77",
       "agent_id": "AI-0023",
       "path": "audience",
@@ -17079,6 +17506,216 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-FF12E852422B811EFA",
+      "agent_id": "AI-0023",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E0202B63010253"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_enterprise",
+        "note": "Gumloop Enterprise provides organization-wide audit logging.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E0202B63010253",
+            "note": "Gumloop documents enterprise audit logging for company-wide agent activity oversight.",
+            "evidence_type": "technical_docs",
+            "source_section": "Oversight and Audit Logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8459F5F6533980793B",
+      "agent_id": "AI-0023",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FC8E9A4FD5D21E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_enterprise",
+        "note": "Gumloop Enterprise provides role-based permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FC8E9A4FD5D21E",
+            "note": "Gumloop documents reusable roles, permissions, credentials, and secrets with scoped access.",
+            "evidence_type": "official_product_page",
+            "source_section": "Roles and permissions"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-790CD2750A3BDC4CA0",
+      "agent_id": "AI-0023",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FC8E9A4FD5D21E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_enterprise",
+        "note": "Gumloop Enterprise supports SCIM.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FC8E9A4FD5D21E",
+            "note": "Gumloop explicitly lists SCIM for Enterprise identity and access management.",
+            "evidence_type": "official_product_page",
+            "source_section": "SAML SSO and SCIM"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-59EBE30269D716D356",
+      "agent_id": "AI-0023",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FC8E9A4FD5D21E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_enterprise",
+        "note": "Gumloop Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FC8E9A4FD5D21E",
+            "note": "Gumloop explicitly lists SAML SSO for Enterprise identity management.",
+            "evidence_type": "official_product_page",
+            "source_section": "SAML SSO and SCIM"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DD5A81FA9CCA409964",
+      "agent_id": "AI-0023",
+      "path": "hosting.private_network",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FC8E9A4FD5D21E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_enterprise_vpc_deployment",
+        "note": "Gumloop supports private-network/VPC deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FC8E9A4FD5D21E",
+            "note": "Gumloop documents VPC deployments in the customer's own cloud to keep data in the customer's network.",
+            "evidence_type": "official_product_page",
+            "source_section": "VPC deployments"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-96EA4603E375FCB8FD",
+      "agent_id": "AI-0023",
+      "path": "hosting.self_hosted",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FC8E9A4FD5D21E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_enterprise_vpc_deployment",
+        "note": "Gumloop Enterprise supports customer-cloud deployment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FC8E9A4FD5D21E",
+            "note": "Gumloop states Enterprise customers can deploy Gumloop inside their own AWS, Azure, or Google Cloud environment.",
+            "evidence_type": "official_product_page",
+            "source_section": "VPC deployments"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4A722E107F8B81CB86",
       "agent_id": "AI-0023",
       "path": "identity.name",
@@ -17177,6 +17814,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-757F17276278AB3A5D",
+      "agent_id": "AI-0023",
+      "path": "protocols.mcp.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-ABCEBC191EB5E0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_agents",
+        "note": "Gumloop Agents can consume tools from MCP servers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-ABCEBC191EB5E0",
+            "note": "Gumloop documents adding MCP tools to an agent via Add tools → Connect an app with MCP.",
+            "evidence_type": "technical_docs",
+            "source_section": "In Agents (Recommended)"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-953714965A25470B74",
+      "agent_id": "AI-0023",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-692CFCBECE632A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "gumloop_platform",
+        "note": "Gumloop documents SOC 2 Type II compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-692CFCBECE632A",
+            "note": "Gumloop states it is SOC 2 Type II certified.",
+            "evidence_type": "security_trust",
+            "source_section": "SOC 2 Type II Certified"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-4703C312312F556097",
@@ -31279,6 +31986,321 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E7D6C0DE15F62B8A9F",
+      "agent_id": "AI-0039",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4120369931BDFC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_workspace_activity_logs",
+        "note": "Intercom exposes activity logs via API.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4120369931BDFC",
+            "note": "Intercom explicitly documents programmatic retrieval through the Activity Logs API.",
+            "evidence_type": "api_docs",
+            "source_section": "Accessing activity logs via API"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-74EA5098410BE356BF",
+      "agent_id": "AI-0039",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4120369931BDFC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_workspace_including_fin",
+        "note": "Intercom provides workspace activity/audit logs.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4120369931BDFC",
+            "note": "Intercom documents teammate activity logs for auditing and troubleshooting workspace actions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Viewing activity logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-825A47EFEC6F318668",
+      "agent_id": "AI-0039",
+      "path": "governance.audit_logs.retention_days",
+      "value": 365,
+      "value_hash": "4e47eb5525df25f9",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4120369931BDFC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_teammate_activity_logs_ui",
+        "note": "Intercom documents one year (365 days) of activity logs in the UI.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4120369931BDFC",
+            "note": "Intercom states Teammate Activity Logs are available for one year in the UI.",
+            "evidence_type": "technical_docs",
+            "source_section": "Viewing activity logs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B8E6A682491682EEB3",
+      "agent_id": "AI-0039",
+      "path": "governance.audit_logs.siem_export",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-53CDB3D3E145A1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_workspace_activity_logs",
+        "note": "Intercom activity logs can be exported for SIEM/security monitoring.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-53CDB3D3E145A1",
+            "note": "Intercom documents scheduled export of teammate/activity logs to S3, GCS, or Azure Blob for security monitoring and SIEM workflows.",
+            "evidence_type": "technical_docs",
+            "source_section": "Use cases / scheduled cloud storage exports"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DB51EFDE37CE70C36B",
+      "agent_id": "AI-0039",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B65E9A548ADE32"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_workspace_including_fin",
+        "note": "Intercom supports custom roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B65E9A548ADE32",
+            "note": "Intercom explicitly documents custom roles with configurable permissions.",
+            "evidence_type": "technical_docs",
+            "source_section": "Custom roles"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3B13EF687AD1D7CA3B",
+      "agent_id": "AI-0039",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-A8320317E99515"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_workspace_including_fin",
+        "note": "Intercom uses role- and permission-based workspace access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A8320317E99515",
+            "note": "Intercom documents roles, permissions, and workspace access controls for teammates.",
+            "evidence_type": "technical_docs",
+            "source_section": "Teammates / Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-116C4ABD20641EB93D",
+      "agent_id": "AI-0039",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E2DE9CCC1C6B83"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_workspace_including_fin",
+        "note": "Intercom supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E2DE9CCC1C6B83",
+            "note": "Intercom documents SCIM provisioning for teammates through an identity provider.",
+            "evidence_type": "technical_docs",
+            "source_section": "SCIM Provisioning"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-A5D6B1A044B792153D",
+      "agent_id": "AI-0039",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-784347B6ABA0BB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_workspace_including_fin",
+        "note": "Intercom workspaces using Fin support SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-784347B6ABA0BB",
+            "note": "Intercom documents SAML SSO for workspace access.",
+            "evidence_type": "technical_docs",
+            "source_section": "Enable SAML SSO"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8A0EA51117BBDB1844",
+      "agent_id": "AI-0039",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7CA977FDB62347"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_fin_ai_agent",
+        "note": "Fin is delivered as a managed Intercom service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7CA977FDB62347",
+            "note": "Intercom documents Fin AI Agent as a hosted Intercom service available on US, EU, and AU workspaces.",
+            "evidence_type": "technical_docs",
+            "source_section": "Setup / Regional hosting"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3C4FCC01F3E9BE28DA",
       "agent_id": "AI-0039",
       "path": "identity.name",
@@ -31329,6 +32351,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-1CDC7F61DDD7DE6FF6",
+      "agent_id": "AI-0039",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-94EB5A3AA2C2A2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_fin_ai_agent",
+        "note": "Fin supports regional hosting options.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-94EB5A3AA2C2A2",
+            "note": "Intercom states Fin AI Agent is available on US-, EU-, and AU-hosted workspaces.",
+            "evidence_type": "security_trust",
+            "source_section": "Regional hosting"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-8E781CFE75E183141F",
       "agent_id": "AI-0039",
       "path": "profile.depth",
@@ -31377,6 +32434,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-EC84F47D0A800C2AEF",
+      "agent_id": "AI-0039",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-94EB5A3AA2C2A2"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "intercom_platform_including_fin",
+        "note": "Intercom documents SOC 2 Type II coverage for Fin-related service controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-94EB5A3AA2C2A2",
+            "note": "Intercom states Fin's service is covered by a SOC 2 Type II audit report.",
+            "evidence_type": "security_trust",
+            "source_section": "Compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-BB974D4921BD7A66C6",
@@ -37365,6 +38457,223 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-97FF37ED9F2C7F2079",
+      "agent_id": "AI-0049",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-726A004EF25957",
+          "SRC-C8DE342AD33BD1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_platform_and_agents",
+        "note": "Harvey provides platform audit logging.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C8DE342AD33BD1",
+            "note": "Harvey explicitly lists audit logs among enterprise-grade controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Purpose-Built Security"
+          },
+          {
+            "source_id": "SRC-726A004EF25957",
+            "note": "Harvey contractually documents audit logging sufficient for monitoring, analysis, investigation, and reporting.",
+            "evidence_type": "security_trust",
+            "source_section": "Audit Logging"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5CEFCCEB7FB582B6FB",
+      "agent_id": "AI-0049",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5D2F2444745DAA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_workspace",
+        "note": "Harvey supports custom roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5D2F2444745DAA",
+            "note": "Harvey explicitly documents custom roles in Access Control & Permission Management.",
+            "evidence_type": "technical_docs",
+            "source_section": "Access Control & Permission Management"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-79229C16DF819ECC88",
+      "agent_id": "AI-0049",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5D2F2444745DAA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_workspace",
+        "note": "Harvey provides role-based access control.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5D2F2444745DAA",
+            "note": "Harvey documents user roles, permissions, and access controls in workspace administration.",
+            "evidence_type": "technical_docs",
+            "source_section": "Access Control & Permission Management"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-ABFB1D5BB83E147106",
+      "agent_id": "AI-0049",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-5D2F2444745DAA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_workspace",
+        "note": "Harvey supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-5D2F2444745DAA",
+            "note": "Harvey documents SCIM integration for automated user provisioning, deprovisioning, and group-based access management.",
+            "evidence_type": "technical_docs",
+            "source_section": "User & Access Management"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-BB54656DAA24B11AC6",
+      "agent_id": "AI-0049",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C8DE342AD33BD1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_platform_and_agents",
+        "note": "Harvey supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C8DE342AD33BD1",
+            "note": "Harvey explicitly lists SAML SSO among enterprise-grade controls.",
+            "evidence_type": "security_trust",
+            "source_section": "Purpose-Built Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-23A16B50C9EEA6AD87",
+      "agent_id": "AI-0049",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-726A004EF25957"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_platform_and_agents",
+        "note": "Harvey is delivered through a managed cloud environment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-726A004EF25957",
+            "note": "Harvey states the computing services used to provide the Service are cloud-based and supplied through cloud service providers.",
+            "evidence_type": "security_trust",
+            "source_section": "Cloud Environment"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-0C05490FBED5C63407",
       "agent_id": "AI-0049",
       "path": "identity.name",
@@ -37415,6 +38724,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E5E1F2563DCAB73A44",
+      "agent_id": "AI-0049",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-726A004EF25957"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_customer_data_and_content",
+        "note": "Harvey provides regional data-residency controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-726A004EF25957",
+            "note": "Harvey documents regional storage and processing commitments for Customer Data and Content.",
+            "evidence_type": "security_trust",
+            "source_section": "Hosting Location of Customer Data and Content"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-50F6ABA88566582994",
+      "agent_id": "AI-0049",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-726A004EF25957"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_customer_data_and_content",
+        "note": "Harvey customers can select/request a supported geographic region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-726A004EF25957",
+            "note": "Harvey states the geographic region is specified in the order form and customers may request a separate specific geographic region where supported.",
+            "evidence_type": "security_trust",
+            "source_section": "Hosting Location of Customer Data and Content"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-F0A90D4577694056B2",
       "agent_id": "AI-0049",
       "path": "profile.depth",
@@ -37463,6 +38842,111 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-A2C7D105A0D407EC61",
+      "agent_id": "AI-0049",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-726A004EF25957"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_customer_data_and_content",
+        "note": "Harvey documents AES-256-or-better encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-726A004EF25957",
+            "note": "Harvey states Customer Data and Content are encrypted at rest using AES 256-bit or better.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-47FC6461A8ACC95E3D",
+      "agent_id": "AI-0049",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-726A004EF25957"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_customer_data_and_content",
+        "note": "Harvey documents TLS 1.2+ encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-726A004EF25957",
+            "note": "Harvey states Customer Data and Content in transit over public or untrusted networks use TLS 1.2 or better.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-38AC347A6D54DC3FB7",
+      "agent_id": "AI-0049",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-726A004EF25957"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "harvey_platform_and_agents",
+        "note": "Harvey documents annual SOC 2 Type II assessment.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-726A004EF25957",
+            "note": "Harvey contractually states its information security management system is assessed under SOC 2 Type II at least annually.",
+            "evidence_type": "security_trust",
+            "source_section": "Harvey Audits and Certifications"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-1876CAF18026E8FEF7",
