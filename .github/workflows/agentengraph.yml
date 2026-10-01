@@ -6,6 +6,9 @@ on:
     paths:
       - "data/agents.json"
       - "data/agent-deep-evidence.json"
+      - ".github/scripts/validate-agentengraph.py"
+      - ".github/scripts/build-agentengraph.py"
+      - "data/agent-deep-taxonomy.json"
   workflow_dispatch:
 
 permissions:
