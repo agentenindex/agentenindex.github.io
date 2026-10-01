@@ -1,0 +1,189 @@
+name: Final AgentenIndex technical audit
+
+on:
+  push:
+    paths:
+      - '_final-audit/trigger'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Static whole-site validation
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import json, re
+
+          root=Path('.')
+          pages=sorted(p for p in root.rglob('*.html') if '.git' not in p.parts)
+          verification='google76153e357fd68b75.html'
+
+          class Parser(HTMLParser):
+              def __init__(self):
+                  super().__init__(convert_charrefs=True)
+                  self.title=[]; self.in_title=False; self.h1=0; self.metas=[]; self.links=[]; self.scripts=[]; self.script=None
+              def handle_starttag(self,tag,attrs):
+                  d=dict(attrs)
+                  if tag=='title': self.in_title=True
+                  if tag=='h1': self.h1+=1
+                  if tag=='meta': self.metas.append(d)
+                  if tag=='link': self.links.append(d)
+                  if tag=='script' and d.get('type')=='application/ld+json': self.script=[]
+              def handle_endtag(self,tag):
+                  if tag=='title': self.in_title=False
+                  if tag=='script' and self.script is not None:
+                      self.scripts.append(''.join(self.script)); self.script=None
+              def handle_data(self,data):
+                  if self.in_title: self.title.append(data)
+                  if self.script is not None: self.script.append(data)
+
+          canon=set(); hrefs=[]; titles={}; descs={}; issues=[]; indexable=0
+          for p in pages:
+              if p.name==verification: continue
+              text=p.read_text(encoding='utf-8')
+              q=Parser(); q.feed(text)
+              robots=next((m.get('content','') for m in q.metas if m.get('name')=='robots'),'')
+              noindex='noindex' in robots.lower()
+              if p.name!='404.html' and not noindex:
+                  indexable+=1
+                  title=''.join(q.title).strip()
+                  desc=next((m.get('content','') for m in q.metas if m.get('name')=='description'),'')
+                  canonical=next((l.get('href','') for l in q.links if l.get('rel')=='canonical'),'')
+                  if not title: issues.append((str(p),'missing title'))
+                  if not desc: issues.append((str(p),'missing description'))
+                  if q.h1!=1: issues.append((str(p),f'h1={q.h1}'))
+                  if not canonical: issues.append((str(p),'missing canonical'))
+                  if canonical: canon.add(canonical)
+                  titles.setdefault(title,[]).append(str(p)); descs.setdefault(desc,[]).append(str(p))
+                  for need in ('/favicon-48x48.png','/favicon.ico','/apple-touch-icon.png','/site.webmanifest'):
+                      if need not in text: issues.append((str(p),'missing '+need))
+                  for need in ('property="og:image"','name="twitter:image"','summary_large_image'):
+                      if need not in text: issues.append((str(p),'missing '+need))
+                  for s in q.scripts:
+                      try: json.loads(s)
+                      except Exception as e: issues.append((str(p),'JSON-LD '+str(e)))
+
+              for l in q.links:
+                  h=l.get('href','')
+                  if h.startswith('/') and not h.startswith('//'):
+                      hrefs.append((str(p),h))
+
+          broken=[]
+          for src,h in hrefs:
+              clean=h.split('#',1)[0].split('?',1)[0]
+              if not clean: continue
+              target=root/clean.lstrip('/')
+              if clean.endswith('/'): target=target/'index.html'
+              if not target.exists(): broken.append((src,h))
+
+          sitemap=(root/'sitemap.xml').read_text(encoding='utf-8')
+          sm=set(re.findall(r'<loc>(.*?)</loc>',sitemap))
+          duplicates_t={k:v for k,v in titles.items() if k and len(v)>1}
+          duplicates_d={k:v for k,v in descs.items() if k and len(v)>1}
+
+          all_text='\n'.join(
+              p.read_text(encoding='utf-8',errors='ignore')
+              for p in root.rglob('*')
+              if p.is_file() and '.git' not in p.parts and p.suffix.lower() in {'.html','.json','.md','.txt','.xml'}
+          )
+          banned=['AgentenPassport','AgentenPassports','Agenten-Passport','Agenten-Passports','AgentenProfil v2','Passport 2.0','passport_version','57 dokumentierte Agenten']
+
+          data=json.loads((root/'data/agents.json').read_text(encoding='utf-8'))
+          print('HTML',len(pages),'INDEXABLE',indexable,'CANONICAL',len(canon),'SITEMAP',len(sm))
+          print('BROKEN_INTERNAL',len(broken))
+          print('STATIC_ISSUES',len(issues))
+          print('DUP_TITLES',len(duplicates_t),'DUP_DESCRIPTIONS',len(duplicates_d))
+          print('SITEMAP_MISSING',len(canon-sm),'SITEMAP_EXTRA',len(sm-canon))
+          print('DATA',data['schema_version'],data['updated'],data['count'],len(data['agents']))
+          print('LEGACY_TERMS',{b:all_text.count(b) for b in banned})
+          if broken:
+              for x in broken[:20]: print('BROKEN',x)
+          if issues:
+              for x in issues[:30]: print('ISSUE',x)
+
+          assert indexable==144
+          assert len(canon)==144 and len(sm)==144 and canon==sm
+          assert not broken and not issues and not duplicates_t and not duplicates_d
+          assert data['count']==110 and len(data['agents'])==110
+          assert data['schema_version']=='5.1'
+          assert all(b not in all_text for b in banned)
+          PY
+
+      - name: Live HTTP and source checks
+        shell: bash
+        run: |
+          set -e
+          urls=(
+            "https://agentenindex.de/"
+            "https://agentenindex.de/agenten/"
+            "https://agentenindex.de/agenten/claude-code/"
+            "https://agentenindex.de/wissen/was-ist-ein-ki-agent/"
+            "https://agentenindex.de/unternehmen/"
+            "https://agentenindex.de/robots.txt"
+            "https://agentenindex.de/sitemap.xml"
+            "https://agentenindex.de/llms.txt"
+            "https://agentenindex.de/favicon-48x48.png"
+          )
+          for u in "${urls[@]}"; do
+            code=$(curl -L -sS -o /dev/null -w "%{http_code}" "$u")
+            echo "LIVE $code $u"
+            test "$code" = "200"
+          done
+          echo "SOURCE CHECKS"
+          for u in             "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/about-agents"             "https://www.gumloop.com/blog/subagents-launch"             "https://www.augmentcode.com/blog/meet-augment-agent"
+          do
+            code=$(curl -L -sS -A "Mozilla/5.0" -o /dev/null -w "%{http_code}" "$u" || true)
+            echo "SOURCE $code $u"
+          done
+
+      - name: Lighthouse representative pages
+        shell: bash
+        run: |
+          set -e
+          urls=(
+            "https://agentenindex.de/"
+            "https://agentenindex.de/agenten/"
+            "https://agentenindex.de/agenten/claude-code/"
+            "https://agentenindex.de/wissen/was-ist-ein-ki-agent/"
+            "https://agentenindex.de/unternehmen/"
+          )
+          mkdir -p /tmp/lh
+          n=0
+          for u in "${urls[@]}"; do
+            n=$((n+1))
+            echo "LIGHTHOUSE $u"
+            npx --yes lighthouse@latest "$u"               --quiet               --chrome-flags="--headless --no-sandbox --disable-gpu"               --only-categories=performance,accessibility,best-practices,seo               --output=json               --output-path="/tmp/lh/$n.json"
+          done
+          python - <<'PY'
+          import json,glob
+          keys=['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index']
+          scores=[]
+          for f in sorted(glob.glob('/tmp/lh/*.json')):
+              d=json.load(open(f))
+              cats=d['categories']
+              row={
+                'url':d['finalDisplayedUrl'],
+                'performance':round(cats['performance']['score']*100),
+                'accessibility':round(cats['accessibility']['score']*100),
+                'best_practices':round(cats['best-practices']['score']*100),
+                'seo':round(cats['seo']['score']*100),
+              }
+              for k in keys:
+                  a=d['audits'][k]
+                  row[k]=a.get('displayValue')
+              scores.append(row)
+          print('=== LIGHTHOUSE RESULTS ===')
+          for x in scores: print(json.dumps(x,ensure_ascii=False))
+          print('MIN_SCORES', {
+              k:min(x[k] for x in scores)
+              for k in ('performance','accessibility','best_practices','seo')
+          })
+          PY
