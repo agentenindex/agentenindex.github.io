@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Build AgentenGraph v1 from data/agents.json.
+Build AgentenGraph v1 from data/agents.json plus curated field-level deep evidence.
 
 AgentenGraph is the internal, versioned evidence/history layer behind AgentenIndex.
 It intentionally does NOT invent field-level evidence. Existing AgentenProfile
-currently expose a source set at profile level; new assertions therefore start
-with evidence.binding = "profile_source_set". Exact field-to-source bindings can
-be added later and are preserved by this builder.
+claims start with evidence.binding = "profile_source_set". Curated claims in
+data/agent-deep-evidence.json are imported with evidence.binding = "field_level"
+and retain their exact source, scope, confidence, and verification metadata.
 
 Historical behavior:
 - active assertions are carried forward while unchanged;
@@ -27,6 +27,7 @@ import unicodedata
 
 ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "data" / "agents.json"
+DEEP_INPUT = ROOT / "data" / "agent-deep-evidence.json"
 OUT = ROOT / "_agentengraph"
 SNAP = OUT / "snapshots"
 
@@ -135,7 +136,24 @@ def claim_nature(path: str) -> str:
         return "verification_metadata"
     return "structured_statement"
 
-def agent_claims(agent: dict) -> list[tuple[str, object]]:
+def deep_claim_index(doc: dict):
+    by_agent: dict[str, list[dict]] = defaultdict(list)
+    by_key: dict[tuple[str, str, str], dict] = {}
+    for entry in doc.get("agents", []):
+        aid = entry.get("agent_id")
+        for claim in entry.get("claims", []):
+            path = claim.get("path")
+            value = canonical(claim.get("value"))
+            if not aid or not path or value in (None, "", []):
+                continue
+            rec = deepcopy(claim)
+            rec["agent_id"] = aid
+            rec["value"] = value
+            by_agent[aid].append(rec)
+            by_key[(aid, path, value_hash(value))] = rec
+    return by_agent, by_key
+
+def agent_claims(agent: dict, deep_claims: list[dict] | None = None) -> list[tuple[str, object]]:
     claims = [
         ("identity.name", agent.get("name")),
         ("identity.provider", agent.get("provider")),
@@ -157,18 +175,52 @@ def agent_claims(agent: dict) -> list[tuple[str, object]]:
         claims.append(("editorial.strength", value))
     for value in agent.get("checks", []):
         claims.append(("editorial.check", value))
-    return [(p, canonical(v)) for p, v in claims if v not in (None, "", [])]
+    for claim in deep_claims or []:
+        claims.append((claim.get("path"), claim.get("value")))
+    return [(p, canonical(v)) for p, v in claims if p and v not in (None, "", [])]
 
-def snapshot_claim_map(agent: dict) -> dict[str, list]:
+def snapshot_claim_map(agent: dict, deep_claims: list[dict] | None = None) -> dict[str, list]:
     out: dict[str, list] = defaultdict(list)
-    for path, value in agent_claims(agent):
+    for path, value in agent_claims(agent, deep_claims):
         out[path].append(value)
     return {k: sorted(v, key=lambda x: json.dumps(x, ensure_ascii=False, sort_keys=True)) for k, v in sorted(out.items())}
+
+def field_level_evidence(claim: dict) -> dict:
+    items = []
+    source_ids = []
+    for ev in claim.get("evidence", []):
+        url = ev.get("url")
+        if not url:
+            continue
+        sid = source_id(url)
+        source_ids.append(sid)
+        item = {"source_id": sid}
+        if ev.get("note"):
+            item["note"] = ev["note"]
+        items.append(item)
+    payload = {
+        "binding": "field_level",
+        "source_ids": sorted(set(source_ids)),
+        "field_level_verified": True,
+        "verified_at": claim.get("verified_at"),
+        "confidence": claim.get("confidence", "high"),
+        "scope": claim.get("scope", "documented"),
+        "note": claim.get("note", "Feldgenaue Zuordnung aus kuratierter Deep-Evidence-Datei."),
+        "evidence_items": items,
+    }
+    return payload
 
 def main():
     data = json.loads(INPUT.read_text(encoding="utf-8"))
     agents = data["agents"]
-    as_of = data.get("updated") or max(a.get("last_verified", "") for a in agents)
+    deep = load(DEEP_INPUT, {"schema_version":"1.0","updated":data.get("updated"),"agents":[]})
+    deep_by_agent, deep_by_key = deep_claim_index(deep)
+    known_agent_ids = {a["profile_id"] for a in agents}
+    unknown_deep_agents = sorted(set(deep_by_agent) - known_agent_ids)
+    if unknown_deep_agents:
+        raise SystemExit(f"Deep evidence references unknown agents: {unknown_deep_agents}")
+    dates = [x for x in [data.get("updated"), deep.get("updated"), max((a.get("last_verified", "") for a in agents), default="")] if x]
+    as_of = max(dates) if dates else ""
     if not as_of:
         raise SystemExit("No dataset date available")
 
@@ -237,6 +289,33 @@ def main():
                 source_records[sid]["active"] = True
         agent_source_ids[aid] = sorted(set(ids))
 
+        # Field-level evidence sources also live in the shared source registry,
+        # but they do not broaden the source set used by unrelated profile-level claims.
+        for claim in deep_by_agent.get(aid, []):
+            for ev in claim.get("evidence", []):
+                title = ev.get("title")
+                url = ev.get("url")
+                if not title or not url:
+                    continue
+                sid = source_id(url)
+                seen_source_agents[sid].add(aid)
+                if sid not in source_records:
+                    source_records[sid] = {
+                        "source_id": sid,
+                        "url": url,
+                        "title": title,
+                        "first_seen": as_of,
+                        "last_seen": as_of,
+                        "active": True,
+                        "agent_ids": [],
+                        "provenance": "AgentenGraph field-level evidence",
+                    }
+                else:
+                    source_records[sid]["url"] = url
+                    source_records[sid]["title"] = title
+                    source_records[sid]["last_seen"] = as_of
+                    source_records[sid]["active"] = True
+
     for sid, rec in source_records.items():
         current_agents = seen_source_agents.get(sid, set())
         if current_agents:
@@ -256,24 +335,33 @@ def main():
     current_keys = set()
     for a in agents:
         aid = a["profile_id"]
-        for path, value in agent_claims(a):
+        for path, value in agent_claims(a, deep_by_agent.get(aid, [])):
             vh = value_hash(value)
             key = (aid, path, vh)
             current_keys.add(key)
+            deep_claim = deep_by_key.get(key)
             evidence_default = {
                 "binding": "profile_source_set",
                 "source_ids": agent_source_ids[aid],
                 "field_level_verified": False,
                 "note": "Bestehende AgentenProfile verknüpfen Quellen derzeit auf Profilebene. Eine exakte Feld-zu-Quelle-Zuordnung wird nicht behauptet.",
             }
+            evidence = field_level_evidence(deep_claim) if deep_claim else evidence_default
+            verified_at = deep_claim.get("verified_at") if deep_claim else a.get("last_verified")
+            origin = "data/agent-deep-evidence.json" if deep_claim else "data/agents.json"
+            review_status = (deep_claim or {}).get("review_status") or a.get("verification_status")
             if key in active_by_key:
                 ast = assertions[active_by_key[key]]
                 ast["last_seen"] = as_of
-                ast["last_verified"] = a.get("last_verified")
+                ast["last_verified"] = verified_at
                 ast["profile_version"] = a.get("profile_version")
-                if (ast.get("evidence") or {}).get("binding") != "field_level":
+                if deep_claim:
+                    ast["evidence"] = evidence
+                    ast["origin"] = origin
+                elif (ast.get("evidence") or {}).get("binding") != "field_level":
                     ast["evidence"] = evidence_default
-                ast["review_status"] = a.get("verification_status")
+                    ast["origin"] = origin
+                ast["review_status"] = review_status
             else:
                 assertions.append({
                     "assertion_id": assertion_id(aid, path, value, as_of),
@@ -282,15 +370,15 @@ def main():
                     "value": value,
                     "value_hash": vh,
                     "claim_nature": claim_nature(path),
-                    "review_status": a.get("verification_status"),
-                    "evidence": evidence_default,
+                    "review_status": review_status,
+                    "evidence": evidence,
                     "first_seen": as_of,
                     "last_seen": as_of,
                     "valid_from": as_of,
                     "valid_to": None,
-                    "last_verified": a.get("last_verified"),
+                    "last_verified": verified_at,
                     "profile_version": a.get("profile_version"),
-                    "origin": "data/agents.json",
+                    "origin": origin,
                 })
 
     closed_now = []
@@ -312,7 +400,7 @@ def main():
             "slug": a["slug"],
             "last_verified": a.get("last_verified"),
             "source_ids": agent_source_ids[a["profile_id"]],
-            "claims": snapshot_claim_map(a),
+            "claims": snapshot_claim_map(a, deep_by_agent.get(a["profile_id"], [])),
         } for a in agents],
     }
 
@@ -461,7 +549,11 @@ def main():
                     "binding":{"enum":["profile_source_set","field_level"]},
                     "source_ids":{"type":"array","items":{"type":"string","pattern":"^SRC-"}},
                     "field_level_verified":{"type":"boolean"},
-                    "note":{"type":"string"}
+                    "note":{"type":"string"},
+                    "verified_at":{"type":["string","null"],"format":"date"},
+                    "confidence":{"enum":["high","medium","low"]},
+                    "scope":{"type":["string","array"]},
+                    "evidence_items":{"type":"array","items":{"type":"object","required":["source_id"],"properties":{"source_id":{"type":"string","pattern":"^SRC-"},"note":{"type":"string"}}}}
                 }
             },
             "first_seen":{"type":"string","format":"date"},
@@ -481,7 +573,7 @@ AgentenGraph ist der interne, versionierte Datenkern von AgentenIndex.
 ## Warum er existiert
 
 'data/agents.json' bleibt die kompakte, veröffentlichte Produkt- und Finder-Datenbasis.
-AgentenGraph ergänzt diese Daten um stabile Entitäten, Aussagen (assertions),
+AgentenGraph ergänzt diese Daten sowie `data/agent-deep-evidence.json` um stabile Entitäten, Aussagen (assertions),
 Quellen, Historie und Änderungsereignisse.
 
 Der wichtigste Unterschied: Ein Wert wird künftig nicht einfach überschrieben.
@@ -492,7 +584,7 @@ field_change-Event.
 ## Evidenz in v1
 
 Die bestehenden AgentenProfile besitzen Quellenlisten auf Profilebene. Deshalb
-werden importierte Assertions nicht künstlich als feldgenau verifiziert.
+werden Profil-Assertions nicht künstlich als feldgenau verifiziert. Kuratierte Deep-Evidence-Claims werden dagegen explizit feldgenau gebunden.
 Sie starten mit:
 
 - evidence.binding = "profile_source_set"
