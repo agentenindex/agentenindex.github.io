@@ -678,6 +678,185 @@
       ]
     },
     {
+      "agent_id": "AI-0013",
+      "claims": [
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "amazon_q_developer_cli_and_ide",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Using MCP with Amazon Q Developer",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html",
+              "note": "AWS documents Amazon Q Developer CLI as an MCP host/client connecting to local and remote MCP servers; IDE support is also documented.",
+              "evidence_type": "technical_docs",
+              "source_section": "MCP configuration"
+            }
+          ],
+          "note": "Amazon Q Developer can consume local and remote MCP servers."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "amazon_q_developer_service",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Infrastructure security in Amazon Q Developer",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/infrastructure-security.html",
+              "note": "AWS explicitly describes Amazon Q as a managed service protected by AWS global network security.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Amazon Q Developer is an AWS-managed service."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "amazon_q_developer_ide_features_via_privatelink",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Amazon Q Developer and interface endpoints (AWS PrivateLink)",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/vpc-interface-endpoints.html",
+              "note": "AWS documents private VPC connectivity to Amazon Q Developer APIs through interface VPC endpoints powered by AWS PrivateLink, without public internet routing.",
+              "evidence_type": "technical_docs",
+              "source_section": "Amazon Q Developer and interface endpoints"
+            }
+          ],
+          "note": "Supported Amazon Q Developer IDE/API features can be accessed privately through AWS PrivateLink."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "q_developer_pro_supported_features",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Data storage in Amazon Q Developer",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/data-storage.html",
+              "note": "AWS documents that supported Amazon Q Developer Pro features store content in the AWS Region where the customer's Q Developer profile was created.",
+              "evidence_type": "security_trust",
+              "source_section": "AWS Regions where content is processed and stored"
+            }
+          ],
+          "note": "For documented Pro features, content can be stored in the profile's AWS Region."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "q_developer_profile_supported_regions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Supported Regions for Amazon Q Developer",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/regions.html",
+              "note": "AWS lists supported Regions and directs administrators to use the Region selector for the Amazon Q Developer profile.",
+              "evidence_type": "technical_docs",
+              "source_section": "Supported Regions"
+            },
+            {
+              "title": "AWS Docs – Data storage in Amazon Q Developer",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/data-storage.html",
+              "note": "For supported Pro features, content storage follows the AWS Region where the Q Developer profile was created.",
+              "evidence_type": "security_trust",
+              "source_section": "AWS Regions where content is processed and stored"
+            }
+          ],
+          "note": "Administrators can create/manage Q Developer profiles in supported AWS Regions, with documented regional storage for supported Pro features."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "amazon_q_developer_resources",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Identity and access management for Amazon Q Developer",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-iam.html",
+              "note": "AWS documents IAM identities and policies for controlling authentication and authorization to Amazon Q Developer resources.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Amazon Q Developer access is governed through AWS IAM permissions and roles."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "amazon_q_developer_api_activity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Logging Amazon Q Developer API calls using AWS CloudTrail",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/logging-using-cloudtrail.html",
+              "note": "AWS documents that Amazon Q Developer Pro is integrated with CloudTrail and that all Amazon Q Developer API actions generate CloudTrail events.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Amazon Q Developer API activity is auditable through AWS CloudTrail."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AWS encryption with AWS-owned KMS keys by default",
+          "scope": "amazon_q_developer_stored_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Data encryption in Amazon Q Developer",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/data-encryption.html",
+              "note": "AWS states Amazon Q Developer data at rest is encrypted by default using AWS encryption solutions and AWS-owned KMS keys.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption at rest"
+            }
+          ],
+          "note": "Amazon Q Developer encrypts stored data at rest by default."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "amazon_q_developer_communications",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Data encryption in Amazon Q Developer",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/data-encryption.html",
+              "note": "AWS states all communication between customers and Amazon Q and its downstream dependencies is protected with TLS 1.2 or higher.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption in transit"
+            }
+          ],
+          "note": "Amazon Q Developer uses TLS 1.2 or higher for communications."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "q_developer_pro_supported_features",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "AWS Docs – Data encryption in Amazon Q Developer",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/data-encryption.html",
+              "note": "AWS documents customer-managed KMS keys for specified Amazon Q Developer Pro features including Agents in the IDE.",
+              "evidence_type": "security_trust",
+              "source_section": "Using customer managed KMS keys"
+            }
+          ],
+          "note": "Supported Amazon Q Developer Pro features can use customer-managed AWS KMS keys."
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0018",
       "claims": [
         {
