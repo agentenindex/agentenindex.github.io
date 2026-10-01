@@ -1,7 +1,7 @@
 {
   "graph_version": "1.0",
   "as_of": "2026-10-01",
-  "principle": "Research priority ranks missing evidence only. Unknown is not false, and no product fact is inferred from priority.",
+  "principle": "Research priority ranks missing evidence only. Unknown is not false, no product fact is inferred from priority, and discontinued products are excluded from active research urgency.",
   "target": {
     "minimum_core_coverage_pct": 40,
     "minimum_documented_fields": 10,
@@ -13,17 +13,19 @@
     "tier_base": {
       "P0_raise_existing_to_40pct": 80.0,
       "P1_start_zero_coverage": 60.0,
-      "P2_maintain_or_deepen": 20.0
+      "P2_maintain_or_deepen": 20.0,
+      "P3_discontinued": 0.0
     },
     "gap_to_40pct_max": 10,
     "unknown_share_max": 5,
     "source_readiness_max": 5,
-    "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified."
+    "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified. Discontinued products receive priority score 0 and no active research hints."
   },
   "summary": {
     "agents_below_target_with_deep_evidence": 71,
-    "agents_without_deep_evidence": 1,
-    "agents_at_or_above_target": 38
+    "agents_without_deep_evidence": 0,
+    "agents_at_or_above_target": 38,
+    "agents_discontinued": 1
   },
   "field_priorities": [
     {
@@ -182,6 +184,7 @@
       "agent_id": "AI-0002",
       "name": "Gemini Deep Research",
       "provider_id": "PROV-GOOGLE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 97.6,
       "score_components": {
@@ -289,6 +292,7 @@
       "agent_id": "AI-0048",
       "name": "HubSpot Company Research Agent",
       "provider_id": "PROV-HUBSPOT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.8,
       "score_components": {
@@ -384,6 +388,7 @@
       "agent_id": "AI-0058",
       "name": "You.com ARI",
       "provider_id": "PROV-YOU-COM",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.8,
       "score_components": {
@@ -479,6 +484,7 @@
       "agent_id": "AI-0084",
       "name": "Tray Merlin Agent Builder",
       "provider_id": "PROV-TRAY-AI",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.8,
       "score_components": {
@@ -574,6 +580,7 @@
       "agent_id": "AI-0087",
       "name": "Mistral Vibe Work",
       "provider_id": "PROV-MISTRAL-AI",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.8,
       "score_components": {
@@ -669,6 +676,7 @@
       "agent_id": "AI-0101",
       "name": "11x Alice",
       "provider_id": "PROV-11X",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.8,
       "score_components": {
@@ -764,6 +772,7 @@
       "agent_id": "AI-0103",
       "name": "Qualified Piper",
       "provider_id": "PROV-QUALIFIED",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.8,
       "score_components": {
@@ -859,6 +868,7 @@
       "agent_id": "AI-0107",
       "name": "Lexis+ with Protégé",
       "provider_id": "PROV-LEXISNEXIS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.8,
       "score_components": {
@@ -954,6 +964,7 @@
       "agent_id": "AI-0108",
       "name": "Vincent AI",
       "provider_id": "PROV-VLEX",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.8,
       "score_components": {
@@ -1049,6 +1060,7 @@
       "agent_id": "AI-0110",
       "name": "Rogo AI Analyst",
       "provider_id": "PROV-ROGO",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.8,
       "score_components": {
@@ -1144,6 +1156,7 @@
       "agent_id": "AI-0014",
       "name": "Google Jules",
       "provider_id": "PROV-GOOGLE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 96.4,
       "score_components": {
@@ -1263,6 +1276,7 @@
       "agent_id": "AI-0009",
       "name": "Cursor Agent",
       "provider_id": "PROV-CURSOR",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -1353,6 +1367,7 @@
       "agent_id": "AI-0010",
       "name": "Windsurf Cascade",
       "provider_id": "PROV-WINDSURF",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -1443,6 +1458,7 @@
       "agent_id": "AI-0015",
       "name": "Kiro",
       "provider_id": "PROV-AWS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -1533,6 +1549,7 @@
       "agent_id": "AI-0017",
       "name": "Make AI Agents",
       "provider_id": "PROV-MAKE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -1623,6 +1640,7 @@
       "agent_id": "AI-0034",
       "name": "Notion Custom Agents",
       "provider_id": "PROV-NOTION",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -1713,6 +1731,7 @@
       "agent_id": "AI-0038",
       "name": "Perplexity Computer",
       "provider_id": "PROV-PERPLEXITY",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -1803,6 +1822,7 @@
       "agent_id": "AI-0043",
       "name": "Sierra Agent",
       "provider_id": "PROV-SIERRA",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -1893,6 +1913,7 @@
       "agent_id": "AI-0044",
       "name": "Gorgias AI Agent",
       "provider_id": "PROV-GORGIAS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -1983,6 +2004,7 @@
       "agent_id": "AI-0053",
       "name": "Gemini Spark",
       "provider_id": "PROV-GOOGLE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2073,6 +2095,7 @@
       "agent_id": "AI-0063",
       "name": "JetBrains Junie",
       "provider_id": "PROV-JETBRAINS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2163,6 +2186,7 @@
       "agent_id": "AI-0066",
       "name": "Augment Code Agent",
       "provider_id": "PROV-AUGMENT-CODE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2253,6 +2277,7 @@
       "agent_id": "AI-0067",
       "name": "OpenHands",
       "provider_id": "PROV-OPENHANDS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2343,6 +2368,7 @@
       "agent_id": "AI-0068",
       "name": "Qodo Git",
       "provider_id": "PROV-QODO",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2433,6 +2459,7 @@
       "agent_id": "AI-0069",
       "name": "Mistral Vibe Code",
       "provider_id": "PROV-MISTRAL-AI",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2523,6 +2550,7 @@
       "agent_id": "AI-0070",
       "name": "Warp Agent CLI",
       "provider_id": "PROV-WARP",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2613,6 +2641,7 @@
       "agent_id": "AI-0071",
       "name": "Factory Droids",
       "provider_id": "PROV-FACTORY",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2703,6 +2732,7 @@
       "agent_id": "AI-0072",
       "name": "Genspark Code",
       "provider_id": "PROV-GENSPARK",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2793,6 +2823,7 @@
       "agent_id": "AI-0075",
       "name": "Genspark Super Agent",
       "provider_id": "PROV-GENSPARK",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2883,6 +2914,7 @@
       "agent_id": "AI-0080",
       "name": "LangSmith Deployment",
       "provider_id": "PROV-LANGCHAIN",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -2973,6 +3005,7 @@
       "agent_id": "AI-0085",
       "name": "Strands Agents",
       "provider_id": "PROV-AWS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -3063,6 +3096,7 @@
       "agent_id": "AI-0090",
       "name": "Slackbot AI Teammate",
       "provider_id": "PROV-SLACK",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -3153,6 +3187,7 @@
       "agent_id": "AI-0093",
       "name": "Adobe Agent Orchestrator",
       "provider_id": "PROV-ADOBE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -3243,6 +3278,7 @@
       "agent_id": "AI-0095",
       "name": "monday.com AI Agents",
       "provider_id": "PROV-MONDAY-COM",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -3333,6 +3369,7 @@
       "agent_id": "AI-0098",
       "name": "Snowflake CoWork",
       "provider_id": "PROV-SNOWFLAKE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -3423,6 +3460,7 @@
       "agent_id": "AI-0102",
       "name": "Artisan Ava",
       "provider_id": "PROV-ARTISAN",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -3513,6 +3551,7 @@
       "agent_id": "AI-0106",
       "name": "Microsoft Fabric Data Agent",
       "provider_id": "PROV-MICROSOFT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 95.8,
       "score_components": {
@@ -3603,6 +3642,7 @@
       "agent_id": "AI-0001",
       "name": "ChatGPT Deep Research",
       "provider_id": "PROV-OPENAI",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -3688,6 +3728,7 @@
       "agent_id": "AI-0004",
       "name": "Perplexity Deep Research",
       "provider_id": "PROV-PERPLEXITY",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -3773,6 +3814,7 @@
       "agent_id": "AI-0005",
       "name": "Microsoft Copilot Researcher",
       "provider_id": "PROV-MICROSOFT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -3858,6 +3900,7 @@
       "agent_id": "AI-0011",
       "name": "Replit Agent",
       "provider_id": "PROV-REPLIT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -3943,6 +3986,7 @@
       "agent_id": "AI-0012",
       "name": "Devin",
       "provider_id": "PROV-COGNITION",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4028,6 +4072,7 @@
       "agent_id": "AI-0024",
       "name": "Gumball",
       "provider_id": "PROV-GUMLOOP",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4113,6 +4158,7 @@
       "agent_id": "AI-0033",
       "name": "Notion Agent",
       "provider_id": "PROV-NOTION",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4198,6 +4244,7 @@
       "agent_id": "AI-0037",
       "name": "Microsoft Copilot Analyst",
       "provider_id": "PROV-MICROSOFT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4283,6 +4330,7 @@
       "agent_id": "AI-0041",
       "name": "Forethought AI Agents by Zendesk",
       "provider_id": "PROV-ZENDESK-FORETHOUGHT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4368,6 +4416,7 @@
       "agent_id": "AI-0042",
       "name": "HubSpot Breeze Customer Agent",
       "provider_id": "PROV-HUBSPOT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4453,6 +4502,7 @@
       "agent_id": "AI-0045",
       "name": "HubSpot Breeze Prospecting Agent",
       "provider_id": "PROV-HUBSPOT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4538,6 +4588,7 @@
       "agent_id": "AI-0046",
       "name": "Salesforce Prospecting Agent",
       "provider_id": "PROV-SALESFORCE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4623,6 +4674,7 @@
       "agent_id": "AI-0047",
       "name": "HubSpot Data Agent",
       "provider_id": "PROV-HUBSPOT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4708,6 +4760,7 @@
       "agent_id": "AI-0050",
       "name": "CoCounsel Legal",
       "provider_id": "PROV-THOMSON-REUTERS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4793,6 +4846,7 @@
       "agent_id": "AI-0051",
       "name": "ChatGPT Work",
       "provider_id": "PROV-OPENAI",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4878,6 +4932,7 @@
       "agent_id": "AI-0055",
       "name": "Perplexity Comet Assistant",
       "provider_id": "PROV-PERPLEXITY",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -4963,6 +5018,7 @@
       "agent_id": "AI-0059",
       "name": "NotebookLM Deep Research",
       "provider_id": "PROV-GOOGLE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5048,6 +5104,7 @@
       "agent_id": "AI-0060",
       "name": "Grok DeepSearch",
       "provider_id": "PROV-XAI",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5133,6 +5190,7 @@
       "agent_id": "AI-0061",
       "name": "Elicit Research Agent",
       "provider_id": "PROV-ELICIT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5218,6 +5276,7 @@
       "agent_id": "AI-0062",
       "name": "Consensus Research Agent",
       "provider_id": "PROV-CONSENSUS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5303,6 +5362,7 @@
       "agent_id": "AI-0073",
       "name": "OpenCode",
       "provider_id": "PROV-OPENCODE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5388,6 +5448,7 @@
       "agent_id": "AI-0074",
       "name": "CodeRabbit Agent",
       "provider_id": "PROV-CODERABBIT",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5473,6 +5534,7 @@
       "agent_id": "AI-0083",
       "name": "Kore.ai Agent Platform",
       "provider_id": "PROV-KORE-AI",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5558,6 +5620,7 @@
       "agent_id": "AI-0088",
       "name": "Grok Bot",
       "provider_id": "PROV-XAI",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5643,6 +5706,7 @@
       "agent_id": "AI-0089",
       "name": "Box Agent",
       "provider_id": "PROV-BOX",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5728,6 +5792,7 @@
       "agent_id": "AI-0094",
       "name": "Moveworks Agent Studio",
       "provider_id": "PROV-MOVEWORKS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5813,6 +5878,7 @@
       "agent_id": "AI-0096",
       "name": "ZoomMate",
       "provider_id": "PROV-ZOOM",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5898,6 +5964,7 @@
       "agent_id": "AI-0097",
       "name": "Dropbox Dash",
       "provider_id": "PROV-DROPBOX",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -5983,6 +6050,7 @@
       "agent_id": "AI-0099",
       "name": "NiCE Cognigy AI Agents",
       "provider_id": "PROV-NICE-COGNIGY",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -6068,6 +6136,7 @@
       "agent_id": "AI-0100",
       "name": "Decagon AI Concierge",
       "provider_id": "PROV-DECAGON",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -6153,6 +6222,7 @@
       "agent_id": "AI-0104",
       "name": "Claygent",
       "provider_id": "PROV-CLAY",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -6238,6 +6308,7 @@
       "agent_id": "AI-0109",
       "name": "Luminance Agent Lumi",
       "provider_id": "PROV-LUMINANCE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 94.8,
       "score_components": {
@@ -6323,6 +6394,7 @@
       "agent_id": "AI-0052",
       "name": "Manus Agent",
       "provider_id": "PROV-MANUS",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 92.8,
       "score_components": {
@@ -6449,6 +6521,7 @@
       "agent_id": "AI-0064",
       "name": "Gemini CLI",
       "provider_id": "PROV-GOOGLE",
+      "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
       "priority_score": 92.8,
       "score_components": {
@@ -6560,93 +6633,10 @@
       ]
     },
     {
-      "agent_id": "AI-0022",
-      "name": "Relay.app",
-      "provider_id": "PROV-RELAY-APP",
-      "priority": "P1_start_zero_coverage",
-      "priority_score": 76.0,
-      "score_components": {
-        "tier_base": 60.0,
-        "gap_to_40pct": 10.0,
-        "unknown_share": 5.0,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 0,
-      "unknown_fields": 25,
-      "coverage_pct": 0.0,
-      "fields_needed_for_40pct": 10,
-      "recommended_unknown_paths": [
-        "governance.audit_logs.retention_days",
-        "protocols.a2a.client",
-        "governance.sso.oidc",
-        "protocols.a2a.server",
-        "hosting.private_network",
-        "protocols.a2a.supported",
-        "governance.audit_logs.api",
-        "protocols.mcp.server"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Relay.app – Shutdown notice",
-          "url": "https://relay.app/",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Relay.app Relay.app official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Relay.app Relay.app official documentation protocols a2a client"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Relay.app Relay.app official documentation governance sso oidc"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Relay.app Relay.app official documentation protocols a2a server"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Relay.app Relay.app official documentation hosting private_network"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Relay.app Relay.app official documentation protocols a2a supported"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Relay.app Relay.app official documentation governance audit_logs api"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Relay.app Relay.app official documentation protocols mcp server"
-        }
-      ]
-    },
-    {
       "agent_id": "AI-0003",
       "name": "Claude Research",
       "provider_id": "PROV-ANTHROPIC",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -6774,6 +6764,7 @@
       "agent_id": "AI-0008",
       "name": "GitHub Copilot Coding Agent",
       "provider_id": "PROV-GITHUB",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -6901,6 +6892,7 @@
       "agent_id": "AI-0013",
       "name": "Amazon Q Developer",
       "provider_id": "PROV-AWS",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -7028,6 +7020,7 @@
       "agent_id": "AI-0016",
       "name": "Cline",
       "provider_id": "PROV-CLINE",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -7148,6 +7141,7 @@
       "agent_id": "AI-0018",
       "name": "n8n Agents",
       "provider_id": "PROV-N8N",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -7275,6 +7269,7 @@
       "agent_id": "AI-0019",
       "name": "AI by Zapier (ehemals Zapier Agents)",
       "provider_id": "PROV-ZAPIER",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -7401,6 +7396,7 @@
       "agent_id": "AI-0020",
       "name": "Lindy",
       "provider_id": "PROV-LINDY",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -7521,6 +7517,7 @@
       "agent_id": "AI-0023",
       "name": "Gumloop Agents",
       "provider_id": "PROV-GUMLOOP",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -7640,6 +7637,7 @@
       "agent_id": "AI-0025",
       "name": "Microsoft Copilot Studio",
       "provider_id": "PROV-MICROSOFT",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -7767,6 +7765,7 @@
       "agent_id": "AI-0026",
       "name": "IBM watsonx Orchestrate",
       "provider_id": "PROV-IBM",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -7894,6 +7893,7 @@
       "agent_id": "AI-0027",
       "name": "Oracle AI Agent Studio",
       "provider_id": "PROV-ORACLE",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -8021,6 +8021,7 @@
       "agent_id": "AI-0028",
       "name": "UiPath Agents",
       "provider_id": "PROV-UIPATH",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -8148,6 +8149,7 @@
       "agent_id": "AI-0029",
       "name": "Salesforce Agentforce",
       "provider_id": "PROV-SALESFORCE",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -8275,6 +8277,7 @@
       "agent_id": "AI-0030",
       "name": "SAP Joule Agents",
       "provider_id": "PROV-SAP",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -8402,6 +8405,7 @@
       "agent_id": "AI-0035",
       "name": "ServiceNow AI Agents",
       "provider_id": "PROV-SERVICENOW",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -8529,6 +8533,7 @@
       "agent_id": "AI-0036",
       "name": "ServiceNow Otto",
       "provider_id": "PROV-SERVICENOW",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -8656,6 +8661,7 @@
       "agent_id": "AI-0054",
       "name": "Claude Cowork",
       "provider_id": "PROV-ANTHROPIC",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -8783,6 +8789,7 @@
       "agent_id": "AI-0056",
       "name": "Browser Use Agent",
       "provider_id": "PROV-BROWSER-USE",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -8910,6 +8917,7 @@
       "agent_id": "AI-0065",
       "name": "GitLab Duo Agent Platform",
       "provider_id": "PROV-GITLAB",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -9037,6 +9045,7 @@
       "agent_id": "AI-0077",
       "name": "Google Agent Development Kit",
       "provider_id": "PROV-GOOGLE",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -9164,6 +9173,7 @@
       "agent_id": "AI-0082",
       "name": "Boomi Agentstudio",
       "provider_id": "PROV-BOOMI",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -9291,6 +9301,7 @@
       "agent_id": "AI-0086",
       "name": "Microsoft Agent Framework",
       "provider_id": "PROV-MICROSOFT",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -9418,6 +9429,7 @@
       "agent_id": "AI-0091",
       "name": "Workday Agent System of Record",
       "provider_id": "PROV-WORKDAY",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -9545,6 +9557,7 @@
       "agent_id": "AI-0092",
       "name": "Gemini Enterprise Agent Platform",
       "provider_id": "PROV-GOOGLE-CLOUD",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -9670,6 +9683,7 @@
       "agent_id": "AI-0105",
       "name": "Snowflake Cortex Agents",
       "provider_id": "PROV-SNOWFLAKE",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 28.0,
       "score_components": {
@@ -9797,6 +9811,7 @@
       "agent_id": "AI-0031",
       "name": "Atlassian Rovo Agents",
       "provider_id": "PROV-ATLASSIAN",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.8,
       "score_components": {
@@ -9924,6 +9939,7 @@
       "agent_id": "AI-0039",
       "name": "Intercom Fin",
       "provider_id": "PROV-INTERCOM",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.8,
       "score_components": {
@@ -10051,6 +10067,7 @@
       "agent_id": "AI-0049",
       "name": "Harvey Agents",
       "provider_id": "PROV-HARVEY",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.8,
       "score_components": {
@@ -10158,6 +10175,7 @@
       "agent_id": "AI-0078",
       "name": "Microsoft Foundry Agent Service",
       "provider_id": "PROV-MICROSOFT",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.8,
       "score_components": {
@@ -10284,6 +10302,7 @@
       "agent_id": "AI-0021",
       "name": "Relevance AI Agents",
       "provider_id": "PROV-RELEVANCE-AI",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.6,
       "score_components": {
@@ -10410,6 +10429,7 @@
       "agent_id": "AI-0076",
       "name": "CrewAI AMP",
       "provider_id": "PROV-CREWAI",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.6,
       "score_components": {
@@ -10536,6 +10556,7 @@
       "agent_id": "AI-0006",
       "name": "OpenAI Codex",
       "provider_id": "PROV-OPENAI",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.4,
       "score_components": {
@@ -10656,6 +10677,7 @@
       "agent_id": "AI-0007",
       "name": "Claude Code",
       "provider_id": "PROV-ANTHROPIC",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.4,
       "score_components": {
@@ -10775,6 +10797,7 @@
       "agent_id": "AI-0079",
       "name": "Amazon Bedrock AgentCore",
       "provider_id": "PROV-AWS",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.4,
       "score_components": {
@@ -10902,6 +10925,7 @@
       "agent_id": "AI-0040",
       "name": "Zendesk AI Agents",
       "provider_id": "PROV-ZENDESK",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.2,
       "score_components": {
@@ -11029,6 +11053,7 @@
       "agent_id": "AI-0057",
       "name": "Dust Agents",
       "provider_id": "PROV-DUST",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 27.2,
       "score_components": {
@@ -11136,6 +11161,7 @@
       "agent_id": "AI-0032",
       "name": "Glean Agents",
       "provider_id": "PROV-GLEAN",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 26.4,
       "score_components": {
@@ -11256,6 +11282,7 @@
       "agent_id": "AI-0081",
       "name": "Workato Agentic",
       "provider_id": "PROV-WORKATO",
+      "lifecycle_status": "active",
       "priority": "P2_maintain_or_deepen",
       "priority_score": 26.0,
       "score_components": {
@@ -11357,6 +11384,33 @@
           "suggested_query": "Workato Workato Agentic official documentation hosting self_hosted"
         }
       ]
+    },
+    {
+      "agent_id": "AI-0022",
+      "name": "Relay.app",
+      "provider_id": "PROV-RELAY-APP",
+      "lifecycle_status": "discontinued",
+      "priority": "P3_discontinued",
+      "priority_score": 0.0,
+      "score_components": {
+        "tier_base": 0.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 0.0,
+        "source_readiness": 0.0
+      },
+      "documented_fields": 0,
+      "unknown_fields": 25,
+      "coverage_pct": 0.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [],
+      "available_primary_sources": [
+        {
+          "title": "Relay.app – Shutdown notice",
+          "url": "https://relay.app/",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": []
     }
   ]
 }
