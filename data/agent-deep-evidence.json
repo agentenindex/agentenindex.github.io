@@ -359,6 +359,102 @@
             }
           ],
           "note": "Copilot supports regional processing/storage under GitHub Enterprise Cloud data-residency configurations."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "copilot_cloud_agent",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – Configure MCP servers for your repository",
+              "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers",
+              "note": "GitHub documents repository MCP server configuration that gives Copilot cloud agent access to external tools and data sources.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Copilot cloud agent can consume configured MCP servers."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "copilot_cloud_agent_management",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – REST API endpoints for Copilot cloud agent management",
+              "url": "https://docs.github.com/en/rest/copilot/copilot-coding-agent-management?apiVersion=2026-03-10",
+              "note": "GitHub exposes REST endpoints to manage Copilot cloud agent policies and repository access.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "GitHub provides REST APIs for cloud-agent administration."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "copilot_cloud_agent_execution",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – Configure the development environment",
+              "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment",
+              "note": "GitHub documents an ephemeral development environment powered by GitHub Actions and a default GitHub-hosted runner.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Copilot cloud agent uses a managed ephemeral GitHub Actions execution environment by default."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "github_enterprise_copilot_access",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – Enterprise accounts for Copilot Business",
+              "url": "https://docs.github.com/en/copilot/concepts/enterprise/about-enterprise-accounts-for-copilot-business",
+              "note": "GitHub documents optional SAML SSO for enterprise users with Copilot Business.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Enterprise Copilot access can be protected with SAML SSO."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "github_enterprise_managed_users_with_copilot",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – Enterprise accounts for Copilot Business",
+              "url": "https://docs.github.com/en/copilot/concepts/enterprise/about-enterprise-accounts-for-copilot-business",
+              "note": "GitHub documents provisioning Enterprise Managed Users from an identity provider using SCIM for Copilot Business access.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "SCIM provisioning is supported for Enterprise Managed Users with Copilot."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "github_enterprise_agent_management",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "GitHub Docs – Agent management for enterprises",
+              "url": "https://docs.github.com/en/copilot/concepts/enterprise/agent-management",
+              "note": "GitHub documents distinct enterprise-owner and AI-manager roles for controlling agent policies and enterprise custom agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Enterprise agent management is role-governed through GitHub owner and AI-manager permissions."
         }
       ]
     },
@@ -806,6 +902,134 @@
             }
           ],
           "note": "OpenTelemetry traces are documented for agent observability."
+        },
+        {
+          "path": "protocols.mcp.client",
+          "value": true,
+          "scope": "watsonx_orchestrate_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM Docs – Importing tools from an MCP server",
+              "url": "https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=servers-importing-from-mcp-server",
+              "note": "IBM documents importing local or remote MCP server tools into watsonx Orchestrate agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "watsonx Orchestrate agents can consume MCP server tools."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "watsonx_orchestrate_published_agents",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM API Hub – Agent-to-Agent (A2A) Protocol",
+              "url": "https://developer.ibm.com/apis/catalog/watsonorchestrate--custom-assistants/api/API--watsonorchestrate--agent-to-agent-a2a-protocol",
+              "note": "IBM exposes A2A discovery and agent-specific interaction endpoints for watsonx Orchestrate agents.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "Published watsonx Orchestrate agents expose authenticated A2A interaction endpoints."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "watsonx_orchestrate_platform_api",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM API Hub – watsonx Orchestrate API",
+              "url": "https://developer.ibm.com/apis/catalog/watsonorchestrate--custom-assistants/api/API--watsonorchestrate--ibm-watsonx-orchestrate-api",
+              "note": "IBM publishes REST-style watsonx Orchestrate API endpoints for agent management, execution, tools, workspaces and observability.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "watsonx Orchestrate has a documented programmatic HTTP API surface."
+        },
+        {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "watsonx_orchestrate_message_processing",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM Docs – Call a service before processing a message",
+              "url": "https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=message-calling-service-before-processing-watsonx-orchestrate",
+              "note": "IBM documents configurable pre-message webhooks that send HTTPS POST requests to external services.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "watsonx Orchestrate supports configurable message-processing webhooks."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "watsonx_orchestrate_saas",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM Docs – Regional availability and outbound IP addresses",
+              "url": "https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=notes-regional-availability-outbound-ip-addresses",
+              "note": "IBM documents watsonx Orchestrate as a managed SaaS offering on IBM Cloud and AWS regions.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "IBM offers watsonx Orchestrate as a managed SaaS service."
+        },
+        {
+          "path": "hosting.self_hosted",
+          "value": true,
+          "scope": "watsonx_orchestrate_on_premises",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM Docs – Installing watsonx Orchestrate on-premises",
+              "url": "https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=notes-installing-watsonx-orchestrate-premises",
+              "note": "IBM documents installation on IBM Software Hub or Cloud Pak for Data on customer infrastructure.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "watsonx Orchestrate supports customer-managed on-premises deployment."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "watsonx_orchestrate_saas",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM Docs – Regional availability and outbound IP addresses",
+              "url": "https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=notes-regional-availability-outbound-ip-addresses",
+              "note": "IBM states the SaaS service is deployed across multiple global regions to support data residency, performance and compliance needs.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Regional watsonx Orchestrate SaaS deployments support data-residency requirements."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "watsonx_orchestrate_ibm_cloud",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "IBM Docs – Logging in to watsonx Orchestrate",
+              "url": "https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=started-logging-in-watsonx-orchestrate",
+              "note": "IBM documents SSO login and references SAML federation with IBM Cloud IAM for the IBM Cloud offering.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "SAML-federated SSO is supported for the IBM Cloud deployment path."
         }
       ]
     },
@@ -1035,6 +1259,70 @@
             }
           ],
           "note": "OAuth 2.0 bearer-token authentication is documented for external agent invocation."
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "fusion_ai_agent_studio_26c",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Collaborate across platforms using A2A",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26c/aiaas/collaborate-with-ai-agents-across-platforms-using-agent2agent-a2a-protocol.html",
+              "note": "Oracle documents A2A as the standard mechanism for cross-platform collaboration between Fusion Applications agents and external agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Oracle AI Agent Studio supports A2A cross-platform agent interoperability."
+        },
+        {
+          "path": "protocols.a2a.client",
+          "value": true,
+          "scope": "fusion_ai_agent_studio_26c",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Collaborate across platforms using A2A",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26c/aiaas/collaborate-with-ai-agents-across-platforms-using-agent2agent-a2a-protocol.html",
+              "note": "Oracle's example states that an Oracle AI agent can reach out to a third-party agent using A2A.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Fusion Applications agents can call external A2A agents."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "fusion_ai_agent_studio_26c",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Docs – Collaborate across platforms using A2A",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26c/aiaas/collaborate-with-ai-agents-across-platforms-using-agent2agent-a2a-protocol.html",
+              "note": "Oracle documents third-party platforms calling Fusion Applications agents through authenticated A2A endpoints and Agent Cards.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Published Fusion Applications agents can be invoked by external A2A clients."
+        },
+        {
+          "path": "api.rest",
+          "value": true,
+          "scope": "external_agent_invocation",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Oracle Fusion AI – Enable applications to access Fusion Applications agents",
+              "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/access-agents-beyond-fusion.html",
+              "note": "Oracle documents the /invokeAsync API and points to Agent Team REST Endpoints for external agent invocation.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "External applications can invoke Fusion AI agent teams through documented REST endpoints."
         }
       ]
     },
@@ -1541,6 +1829,126 @@
             }
           ],
           "note": "Rovo actions are recorded in the Atlassian audit log with plan-dependent access."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "atlassian_org_users_accessing_rovo",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian Support – Configure SAML single sign-on",
+              "url": "https://support.atlassian.com/security-and-access-policies/docs/configure-saml-single-sign-on-with-an-identity-provider",
+              "note": "Atlassian documents SAML SSO for users logging in to Atlassian Cloud apps.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Atlassian – AI Trust",
+              "url": "https://www.atlassian.com/trust/ai",
+              "note": "Atlassian states Rovo inherits security practices from the Atlassian Cloud Platform.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Rovo user access inherits Atlassian organization SAML SSO controls."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "atlassian_org_users_accessing_rovo",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian Support – Understand user provisioning",
+              "url": "https://support.atlassian.com/provisioning-users/docs/understand-user-provisioning/",
+              "note": "Atlassian documents SCIM 2.0 provisioning for managed accounts and groups in Atlassian organizations.",
+              "evidence_type": "technical_docs"
+            },
+            {
+              "title": "Atlassian – AI Trust",
+              "url": "https://www.atlassian.com/trust/ai",
+              "note": "Atlassian states Rovo inherits security practices from the Atlassian Cloud Platform.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Rovo access can be governed through Atlassian organization SCIM provisioning."
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "rovo_organization_audit_events",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian Support – Audit log activities",
+              "url": "https://support.atlassian.com/security-and-access-policies/docs/accessing-audit-log-activities/",
+              "note": "Atlassian lists Rovo admin and user activity in organization audit logs.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "Atlassian Developer – Organizations REST API events",
+              "url": "https://developer.atlassian.com/cloud/admin/organization/rest/api-group-events/",
+              "note": "The Organizations REST API exposes paginated audit-log events through the events-stream endpoint.",
+              "evidence_type": "api_docs"
+            }
+          ],
+          "note": "Rovo audit activity is available through Atlassian organization audit-log APIs."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "rovo_customer_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian – Security Practices",
+              "url": "https://www.atlassian.com/trust/security/security-practices",
+              "note": "Atlassian explicitly includes Rovo among cloud products whose customer-data drives use AES-256 encryption at rest.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Rovo customer data is covered by Atlassian's AES-256 encryption-at-rest control."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS 1.2+",
+          "scope": "rovo_customer_data",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian – Security Practices",
+              "url": "https://www.atlassian.com/trust/security/security-practices",
+              "note": "Atlassian requires TLS 1.2 or higher for customer data in transit across Atlassian cloud products.",
+              "evidence_type": "security_trust"
+            },
+            {
+              "title": "Atlassian – AI Trust",
+              "url": "https://www.atlassian.com/trust/ai",
+              "note": "Atlassian states Rovo inherits Atlassian Cloud Platform security practices.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Rovo inherits Atlassian Cloud TLS 1.2+ transport encryption."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "rovo_and_atlassian_ai",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Atlassian Support – Rovo data, privacy, and usage guidelines",
+              "url": "https://support.atlassian.com/rovo/docs/rovo-data-privacy-and-usage-guidelines/",
+              "note": "Atlassian states Rovo and AI have completed external SOC 2 and ISO 27001 assessments/certifications.",
+              "evidence_type": "security_trust"
+            }
+          ],
+          "note": "Atlassian documents completed SOC 2 assessment for Rovo and AI."
         }
       ]
     },
@@ -1791,6 +2199,22 @@
             }
           ],
           "note": "Otto AI agent setup requires the documented Pro Plus or Enterprise entitlement."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "servicenow_otto_actions",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "ServiceNow – Otto",
+              "url": "https://www.servicenow.com/platform/otto.html",
+              "note": "ServiceNow states that every Otto action is logged and governed.",
+              "evidence_type": "official_product_page"
+            }
+          ],
+          "note": "ServiceNow explicitly documents action logging and governance for Otto."
         }
       ]
     },
@@ -2175,6 +2599,50 @@
             }
           ],
           "note": "ADK deployments on Agent Runtime support OpenTelemetry-based tracing."
+        },
+        {
+          "path": "hosting.private_network",
+          "value": true,
+          "scope": "adk_on_vertex_ai_agent_engine",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Vertex AI release notes",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
+              "note": "Google documents private VPC deployment with Private Service Connect for Vertex AI Agent Engine.",
+              "evidence_type": "official_release"
+            },
+            {
+              "title": "Google Agents CLI – Deployment",
+              "url": "https://google.github.io/agents-cli/guide/deployment/",
+              "note": "Google documents managed Agent Runtime as a deployment target for ADK agents.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ADK agents deployed on Vertex AI Agent Engine can use private VPC connectivity."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "adk_on_vertex_ai_agent_engine",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Google Cloud – Vertex AI release notes",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
+              "note": "Google documents customer-managed encryption key support for Vertex AI Agent Engine data at rest.",
+              "evidence_type": "official_release"
+            },
+            {
+              "title": "Google Agents CLI – Deployment",
+              "url": "https://google.github.io/agents-cli/guide/deployment/",
+              "note": "Google documents deployment of ADK agents to managed Agent Runtime.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "ADK agents deployed on Vertex AI Agent Engine can use CMEK for data-at-rest protection."
         }
       ]
     },
@@ -3427,6 +3895,22 @@
             }
           ],
           "note": "Monitoring access is explicitly privilege-gated."
+        },
+        {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "cortex_agent_activity",
+          "confidence": "high",
+          "verified_at": "2026-10-01",
+          "evidence": [
+            {
+              "title": "Snowflake Docs – Agent identity",
+              "url": "https://docs.snowflake.com/en/user-guide/agent-identity",
+              "note": "Snowflake carries agent identity into QUERY_HISTORY and ACCESS_HISTORY so Cortex Agent activity and accessed objects can be audited.",
+              "evidence_type": "technical_docs"
+            }
+          ],
+          "note": "Cortex Agent activity is represented in Snowflake audit/history views."
         }
       ]
     }
