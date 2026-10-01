@@ -2802,6 +2802,15 @@
         "profile.version": [
           "2.0"
         ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "ServiceNow Field Encryption for protected instance fields"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2"
+        ],
         "use_case": [
           "Mitarbeiterassistenz",
           "Serviceprozesse",
@@ -6654,6 +6663,9 @@
         "governance.rbac": [
           true
         ],
+        "hosting.managed": [
+          true
+        ],
         "identity.agent_identity": [
           true
         ],
@@ -6668,6 +6680,15 @@
         ],
         "profile.version": [
           "2.0"
+        ],
+        "protocols.a2a.server": [
+          true
+        ],
+        "protocols.a2a.supported": [
+          true
+        ],
+        "security.encryption.in_transit": [
+          "HTTPS/TLS"
         ],
         "use_case": [
           "Agenten-Inventar",

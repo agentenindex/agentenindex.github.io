@@ -26581,6 +26581,114 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-C5D3EBE703893A4D69",
+      "agent_id": "AI-0036",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-656F68A074D98B",
+          "SRC-AB0623B905B4E3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_platform_data_accessed_by_otto_where_cloud_encryption_is_licensed",
+        "note": "Where the relevant ServiceNow encryption option is licensed, platform data used by Otto can be protected with customer-managed/BYOK keys.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AB0623B905B4E3",
+            "note": "ServiceNow documents Key Management Framework and encryption-key controls for sensitive data used by AI agents and agentic workflows.",
+            "evidence_type": "security_trust"
+          },
+          {
+            "source_id": "SRC-656F68A074D98B",
+            "note": "ServiceNow documents customer-managed keys/BYOK for platform data, including customer rotation and key-withdrawal controls.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-4378EE2CC5607308D8",
+      "agent_id": "AI-0036",
+      "path": "security.encryption.at_rest",
+      "value": "ServiceNow Field Encryption for protected instance fields",
+      "value_hash": "8fa4256447592ba5",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AB0623B905B4E3"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "sensitive_instance_fields_accessed_by_otto_and_ai_agents",
+        "note": "Sensitive ServiceNow instance fields accessible to Otto/AI agents can be protected at rest with Field Encryption.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AB0623B905B4E3",
+            "note": "ServiceNow documents Field Encryption for sensitive data at rest and explicitly states AI agents require appropriate permissions to access encrypted fields; the same data-protection section includes ServiceNow Otto for Vault.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-CA237823EB8009027E",
+      "agent_id": "AI-0036",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2",
+      "value_hash": "a080d1f9d6a8ac35",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-7C49F326BB33FF"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "servicenow_otto_now_assist_ai_workloads",
+        "note": "ServiceNow documents TLS 1.2 transport protection for the AI workload path used by Otto/Now Assist capabilities.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-7C49F326BB33FF",
+            "note": "ServiceNow documents AI workloads being sent from the ServiceNow instance to compute hubs using TLS 1.2; the current page also uses ServiceNow Otto naming for affected AI features.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-37E62E68A1F3C256A3",
       "agent_id": "AI-0036",
       "path": "use_case",
@@ -62239,6 +62347,40 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-F62A9683F59241B072",
+      "agent_id": "AI-0091",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-AF02879EDE2698"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workday_agent_system_of_record",
+        "note": "ASOR is delivered and operated as part of the Workday platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-AF02879EDE2698",
+            "note": "Workday documents ASOR as a centralized Workday framework/control center for registering, configuring, monitoring, securing and auditing agents in Workday tenants.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-A1D65303B295A773C3",
       "agent_id": "AI-0091",
       "path": "identity.agent_identity",
@@ -62367,6 +62509,108 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-BD5791003070312947",
+      "agent_id": "AI-0091",
+      "path": "protocols.a2a.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8BF8CFF592BF16"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "workday_agents_managed_in_asor_exposed_via_agent_gateway",
+        "note": "Workday agents registered/managed through ASOR can be exposed to external A2A clients via Agent Gateway.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8BF8CFF592BF16",
+            "note": "Workday documents external A2A clients retrieving the Workday agent card and invoking Self-Service Agent through regional Agent Gateway A2A endpoints.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B2CAC822AFE8B28E75",
+      "agent_id": "AI-0091",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8BF8CFF592BF16"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "asor_registered_agents_and_workday_agent_gateway",
+        "note": "ASOR and Agent Gateway support A2A-based interoperability between registered external agents and Workday agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8BF8CFF592BF16",
+            "note": "Workday documents registering third-party agents in ASOR and enabling them to discover and call Workday Self-Service Agent through the industry A2A protocol.",
+            "evidence_type": "technical_docs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-1969F90653D4443F35",
+      "agent_id": "AI-0091",
+      "path": "security.encryption.in_transit",
+      "value": "HTTPS/TLS",
+      "value_hash": "f83b0a639ea8303a",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4427FC26D2DBEB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "asor_and_agent_gateway_api_traffic",
+        "note": "ASOR/Agent Gateway authentication and agent API traffic use HTTPS endpoints.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4427FC26D2DBEB",
+            "note": "Workday documents HTTPS authorization and OAuth token endpoints for Agent Gateway and routes requests to the tenant's Workday data center.",
+            "evidence_type": "security_trust"
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-3D033C062469797031",
