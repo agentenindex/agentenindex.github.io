@@ -411,6 +411,15 @@
         "protocols.mcp.client": [
           true
         ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "AES-256"
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2+"
+        ],
         "use_case": [
           "Bugs beheben",
           "Code verstehen",
@@ -1684,6 +1693,12 @@
         "protocols.mcp.client": [
           true
         ],
+        "security.customer_managed_key": [
+          true
+        ],
+        "security.encryption.at_rest": [
+          "Microsoft-managed keys by default"
+        ],
         "use_case": [
           "Business-Prozesse",
           "Customer Service",
@@ -1771,6 +1786,12 @@
       "claims": {
         "access.description": [
           "Oracle Fusion Applications / Enterprise-Angebot"
+        ],
+        "api.async": [
+          true
+        ],
+        "api.auth.oauth": [
+          true
         ],
         "audience": [
           "unternehmen"
@@ -1984,6 +2005,12 @@
         "identity.provider": [
           "Salesforce"
         ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
@@ -2059,7 +2086,13 @@
           "SAP-Geschäftskontext",
           "Unternehmensdaten und semantischer Kontext"
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
         "governance.mcp.control_tower_registration": [
+          true
+        ],
+        "governance.rbac": [
           true
         ],
         "identity.name": [
@@ -2391,6 +2424,9 @@
         "governance.ai_control_tower": [
           true
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
         "governance.observability": [
           true
         ],
@@ -2429,6 +2465,9 @@
         ],
         "protocols.mcp.server": [
           true
+        ],
+        "security.encryption.in_transit": [
+          "TLS 1.2"
         ],
         "use_case": [
           "Customer Service",
@@ -5276,6 +5315,9 @@
         "privacy.residency.available": [
           true
         ],
+        "privacy.residency.customer_region_selectable": [
+          true
+        ],
         "profile.depth": [
           "reference"
         ],
@@ -5609,6 +5651,9 @@
         "governance.ai_control_tower": [
           true
         ],
+        "governance.audit_logs.available": [
+          true
+        ],
         "governance.custom_roles": [
           true
         ],
@@ -5629,6 +5674,12 @@
         ],
         "identity.provider": [
           "Boomi"
+        ],
+        "privacy.residency.available": [
+          true
+        ],
+        "privacy.residency.region": [
+          "North America"
         ],
         "profile.depth": [
           "reference"

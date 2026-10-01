@@ -3801,6 +3801,120 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-41B2322F13A2C1454F",
+      "agent_id": "AI-0006",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-19AD79773D9CB0",
+          "SRC-E609C6C5D8929F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "chatgpt_enterprise_where_ekm_available",
+        "note": "Customer-managed encryption keys are available through OpenAI Enterprise Key Management where supported.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-19AD79773D9CB0",
+            "note": "OpenAI documents Enterprise Key Management for customers to manage their own encryption keys."
+          },
+          {
+            "source_id": "SRC-E609C6C5D8929F",
+            "note": "The enterprise admin guide lists Enterprise Key Management among security and compliance controls used with Codex/ChatGPT Enterprise."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-535E1D42789F47707E",
+      "agent_id": "AI-0006",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-19AD79773D9CB0",
+          "SRC-E42963E4596385"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "chatgpt_enterprise_including_codex",
+        "note": "Codex under ChatGPT Enterprise inherits the documented enterprise encryption controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-19AD79773D9CB0",
+            "note": "OpenAI documents AES-256 encryption at rest for business data."
+          },
+          {
+            "source_id": "SRC-E42963E4596385",
+            "note": "OpenAI states Codex supports ChatGPT Enterprise security features."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-83BD94BE1FB7316A40",
+      "agent_id": "AI-0006",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2+",
+      "value_hash": "9accd8f6178c5e97",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-19AD79773D9CB0",
+          "SRC-E42963E4596385"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "chatgpt_enterprise_including_codex",
+        "note": "Codex under ChatGPT Enterprise inherits the documented enterprise transport encryption controls.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-19AD79773D9CB0",
+            "note": "OpenAI documents TLS 1.2 or higher for business data in transit."
+          },
+          {
+            "source_id": "SRC-E42963E4596385",
+            "note": "OpenAI states Codex supports ChatGPT Enterprise security features."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-073DF71CF7C1C4EBD9",
       "agent_id": "AI-0006",
       "path": "use_case",
@@ -15330,6 +15444,72 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-6FF5CCCF102EFFD8D5",
+      "agent_id": "AI-0025",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-033BA2643054CB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "managed_power_platform_environments",
+        "note": "CMK is supported through the Power Platform implementation for Managed Environments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-033BA2643054CB",
+            "note": "Copilot Studio supports the Power Platform customer-managed key implementation for Managed Environments."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5239D0D2556BE7C700",
+      "agent_id": "AI-0025",
+      "path": "security.encryption.at_rest",
+      "value": "Microsoft-managed keys by default",
+      "value_hash": "7b6b049782bdba45",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-033BA2643054CB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "copilot_studio",
+        "note": "Copilot Studio encrypts stored customer data at rest by default.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-033BA2643054CB",
+            "note": "Microsoft documents that Copilot Studio customer data is encrypted at rest with Microsoft-managed keys by default."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3F68DDA0EA19A69B9D",
       "agent_id": "AI-0025",
       "path": "use_case",
@@ -16048,6 +16228,72 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-A5B06DB0EF42F1C9C5",
+      "agent_id": "AI-0027",
+      "path": "api.async",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4608610BB8397E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "external_agent_invocation",
+        "note": "External applications can invoke agent teams asynchronously.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4608610BB8397E",
+            "note": "Oracle documents external access to Fusion Applications agents through the /invokeAsync API."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-82D81A65DCEC538C6F",
+      "agent_id": "AI-0027",
+      "path": "api.auth.oauth",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4608610BB8397E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "external_agent_invocation",
+        "note": "OAuth 2.0 bearer-token authentication is documented for external agent invocation.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4608610BB8397E",
+            "note": "Oracle requires OCI/Fusion IAM authentication with an OAuth 2.0 bearer token for /invokeAsync."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-3315393CD2868AE307",
@@ -18150,6 +18396,77 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-04AC613ACD9194B36C",
+      "agent_id": "AI-0029",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8E588D19E97B3A",
+          "SRC-AF04092705685C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentforce_on_hyperforce_supported_regions",
+        "note": "Agentforce can use Hyperforce regional data-residency capabilities where available.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8E588D19E97B3A",
+            "note": "Salesforce documents Hyperforce data residency and regional storage/processing controls for the platform powering Agentforce."
+          },
+          {
+            "source_id": "SRC-AF04092705685C",
+            "note": "Salesforce explicitly documents local data residency for Agentforce on Hyperforce."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-19764BDFE48DE4A91F",
+      "agent_id": "AI-0029",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-8E588D19E97B3A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "hyperforce_supported_regions",
+        "note": "Hyperforce provides customer choice of supported geographic regions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-8E588D19E97B3A",
+            "note": "Salesforce states customers can choose the geographic region where Salesforce customer data is stored and processed."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D9FC18AEFC15E887A2",
       "agent_id": "AI-0029",
       "path": "profile.depth",
@@ -18885,6 +19202,39 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-AA369235289D6C6942",
+      "agent_id": "AI-0030",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-82DF3ABADCE2E7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "joule_studio_classic",
+        "note": "Joule Studio documents audit logging for product-specific events.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-82DF3ABADCE2E7",
+            "note": "SAP documents audit logging for Joule Studio, including configuration-change events."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-D0F62F91E50B1E05FA",
       "agent_id": "AI-0030",
       "path": "governance.mcp.control_tower_registration",
@@ -18906,6 +19256,39 @@
           {
             "source_id": "SRC-42713129796692",
             "note": "SAP requires MCP destinations to be created in BTP Cockpit and registered in the control tower before use by a Joule agent."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-92F03B306909069A5B",
+      "agent_id": "AI-0030",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0D0E268FCD3153"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "joule_studio_classic",
+        "note": "Joule Studio access is controlled through assigned roles and role collections.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0D0E268FCD3153",
+            "note": "SAP documents Joule Studio access through SAP BTP role collections, user groups, and permissions."
           }
         ]
       },
@@ -21857,6 +22240,39 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-E00E4DA7B319BC3CD7",
+      "agent_id": "AI-0035",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E76A095A834D43"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "now_assist_ai_agents",
+        "note": "Agent activity logs are documented for Now Assist AI agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E76A095A834D43",
+            "note": "ServiceNow documents AI Control Tower and detailed agent activity logs for auditable agent traceability."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-804E5BB42D48B8099D",
       "agent_id": "AI-0035",
       "path": "governance.observability",
@@ -22238,6 +22654,39 @@
           {
             "source_id": "SRC-E4F0C801C5696C",
             "note": "ServiceNow describes its generally available MCP Server exposing governed enterprise actions."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-B9962ABABF5BE2221A",
+      "agent_id": "AI-0035",
+      "path": "security.encryption.in_transit",
+      "value": "TLS 1.2",
+      "value_hash": "a080d1f9d6a8ac35",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CE05920DF822A6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "now_assist_ai_workloads",
+        "note": "Now Assist AI workloads use TLS 1.2 in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CE05920DF822A6",
+            "note": "ServiceNow documents TLS 1.2 for AI workloads sent from the instance to ServiceNow compute hubs."
           }
         ]
       },
@@ -48045,6 +48494,44 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-FA7BB52619FF0F3664",
+      "agent_id": "AI-0078",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B1E93A3C4A80C2",
+          "SRC-EE49FBB6802F20"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "foundry_agent_service_resource_region",
+        "note": "The customer selects the Azure region when creating the Foundry resource/endpoint, determining agent-data residency.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B1E93A3C4A80C2",
+            "note": "Agent Service stores state in the geography of the customer-created Azure OpenAI/Foundry resource."
+          },
+          {
+            "source_id": "SRC-EE49FBB6802F20",
+            "note": "Microsoft states Agent Service endpoints are regional and data is stored in the same region as the endpoint."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-8D2306DF9EE141BCE9",
       "agent_id": "AI-0078",
       "path": "profile.depth",
@@ -51201,6 +51688,39 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-083EB436C86368F428",
+      "agent_id": "AI-0082",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-723BFD77C97116"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "agentstudio_agent_sessions",
+        "note": "Agentstudio session actions are covered by documented audit trails.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-723BFD77C97116",
+            "note": "Boomi documents audit trails for actions related to agent sessions, including access records."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-97C76AE69385712AEB",
       "agent_id": "AI-0082",
       "path": "governance.custom_roles",
@@ -51412,6 +51932,72 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-DC97C5172F4B8FD8A0",
+      "agent_id": "AI-0082",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DD05127633DEA4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "boomi_ai_services",
+        "note": "Boomi documents data-residency controls for its AI services.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DD05127633DEA4",
+            "note": "Boomi documents data residency for AI services and regional containment."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-7CD03543545EE0B875",
+      "agent_id": "AI-0082",
+      "path": "privacy.residency.region",
+      "value": "North America",
+      "value_hash": "8551e40e221d69d4",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-DD05127633DEA4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-01",
+        "confidence": "high",
+        "scope": "boomi_agentstudio_and_agent_session_data",
+        "note": "Current Boomi documentation places Agentstudio and agent-session data in North American data centers.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-DD05127633DEA4",
+            "note": "Boomi states Agentstudio agents and agent session data operate within North American data centers and are not replicated outside those boundaries."
+          }
+        ]
+      },
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-86C696C00A01530625",
