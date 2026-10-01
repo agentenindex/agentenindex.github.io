@@ -28,6 +28,9 @@ jobs:
       - name: Validate AgentenGraph
         run: python .github/scripts/validate-agentengraph.py
 
+      - name: Test historical change tracking
+        run: python .github/scripts/test-agentengraph-history.py
+
       - name: Commit graph history
         run: |
           git config user.name "AgentenIndex"
