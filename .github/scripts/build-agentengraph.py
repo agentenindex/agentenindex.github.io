@@ -263,6 +263,7 @@ def main():
             "profile_url": f"https://agentenindex.de/agenten/{a['slug']}/",
             "last_verified": a.get("last_verified"),
             "profile_version": a.get("profile_version"),
+            "lifecycle_status": a.get("lifecycle_status", "active"),
             "active": True,
         })
     for p in providers.values():
@@ -615,11 +616,16 @@ def main():
         "P0_raise_existing_to_40pct": 80.0,
         "P1_start_zero_coverage": 60.0,
         "P2_maintain_or_deepen": 20.0,
+        "P3_discontinued": 0.0,
     }
     for aid in sorted(known_agent_ids):
         report = completeness_agents[aid]
         documented = report["documented_fields"]
-        if aid in deep_agent_ids and documented < target_documented_fields:
+        entity = entity_by_id.get(aid, {})
+        lifecycle_status = entity.get("lifecycle_status", "active")
+        if lifecycle_status == "discontinued":
+            tier = "P3_discontinued"
+        elif aid in deep_agent_ids and documented < target_documented_fields:
             tier = "P0_raise_existing_to_40pct"
         elif aid not in deep_agent_ids:
             tier = "P1_start_zero_coverage"
@@ -628,21 +634,26 @@ def main():
 
         unknown_paths = [path for path, state in report["states"].items() if state == "unknown"]
         unknown_paths.sort(key=lambda path: (field_documented_counts.get(path, 9999), path))
-        recommended_paths = unknown_paths[:8]
+        recommended_paths = [] if tier == "P3_discontinued" else unknown_paths[:8]
 
-        entity = entity_by_id.get(aid, {})
         provider = entity.get("provider") or ""
         name = entity.get("name") or aid
         source_hints = source_hints_by_agent.get(aid, [])[:8]
-        fields_needed = max(0, target_documented_fields - documented)
+        fields_needed = 0 if tier == "P3_discontinued" else max(0, target_documented_fields - documented)
 
-        gap_component = round((fields_needed / max(1, target_documented_fields)) * 10.0, 2)
-        unknown_component = round((report["unknown_fields"] / max(1, len(completeness_fields))) * 5.0, 2)
-        source_readiness_component = float(min(5, len(source_hints)))
-        priority_score = round(min(
-            100.0,
-            tier_base_score[tier] + gap_component + unknown_component + source_readiness_component,
-        ), 2)
+        if tier == "P3_discontinued":
+            gap_component = 0.0
+            unknown_component = 0.0
+            source_readiness_component = 0.0
+            priority_score = 0.0
+        else:
+            gap_component = round((fields_needed / max(1, target_documented_fields)) * 10.0, 2)
+            unknown_component = round((report["unknown_fields"] / max(1, len(completeness_fields))) * 5.0, 2)
+            source_readiness_component = float(min(5, len(source_hints)))
+            priority_score = round(min(
+                100.0,
+                tier_base_score[tier] + gap_component + unknown_component + source_readiness_component,
+            ), 2)
 
         research_hints = []
         for path in recommended_paths:
@@ -658,6 +669,7 @@ def main():
             "agent_id": aid,
             "name": entity.get("name"),
             "provider_id": entity.get("provider_id"),
+            "lifecycle_status": lifecycle_status,
             "priority": tier,
             "priority_score": priority_score,
             "score_components": {
@@ -675,7 +687,7 @@ def main():
             "research_hints": research_hints,
         })
 
-    priority_order = {"P0_raise_existing_to_40pct": 0, "P1_start_zero_coverage": 1, "P2_maintain_or_deepen": 2}
+    priority_order = {"P0_raise_existing_to_40pct": 0, "P1_start_zero_coverage": 1, "P2_maintain_or_deepen": 2, "P3_discontinued": 3}
     research_agents.sort(key=lambda item: (
         priority_order.get(item["priority"], 9),
         -item["priority_score"],
@@ -685,7 +697,7 @@ def main():
     research_priority = {
         "graph_version": GRAPH_VERSION,
         "as_of": as_of,
-        "principle": "Research priority ranks missing evidence only. Unknown is not false, and no product fact is inferred from priority.",
+        "principle": "Research priority ranks missing evidence only. Unknown is not false, no product fact is inferred from priority, and discontinued products are excluded from active research urgency.",
         "target": {
             "minimum_core_coverage_pct": 40,
             "minimum_documented_fields": target_documented_fields,
@@ -698,12 +710,13 @@ def main():
             "gap_to_40pct_max": 10,
             "unknown_share_max": 5,
             "source_readiness_max": 5,
-            "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified.",
+            "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified. Discontinued products receive priority score 0 and no active research hints.",
         },
         "summary": {
             "agents_below_target_with_deep_evidence": sum(1 for item in research_agents if item["priority"] == "P0_raise_existing_to_40pct"),
             "agents_without_deep_evidence": sum(1 for item in research_agents if item["priority"] == "P1_start_zero_coverage"),
             "agents_at_or_above_target": sum(1 for item in research_agents if item["priority"] == "P2_maintain_or_deepen"),
+            "agents_discontinued": sum(1 for item in research_agents if item["priority"] == "P3_discontinued"),
         },
         "field_priorities": field_priority,
         "agents": research_agents,
