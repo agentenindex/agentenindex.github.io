@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:54:00Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T05:54:51Z",
+  "open_count": 8,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -371,6 +371,44 @@
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
       "acknowledged_at": "2026-10-01T13:21:10Z",
       "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
+    },
+    {
+      "review_id": "REV-120CFE75424CAC2630",
+      "status": "open",
+      "first_detected": "2026-10-02T05:53:56Z",
+      "last_detected": "2026-10-02T05:53:56Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-01A94EF4AD89BD",
+      "source_title": "Microsoft GitHub – Agent Framework MCP examples",
+      "url": "https://github.com/microsoft/agent-framework/blob/main/python/samples/02-agents/mcp/README.md",
+      "agent_ids": [
+        "AI-0086"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/microsoft/agent-framework/blob/main/python/samples/02-agents/mcp/README.md",
+        "text_hash": "558fadb57f6ebd9230a2ddad6466b7659f97b6eac328a1ff3520614b6d6bcb99",
+        "simhash64": "42200c578bfd5f2b",
+        "token_count": 361,
+        "text_sample": "microsoft / agent-framework Public Notifications You must be signed in to change notification settings Fork 2.4k Star 13.9k Files Expand file tree main / README.md Copy path Blame More file actions Blame More file actions Latest commit History History History 37 lines (25 loc) · 2.6 KB main / README.md Copy path Top File metadata and controls Preview Code Blame 37 lines (25 loc) · 2.6 KB Raw Copy raw file Download raw file Outline Edit and raw actions MCP (Model Context Protocol) Examples This folder contains examples demonstrating how to work with MCP using Agent Framework. What is MCP? The Model Context Protocol (MCP) is an open standard for connecting AI agents to data sources and tools. It enables secure, controlled access to local and remote resources through a standardized protocol. Examples Sample File Description Agent as MCP Server agent_as_mcp_server.py Shows how to expose an Agent Framework agent as an MCP server that other AI applications can connect to API Key Authentication mcp_api_key_auth.py Demonstrates API key authentication with MCP servers using header_provider , runtime invocation kwargs, and a command-line API key argument GitHub Integration with PAT mcp_githu"
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://github.com/microsoft/agent-framework/blob/main/python/samples/02-agents/mcp/README.md",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-13BE2EDD5C4E5D6A03",
@@ -975,6 +1013,44 @@
       "reviewed_at": "2026-10-02T03:19:00Z"
     },
     {
+      "review_id": "REV-3F41050C78D8CEBAD1",
+      "status": "open",
+      "first_detected": "2026-10-02T05:54:29Z",
+      "last_detected": "2026-10-02T05:54:29Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-47DCD1D3FC47F4",
+      "source_title": "Google Gemini CLI – A2A server package",
+      "url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/package.json",
+      "agent_ids": [
+        "AI-0064"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/package.json",
+        "text_hash": "66bdcfc1ee2b909e8c88a499385ab6948ae2da6769aad9d3ff342835bc7070dd",
+        "simhash64": "3682c064eea7e402",
+        "token_count": 265,
+        "text_sample": "google-gemini / gemini-cli Public Notifications You must be signed in to change notification settings Fork 14.7k Star 107k Files Expand file tree main / package.json Copy path Blame More file actions Blame More file actions Latest commit History History History 52 lines (52 loc) · 1.3 KB main / package.json Copy path Top File metadata and controls Code Blame 52 lines (52 loc) · 1.3 KB Raw Copy raw file Download raw file Open symbols panel Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 { \"name\": \"@google/gemini-cli-a2a-server\", \"version\": \"0.64.0-nightly.20260929.gd75234cae\", \"description\": \"Gemini CLI A2A Server\", \"repository\": { \"type\": \"git\", \"url\": \"git+https://github.com/google-gemini/gemini-cli.git\", \"directory\": \"packages/a2a-server\" }, \"type\": \"module\", \"main\": \"dist/index.js\", \"bin\": { \"gemini-cli-a2a-server\": \"dist/a2a-server.mjs\" }, \"scripts\": { \"build\": \"node ../../scripts/build_package.js\", \"start\": \"node dist/src/http/server.js\", \"lint\": \"eslint . --ext .ts,.tsx\", \"format\": \"prettier --write .\", \"test\": \"vitest run\", \"test:ci\": \"vitest run --coverage"
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/package.json",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-41F2D92975C852C90F",
       "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:06:14Z",
@@ -1159,6 +1235,44 @@
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
       "acknowledged_at": "2026-10-02T04:51:05Z",
       "resolution": "Source is explicitly manual_only; automated availability review is not actionable."
+    },
+    {
+      "review_id": "REV-4FD360762AF33DA6D2",
+      "status": "open",
+      "first_detected": "2026-10-02T05:54:31Z",
+      "last_detected": "2026-10-02T05:54:31Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-4CAD5A15015563",
+      "source_title": "MicrosoftDocs GitHub – Foundry Agent Service",
+      "url": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/agents/overview.md",
+      "agent_ids": [
+        "AI-0078"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/agents/overview.md",
+        "text_hash": "c80798b6f2b4b986e74945a7035a07859f29309f897d217aa9b4a8efa13d446c",
+        "simhash64": "0fbb07daabadbb22",
+        "token_count": 2970,
+        "text_sample": "MicrosoftDocs / azure-ai-docs Public Notifications You must be signed in to change notification settings Fork 537 Star 182 Files Expand file tree main / overview.md Copy path Blame More file actions Blame More file actions Latest commit History History History 270 lines (190 loc) · 22.6 KB main / overview.md Copy path Top File metadata and controls Preview Code Blame 270 lines (190 loc) · 22.6 KB Raw Copy raw file Download raw file Outline Edit and raw actions title What is Microsoft Foundry Agent Service? description Learn about Microsoft Foundry Agent Service capabilities, agent types, tools, and runtime features for building AI agents. manager mcleans author aahill ms.author aahi ms.service microsoft-foundry ms.subservice foundry-agent-service ms.topic overview ms.date 09/25/2026 ms.custom azure-ai-agents, pilot-ai-workflow-jan-2026, doc-kit-assisted ai-usage ai-assisted keywords Foundry Agent Service AI agents agent orchestration tool calling content filters agent observability Hosted agents prompt agents Microsoft Foundry agent development lifecycle Agents in Microsoft Foundry Foundry Agent Service is a managed platform for building, deploying, and scaling AI agents. Build wit"
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/agents/overview.md",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-5177CDF329A3D642E2",
@@ -1446,6 +1560,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Kiro IDE page changed only marginally; the current content still supports the indexed agentic IDE capabilities and no indexed product fact changed.",
       "reviewed_at": "2026-10-01T16:38:00Z"
+    },
+    {
+      "review_id": "REV-59B27F06C14C38F7B8",
+      "status": "open",
+      "first_detected": "2026-10-02T05:54:12Z",
+      "last_detected": "2026-10-02T05:54:12Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-F7BDA7CBF9D4F7",
+      "source_title": "Slack Help – How to work with Slackbot",
+      "url": "https://slack.com/help/articles/202026038-How-to-work-with-Slackbot",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/help/articles/202026038-So-arbeitest-du-mit-Slackbot",
+        "text_hash": "77521d875a7adca58b6b1b19dcffb15e72befff9883aff779997fba310e61322",
+        "simhash64": "975b55ae5014eb02",
+        "token_count": 2118,
+        "text_sample": "Slack benutzen Von Channels bis hin zur Suche – erfahre genau, wie Slack funktioniert. Weiter Zurück Aktionen,Aktivität,Zugriffs-Logs,Barrierefreiheit,hinzufügen,App hinzufügen,Mitglieder hinzufügen,Zu Slack hinzufügen,Administratoren,alle Passwörter,Analytik,Android,Mitteilung,Mitteilungen,App-Verzeichnis,App-Symbol,Apple Watch,Apps genehmigen,archivieren,Asana,Atlassian,Automatisierungs-Apps,Badge,Rechnungsdaten,Rechnungsstellung,Bitbucket,Bot-Benutzer,Box,Durchsuchen,Anrufe,Anrufe:,abbrechen,Änderungen,Channels,Channel sofort,Channel-Management,Channel-Benachrichtigung,Channel-Vorschläge,Domains beanspruchen,schließen,Unternehmenskultur,Compliance-Exporte,verfassen,Computer,Unterhaltungen,konvertierenverbinden,verknüpfte Accounts,Verbindung,verbinden,Nachrichten kopieren,erstellen,Anpassung,anpassen,Benutzerdefinierte SAML,benutzerdefiniert,Kunden-Support-Teams,Datenexporte,Datensicherheit,deaktivieren,Standard-Channels,löschen,Löschung,Slack bereitstellen,Desktop,Direktnachrichten,Verzeichnis,deaktivieren,entdecken und beitreten,Ermittlungs-APIs,Anzeigename,DMs,Bitte nicht stören,Domain,Domains,Downgrade,Dropbox,doppelte Accounts,bearbeiten,Bearbeitung,Bildung,E-Mail-AdresseE-M"
+      },
+      "current": {
+        "status_code": 429,
+        "final_url": "https://slack.com/intl/de-de/help/articles/202026038-So-arbeitest-du-mit-Slackbot",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-5A56C2FCA586E63276",
@@ -2451,6 +2603,44 @@
       "reviewed_at": "2026-10-01T16:42:00Z"
     },
     {
+      "review_id": "REV-94DE871525D1121DDF",
+      "status": "open",
+      "first_detected": "2026-10-02T05:54:11Z",
+      "last_detected": "2026-10-02T05:54:11Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-1973745FC586F7",
+      "source_title": "MicrosoftDocs – Data agent as Model Context Protocol server",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/data-agent-mcp-server.md",
+      "agent_ids": [
+        "AI-0106"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/data-agent-mcp-server.md",
+        "text_hash": "695a704c095a27395b71f0b032a8d6ed061ceb69a763be1a09889db31c66a880",
+        "simhash64": "884dab65c224c434",
+        "token_count": 2229,
+        "text_sample": "MicrosoftDocs / fabric-docs Public Notifications You must be signed in to change notification settings Fork 13 Star 11 Files Expand file tree main / data-agent-mcp-server.md Copy path Blame More file actions Blame More file actions Latest commit History History History 222 lines (144 loc) · 15.2 KB main / data-agent-mcp-server.md Copy path Top File metadata and controls Preview Code Blame 222 lines (144 loc) · 15.2 KB Raw Copy raw file Download raw file Outline Edit and raw actions title Data agent as Model Context Protocol server description Learn how to consume a Fabric data agent through its Model Context Protocol endpoint. ms.author amjafari author amhjf ms.reviewer scottpolly reviewer s-polly ms.service fabric ms.subservice data-science ms.topic how-to ms.date 09/03/2026 ms.collection ce-skilling-ai-copilot Data agent as Model Context Protocol server The Model Context Protocol (MCP) is an emerging standard in the AI landscape that allows AI systems to connect with tools and data outside of themselves. It defines how an AI model can discover what's available and interact with it in a consistent way. Instead of building one-off integrations, MCP offers a standard way to plug thi"
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/data-agent-mcp-server.md",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-95E664B028E0749FC5",
       "status": "acknowledged",
       "first_detected": "2026-10-01T11:44:34Z",
@@ -2562,6 +2752,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Transient network timeout from Google Support. The official Gemini Apps work/school account page is currently reachable and still documents Workspace access and enterprise-grade data protections. No indexed product fact changed.",
       "reviewed_at": "2026-10-02T05:21:00Z"
+    },
+    {
+      "review_id": "REV-994B972CFBB626F929",
+      "status": "open",
+      "first_detected": "2026-10-02T05:54:24Z",
+      "last_detected": "2026-10-02T05:54:24Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-38583F3127037A",
+      "source_title": "Google Gemini CLI – A2A Development-Tool Extension RFC",
+      "url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/development-extension-rfc.md",
+      "agent_ids": [
+        "AI-0064"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/development-extension-rfc.md",
+        "text_hash": "f08ff0c7069fd79bb288dcdf2848ad4db97ae6c31699f4fcb7d39c76aafe627a",
+        "simhash64": "660e49e4f9de9921",
+        "token_count": 2565,
+        "text_sample": "google-gemini / gemini-cli Public Notifications You must be signed in to change notification settings Fork 14.7k Star 107k Files Expand file tree main / development-extension-rfc.md Copy path Blame More file actions Blame More file actions Latest commit History History History 509 lines (415 loc) · 17.9 KB main / development-extension-rfc.md Copy path Top File metadata and controls Preview Code Blame 509 lines (415 loc) · 17.9 KB Raw Copy raw file Download raw file Outline Edit and raw actions RFC: Gemini CLI A2A Development-Tool Extension 1. Introduction 1.1 Overview To standardize client integrations with the Gemini CLI agent, this document proposes the development-tool extension for the A2A protocol. Rather than creating a new protocol, this specification builds upon the existing A2A protocol. As an open-source standard recently adopted by the Linux Foundation, A2A provides a robust foundation for core concepts like tasks, messages, and streaming events. This extension-based approach allows us to leverage A2A's proven architecture while defining the specific capabilities required for rich, interactive workflows with the Gemini CLI agent. 1.2 Motivation Recent work integrating Ge"
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/development-extension-rfc.md",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-9B47DCE975C527BF77",
@@ -2720,6 +2948,44 @@
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
       "acknowledged_at": "2026-10-01T13:21:10Z",
       "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
+    },
+    {
+      "review_id": "REV-A8363314915B5BFACB",
+      "status": "open",
+      "first_detected": "2026-10-02T05:54:22Z",
+      "last_detected": "2026-10-02T05:54:22Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-34C5942A075D99",
+      "source_title": "Salesforce GitHub – Agent Platform Tracing",
+      "url": "https://github.com/salesforce/sf-pi/blob/main/extensions/sf-data360/references/agent-platform-tracing.md",
+      "agent_ids": [
+        "AI-0029"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/salesforce/sf-pi/blob/main/extensions/sf-data360/references/agent-platform-tracing.md",
+        "text_hash": "510e3af70c655d6944206cabb2c73e5c19f9eda5ee5f9d5c2cb0ff7e7a7aba49",
+        "simhash64": "cf876a478ab1d6ed",
+        "token_count": 1068,
+        "text_sample": "salesforce / sf-pi Public Notifications You must be signed in to change notification settings Fork 21 Star 95 Files Expand file tree main / agent-platform-tracing.md Copy path Blame More file actions Blame More file actions Latest commit History History History 241 lines (198 loc) · 9.46 KB main / agent-platform-tracing.md Copy path Top File metadata and controls Preview Code Blame 241 lines (198 loc) · 9.46 KB Raw Copy raw file Download raw file Outline Edit and raw actions Agent Platform Tracing Agent Platform Tracing captures backend execution for Agentforce activity as OpenTelemetry-style spans in Data Cloud. Use it when the question is about what happened inside an action path: LLM-step latency, action execution, Flow/Apex invocation, retriever/search spans, errors, and the parent-child trace tree for one transaction. Agent Platform Tracing is independent from Agentforce Session Tracing (STDM): STDM answers conversational questions: session, turn, user text, topic, agent response, and planner step I/O. Agent Platform Tracing answers backend execution questions: spans, operation names, service names, duration, status, and trace-tree shape. When both are enabled, join them with:"
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://github.com/salesforce/sf-pi/blob/main/extensions/sf-data360/references/agent-platform-tracing.md",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-A87CF1518304704FA4",
@@ -3374,6 +3640,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The current n8n AI Agents page still supports the indexed deployment, integration, and agent/workflow facts; observed page variants do not change an indexed product fact.",
       "reviewed_at": "2026-10-01T14:54:00Z"
+    },
+    {
+      "review_id": "REV-BA104B430AEFC6A4D0",
+      "status": "open",
+      "first_detected": "2026-10-02T05:54:40Z",
+      "last_detected": "2026-10-02T05:54:40Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-EA5DC9B988E482",
+      "source_title": "MicrosoftDocs GitHub – Fabric Data Agent",
+      "url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/how-to-create-data-agent.md",
+      "agent_ids": [
+        "AI-0106"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/how-to-create-data-agent.md",
+        "text_hash": "169288aa011c97241e8691a8ff32ed83467c1cce0266e806f6eb20a1d0d3b720",
+        "simhash64": "ae5e56c7abd5bafa",
+        "token_count": 3368,
+        "text_sample": "MicrosoftDocs / fabric-docs Public Notifications You must be signed in to change notification settings Fork 13 Star 11 Files Expand file tree main / how-to-create-data-agent.md Copy path Blame More file actions Blame More file actions Latest commit History History History 249 lines (143 loc) · 23.5 KB main / how-to-create-data-agent.md Copy path Top File metadata and controls Preview Code Blame 249 lines (143 loc) · 23.5 KB Raw Copy raw file Download raw file Outline Edit and raw actions title Create a Fabric data agent description Learn how to create a Fabric data agent. ms.author scottpolly author s-polly ms.reviewer amjafari ms.topic how-to ms.date 05/20/2026 ms.update-cycle 180-days ms.collection ce-skilling-ai-copilot ai-usage ai-assisted Create a Fabric data agent With a data agent in Microsoft Fabric, you can create conversational AI experiences that answer questions about data stored in lakehouses, warehouses, Power BI semantic models, KQL databases, ontologies, and Microsoft Graph in Fabric. Your colleagues can ask questions in plain English and receive data-driven answers, even if they aren't AI experts or deeply familiar with the data. [!INCLUDE data-agent-prerequisites "
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/how-to-create-data-agent.md",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-BACFDA33C59D1C7836",

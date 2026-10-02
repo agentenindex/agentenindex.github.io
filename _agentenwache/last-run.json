@@ -1,38 +1,84 @@
 {
   "name": "AgentenWache",
   "version": "1.0",
-  "started_at": "2026-10-02T05:51:36Z",
-  "finished_at": "2026-10-02T05:52:34Z",
+  "started_at": "2026-10-02T05:53:38Z",
+  "finished_at": "2026-10-02T05:54:51Z",
   "source_registry": "_agentengraph/sources.json",
   "active_sources": 734,
   "hosts": 171,
   "counts": {
-    "baseline": 1,
-    "changes": 2,
-    "fetched": 351,
-    "http_error": 23,
-    "manual_only": 27,
-    "not_modified": 331,
+    "changes": 8,
+    "fetched": 335,
+    "http_error": 31,
+    "manual_only": 28,
+    "not_modified": 338,
     "robots_disallowed": 2,
-    "severity_low": 1,
-    "severity_medium": 1
+    "severity_high": 8
   },
-  "open_review_items": 2,
+  "open_review_items": 8,
   "changes_this_run": [
     {
-      "source_id": "SRC-80E6B59FC42D95",
-      "type": "content_change",
-      "severity": "low",
+      "source_id": "SRC-F7BDA7CBF9D4F7",
+      "type": "status_change",
+      "severity": "high",
       "agents": [
-        "AI-0052"
+        "AI-0090"
       ]
     },
     {
-      "source_id": "SRC-FBAB1386BE7F79",
-      "type": "content_change",
-      "severity": "medium",
+      "source_id": "SRC-01A94EF4AD89BD",
+      "type": "status_change",
+      "severity": "high",
       "agents": [
-        "AI-0052"
+        "AI-0086"
+      ]
+    },
+    {
+      "source_id": "SRC-1973745FC586F7",
+      "type": "status_change",
+      "severity": "high",
+      "agents": [
+        "AI-0106"
+      ]
+    },
+    {
+      "source_id": "SRC-34C5942A075D99",
+      "type": "status_change",
+      "severity": "high",
+      "agents": [
+        "AI-0029"
+      ]
+    },
+    {
+      "source_id": "SRC-38583F3127037A",
+      "type": "status_change",
+      "severity": "high",
+      "agents": [
+        "AI-0064"
+      ]
+    },
+    {
+      "source_id": "SRC-47DCD1D3FC47F4",
+      "type": "status_change",
+      "severity": "high",
+      "agents": [
+        "AI-0064"
+      ]
+    },
+    {
+      "source_id": "SRC-4CAD5A15015563",
+      "type": "status_change",
+      "severity": "high",
+      "agents": [
+        "AI-0078"
+      ]
+    },
+    {
+      "source_id": "SRC-EA5DC9B988E482",
+      "type": "status_change",
+      "severity": "high",
+      "agents": [
+        "AI-0106"
       ]
     }
   ],
