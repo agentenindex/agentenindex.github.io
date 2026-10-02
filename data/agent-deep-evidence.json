@@ -8219,7 +8219,7 @@
           "evidence": [
             {
               "title": "Gorgias Help – View event logs for AI Agent Actions",
-              "url": "https://docs.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
+              "url": "https://helpcenter.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
               "note": "Gorgias documents per-action event logs whenever AI Agent makes an HTTP request to a connected app.",
               "evidence_type": "technical_docs",
               "source_section": "View an Action's event logs"
@@ -8708,14 +8708,14 @@
           "value": true,
           "scope": "salesforce_shield_platform_encryption",
           "confidence": "high",
-          "verified_at": "2026-10-01",
+          "verified_at": "2026-10-02",
           "evidence": [
             {
-              "title": "Salesforce Shield",
-              "url": "https://www.salesforce.com/platform/shield/",
-              "note": "Salesforce documents Platform Encryption with AES-256 field/file encryption at rest and customer-managed keys.",
-              "evidence_type": "security_trust",
-              "source_section": "Shield FAQ"
+              "title": "Salesforce Help – Customer Managed Key Options",
+              "url": "https://help.salesforce.com/s/articleView?id=xcloud.security_shield_pe_cmk_options.htm&language=en_US&type=5",
+              "note": "Salesforce documents customer-supplied and customer-managed key options for Shield Platform Encryption, including EKM, BYOK, and Cache-Only Keys.",
+              "evidence_type": "technical_docs",
+              "source_section": "Customer Managed Key Options"
             }
           ],
           "note": "Salesforce supports customer-managed encryption keys through Shield Platform Encryption."
@@ -16137,16 +16137,16 @@
           "scope": "slack_business_enterprise",
           "evidence": [
             {
-              "title": "Slack Help – Manage members with SCIM provisioning",
-              "url": "https://slack.com/help/articles/212572638-Manage-members-with-SCIM-provisioning/1000",
-              "note": "Slack documents SCIM-based member and group provisioning.",
-              "evidence_type": "technical_docs",
-              "source_section": "Manage members"
+              "title": "Slack Developer Docs – Using the SCIM API",
+              "url": "https://docs.slack.dev/admins/scim-api/",
+              "note": "Slack documents SCIM 1.1 and 2.0 for provisioning and managing users and groups on Business+ and Enterprise plans.",
+              "evidence_type": "api_docs",
+              "source_section": "Using the Slack SCIM API"
             }
           ],
-          "note": "Slack supports SCIM provisioning.",
+          "note": "Slack supports SCIM provisioning and management through its documented SCIM API.",
           "confidence": "high",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-02"
         },
         {
           "path": "governance.sso.saml",
