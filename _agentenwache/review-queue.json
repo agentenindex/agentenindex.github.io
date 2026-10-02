@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T04:01:27Z",
-  "open_count": 1,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -3979,7 +3979,7 @@
     },
     {
       "review_id": "REV-F8176852186C9A30CA",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:00:19Z",
       "last_detected": "2026-10-02T04:00:19Z",
       "occurrences": 1,
@@ -4017,7 +4017,9 @@
         "new_token_count": 186,
         "token_delta_pct": -20.85
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Salesforce's official SOC 2 page still lists the same reporting periods and still covers Agentforce & Einstein Platform. The detected difference is rendering/localization noise in table labels and tokenization; no indexed product or compliance fact changed.",
+      "reviewed_at": "2026-10-02T05:45:00+02:00"
     },
     {
       "review_id": "REV-FCE2FF2F1439740BD2",
