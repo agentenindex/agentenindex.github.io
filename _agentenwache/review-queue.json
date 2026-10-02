@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:45:16Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T03:48:14Z",
+  "open_count": 2,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -444,6 +444,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:26:37Z",
       "resolution": "Source is healthy again; technical recovery acknowledged without asserting a product change."
+    },
+    {
+      "review_id": "REV-1F96D0E35CD902E3AA",
+      "status": "open",
+      "first_detected": "2026-10-02T03:47:48Z",
+      "last_detected": "2026-10-02T03:47:48Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-BE0611954D92C0",
+      "source_title": "Slack Help – Data residency for Slack",
+      "url": "https://slack.com/help/articles/360035633934-Data-residency-for-Slack",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/help/articles/360035633934-Datenresidenz-f%C3%BCr-Slack",
+        "text_hash": "828a0b86bbb08a02c4ee50e7dba7bd6bff050d1c96ed91795e91eb95bccf3f19",
+        "simhash64": "1e25fe0b7b085851",
+        "token_count": 1132,
+        "text_sample": "Workspace-Management Du möchtest mehr darüber wissen, wie du dein Team einrichten kannst? Dann bist du hier richtig! Weiter Zurück Aktionen,Aktivität,Zugriffs-Logs,Barrierefreiheit,hinzufügen,App hinzufügen,Mitglieder hinzufügen,Zu Slack hinzufügen,Administratoren,alle Passwörter,Analytik,Android,Mitteilung,Mitteilungen,App-Verzeichnis,App-Symbol,Apple Watch,Apps genehmigen,archivieren,Asana,Atlassian,Automatisierungs-Apps,Badge,Rechnungsdaten,Rechnungsstellung,Bitbucket,Bot-Benutzer,Box,Durchsuchen,Anrufe,Anrufe:,abbrechen,Änderungen,Channels,Channel sofort,Channel-Management,Channel-Benachrichtigung,Channel-Vorschläge,Domains beanspruchen,schließen,Unternehmenskultur,Compliance-Exporte,verfassen,Computer,Unterhaltungen,konvertierenverbinden,verknüpfte Accounts,Verbindung,verbinden,Nachrichten kopieren,erstellen,Anpassung,anpassen,Benutzerdefinierte SAML,benutzerdefiniert,Kunden-Support-Teams,Datenexporte,Datensicherheit,deaktivieren,Standard-Channels,löschen,Löschung,Slack bereitstellen,Desktop,Direktnachrichten,Verzeichnis,deaktivieren,entdecken und beitreten,Ermittlungs-APIs,Anzeigename,DMs,Bitte nicht stören,Domain,Domains,Downgrade,Dropbox,doppelte Accounts,bearbeiten,Bearbei"
+      },
+      "current": {
+        "status_code": 429,
+        "final_url": "https://slack.com/intl/de-de/help/articles/360035633934-Datenresidenz-f%C3%BCr-Slack",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-204DFA87F15A057E4B",
@@ -1494,7 +1532,9 @@
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Reviewed the current Workday A2A administration guide. It still documents external agents discovering and invoking Workday Self-Service Agent through the Agent2Agent (A2A) protocol; the one-token change does not alter the indexed fact.",
-      "reviewed_at": "2026-10-02T03:27:00Z"
+      "reviewed_at": "2026-10-02T03:27:00Z",
+      "last_seen_after_review": "2026-10-02T03:47:14Z",
+      "suppressed_reoccurrences": 1
     },
     {
       "review_id": "REV-695A05C6DF4AD15A42",
@@ -1912,6 +1952,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Gemini CLI GitHub render changed repository activity metadata/commit count, not an indexed product fact.",
       "reviewed_at": "2026-10-02T03:19:00Z"
+    },
+    {
+      "review_id": "REV-8876244A06C0C20F34",
+      "status": "open",
+      "first_detected": "2026-10-02T03:47:24Z",
+      "last_detected": "2026-10-02T03:47:24Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-28DED1339B9460",
+      "source_title": "Snowflake Docs – Cross-region inference",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference",
+      "agent_ids": [
+        "AI-0105"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference",
+        "text_hash": "b1450bafc6e63d3aa3e43ea3f6cb586b528d6f55a603b241e8ca35642a966297",
+        "simhash64": "cad1b9be63474ff4",
+        "token_count": 1198,
+        "text_sample": "Cross-region inference ¶ Accessing frontier AI models and the full suite of Snowflake Cortex AI products requires cross-region inference. You choose the boundaries: route to any region for maximum access, or restrict to specific cloud providers and geographies. Snowflake Cortex AI supports cross-region inference across AWS, Azure, and GCP regions. You control the routing behavior through a single account-level parameter, CORTEX_ENABLED_CROSS_REGION , choosing the option that best fits your performance, compliance, and data residency requirements. How it works ¶ When cross-region inference is enabled, Snowflake automatically routes inference requests to available capacity within the bounds that you set. Your customer data remains stored only in the region where your account is located. During cross-region inference, the inference payload—the input prompt you send and the output response you receive—is transmitted transiently to the processing region for the duration of processing. Your customer data is not persisted in the processing region. Choosing a routing option ¶ Snowflake provides four routing options, from most flexible to most restrictive. Each option is a valid production "
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-8DD648536F4AAF1287",

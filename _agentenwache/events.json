@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:45:16Z",
+  "updated_at": "2026-10-02T03:48:14Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -2844,6 +2844,44 @@
         "current_result": "error"
       },
       "previous_checked_at": "2026-10-02T03:28:01Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-7465D0AA41090B71D5",
+      "detected_at": "2026-10-02T03:47:24Z",
+      "source_id": "SRC-28DED1339B9460",
+      "agent_ids": [
+        "AI-0105"
+      ],
+      "source_title": "Snowflake Docs – Cross-region inference",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference",
+      "change_type": "status_change",
+      "severity": "high",
+      "metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "previous_checked_at": "2026-10-02T03:44:26Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-2F13E97B9FE967498D",
+      "detected_at": "2026-10-02T03:47:48Z",
+      "source_id": "SRC-BE0611954D92C0",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack Help – Data residency for Slack",
+      "url": "https://slack.com/help/articles/360035633934-Data-residency-for-Slack",
+      "change_type": "status_change",
+      "severity": "high",
+      "metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "previous_checked_at": "2026-10-02T03:44:48Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
