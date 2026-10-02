@@ -10700,6 +10700,57 @@
       "agent_id": "AI-0060",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "grok_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI API – Enterprise controls",
+              "url": "https://x.ai/api",
+              "note": "SpaceXAI documents audit logging for enterprise Grok teams.",
+              "evidence_type": "api_docs",
+              "source_section": "SSO and audit logging"
+            }
+          ],
+          "note": "Grok Enterprise provides audit logging."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "grok_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "SpaceXAI explicitly lists Custom Role Based Access Control for Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise / Security & compliance"
+            }
+          ],
+          "note": "Grok Enterprise supports custom RBAC roles."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "grok_business_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "SpaceXAI lists role-based access control for Business/Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Security & compliance"
+            }
+          ],
+          "note": "Grok Business/Enterprise supports RBAC."
+        },
+        {
           "path": "governance.scim",
           "value": true,
           "scope": "grok_for_business",
@@ -10715,6 +10766,23 @@
             }
           ],
           "note": "Grok for Business supports SCIM."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "grok_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI API – Enterprise controls",
+              "url": "https://x.ai/api",
+              "note": "SpaceXAI explicitly documents SAML SSO for enterprise teams.",
+              "evidence_type": "api_docs",
+              "source_section": "Enterprise API controls / SSO and audit logging"
+            }
+          ],
+          "note": "Grok Enterprise supports SAML SSO."
         },
         {
           "path": "hosting.managed",
@@ -10749,6 +10817,40 @@
             }
           ],
           "note": "Grok for Business documents customer-controlled encryption keys."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "grok_enterprise_vault",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI – Grok Business and Enterprise",
+              "url": "https://x.ai/news/grok-business",
+              "note": "SpaceXAI states Enterprise Vault data is encrypted at rest under customer-controlled keys.",
+              "evidence_type": "official_release",
+              "source_section": "Ultimate privacy with Enterprise Vault"
+            }
+          ],
+          "note": "Grok Enterprise Vault documents encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "grok_enterprise_vault",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI – Grok Business and Enterprise",
+              "url": "https://x.ai/news/grok-business",
+              "note": "SpaceXAI states Enterprise Vault data is encrypted in transit.",
+              "evidence_type": "official_release",
+              "source_section": "Ultimate privacy with Enterprise Vault"
+            }
+          ],
+          "note": "Grok Enterprise Vault documents encryption in transit."
         },
         {
           "path": "security.soc2_type2",
@@ -15047,6 +15149,23 @@
           "note": "Kore.ai provides agent/platform audit logs."
         },
         {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "kore_ai_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Kore.ai – Agent Platform announcement",
+              "url": "https://www.kore.ai/news/kore-ai-announces-agent-platform-for-building-deploying-and-orchestrating-agentic-applications",
+              "note": "Kore.ai documents secure role-based access in the Agent Platform.",
+              "evidence_type": "official_release",
+              "source_section": "AI for Work / secure role-based access"
+            }
+          ],
+          "note": "Kore.ai Agent Platform supports role-based access."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "kore_ai_artemis_agent_platform",
@@ -15113,6 +15232,23 @@
             }
           ],
           "note": "Kore.ai Artemis supports regional data residency."
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "kore_ai_agent_platform_amp",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Kore.ai – Why enterprises need an Agent Management Platform",
+              "url": "https://www.kore.ai/blog/why-enterprises-need-agent-management-platform",
+              "note": "Kore.ai explicitly states agents communicate through A2A (Agent-to-Agent) protocols.",
+              "evidence_type": "official_release",
+              "source_section": "Agent Management Platform / interoperability"
+            }
+          ],
+          "note": "Kore.ai explicitly documents A2A protocol support."
         },
         {
           "path": "protocols.mcp.client",
@@ -15811,6 +15947,57 @@
       "agent_id": "AI-0088",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "grok_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI API – Enterprise controls",
+              "url": "https://x.ai/api",
+              "note": "SpaceXAI documents audit logging for enterprise Grok teams.",
+              "evidence_type": "api_docs",
+              "source_section": "SSO and audit logging"
+            }
+          ],
+          "note": "Grok Enterprise provides audit logging."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "grok_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "SpaceXAI explicitly lists Custom Role Based Access Control for Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Enterprise / Security & compliance"
+            }
+          ],
+          "note": "Grok Enterprise supports custom RBAC roles."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "grok_business_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI for Business",
+              "url": "https://x.ai/grok/business",
+              "note": "SpaceXAI lists role-based access control for Business/Enterprise.",
+              "evidence_type": "official_product_page",
+              "source_section": "Security & compliance"
+            }
+          ],
+          "note": "Grok Business/Enterprise supports RBAC."
+        },
+        {
           "path": "governance.scim",
           "value": true,
           "scope": "grok_for_business",
@@ -15826,6 +16013,23 @@
             }
           ],
           "note": "Grok for Business supports SCIM."
+        },
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "grok_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI API – Enterprise controls",
+              "url": "https://x.ai/api",
+              "note": "SpaceXAI explicitly documents SAML SSO for enterprise teams.",
+              "evidence_type": "api_docs",
+              "source_section": "Enterprise API controls / SSO and audit logging"
+            }
+          ],
+          "note": "Grok Enterprise supports SAML SSO."
         },
         {
           "path": "hosting.managed",
@@ -15860,6 +16064,40 @@
             }
           ],
           "note": "Grok for Business documents customer-controlled encryption keys."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "grok_enterprise_vault",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI – Grok Business and Enterprise",
+              "url": "https://x.ai/news/grok-business",
+              "note": "SpaceXAI states Enterprise Vault data is encrypted at rest under customer-controlled keys.",
+              "evidence_type": "official_release",
+              "source_section": "Ultimate privacy with Enterprise Vault"
+            }
+          ],
+          "note": "Grok Enterprise Vault documents encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "grok_enterprise_vault",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "SpaceXAI – Grok Business and Enterprise",
+              "url": "https://x.ai/news/grok-business",
+              "note": "SpaceXAI states Enterprise Vault data is encrypted in transit.",
+              "evidence_type": "official_release",
+              "source_section": "Ultimate privacy with Enterprise Vault"
+            }
+          ],
+          "note": "Grok Enterprise Vault documents encryption in transit."
         },
         {
           "path": "security.soc2_type2",
@@ -17318,6 +17556,23 @@
           "note": "Zoom provides role-based administrative access."
         },
         {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "zoom_account_including_zoommate",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Zoom Support – Configuring Zoom SSO with Microsoft Entra",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064121",
+              "note": "Zoom documents SCIM auto-provisioning for Zoom users through Microsoft Entra.",
+              "evidence_type": "technical_docs",
+              "source_section": "How to set up Auto Provisioning (SCIM)"
+            }
+          ],
+          "note": "Zoom supports SCIM provisioning."
+        },
+        {
           "path": "governance.sso.saml",
           "value": true,
           "scope": "zoom_account_including_zoommate",
@@ -17350,6 +17605,74 @@
             }
           ],
           "note": "ZoomMate is delivered as a managed Zoom service."
+        },
+        {
+          "path": "security.customer_managed_key",
+          "value": true,
+          "scope": "zoom_advanced_cmk",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Zoom Support – Advanced CMK Chat Encryption",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0082248",
+              "note": "Zoom documents customer-managed-key (CMK) options for advanced and client-side chat encryption.",
+              "evidence_type": "security_trust",
+              "source_section": "Advanced CMK Chat Encryption"
+            }
+          ],
+          "note": "Zoom supports customer-managed encryption keys for supported services."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "zoom_cloud_data",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Zoom Support – Advanced chat encryption",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065662",
+              "note": "Zoom states Chat messages stored in Zoom Cloud are encrypted at rest by default.",
+              "evidence_type": "security_trust",
+              "source_section": "Differences when advanced chat encryption is enabled and disabled"
+            }
+          ],
+          "note": "Zoom documents encryption at rest for cloud-stored chat data."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "zoom_cloud_communications",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Zoom Support – Advanced chat encryption",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065662",
+              "note": "Zoom states Chat messages are encrypted with TLS in transit between users and Zoom Cloud.",
+              "evidence_type": "security_trust",
+              "source_section": "Differences when advanced chat encryption is enabled and disabled"
+            }
+          ],
+          "note": "Zoom documents TLS encryption in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "zoom_communications_platform_including_ai_services",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Zoom – SOC 2 + HITRUST",
+              "url": "https://www.zoom.com/de/trust/legal-compliance/soc2-hitrust/",
+              "note": "Zoom documents a SOC 2 Type 2 + HITRUST attestation for the Zoom Communications Platform and its AI-related services.",
+              "evidence_type": "security_trust",
+              "source_section": "SOC 2 + HITRUST report"
+            }
+          ],
+          "note": "Zoom documents SOC 2 Type 2 coverage for its communications platform."
         }
       ]
     },
@@ -18188,6 +18511,23 @@
       "agent_id": "AI-0102",
       "claims": [
         {
+          "path": "api.webhooks",
+          "value": true,
+          "scope": "artisan_ava_custom_webhooks",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Artisan – Pricing",
+              "url": "https://www.artisan.co/pricing",
+              "note": "Artisan documents custom webhooks for Ava/Artisan integrations as part of its outbound platform.",
+              "evidence_type": "official_product_page",
+              "source_section": "FAQ / Which tools does Ava integrate with?"
+            }
+          ],
+          "note": "Artisan supports custom webhook integrations for Ava."
+        },
+        {
           "path": "governance.audit_logs.available",
           "value": true,
           "scope": "artisan_enterprise",
@@ -18271,6 +18611,40 @@
             }
           ],
           "note": "Ava is delivered as a managed Artisan service."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "artisan_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Artisan – Data Processing Agreement",
+              "url": "https://www.artisan.co/dpa",
+              "note": "Artisan states stored data is encrypted at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Technical and Organizational Measures / Transmission Control"
+            }
+          ],
+          "note": "Artisan documents encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "artisan_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Artisan – Data Processing Agreement",
+              "url": "https://www.artisan.co/dpa",
+              "note": "Artisan requires HTTPS/TLS encryption on login interfaces and customer sites.",
+              "evidence_type": "security_trust",
+              "source_section": "Technical and Organizational Measures / Transmission Control"
+            }
+          ],
+          "note": "Artisan documents encryption in transit."
         },
         {
           "path": "security.soc2_type2",
@@ -18895,6 +19269,23 @@
           "note": "Vincent uses role-based access control."
         },
         {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "vlex_platform_including_vincent",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "vLex – Integrations",
+              "url": "https://support.vlex.com/support-1/integrations",
+              "note": "vLex explicitly lists SAML among supported SSO options for enterprise identity services.",
+              "evidence_type": "technical_docs",
+              "source_section": "SSO Options"
+            }
+          ],
+          "note": "vLex supports SAML SSO."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "vlex_vincent_platform",
@@ -18978,6 +19369,23 @@
             }
           ],
           "note": "Vincent encrypts customer data in transit."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "vincent_ai",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "vLex – Ethical AI for Lawyers",
+              "url": "https://vlex.com/news/Ethical-AI-for-Lawyers",
+              "note": "vLex states Vincent is backed by SOC 2 Type II certification.",
+              "evidence_type": "security_trust",
+              "source_section": "Security: The Foundation of Ethical AI Use"
+            }
+          ],
+          "note": "Vincent AI is documented as SOC 2 Type II certified."
         }
       ]
     },
@@ -19034,6 +19442,40 @@
             }
           ],
           "note": "Lumi is delivered as a managed capability within Luminance's enterprise legal platform."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "luminance_hosted_customer_data",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Luminance – Master Hosted Terms",
+              "url": "https://www.luminance.com/legal/terms-conditions",
+              "note": "Luminance documents hosting Customer Data in selected AWS data centres with residency fixed to that regional data centre and backup region.",
+              "evidence_type": "security_trust",
+              "source_section": "Hosting Location / Security"
+            }
+          ],
+          "note": "Luminance supports regional data residency."
+        },
+        {
+          "path": "privacy.residency.customer_region_selectable",
+          "value": true,
+          "scope": "luminance_hosted_customer_data",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Luminance – Master Hosted Terms",
+              "url": "https://www.luminance.com/legal/terms-conditions",
+              "note": "Luminance states customers can choose which AWS data centre, subject to availability, hosts Customer Data.",
+              "evidence_type": "security_trust",
+              "source_section": "Hosting Location"
+            }
+          ],
+          "note": "Luminance customers can choose a supported AWS hosting region."
         },
         {
           "path": "security.encryption.at_rest",
