@@ -22,9 +22,9 @@
     "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified. Discontinued products receive priority score 0 and no active research hints."
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 33,
+    "agents_below_target_with_deep_evidence": 29,
     "agents_without_deep_evidence": 0,
-    "agents_at_or_above_target": 76,
+    "agents_at_or_above_target": 80,
     "agents_discontinued": 1
   },
   "field_priorities": [
@@ -42,9 +42,9 @@
     },
     {
       "path": "protocols.a2a.supported",
-      "documented_agents": 10,
-      "unknown_agents": 100,
-      "coverage_pct": 9.09
+      "documented_agents": 11,
+      "unknown_agents": 99,
+      "coverage_pct": 10.0
     },
     {
       "path": "protocols.mcp.server",
@@ -54,9 +54,9 @@
     },
     {
       "path": "api.webhooks",
-      "documented_agents": 15,
-      "unknown_agents": 95,
-      "coverage_pct": 13.64
+      "documented_agents": 16,
+      "unknown_agents": 94,
+      "coverage_pct": 14.55
     },
     {
       "path": "governance.sso.oidc",
@@ -84,21 +84,21 @@
     },
     {
       "path": "security.customer_managed_key",
-      "documented_agents": 27,
-      "unknown_agents": 83,
-      "coverage_pct": 24.55
-    },
-    {
-      "path": "governance.custom_roles",
-      "documented_agents": 30,
-      "unknown_agents": 80,
-      "coverage_pct": 27.27
+      "documented_agents": 28,
+      "unknown_agents": 82,
+      "coverage_pct": 25.45
     },
     {
       "path": "governance.audit_logs.siem_export",
       "documented_agents": 31,
       "unknown_agents": 79,
       "coverage_pct": 28.18
+    },
+    {
+      "path": "governance.custom_roles",
+      "documented_agents": 32,
+      "unknown_agents": 78,
+      "coverage_pct": 29.09
     },
     {
       "path": "hosting.self_hosted",
@@ -114,15 +114,15 @@
     },
     {
       "path": "governance.scim",
-      "documented_agents": 43,
-      "unknown_agents": 67,
-      "coverage_pct": 39.09
+      "documented_agents": 44,
+      "unknown_agents": 66,
+      "coverage_pct": 40.0
     },
     {
       "path": "privacy.residency.customer_region_selectable",
-      "documented_agents": 43,
-      "unknown_agents": 67,
-      "coverage_pct": 39.09
+      "documented_agents": 44,
+      "unknown_agents": 66,
+      "coverage_pct": 40.0
     },
     {
       "path": "protocols.mcp.client",
@@ -131,46 +131,46 @@
       "coverage_pct": 42.73
     },
     {
-      "path": "governance.sso.saml",
-      "documented_agents": 57,
-      "unknown_agents": 53,
-      "coverage_pct": 51.82
+      "path": "privacy.residency.available",
+      "documented_agents": 59,
+      "unknown_agents": 51,
+      "coverage_pct": 53.64
     },
     {
-      "path": "privacy.residency.available",
-      "documented_agents": 58,
-      "unknown_agents": 52,
-      "coverage_pct": 52.73
+      "path": "governance.sso.saml",
+      "documented_agents": 60,
+      "unknown_agents": 50,
+      "coverage_pct": 54.55
     },
     {
       "path": "security.encryption.in_transit",
-      "documented_agents": 63,
-      "unknown_agents": 47,
-      "coverage_pct": 57.27
-    },
-    {
-      "path": "security.encryption.at_rest",
-      "documented_agents": 65,
-      "unknown_agents": 45,
-      "coverage_pct": 59.09
+      "documented_agents": 67,
+      "unknown_agents": 43,
+      "coverage_pct": 60.91
     },
     {
       "path": "security.soc2_type2",
-      "documented_agents": 66,
-      "unknown_agents": 44,
-      "coverage_pct": 60.0
+      "documented_agents": 68,
+      "unknown_agents": 42,
+      "coverage_pct": 61.82
     },
     {
-      "path": "governance.rbac",
-      "documented_agents": 80,
-      "unknown_agents": 30,
-      "coverage_pct": 72.73
+      "path": "security.encryption.at_rest",
+      "documented_agents": 69,
+      "unknown_agents": 41,
+      "coverage_pct": 62.73
     },
     {
       "path": "governance.audit_logs.available",
-      "documented_agents": 81,
-      "unknown_agents": 29,
-      "coverage_pct": 73.64
+      "documented_agents": 83,
+      "unknown_agents": 27,
+      "coverage_pct": 75.45
+    },
+    {
+      "path": "governance.rbac",
+      "documented_agents": 83,
+      "unknown_agents": 27,
+      "coverage_pct": 75.45
     },
     {
       "path": "hosting.managed",
@@ -252,8 +252,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Google Gemini Deep Research official documentation protocols a2a supported"
         },
         {
@@ -264,8 +264,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Google Gemini Deep Research official documentation api webhooks"
         },
         {
@@ -348,8 +348,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "You.com You.com ARI official documentation protocols a2a supported"
         },
         {
@@ -360,8 +360,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "You.com You.com ARI official documentation api webhooks"
         },
         {
@@ -444,8 +444,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Qualified Qualified Piper official documentation protocols a2a supported"
         },
         {
@@ -456,8 +456,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Qualified Qualified Piper official documentation api webhooks"
         },
         {
@@ -564,8 +564,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Google Google Jules official documentation protocols a2a supported"
         },
         {
@@ -576,8 +576,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Google Google Jules official documentation api webhooks"
         },
         {
@@ -655,8 +655,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Google Gemini Spark official documentation protocols a2a supported"
         },
         {
@@ -667,8 +667,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Google Gemini Spark official documentation api webhooks"
         },
         {
@@ -752,8 +752,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "JetBrains JetBrains Junie official documentation protocols a2a supported"
         },
         {
@@ -764,8 +764,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "JetBrains JetBrains Junie official documentation api webhooks"
         },
         {
@@ -849,8 +849,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "AWS Strands Agents official documentation protocols a2a supported"
         },
         {
@@ -861,8 +861,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "AWS Strands Agents official documentation api webhooks"
         },
         {
@@ -935,8 +935,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Gumloop Gumball official documentation protocols a2a supported"
         },
         {
@@ -947,8 +947,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Gumloop Gumball official documentation api webhooks"
         },
         {
@@ -1021,8 +1021,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation protocols a2a supported"
         },
         {
@@ -1033,8 +1033,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Zendesk / Forethought Forethought AI Agents by Zendesk official documentation api webhooks"
         },
         {
@@ -1107,8 +1107,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Google NotebookLM Deep Research official documentation protocols a2a supported"
         },
         {
@@ -1119,8 +1119,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Google NotebookLM Deep Research official documentation api webhooks"
         },
         {
@@ -1193,8 +1193,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Consensus Consensus Research Agent official documentation protocols a2a supported"
         },
         {
@@ -1205,8 +1205,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Consensus Consensus Research Agent official documentation api webhooks"
         },
         {
@@ -1279,8 +1279,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Clay Claygent official documentation protocols a2a supported"
         },
         {
@@ -1291,8 +1291,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Clay Claygent official documentation api webhooks"
         },
         {
@@ -1377,8 +1377,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "OpenCode OpenCode official documentation protocols a2a supported"
         },
         {
@@ -1389,8 +1389,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "OpenCode OpenCode official documentation api webhooks"
         },
         {
@@ -1486,8 +1486,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "LexisNexis Lexis+ with Protégé official documentation protocols a2a supported"
         },
         {
@@ -1498,8 +1498,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "LexisNexis Lexis+ with Protégé official documentation api webhooks"
         },
         {
@@ -1582,8 +1582,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Rogo Rogo AI Analyst official documentation protocols a2a supported"
         },
         {
@@ -1594,8 +1594,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Rogo Rogo AI Analyst official documentation api webhooks"
         },
         {
@@ -1615,110 +1615,6 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "Rogo Rogo AI Analyst official documentation hosting private_network"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0096",
-      "name": "ZoomMate",
-      "provider_id": "PROV-ZOOM",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 93.0,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 5.0,
-        "unknown_share": 4.0,
-        "source_readiness": 4.0
-      },
-      "documented_fields": 5,
-      "unknown_fields": 20,
-      "coverage_pct": 20.0,
-      "fields_needed_for_40pct": 5,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Zoom Support – Admin Activity Logs",
-          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Zoom Support – Quick start guide for single sign-on (SSO)",
-          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060673",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Zoom Support – Using role management",
-          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064983",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Zoom – ZoomMate launch",
-          "url": "https://news.zoom.com/zoom-launches-zoommate/",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Zoom ZoomMate official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Zoom ZoomMate official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Zoom ZoomMate official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Zoom ZoomMate official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Zoom ZoomMate official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Zoom ZoomMate official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Zoom ZoomMate official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "Zoom ZoomMate official documentation hosting private_network"
         }
       ]
     },
@@ -1813,8 +1709,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Manus Manus Agent official documentation protocols a2a supported"
         },
         {
@@ -1928,8 +1824,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Google Gemini CLI official documentation api webhooks"
         },
         {
@@ -1958,8 +1854,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Google Gemini CLI official documentation security customer_managed_key"
         }
       ]
@@ -2020,8 +1916,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a supported"
         },
         {
@@ -2032,8 +1928,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Thomson Reuters CoCounsel Legal official documentation api webhooks"
         },
         {
@@ -2053,190 +1949,6 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "Thomson Reuters CoCounsel Legal official documentation hosting private_network"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0060",
-      "name": "Grok DeepSearch",
-      "provider_id": "PROV-XAI",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 92.2,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 6.0,
-        "unknown_share": 4.2,
-        "source_readiness": 2.0
-      },
-      "documented_fields": 4,
-      "unknown_fields": 21,
-      "coverage_pct": 16.0,
-      "fields_needed_for_40pct": 6,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "xAI – Grok 3 Beta: The Age of Reasoning Agents",
-          "url": "https://x.ai/news/grok-3",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "xAI – Grok for Business",
-          "url": "https://x.ai/grok/business",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "xAI Grok DeepSearch official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "xAI Grok DeepSearch official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "xAI Grok DeepSearch official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "xAI Grok DeepSearch official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "xAI Grok DeepSearch official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "xAI Grok DeepSearch official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "xAI Grok DeepSearch official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "xAI Grok DeepSearch official documentation hosting private_network"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0088",
-      "name": "Grok Bot",
-      "provider_id": "PROV-XAI",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 92.2,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 6.0,
-        "unknown_share": 4.2,
-        "source_readiness": 2.0
-      },
-      "documented_fields": 4,
-      "unknown_fields": 21,
-      "coverage_pct": 16.0,
-      "fields_needed_for_40pct": 6,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "xAI – Grok for Business",
-          "url": "https://x.ai/grok/business",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        },
-        {
-          "title": "xAI – Introducing Grok Bot",
-          "url": "https://x.ai/news/introducing-grok-bot",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "xAI Grok Bot official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "xAI Grok Bot official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "xAI Grok Bot official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "xAI Grok Bot official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "xAI Grok Bot official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "xAI Grok Bot official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "xAI Grok Bot official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "xAI Grok Bot official documentation hosting private_network"
         }
       ]
     },
@@ -2318,8 +2030,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "11x 11x Alice official documentation protocols a2a supported"
         },
         {
@@ -2416,8 +2128,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Decagon Decagon AI Concierge official documentation protocols a2a supported"
         },
         {
@@ -2428,8 +2140,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Decagon Decagon AI Concierge official documentation api webhooks"
         },
         {
@@ -2449,104 +2161,6 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "Decagon Decagon AI Concierge official documentation hosting private_network"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0102",
-      "name": "Artisan Ava",
-      "provider_id": "PROV-ARTISAN",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 90.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 4.0,
-        "unknown_share": 3.8,
-        "source_readiness": 3.0
-      },
-      "documented_fields": 6,
-      "unknown_fields": 19,
-      "coverage_pct": 24.0,
-      "fields_needed_for_40pct": 4,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Artisan – Ava 2.0",
-          "url": "https://www.artisan.co/blog/artisan-launches-ava-2-0-first-autonomous-ai-bdr",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "Artisan – Official Site",
-          "url": "https://www.artisan.co/",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        },
-        {
-          "title": "Artisan – Pricing",
-          "url": "https://www.artisan.co/pricing",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Artisan Artisan Ava official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Artisan Artisan Ava official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Artisan Artisan Ava official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "Artisan Artisan Ava official documentation hosting private_network"
         }
       ]
     },
@@ -2629,8 +2243,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "OpenHands OpenHands official documentation protocols a2a supported"
         },
         {
@@ -2641,8 +2255,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "OpenHands OpenHands official documentation api webhooks"
         },
         {
@@ -2662,98 +2276,6 @@
           "documented_agents": 24,
           "global_coverage_pct": 21.82,
           "suggested_query": "OpenHands OpenHands official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0109",
-      "name": "Luminance Agent Lumi",
-      "provider_id": "PROV-LUMINANCE",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 89.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 4.0,
-        "unknown_share": 3.8,
-        "source_readiness": 2.0
-      },
-      "documented_fields": 6,
-      "unknown_fields": 19,
-      "coverage_pct": 24.0,
-      "fields_needed_for_40pct": 4,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Luminance – Legal",
-          "url": "https://www.luminance.com/solutions/legal/",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        },
-        {
-          "title": "Luminance – Security",
-          "url": "https://www.luminance.com/security",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "Luminance Luminance Agent Lumi official documentation hosting private_network"
         }
       ]
     },
@@ -2825,8 +2347,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Perplexity Perplexity Deep Research official documentation protocols a2a supported"
         },
         {
@@ -2837,8 +2359,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Perplexity Perplexity Deep Research official documentation api webhooks"
         },
         {
@@ -2929,8 +2451,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Perplexity Perplexity Comet Assistant official documentation protocols a2a supported"
         },
         {
@@ -2941,8 +2463,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Perplexity Perplexity Comet Assistant official documentation api webhooks"
         },
         {
@@ -2962,108 +2484,6 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "Perplexity Perplexity Comet Assistant official documentation hosting private_network"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0108",
-      "name": "Vincent AI",
-      "provider_id": "PROV-VLEX",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 89.4,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 2.0,
-        "unknown_share": 3.4,
-        "source_readiness": 4.0
-      },
-      "documented_fields": 8,
-      "unknown_fields": 17,
-      "coverage_pct": 32.0,
-      "fields_needed_for_40pct": 2,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "hosting.private_network",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "vLex – Core Security Measures",
-          "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "vLex – Technical & Infrastructure Security",
-          "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-technical-and-infrastructure-security",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "vLex – Vincent",
-          "url": "https://law.vlex.com/vincent",
-          "origin": "profile_source"
-        },
-        {
-          "title": "vLex – Vincent features",
-          "url": "https://knowledge.vlex.com/en/features/vincent/find-related-documents",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "vLex Vincent AI official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "vLex Vincent AI official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "vLex Vincent AI official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "vLex Vincent AI official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "vLex Vincent AI official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "vLex Vincent AI official documentation governance sso oidc"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "vLex Vincent AI official documentation hosting private_network"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 24,
-          "global_coverage_pct": 21.82,
-          "suggested_query": "vLex Vincent AI official documentation governance audit_logs api"
         }
       ]
     },
@@ -3152,8 +2572,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Qodo Qodo Git official documentation protocols a2a supported"
         },
         {
@@ -3164,8 +2584,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Qodo Qodo Git official documentation api webhooks"
         },
         {
@@ -3244,8 +2664,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Elicit Elicit Research Agent official documentation protocols a2a supported"
         },
         {
@@ -3256,8 +2676,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Elicit Elicit Research Agent official documentation api webhooks"
         },
         {
@@ -3277,98 +2697,6 @@
           "documented_agents": 24,
           "global_coverage_pct": 21.82,
           "suggested_query": "Elicit Elicit Research Agent official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0083",
-      "name": "Kore.ai Agent Platform",
-      "provider_id": "PROV-KORE-AI",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 88.6,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 3.0,
-        "unknown_share": 3.6,
-        "source_readiness": 2.0
-      },
-      "documented_fields": 7,
-      "unknown_fields": 18,
-      "coverage_pct": 28.0,
-      "fields_needed_for_40pct": 3,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Kore.ai – Artemis Agent Platform launch",
-          "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "Kore.ai – Introducing Agent Blueprint Language (ABL)",
-          "url": "https://www.kore.ai/blog/introducing-agent-blueprint-language-abl",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 24,
-          "global_coverage_pct": 21.82,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs api"
         }
       ]
     },
@@ -3433,8 +2761,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Sierra Sierra Agent official documentation protocols a2a supported"
         },
         {
@@ -3445,8 +2773,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Sierra Sierra Agent official documentation api webhooks"
         },
         {
@@ -3466,6 +2794,312 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "Sierra Sierra Agent official documentation hosting private_network"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0109",
+      "name": "Luminance Agent Lumi",
+      "provider_id": "PROV-LUMINANCE",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 88.4,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 2.0,
+        "unknown_share": 3.4,
+        "source_readiness": 3.0
+      },
+      "documented_fields": 8,
+      "unknown_fields": 17,
+      "coverage_pct": 32.0,
+      "fields_needed_for_40pct": 2,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Luminance – Legal",
+          "url": "https://www.luminance.com/solutions/legal/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "Luminance – Master Hosted Terms",
+          "url": "https://www.luminance.com/legal/terms-conditions",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Luminance – Security",
+          "url": "https://www.luminance.com/security",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "Luminance Luminance Agent Lumi official documentation hosting private_network"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0083",
+      "name": "Kore.ai Agent Platform",
+      "provider_id": "PROV-KORE-AI",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 88.2,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 1.0,
+        "unknown_share": 3.2,
+        "source_readiness": 4.0
+      },
+      "documented_fields": 9,
+      "unknown_fields": 16,
+      "coverage_pct": 36.0,
+      "fields_needed_for_40pct": 1,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "governance.audit_logs.api",
+        "security.customer_managed_key"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Kore.ai – Agent Platform announcement",
+          "url": "https://www.kore.ai/news/kore-ai-announces-agent-platform-for-building-deploying-and-orchestrating-agentic-applications",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Kore.ai – Artemis Agent Platform launch",
+          "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Kore.ai – Introducing Agent Blueprint Language (ABL)",
+          "url": "https://www.kore.ai/blog/introducing-agent-blueprint-language-abl",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Kore.ai – Why enterprises need an Agent Management Platform",
+          "url": "https://www.kore.ai/blog/why-enterprises-need-agent-management-platform",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 24,
+          "global_coverage_pct": 21.82,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs api"
+        },
+        {
+          "path": "security.customer_managed_key",
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation security customer_managed_key"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0102",
+      "name": "Artisan Ava",
+      "provider_id": "PROV-ARTISAN",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 88.2,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 1.0,
+        "unknown_share": 3.2,
+        "source_readiness": 4.0
+      },
+      "documented_fields": 9,
+      "unknown_fields": 16,
+      "coverage_pct": 36.0,
+      "fields_needed_for_40pct": 1,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Artisan – Ava 2.0",
+          "url": "https://www.artisan.co/blog/artisan-launches-ava-2-0-first-autonomous-ai-bdr",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Artisan – Data Processing Agreement",
+          "url": "https://www.artisan.co/dpa",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Artisan – Official Site",
+          "url": "https://www.artisan.co/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "Artisan – Pricing",
+          "url": "https://www.artisan.co/pricing",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Artisan Artisan Ava official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Artisan Artisan Ava official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "Artisan Artisan Ava official documentation hosting private_network"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 24,
+          "global_coverage_pct": 21.82,
+          "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs api"
         }
       ]
     },
@@ -3561,8 +3195,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Anthropic Claude Research official documentation protocols a2a supported"
         },
         {
@@ -3573,8 +3207,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Anthropic Claude Research official documentation api webhooks"
         },
         {
@@ -3689,8 +3323,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation protocols a2a supported"
         },
         {
@@ -3701,8 +3335,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation api webhooks"
         },
         {
@@ -3719,8 +3353,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Microsoft Microsoft Copilot Researcher official documentation security customer_managed_key"
         }
       ]
@@ -3817,8 +3451,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "GitHub GitHub Copilot Coding Agent official documentation protocols a2a supported"
         },
         {
@@ -3829,8 +3463,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "GitHub GitHub Copilot Coding Agent official documentation api webhooks"
         },
         {
@@ -3926,8 +3560,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Windsurf Windsurf Cascade official documentation protocols a2a supported"
         },
         {
@@ -3938,8 +3572,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Windsurf Windsurf Cascade official documentation api webhooks"
         },
         {
@@ -4054,8 +3688,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "AWS Amazon Q Developer official documentation protocols a2a supported"
         },
         {
@@ -4066,8 +3700,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "AWS Amazon Q Developer official documentation api webhooks"
         },
         {
@@ -4181,8 +3815,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "AWS Kiro official documentation protocols a2a supported"
         },
         {
@@ -4193,8 +3827,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "AWS Kiro official documentation api webhooks"
         },
         {
@@ -4302,8 +3936,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Cline Cline official documentation protocols a2a supported"
         },
         {
@@ -4314,8 +3948,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Cline Cline official documentation api webhooks"
         },
         {
@@ -4332,8 +3966,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Cline Cline official documentation security customer_managed_key"
         }
       ]
@@ -4430,8 +4064,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "n8n n8n Agents official documentation protocols a2a supported"
         },
         {
@@ -4454,8 +4088,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "n8n n8n Agents official documentation security customer_managed_key"
         },
         {
@@ -4557,8 +4191,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Zapier AI by Zapier (ehemals Zapier Agents) official documentation protocols a2a supported"
         },
         {
@@ -4569,8 +4203,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Zapier AI by Zapier (ehemals Zapier Agents) official documentation api webhooks"
         },
         {
@@ -4678,8 +4312,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Lindy Lindy official documentation protocols a2a supported"
         },
         {
@@ -4798,8 +4432,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Gumloop Gumloop Agents official documentation protocols a2a supported"
         },
         {
@@ -4828,8 +4462,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Gumloop Gumloop Agents official documentation security customer_managed_key"
         }
       ]
@@ -4926,8 +4560,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Microsoft Microsoft Copilot Studio official documentation protocols a2a supported"
         },
         {
@@ -4938,8 +4572,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Microsoft Microsoft Copilot Studio official documentation api webhooks"
         },
         {
@@ -4987,7 +4621,7 @@
         "hosting.private_network",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.custom_roles"
+        "governance.audit_logs.siem_export"
       ],
       "available_primary_sources": [
         {
@@ -5078,15 +4712,15 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "IBM IBM watsonx Orchestrate official documentation security customer_managed_key"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "IBM IBM watsonx Orchestrate official documentation governance custom_roles"
+          "path": "governance.audit_logs.siem_export",
+          "documented_agents": 31,
+          "global_coverage_pct": 28.18,
+          "suggested_query": "IBM IBM watsonx Orchestrate official documentation governance audit_logs siem_export"
         }
       ]
     },
@@ -5176,8 +4810,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Oracle Oracle AI Agent Studio official documentation api webhooks"
         },
         {
@@ -5206,8 +4840,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Oracle Oracle AI Agent Studio official documentation security customer_managed_key"
         },
         {
@@ -5243,7 +4877,7 @@
         "api.webhooks",
         "governance.sso.oidc",
         "hosting.private_network",
-        "governance.custom_roles"
+        "governance.audit_logs.siem_export"
       ],
       "available_primary_sources": [
         {
@@ -5310,8 +4944,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "UiPath UiPath Agents official documentation protocols a2a supported"
         },
         {
@@ -5322,8 +4956,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "UiPath UiPath Agents official documentation api webhooks"
         },
         {
@@ -5339,10 +4973,10 @@
           "suggested_query": "UiPath UiPath Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "UiPath UiPath Agents official documentation governance custom_roles"
+          "path": "governance.audit_logs.siem_export",
+          "documented_agents": 31,
+          "global_coverage_pct": 28.18,
+          "suggested_query": "UiPath UiPath Agents official documentation governance audit_logs siem_export"
         }
       ]
     },
@@ -5438,8 +5072,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Salesforce Salesforce Agentforce official documentation protocols a2a supported"
         },
         {
@@ -5450,8 +5084,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Salesforce Salesforce Agentforce official documentation api webhooks"
         },
         {
@@ -5572,8 +5206,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "SAP SAP Joule Agents official documentation api webhooks"
         },
         {
@@ -5596,8 +5230,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "SAP SAP Joule Agents official documentation security customer_managed_key"
         }
       ]
@@ -5682,8 +5316,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Notion Notion Agent official documentation protocols a2a supported"
         },
         {
@@ -5694,8 +5328,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Notion Notion Agent official documentation api webhooks"
         },
         {
@@ -5803,8 +5437,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Notion Notion Custom Agents official documentation protocols a2a supported"
         },
         {
@@ -5815,8 +5449,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Notion Notion Custom Agents official documentation api webhooks"
         },
         {
@@ -5862,8 +5496,8 @@
         "governance.audit_logs.retention_days",
         "hosting.private_network",
         "governance.audit_logs.api",
-        "governance.custom_roles",
         "governance.audit_logs.siem_export",
+        "governance.custom_roles",
         "hosting.self_hosted"
       ],
       "available_primary_sources": [
@@ -5919,8 +5553,8 @@
       "research_hints": [
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation api webhooks"
         },
         {
@@ -5948,16 +5582,16 @@
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance audit_logs api"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance custom_roles"
-        },
-        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance audit_logs siem_export"
+        },
+        {
+          "path": "governance.custom_roles",
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
+          "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance custom_roles"
         },
         {
           "path": "hosting.self_hosted",
@@ -6059,8 +5693,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "ServiceNow ServiceNow Otto official documentation protocols a2a supported"
         },
         {
@@ -6071,8 +5705,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "ServiceNow ServiceNow Otto official documentation api webhooks"
         },
         {
@@ -6089,8 +5723,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
           "suggested_query": "ServiceNow ServiceNow Otto official documentation governance custom_roles"
         }
       ]
@@ -6187,8 +5821,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation protocols a2a supported"
         },
         {
@@ -6199,8 +5833,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation api webhooks"
         },
         {
@@ -6217,8 +5851,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Microsoft Microsoft Copilot Analyst official documentation security customer_managed_key"
         }
       ]
@@ -6308,8 +5942,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Perplexity Perplexity Computer official documentation protocols a2a supported"
         },
         {
@@ -6320,8 +5954,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Perplexity Perplexity Computer official documentation api webhooks"
         },
         {
@@ -6436,8 +6070,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Gorgias Gorgias AI Agent official documentation protocols a2a supported"
         },
         {
@@ -6448,8 +6082,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Gorgias Gorgias AI Agent official documentation api webhooks"
         },
         {
@@ -6466,8 +6100,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Gorgias Gorgias AI Agent official documentation security customer_managed_key"
         }
       ]
@@ -6564,8 +6198,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Salesforce Salesforce Prospecting Agent official documentation protocols a2a supported"
         },
         {
@@ -6576,8 +6210,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Salesforce Salesforce Prospecting Agent official documentation api webhooks"
         },
         {
@@ -6692,8 +6326,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Anthropic Claude Cowork official documentation protocols a2a supported"
         },
         {
@@ -6704,8 +6338,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Anthropic Claude Cowork official documentation api webhooks"
         },
         {
@@ -6820,8 +6454,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Browser Use Browser Use Agent official documentation protocols a2a supported"
         },
         {
@@ -6850,8 +6484,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Browser Use Browser Use Agent official documentation security customer_managed_key"
         }
       ]
@@ -6948,14 +6582,14 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "GitLab GitLab Duo Agent Platform official documentation protocols a2a supported"
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "GitLab GitLab Duo Agent Platform official documentation api webhooks"
         },
         {
@@ -6978,8 +6612,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "GitLab GitLab Duo Agent Platform official documentation security customer_managed_key"
         }
       ]
@@ -7076,8 +6710,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Mistral AI Mistral Vibe Code official documentation protocols a2a supported"
         },
         {
@@ -7088,8 +6722,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Mistral AI Mistral Vibe Code official documentation api webhooks"
         },
         {
@@ -7191,8 +6825,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Warp Warp Agent CLI official documentation protocols a2a supported"
         },
         {
@@ -7203,8 +6837,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Warp Warp Agent CLI official documentation api webhooks"
         },
         {
@@ -7251,8 +6885,8 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
-        "governance.custom_roles",
-        "governance.audit_logs.siem_export"
+        "governance.audit_logs.siem_export",
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -7319,8 +6953,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Google Google Agent Development Kit official documentation api webhooks"
         },
         {
@@ -7342,16 +6976,16 @@
           "suggested_query": "Google Google Agent Development Kit official documentation governance audit_logs api"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "Google Google Agent Development Kit official documentation governance custom_roles"
-        },
-        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "Google Google Agent Development Kit official documentation governance audit_logs siem_export"
+        },
+        {
+          "path": "governance.custom_roles",
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
+          "suggested_query": "Google Google Agent Development Kit official documentation governance custom_roles"
         }
       ]
     },
@@ -7447,8 +7081,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Boomi Boomi Agentstudio official documentation protocols a2a supported"
         },
         {
@@ -7459,8 +7093,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Boomi Boomi Agentstudio official documentation api webhooks"
         },
         {
@@ -7505,8 +7139,8 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.custom_roles",
         "governance.audit_logs.siem_export",
+        "governance.custom_roles",
         "governance.scim",
         "privacy.residency.customer_region_selectable"
       ],
@@ -7581,15 +7215,9 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation security customer_managed_key"
-        },
-        {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance custom_roles"
         },
         {
           "path": "governance.audit_logs.siem_export",
@@ -7598,15 +7226,21 @@
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance audit_logs siem_export"
         },
         {
+          "path": "governance.custom_roles",
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
+          "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance custom_roles"
+        },
+        {
           "path": "governance.scim",
-          "documented_agents": 43,
-          "global_coverage_pct": 39.09,
+          "documented_agents": 44,
+          "global_coverage_pct": 40.0,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance scim"
         },
         {
           "path": "privacy.residency.customer_region_selectable",
-          "documented_agents": 43,
-          "global_coverage_pct": 39.09,
+          "documented_agents": 44,
+          "global_coverage_pct": 40.0,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation privacy residency customer_region_selectable"
         }
       ]
@@ -7703,8 +7337,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Mistral AI Mistral Vibe Work official documentation protocols a2a supported"
         },
         {
@@ -7715,8 +7349,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Mistral AI Mistral Vibe Work official documentation api webhooks"
         },
         {
@@ -7831,8 +7465,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Workday Workday Agent System of Record official documentation api webhooks"
         },
         {
@@ -7861,8 +7495,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Workday Workday Agent System of Record official documentation security customer_managed_key"
         }
       ]
@@ -7957,8 +7591,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Google Cloud Gemini Enterprise Agent Platform official documentation api webhooks"
         },
         {
@@ -8018,7 +7652,7 @@
         "hosting.private_network",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.custom_roles"
+        "governance.audit_logs.siem_export"
       ],
       "available_primary_sources": [
         {
@@ -8085,8 +7719,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Moveworks Moveworks Agent Studio official documentation protocols a2a supported"
         },
         {
@@ -8109,15 +7743,143 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Moveworks Moveworks Agent Studio official documentation security customer_managed_key"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "Moveworks Moveworks Agent Studio official documentation governance custom_roles"
+          "path": "governance.audit_logs.siem_export",
+          "documented_agents": 31,
+          "global_coverage_pct": 28.18,
+          "suggested_query": "Moveworks Moveworks Agent Studio official documentation governance audit_logs siem_export"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0096",
+      "name": "ZoomMate",
+      "provider_id": "PROV-ZOOM",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 28.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Zoom Support – Admin Activity Logs",
+          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Zoom Support – Advanced CMK Chat Encryption",
+          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0082248",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Zoom Support – Advanced chat encryption",
+          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065662",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Zoom Support – Configuring Zoom SSO with Microsoft Entra",
+          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064121",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Zoom Support – Quick start guide for single sign-on (SSO)",
+          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060673",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Zoom Support – Using role management",
+          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064983",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Zoom – SOC 2 + HITRUST",
+          "url": "https://www.zoom.com/de/trust/legal-compliance/soc2-hitrust/",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Zoom – ZoomMate launch",
+          "url": "https://news.zoom.com/zoom-launches-zoommate/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Zoom ZoomMate official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Zoom ZoomMate official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Zoom ZoomMate official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Zoom ZoomMate official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "Zoom ZoomMate official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Zoom ZoomMate official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Zoom ZoomMate official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "Zoom ZoomMate official documentation hosting private_network"
         }
       ]
     },
@@ -8201,8 +7963,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "NiCE Cognigy NiCE Cognigy AI Agents official documentation protocols a2a supported"
         },
         {
@@ -8213,8 +7975,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "NiCE Cognigy NiCE Cognigy AI Agents official documentation api webhooks"
         },
         {
@@ -8329,8 +8091,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Snowflake Snowflake Cortex Agents official documentation protocols a2a supported"
         },
         {
@@ -8341,8 +8103,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Snowflake Snowflake Cortex Agents official documentation api webhooks"
         },
         {
@@ -8390,7 +8152,7 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
-        "governance.custom_roles"
+        "governance.audit_logs.siem_export"
       ],
       "available_primary_sources": [
         {
@@ -8450,14 +8212,14 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation protocols a2a supported"
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation api webhooks"
         },
         {
@@ -8479,10 +8241,124 @@
           "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs api"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance custom_roles"
+          "path": "governance.audit_logs.siem_export",
+          "documented_agents": 31,
+          "global_coverage_pct": 28.18,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs siem_export"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0108",
+      "name": "Vincent AI",
+      "provider_id": "PROV-VLEX",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 28.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "hosting.private_network",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "vLex – Core Security Measures",
+          "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-core-security-measures",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "vLex – Ethical AI for Lawyers",
+          "url": "https://vlex.com/news/Ethical-AI-for-Lawyers",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "vLex – Integrations",
+          "url": "https://support.vlex.com/support-1/integrations",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "vLex – Technical & Infrastructure Security",
+          "url": "https://support.vlex.com/vincent-by-vlex/vincent/security-privacy-and-compliance/reviewing-our-technical-and-infrastructure-security",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "vLex – Vincent",
+          "url": "https://law.vlex.com/vincent",
+          "origin": "profile_source"
+        },
+        {
+          "title": "vLex – Vincent features",
+          "url": "https://knowledge.vlex.com/en/features/vincent/find-related-documents",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "vLex Vincent AI official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "vLex Vincent AI official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "vLex Vincent AI official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "vLex Vincent AI official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "vLex Vincent AI official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "vLex Vincent AI official documentation governance sso oidc"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "vLex Vincent AI official documentation hosting private_network"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 24,
+          "global_coverage_pct": 21.82,
+          "suggested_query": "vLex Vincent AI official documentation governance audit_logs api"
         }
       ]
     },
@@ -8577,8 +8453,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Cursor Cursor Agent official documentation protocols a2a supported"
         },
         {
@@ -8589,8 +8465,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Cursor Cursor Agent official documentation api webhooks"
         },
         {
@@ -8607,8 +8483,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
           "suggested_query": "Cursor Cursor Agent official documentation governance custom_roles"
         }
       ]
@@ -8687,8 +8563,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Cognition Devin official documentation protocols a2a supported"
         },
         {
@@ -8699,8 +8575,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Cognition Devin official documentation api webhooks"
         },
         {
@@ -8717,8 +8593,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Cognition Devin official documentation security customer_managed_key"
         }
       ]
@@ -8808,8 +8684,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Make Make AI Agents official documentation protocols a2a supported"
         },
         {
@@ -8820,8 +8696,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Make Make AI Agents official documentation api webhooks"
         },
         {
@@ -8838,8 +8714,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Make Make AI Agents official documentation security customer_managed_key"
         }
       ]
@@ -8936,8 +8812,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Atlassian Atlassian Rovo Agents official documentation protocols a2a supported"
         },
         {
@@ -8948,8 +8824,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Atlassian Atlassian Rovo Agents official documentation api webhooks"
         },
         {
@@ -9064,8 +8940,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Intercom Intercom Fin official documentation protocols a2a supported"
         },
         {
@@ -9076,8 +8952,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Intercom Intercom Fin official documentation api webhooks"
         },
         {
@@ -9094,8 +8970,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Intercom Intercom Fin official documentation security customer_managed_key"
         }
       ]
@@ -9180,8 +9056,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation protocols a2a supported"
         },
         {
@@ -9192,8 +9068,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "HubSpot HubSpot Breeze Customer Agent official documentation api webhooks"
         },
         {
@@ -9296,8 +9172,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "HubSpot HubSpot Breeze Prospecting Agent official documentation protocols a2a supported"
         },
         {
@@ -9308,8 +9184,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "HubSpot HubSpot Breeze Prospecting Agent official documentation api webhooks"
         },
         {
@@ -9412,8 +9288,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "HubSpot HubSpot Data Agent official documentation protocols a2a supported"
         },
         {
@@ -9424,8 +9300,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "HubSpot HubSpot Data Agent official documentation api webhooks"
         },
         {
@@ -9538,8 +9414,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "HubSpot HubSpot Company Research Agent official documentation protocols a2a supported"
         },
         {
@@ -9550,8 +9426,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "HubSpot HubSpot Company Research Agent official documentation api webhooks"
         },
         {
@@ -9646,8 +9522,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Harvey Harvey Agents official documentation protocols a2a supported"
         },
         {
@@ -9658,8 +9534,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Harvey Harvey Agents official documentation api webhooks"
         },
         {
@@ -9705,8 +9581,8 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
-        "governance.custom_roles",
         "governance.audit_logs.siem_export",
+        "governance.custom_roles",
         "hosting.self_hosted"
       ],
       "available_primary_sources": [
@@ -9761,14 +9637,14 @@
       "research_hints": [
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation protocols a2a supported"
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation api webhooks"
         },
         {
@@ -9790,16 +9666,16 @@
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance audit_logs api"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
-        },
-        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance audit_logs siem_export"
+        },
+        {
+          "path": "governance.custom_roles",
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
+          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
         },
         {
           "path": "hosting.self_hosted",
@@ -9901,8 +9777,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "LangChain LangSmith Deployment official documentation protocols a2a supported"
         },
         {
@@ -9913,8 +9789,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "LangChain LangSmith Deployment official documentation api webhooks"
         },
         {
@@ -9931,8 +9807,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "LangChain LangSmith Deployment official documentation security customer_managed_key"
         }
       ]
@@ -10029,8 +9905,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Tray.ai Tray Merlin Agent Builder official documentation protocols a2a supported"
         },
         {
@@ -10041,8 +9917,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Tray.ai Tray Merlin Agent Builder official documentation api webhooks"
         },
         {
@@ -10139,8 +10015,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Box Box Agent official documentation protocols a2a supported"
         },
         {
@@ -10151,8 +10027,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Box Box Agent official documentation api webhooks"
         },
         {
@@ -10267,8 +10143,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Adobe Adobe Agent Orchestrator official documentation protocols a2a supported"
         },
         {
@@ -10279,8 +10155,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Adobe Adobe Agent Orchestrator official documentation api webhooks"
         },
         {
@@ -10394,8 +10270,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "monday.com monday.com AI Agents official documentation protocols a2a supported"
         },
         {
@@ -10521,8 +10397,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Relevance AI Relevance AI Agents official documentation protocols a2a supported"
         },
         {
@@ -10642,8 +10518,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Factory Factory Droids official documentation protocols a2a supported"
         },
         {
@@ -10654,8 +10530,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Factory Factory Droids official documentation api webhooks"
         },
         {
@@ -10672,8 +10548,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Factory Factory Droids official documentation security customer_managed_key"
         }
       ]
@@ -10703,7 +10579,7 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.custom_roles"
+        "governance.audit_logs.siem_export"
       ],
       "available_primary_sources": [
         {
@@ -10769,8 +10645,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "CrewAI CrewAI AMP official documentation protocols a2a supported"
         },
         {
@@ -10793,15 +10669,15 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "CrewAI CrewAI AMP official documentation security customer_managed_key"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "CrewAI CrewAI AMP official documentation governance custom_roles"
+          "path": "governance.audit_logs.siem_export",
+          "documented_agents": 31,
+          "global_coverage_pct": 28.18,
+          "suggested_query": "CrewAI CrewAI AMP official documentation governance audit_logs siem_export"
         }
       ]
     },
@@ -10890,8 +10766,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Slack Slackbot AI Teammate official documentation protocols a2a supported"
         },
         {
@@ -10902,8 +10778,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Slack Slackbot AI Teammate official documentation api webhooks"
         },
         {
@@ -11011,8 +10887,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "OpenAI OpenAI Codex official documentation protocols a2a supported"
         },
         {
@@ -11023,8 +10899,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "OpenAI OpenAI Codex official documentation api webhooks"
         },
         {
@@ -11131,14 +11007,14 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Anthropic Claude Code official documentation protocols a2a supported"
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Anthropic Claude Code official documentation api webhooks"
         },
         {
@@ -11191,8 +11067,8 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
-        "governance.custom_roles",
-        "governance.audit_logs.siem_export"
+        "governance.audit_logs.siem_export",
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -11253,14 +11129,14 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation protocols a2a supported"
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation api webhooks"
         },
         {
@@ -11282,16 +11158,16 @@
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance audit_logs api"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance custom_roles"
-        },
-        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance audit_logs siem_export"
+        },
+        {
+          "path": "governance.custom_roles",
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
+          "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance custom_roles"
         }
       ]
     },
@@ -11387,8 +11263,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Zendesk Zendesk AI Agents official documentation protocols a2a supported"
         },
         {
@@ -11411,8 +11287,8 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Zendesk Zendesk AI Agents official documentation security customer_managed_key"
         },
         {
@@ -11509,8 +11385,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "OpenAI ChatGPT Work official documentation protocols a2a supported"
         },
         {
@@ -11521,8 +11397,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "OpenAI ChatGPT Work official documentation api webhooks"
         },
         {
@@ -11569,8 +11445,8 @@
         "hosting.private_network",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.custom_roles",
-        "governance.audit_logs.siem_export"
+        "governance.audit_logs.siem_export",
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -11617,8 +11493,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Dust Dust Agents official documentation protocols a2a supported"
         },
         {
@@ -11635,21 +11511,21 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Dust Dust Agents official documentation security customer_managed_key"
-        },
-        {
-          "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
-          "suggested_query": "Dust Dust Agents official documentation governance custom_roles"
         },
         {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "Dust Dust Agents official documentation governance audit_logs siem_export"
+        },
+        {
+          "path": "governance.custom_roles",
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
+          "suggested_query": "Dust Dust Agents official documentation governance custom_roles"
         }
       ]
     },
@@ -11745,8 +11621,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Snowflake Snowflake CoWork official documentation protocols a2a supported"
         },
         {
@@ -11757,8 +11633,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Snowflake Snowflake CoWork official documentation api webhooks"
         },
         {
@@ -11849,8 +11725,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Replit Replit Agent official documentation protocols a2a supported"
         },
         {
@@ -11861,8 +11737,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Replit Replit Agent official documentation api webhooks"
         },
         {
@@ -11879,9 +11755,217 @@
         },
         {
           "path": "security.customer_managed_key",
-          "documented_agents": 27,
-          "global_coverage_pct": 24.55,
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
           "suggested_query": "Replit Replit Agent official documentation security customer_managed_key"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0060",
+      "name": "Grok DeepSearch",
+      "provider_id": "PROV-XAI",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 27.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 4.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "SpaceXAI API – Enterprise controls",
+          "url": "https://x.ai/api",
+          "origin": "field_level_evidence",
+          "evidence_type": "api_docs"
+        },
+        {
+          "title": "SpaceXAI for Business",
+          "url": "https://x.ai/grok/business",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "SpaceXAI – Grok Business and Enterprise",
+          "url": "https://x.ai/news/grok-business",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "xAI – Grok 3 Beta: The Age of Reasoning Agents",
+          "url": "https://x.ai/news/grok-3",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "xAI Grok DeepSearch official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "xAI Grok DeepSearch official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "xAI Grok DeepSearch official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "xAI Grok DeepSearch official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "xAI Grok DeepSearch official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "xAI Grok DeepSearch official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "xAI Grok DeepSearch official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "xAI Grok DeepSearch official documentation hosting private_network"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0088",
+      "name": "Grok Bot",
+      "provider_id": "PROV-XAI",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 27.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 4.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "SpaceXAI API – Enterprise controls",
+          "url": "https://x.ai/api",
+          "origin": "field_level_evidence",
+          "evidence_type": "api_docs"
+        },
+        {
+          "title": "SpaceXAI for Business",
+          "url": "https://x.ai/grok/business",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "SpaceXAI – Grok Business and Enterprise",
+          "url": "https://x.ai/news/grok-business",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "xAI – Introducing Grok Bot",
+          "url": "https://x.ai/news/introducing-grok-bot",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "xAI Grok Bot official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "xAI Grok Bot official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "xAI Grok Bot official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "xAI Grok Bot official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "xAI Grok Bot official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "xAI Grok Bot official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "xAI Grok Bot official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "xAI Grok Bot official documentation hosting private_network"
         }
       ]
     },
@@ -11953,8 +12037,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Dropbox Dropbox Dash official documentation protocols a2a supported"
         },
         {
@@ -11965,8 +12049,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Dropbox Dropbox Dash official documentation api webhooks"
         },
         {
@@ -12075,8 +12159,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "OpenAI ChatGPT Deep Research official documentation protocols a2a supported"
         },
         {
@@ -12087,8 +12171,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "OpenAI ChatGPT Deep Research official documentation api webhooks"
         },
         {
@@ -12179,8 +12263,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "CodeRabbit CodeRabbit Agent official documentation protocols a2a supported"
         },
         {
@@ -12191,8 +12275,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "CodeRabbit CodeRabbit Agent official documentation api webhooks"
         },
         {
@@ -12306,8 +12390,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Glean Glean Agents official documentation protocols a2a supported"
         },
         {
@@ -12318,8 +12402,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Glean Glean Agents official documentation api webhooks"
         },
         {
@@ -12330,8 +12414,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
           "suggested_query": "Glean Glean Agents official documentation governance custom_roles"
         }
       ]
@@ -12403,8 +12487,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Augment Code Augment Code Agent official documentation protocols a2a supported"
         },
         {
@@ -12427,8 +12511,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 30,
-          "global_coverage_pct": 27.27,
+          "documented_agents": 32,
+          "global_coverage_pct": 29.09,
           "suggested_query": "Augment Code Augment Code Agent official documentation governance custom_roles"
         },
         {
@@ -12500,8 +12584,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Genspark Genspark Code official documentation protocols a2a supported"
         },
         {
@@ -12512,8 +12596,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Genspark Genspark Code official documentation api webhooks"
         },
         {
@@ -12597,8 +12681,8 @@
         },
         {
           "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
           "suggested_query": "Genspark Genspark Super Agent official documentation protocols a2a supported"
         },
         {
@@ -12609,8 +12693,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Genspark Genspark Super Agent official documentation api webhooks"
         },
         {
@@ -12716,8 +12800,8 @@
         },
         {
           "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
           "suggested_query": "Workato Workato Agentic official documentation api webhooks"
         },
         {

@@ -55709,6 +55709,111 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-EE874B748E63D26F5D",
+      "agent_id": "AI-0060",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4E544EDEE071E1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise",
+        "note": "Grok Enterprise provides audit logging.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4E544EDEE071E1",
+            "note": "SpaceXAI documents audit logging for enterprise Grok teams.",
+            "evidence_type": "api_docs",
+            "source_section": "SSO and audit logging"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-5B2AC316B3123D5171",
+      "agent_id": "AI-0060",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise",
+        "note": "Grok Enterprise supports custom RBAC roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "SpaceXAI explicitly lists Custom Role Based Access Control for Enterprise.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise / Security & compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2B427A295ED4500369",
+      "agent_id": "AI-0060",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_business_enterprise",
+        "note": "Grok Business/Enterprise supports RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "SpaceXAI lists role-based access control for Business/Enterprise.",
+            "evidence_type": "official_product_page",
+            "source_section": "Security & compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-A7EB7357791E6A40AD",
       "agent_id": "AI-0060",
       "path": "governance.scim",
@@ -55740,6 +55845,41 @@
       "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F65CE2E22FB8786F8A",
+      "agent_id": "AI-0060",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4E544EDEE071E1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise",
+        "note": "Grok Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4E544EDEE071E1",
+            "note": "SpaceXAI explicitly documents SAML SSO for enterprise teams.",
+            "evidence_type": "api_docs",
+            "source_section": "Enterprise API controls / SSO and audit logging"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -55906,6 +56046,76 @@
       "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C9B95FDCCAF793EB00",
+      "agent_id": "AI-0060",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-44D2C49CCEBBCD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise_vault",
+        "note": "Grok Enterprise Vault documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-44D2C49CCEBBCD",
+            "note": "SpaceXAI states Enterprise Vault data is encrypted at rest under customer-controlled keys.",
+            "evidence_type": "official_release",
+            "source_section": "Ultimate privacy with Enterprise Vault"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D93E0EB1345204F5C0",
+      "agent_id": "AI-0060",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-44D2C49CCEBBCD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise_vault",
+        "note": "Grok Enterprise Vault documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-44D2C49CCEBBCD",
+            "note": "SpaceXAI states Enterprise Vault data is encrypted in transit.",
+            "evidence_type": "official_release",
+            "source_section": "Ultimate privacy with Enterprise Vault"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -77721,6 +77931,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-B0E1D5C0E85AF856B6",
+      "agent_id": "AI-0083",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2EDA892FB10A82"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "kore_ai_agent_platform",
+        "note": "Kore.ai Agent Platform supports role-based access.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2EDA892FB10A82",
+            "note": "Kore.ai documents secure role-based access in the Agent Platform.",
+            "evidence_type": "official_release",
+            "source_section": "AI for Work / secure role-based access"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-21C1A0247B80D6A84A",
       "agent_id": "AI-0083",
       "path": "hosting.managed",
@@ -77955,6 +78200,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-6BCE075C14256C1BBB",
+      "agent_id": "AI-0083",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-CF6883D33A50D7"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "kore_ai_agent_platform_amp",
+        "note": "Kore.ai explicitly documents A2A protocol support.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-CF6883D33A50D7",
+            "note": "Kore.ai explicitly states agents communicate through A2A (Agent-to-Agent) protocols.",
+            "evidence_type": "official_release",
+            "source_section": "Agent Management Platform / interoperability"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-F5ACDE2C2FFF7309F7",
@@ -82137,6 +82417,111 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-92680BD2134F2D8109",
+      "agent_id": "AI-0088",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4E544EDEE071E1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise",
+        "note": "Grok Enterprise provides audit logging.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4E544EDEE071E1",
+            "note": "SpaceXAI documents audit logging for enterprise Grok teams.",
+            "evidence_type": "api_docs",
+            "source_section": "SSO and audit logging"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-27BF50A6DBCBECBA7D",
+      "agent_id": "AI-0088",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise",
+        "note": "Grok Enterprise supports custom RBAC roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "SpaceXAI explicitly lists Custom Role Based Access Control for Enterprise.",
+            "evidence_type": "official_product_page",
+            "source_section": "Enterprise / Security & compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-CCEAD1AAA643732563",
+      "agent_id": "AI-0088",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B131E6C4AA739C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_business_enterprise",
+        "note": "Grok Business/Enterprise supports RBAC.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B131E6C4AA739C",
+            "note": "SpaceXAI lists role-based access control for Business/Enterprise.",
+            "evidence_type": "official_product_page",
+            "source_section": "Security & compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-AC557C06404830B8F5",
       "agent_id": "AI-0088",
       "path": "governance.scim",
@@ -82168,6 +82553,41 @@
       "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-66150F30537FEBD5A5",
+      "agent_id": "AI-0088",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4E544EDEE071E1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise",
+        "note": "Grok Enterprise supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4E544EDEE071E1",
+            "note": "SpaceXAI explicitly documents SAML SSO for enterprise teams.",
+            "evidence_type": "api_docs",
+            "source_section": "Enterprise API controls / SSO and audit logging"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -82334,6 +82754,76 @@
       "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-635EBC83B827E31F6A",
+      "agent_id": "AI-0088",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-44D2C49CCEBBCD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise_vault",
+        "note": "Grok Enterprise Vault documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-44D2C49CCEBBCD",
+            "note": "SpaceXAI states Enterprise Vault data is encrypted at rest under customer-controlled keys.",
+            "evidence_type": "official_release",
+            "source_section": "Ultimate privacy with Enterprise Vault"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9E9877F0D67D980785",
+      "agent_id": "AI-0088",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-44D2C49CCEBBCD"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "grok_enterprise_vault",
+        "note": "Grok Enterprise Vault documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-44D2C49CCEBBCD",
+            "note": "SpaceXAI states Enterprise Vault data is encrypted in transit.",
+            "evidence_type": "official_release",
+            "source_section": "Ultimate privacy with Enterprise Vault"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -89631,6 +90121,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-62DF33A691839E6798",
+      "agent_id": "AI-0096",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9D455FC098C2D8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "zoom_account_including_zoommate",
+        "note": "Zoom supports SCIM provisioning.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9D455FC098C2D8",
+            "note": "Zoom documents SCIM auto-provisioning for Zoom users through Microsoft Entra.",
+            "evidence_type": "technical_docs",
+            "source_section": "How to set up Auto Provisioning (SCIM)"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-98E77FC28905319CCF",
       "agent_id": "AI-0096",
       "path": "governance.sso.saml",
@@ -89795,6 +90320,146 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-2C6E67E58BB6C203CD",
+      "agent_id": "AI-0096",
+      "path": "security.customer_managed_key",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0EA662922721A6"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "zoom_advanced_cmk",
+        "note": "Zoom supports customer-managed encryption keys for supported services.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-0EA662922721A6",
+            "note": "Zoom documents customer-managed-key (CMK) options for advanced and client-side chat encryption.",
+            "evidence_type": "security_trust",
+            "source_section": "Advanced CMK Chat Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-44BFA26E8ECC1C8AE5",
+      "agent_id": "AI-0096",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4460E3D0195AE4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "zoom_cloud_data",
+        "note": "Zoom documents encryption at rest for cloud-stored chat data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4460E3D0195AE4",
+            "note": "Zoom states Chat messages stored in Zoom Cloud are encrypted at rest by default.",
+            "evidence_type": "security_trust",
+            "source_section": "Differences when advanced chat encryption is enabled and disabled"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-F590966D0A42C48822",
+      "agent_id": "AI-0096",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4460E3D0195AE4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "zoom_cloud_communications",
+        "note": "Zoom documents TLS encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4460E3D0195AE4",
+            "note": "Zoom states Chat messages are encrypted with TLS in transit between users and Zoom Cloud.",
+            "evidence_type": "security_trust",
+            "source_section": "Differences when advanced chat encryption is enabled and disabled"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-DF15F8B793422E0486",
+      "agent_id": "AI-0096",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-4F79AC3ADF4667"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "zoom_communications_platform_including_ai_services",
+        "note": "Zoom documents SOC 2 Type 2 coverage for its communications platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-4F79AC3ADF4667",
+            "note": "Zoom documents a SOC 2 Type 2 + HITRUST attestation for the Zoom Communications Platform and its AI-related services.",
+            "evidence_type": "security_trust",
+            "source_section": "SOC 2 + HITRUST report"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-2D721CEC0057D6F40F",
@@ -94424,6 +95089,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-E2A8D8FD0C628D328F",
+      "agent_id": "AI-0102",
+      "path": "api.webhooks",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9C4F87AD4DA91F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "artisan_ava_custom_webhooks",
+        "note": "Artisan supports custom webhook integrations for Ava.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9C4F87AD4DA91F",
+            "note": "Artisan documents custom webhooks for Ava/Artisan integrations as part of its outbound platform.",
+            "evidence_type": "official_product_page",
+            "source_section": "FAQ / Which tools does Ava integrate with?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-18623C325BA808607E",
       "agent_id": "AI-0102",
       "path": "audience",
@@ -94997,6 +95697,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-237F47BEA9C0479246",
+      "agent_id": "AI-0102",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C90C5DB8F1904C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "artisan_platform_data",
+        "note": "Artisan documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C90C5DB8F1904C",
+            "note": "Artisan states stored data is encrypted at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Technical and Organizational Measures / Transmission Control"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-3764A2FB5D6804254D",
+      "agent_id": "AI-0102",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C90C5DB8F1904C"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "artisan_platform_data",
+        "note": "Artisan documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C90C5DB8F1904C",
+            "note": "Artisan requires HTTPS/TLS encryption on login interfaces and customer sites.",
+            "evidence_type": "security_trust",
+            "source_section": "Technical and Organizational Measures / Transmission Control"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-20F669C73F3A5FE84C",
@@ -99507,6 +100277,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-17D9B169D513617D09",
+      "agent_id": "AI-0108",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-D68546AE639993"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "vlex_platform_including_vincent",
+        "note": "vLex supports SAML SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-D68546AE639993",
+            "note": "vLex explicitly lists SAML among supported SSO options for enterprise identity services.",
+            "evidence_type": "technical_docs",
+            "source_section": "SSO Options"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-661EF6F40E23DEB0D3",
       "agent_id": "AI-0108",
       "path": "hosting.managed",
@@ -99778,6 +100583,41 @@
       "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-002F8AFF309B23D2E8",
+      "agent_id": "AI-0108",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-B3822156FF2740"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "vincent_ai",
+        "note": "Vincent AI is documented as SOC 2 Type II certified.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B3822156FF2740",
+            "note": "vLex states Vincent is backed by SOC 2 Type II certification.",
+            "evidence_type": "security_trust",
+            "source_section": "Security: The Foundation of Ethical AI Use"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -100395,6 +101235,76 @@
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-DFFA16DA456760CF79",
+      "agent_id": "AI-0109",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C97EA523717B08"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "luminance_hosted_customer_data",
+        "note": "Luminance supports regional data residency.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C97EA523717B08",
+            "note": "Luminance documents hosting Customer Data in selected AWS data centres with residency fixed to that regional data centre and backup region.",
+            "evidence_type": "security_trust",
+            "source_section": "Hosting Location / Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-8FCEE43FF7C7F1B5C2",
+      "agent_id": "AI-0109",
+      "path": "privacy.residency.customer_region_selectable",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C97EA523717B08"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "luminance_hosted_customer_data",
+        "note": "Luminance customers can choose a supported AWS hosting region.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C97EA523717B08",
+            "note": "Luminance states customers can choose which AWS data centre, subject to availability, hosts Customer Data.",
+            "evidence_type": "security_trust",
+            "source_section": "Hosting Location"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-5E036E82A28375DAC8",
