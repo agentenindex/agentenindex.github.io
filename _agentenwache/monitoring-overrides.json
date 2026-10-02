@@ -1,7 +1,67 @@
 {
   "version": 1,
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "overrides": [
+    {
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+      "mode": "manual_only",
+      "reason": "Official Salesforce Agentforce Agent API documentation is current and editorially verified but returns HTTP 403 to AgentenIndex-Wache; retain as the field-level primary source for Agent API REST/OAuth claims.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.moveworks.com/agent-studio/access-control/roles-and-permissions",
+      "mode": "manual_only",
+      "reason": "Official Moveworks Agent Studio RBAC documentation is current and editorially verified, but its rendered Markdown hash changes between fetches while token count and substantive content remain stable; retain as primary evidence and monitor manually to avoid repeated false-positive content reviews.",
+      "verified_at": "2026-10-02"
+    },
+    {
+      "url": "https://help.sap.com/docs/btp/btp-admin-guide/security-concepts?version=Cloud",
+      "mode": "manual_only",
+      "reason": "Official SAP BTP security documentation is editorially verified but robots.txt disallows automated monitoring of this path; retain as supporting evidence for Joule TLS transport protection.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/3d9dfad0bc39468292d508f0808a12fe.html",
+      "mode": "manual_only",
+      "reason": "Official SAP Joule Studio MCP documentation is current and editorially verified but robots.txt disallows automated monitoring of this path; retain as the field-level primary source for MCP/control-tower claims.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/joule-studio-classic/joule-studio-classic-edition/assign-users-to-roles",
+      "mode": "manual_only",
+      "reason": "Official SAP Joule Studio role-assignment documentation is current and editorially verified but robots.txt disallows automated monitoring of this path; retain as the field-level primary source for RBAC.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/joule-studio-classic/joule-studio-classic-edition/implementing-functions?q=joule+studio",
+      "mode": "manual_only",
+      "reason": "Official SAP Joule Studio documentation exposes the product-specific Audit Logging section but robots.txt disallows automated monitoring of this path; retain as the field-level primary source for audit logging.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/joule/integrating-joule-with-sap/constraints-for-joule?locale=en-US&state=PRODUCTION&version=CLOUD",
+      "mode": "manual_only",
+      "reason": "Official SAP Joule constraints documentation is editorially verified but robots.txt disallows automated monitoring; retain as the primary source for required OIDC trust and the explicit SAML-not-supported negative claim.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule",
+      "mode": "manual_only",
+      "reason": "Official SAP Joule data-center documentation is editorially verified but robots.txt disallows automated monitoring; retain as the field-level primary source for Joule regional availability and customer data-center selection.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://help.sap.com/docs/joule/serviceguide/guidelines-for-capability-development",
+      "mode": "manual_only",
+      "reason": "Official SAP Joule service-guide source is editorially verified but robots.txt disallows automated monitoring of this path; retain as the primary source for managed BTP hosting.",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "url": "https://openai.com/business-data/",
+      "mode": "manual_only",
+      "reason": "Official OpenAI business-data security page is current and editorially verified but returns HTTP 403 to AgentenIndex-Wache; retain as the exact primary source for AES-256, TLS 1.2+ and Enterprise Key Management claims.",
+      "verified_at": "2026-10-01"
+    },
     {
       "url": "https://openai.com/de-DE/chatgpt-work/",
       "mode": "manual_only",
@@ -27,33 +87,9 @@
       "verified_at": "2026-10-01"
     },
     {
-      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
+      "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/ebook/ebk-how-servicenow-delivers-safe-and-secure-cloud-services.pdf",
       "mode": "manual_only",
-      "reason": "Official Salesforce Agentforce Agent API documentation is current and editorially verified but returns HTTP 403 to AgentenIndex-Wache; retain as the field-level primary source for Agent API REST/OAuth claims.",
-      "verified_at": "2026-10-01"
-    },
-    {
-      "url": "https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/3d9dfad0bc39468292d508f0808a12fe.html",
-      "mode": "manual_only",
-      "reason": "Official SAP Joule Studio MCP documentation is current and editorially verified but robots.txt disallows automated monitoring of this path; retain as the field-level primary source for MCP/control-tower claims.",
-      "verified_at": "2026-10-01"
-    },
-    {
-      "url": "https://openai.com/business-data/",
-      "mode": "manual_only",
-      "reason": "Official OpenAI business-data security page is current and editorially verified but returns HTTP 403 to AgentenIndex-Wache; retain as the exact primary source for AES-256, TLS 1.2+ and Enterprise Key Management claims.",
-      "verified_at": "2026-10-01"
-    },
-    {
-      "url": "https://help.sap.com/docs/joule-studio-classic/joule-studio-classic-edition/assign-users-to-roles",
-      "mode": "manual_only",
-      "reason": "Official SAP Joule Studio role-assignment documentation is current and editorially verified but robots.txt disallows automated monitoring of this path; retain as the field-level primary source for RBAC.",
-      "verified_at": "2026-10-01"
-    },
-    {
-      "url": "https://help.sap.com/docs/joule-studio-classic/joule-studio-classic-edition/implementing-functions?q=joule+studio",
-      "mode": "manual_only",
-      "reason": "Official SAP Joule Studio documentation exposes the product-specific Audit Logging section but robots.txt disallows automated monitoring of this path; retain as the field-level primary source for audit logging.",
+      "reason": "Official ServiceNow security white paper supports Otto audit, SIEM, and SOC 2 evidence but returns HTTP 403 to AgentenIndex-Wache; retain as primary evidence and monitor manually.",
       "verified_at": "2026-10-01"
     },
     {
@@ -63,39 +99,9 @@
       "verified_at": "2026-10-01"
     },
     {
-      "url": "https://help.sap.com/docs/joule/serviceguide/guidelines-for-capability-development",
-      "mode": "manual_only",
-      "reason": "Official SAP Joule service-guide source is editorially verified but robots.txt disallows automated monitoring of this path; retain as the primary source for managed BTP hosting.",
-      "verified_at": "2026-10-01"
-    },
-    {
-      "url": "https://help.sap.com/docs/btp/btp-admin-guide/security-concepts?version=Cloud",
-      "mode": "manual_only",
-      "reason": "Official SAP BTP security documentation is editorially verified but robots.txt disallows automated monitoring of this path; retain as supporting evidence for Joule TLS transport protection.",
-      "verified_at": "2026-10-01"
-    },
-    {
-      "url": "https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule",
-      "mode": "manual_only",
-      "reason": "Official SAP Joule data-center documentation is editorially verified but robots.txt disallows automated monitoring; retain as the field-level primary source for Joule regional availability and customer data-center selection.",
-      "verified_at": "2026-10-01"
-    },
-    {
-      "url": "https://help.sap.com/docs/joule/integrating-joule-with-sap/constraints-for-joule?locale=en-US&state=PRODUCTION&version=CLOUD",
-      "mode": "manual_only",
-      "reason": "Official SAP Joule constraints documentation is editorially verified but robots.txt disallows automated monitoring; retain as the primary source for required OIDC trust and the explicit SAML-not-supported negative claim.",
-      "verified_at": "2026-10-01"
-    },
-    {
       "url": "https://www.servicenow.com/platform/what-is-servicenow-ai-platform.html",
       "mode": "manual_only",
       "reason": "Official ServiceNow AI Platform page supports Otto platform and audit evidence but returns HTTP 403 to AgentenIndex-Wache; retain as primary evidence and monitor manually.",
-      "verified_at": "2026-10-01"
-    },
-    {
-      "url": "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/ebook/ebk-how-servicenow-delivers-safe-and-secure-cloud-services.pdf",
-      "mode": "manual_only",
-      "reason": "Official ServiceNow security white paper supports Otto audit, SIEM, and SOC 2 evidence but returns HTTP 403 to AgentenIndex-Wache; retain as primary evidence and monitor manually.",
       "verified_at": "2026-10-01"
     }
   ]
