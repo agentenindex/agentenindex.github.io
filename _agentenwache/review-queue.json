@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:42:30Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T04:45:30Z",
+  "open_count": 3,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1093,9 +1093,9 @@
     },
     {
       "review_id": "REV-498192E7907A906B32",
-      "status": "dismissed_noise",
-      "first_detected": "2026-10-02T04:42:30Z",
-      "last_detected": "2026-10-02T04:42:30Z",
+      "status": "open",
+      "first_detected": "2026-10-02T04:45:30Z",
+      "last_detected": "2026-10-02T04:45:30Z",
       "occurrences": 1,
       "severity": "medium",
       "change_type": "source_unavailable",
@@ -1116,9 +1116,7 @@
         "status_code": 404,
         "baseline_health": true
       },
-      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
-      "resolution": "Transient source-unavailable result. The official Luminance Master Hosted Terms are currently reachable at the same URL and still document the managed AWS environment, customer-selectable hosting region, encryption, access controls, and SSO. No indexed fact changed.",
-      "reviewed_at": "2026-10-02T06:45:00+02:00"
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
     },
     {
       "review_id": "REV-5177CDF329A3D642E2",
@@ -1162,7 +1160,9 @@
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Transient Zoom support rendering/content extraction issue. The current official Zoom SSO guide remains reachable and explicitly states Zoom SSO is based on SAML 2.0. No indexed ZoomMate SAML fact changed.",
-      "reviewed_at": "2026-10-02T06:45:00+02:00"
+      "reviewed_at": "2026-10-02T06:45:00+02:00",
+      "last_seen_after_review": "2026-10-02T04:44:49Z",
+      "suppressed_reoccurrences": 1
     },
     {
       "review_id": "REV-5224C43C4FE1DC7E75",
@@ -3210,6 +3210,44 @@
       "reviewed_at": "2026-10-01T14:54:00Z"
     },
     {
+      "review_id": "REV-BACFDA33C59D1C7836",
+      "status": "open",
+      "first_detected": "2026-10-02T04:44:44Z",
+      "last_detected": "2026-10-02T04:44:44Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "redirect_change",
+      "source_id": "SRC-16F8BE542DFFCB",
+      "source_title": "Google Workspace Help – NotebookLM security and compliance",
+      "url": "https://support.google.com/a/answer/15239506?hl=en",
+      "agent_ids": [
+        "AI-0059"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users?hl=en&visit_id=639265129216073421-3406380721&rd=1",
+        "text_hash": "0d4e370ad186bb99f2c773a094ac0ad69846c93c8685c26135477f8aa6672045",
+        "simhash64": "f25082a81b4d4dd1",
+        "token_count": 1385,
+        "text_sample": "Google Workspace Help Administrators Generative AI Gemini Notebook Guides Send feedback Turn Gemini Notebook on or off for users Stay organized with collections Save and categorize content based on your preferences. Let your users interact with source content using language models As an administrator, you can control who uses Gemini Notebook in your organization. Gemini Notebook is an AI-powered research assistant designed to help you refine and organize your ideas. With Gemini Notebook, you can: Easily upload PDFs, websites, YouTube videos, audio files, Google Docs, or Google Slides or discover new sources. Experience Gemini's advanced reasoning and interaction capabilities across different ways of communication like text, graphs, images, audio, and in many languages. Chat with your notebook to get grounded information based on your sources with clear inline citations for accuracy, transparency, and trust. Transform your sources into approachable formats such as study guides, briefings, audio overviews, mind maps, and more. New to Gemini Notebook? Learn more . Get started with Gemini Notebook . Gemini Notebook features by Workspace edition Standard access to features Standard acce"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users?hl=en&visit_id=639265130851319033-1105462791&rd=1",
+        "text_hash": "0d4e370ad186bb99f2c773a094ac0ad69846c93c8685c26135477f8aa6672045",
+        "simhash64": "f25082a81b4d4dd1",
+        "token_count": 1385,
+        "text_sample": "Google Workspace Help Administrators Generative AI Gemini Notebook Guides Send feedback Turn Gemini Notebook on or off for users Stay organized with collections Save and categorize content based on your preferences. Let your users interact with source content using language models As an administrator, you can control who uses Gemini Notebook in your organization. Gemini Notebook is an AI-powered research assistant designed to help you refine and organize your ideas. With Gemini Notebook, you can: Easily upload PDFs, websites, YouTube videos, audio files, Google Docs, or Google Slides or discover new sources. Experience Gemini's advanced reasoning and interaction capabilities across different ways of communication like text, graphs, images, audio, and in many languages. Chat with your notebook to get grounded information based on your sources with clear inline citations for accuracy, transparency, and trust. Transform your sources into approachable formats such as study guides, briefings, audio overviews, mind maps, and more. New to Gemini Notebook? Learn more . Get started with Gemini Notebook . Gemini Notebook features by Workspace edition Standard access to features Standard acce",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_final_url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users?hl=en&visit_id=639265129216073421-3406380721&rd=1",
+        "new_final_url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users?hl=en&visit_id=639265130851319033-1105462791&rd=1"
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-BAF0F1D6D5755D8E3A",
       "status": "reviewed_no_product_change",
       "first_detected": "2026-10-02T03:05:07Z",
@@ -4052,6 +4090,44 @@
       "reviewed_at": "2026-10-02T03:19:00Z"
     },
     {
+      "review_id": "REV-EC91298C7FACF981C6",
+      "status": "open",
+      "first_detected": "2026-10-02T04:44:15Z",
+      "last_detected": "2026-10-02T04:44:15Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "redirect_change",
+      "source_id": "SRC-8EA13B30C102B5",
+      "source_title": "Gorgias Docs – How Gorgias's AI Agent works",
+      "url": "https://docs.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817",
+      "agent_ids": [
+        "AI-0044"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://docs.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817",
+        "text_hash": "3ba56f579f1e2d20ca8ae1adb5fe5c2f1b0f65eb016f2eb251e8a847f1ddcdaa",
+        "simhash64": "5aeb2750ffd43712",
+        "token_count": 1724,
+        "text_sample": "How Gorgias's AI Agent works Updated 4 months ago The agentic logic that powers Gorgias’s AI Agent allows it to dynamically address every customer request with a high level of accuracy, safety and reliability — just like a capable human agent would. Most AI agents powered by large language models (LLMs) can generate text based on a prompt. But this basic question-and-answer model is often limited in its ability to provide the complete solutions that your customers expect or handle complex requests with multiple intents. With Gorgias AI’s specialized logic, here’s what’s different: AI Agent doesn’t just respond to questions with a matching piece of knowledge. Instead, in preparing a response, it interprets your knowledge and instructions to make ongoing decisions about how to fully satisfy the intent behind the customer’s request. At each step of the process, AI Agent adapts its course and initiates parallel tasks to ensure it gathers the right information and completes the necessary tasks before forming a response — all while providing updates to the customer as it works. In this article, you'll learn more about the technology that powers Gorgias’s AI and the controls we offer to e"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://helpcenter.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817",
+        "text_hash": "3080925c1ebb7d04dfc4068cf9773294769174863fe59046f0abacdecfc02aa6",
+        "simhash64": "5aea2750ffd48712",
+        "token_count": 1760,
+        "text_sample": "How Gorgias's AI Agent works | Gorgias Help Center Ask anything Browse topics Get Started AI Agent & Automation Productivity Channels Integrations Account Setup Daily Operations Reporting & Analytics Resources How Gorgias's AI Agent works Updated June 10, 2026 The agentic logic that powers Gorgias’s AI Agent allows it to dynamically address every customer request with a high level of accuracy, safety and reliability — just like a capable human agent would. Most AI agents powered by large language models (LLMs) can generate text based on a prompt. But this basic question-and-answer model is often limited in its ability to provide the complete solutions that your customers expect or handle complex requests with multiple intents. With Gorgias AI’s specialized logic, here’s what’s different: AI Agent doesn’t just respond to questions with a matching piece of knowledge. Instead, in preparing a response, it interprets your knowledge and instructions to make ongoing decisions about how to fully satisfy the intent behind the customer’s request. At each step of the process, AI Agent adapts its course and initiates parallel tasks to ensure it gathers the right information and completes the n",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_final_url": "https://docs.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817",
+        "new_final_url": "https://helpcenter.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817"
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-F16A35606537B686F6",
       "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:06:14Z",
@@ -4163,8 +4239,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Lindy homepage changed promotional trial wording, but the indexed profile only states platform access is plan-dependent; no indexed product fact changed.",
       "reviewed_at": "2026-10-01T15:18:00Z",
-      "last_seen_after_review": "2026-10-02T04:01:03Z",
-      "suppressed_reoccurrences": 9
+      "last_seen_after_review": "2026-10-02T04:44:56Z",
+      "suppressed_reoccurrences": 10
     },
     {
       "review_id": "REV-F5E8FCA8A32DF6BA03",

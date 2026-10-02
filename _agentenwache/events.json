@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:42:30Z",
+  "updated_at": "2026-10-02T04:45:30Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -3100,6 +3100,44 @@
         "baseline_health": true
       },
       "previous_checked_at": null,
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-5D2EE8C978FC23373D",
+      "detected_at": "2026-10-02T04:44:15Z",
+      "source_id": "SRC-8EA13B30C102B5",
+      "agent_ids": [
+        "AI-0044"
+      ],
+      "source_title": "Gorgias Docs – How Gorgias's AI Agent works",
+      "url": "https://docs.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817",
+      "change_type": "redirect_change",
+      "severity": "medium",
+      "metrics": {
+        "old_final_url": "https://docs.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817",
+        "new_final_url": "https://helpcenter.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817"
+      },
+      "previous_checked_at": "2026-10-02T04:41:29Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-2F4DA0161DCEBBC88C",
+      "detected_at": "2026-10-02T04:44:44Z",
+      "source_id": "SRC-16F8BE542DFFCB",
+      "agent_ids": [
+        "AI-0059"
+      ],
+      "source_title": "Google Workspace Help – NotebookLM security and compliance",
+      "url": "https://support.google.com/a/answer/15239506?hl=en",
+      "change_type": "redirect_change",
+      "severity": "medium",
+      "metrics": {
+        "old_final_url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users?hl=en&visit_id=639265129216073421-3406380721&rd=1",
+        "new_final_url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users?hl=en&visit_id=639265130851319033-1105462791&rd=1"
+      },
+      "previous_checked_at": "2026-10-02T04:42:01Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
