@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:54:29Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T03:58:54Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1535,8 +1535,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Reviewed the current Workday A2A administration guide. It still documents external agents discovering and invoking Workday Self-Service Agent through the Agent2Agent (A2A) protocol; the one-token change does not alter the indexed fact.",
       "reviewed_at": "2026-10-02T03:27:00Z",
-      "last_seen_after_review": "2026-10-02T03:53:28Z",
-      "suppressed_reoccurrences": 2
+      "last_seen_after_review": "2026-10-02T03:57:53Z",
+      "suppressed_reoccurrences": 3
     },
     {
       "review_id": "REV-695A05C6DF4AD15A42",
@@ -3489,6 +3489,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Reviewed current Copilot Studio/Purview audit documentation; indexed audit logging and API-access facts remain supported.",
       "reviewed_at": "2026-10-02T03:19:00Z"
+    },
+    {
+      "review_id": "REV-D431B34C802949DF07",
+      "status": "open",
+      "first_detected": "2026-10-02T03:58:22Z",
+      "last_detected": "2026-10-02T03:58:22Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-77ABA5093A8FC5",
+      "source_title": "Slack – Meet Slackbot: Your Personal AI Agent for Work",
+      "url": "https://slack.com/blog/news/slackbot-context-aware-ai-agent-for-work",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/blog/news/slackbot-context-aware-ai-agent-for-work",
+        "text_hash": "2b18d81f92f0014c84e4cfdd3ed36bf3bc1003f4b34c31a4dc62cb83f7f2208a",
+        "simhash64": "a5518717ed668745",
+        "token_count": 1822,
+        "text_sample": "8 Min. Lesezeit Wir kennen es alle: Du startest deinen Tag mit ungelesenen Nachrichten, die über verschiedene Channels verstreut sind. Du weißt, dass eine Entscheidung getroffen wurde, aber wo? War es im #projekt-alpha -Channel? In einem Huddle? Vielleicht ist sie aber auch in der Präsentation vom letzten Dienstag vergraben. Die „Arbeit rund um die Arbeit” – suchen, zusammenfassen und aufholen – nimmt mehr Zeit in Anspruch als die Arbeitsaufgaben, für die wir eingestellt wurden. Wie wäre es daher mit einer vertrauensvollen, immer verfügbaren Anlaufstelle, die Fragen sofort beantwortet und in deinem Namen handelt? Heute führen wir den Slackbot als persönlichen KI-Agenten für alle Mitarbeitenden ein, der genau das tut. Dein einstiger Benachrichtigungsassistent wird ab jetzt zu deinem persönlichen, kontextbewussten KI-Agenten für die Arbeit. Der neue Slackbot versteht deine Arbeit, antizipiert deine Bedürfnisse und fungiert als der intelligente Partner, den du dir immer gewünscht hast. Ab sofort kannst du aufhören, nach Informationen zu suchen, und dich auf deine eigentliche Arbeit konzentrieren. Erfahre im Folgenden, wie der neue Slackbot funktioniert und warum er sich von allen aktu"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/blog/news/slackbot-context-aware-ai-agent-for-work",
+        "text_hash": "c6d0755f5c3eb2351175e3663aa956e839cb0743d24edf28c63915b06dc5ffc9",
+        "simhash64": "a5518717fd669757",
+        "token_count": 1766,
+        "text_sample": "8 Min. Lesezeit Wir kennen es alle: Du startest deinen Tag mit ungelesenen Nachrichten, die über verschiedene Channels verstreut sind. Du weißt, dass eine Entscheidung getroffen wurde, aber wo? War es im #projekt-alpha -Channel? In einem Huddle? Vielleicht ist sie aber auch in der Präsentation vom letzten Dienstag vergraben. Die „Arbeit rund um die Arbeit” – suchen, zusammenfassen und aufholen – nimmt mehr Zeit in Anspruch als die Arbeitsaufgaben, für die wir eingestellt wurden. Wie wäre es daher mit einer vertrauensvollen, immer verfügbaren Anlaufstelle, die Fragen sofort beantwortet und in deinem Namen handelt? Heute führen wir den Slackbot als persönlichen KI-Agenten für alle Mitarbeitenden ein, der genau das tut. Dein einstiger Benachrichtigungsassistent wird ab jetzt zu deinem persönlichen, kontextbewussten KI-Agenten für die Arbeit. Der neue Slackbot versteht deine Arbeit, antizipiert deine Bedürfnisse und fungiert als der intelligente Partner, den du dir immer gewünscht hast. Ab sofort kannst du aufhören, nach Informationen zu suchen, und dich auf deine eigentliche Arbeit konzentrieren. Erfahre im Folgenden, wie der neue Slackbot funktioniert und warum er sich von allen aktu",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "2b18d81f92f0014c84e4cfdd3ed36bf3bc1003f4b34c31a4dc62cb83f7f2208a",
+        "new_hash": "c6d0755f5c3eb2351175e3663aa956e839cb0743d24edf28c63915b06dc5ffc9",
+        "simhash_distance": 4,
+        "old_token_count": 1822,
+        "new_token_count": 1766,
+        "token_delta_pct": -3.07
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-DFA6245BC2D9C0D40A",

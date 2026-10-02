@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:54:29Z",
+  "updated_at": "2026-10-02T03:58:54Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -2924,6 +2924,29 @@
         "token_delta_pct": 0.0
       },
       "previous_checked_at": "2026-10-02T03:51:05Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-C5B2D08692A9D53636",
+      "detected_at": "2026-10-02T03:58:22Z",
+      "source_id": "SRC-77ABA5093A8FC5",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – Meet Slackbot: Your Personal AI Agent for Work",
+      "url": "https://slack.com/blog/news/slackbot-context-aware-ai-agent-for-work",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "2b18d81f92f0014c84e4cfdd3ed36bf3bc1003f4b34c31a4dc62cb83f7f2208a",
+        "new_hash": "c6d0755f5c3eb2351175e3663aa956e839cb0743d24edf28c63915b06dc5ffc9",
+        "simhash_distance": 4,
+        "old_token_count": 1822,
+        "new_token_count": 1766,
+        "token_delta_pct": -3.07
+      },
+      "previous_checked_at": "2026-10-02T03:53:59Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
