@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:48:14Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T03:51:39Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -3273,6 +3273,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:26:37Z",
       "resolution": "Source is inactive; automated availability review is no longer actionable."
+    },
+    {
+      "review_id": "REV-C9A13DF53B440423FC",
+      "status": "open",
+      "first_detected": "2026-10-02T03:51:11Z",
+      "last_detected": "2026-10-02T03:51:11Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-79B77EB6493435",
+      "source_title": "Slack Help – Set up SAML single sign-on",
+      "url": "https://slack.com/help/articles/203772216-Set-up-SAML-single-sign-on-for-Slack",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/help/articles/203772216-Einmaliges-Anmelden-mit-SAML-f%C3%BCr-Slack-einrichten",
+        "text_hash": "fa250eec4cfb078618cc28c92beefcb8c065e79f951a3ac2f5cb0d5607ec8b7b",
+        "simhash64": "8ee5dc4bd680f9c5",
+        "token_count": 1361,
+        "text_sample": "Workspace-Management Du möchtest mehr darüber wissen, wie du dein Team einrichten kannst? Dann bist du hier richtig! Weiter Zurück Aktionen,Aktivität,Zugriffs-Logs,Barrierefreiheit,hinzufügen,App hinzufügen,Mitglieder hinzufügen,Zu Slack hinzufügen,Administratoren,alle Passwörter,Analytik,Android,Mitteilung,Mitteilungen,App-Verzeichnis,App-Symbol,Apple Watch,Apps genehmigen,archivieren,Asana,Atlassian,Automatisierungs-Apps,Badge,Rechnungsdaten,Rechnungsstellung,Bitbucket,Bot-Benutzer,Box,Durchsuchen,Anrufe,Anrufe:,abbrechen,Änderungen,Channels,Channel sofort,Channel-Management,Channel-Benachrichtigung,Channel-Vorschläge,Domains beanspruchen,schließen,Unternehmenskultur,Compliance-Exporte,verfassen,Computer,Unterhaltungen,konvertierenverbinden,verknüpfte Accounts,Verbindung,verbinden,Nachrichten kopieren,erstellen,Anpassung,anpassen,Benutzerdefinierte SAML,benutzerdefiniert,Kunden-Support-Teams,Datenexporte,Datensicherheit,deaktivieren,Standard-Channels,löschen,Löschung,Slack bereitstellen,Desktop,Direktnachrichten,Verzeichnis,deaktivieren,entdecken und beitreten,Ermittlungs-APIs,Anzeigename,DMs,Bitte nicht stören,Domain,Domains,Downgrade,Dropbox,doppelte Accounts,bearbeiten,Bearbei"
+      },
+      "current": {
+        "status_code": 429,
+        "final_url": "https://slack.com/intl/de-de/help/articles/203772216-Einmaliges-Anmelden-mit-SAML-f%C3%BCr-Slack-einrichten",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-CDCAC245643419A1A9",
