@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T04:25:33Z",
-  "open_count": 1,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -487,7 +487,7 @@
     },
     {
       "review_id": "REV-2022626EA5094C815D",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:25:07Z",
       "last_detected": "2026-10-02T04:25:07Z",
       "occurrences": 1,
@@ -521,7 +521,9 @@
         "old_status": 200,
         "new_status": 429
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Transient HTTP 429 rate-limit response from slack.com. The current official Slack Enterprise/help/news pages remain reachable and continue to document Slackbot as a personal AI agent for work. No indexed product fact changed.",
+      "reviewed_at": "2026-10-02T05:51:00+02:00"
     },
     {
       "review_id": "REV-204DFA87F15A057E4B",
