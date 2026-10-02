@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:50:00Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T05:52:34Z",
+  "open_count": 2,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1600,6 +1600,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Google Gemini Deep Research help page is currently reachable and still supports the indexed Deep Research capability; the AgentenWache failure was a transient network timeout, not a product/source removal.",
       "reviewed_at": "2026-10-01T16:38:00Z"
+    },
+    {
+      "review_id": "REV-65F2D11B5B524B2D8F",
+      "status": "open",
+      "first_detected": "2026-10-02T05:51:59Z",
+      "last_detected": "2026-10-02T05:51:59Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-80E6B59FC42D95",
+      "source_title": "Manus Help – What is the Cloud Computer?",
+      "url": "https://help.manus.im/en/articles/15392111-what-is-the-cloud-computer",
+      "agent_ids": [
+        "AI-0052"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://help.manus.im/en/articles/15392111-what-is-the-cloud-computer",
+        "text_hash": "709d0c4cd03742d717797099e0d28b5d1d7ba63292b8922c399b13fae21b8902",
+        "simhash64": "9f9241f2559b2e82",
+        "token_count": 463,
+        "text_sample": "What is the Cloud Computer? Learn about the Manus Cloud Computer, a persistent, always-on virtual environment for your advanced tasks. June 5, 2026 Table of contents The Manus Cloud Computer is a dedicated, persistent virtual machine in the cloud that allows Manus to run your applications, bots, and scripts 24/7. It represents a significant upgrade from the standard temporary sandbox, offering an environment that stays active even when you are not actively interacting with the agent. How It Differs from the Temporary Sandbox By default, when you give Manus a task, it operates in a temporary sandbox . This environment is perfect for data analysis, writing Python scripts, creating documents, and building web apps. However, once the task is complete, the sandbox is eventually closed, and while your outputs are saved to your chat history, the underlying environment does not persist. The Cloud Computer , on the other hand, features a persistent file system and always-on operation . Files, installed tools, and running processes remain active between sessions. This means you can ask Manus to install a database, deploy a web scraper that runs every hour, or host a 24/7 Discord bot, and it "
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://help.manus.im/en/articles/15392111-what-is-the-cloud-computer",
+        "text_hash": "58f2f0d03b3b57c3e8d301a3034076faaa49601433a53e5bb65f04d84d098b23",
+        "simhash64": "9f9241f24d9b6e82",
+        "token_count": 465,
+        "text_sample": "What is the Cloud Computer? Learn about the Manus Cloud Computer, a persistent, always-on virtual environment for your advanced tasks. June 5, 2026 Table of contents The Manus Cloud Computer is a dedicated, persistent virtual machine in the cloud that allows Manus to run your applications, bots, and scripts 24/7. It represents a significant upgrade from the standard temporary sandbox, offering an environment that stays active even when you are not actively interacting with the agent. How It Differs from the Temporary Sandbox By default, when you give Manus a task, it operates in a temporary sandbox . This environment is perfect for data analysis, writing Python scripts, creating documents, and building web apps. However, once the task is complete, the sandbox is eventually closed, and while your outputs are saved to your chat history, the underlying environment does not persist. The Cloud Computer , on the other hand, features a persistent file system and always-on operation . Files, installed tools, and running processes remain active between sessions. This means you can ask Manus to install a database, deploy a web scraper that runs every hour, or host a 24/7 Discord bot, and it ",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "709d0c4cd03742d717797099e0d28b5d1d7ba63292b8922c399b13fae21b8902",
+        "new_hash": "58f2f0d03b3b57c3e8d301a3034076faaa49601433a53e5bb65f04d84d098b23",
+        "simhash_distance": 3,
+        "old_token_count": 463,
+        "new_token_count": 465,
+        "token_delta_pct": 0.43
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-66484F39574C8E3200",
@@ -4297,11 +4339,11 @@
     },
     {
       "review_id": "REV-F0754CC584FF25C263",
-      "status": "reviewed_no_product_change",
-      "first_detected": "2026-10-02T05:46:31Z",
-      "last_detected": "2026-10-02T05:46:31Z",
+      "status": "open",
+      "first_detected": "2026-10-02T05:52:01Z",
+      "last_detected": "2026-10-02T05:52:01Z",
       "occurrences": 1,
-      "severity": "low",
+      "severity": "medium",
       "change_type": "content_change",
       "source_id": "SRC-FBAB1386BE7F79",
       "source_title": "Manus Help – Manus Compliance APIs",
@@ -4312,32 +4354,30 @@
       "previous": {
         "status_code": 200,
         "final_url": "https://help.manus.im/en/articles/13644620-manus-compliance-apis",
-        "text_hash": "c80265f146098cf6a4e3e29704168e5db43e9b6fa4c61db82ff303aecee4de5b",
-        "simhash64": "1ebd452f6674dcfd",
-        "token_count": 240,
+        "text_hash": "feb57d7fe27831b8aff8c641b500fce68d79446abf785d9c852a9da00c952c07",
+        "simhash64": "1eb4452e6a54dcf5",
+        "token_count": 239,
         "text_sample": "Manus Compliance APIs August 21, 2026 Table of contents Overview Manus Compliance APIs are secure, auditable interfaces specifically designed to support regulatory, legal, and security workflows including e-discovery, legal hold, and SIEM integration. Important Notice: These APIs are not intended for general product access and are only exposed under approved compliance and governance use cases. Available APIs E-Discovery API Activation Required : Please contact our customer success team for activation before use Functionality : Provides controlled access to content metadata Enables access to preserved data snapshots Designed to support: Legal discovery processes Internal investigations Regulatory inquiries Getting Started Assess Requirements : Ensure your use case meets compliance and governance criteria Contact Support : Submit an activation request to our customer success team Obtain Approval : Wait for compliance review and API access authorization Review Documentation : Download relevant API documentation for integration development Support & Assistance For E-Discovery API activation or to learn more about our compliance APIs, please reach out to our customer success team. This"
       },
       "current": {
         "status_code": 200,
         "final_url": "https://help.manus.im/en/articles/13644620-manus-compliance-apis",
-        "text_hash": "feb57d7fe27831b8aff8c641b500fce68d79446abf785d9c852a9da00c952c07",
-        "simhash64": "1eb4452e6a54dcf5",
-        "token_count": 239,
+        "text_hash": "a94deabf0c098d17aba779496b006427be94e6199410c2ea5bfa02259474af8d",
+        "simhash64": "1ebf412f62744cb7",
+        "token_count": 236,
         "text_sample": "Manus Compliance APIs August 21, 2026 Table of contents Overview Manus Compliance APIs are secure, auditable interfaces specifically designed to support regulatory, legal, and security workflows including e-discovery, legal hold, and SIEM integration. Important Notice: These APIs are not intended for general product access and are only exposed under approved compliance and governance use cases. Available APIs E-Discovery API Activation Required : Please contact our customer success team for activation before use Functionality : Provides controlled access to content metadata Enables access to preserved data snapshots Designed to support: Legal discovery processes Internal investigations Regulatory inquiries Getting Started Assess Requirements : Ensure your use case meets compliance and governance criteria Contact Support : Submit an activation request to our customer success team Obtain Approval : Wait for compliance review and API access authorization Review Documentation : Download relevant API documentation for integration development Support & Assistance For E-Discovery API activation or to learn more about our compliance APIs, please reach out to our customer success team. This",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "c80265f146098cf6a4e3e29704168e5db43e9b6fa4c61db82ff303aecee4de5b",
-        "new_hash": "feb57d7fe27831b8aff8c641b500fce68d79446abf785d9c852a9da00c952c07",
-        "simhash_distance": 7,
-        "old_token_count": 240,
-        "new_token_count": 239,
-        "token_delta_pct": -0.42
+        "old_hash": "feb57d7fe27831b8aff8c641b500fce68d79446abf785d9c852a9da00c952c07",
+        "new_hash": "a94deabf0c098d17aba779496b006427be94e6199410c2ea5bfa02259474af8d",
+        "simhash_distance": 11,
+        "old_token_count": 239,
+        "new_token_count": 236,
+        "token_delta_pct": -1.26
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "resolution": "Reviewed the current official Manus Compliance APIs page. The monitored text changed by one token with a small SimHash delta, while the page still documents secure, auditable compliance APIs for e-discovery, legal hold, investigations, and SIEM integration. No indexed product fact changed.",
-      "reviewed_at": "2026-10-02T05:50:00Z"
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-F101298E3B1703A2B5",
