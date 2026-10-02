@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T03:51:39Z",
-  "open_count": 1,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -3276,7 +3276,7 @@
     },
     {
       "review_id": "REV-C9A13DF53B440423FC",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:51:11Z",
       "last_detected": "2026-10-02T03:51:11Z",
       "occurrences": 1,
@@ -3310,7 +3310,9 @@
         "old_status": 200,
         "new_status": 429
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Slack's SAML Help page returned a transient HTTP 429. The SAML claim remains documented and was moved to Slack's stable Enterprise product page; other Slackbot and EKM Help dependencies were also proactively replaced with stable official Slack sources.",
+      "reviewed_at": "2026-10-02T05:58:00+02:00"
     },
     {
       "review_id": "REV-CDCAC245643419A1A9",
