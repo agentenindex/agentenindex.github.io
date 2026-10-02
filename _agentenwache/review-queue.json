@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:45:30Z",
+  "updated_at": "2026-10-02T04:51:05Z",
   "open_count": 3,
   "items": [
     {
@@ -1093,7 +1093,7 @@
     },
     {
       "review_id": "REV-498192E7907A906B32",
-      "status": "open",
+      "status": "acknowledged",
       "first_detected": "2026-10-02T04:45:30Z",
       "last_detected": "2026-10-02T04:45:30Z",
       "occurrences": 1,
@@ -1116,7 +1116,9 @@
         "status_code": 404,
         "baseline_health": true
       },
-      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
+      "acknowledged_at": "2026-10-02T04:51:05Z",
+      "resolution": "Source is explicitly manual_only; automated availability review is not actionable."
     },
     {
       "review_id": "REV-5177CDF329A3D642E2",
@@ -3976,9 +3978,9 @@
     },
     {
       "review_id": "REV-EA22CAA3666EBDA111",
-      "status": "dismissed_noise",
-      "first_detected": "2026-10-02T04:22:22Z",
-      "last_detected": "2026-10-02T04:22:22Z",
+      "status": "open",
+      "first_detected": "2026-10-02T04:50:43Z",
+      "last_detected": "2026-10-02T04:50:43Z",
       "occurrences": 1,
       "severity": "high",
       "change_type": "content_change",
@@ -3999,26 +4001,22 @@
       "current": {
         "status_code": 200,
         "final_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064983",
-        "text_hash": "1f251f5bf7cb3367c98940b493f7a33888d4cd5285bd71bb613e825c89e84b95",
-        "simhash64": "2fefa98b0ca732a1",
-        "token_count": 5,
-        "text_sample": "Bergabung ke rapat Zoom Loading...",
+        "text_hash": "fbcf44297ad746aa32a22bd1af39a1ac7390806b78073016e7eb045cbb4e18dd",
+        "simhash64": "a91affb67e5bd9bc",
+        "token_count": 4,
+        "text_sample": "加入 Zoom 会议 Loading...",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
         "old_hash": "73661044aca3e20d23edf523a486e1994c5375a9491ce5ee2b2972debd82b83e",
-        "new_hash": "1f251f5bf7cb3367c98940b493f7a33888d4cd5285bd71bb613e825c89e84b95",
-        "simhash_distance": 32,
+        "new_hash": "fbcf44297ad746aa32a22bd1af39a1ac7390806b78073016e7eb045cbb4e18dd",
+        "simhash_distance": 24,
         "old_token_count": 4,
-        "new_token_count": 5,
-        "token_delta_pct": 25
+        "new_token_count": 4,
+        "token_delta_pct": 0.0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "resolution": "The monitored Zoom page returned a transient localized/loading snippet, while the current official role-management page still documents RBAC, custom roles, permissions, and role scopes. No indexed ZoomMate governance fact changed.",
-      "reviewed_at": "2026-10-02T05:49:00+02:00",
-      "last_seen_after_review": "2026-10-02T04:25:13Z",
-      "suppressed_reoccurrences": 1
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-EAE8D697875A437E7D",
@@ -4239,8 +4237,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Lindy homepage changed promotional trial wording, but the indexed profile only states platform access is plan-dependent; no indexed product fact changed.",
       "reviewed_at": "2026-10-01T15:18:00Z",
-      "last_seen_after_review": "2026-10-02T04:44:56Z",
-      "suppressed_reoccurrences": 10
+      "last_seen_after_review": "2026-10-02T04:50:47Z",
+      "suppressed_reoccurrences": 11
     },
     {
       "review_id": "REV-F5E8FCA8A32DF6BA03",
