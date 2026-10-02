@@ -1,2 +1,231 @@
 <!DOCTYPE html>
-<html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>A2A erklärt: Agent2Agent-Protokoll für KI-Agenten | AgentenIndex</title><meta content="A2A verständlich erklärt: Wie Agent2Agent Kommunikation, Agent Cards und Interoperabilität zwischen KI-Agenten standardisieren soll." name="description"/><meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><link href="https://agentenindex.de/wissen/a2a/" rel="canonical"/><link href="/assets/styles.css?v=8.2.0" rel="stylesheet"/><meta content="article" property="og:type"/><meta content="de_DE" property="og:locale"/><meta content="AgentenIndex" property="og:site_name"/><meta content="A2A erklärt: Agent2Agent-Protokoll für KI-Agenten | AgentenIndex" property="og:title"/><meta content="A2A verständlich erklärt: Wie Agent2Agent Kommunikation, Agent Cards und Interoperabilität zwischen KI-Agenten standardisieren soll." property="og:description"/><meta content="https://agentenindex.de/wissen/a2a/" property="og:url"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://agentenindex.de/#organization","name":"AgentenIndex","url":"https://agentenindex.de/","description":"Unabhängige deutschsprachige Referenz für KI-Agenten.","logo":{"@type":"ImageObject","url":"https://agentenindex.de/assets/agentenindex-profile-1024.png","width":1024,"height":1024},"sameAs":["https://github.com/agentenindex"]},{"@type":"WebSite","@id":"https://agentenindex.de/#website","name":"AgentenIndex","url":"https://agentenindex.de/","inLanguage":"de-DE","publisher":{"@id":"https://agentenindex.de/#organization"}},{"@type":"Article","@id":"https://agentenindex.de/wissen/a2a/#article","headline":"A2A erklärt: Wie KI-Agenten miteinander kommunizieren","description":"A2A verständlich erklärt: Wie Agent2Agent Kommunikation, Agent Cards und Interoperabilität zwischen KI-Agenten standardisieren soll.","dateModified":"2026-10-01","inLanguage":"de-DE","author":{"@type":"Organization","name":"AgentenIndex","url":"https://agentenindex.de/ueber/"},"publisher":{"@id":"https://agentenindex.de/#organization"},"mainEntityOfPage":"https://agentenindex.de/wissen/a2a/","datePublished":"2026-09-28"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Start","item":"https://agentenindex.de/"},{"@type":"ListItem","position":2,"name":"Wissen","item":"https://agentenindex.de/wissen/"},{"@type":"ListItem","position":3,"name":"A2A","item":"https://agentenindex.de/wissen/a2a/"}]}]}</script><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="manifest" href="/site.webmanifest"/><meta name="theme-color" content="#f7f9fc"/><meta content="https://agentenindex.de/assets/agentenindex-og-1200x630.jpg" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="AgentenIndex – KI-Agenten verstehen, finden und vergleichen" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="https://agentenindex.de/assets/agentenindex-og-1200x630.jpg" name="twitter:image"/></head><body><a class="skip" href="#main">Zum Inhalt springen</a><div class="topnote"><div class="container"><span>Stand: 30. September 2026 · Source-first Referenz</span><span>110 dokumentierte Agenten &amp; Plattformen · Keine bezahlten Rankings</span></div></div><header class="site-header"><div class="container header"><a class="brand" href="/" aria-label="AgentenIndex Startseite"><img alt="" aria-hidden="true" class="brand-symbol-v2" height="40" src="/assets/agentenindex-symbol-v2.svg" width="40"/><span class="brand-wordmark-v2"><span class="brand-main-v2">Agenten</span><span class="brand-accent-v2">Index</span></span></a><nav aria-label="Hauptnavigation" class="nav"><a href="/agenten/">Agenten</a><a class="nav-finder" href="/finder/">Finder</a><a href="/anwendungen/">Anwendungen</a><a href="/privatpersonen/">Privat</a><a href="/unternehmen/">Unternehmen</a><a href="/wissen/">Wissen</a><a href="/methodik/">Methodik</a><a class="nav-check" href="https://check.agentenindex.de/">Agenten-Check</a></nav><button aria-label="Menü öffnen" class="menu">Menü</button></div></header><main id="main"><section class="subhero"><div class="container"><div class="breadcrumbs"><a href="/">Start</a><span>›</span><a href="/wissen/">Wissen</a><span>›</span>A2A</div><p class="kicker">Protokolle</p><h1>A2A erklärt: Wie KI-Agenten miteinander kommunizieren</h1><p class="lead">Agent2Agent (A2A) verständlich erklärt: Agent Cards, Interoperabilität, Zusammenarbeit und Unterschied zu MCP.</p></div></section><section class="article"><div class="container article-grid"><article><div class="meta"><span>Protokolle</span><span>Stand: 28.09.2026</span><span>Redaktion: <a href="/ueber/">AgentenIndex</a></span></div><p class="lede"><strong>A2A steht für Agent2Agent.</strong> Das offene Protokoll soll Agenten unterschiedlicher Anbieter und Frameworks ermöglichen, Fähigkeiten zu entdecken, Aufgaben auszutauschen und miteinander zu kommunizieren.</p><h2 id="idee">Die Grundidee</h2><p>Ein Agent muss nicht jedes Werkzeug und jede Fachfähigkeit selbst besitzen. Über A2A kann er mit einem anderen Agenten interagieren, dessen Fähigkeiten über eine Agent Card beschrieben werden. Damit wird Agenten-Interoperabilität zu einem eigenen Infrastrukturthema.</p><h2 id="mcp">A2A und MCP ergänzen sich</h2><p>Vereinfacht: MCP standardisiert den Zugriff auf Tools und Kontext, A2A standardisiert die Zusammenarbeit zwischen Agenten. In komplexen Systemen kann ein Agent MCP für Werkzeuge nutzen und A2A für die Kommunikation mit anderen Agenten.</p><h2 id="relevanz">Was bedeutet das für Nutzer?</h2><p>Für Privatnutzer ist A2A heute meist unsichtbare Infrastruktur. Für Unternehmen und Entwickler kann es langfristig wichtig werden, wenn spezialisierte Agenten verschiedener Plattformen zusammenarbeiten sollen, ohne dass jede Verbindung proprietär gebaut wird.</p><h2 id="quellen">Offizielle Quellen</h2><ol class="source-list"><li><a href="https://a2a-protocol.org/v1.0.0/" rel="noopener noreferrer">Agent2Agent Protocol</a> <span class="updated">(A2A Protocol / Linux Foundation)</span></li><li><a href="https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/" rel="noopener noreferrer">Developer’s Guide to AI Agent Protocols</a> <span class="updated">(Google Developers Blog)</span></li></ol></article><aside class="toc"><strong>Auf dieser Seite</strong><a href="#idee">Grundidee</a><a href="#mcp">A2A vs. MCP</a><a href="#relevanz">Relevanz</a><a href="#quellen">Quellen</a></aside></div></section></main><footer class="footer"><div class="container footer-grid"><div><a class="brand" href="/" aria-label="AgentenIndex Startseite"><img alt="" aria-hidden="true" class="brand-symbol-v2" height="40" src="/assets/agentenindex-symbol-v2.svg" width="40"/><span class="brand-wordmark-v2"><span class="brand-main-v2">Agenten</span><span class="brand-accent-v2">Index</span></span></a><p>KI-Agenten verstehen, finden und vergleichen.</p><p class="footer-small">Unabhängige deutschsprachige Referenz · Quellenbasiert · Stand 1. Oktober 2026</p></div><div class="footer-links"><a href="/agenten/">Agenten</a><a href="/finder/">AgentenFinder</a><a href="/wissen/">Wissen</a><a href="/privatpersonen/">Privatpersonen</a><a href="/unternehmen/">Unternehmen</a><a href="/methodik/">Methodik</a><a href="/ueber/">Über</a><a class="footer-check" href="https://check.agentenindex.de/">Agenten-Check</a></div></div><div class="container foot-bottom"><span>© 2026 AgentenIndex</span><span class="legal-links"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></span></div><div class="container footer-note">Funktionen, Preise und Verfügbarkeit können sich kurzfristig ändern. Entscheidend sind die auf den Profilseiten verlinkten Primärquellen.</div></footer><script defer="" src="/assets/app.js"></script></body></html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>A2A-Protokoll erklärt: Agent2Agent, Agent Cards, MCP & Sicherheit | AgentenIndex</title>
+<meta name="description" content="A2A verständlich erklärt: Agent Cards, Discovery, Tasks, Streaming, Sicherheit, MCP-Vergleich und Unternehmens-Checkliste für interoperable KI-Agenten."/>
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/>
+<link rel="canonical" href="https://agentenindex.de/wissen/a2a/"/>
+<link rel="stylesheet" href="/assets/styles.css?v=8.8.0"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="de_DE"/>
+<meta property="og:site_name" content="AgentenIndex"/>
+<meta property="og:title" content="A2A-Protokoll erklärt: Agent2Agent, Agent Cards, MCP & Sicherheit"/>
+<meta property="og:description" content="Source-first Referenz zum Agent2Agent-Protokoll: Agent Cards, Discovery, Tasks, Streaming, Sicherheit, MCP-Vergleich und Einsatz in Unternehmen."/>
+<meta property="og:url" content="https://agentenindex.de/wissen/a2a/"/>
+<meta property="og:image" content="https://agentenindex.de/assets/agentenindex-og-1200x630.jpg"/>
+<meta property="article:published_time" content="2026-09-28T10:00:00+02:00"/>
+<meta property="article:modified_time" content="2026-10-02T09:44:00+02:00"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://agentenindex.de/#organization","name":"AgentenIndex","url":"https://agentenindex.de/","description":"Unabhängige deutschsprachige Referenz für KI-Agenten.","logo":{"@type":"ImageObject","url":"https://agentenindex.de/assets/agentenindex-profile-1024.png","width":1024,"height":1024},"sameAs":["https://github.com/agentenindex"]},{"@type":"WebSite","@id":"https://agentenindex.de/#website","name":"AgentenIndex","url":"https://agentenindex.de/","inLanguage":"de-DE","publisher":{"@id":"https://agentenindex.de/#organization"}},{"@type":"Article","@id":"https://agentenindex.de/wissen/a2a/#article","headline":"A2A-Protokoll erklärt: Agent2Agent, Agent Cards, MCP und Sicherheit","description":"Source-first Referenz zum Agent2Agent-Protokoll für interoperable KI-Agenten.","datePublished":"2026-09-28T10:00:00+02:00","dateModified":"2026-10-02T09:44:00+02:00","inLanguage":"de-DE","author":{"@type":"Organization","name":"AgentenIndex Redaktion","url":"https://agentenindex.de/ueber/"},"publisher":{"@id":"https://agentenindex.de/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://agentenindex.de/wissen/a2a/"},"image":["https://agentenindex.de/assets/agentenindex-og-1200x630.jpg"],"articleSection":"Agenten-Protokolle","about":[{"@type":"Thing","name":"Agent2Agent Protocol"},{"@type":"Thing","name":"A2A"},{"@type":"Thing","name":"Agent Cards"},{"@type":"Thing","name":"KI-Agenten Interoperabilität"},{"@type":"Thing","name":"Model Context Protocol"}],"citation":["https://a2a-protocol.org/latest/topics/key-concepts/","https://a2a-protocol.org/dev/topics/agent-discovery/","https://a2a-protocol.org/dev/topics/enterprise-ready/","https://a2a-protocol.org/dev/topics/a2a-and-mcp/","https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year"],"isBasedOn":["https://a2a-protocol.org/latest/topics/key-concepts/","https://a2a-protocol.org/dev/specification/","https://a2a-protocol.org/dev/topics/agent-discovery/","https://a2a-protocol.org/dev/topics/enterprise-ready/"]},{"@type":"FAQPage","@id":"https://agentenindex.de/wissen/a2a/#faq","mainEntity":[{"@type":"Question","name":"Was ist A2A bei KI-Agenten?","acceptedAnswer":{"@type":"Answer","text":"A2A steht für Agent2Agent. Das offene Protokoll standardisiert, wie unabhängige KI-Agenten einander entdecken, Fähigkeiten beschreiben, Aufgaben austauschen und Ergebnisse über definierte Schnittstellen zurückgeben."}},{"@type":"Question","name":"Was ist eine Agent Card?","acceptedAnswer":{"@type":"Answer","text":"Eine Agent Card ist ein strukturiertes JSON-Dokument mit Identität, Endpunkten, Fähigkeiten, Skills, unterstützten Interaktionsmodi und Sicherheitsanforderungen eines A2A-Agenten."}},{"@type":"Question","name":"Was ist der Unterschied zwischen A2A und MCP?","acceptedAnswer":{"@type":"Answer","text":"MCP verbindet einen Agenten mit Tools, Ressourcen und Kontext. A2A verbindet unabhängige Agenten miteinander. Beide Protokolle ergänzen sich und können im selben System verwendet werden."}},{"@type":"Question","name":"Ist A2A ein Sicherheitsprotokoll?","acceptedAnswer":{"@type":"Answer","text":"A2A definiert Interoperabilität und unterstützt Sicherheitsangaben, ersetzt aber keine Authentifizierung, Autorisierung oder Netzwerkabsicherung. Diese beruhen weiterhin auf etablierten Web- und Enterprise-Mechanismen."}},{"@type":"Question","name":"Wie finden sich A2A-Agenten?","acceptedAnswer":{"@type":"Answer","text":"A2A standardisiert die Selbstauskunft über Agent Cards. Eine verbreitete Discovery-Methode ist die Veröffentlichung unter einer well-known-URL; auch Registries oder private Konfigurationen sind möglich."}},{"@type":"Question","name":"Unterstützt A2A lange laufende Aufgaben?","acceptedAnswer":{"@type":"Answer","text":"Ja. A2A kennt Tasks mit Zuständen und unterstützt Polling, Streaming sowie Push-Benachrichtigungen für längere oder asynchrone Abläufe."}},{"@type":"Question","name":"Wann ist A2A für Unternehmen sinnvoll?","acceptedAnswer":{"@type":"Answer","text":"A2A wird interessant, wenn spezialisierte Agenten über Team-, System- oder Anbietergrenzen hinweg zusammenarbeiten sollen und proprietäre Punkt-zu-Punkt-Integrationen vermieden werden sollen."}},{"@type":"Question","name":"Muss jeder KI-Agent A2A unterstützen?","acceptedAnswer":{"@type":"Answer","text":"Nein. A2A ist nur relevant, wenn ein Agent als A2A-Client oder A2A-Server mit anderen Agenten interoperieren soll. Viele Agenten funktionieren ohne A2A vollständig."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Start","item":"https://agentenindex.de/"},{"@type":"ListItem","position":2,"name":"Wissen","item":"https://agentenindex.de/wissen/"},{"@type":"ListItem","position":3,"name":"A2A-Protokoll","item":"https://agentenindex.de/wissen/a2a/"}]}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<div class="topnote"><div class="container"><span>Stand 2. Oktober 2026 · Source-first Referenz</span><span>Primärquellen: A2A Protocol · Linux Foundation</span></div></div>
+<header class="site-header"><div class="container header"><a class="brand" href="/" aria-label="AgentenIndex Startseite"><img alt="" aria-hidden="true" class="brand-symbol-v2" height="40" src="/assets/agentenindex-symbol-v2.svg" width="40"/><span class="brand-wordmark-v2"><span class="brand-main-v2">Agenten</span><span class="brand-accent-v2">Index</span></span></a><nav aria-label="Hauptnavigation" class="nav"><a href="/agenten/">Agenten</a><a href="/finder/">Finder</a><a href="/fit/">Fit</a><a href="/aktuelles/">Aktuelles</a><a aria-current="page" href="/wissen/">Wissen</a><a href="/methodik/">Methodik</a><a class="nav-check" href="https://check.agentenindex.de/">Agenten-Check</a></nav><button aria-label="Menü öffnen" aria-expanded="false" class="menu">Menü</button></div></header>
+
+<main id="main">
+<section class="a2a-hero"><div class="container a2a-hero-grid"><div>
+<nav class="breadcrumbs"><a href="/">Start</a><span>›</span><a href="/wissen/">Wissen</a><span>›</span>A2A</nav>
+<p class="eyebrow">AgentenIndex Wissen · Protokolle</p>
+<h1>A2A erklärt: Wie KI-Agenten miteinander arbeiten</h1>
+<p class="a2a-lead">Agent2Agent (A2A) ist ein offenes Protokoll für die Zusammenarbeit unabhängiger KI-Agenten. Es standardisiert unter anderem Agent Cards, Discovery, Aufgaben, Nachrichten, Ergebnisse und Interaktionsmuster – über Framework- und Anbietergrenzen hinweg.</p>
+<div class="finder-trust"><span>✓ Agent Cards</span><span>✓ Tasks &amp; Streaming</span><span>✓ A2A vs. MCP</span><span>✓ Sicherheit eingeordnet</span></div>
+</div><aside class="a2a-summary">
+<span>Direktantwort</span>
+<strong>Was ist A2A?</strong>
+<p>A2A steht für <b>Agent2Agent</b>. Ein Agent kann über das Protokoll einen anderen Agenten entdecken, dessen Fähigkeiten prüfen, ihm eine Aufgabe übergeben und Ergebnisse oder Statusänderungen zurückerhalten. A2A standardisiert dabei die Kommunikation – nicht die interne Denkweise oder Implementierung des Agenten.</p>
+<a href="#ablauf">So funktioniert A2A →</a>
+</aside></div></section>
+
+<section class="a2a-snapshot"><div class="container a2a-snapshot-grid">
+<div><span>01</span><b>Entdecken</b><p>Agent Card beschreibt Identität, Skills und Endpunkte.</p></div>
+<div><span>02</span><b>Delegieren</b><p>Ein Client-Agent übergibt eine Aufgabe an einen A2A-Server.</p></div>
+<div><span>03</span><b>Koordinieren</b><p>Tasks, Messages und Status halten längere Abläufe nachvollziehbar.</p></div>
+<div><span>04</span><b>Liefern</b><p>Ergebnisse werden als Messages oder strukturierte Artifacts zurückgegeben.</p></div>
+</div></section>
+
+<section class="article a2a-article"><div class="container article-grid"><article>
+<div class="a2a-direct" id="definition">
+<p class="kicker">Kurz erklärt</p>
+<h2>Was bedeutet Agent2Agent?</h2>
+<p><strong>A2A schafft eine gemeinsame Außenschnittstelle zwischen Agenten.</strong> Zwei Agenten müssen nicht dasselbe Framework, dasselbe Modell oder denselben Anbieter verwenden. Entscheidend ist, dass Client und Server die vereinbarten A2A-Strukturen und Interaktionsmuster verstehen.</p>
+<p>Das Protokoll wurde ursprünglich von Google initiiert und wird inzwischen als offenes Projekt im Umfeld der Linux Foundation und der Agentic AI Foundation weiterentwickelt. Im April 2026 meldete die Linux Foundation mehr als 150 unterstützende Organisationen und produktive Einsätze in mehreren Branchen. Für die technische Bewertung bleibt jedoch die aktuelle A2A-Spezifikation maßgeblich.</p>
+</div>
+
+<section id="problem" class="a2a-section">
+<p class="kicker">Warum A2A?</p>
+<h2>Das Problem: Jeder Agent spricht sonst seine eigene Sprache</h2>
+<p>Ein Unternehmen kann mehrere spezialisierte Agenten betreiben: einen Service-Agenten, einen Recherche-Agenten, einen Coding-Agenten oder einen Agenten für Vertragsprüfung. Ohne gemeinsamen Standard braucht jede Verbindung eigene Integrationslogik: Wie findet der eine Agent den anderen? Welche Fähigkeiten bietet er? Welche Formate akzeptiert er? Wie wird eine länger laufende Aufgabe verfolgt? Wie wird ein Ergebnis zurückgegeben?</p>
+<p>A2A versucht, genau diese Schnittstelle zu standardisieren. Der Agent bleibt intern eine Black Box: Er kann ein eigenes Modell, eigene Tools, eigene Prompts oder eigene Orchestrierung verwenden. Für den aufrufenden Agenten zählt die veröffentlichte Schnittstelle.</p>
+<div class="a2a-rule"><b>Wichtig</b><p>A2A standardisiert Zusammenarbeit zwischen Agenten. Es macht einen Agenten nicht automatisch besser, autonomer oder sicherer.</p></div>
+</section>
+
+<section id="bausteine" class="a2a-section">
+<p class="kicker">Kernbegriffe</p>
+<h2>Agent Card, Task, Message, Part und Artifact</h2>
+<div class="a2a-concept-grid">
+<div><span>Agent Card</span><h3>Digitale Visitenkarte</h3><p>Ein JSON-Dokument beschreibt Identität, Anbieter, Endpunkte, Fähigkeiten, Skills, Ein-/Ausgabeformate und Sicherheitsanforderungen eines Agenten.</p></div>
+<div><span>Task</span><h3>Zustandsbehaftete Arbeit</h3><p>Eine Task repräsentiert eine länger laufende Arbeitseinheit mit eigener ID und Lebenszyklus. So kann ein Client Status und Ergebnisse später erneut abrufen.</p></div>
+<div><span>Message</span><h3>Kommunikation</h3><p>Messages transportieren Anweisungen, Rückfragen, Kontext oder Statusinformationen zwischen Client und Agent.</p></div>
+<div><span>Part</span><h3>Inhaltsbaustein</h3><p>Parts können Text, Binärdaten, URLs oder strukturierte Daten tragen und ermöglichen unterschiedliche Modalitäten.</p></div>
+<div><span>Artifact</span><h3>Konkretes Ergebnis</h3><p>Artifacts sind greifbare Outputs einer Task, etwa Dokumente, Dateien oder strukturierte Daten. Sie können auch schrittweise geliefert werden.</p></div>
+</div>
+</section>
+
+<section id="agent-card" class="a2a-section">
+<p class="kicker">Discovery</p>
+<h2>Die Agent Card beschreibt, was ein Agent anbietet</h2>
+<p>Die Agent Card ist einer der zentralen Bausteine von A2A. Ein Client kann daraus lesen, <strong>welcher Agent angesprochen wird, welche Skills er anbietet, welche Ein- und Ausgabeformate unterstützt werden, welche A2A-Fähigkeiten vorhanden sind und welche Sicherheitsanforderungen gelten</strong>.</p>
+<p>Für öffentlich auffindbare Agenten beschreibt die A2A-Dokumentation eine standardisierte well-known-URL wie <code>/.well-known/agent-card.json</code>. Daneben sind private Registries, Konfigurationen oder andere Discovery-Verfahren möglich. Gerade in Unternehmen ist dynamische öffentliche Discovery nicht zwingend sinnvoll; sensible Agent Cards können interne Endpunkte oder Skills verraten und sollten entsprechend geschützt werden.</p>
+<div class="a2a-card-demo">
+<div><small>Beispielhafte Struktur</small><code>{<br>  "name": "Research Agent",<br>  "supportedInterfaces": […],<br>  "capabilities": { "streaming": true },<br>  "securitySchemes": { … },<br>  "skills": [ … ]<br>}</code></div>
+<div><b>Was der Client daraus ableitet</b><span>Welcher Endpunkt?</span><span>Welche Skills?</span><span>Welche Medienformate?</span><span>Streaming möglich?</span><span>Welche Authentifizierung?</span></div>
+</div>
+</section>
+
+<section id="ablauf" class="a2a-section">
+<p class="kicker">Ablauf</p>
+<h2>Wie läuft eine A2A-Kommunikation typischerweise ab?</h2>
+<ol class="a2a-steps">
+<li><b>Agent entdecken.</b><p>Der Client erhält oder findet die Agent Card des Zielagenten und prüft Skills, Endpunkt, Protokollversion und Sicherheitsanforderungen.</p></li>
+<li><b>Vertrauen und Zugriff klären.</b><p>Authentifizierung und Autorisierung werden über etablierte Web- beziehungsweise Enterprise-Mechanismen hergestellt; Credentials gehören nicht in den eigentlichen Aufgabeninhalt.</p></li>
+<li><b>Message senden.</b><p>Der Client übermittelt eine Nachricht mit Aufgabe und Kontext. Der Server kann unmittelbar mit einer Message antworten oder für komplexere Arbeit eine Task erzeugen.</p></li>
+<li><b>Status verfolgen.</b><p>Bei längeren Tasks kann der Client pollen, einen Stream abonnieren oder – wenn unterstützt – Push-Benachrichtigungen erhalten.</p></li>
+<li><b>Ergebnis übernehmen.</b><p>Der Agent liefert Messages oder Artifacts. Der Client entscheidet anschließend, wie das Ergebnis im eigenen Workflow weiterverarbeitet wird.</p></li>
+</ol>
+</section>
+
+<section id="interaktion" class="a2a-section">
+<p class="kicker">Lange Aufgaben</p>
+<h2>Polling, Streaming und Push Notifications</h2>
+<p>A2A ist nicht nur für kurze Frage-Antwort-Interaktionen gedacht. Die aktuelle Dokumentation beschreibt mehrere Muster für länger laufende Aufgaben:</p>
+<div class="a2a-pattern-grid">
+<div><b>Request / Response</b><p>Der Client sendet eine Aufgabe und fragt den Task-Status bei Bedarf erneut ab. Das ist einfach und eignet sich für viele klassische Integrationen.</p></div>
+<div><b>Streaming</b><p>Wenn ein Agent Streaming unterstützt, kann der Client laufend Status- und Artifact-Updates empfangen. Die Fähigkeit wird in der Agent Card deklariert.</p></div>
+<div><b>Push</b><p>Für sehr lange oder entkoppelte Abläufe kann der Server Änderungen an einen konfigurierten Webhook senden, sofern Push Notifications unterstützt werden.</p></div>
+</div>
+<p>Diese Muster sind für agentische Workflows wichtig, weil eine Aufgabe Minuten oder länger dauern und zwischendurch zusätzliche Eingaben benötigen kann. A2A modelliert deshalb nicht nur einen HTTP-Aufruf, sondern einen nachvollziehbaren Task-Lebenszyklus.</p>
+</section>
+
+<section id="mcp" class="a2a-section">
+<p class="kicker">A2A vs. MCP</p>
+<h2>A2A und MCP lösen unterschiedliche Probleme</h2>
+<div class="a2a-compare">
+<div class="head"><span>Frage</span><span>MCP</span><span>A2A</span></div>
+<div><b>Was wird verbunden?</b><span>Agent ↔ Tools, Ressourcen, Kontext</span><span>Agent ↔ Agent</span></div>
+<div><b>Richtung</b><span>Vertikale Erweiterung eines Agenten</span><span>Horizontale Zusammenarbeit zwischen Agenten</span></div>
+<div><b>Discovery</b><span>Server / Tools / Resources</span><span>Agent Cards / Skills</span></div>
+<div><b>Typisches Beispiel</b><span>Agent greift auf Datenbank oder GitHub-Tool zu</span><span>Recherche-Agent delegiert Teilaufgabe an Spezialagenten</span></div>
+<div><b>Konkurrenz?</b><span>Nein</span><span>Nein – beide ergänzen sich</span></div>
+</div>
+<p>Die offizielle A2A-Dokumentation beschreibt MCP als eher vertikale Integrationsschicht und A2A als horizontale Verbindung zwischen unabhängigen Agenten. Ein Agent kann also MCP verwenden, um auf interne Werkzeuge zuzugreifen, und gleichzeitig A2A, um Aufgaben an einen anderen Agenten zu delegieren.</p>
+</section>
+
+<section id="sicherheit" class="a2a-section">
+<p class="kicker">Security</p>
+<h2>Ist A2A sicher?</h2>
+<p><strong>A2A ist kein Sicherheitszertifikat.</strong> Das Protokoll definiert Interoperabilität und beschreibt Sicherheitsmechanismen, setzt aber weiterhin auf etablierte Web-Sicherheitspraktiken. Die aktuelle Spezifikation sieht verschlüsselte Kommunikation für produktive Deployments vor; Authentifizierungsanforderungen werden in der Agent Card beschrieben und Credentials typischerweise über den Transport beziehungsweise HTTP-Header übertragen.</p>
+<p>Für Unternehmen ergeben sich daraus mehrere Prüfbereiche: Serveridentität, Authentifizierung, Autorisierung, Token-Scopes, Netzwerkgrenzen, Schutz der Agent Card, erlaubte Skills und die Frage, welche Daten überhaupt an einen Remote-Agenten weitergegeben werden dürfen.</p>
+<div class="a2a-security-grid">
+<div><b>Agent Card schützen</b><p>Interne URLs, Skills oder weitere Metadaten können sensibel sein. Erweiterte Karten sollten bei Bedarf authentifiziert ausgeliefert werden.</p></div>
+<div><b>Credentials trennen</b><p>Statische Secrets gehören nicht in Agent Cards oder Aufgabeninhalte. Zugriff sollte über etablierte Authentifizierungsmechanismen erfolgen.</p></div>
+<div><b>Remote-Agent begrenzen</b><p>Ein fremder Agent sollte nur den Kontext erhalten, den er für die delegierte Aufgabe tatsächlich benötigt.</p></div>
+<div><b>Ergebnis nicht blind vertrauen</b><p>Auch ein authentifizierter Agent kann fehlerhafte oder unerwartete Ergebnisse liefern. Kritische Folgeaktionen brauchen eigene Regeln oder Freigaben.</p></div>
+</div>
+<p>Mehr zu Berechtigungen, Human Approval, Prompt Injection und Auditierbarkeit steht in der <a href="/wissen/ki-agenten-sicherheit/">AgentenIndex-Referenz zur KI-Agenten-Sicherheit</a>.</p>
+</section>
+
+<section id="status" class="a2a-section">
+<p class="kicker">Stand 2026</p>
+<h2>Wie weit ist A2A inzwischen verbreitet?</h2>
+<p>A2A wurde 2025 von Google vorgestellt und anschließend als offenes Projekt an die Linux Foundation übergeben. Im April 2026 berichtete die Linux Foundation von mehr als 150 unterstützenden Organisationen, Integrationen in große Cloud-Plattformen und ersten produktiven Einsätzen. Im August 2026 wurde A2A außerdem als Growth-Stage-Projekt in die Agentic AI Foundation aufgenommen.</p>
+<p>Diese Entwicklung zeigt, dass A2A nicht mehr nur ein experimentelles Konzept ist. Sie bedeutet aber nicht, dass jeder Agent oder jede Plattform A2A vollständig unterstützt. Für AgentenIndex zählt deshalb weiterhin die <strong>produktbezogene Evidenz</strong>: A2A-Unterstützung, Client-Rolle und Server-Rolle werden getrennt dokumentiert und nur bestätigt, wenn eine belastbare Primärquelle sie für den konkreten Agenten belegt.</p>
+</section>
+
+<section id="praxis" class="a2a-section">
+<p class="kicker">Praxis</p>
+<h2>Wann ist A2A sinnvoll – und wann nicht?</h2>
+<div class="a2a-use-grid">
+<div><span>Sinnvoll</span><h3>Spezialisierte Agenten</h3><p>Ein Orchestrator delegiert Teilaufgaben an Agenten mit klar abgegrenzten Skills, etwa Recherche, Support oder Codeanalyse.</p></div>
+<div><span>Sinnvoll</span><h3>Anbietergrenzen</h3><p>Agenten verschiedener Teams, Frameworks oder Anbieter sollen über eine gemeinsame Schnittstelle zusammenarbeiten.</p></div>
+<div><span>Sinnvoll</span><h3>Lange Aufgaben</h3><p>Aufträge brauchen Status, Zwischenstände, Rückfragen oder asynchrone Ergebnislieferung.</p></div>
+<div><span>Nicht automatisch nötig</span><h3>Ein einzelner Agent</h3><p>Wenn ein Agent lediglich interne Tools nutzt und keine unabhängigen Agenten anspricht, kann MCP oder eine klassische API völlig ausreichen.</p></div>
+<div><span>Nicht automatisch nötig</span><h3>Einfacher Funktionsaufruf</h3><p>Für eine stabile, eng definierte Systemintegration kann eine direkte API einfacher und kontrollierbarer sein.</p></div>
+<div><span>Nicht automatisch nötig</span><h3>Nur „Multi-Agent“ im Marketing</h3><p>Mehrere interne Subagenten bedeuten nicht automatisch A2A. Entscheidend ist die dokumentierte Protokollunterstützung.</p></div>
+</div>
+</section>
+
+<section id="checkliste" class="a2a-section a2a-checklist">
+<p class="kicker">Unternehmens-Checkliste</p>
+<h2>A2A vor dem produktiven Einsatz prüfen</h2>
+<ol>
+<li><b>Rolle klären.</b><p>Ist das Produkt A2A-Client, A2A-Server oder beides?</p></li>
+<li><b>Agent Card prüfen.</b><p>Welche Skills, Endpunkte, Protokollversionen, Ein-/Ausgabeformate und Sicherheitsanforderungen werden tatsächlich veröffentlicht?</p></li>
+<li><b>Discovery-Modell festlegen.</b><p>Öffentliche well-known-URL, private Registry oder kontrollierte Konfiguration?</p></li>
+<li><b>Authentifizierung definieren.</b><p>Wie werden Identität und Credentials beschafft, erneuert und entzogen?</p></li>
+<li><b>Autorisierung begrenzen.</b><p>Welche Agenten dürfen welchen Remote-Agenten und welche Skills aufrufen?</p></li>
+<li><b>Datenminimierung anwenden.</b><p>Nur Kontext übertragen, der für die delegierte Aufgabe erforderlich ist.</p></li>
+<li><b>Task-Lifecycle planen.</b><p>Polling, Streaming oder Push passend zur erwarteten Laufzeit und Infrastruktur auswählen.</p></li>
+<li><b>Timeouts und Abbruch definieren.</b><p>Was passiert, wenn ein Remote-Agent nicht antwortet oder eine Task hängen bleibt?</p></li>
+<li><b>Artifacts validieren.</b><p>Ergebnisse externer Agenten nicht automatisch als vertrauenswürdige Eingabe für kritische Aktionen behandeln.</p></li>
+<li><b>Audit Trail sicherstellen.</b><p>Delegation, Identität, Zielagent, Task-ID, Status und Ergebnis sollten nachvollziehbar bleiben.</p></li>
+<li><b>Versionen beobachten.</b><p>Protokoll- und Agent-Card-Änderungen können bestehende Integrationen beeinflussen.</p></li>
+<li><b>Fallback vorsehen.</b><p>Definieren, wie der Workflow bei Nichterreichbarkeit oder Inkompatibilität weiterläuft.</p></li>
+</ol>
+</section>
+
+<section id="agentenindex" class="a2a-section">
+<p class="kicker">AgentenIndex</p>
+<h2>Wie AgentenIndex A2A dokumentiert</h2>
+<p>AgentenIndex trennt drei Aussagen bewusst voneinander: <strong>A2A unterstützt</strong>, <strong>A2A Client</strong> und <strong>A2A Server</strong>. Ein Produkt kann beispielsweise andere Agenten aufrufen, ohne selbst als A2A-Endpunkt erreichbar zu sein. Eine allgemeine Formulierung wie „A2A-ready“ reicht deshalb nicht automatisch als Beleg für alle drei Felder.</p>
+<p>Ein aktuelles Beispiel ist <a href="/agenten/gemini-cli/">Gemini CLI</a>: Im offiziellen Repository ist ein eigenes A2A-Server-Paket dokumentiert. Dadurch konnte AgentenIndex die Server-Rolle als eigenen Field-Level-Claim ergänzen. Fehlt eine belastbare Quelle, bleibt ein A2A-Feld <strong>unknown</strong> und wird nicht als „Nein“ interpretiert.</p>
+<div class="a2a-cta"><div><p class="kicker">A2A als Anforderung</p><h3>Agenten mit dokumentierter Protokoll-Evidenz vergleichen.</h3><p>AgentenFit kann A2A-, MCP-, API-, Hosting-, Security- und Governance-Anforderungen gegen die vorhandene Field-Level-Evidenz prüfen.</p></div><a class="btn primary" href="/fit/">AgentenFit öffnen →</a></div>
+</section>
+
+<section id="quellen" class="a2a-section">
+<p class="kicker">Primärquellen</p>
+<h2>Grundlage dieser A2A-Referenz</h2>
+<ul class="a2a-sources">
+<li><a href="https://a2a-protocol.org/latest/topics/key-concepts/" rel="noopener noreferrer">A2A Protocol – Core Concepts ↗</a><span>Agent Card, Task, Message, Part, Artifact und Interaktionsmuster.</span></li>
+<li><a href="https://a2a-protocol.org/dev/topics/agent-discovery/" rel="noopener noreferrer">A2A Protocol – Agent Discovery ↗</a><span>well-known-Discovery, Registries, Schutz und Caching von Agent Cards.</span></li>
+<li><a href="https://a2a-protocol.org/latest/topics/streaming-and-async/" rel="noopener noreferrer">A2A Protocol – Streaming &amp; Asynchronous Operations ↗</a><span>Polling, Streaming, Status- und Artifact-Updates sowie asynchrone Aufgaben.</span></li>
+<li><a href="https://a2a-protocol.org/dev/topics/enterprise-ready/" rel="noopener noreferrer">A2A Protocol – Enterprise Features ↗</a><span>TLS, Authentication, Authorization und Enterprise-Sicherheitsmechanismen.</span></li>
+<li><a href="https://a2a-protocol.org/dev/topics/a2a-and-mcp/" rel="noopener noreferrer">A2A Protocol – A2A and MCP ↗</a><span>Offizielle Einordnung der komplementären Rollen beider Protokolle.</span></li>
+<li><a href="https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year" rel="noopener noreferrer">Linux Foundation – A2A adoption milestones 2026 ↗</a><span>Projektstatus, unterstützende Organisationen und produktive Nutzung.</span></li>
+</ul>
+<p class="a2a-source-note">Letzte redaktionelle Prüfung: 2. Oktober 2026. A2A entwickelt sich weiter; für normative Details und Versionsfragen ist die aktuelle offizielle Spezifikation maßgeblich.</p>
+</section>
+
+<section id="faq" class="a2a-section">
+<p class="kicker">FAQ</p>
+<h2>Häufige Fragen zum A2A-Protokoll</h2>
+<div class="faq-item"><h3>Was ist A2A bei KI-Agenten?</h3><p>A2A steht für Agent2Agent. Das offene Protokoll standardisiert, wie unabhängige KI-Agenten einander entdecken, Fähigkeiten beschreiben, Aufgaben austauschen und Ergebnisse zurückgeben.</p></div>
+<div class="faq-item"><h3>Was ist eine Agent Card?</h3><p>Eine Agent Card ist ein strukturiertes JSON-Dokument mit Identität, Endpunkten, Fähigkeiten, Skills, unterstützten Formaten und Sicherheitsanforderungen eines A2A-Agenten.</p></div>
+<div class="faq-item"><h3>Was ist der Unterschied zwischen A2A und MCP?</h3><p>MCP verbindet einen Agenten mit Tools, Ressourcen und Kontext. A2A verbindet unabhängige Agenten miteinander. Beide Protokolle sind komplementär und können im selben System eingesetzt werden.</p></div>
+<div class="faq-item"><h3>Ist A2A ein Sicherheitsprotokoll?</h3><p>Nein. A2A definiert Interoperabilität und beschreibt Sicherheitsanforderungen, ersetzt aber keine Authentifizierung, Autorisierung, Netzwerkabsicherung oder Datenklassifikation.</p></div>
+<div class="faq-item"><h3>Wie finden sich A2A-Agenten?</h3><p>A2A standardisiert die Selbstauskunft über Agent Cards. Eine verbreitete Methode ist eine well-known-URL; auch private Registries oder feste Konfigurationen sind möglich.</p></div>
+<div class="faq-item"><h3>Unterstützt A2A lange laufende Aufgaben?</h3><p>Ja. Tasks besitzen einen Lifecycle und können über Polling, Streaming oder Push-Mechanismen verfolgt werden, abhängig von den veröffentlichten Fähigkeiten des Servers.</p></div>
+<div class="faq-item"><h3>Wann ist A2A für Unternehmen sinnvoll?</h3><p>Vor allem dann, wenn spezialisierte Agenten über Team-, Plattform- oder Anbietergrenzen hinweg zusammenarbeiten und proprietäre Punkt-zu-Punkt-Integrationen reduziert werden sollen.</p></div>
+<div class="faq-item"><h3>Muss jeder KI-Agent A2A unterstützen?</h3><p>Nein. Wenn ein Agent keine unabhängigen Agenten aufrufen oder selbst als Agenten-Endpunkt dienen soll, ist A2A nicht zwingend erforderlich.</p></div>
+<div class="faq-item"><h3>Ist jedes Multi-Agent-System automatisch A2A?</h3><p>Nein. Mehrere interne Agenten oder Subagenten können proprietär orchestriert werden. A2A ist erst dann belegt, wenn das Protokoll konkret unterstützt wird.</p></div>
+</section>
+
+<div class="a2a-related">
+<a href="/wissen/mcp/"><span>Protokoll</span><b>MCP verständlich erklärt</b></a>
+<a href="/wissen/ki-agenten-sicherheit/"><span>Sicherheit</span><b>KI-Agenten sicher einsetzen</b></a>
+<a href="/wissen/human-in-the-loop/"><span>Kontrolle</span><b>Human-in-the-loop</b></a>
+<a href="/aktuelles/gemini-cli-a2a-server/"><span>Aktuell</span><b>Gemini CLI als A2A-Server</b></a>
+</div>
+</article>
+
+<aside class="toc a2a-toc"><strong>Auf dieser Seite</strong><a href="#definition">Definition</a><a href="#problem">Warum A2A?</a><a href="#bausteine">Kernbegriffe</a><a href="#agent-card">Agent Card</a><a href="#ablauf">Ablauf</a><a href="#interaktion">Streaming &amp; Push</a><a href="#mcp">A2A vs. MCP</a><a href="#sicherheit">Sicherheit</a><a href="#status">Stand 2026</a><a href="#praxis">Wann sinnvoll?</a><a href="#checkliste">Checkliste</a><a href="#agentenindex">AgentenIndex</a><a href="#quellen">Quellen</a><a href="#faq">FAQ</a></aside>
+</div></section>
+</main>
+
+<footer class="footer"><div class="container footer-grid"><div><a class="brand" href="/"><img alt="" aria-hidden="true" class="brand-symbol-v2" height="40" src="/assets/agentenindex-symbol-v2.svg" width="40"/><span class="brand-wordmark-v2"><span class="brand-main-v2">Agenten</span><span class="brand-accent-v2">Index</span></span></a><p>KI-Agenten verstehen, finden und vergleichen.</p><p class="footer-small">Unabhängige deutschsprachige Referenz · Quellenbasiert · Stand 2. Oktober 2026</p></div><div class="footer-links"><a href="/agenten/">Agenten</a><a href="/finder/">AgentenFinder</a><a href="/fit/">AgentenFit</a><a href="/aktuelles/">Aktuelles</a><a href="/wissen/">Wissen</a><a href="/anwendungen/">Anwendungen</a><a href="/privatpersonen/">Privatpersonen</a><a href="/unternehmen/">Unternehmen</a><a href="/methodik/">Methodik</a><a href="/ueber/">Über</a></div></div><div class="container foot-bottom"><span>© 2026 AgentenIndex</span><span class="legal-links"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></span></div><div class="container footer-note">AgentenIndex ist eine redaktionelle Referenz. Protokollunterstützung ist keine automatische Sicherheits- oder Eignungsaussage.</div></footer>
+<script defer src="/assets/app.js"></script>
+</body>
+</html>
