@@ -1,6 +1,6 @@
 {
   "graph_version": "1.0",
-  "as_of": "2026-10-01",
+  "as_of": "2026-10-02",
   "principle": "Research priority ranks missing evidence only. Unknown is not false, no product fact is inferred from priority, and discontinued products are excluded from active research urgency.",
   "target": {
     "minimum_core_coverage_pct": 40,
@@ -22,9 +22,9 @@
     "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified. Discontinued products receive priority score 0 and no active research hints."
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 32,
+    "agents_below_target_with_deep_evidence": 33,
     "agents_without_deep_evidence": 0,
-    "agents_at_or_above_target": 77,
+    "agents_at_or_above_target": 76,
     "agents_discontinued": 1
   },
   "field_priorities": [
@@ -89,13 +89,13 @@
       "coverage_pct": 24.55
     },
     {
-      "path": "governance.audit_logs.siem_export",
-      "documented_agents": 31,
-      "unknown_agents": 79,
-      "coverage_pct": 28.18
+      "path": "governance.custom_roles",
+      "documented_agents": 30,
+      "unknown_agents": 80,
+      "coverage_pct": 27.27
     },
     {
-      "path": "governance.custom_roles",
+      "path": "governance.audit_logs.siem_export",
       "documented_agents": 31,
       "unknown_agents": 79,
       "coverage_pct": 28.18
@@ -108,9 +108,9 @@
     },
     {
       "path": "api.rest",
-      "documented_agents": 36,
-      "unknown_agents": 74,
-      "coverage_pct": 32.73
+      "documented_agents": 35,
+      "unknown_agents": 75,
+      "coverage_pct": 31.82
     },
     {
       "path": "governance.scim",
@@ -161,13 +161,13 @@
       "coverage_pct": 60.0
     },
     {
-      "path": "governance.audit_logs.available",
-      "documented_agents": 81,
-      "unknown_agents": 29,
-      "coverage_pct": 73.64
+      "path": "governance.rbac",
+      "documented_agents": 80,
+      "unknown_agents": 30,
+      "coverage_pct": 72.73
     },
     {
-      "path": "governance.rbac",
+      "path": "governance.audit_logs.available",
       "documented_agents": 81,
       "unknown_agents": 29,
       "coverage_pct": 73.64
@@ -2573,22 +2573,16 @@
       ],
       "available_primary_sources": [
         {
-          "title": "OpenHands Docs – Get Conversation",
-          "url": "https://docs.openhands.dev/api-reference/get-conversation",
+          "title": "OpenHands Docs – Cloud API Overview",
+          "url": "https://docs.openhands.dev/openhands/usage/cloud/cloud-api",
           "origin": "field_level_evidence",
           "evidence_type": "api_docs"
         },
         {
-          "title": "OpenHands Docs – Search Conversations",
-          "url": "https://docs.openhands.dev/api-reference/search-conversations",
+          "title": "OpenHands Docs – MCP Servers",
+          "url": "https://docs.openhands.dev/openhands/usage/cli/mcp-servers",
           "origin": "field_level_evidence",
-          "evidence_type": "api_docs"
-        },
-        {
-          "title": "OpenHands Docs – Store Settings",
-          "url": "https://docs.openhands.dev/api-reference/store-settings",
-          "origin": "field_level_evidence",
-          "evidence_type": "api_docs"
+          "evidence_type": "technical_docs"
         },
         {
           "title": "OpenHands Enterprise",
@@ -3281,6 +3275,98 @@
       ]
     },
     {
+      "agent_id": "AI-0083",
+      "name": "Kore.ai Agent Platform",
+      "provider_id": "PROV-KORE-AI",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 88.6,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 3.0,
+        "unknown_share": 3.6,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 7,
+      "unknown_fields": 18,
+      "coverage_pct": 28.0,
+      "fields_needed_for_40pct": 3,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Kore.ai – Artemis Agent Platform launch",
+          "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Kore.ai – Introducing Agent Blueprint Language (ABL)",
+          "url": "https://www.kore.ai/blog/introducing-agent-blueprint-language-abl",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 24,
+          "global_coverage_pct": 21.82,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0043",
       "name": "Sierra Agent",
       "provider_id": "PROV-SIERRA",
@@ -3797,7 +3883,7 @@
         },
         {
           "title": "Windsurf Docs – Analytics API",
-          "url": "https://docs.windsurf.com/de/windsurf/accounts/api-reference/introduction",
+          "url": "https://docs.windsurf.com/de/windsurf/accounts/api-reference/analytics-api-introduction",
           "origin": "field_level_evidence",
           "evidence_type": "api_docs"
         },
@@ -4895,7 +4981,7 @@
         "hosting.private_network",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.audit_logs.siem_export"
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -4991,10 +5077,10 @@
           "suggested_query": "IBM IBM watsonx Orchestrate official documentation security customer_managed_key"
         },
         {
-          "path": "governance.audit_logs.siem_export",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "IBM IBM watsonx Orchestrate official documentation governance audit_logs siem_export"
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "IBM IBM watsonx Orchestrate official documentation governance custom_roles"
         }
       ]
     },
@@ -5151,7 +5237,7 @@
         "api.webhooks",
         "governance.sso.oidc",
         "hosting.private_network",
-        "governance.audit_logs.siem_export"
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -5247,10 +5333,10 @@
           "suggested_query": "UiPath UiPath Agents official documentation hosting private_network"
         },
         {
-          "path": "governance.audit_logs.siem_export",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "UiPath UiPath Agents official documentation governance audit_logs siem_export"
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "UiPath UiPath Agents official documentation governance custom_roles"
         }
       ]
     },
@@ -5770,8 +5856,8 @@
         "governance.audit_logs.retention_days",
         "hosting.private_network",
         "governance.audit_logs.api",
-        "governance.audit_logs.siem_export",
         "governance.custom_roles",
+        "governance.audit_logs.siem_export",
         "hosting.self_hosted"
       ],
       "available_primary_sources": [
@@ -5856,16 +5942,16 @@
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance audit_logs api"
         },
         {
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance custom_roles"
+        },
+        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance audit_logs siem_export"
-        },
-        {
-          "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance custom_roles"
         },
         {
           "path": "hosting.self_hosted",
@@ -5997,8 +6083,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
           "suggested_query": "ServiceNow ServiceNow Otto official documentation governance custom_roles"
         }
       ]
@@ -6540,7 +6626,7 @@
           "title": "Claude Help – Access audit logs",
           "url": "https://support.claude.com/en/articles/9970975-access-audit-logs",
           "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
+          "evidence_type": "api_docs"
         },
         {
           "title": "Claude Help – Get started with custom connectors using remote MCP",
@@ -6558,7 +6644,7 @@
           "title": "Claude Help – Monitor Claude Cowork activity with OpenTelemetry",
           "url": "https://support.claude.com/en/articles/14477985-monitor-claude-cowork-activity-with-opentelemetry",
           "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
+          "evidence_type": "api_docs"
         },
         {
           "title": "Claude Help – Roles and permissions",
@@ -6582,7 +6668,7 @@
           "title": "Claude Help – Use Claude Cowork on Team and Enterprise plans",
           "url": "https://support.claude.com/en/articles/13455879-use-claude-cowork-on-team-and-enterprise-plans",
           "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
+          "evidence_type": "security_trust"
         }
       ],
       "research_hints": [
@@ -7159,8 +7245,8 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
-        "governance.audit_logs.siem_export",
-        "governance.custom_roles"
+        "governance.custom_roles",
+        "governance.audit_logs.siem_export"
       ],
       "available_primary_sources": [
         {
@@ -7250,16 +7336,16 @@
           "suggested_query": "Google Google Agent Development Kit official documentation governance audit_logs api"
         },
         {
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "Google Google Agent Development Kit official documentation governance custom_roles"
+        },
+        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "Google Google Agent Development Kit official documentation governance audit_logs siem_export"
-        },
-        {
-          "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "Google Google Agent Development Kit official documentation governance custom_roles"
         }
       ]
     },
@@ -7292,7 +7378,7 @@
       ],
       "available_primary_sources": [
         {
-          "title": "Boomi Docs – Agentstudio access and permissions",
+          "title": "Boomi Docs – Accessing Agentstudio and setting up permissions",
           "url": "https://help.boomi.com/docs/Atomsphere/Platform/Accessing_agentstudio",
           "origin": "field_level_evidence",
           "evidence_type": "technical_docs"
@@ -7392,116 +7478,6 @@
       ]
     },
     {
-      "agent_id": "AI-0083",
-      "name": "Kore.ai Agent Platform",
-      "provider_id": "PROV-KORE-AI",
-      "lifecycle_status": "active",
-      "priority": "P2_maintain_or_deepen",
-      "priority_score": 28.0,
-      "score_components": {
-        "tier_base": 20.0,
-        "gap_to_40pct": 0.0,
-        "unknown_share": 3.0,
-        "source_readiness": 5.0
-      },
-      "documented_fields": 10,
-      "unknown_fields": 15,
-      "coverage_pct": 40.0,
-      "fields_needed_for_40pct": 0,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Kore.ai Docs – About Tools",
-          "url": "https://docs.kore.ai/agent-platform/tools/overview/",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Kore.ai Docs – Import to an Existing Tool API",
-          "url": "https://docs.kore.ai/agent-platform/apis/apis-list/import-to-an-existing-tool",
-          "origin": "field_level_evidence",
-          "evidence_type": "api_docs"
-        },
-        {
-          "title": "Kore.ai Docs – Integrate with MCP server",
-          "url": "https://docs.kore.ai/agent-platform/ai-agents/agentic-apps/mcp-tools/",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Kore.ai Docs – Users Management",
-          "url": "https://docs.kore.ai/gale/settings/user-management/overview/",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Kore.ai – Artemis Agent Platform launch",
-          "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 24,
-          "global_coverage_pct": 21.82,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs api"
-        }
-      ]
-    },
-    {
       "agent_id": "AI-0086",
       "name": "Microsoft Agent Framework",
       "provider_id": "PROV-MICROSOFT",
@@ -7523,8 +7499,8 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.audit_logs.siem_export",
         "governance.custom_roles",
+        "governance.audit_logs.siem_export",
         "governance.scim",
         "privacy.residency.customer_region_selectable"
       ],
@@ -7563,7 +7539,7 @@
           "title": "Microsoft Learn – Hosting Agent Framework applications",
           "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/",
           "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
+          "evidence_type": "api_docs"
         },
         {
           "title": "Microsoft Learn – OpenAI-Compatible Endpoints",
@@ -7604,16 +7580,16 @@
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation security customer_managed_key"
         },
         {
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance custom_roles"
+        },
+        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance audit_logs siem_export"
-        },
-        {
-          "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance custom_roles"
         },
         {
           "path": "governance.scim",
@@ -8036,7 +8012,7 @@
         "hosting.private_network",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.audit_logs.siem_export"
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -8132,10 +8108,10 @@
           "suggested_query": "Moveworks Moveworks Agent Studio official documentation security customer_managed_key"
         },
         {
-          "path": "governance.audit_logs.siem_export",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "Moveworks Moveworks Agent Studio official documentation governance audit_logs siem_export"
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "Moveworks Moveworks Agent Studio official documentation governance custom_roles"
         }
       ]
     },
@@ -8408,7 +8384,7 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
-        "governance.audit_logs.siem_export"
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -8497,10 +8473,10 @@
           "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs api"
         },
         {
-          "path": "governance.audit_logs.siem_export",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance audit_logs siem_export"
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "Microsoft Microsoft Fabric Data Agent official documentation governance custom_roles"
         }
       ]
     },
@@ -8625,8 +8601,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
           "suggested_query": "Cursor Cursor Agent official documentation governance custom_roles"
         }
       ]
@@ -8666,14 +8642,14 @@
           "evidence_type": "api_docs"
         },
         {
-          "title": "Devin Docs – Automation Templates",
-          "url": "https://docs.devin.ai/automation-templates/",
+          "title": "Devin Docs – Devin MCP servers and marketplace",
+          "url": "https://docs.devin.ai/work-with-devin/mcp",
           "origin": "field_level_evidence",
           "evidence_type": "technical_docs"
         },
         {
-          "title": "Devin Docs – VPC Overview",
-          "url": "https://docs.devin.ai/de/enterprise/vpc/overview",
+          "title": "Devin Docs – Enterprise Deployment",
+          "url": "https://docs.devin.ai/enterprise/deployment/overview",
           "origin": "field_level_evidence",
           "evidence_type": "technical_docs"
         },
@@ -9052,7 +9028,7 @@
           "title": "Intercom Help – Teammate activity logs",
           "url": "https://www.intercom.com/help/en/articles/4667982-review-actions-taken-in-your-workspace-with-teammate-activity-logs",
           "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
+          "evidence_type": "api_docs"
         },
         {
           "title": "Intercom Help – The Fin AI Engine",
@@ -9723,8 +9699,8 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
-        "governance.audit_logs.siem_export",
         "governance.custom_roles",
+        "governance.audit_logs.siem_export",
         "hosting.self_hosted"
       ],
       "available_primary_sources": [
@@ -9732,7 +9708,7 @@
           "title": "Microsoft Learn – Configure and share your Foundry agent",
           "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
           "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
+          "evidence_type": "api_docs"
         },
         {
           "title": "Microsoft Learn – Connect to an A2A endpoint from Foundry Agent Service",
@@ -9808,16 +9784,16 @@
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance audit_logs api"
         },
         {
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
+        },
+        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance audit_logs siem_export"
-        },
-        {
-          "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
         },
         {
           "path": "hosting.self_hosted",
@@ -10721,7 +10697,7 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.audit_logs.siem_export"
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -10816,10 +10792,10 @@
           "suggested_query": "CrewAI CrewAI AMP official documentation security customer_managed_key"
         },
         {
-          "path": "governance.audit_logs.siem_export",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "CrewAI CrewAI AMP official documentation governance audit_logs siem_export"
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "CrewAI CrewAI AMP official documentation governance custom_roles"
         }
       ]
     },
@@ -10976,7 +10952,7 @@
           "title": "Anthropic – Claude Enterprise",
           "url": "https://claude.com/solutions/enterprise",
           "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
+          "evidence_type": "api_docs"
         },
         {
           "title": "Claude Code Docs – Connect Claude Code to tools via MCP",
@@ -11058,8 +11034,8 @@
         },
         {
           "path": "api.rest",
-          "documented_agents": 36,
-          "global_coverage_pct": 32.73,
+          "documented_agents": 35,
+          "global_coverage_pct": 31.82,
           "suggested_query": "Anthropic Claude Code official documentation api rest"
         }
       ]
@@ -11088,8 +11064,8 @@
         "governance.sso.oidc",
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
-        "governance.audit_logs.siem_export",
-        "governance.custom_roles"
+        "governance.custom_roles",
+        "governance.audit_logs.siem_export"
       ],
       "available_primary_sources": [
         {
@@ -11179,16 +11155,16 @@
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance audit_logs api"
         },
         {
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance custom_roles"
+        },
+        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance audit_logs siem_export"
-        },
-        {
-          "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance custom_roles"
         }
       ]
     },
@@ -11314,8 +11290,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
           "suggested_query": "Slack Slackbot AI Teammate official documentation governance custom_roles"
         }
       ]
@@ -11594,15 +11570,15 @@
         "hosting.private_network",
         "governance.audit_logs.api",
         "security.customer_managed_key",
-        "governance.audit_logs.siem_export",
-        "governance.custom_roles"
+        "governance.custom_roles",
+        "governance.audit_logs.siem_export"
       ],
       "available_primary_sources": [
         {
           "title": "Dust – Enterprise AI Agents",
           "url": "https://dust.tt/home/enterprise",
           "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
+          "evidence_type": "api_docs"
         },
         {
           "title": "Dust – MCP and Enterprise Agents",
@@ -11665,16 +11641,16 @@
           "suggested_query": "Dust Dust Agents official documentation security customer_managed_key"
         },
         {
+          "path": "governance.custom_roles",
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
+          "suggested_query": "Dust Dust Agents official documentation governance custom_roles"
+        },
+        {
           "path": "governance.audit_logs.siem_export",
           "documented_agents": 31,
           "global_coverage_pct": 28.18,
           "suggested_query": "Dust Dust Agents official documentation governance audit_logs siem_export"
-        },
-        {
-          "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
-          "suggested_query": "Dust Dust Agents official documentation governance custom_roles"
         }
       ]
     },
@@ -11939,14 +11915,14 @@
       ],
       "available_primary_sources": [
         {
-          "title": "Dropbox Dash – Security",
-          "url": "https://dash.dropbox.com/security",
+          "title": "Dropbox Dash Security Whitepaper",
+          "url": "https://aem.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
           "origin": "field_level_evidence",
           "evidence_type": "security_trust"
         },
         {
-          "title": "Dropbox Dash – Security Architecture Overview",
-          "url": "https://www.dropbox.com/cms/content/dam/dropbox/warp/en-us/dash/Dash-Security-Architecture-Overview_Whitepaper.pdf",
+          "title": "Dropbox Dash – Security",
+          "url": "https://dash.dropbox.com/security",
           "origin": "field_level_evidence",
           "evidence_type": "security_trust"
         },
@@ -12355,8 +12331,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
           "suggested_query": "Glean Glean Agents official documentation governance custom_roles"
         }
       ]
@@ -12452,14 +12428,14 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 31,
-          "global_coverage_pct": 28.18,
+          "documented_agents": 30,
+          "global_coverage_pct": 27.27,
           "suggested_query": "Augment Code Augment Code Agent official documentation governance custom_roles"
         },
         {
           "path": "api.rest",
-          "documented_agents": 36,
-          "global_coverage_pct": 32.73,
+          "documented_agents": 35,
+          "global_coverage_pct": 31.82,
           "suggested_query": "Augment Code Augment Code Agent official documentation api rest"
         }
       ]
@@ -12711,7 +12687,7 @@
           "title": "Workato Docs – Agentic",
           "url": "https://docs.workato.com/agentic/agentic.html",
           "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
+          "evidence_type": "api_docs"
         },
         {
           "title": "Workato Docs – Agentic FAQ",

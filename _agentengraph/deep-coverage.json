@@ -1,6 +1,6 @@
 {
   "graph_version": "1.0",
-  "as_of": "2026-10-01",
+  "as_of": "2026-10-02",
   "taxonomy_schema_version": "1.0",
   "profile_version": "1.0",
   "principle": "Missing field-level evidence is unknown, never false.",
@@ -32,18 +32,18 @@
     "security.soc2_type2"
   ],
   "state_totals": {
-    "unknown": 1763,
-    "documented_true_or_value": 985,
+    "unknown": 1766,
+    "documented_true_or_value": 982,
     "documented_false": 2
   },
   "domain_totals": {
     "api": {
-      "documented_true_or_value": 51,
-      "unknown": 169
+      "documented_true_or_value": 50,
+      "unknown": 170
     },
     "governance": {
-      "documented_true_or_value": 388,
-      "unknown": 601,
+      "documented_true_or_value": 386,
+      "unknown": 603,
       "documented_false": 1
     },
     "hosting": {
@@ -2690,16 +2690,16 @@
       }
     },
     "AI-0083": {
-      "documented_fields": 10,
-      "unknown_fields": 15,
-      "coverage_pct": 40.0,
+      "documented_fields": 7,
+      "unknown_fields": 18,
+      "coverage_pct": 28.0,
       "states": {
         "protocols.mcp.client": "documented_true_or_value",
         "protocols.mcp.server": "unknown",
         "protocols.a2a.supported": "unknown",
         "protocols.a2a.client": "unknown",
         "protocols.a2a.server": "unknown",
-        "api.rest": "documented_true_or_value",
+        "api.rest": "unknown",
         "api.webhooks": "unknown",
         "hosting.managed": "documented_true_or_value",
         "hosting.self_hosted": "documented_true_or_value",
@@ -2709,8 +2709,8 @@
         "governance.sso.saml": "unknown",
         "governance.sso.oidc": "unknown",
         "governance.scim": "unknown",
-        "governance.rbac": "documented_true_or_value",
-        "governance.custom_roles": "documented_true_or_value",
+        "governance.rbac": "unknown",
+        "governance.custom_roles": "unknown",
         "governance.audit_logs.available": "documented_true_or_value",
         "governance.audit_logs.api": "unknown",
         "governance.audit_logs.retention_days": "unknown",

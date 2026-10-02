@@ -1,6 +1,6 @@
 {
   "graph_version": "1.0",
-  "as_of": "2026-10-01",
+  "as_of": "2026-10-02",
   "events": [
     {
       "event_id": "EVT-EA987D8D93F155CA0D",
@@ -18112,6 +18112,104 @@
         true
       ],
       "description": "Strukturierter Wert für security.encryption.at_rest hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-A47BE9E84ED3EE7D86",
+      "agent_id": "AI-0012",
+      "date": "2026-10-02",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.at_rest",
+      "before": [
+        "AES-256"
+      ],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für security.encryption.at_rest hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-DDC53FD12AB808CE3D",
+      "agent_id": "AI-0012",
+      "date": "2026-10-02",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "security.encryption.in_transit",
+      "before": [
+        "TLS 1.3+"
+      ],
+      "after": [
+        true
+      ],
+      "description": "Strukturierter Wert für security.encryption.in_transit hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-38A1DFDD7E65212720",
+      "agent_id": "AI-0083",
+      "date": "2026-10-02",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "api.rest",
+      "before": [
+        true
+      ],
+      "after": [],
+      "description": "Strukturierter Wert für api.rest hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-95129062C254C60836",
+      "agent_id": "AI-0083",
+      "date": "2026-10-02",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.custom_roles",
+      "before": [
+        true
+      ],
+      "after": [],
+      "description": "Strukturierter Wert für governance.custom_roles hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-C3E67E6AAEA86032EE",
+      "agent_id": "AI-0083",
+      "date": "2026-10-02",
+      "event_type": "field_change",
+      "scope": "field",
+      "path": "governance.rbac",
+      "before": [
+        true
+      ],
+      "after": [],
+      "description": "Strukturierter Wert für governance.rbac hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-DEF72AA9249E7751CF",
+      "agent_id": "AI-0090",
+      "date": "2026-10-02",
+      "event_type": "source_maintenance",
+      "scope": "profile",
+      "description": "Rate-Limit-anfällige Slack-Blogquelle durch eine aktuelle offizielle Slack-Primärquelle zum agentischen Workspace ersetzt; Produkteinordnung unverändert.",
+      "origin": "profile_changelog"
+    },
+    {
+      "event_id": "EVT-E2EFDADDE2E8DECF8C",
+      "agent_id": "AI-0090",
+      "date": "2026-10-02",
+      "event_type": "source_set_change",
+      "scope": "evidence",
+      "before": [
+        "SRC-4271C275BA8FED"
+      ],
+      "after": [
+        "SRC-26305AD6DE013F"
+      ],
+      "description": "Das Quellen-Set des AgentenProfils hat sich geändert.",
       "origin": "graph_diff"
     }
   ]
