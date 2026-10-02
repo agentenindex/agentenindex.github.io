@@ -1,0 +1,25 @@
+name: Validate Security Guide
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "wissen/ki-agenten-sicherheit/**"
+      - "assets/styles.css"
+      - ".github/scripts/validate-security-guide.py"
+      - ".github/workflows/security-guide.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate KI agent security guide
+        run: python .github/scripts/validate-security-guide.py
