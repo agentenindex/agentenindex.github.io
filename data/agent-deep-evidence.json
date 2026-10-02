@@ -9702,6 +9702,23 @@
           "note": "Manus supports outbound webhooks for task lifecycle events."
         },
         {
+          "path": "governance.audit_logs.api",
+          "value": true,
+          "scope": "manus_enterprise_compliance_api",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Manus Help – Manus Compliance APIs",
+              "url": "https://help.manus.im/en/articles/13644620-manus-compliance-apis",
+              "note": "Manus documents secure compliance APIs for e-discovery, legal hold, investigations, and SIEM-oriented governance use cases.",
+              "evidence_type": "api_docs",
+              "source_section": "Available APIs"
+            }
+          ],
+          "note": "Manus exposes approved compliance/audit-oriented APIs for enterprise governance."
+        },
+        {
           "path": "governance.audit_logs.available",
           "value": true,
           "scope": "manus_team_and_enterprise",
@@ -9734,6 +9751,23 @@
             }
           ],
           "note": "Manus Team uses documented role-based permissions for team administration and access."
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "manus_team_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Manus Help – Service Change Overview",
+              "url": "https://help.manus.im/en/articles/16147909-service-change-overview-refunds-timeline-calculation-and-special-cases",
+              "note": "Manus explicitly lists SCIM as a distinct Team/Enterprise subscription capability in its service-change documentation.",
+              "evidence_type": "technical_docs",
+              "source_section": "Subscriptions Covered"
+            }
+          ],
+          "note": "Manus documents SCIM as an enterprise/team capability."
         },
         {
           "path": "hosting.managed",
@@ -10097,6 +10131,23 @@
             }
           ],
           "note": "Perplexity Enterprise supports SAML SSO; this applies to Enterprise products including Research and Comet."
+        },
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "perplexity_comet_cloud_processing",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Perplexity – Comet Data Privacy & Security FAQ",
+              "url": "https://www.perplexity.ai/comet/resources/articles/comet-data-privacy-security-faq-s",
+              "note": "Perplexity documents Comet Assistant sending relevant context to Perplexity servers and processing local data on Perplexity servers to fulfill requested tasks.",
+              "evidence_type": "security_trust",
+              "source_section": "What data is transferred between Comet and Perplexity? / Does Comet store email content?"
+            }
+          ],
+          "note": "Comet combines local browser execution with Perplexity-managed server-side processing."
         },
         {
           "path": "hosting.self_hosted",
@@ -10689,6 +10740,57 @@
     {
       "agent_id": "AI-0058",
       "claims": [
+        {
+          "path": "hosting.managed",
+          "value": true,
+          "scope": "you_com_ari",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "You.com – Standard Security Addendum",
+              "url": "https://home.you.com/hubfs/Legal/You.com%20Standard%20Security%20Addendum%20%28May%202025%29.pdf?hsLang=en",
+              "note": "You.com documents its Managed Service architecture as running in the provider's AWS account with customer data stored in provider-controlled services.",
+              "evidence_type": "security_trust",
+              "source_section": "Architecture / Managed Service"
+            }
+          ],
+          "note": "You.com ARI is delivered on You.com's managed AWS service."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "you_com_enterprise_services",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "You.com – Standard Security Addendum",
+              "url": "https://home.you.com/hubfs/Legal/You.com%20Standard%20Security%20Addendum%20%28May%202025%29.pdf?hsLang=en",
+              "note": "You.com states stored customer data is protected with industry-standard encryption at rest.",
+              "evidence_type": "security_trust",
+              "source_section": "Security Controls / Data Encryption"
+            }
+          ],
+          "note": "You.com documents encryption at rest."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "TLS",
+          "scope": "you_com_services",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "You.com – Privacy Policy",
+              "url": "https://you.com/privacy",
+              "note": "You.com states all communications and websites are encrypted using TLS.",
+              "evidence_type": "security_trust",
+              "source_section": "General Security"
+            }
+          ],
+          "note": "You.com documents TLS encryption for communications."
+        },
         {
           "path": "security.soc2_type2",
           "value": true,
@@ -15578,6 +15680,57 @@
           "note": "Strands Agents is an open-source SDK intended to run in developer/customer-managed environments."
         },
         {
+          "path": "protocols.a2a.client",
+          "value": true,
+          "scope": "strands_agents_sdk",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Strands Agents – Agent-to-Agent (A2A) Protocol",
+              "url": "https://strandsagents.com/docs/user-guide/sdk/multi-agent/agent-to-agent/",
+              "note": "Strands documents consuming remote A2A agents through the A2AAgent client class.",
+              "evidence_type": "technical_docs",
+              "source_section": "Consuming Remote Agents"
+            }
+          ],
+          "note": "Strands Agents can act as an A2A client."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "strands_agents_sdk",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Strands Agents – Agent-to-Agent (A2A) Protocol",
+              "url": "https://strandsagents.com/docs/user-guide/sdk/multi-agent/agent-to-agent/",
+              "note": "Strands documents serving Strands agents over A2A using A2AServer/A2AExpressServer.",
+              "evidence_type": "technical_docs",
+              "source_section": "Serving an Agent over A2A"
+            }
+          ],
+          "note": "Strands Agents can act as an A2A server."
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "value": true,
+          "scope": "strands_agents_sdk",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Strands Agents – Agent-to-Agent (A2A) Protocol",
+              "url": "https://strandsagents.com/docs/user-guide/sdk/multi-agent/agent-to-agent/",
+              "note": "Strands explicitly documents native A2A support on both consuming and serving sides.",
+              "evidence_type": "technical_docs",
+              "source_section": "Agent-to-Agent (A2A) Protocol"
+            }
+          ],
+          "note": "Strands Agents natively supports A2A."
+        },
+        {
           "path": "protocols.mcp.client",
           "value": true,
           "scope": "strands_agents_sdk",
@@ -15593,6 +15746,23 @@
             }
           ],
           "note": "Strands Agents can act as MCP clients."
+        },
+        {
+          "path": "protocols.mcp.server",
+          "value": true,
+          "scope": "strands_shell",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Strands Agents – Run the MCP server",
+              "url": "https://strandsagents.com/docs/user-guide/shell/mcp-server/",
+              "note": "Strands documents a built-in MCP server exposing a sandboxed shell over JSON-RPC on stdio.",
+              "evidence_type": "technical_docs",
+              "source_section": "Run the MCP server"
+            }
+          ],
+          "note": "Strands includes an MCP server mode."
         }
       ]
     },
@@ -18736,6 +18906,40 @@
     {
       "agent_id": "AI-0103",
       "claims": [
+        {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "qualified_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Qualified – Trust",
+              "url": "https://www.qualified.com/trust",
+              "note": "Qualified explicitly documents SAML 2.0-based SSO for Enterprise customers.",
+              "evidence_type": "security_trust",
+              "source_section": "Application Security / Single Sign-On"
+            }
+          ],
+          "note": "Qualified Enterprise supports SAML 2.0 SSO."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": true,
+          "scope": "qualified_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Qualified – Trust",
+              "url": "https://www.qualified.com/trust",
+              "note": "Qualified states all stored customer data is securely encrypted.",
+              "evidence_type": "security_trust",
+              "source_section": "Data Storage"
+            }
+          ],
+          "note": "Qualified documents encryption for stored customer data."
+        },
         {
           "path": "security.soc2_type2",
           "value": true,
