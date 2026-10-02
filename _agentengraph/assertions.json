@@ -83958,19 +83958,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-79B77EB6493435"
+          "SRC-8E2694301752D3"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "slack_business_enterprise",
-        "note": "Slack supports SAML SSO.",
+        "note": "Slack supports SAML-based SSO on eligible business and enterprise plans.",
         "evidence_items": [
           {
-            "source_id": "SRC-79B77EB6493435",
-            "note": "Slack documents SAML 2.0 SSO for Business+ and Enterprise organizations.",
-            "evidence_type": "technical_docs",
-            "source_section": "Set up SAML SSO"
+            "source_id": "SRC-8E2694301752D3",
+            "note": "Slack explicitly lists SAML-based single sign-on for Business+ and multiple SAML configurations for Enterprise plans.",
+            "evidence_type": "official_product_page",
+            "source_section": "Business+ / Enterprise+ features"
           }
         ]
       },
@@ -83978,7 +83978,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -83993,7 +83993,7 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-F7BDA7CBF9D4F7"
+          "SRC-77ABA5093A8FC5"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-02",
@@ -84002,10 +84002,10 @@
         "note": "Slackbot is delivered as a native managed capability inside Slack.",
         "evidence_items": [
           {
-            "source_id": "SRC-F7BDA7CBF9D4F7",
-            "note": "Slack documents Slackbot as its personal agent for work, available directly inside Slack workspaces and Enterprise organizations with access controlled by Slack plan and admins.",
-            "evidence_type": "technical_docs",
-            "source_section": "How to work with Slackbot / What to expect"
+            "source_id": "SRC-77ABA5093A8FC5",
+            "note": "Slack documents Slackbot as a personal AI agent built directly into Slack and available inside Slack workspaces.",
+            "evidence_type": "official_release",
+            "source_section": "Key takeaways / Meet Slackbot"
           }
         ]
       },
@@ -84194,19 +84194,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-0AFEB1ABDC060C"
+          "SRC-F04559E8A2236D"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "slack_enterprise_key_management",
-        "note": "Slack Enterprise supports customer-controlled encryption keys.",
+        "note": "Slack Enterprise supports customer-controlled encryption keys through Slack EKM.",
         "evidence_items": [
           {
-            "source_id": "SRC-0AFEB1ABDC060C",
-            "note": "Slack documents customer-controlled encryption keys stored in the customer's AWS account for messages, Slackbot conversations, files, and other data.",
+            "source_id": "SRC-F04559E8A2236D",
+            "note": "Slack documents using customer-owned keys stored in AWS KMS to encrypt Slack messages and files, with granular key-access revocation.",
             "evidence_type": "security_trust",
-            "source_section": "Data encrypted with customer-controlled keys"
+            "source_section": "Bring your own keys"
           }
         ]
       },
@@ -84214,7 +84214,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
