@@ -16187,19 +16187,19 @@
         {
           "path": "privacy.residency.available",
           "value": true,
-          "scope": "slack_enterprise_including_slackbot_data",
+          "scope": "slack_business_enterprise_platform_data",
           "evidence": [
             {
-              "title": "Slack Help – Data residency for Slack",
-              "url": "https://slack.com/help/articles/360035633934-Data-residency-for-Slack",
-              "note": "Slack documents data residency across multiple geographic regions, including bot-generated messages and files.",
-              "evidence_type": "technical_docs",
-              "source_section": "Data stored in the data region"
+              "title": "Slack – Security",
+              "url": "https://slack.com/trust/security",
+              "note": "Slack documents data residency as a security capability that lets organizations choose the country or region where encrypted data at rest is stored.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency"
             }
           ],
-          "note": "Slack provides regional data-residency controls covering bot-generated content.",
+          "note": "Eligible Slack organizations can use regional data-residency controls.",
           "confidence": "high",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-02"
         },
         {
           "path": "privacy.residency.customer_region_selectable",
@@ -16207,16 +16207,16 @@
           "scope": "slack_business_enterprise",
           "evidence": [
             {
-              "title": "Slack Help – Data residency for Slack",
-              "url": "https://slack.com/help/articles/360035633934-Data-residency-for-Slack",
-              "note": "Slack states organizations can choose the region where covered data at rest is stored.",
-              "evidence_type": "technical_docs",
-              "source_section": "Data residency / available regions"
+              "title": "Slack – Security",
+              "url": "https://slack.com/trust/security",
+              "note": "Slack states data residency lets organizations choose the country or region where encrypted data at rest is stored.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency"
             }
           ],
-          "note": "Eligible Slack customers can select a supported data region.",
+          "note": "Eligible Slack customers can select a supported country or region for covered data at rest.",
           "confidence": "high",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-02"
         },
         {
           "path": "security.customer_managed_key",
@@ -18521,38 +18521,41 @@
           "value": true,
           "scope": "cortex_agents_account_data_and_inference_controls",
           "confidence": "high",
-          "verified_at": "2026-10-01",
+          "verified_at": "2026-10-02",
           "evidence": [
             {
-              "title": "Snowflake Docs – Cross-region inference",
-              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference",
-              "note": "Snowflake states customer data remains stored only in the account region and cross-region inference can be disabled for strict residency.",
-              "evidence_type": "security_trust"
+              "title": "Snowflake Docs – Supported cloud regions",
+              "url": "https://docs.snowflake.com/en/user-guide/intro-regions",
+              "note": "Snowflake documents account deployment across supported cloud regions and geographic storage of account data.",
+              "evidence_type": "technical_docs",
+              "source_section": "Supported cloud regions"
+            },
+            {
+              "title": "Snowflake Docs – Account parameters",
+              "url": "https://docs.snowflake.com/en/sql-reference/parameters",
+              "note": "Snowflake documents the account-level CORTEX_ENABLED_CROSS_REGION parameter and states that DISABLED prevents cross-region inference processing.",
+              "evidence_type": "technical_docs",
+              "source_section": "CORTEX_ENABLED_CROSS_REGION"
             }
           ],
-          "note": "Cortex AI supports an account-home-region residency posture by disabling cross-region inference."
+          "note": "Snowflake accounts have regional deployment controls, and Cortex cross-region inference can be disabled at the account level."
         },
         {
           "path": "privacy.residency.customer_region_selectable",
           "value": true,
           "scope": "snowflake_account_hosting_cortex_agents",
           "confidence": "high",
-          "verified_at": "2026-10-01",
+          "verified_at": "2026-10-02",
           "evidence": [
             {
               "title": "Snowflake Docs – Supported cloud regions",
               "url": "https://docs.snowflake.com/en/user-guide/intro-regions",
-              "note": "Snowflake states organizations can choose the region where an account is located and data is geographically stored.",
-              "evidence_type": "technical_docs"
-            },
-            {
-              "title": "Snowflake Docs – Cross-region inference",
-              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference",
-              "note": "Snowflake documents controls to keep Cortex inference in the account home region when required.",
-              "evidence_type": "security_trust"
+              "note": "Snowflake documents supported cloud regions and states organizations choose the region in which an account is located.",
+              "evidence_type": "technical_docs",
+              "source_section": "Supported cloud regions"
             }
           ],
-          "note": "Organizations choose the Snowflake account region that hosts Cortex Agents and can restrict inference to the home region."
+          "note": "Organizations choose the supported Snowflake account region that hosts Cortex Agents and account data."
         },
         {
           "path": "protocols.mcp.client",
