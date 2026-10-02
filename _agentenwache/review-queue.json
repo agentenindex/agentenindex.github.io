@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T04:42:30Z",
-  "open_count": 2,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1093,7 +1093,7 @@
     },
     {
       "review_id": "REV-498192E7907A906B32",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:42:30Z",
       "last_detected": "2026-10-02T04:42:30Z",
       "occurrences": 1,
@@ -1116,11 +1116,13 @@
         "status_code": 404,
         "baseline_health": true
       },
-      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
+      "resolution": "Transient source-unavailable result. The official Luminance Master Hosted Terms are currently reachable at the same URL and still document the managed AWS environment, customer-selectable hosting region, encryption, access controls, and SSO. No indexed fact changed.",
+      "reviewed_at": "2026-10-02T06:45:00+02:00"
     },
     {
       "review_id": "REV-5177CDF329A3D642E2",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:42:05Z",
       "last_detected": "2026-10-02T04:42:05Z",
       "occurrences": 1,
@@ -1156,9 +1158,11 @@
         "simhash_distance": 29,
         "old_token_count": 8,
         "new_token_count": 4,
-        "token_delta_pct": -50.0
+        "token_delta_pct": -50
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Transient Zoom support rendering/content extraction issue. The current official Zoom SSO guide remains reachable and explicitly states Zoom SSO is based on SAML 2.0. No indexed ZoomMate SAML fact changed.",
+      "reviewed_at": "2026-10-02T06:45:00+02:00"
     },
     {
       "review_id": "REV-5224C43C4FE1DC7E75",
