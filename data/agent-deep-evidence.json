@@ -9345,6 +9345,57 @@
       "agent_id": "AI-0050",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "cocounsel_legal",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Thomson Reuters – How CoCounsel Legal delivers AI legal research you can trust",
+              "url": "https://legal.thomsonreuters.com/blog/beyond-chatbots-how-cocounsel-legal-delivers-ai-legal-research-you-can-trust/",
+              "note": "Thomson Reuters states CoCounsel Legal provides audit trails that document every AI interaction alongside access controls and compliance tracking.",
+              "evidence_type": "official_release",
+              "source_section": "The next generation of CoCounsel Legal"
+            }
+          ],
+          "note": "CoCounsel Legal documents audit trails for AI interactions."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "cocounsel_legal_admin_permissions",
+          "confidence": "medium",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Thomson Reuters CoCounsel Help – Administrator capabilities",
+              "url": "https://www.thomsonreuters.com/en-us/help/cocounsel/legal/administration/admin-capabilities",
+              "note": "CoCounsel administrators can configure granular user-level permissions to skills and capabilities.",
+              "evidence_type": "technical_docs",
+              "source_section": "Administrator capabilities"
+            }
+          ],
+          "note": "CoCounsel supports administrator-configurable granular permissions; recorded as custom-role-like governance only within the documented admin-permission scope."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "cocounsel_legal",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Thomson Reuters CoCounsel Help – Administrator capabilities",
+              "url": "https://www.thomsonreuters.com/en-us/help/cocounsel/legal/administration/admin-capabilities",
+              "note": "CoCounsel documents an Administrator role with granular user-level permissions to skills and other CoCounsel capabilities.",
+              "evidence_type": "technical_docs",
+              "source_section": "Administrator capabilities"
+            }
+          ],
+          "note": "CoCounsel Legal uses role-based administrative permissions."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "cocounsel_legal",
@@ -10829,6 +10880,23 @@
             }
           ],
           "note": "NotebookLM Deep Research is delivered as a managed NotebookLM service."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "notebooklm_workspace_core_service",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Google Workspace Help – NotebookLM security and compliance",
+              "url": "https://support.google.com/a/answer/15239506?hl=en",
+              "note": "Google's current Workspace documentation states NotebookLM/Gemini Notebook is covered by Workspace security and compliance controls including SOC reports.",
+              "evidence_type": "security_trust",
+              "source_section": "Security and compliance"
+            }
+          ],
+          "note": "NotebookLM used as a Google Workspace core service is covered by Workspace SOC compliance."
         }
       ]
     },
@@ -18939,6 +19007,23 @@
             }
           ],
           "note": "Qualified documents encryption for stored customer data."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": true,
+          "scope": "qualified_platform_data",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Qualified – Trust",
+              "url": "https://www.qualified.com/trust",
+              "note": "Qualified documents encryption for customer data in motion over public networks.",
+              "evidence_type": "security_trust",
+              "source_section": "Encryption In Transit"
+            }
+          ],
+          "note": "Qualified documents encryption in transit."
         },
         {
           "path": "security.soc2_type2",
