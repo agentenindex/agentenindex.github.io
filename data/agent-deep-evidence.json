@@ -609,6 +609,23 @@
           "verified_at": "2026-10-01"
         },
         {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "perplexity_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Perplexity – Enterprise security foundation",
+              "url": "https://www.perplexity.ai/de/hub/blog/computer-for-enterprise",
+              "note": "Perplexity explicitly states its Enterprise foundation includes SAML SSO, audit logs, and administrative controls.",
+              "evidence_type": "official_release",
+              "source_section": "Computer for Enterprise / Enterprise infrastructure"
+            }
+          ],
+          "note": "Perplexity Enterprise supports SAML SSO; this applies to Enterprise products including Research and Comet."
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "perplexity_deep_research_in_computer",
@@ -10065,6 +10082,23 @@
           "verified_at": "2026-10-01"
         },
         {
+          "path": "governance.sso.saml",
+          "value": true,
+          "scope": "perplexity_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Perplexity – Enterprise security foundation",
+              "url": "https://www.perplexity.ai/de/hub/blog/computer-for-enterprise",
+              "note": "Perplexity explicitly states its Enterprise foundation includes SAML SSO, audit logs, and administrative controls.",
+              "evidence_type": "official_release",
+              "source_section": "Computer for Enterprise / Enterprise infrastructure"
+            }
+          ],
+          "note": "Perplexity Enterprise supports SAML SSO; this applies to Enterprise products including Research and Comet."
+        },
+        {
           "path": "hosting.self_hosted",
           "value": true,
           "scope": "perplexity_comet_local_browser",
@@ -15268,6 +15302,23 @@
           "note": "Kore.ai Agent Platform supports agent connectivity to enterprise systems through MCP."
         },
         {
+          "path": "security.encryption.at_rest",
+          "value": "AES-256",
+          "scope": "kore_ai_agent_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Kore.ai – How to ensure AI agents comply with industry regulations",
+              "url": "https://www.kore.ai/blog/how-to-make-ai-agents-comply-with-industry-regulations",
+              "note": "Kore.ai states enterprise data in its AI agent platform is protected with AES-256 encryption at rest backed by HSMs.",
+              "evidence_type": "official_release",
+              "source_section": "Security and compliance strengthen AI governance"
+            }
+          ],
+          "note": "Kore.ai documents AES-256 encryption at rest for enterprise AI-agent data."
+        },
+        {
           "path": "security.soc2_type2",
           "value": true,
           "scope": "kore_ai_artemis",
@@ -18543,6 +18594,23 @@
             }
           ],
           "note": "Artisan Enterprise provides audit logs."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "artisan_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "evidence": [
+            {
+              "title": "Artisan – The best enterprise sales dialers in 2026",
+              "url": "https://www.artisan.co/blog/the-best-enterprise-sales-dialers-compliance-admin-controls-and-scale",
+              "note": "Artisan explicitly documents role-based access with built-in and custom roles as part of its enterprise admin controls.",
+              "evidence_type": "official_release",
+              "source_section": "Which AI dialer offers enterprise admin controls, analytics, and SSO?"
+            }
+          ],
+          "note": "Artisan Enterprise supports built-in and custom roles."
         },
         {
           "path": "governance.rbac",
