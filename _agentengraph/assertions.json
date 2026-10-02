@@ -3249,6 +3249,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-08E5DB5B1D248B0B7D",
+      "agent_id": "AI-0004",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1D79DA1B84A0A0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "perplexity_enterprise",
+        "note": "Perplexity Enterprise supports SAML SSO; this applies to Enterprise products including Research and Comet.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1D79DA1B84A0A0",
+            "note": "Perplexity explicitly states its Enterprise foundation includes SAML SSO, audit logs, and administrative controls.",
+            "evidence_type": "official_release",
+            "source_section": "Computer for Enterprise / Enterprise infrastructure"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-2BB4DA6EB61BDA69EC",
       "agent_id": "AI-0004",
       "path": "hosting.managed",
@@ -51409,6 +51444,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-31561DFAD6E2776300",
+      "agent_id": "AI-0055",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-1D79DA1B84A0A0"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "perplexity_enterprise",
+        "note": "Perplexity Enterprise supports SAML SSO; this applies to Enterprise products including Research and Comet.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-1D79DA1B84A0A0",
+            "note": "Perplexity explicitly states its Enterprise foundation includes SAML SSO, audit logs, and administrative controls.",
+            "evidence_type": "official_release",
+            "source_section": "Computer for Enterprise / Enterprise infrastructure"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-1A071B6DAA91B1E4DA",
       "agent_id": "AI-0055",
       "path": "hosting.self_hosted",
@@ -78272,6 +78342,41 @@
       "origin": "data/agent-deep-evidence.json"
     },
     {
+      "assertion_id": "AST-6E9DEB156927E50B0E",
+      "agent_id": "AI-0083",
+      "path": "security.encryption.at_rest",
+      "value": "AES-256",
+      "value_hash": "35b20715d49ca03e",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E9CE55A50B2E19"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "kore_ai_agent_platform",
+        "note": "Kore.ai documents AES-256 encryption at rest for enterprise AI-agent data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E9CE55A50B2E19",
+            "note": "Kore.ai states enterprise data in its AI agent platform is protected with AES-256 encryption at rest backed by HSMs.",
+            "evidence_type": "official_release",
+            "source_section": "Security and compliance strengthen AI governance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-2F7773ADBC12E71B99",
       "agent_id": "AI-0083",
       "path": "security.soc2_type2",
@@ -95455,6 +95560,41 @@
       "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-AA9EA4F7DCAA52C8C6",
+      "agent_id": "AI-0102",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9453DE43E1FAE8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "artisan_enterprise",
+        "note": "Artisan Enterprise supports built-in and custom roles.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-9453DE43E1FAE8",
+            "note": "Artisan explicitly documents role-based access with built-in and custom roles as part of its enterprise admin controls.",
+            "evidence_type": "official_release",
+            "source_section": "Which AI dialer offers enterprise admin controls, analytics, and SSO?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },

@@ -22,9 +22,9 @@
     "note": "Source readiness rewards agents that already have registered official sources, making the next research pass more reproducible. Source hints are not evidence until a field-level claim is editorially verified. Discontinued products receive priority score 0 and no active research hints."
   },
   "summary": {
-    "agents_below_target_with_deep_evidence": 29,
+    "agents_below_target_with_deep_evidence": 27,
     "agents_without_deep_evidence": 0,
-    "agents_at_or_above_target": 80,
+    "agents_at_or_above_target": 82,
     "agents_discontinued": 1
   },
   "field_priorities": [
@@ -95,16 +95,16 @@
       "coverage_pct": 28.18
     },
     {
-      "path": "governance.custom_roles",
+      "path": "hosting.self_hosted",
       "documented_agents": 32,
       "unknown_agents": 78,
       "coverage_pct": 29.09
     },
     {
-      "path": "hosting.self_hosted",
-      "documented_agents": 32,
-      "unknown_agents": 78,
-      "coverage_pct": 29.09
+      "path": "governance.custom_roles",
+      "documented_agents": 33,
+      "unknown_agents": 77,
+      "coverage_pct": 30.0
     },
     {
       "path": "api.rest",
@@ -138,9 +138,9 @@
     },
     {
       "path": "governance.sso.saml",
-      "documented_agents": 60,
-      "unknown_agents": 50,
-      "coverage_pct": 54.55
+      "documented_agents": 62,
+      "unknown_agents": 48,
+      "coverage_pct": 56.36
     },
     {
       "path": "security.encryption.in_transit",
@@ -156,9 +156,9 @@
     },
     {
       "path": "security.encryption.at_rest",
-      "documented_agents": 69,
-      "unknown_agents": 41,
-      "coverage_pct": 62.73
+      "documented_agents": 70,
+      "unknown_agents": 40,
+      "coverage_pct": 63.64
     },
     {
       "path": "governance.audit_logs.available",
@@ -2285,17 +2285,17 @@
       "provider_id": "PROV-PERPLEXITY",
       "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 89.4,
+      "priority_score": 89.2,
       "score_components": {
         "tier_base": 80.0,
-        "gap_to_40pct": 2.0,
-        "unknown_share": 3.4,
-        "source_readiness": 4.0
+        "gap_to_40pct": 1.0,
+        "unknown_share": 3.2,
+        "source_readiness": 5.0
       },
-      "documented_fields": 8,
-      "unknown_fields": 17,
-      "coverage_pct": 32.0,
-      "fields_needed_for_40pct": 2,
+      "documented_fields": 9,
+      "unknown_fields": 16,
+      "coverage_pct": 36.0,
+      "fields_needed_for_40pct": 1,
       "recommended_unknown_paths": [
         "protocols.a2a.client",
         "protocols.a2a.server",
@@ -2318,6 +2318,12 @@
           "url": "https://www.perplexity.ai/de/hub/products/deep-research",
           "origin": "field_level_evidence",
           "evidence_type": "official_product_page"
+        },
+        {
+          "title": "Perplexity – Enterprise security foundation",
+          "url": "https://www.perplexity.ai/de/hub/blog/computer-for-enterprise",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
         },
         {
           "title": "Perplexity – Finding Alpha with Perplexity",
@@ -2389,17 +2395,17 @@
       "provider_id": "PROV-PERPLEXITY",
       "lifecycle_status": "active",
       "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 89.4,
+      "priority_score": 89.2,
       "score_components": {
         "tier_base": 80.0,
-        "gap_to_40pct": 2.0,
-        "unknown_share": 3.4,
-        "source_readiness": 4.0
+        "gap_to_40pct": 1.0,
+        "unknown_share": 3.2,
+        "source_readiness": 5.0
       },
-      "documented_fields": 8,
-      "unknown_fields": 17,
-      "coverage_pct": 32.0,
-      "fields_needed_for_40pct": 2,
+      "documented_fields": 9,
+      "unknown_fields": 16,
+      "coverage_pct": 36.0,
+      "fields_needed_for_40pct": 1,
       "recommended_unknown_paths": [
         "protocols.a2a.client",
         "protocols.a2a.server",
@@ -2422,6 +2428,12 @@
           "url": "https://www.perplexity.ai/comet/de",
           "origin": "field_level_evidence",
           "evidence_type": "official_product_page"
+        },
+        {
+          "title": "Perplexity – Enterprise security foundation",
+          "url": "https://www.perplexity.ai/de/hub/blog/computer-for-enterprise",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
         },
         {
           "title": "Perplexity – Finding Alpha with Perplexity",
@@ -2892,214 +2904,6 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "Luminance Luminance Agent Lumi official documentation hosting private_network"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0083",
-      "name": "Kore.ai Agent Platform",
-      "provider_id": "PROV-KORE-AI",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 88.2,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 1.0,
-        "unknown_share": 3.2,
-        "source_readiness": 4.0
-      },
-      "documented_fields": 9,
-      "unknown_fields": 16,
-      "coverage_pct": 36.0,
-      "fields_needed_for_40pct": 1,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "governance.audit_logs.api",
-        "security.customer_managed_key"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Kore.ai – Agent Platform announcement",
-          "url": "https://www.kore.ai/news/kore-ai-announces-agent-platform-for-building-deploying-and-orchestrating-agentic-applications",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "Kore.ai – Artemis Agent Platform launch",
-          "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "Kore.ai – Introducing Agent Blueprint Language (ABL)",
-          "url": "https://www.kore.ai/blog/introducing-agent-blueprint-language-abl",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "Kore.ai – Why enterprises need an Agent Management Platform",
-          "url": "https://www.kore.ai/blog/why-enterprises-need-agent-management-platform",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 16,
-          "global_coverage_pct": 14.55,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 24,
-          "global_coverage_pct": 21.82,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs api"
-        },
-        {
-          "path": "security.customer_managed_key",
-          "documented_agents": 28,
-          "global_coverage_pct": 25.45,
-          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation security customer_managed_key"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0102",
-      "name": "Artisan Ava",
-      "provider_id": "PROV-ARTISAN",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 88.2,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 1.0,
-        "unknown_share": 3.2,
-        "source_readiness": 4.0
-      },
-      "documented_fields": 9,
-      "unknown_fields": 16,
-      "coverage_pct": 36.0,
-      "fields_needed_for_40pct": 1,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network",
-        "governance.audit_logs.api"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Artisan – Ava 2.0",
-          "url": "https://www.artisan.co/blog/artisan-launches-ava-2-0-first-autonomous-ai-bdr",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        },
-        {
-          "title": "Artisan – Data Processing Agreement",
-          "url": "https://www.artisan.co/dpa",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "Artisan – Official Site",
-          "url": "https://www.artisan.co/",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        },
-        {
-          "title": "Artisan – Pricing",
-          "url": "https://www.artisan.co/pricing",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 11,
-          "global_coverage_pct": 10.0,
-          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Artisan Artisan Ava official documentation protocols mcp server"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Artisan Artisan Ava official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "Artisan Artisan Ava official documentation hosting private_network"
-        },
-        {
-          "path": "governance.audit_logs.api",
-          "documented_agents": 24,
-          "global_coverage_pct": 21.82,
-          "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs api"
         }
       ]
     },
@@ -5497,8 +5301,8 @@
         "hosting.private_network",
         "governance.audit_logs.api",
         "governance.audit_logs.siem_export",
-        "governance.custom_roles",
-        "hosting.self_hosted"
+        "hosting.self_hosted",
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -5588,16 +5392,16 @@
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance audit_logs siem_export"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 32,
-          "global_coverage_pct": 29.09,
-          "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance custom_roles"
-        },
-        {
           "path": "hosting.self_hosted",
           "documented_agents": 32,
           "global_coverage_pct": 29.09,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation hosting self_hosted"
+        },
+        {
+          "path": "governance.custom_roles",
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
+          "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance custom_roles"
         }
       ]
     },
@@ -5626,7 +5430,7 @@
         "api.webhooks",
         "governance.audit_logs.retention_days",
         "hosting.private_network",
-        "governance.custom_roles"
+        "hosting.self_hosted"
       ],
       "available_primary_sources": [
         {
@@ -5722,10 +5526,10 @@
           "suggested_query": "ServiceNow ServiceNow Otto official documentation hosting private_network"
         },
         {
-          "path": "governance.custom_roles",
+          "path": "hosting.self_hosted",
           "documented_agents": 32,
           "global_coverage_pct": 29.09,
-          "suggested_query": "ServiceNow ServiceNow Otto official documentation governance custom_roles"
+          "suggested_query": "ServiceNow ServiceNow Otto official documentation hosting self_hosted"
         }
       ]
     },
@@ -6983,8 +6787,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 32,
-          "global_coverage_pct": 29.09,
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
           "suggested_query": "Google Google Agent Development Kit official documentation governance custom_roles"
         }
       ]
@@ -7118,6 +6922,116 @@
       ]
     },
     {
+      "agent_id": "AI-0083",
+      "name": "Kore.ai Agent Platform",
+      "provider_id": "PROV-KORE-AI",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 28.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "governance.audit_logs.api",
+        "security.customer_managed_key"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Kore.ai – Agent Platform announcement",
+          "url": "https://www.kore.ai/news/kore-ai-announces-agent-platform-for-building-deploying-and-orchestrating-agentic-applications",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Kore.ai – Artemis Agent Platform launch",
+          "url": "https://www.kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Kore.ai – How to ensure AI agents comply with industry regulations",
+          "url": "https://www.kore.ai/blog/how-to-make-ai-agents-comply-with-industry-regulations",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Kore.ai – Introducing Agent Blueprint Language (ABL)",
+          "url": "https://www.kore.ai/blog/introducing-agent-blueprint-language-abl",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Kore.ai – Why enterprises need an Agent Management Platform",
+          "url": "https://www.kore.ai/blog/why-enterprises-need-agent-management-platform",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 24,
+          "global_coverage_pct": 21.82,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation governance audit_logs api"
+        },
+        {
+          "path": "security.customer_managed_key",
+          "documented_agents": 28,
+          "global_coverage_pct": 25.45,
+          "suggested_query": "Kore.ai Kore.ai Agent Platform official documentation security customer_managed_key"
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0086",
       "name": "Microsoft Agent Framework",
       "provider_id": "PROV-MICROSOFT",
@@ -7227,8 +7141,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 32,
-          "global_coverage_pct": 29.09,
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance custom_roles"
         },
         {
@@ -8000,6 +7914,116 @@
       ]
     },
     {
+      "agent_id": "AI-0102",
+      "name": "Artisan Ava",
+      "provider_id": "PROV-ARTISAN",
+      "lifecycle_status": "active",
+      "priority": "P2_maintain_or_deepen",
+      "priority_score": 28.0,
+      "score_components": {
+        "tier_base": 20.0,
+        "gap_to_40pct": 0.0,
+        "unknown_share": 3.0,
+        "source_readiness": 5.0
+      },
+      "documented_fields": 10,
+      "unknown_fields": 15,
+      "coverage_pct": 40.0,
+      "fields_needed_for_40pct": 0,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network",
+        "governance.audit_logs.api"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Artisan – Ava 2.0",
+          "url": "https://www.artisan.co/blog/artisan-launches-ava-2-0-first-autonomous-ai-bdr",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        },
+        {
+          "title": "Artisan – Data Processing Agreement",
+          "url": "https://www.artisan.co/dpa",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Artisan – Official Site",
+          "url": "https://www.artisan.co/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "Artisan – Pricing",
+          "url": "https://www.artisan.co/pricing",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "Artisan – The best enterprise sales dialers in 2026",
+          "url": "https://www.artisan.co/blog/the-best-enterprise-sales-dialers-compliance-admin-controls-and-scale",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 11,
+          "global_coverage_pct": 10.0,
+          "suggested_query": "Artisan Artisan Ava official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Artisan Artisan Ava official documentation protocols mcp server"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Artisan Artisan Ava official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "Artisan Artisan Ava official documentation hosting private_network"
+        },
+        {
+          "path": "governance.audit_logs.api",
+          "documented_agents": 24,
+          "global_coverage_pct": 21.82,
+          "suggested_query": "Artisan Artisan Ava official documentation governance audit_logs api"
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0105",
       "name": "Snowflake Cortex Agents",
       "provider_id": "PROV-SNOWFLAKE",
@@ -8387,7 +8411,7 @@
         "api.webhooks",
         "governance.audit_logs.retention_days",
         "hosting.private_network",
-        "governance.custom_roles"
+        "hosting.self_hosted"
       ],
       "available_primary_sources": [
         {
@@ -8482,10 +8506,10 @@
           "suggested_query": "Cursor Cursor Agent official documentation hosting private_network"
         },
         {
-          "path": "governance.custom_roles",
+          "path": "hosting.self_hosted",
           "documented_agents": 32,
           "global_coverage_pct": 29.09,
-          "suggested_query": "Cursor Cursor Agent official documentation governance custom_roles"
+          "suggested_query": "Cursor Cursor Agent official documentation hosting self_hosted"
         }
       ]
     },
@@ -9582,8 +9606,8 @@
         "governance.audit_logs.retention_days",
         "governance.audit_logs.api",
         "governance.audit_logs.siem_export",
-        "governance.custom_roles",
-        "hosting.self_hosted"
+        "hosting.self_hosted",
+        "governance.custom_roles"
       ],
       "available_primary_sources": [
         {
@@ -9672,16 +9696,16 @@
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance audit_logs siem_export"
         },
         {
-          "path": "governance.custom_roles",
-          "documented_agents": 32,
-          "global_coverage_pct": 29.09,
-          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
-        },
-        {
           "path": "hosting.self_hosted",
           "documented_agents": 32,
           "global_coverage_pct": 29.09,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation hosting self_hosted"
+        },
+        {
+          "path": "governance.custom_roles",
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
+          "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
         }
       ]
     },
@@ -11165,8 +11189,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 32,
-          "global_coverage_pct": 29.09,
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance custom_roles"
         }
       ]
@@ -11446,7 +11470,7 @@
         "governance.audit_logs.api",
         "security.customer_managed_key",
         "governance.audit_logs.siem_export",
-        "governance.custom_roles"
+        "hosting.self_hosted"
       ],
       "available_primary_sources": [
         {
@@ -11522,10 +11546,10 @@
           "suggested_query": "Dust Dust Agents official documentation governance audit_logs siem_export"
         },
         {
-          "path": "governance.custom_roles",
+          "path": "hosting.self_hosted",
           "documented_agents": 32,
           "global_coverage_pct": 29.09,
-          "suggested_query": "Dust Dust Agents official documentation governance custom_roles"
+          "suggested_query": "Dust Dust Agents official documentation hosting self_hosted"
         }
       ]
     },
@@ -12414,8 +12438,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 32,
-          "global_coverage_pct": 29.09,
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
           "suggested_query": "Glean Glean Agents official documentation governance custom_roles"
         }
       ]
@@ -12511,8 +12535,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 32,
-          "global_coverage_pct": 29.09,
+          "documented_agents": 33,
+          "global_coverage_pct": 30.0,
           "suggested_query": "Augment Code Augment Code Agent official documentation governance custom_roles"
         },
         {
