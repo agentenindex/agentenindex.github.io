@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:51:05Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T05:11:39Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -4063,6 +4063,48 @@
       "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
     },
     {
+      "review_id": "REV-EBBE862F3231EAE55F",
+      "status": "open",
+      "first_detected": "2026-10-02T05:10:32Z",
+      "last_detected": "2026-10-02T05:10:32Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-72C46F3DC865F4",
+      "source_title": "Claude Code Docs – Monitoring",
+      "url": "https://code.claude.com/docs/en/monitoring-usage",
+      "agent_ids": [
+        "AI-0007"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://code.claude.com/docs/en/monitoring-usage",
+        "text_hash": "2ed37bd1c1f1a5a1c9ae0ef5054e5ec03751ce7fec1498a767c272a67695af73",
+        "simhash64": "36483251fbd3ce3c",
+        "token_count": 17474,
+        "text_sample": "Track Claude Code usage, costs, and tool activity across your organization by exporting telemetry data through OpenTelemetry (OTel). Claude Code exports metrics as time series data via the standard metrics protocol, events via the logs/events protocol, and optionally distributed traces via the traces protocol . Quick start Configure OpenTelemetry using environment variables: # 1. Enable telemetry export CLAUDE_CODE_ENABLE_TELEMETRY = 1 # 2. Choose exporters (both are optional - configure only what you need) export OTEL_METRICS_EXPORTER = otlp # Options: otlp, prometheus, console, none export OTEL_LOGS_EXPORTER = otlp # Options: otlp, console, none # 3. Configure OTLP endpoint (for OTLP exporter) export OTEL_EXPORTER_OTLP_PROTOCOL = grpc export OTEL_EXPORTER_OTLP_ENDPOINT = http :// localhost : 4317 # 4. Set authentication (if required) export OTEL_EXPORTER_OTLP_HEADERS = \"Authorization=Bearer your-token\" # 5. For debugging: reduce export intervals, and reset them for production use export OTEL_METRIC_EXPORT_INTERVAL = 10000 # 10 seconds (default: 60000ms) export OTEL_LOGS_EXPORT_INTERVAL = 5000 # 5 seconds (default: 5000ms) # 6. Run Claude Code claude To verify a setup that exports"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://code.claude.com/docs/en/monitoring-usage",
+        "text_hash": "229dbe6053b7c5dd9a0f5673c109001ca64daa1221a0ad452f452af7aca07ab8",
+        "simhash64": "06483251fbd7cc34",
+        "token_count": 17664,
+        "text_sample": "Track Claude Code usage, costs, and tool activity across your organization by exporting telemetry data through OpenTelemetry (OTel). Claude Code exports metrics as time series data via the standard metrics protocol, events via the logs/events protocol, and optionally distributed traces via the traces protocol . Quick start Configure OpenTelemetry using environment variables: # 1. Enable telemetry export CLAUDE_CODE_ENABLE_TELEMETRY = 1 # 2. Choose exporters (both are optional - configure only what you need) export OTEL_METRICS_EXPORTER = otlp # Options: otlp, prometheus, console, none export OTEL_LOGS_EXPORTER = otlp # Options: otlp, console, none # 3. Configure OTLP endpoint (for OTLP exporter) export OTEL_EXPORTER_OTLP_PROTOCOL = grpc export OTEL_EXPORTER_OTLP_ENDPOINT = http :// localhost : 4317 # 4. Set authentication (if required) export OTEL_EXPORTER_OTLP_HEADERS = \"Authorization=Bearer your-token\" # 5. For debugging: reduce export intervals, and reset them for production use export OTEL_METRIC_EXPORT_INTERVAL = 10000 # 10 seconds (default: 60000ms) export OTEL_LOGS_EXPORT_INTERVAL = 5000 # 5 seconds (default: 5000ms) # 6. Run Claude Code claude To verify a setup that exports",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "2ed37bd1c1f1a5a1c9ae0ef5054e5ec03751ce7fec1498a767c272a67695af73",
+        "new_hash": "229dbe6053b7c5dd9a0f5673c109001ca64daa1221a0ad452f452af7aca07ab8",
+        "simhash_distance": 5,
+        "old_token_count": 17474,
+        "new_token_count": 17664,
+        "token_delta_pct": 1.09
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-EC047C5B38B83AC950",
       "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:06:14Z",
@@ -4243,8 +4285,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Lindy homepage changed promotional trial wording, but the indexed profile only states platform access is plan-dependent; no indexed product fact changed.",
       "reviewed_at": "2026-10-01T15:18:00Z",
-      "last_seen_after_review": "2026-10-02T04:50:47Z",
-      "suppressed_reoccurrences": 11
+      "last_seen_after_review": "2026-10-02T05:11:21Z",
+      "suppressed_reoccurrences": 12
     },
     {
       "review_id": "REV-F5E8FCA8A32DF6BA03",

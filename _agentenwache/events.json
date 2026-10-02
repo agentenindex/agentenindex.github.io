@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:51:05Z",
+  "updated_at": "2026-10-02T05:11:39Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -3161,6 +3161,29 @@
         "token_delta_pct": 0.0
       },
       "previous_checked_at": "2026-10-02T04:44:50Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-1424D96B96DFE17287",
+      "detected_at": "2026-10-02T05:10:32Z",
+      "source_id": "SRC-72C46F3DC865F4",
+      "agent_ids": [
+        "AI-0007"
+      ],
+      "source_title": "Claude Code Docs – Monitoring",
+      "url": "https://code.claude.com/docs/en/monitoring-usage",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "2ed37bd1c1f1a5a1c9ae0ef5054e5ec03751ce7fec1498a767c272a67695af73",
+        "new_hash": "229dbe6053b7c5dd9a0f5673c109001ca64daa1221a0ad452f452af7aca07ab8",
+        "simhash_distance": 5,
+        "old_token_count": 17474,
+        "new_token_count": 17664,
+        "token_delta_pct": 1.09
+      },
+      "previous_checked_at": "2026-10-02T04:50:04Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
