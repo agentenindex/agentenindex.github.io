@@ -83991,19 +83991,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-26305AD6DE013F"
+          "SRC-F7BDA7CBF9D4F7"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "slackbot_ai_teammate",
-        "note": "Slackbot AI teammate is delivered as a managed Slack workspace capability.",
+        "note": "Slackbot is delivered as a native managed capability inside Slack.",
         "evidence_items": [
           {
-            "source_id": "SRC-26305AD6DE013F",
-            "note": "Slack documents Slackbot and agents as capabilities deployed and managed on the Slack agent-first workspace.",
-            "evidence_type": "official_release",
-            "source_section": "Build, deploy, and manage agents"
+            "source_id": "SRC-F7BDA7CBF9D4F7",
+            "note": "Slack documents Slackbot as its personal agent for work, available directly inside Slack workspaces and Enterprise organizations with access controlled by Slack plan and admins.",
+            "evidence_type": "technical_docs",
+            "source_section": "How to work with Slackbot / What to expect"
           }
         ]
       },
@@ -84011,7 +84011,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -89569,19 +89569,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-27B452DAA444AF"
+          "SRC-557C4F5647E44A"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "zoom_account_including_zoommate",
-        "note": "Zoom supports administrator-defined/custom role assignments.",
+        "note": "Zoom supports administrator-defined custom roles with configurable permissions.",
         "evidence_items": [
           {
-            "source_id": "SRC-27B452DAA444AF",
-            "note": "Zoom documents mapping users to Zoom user roles and groups and supports custom administrative role models.",
+            "source_id": "SRC-557C4F5647E44A",
+            "note": "Zoom documents adding custom user roles, assigning members, and configuring role permissions and scope through role management.",
             "evidence_type": "technical_docs",
-            "source_section": "Advanced SAML mapping"
+            "source_section": "How to add additional user roles / How to change permissions for a role"
           }
         ]
       },
@@ -89589,7 +89589,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -89639,19 +89639,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-27B452DAA444AF"
+          "SRC-4E0976E0FCB064"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "zoom_account_including_zoommate",
-        "note": "Zoom accounts support SAML SSO.",
+        "note": "Zoom supports SAML 2.0 SSO.",
         "evidence_items": [
           {
-            "source_id": "SRC-27B452DAA444AF",
-            "note": "Zoom documents SAML SSO and SAML-based assignment of licenses, add-ons, user roles, and groups.",
+            "source_id": "SRC-4E0976E0FCB064",
+            "note": "Zoom states its SSO is based on SAML 2.0 and documents setup for Business, Education, and Enterprise accounts.",
             "evidence_type": "technical_docs",
-            "source_section": "Advanced SAML mapping"
+            "source_section": "Quick start guide for single sign-on (SSO)"
           }
         ]
       },
@@ -89659,7 +89659,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },

@@ -1619,6 +1619,110 @@
       ]
     },
     {
+      "agent_id": "AI-0096",
+      "name": "ZoomMate",
+      "provider_id": "PROV-ZOOM",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 93.0,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 5.0,
+        "unknown_share": 4.0,
+        "source_readiness": 4.0
+      },
+      "documented_fields": 5,
+      "unknown_fields": 20,
+      "coverage_pct": 20.0,
+      "fields_needed_for_40pct": 5,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Zoom Support – Admin Activity Logs",
+          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Zoom Support – Quick start guide for single sign-on (SSO)",
+          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060673",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Zoom Support – Using role management",
+          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064983",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Zoom – ZoomMate launch",
+          "url": "https://news.zoom.com/zoom-launches-zoommate/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 7,
+          "global_coverage_pct": 6.36,
+          "suggested_query": "Zoom ZoomMate official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Zoom ZoomMate official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 10,
+          "global_coverage_pct": 9.09,
+          "suggested_query": "Zoom ZoomMate official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Zoom ZoomMate official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 15,
+          "global_coverage_pct": 13.64,
+          "suggested_query": "Zoom ZoomMate official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Zoom ZoomMate official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Zoom ZoomMate official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "Zoom ZoomMate official documentation hosting private_network"
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0052",
       "name": "Manus Agent",
       "provider_id": "PROV-MANUS",
@@ -2133,104 +2237,6 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "xAI Grok Bot official documentation hosting private_network"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0096",
-      "name": "ZoomMate",
-      "provider_id": "PROV-ZOOM",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 92.0,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 5.0,
-        "unknown_share": 4.0,
-        "source_readiness": 3.0
-      },
-      "documented_fields": 5,
-      "unknown_fields": 20,
-      "coverage_pct": 20.0,
-      "fields_needed_for_40pct": 5,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Zoom Support – Admin Activity Logs",
-          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Zoom Support – Advanced SAML mapping",
-          "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061497",
-          "origin": "field_level_evidence",
-          "evidence_type": "technical_docs"
-        },
-        {
-          "title": "Zoom – ZoomMate launch",
-          "url": "https://news.zoom.com/zoom-launches-zoommate/",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 7,
-          "global_coverage_pct": 6.36,
-          "suggested_query": "Zoom ZoomMate official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Zoom ZoomMate official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 10,
-          "global_coverage_pct": 9.09,
-          "suggested_query": "Zoom ZoomMate official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Zoom ZoomMate official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 15,
-          "global_coverage_pct": 13.64,
-          "suggested_query": "Zoom ZoomMate official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Zoom ZoomMate official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Zoom ZoomMate official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "Zoom ZoomMate official documentation hosting private_network"
         }
       ]
     },
@@ -10840,6 +10846,12 @@
           "evidence_type": "technical_docs"
         },
         {
+          "title": "Slack Help – How to work with Slackbot",
+          "url": "https://slack.com/help/articles/202026038-How-to-work-with-Slackbot",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
           "title": "Slack Help – Manage members with SCIM provisioning",
           "url": "https://slack.com/help/articles/212572638-Manage-members-with-SCIM-provisioning/1000",
           "origin": "field_level_evidence",
@@ -10868,12 +10880,6 @@
           "url": "https://slack.com/trust/security",
           "origin": "field_level_evidence",
           "evidence_type": "security_trust"
-        },
-        {
-          "title": "Slack – Slack is where your team works. Now it’s where your agents work too.",
-          "url": "https://slack.com/blog/news/slack-is-where-agents-work",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
         }
       ],
       "research_hints": [
