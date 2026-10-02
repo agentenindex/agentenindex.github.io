@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded',()=>{
     const news=document.createElement('a');news.href='/aktuelles/';news.textContent='Aktuelles';news.className='nav-aktuelles';
     if(fit&&fit.nextSibling)n.insertBefore(news,fit.nextSibling);else n.appendChild(news);
   }
+  if(n){
+    ['/anwendungen/','/privatpersonen/','/unternehmen/'].forEach(href=>{
+      n.querySelectorAll('a[href="'+href+'"]').forEach(a=>a.remove());
+    });
+  }
   document.querySelectorAll('.footer-links').forEach(footer=>{
     let fit=footer.querySelector('a[href="/fit/"]');
     if(!fit){
@@ -21,6 +26,16 @@ document.addEventListener('DOMContentLoaded',()=>{
       const news=document.createElement('a');news.href='/aktuelles/';news.textContent='Aktuelles';
       if(fit&&fit.nextSibling)footer.insertBefore(news,fit.nextSibling);else footer.appendChild(news);
     }
+    const footerExtras=[
+      ['/anwendungen/','Anwendungen'],
+      ['/privatpersonen/','Privatpersonen'],
+      ['/unternehmen/','Unternehmen']
+    ];
+    footerExtras.forEach(([href,label])=>{
+      if(!footer.querySelector('a[href="'+href+'"]')){
+        const a=document.createElement('a');a.href=href;a.textContent=label;footer.appendChild(a);
+      }
+    });
   });
   if(b&&n)b.addEventListener('click',()=>{n.classList.toggle('nav-open');b.setAttribute('aria-expanded',n.classList.contains('nav-open')?'true':'false')});
   const q=document.getElementById('agent-search'),c=document.getElementById('agent-search-clear');
