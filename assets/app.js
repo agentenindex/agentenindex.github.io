@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded',()=>{
     const fit=document.createElement('a');fit.href='/fit/';fit.textContent='Fit';fit.className='nav-fit';
     if(finder&&finder.nextSibling)n.insertBefore(fit,finder.nextSibling);else n.appendChild(fit);
   }
+  document.querySelectorAll('.footer-links').forEach(footer=>{
+    if(footer.querySelector('a[href="/fit/"]'))return;
+    const finder=footer.querySelector('a[href="/finder/"]');
+    const fit=document.createElement('a');fit.href='/fit/';fit.textContent='AgentenFit';
+    if(finder&&finder.nextSibling)footer.insertBefore(fit,finder.nextSibling);else footer.appendChild(fit);
+  });
   if(b&&n)b.addEventListener('click',()=>{n.classList.toggle('nav-open');b.setAttribute('aria-expanded',n.classList.contains('nav-open')?'true':'false')});
   const q=document.getElementById('agent-search'),c=document.getElementById('agent-search-clear');
   const category=document.getElementById('filter-category'),audience=document.getElementById('filter-audience'),provider=document.getElementById('filter-provider'),counter=document.getElementById('filter-count');
