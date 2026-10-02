@@ -102,9 +102,9 @@
     },
     {
       "path": "governance.custom_roles",
-      "documented_agents": 33,
-      "unknown_agents": 77,
-      "coverage_pct": 30.0
+      "documented_agents": 34,
+      "unknown_agents": 76,
+      "coverage_pct": 30.91
     },
     {
       "path": "api.rest",
@@ -144,15 +144,15 @@
     },
     {
       "path": "security.encryption.in_transit",
-      "documented_agents": 68,
-      "unknown_agents": 42,
-      "coverage_pct": 61.82
+      "documented_agents": 69,
+      "unknown_agents": 41,
+      "coverage_pct": 62.73
     },
     {
       "path": "security.soc2_type2",
-      "documented_agents": 68,
-      "unknown_agents": 42,
-      "coverage_pct": 61.82
+      "documented_agents": 69,
+      "unknown_agents": 41,
+      "coverage_pct": 62.73
     },
     {
       "path": "security.encryption.at_rest",
@@ -162,15 +162,15 @@
     },
     {
       "path": "governance.audit_logs.available",
-      "documented_agents": 83,
-      "unknown_agents": 27,
-      "coverage_pct": 75.45
+      "documented_agents": 84,
+      "unknown_agents": 26,
+      "coverage_pct": 76.36
     },
     {
       "path": "governance.rbac",
-      "documented_agents": 83,
-      "unknown_agents": 27,
-      "coverage_pct": 75.45
+      "documented_agents": 84,
+      "unknown_agents": 26,
+      "coverage_pct": 76.36
     },
     {
       "path": "hosting.managed",
@@ -877,92 +877,6 @@
       ]
     },
     {
-      "agent_id": "AI-0059",
-      "name": "NotebookLM Deep Research",
-      "provider_id": "PROV-GOOGLE",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 94.8,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 9.0,
-        "unknown_share": 4.8,
-        "source_readiness": 1.0
-      },
-      "documented_fields": 1,
-      "unknown_fields": 24,
-      "coverage_pct": 4.0,
-      "fields_needed_for_40pct": 9,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Google – NotebookLM adds Deep Research",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/notebooklm-deep-research-file-types/",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_release"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Google NotebookLM Deep Research official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "Google NotebookLM Deep Research official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Google NotebookLM Deep Research official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 13,
-          "global_coverage_pct": 11.82,
-          "suggested_query": "Google NotebookLM Deep Research official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 16,
-          "global_coverage_pct": 14.55,
-          "suggested_query": "Google NotebookLM Deep Research official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Google NotebookLM Deep Research official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Google NotebookLM Deep Research official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "Google NotebookLM Deep Research official documentation hosting private_network"
-        }
-      ]
-    },
-    {
       "agent_id": "AI-0062",
       "name": "Consensus Research Agent",
       "provider_id": "PROV-CONSENSUS",
@@ -1135,6 +1049,98 @@
       ]
     },
     {
+      "agent_id": "AI-0059",
+      "name": "NotebookLM Deep Research",
+      "provider_id": "PROV-GOOGLE",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 94.6,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 8.0,
+        "unknown_share": 4.6,
+        "source_readiness": 2.0
+      },
+      "documented_fields": 2,
+      "unknown_fields": 23,
+      "coverage_pct": 8.0,
+      "fields_needed_for_40pct": 8,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Google Workspace Help – NotebookLM security and compliance",
+          "url": "https://support.google.com/a/answer/15239506?hl=en",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Google – NotebookLM adds Deep Research",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/notebooklm-deep-research-file-types/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Google NotebookLM Deep Research official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 9,
+          "global_coverage_pct": 8.18,
+          "suggested_query": "Google NotebookLM Deep Research official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Google NotebookLM Deep Research official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Google NotebookLM Deep Research official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "Google NotebookLM Deep Research official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Google NotebookLM Deep Research official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Google NotebookLM Deep Research official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "Google NotebookLM Deep Research official documentation hosting private_network"
+        }
+      ]
+    },
+    {
       "agent_id": "AI-0073",
       "name": "OpenCode",
       "provider_id": "PROV-OPENCODE",
@@ -1229,102 +1235,6 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "OpenCode OpenCode official documentation hosting private_network"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0103",
-      "name": "Qualified Piper",
-      "provider_id": "PROV-QUALIFIED",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 94.4,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 7.0,
-        "unknown_share": 4.4,
-        "source_readiness": 3.0
-      },
-      "documented_fields": 3,
-      "unknown_fields": 22,
-      "coverage_pct": 12.0,
-      "fields_needed_for_40pct": 7,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Qualified – Trust",
-          "url": "https://www.qualified.com/trust",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "Qualified – Piper",
-          "url": "https://www.qualified.com/",
-          "origin": "profile_source"
-        },
-        {
-          "title": "Qualified – Pricing",
-          "url": "https://www.qualified.com/pricing",
-          "origin": "profile_source"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Qualified Qualified Piper official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "Qualified Qualified Piper official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Qualified Qualified Piper official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 13,
-          "global_coverage_pct": 11.82,
-          "suggested_query": "Qualified Qualified Piper official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 16,
-          "global_coverage_pct": 14.55,
-          "suggested_query": "Qualified Qualified Piper official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Qualified Qualified Piper official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Qualified Qualified Piper official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "Qualified Qualified Piper official documentation hosting private_network"
         }
       ]
     },
@@ -1434,6 +1344,102 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "LexisNexis Lexis+ with Protégé official documentation hosting private_network"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0103",
+      "name": "Qualified Piper",
+      "provider_id": "PROV-QUALIFIED",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 93.2,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 6.0,
+        "unknown_share": 4.2,
+        "source_readiness": 3.0
+      },
+      "documented_fields": 4,
+      "unknown_fields": 21,
+      "coverage_pct": 16.0,
+      "fields_needed_for_40pct": 6,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Qualified – Trust",
+          "url": "https://www.qualified.com/trust",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Qualified – Piper",
+          "url": "https://www.qualified.com/",
+          "origin": "profile_source"
+        },
+        {
+          "title": "Qualified – Pricing",
+          "url": "https://www.qualified.com/pricing",
+          "origin": "profile_source"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Qualified Qualified Piper official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 9,
+          "global_coverage_pct": 8.18,
+          "suggested_query": "Qualified Qualified Piper official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Qualified Qualified Piper official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Qualified Qualified Piper official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "Qualified Qualified Piper official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Qualified Qualified Piper official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Qualified Qualified Piper official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "Qualified Qualified Piper official documentation hosting private_network"
         }
       ]
     },
@@ -1751,101 +1757,9 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 33,
-          "global_coverage_pct": 30.0,
+          "documented_agents": 34,
+          "global_coverage_pct": 30.91,
           "suggested_query": "AWS Strands Agents official documentation governance custom_roles"
-        }
-      ]
-    },
-    {
-      "agent_id": "AI-0050",
-      "name": "CoCounsel Legal",
-      "provider_id": "PROV-THOMSON-REUTERS",
-      "lifecycle_status": "active",
-      "priority": "P0_raise_existing_to_40pct",
-      "priority_score": 92.2,
-      "score_components": {
-        "tier_base": 80.0,
-        "gap_to_40pct": 6.0,
-        "unknown_share": 4.2,
-        "source_readiness": 2.0
-      },
-      "documented_fields": 4,
-      "unknown_fields": 21,
-      "coverage_pct": 16.0,
-      "fields_needed_for_40pct": 6,
-      "recommended_unknown_paths": [
-        "protocols.a2a.client",
-        "protocols.a2a.server",
-        "protocols.a2a.supported",
-        "protocols.mcp.server",
-        "api.webhooks",
-        "governance.sso.oidc",
-        "governance.audit_logs.retention_days",
-        "hosting.private_network"
-      ],
-      "available_primary_sources": [
-        {
-          "title": "Thomson Reuters – CoCounsel",
-          "url": "https://www.thomsonreuters.com/en/cocounsel",
-          "origin": "field_level_evidence",
-          "evidence_type": "security_trust"
-        },
-        {
-          "title": "Thomson Reuters – CoCounsel Legal",
-          "url": "https://legal.thomsonreuters.com/en/products/cocounsel-legal",
-          "origin": "field_level_evidence",
-          "evidence_type": "official_product_page"
-        }
-      ],
-      "research_hints": [
-        {
-          "path": "protocols.a2a.client",
-          "documented_agents": 8,
-          "global_coverage_pct": 7.27,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a client"
-        },
-        {
-          "path": "protocols.a2a.server",
-          "documented_agents": 9,
-          "global_coverage_pct": 8.18,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a server"
-        },
-        {
-          "path": "protocols.a2a.supported",
-          "documented_agents": 12,
-          "global_coverage_pct": 10.91,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a supported"
-        },
-        {
-          "path": "protocols.mcp.server",
-          "documented_agents": 13,
-          "global_coverage_pct": 11.82,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols mcp server"
-        },
-        {
-          "path": "api.webhooks",
-          "documented_agents": 16,
-          "global_coverage_pct": 14.55,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation api webhooks"
-        },
-        {
-          "path": "governance.sso.oidc",
-          "documented_agents": 18,
-          "global_coverage_pct": 16.36,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance sso oidc"
-        },
-        {
-          "path": "governance.audit_logs.retention_days",
-          "documented_agents": 22,
-          "global_coverage_pct": 20.0,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance audit_logs retention_days"
-        },
-        {
-          "path": "hosting.private_network",
-          "documented_agents": 23,
-          "global_coverage_pct": 20.91,
-          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation hosting private_network"
         }
       ]
     },
@@ -2058,6 +1972,110 @@
           "documented_agents": 23,
           "global_coverage_pct": 20.91,
           "suggested_query": "Decagon Decagon AI Concierge official documentation hosting private_network"
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0050",
+      "name": "CoCounsel Legal",
+      "provider_id": "PROV-THOMSON-REUTERS",
+      "lifecycle_status": "active",
+      "priority": "P0_raise_existing_to_40pct",
+      "priority_score": 90.6,
+      "score_components": {
+        "tier_base": 80.0,
+        "gap_to_40pct": 3.0,
+        "unknown_share": 3.6,
+        "source_readiness": 4.0
+      },
+      "documented_fields": 7,
+      "unknown_fields": 18,
+      "coverage_pct": 28.0,
+      "fields_needed_for_40pct": 3,
+      "recommended_unknown_paths": [
+        "protocols.a2a.client",
+        "protocols.a2a.server",
+        "protocols.a2a.supported",
+        "protocols.mcp.server",
+        "api.webhooks",
+        "governance.sso.oidc",
+        "governance.audit_logs.retention_days",
+        "hosting.private_network"
+      ],
+      "available_primary_sources": [
+        {
+          "title": "Thomson Reuters CoCounsel Help – Administrator capabilities",
+          "url": "https://www.thomsonreuters.com/en-us/help/cocounsel/legal/administration/admin-capabilities",
+          "origin": "field_level_evidence",
+          "evidence_type": "technical_docs"
+        },
+        {
+          "title": "Thomson Reuters – CoCounsel",
+          "url": "https://www.thomsonreuters.com/en/cocounsel",
+          "origin": "field_level_evidence",
+          "evidence_type": "security_trust"
+        },
+        {
+          "title": "Thomson Reuters – CoCounsel Legal",
+          "url": "https://legal.thomsonreuters.com/en/products/cocounsel-legal",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_product_page"
+        },
+        {
+          "title": "Thomson Reuters – How CoCounsel Legal delivers AI legal research you can trust",
+          "url": "https://legal.thomsonreuters.com/blog/beyond-chatbots-how-cocounsel-legal-delivers-ai-legal-research-you-can-trust/",
+          "origin": "field_level_evidence",
+          "evidence_type": "official_release"
+        }
+      ],
+      "research_hints": [
+        {
+          "path": "protocols.a2a.client",
+          "documented_agents": 8,
+          "global_coverage_pct": 7.27,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a client"
+        },
+        {
+          "path": "protocols.a2a.server",
+          "documented_agents": 9,
+          "global_coverage_pct": 8.18,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a server"
+        },
+        {
+          "path": "protocols.a2a.supported",
+          "documented_agents": 12,
+          "global_coverage_pct": 10.91,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols a2a supported"
+        },
+        {
+          "path": "protocols.mcp.server",
+          "documented_agents": 13,
+          "global_coverage_pct": 11.82,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation protocols mcp server"
+        },
+        {
+          "path": "api.webhooks",
+          "documented_agents": 16,
+          "global_coverage_pct": 14.55,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation api webhooks"
+        },
+        {
+          "path": "governance.sso.oidc",
+          "documented_agents": 18,
+          "global_coverage_pct": 16.36,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance sso oidc"
+        },
+        {
+          "path": "governance.audit_logs.retention_days",
+          "documented_agents": 22,
+          "global_coverage_pct": 20.0,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation governance audit_logs retention_days"
+        },
+        {
+          "path": "hosting.private_network",
+          "documented_agents": 23,
+          "global_coverage_pct": 20.91,
+          "suggested_query": "Thomson Reuters CoCounsel Legal official documentation hosting private_network"
         }
       ]
     },
@@ -5314,8 +5332,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 33,
-          "global_coverage_pct": 30.0,
+          "documented_agents": 34,
+          "global_coverage_pct": 30.91,
           "suggested_query": "ServiceNow ServiceNow AI Agents official documentation governance custom_roles"
         }
       ]
@@ -6818,8 +6836,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 33,
-          "global_coverage_pct": 30.0,
+          "documented_agents": 34,
+          "global_coverage_pct": 30.91,
           "suggested_query": "Google Google Agent Development Kit official documentation governance custom_roles"
         }
       ]
@@ -7172,8 +7190,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 33,
-          "global_coverage_pct": 30.0,
+          "documented_agents": 34,
+          "global_coverage_pct": 30.91,
           "suggested_query": "Microsoft Microsoft Agent Framework official documentation governance custom_roles"
         },
         {
@@ -9734,8 +9752,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 33,
-          "global_coverage_pct": 30.0,
+          "documented_agents": 34,
+          "global_coverage_pct": 30.91,
           "suggested_query": "Microsoft Microsoft Foundry Agent Service official documentation governance custom_roles"
         }
       ]
@@ -11220,8 +11238,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 33,
-          "global_coverage_pct": 30.0,
+          "documented_agents": 34,
+          "global_coverage_pct": 30.91,
           "suggested_query": "AWS Amazon Bedrock AgentCore official documentation governance custom_roles"
         }
       ]
@@ -12469,8 +12487,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 33,
-          "global_coverage_pct": 30.0,
+          "documented_agents": 34,
+          "global_coverage_pct": 30.91,
           "suggested_query": "Glean Glean Agents official documentation governance custom_roles"
         }
       ]
@@ -12566,8 +12584,8 @@
         },
         {
           "path": "governance.custom_roles",
-          "documented_agents": 33,
-          "global_coverage_pct": 30.0,
+          "documented_agents": 34,
+          "global_coverage_pct": 30.91,
           "suggested_query": "Augment Code Augment Code Agent official documentation governance custom_roles"
         },
         {

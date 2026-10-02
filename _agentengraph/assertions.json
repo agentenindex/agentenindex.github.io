@@ -47030,6 +47030,111 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-93F9CD0C5D4C28D6FE",
+      "agent_id": "AI-0050",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-105261D930CA5E"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "cocounsel_legal",
+        "note": "CoCounsel Legal documents audit trails for AI interactions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-105261D930CA5E",
+            "note": "Thomson Reuters states CoCounsel Legal provides audit trails that document every AI interaction alongside access controls and compliance tracking.",
+            "evidence_type": "official_release",
+            "source_section": "The next generation of CoCounsel Legal"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-FDA3738661A49414BA",
+      "agent_id": "AI-0050",
+      "path": "governance.custom_roles",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2194BA697EE83B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "medium",
+        "scope": "cocounsel_legal_admin_permissions",
+        "note": "CoCounsel supports administrator-configurable granular permissions; recorded as custom-role-like governance only within the documented admin-permission scope.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2194BA697EE83B",
+            "note": "CoCounsel administrators can configure granular user-level permissions to skills and capabilities.",
+            "evidence_type": "technical_docs",
+            "source_section": "Administrator capabilities"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2C569A5F81F77878B0",
+      "agent_id": "AI-0050",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-2194BA697EE83B"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "cocounsel_legal",
+        "note": "CoCounsel Legal uses role-based administrative permissions.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-2194BA697EE83B",
+            "note": "CoCounsel documents an Administrator role with granular user-level permissions to skills and other CoCounsel capabilities.",
+            "evidence_type": "technical_docs",
+            "source_section": "Administrator capabilities"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-36333B3208E526FC40",
       "agent_id": "AI-0050",
       "path": "hosting.managed",
@@ -55507,6 +55612,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-C4333957A4C410BE4F",
+      "agent_id": "AI-0059",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-16F8BE542DFFCB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "notebooklm_workspace_core_service",
+        "note": "NotebookLM used as a Google Workspace core service is covered by Workspace SOC compliance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-16F8BE542DFFCB",
+            "note": "Google's current Workspace documentation states NotebookLM/Gemini Notebook is covered by Workspace security and compliance controls including SOC reports.",
+            "evidence_type": "security_trust",
+            "source_section": "Security and compliance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-102FC90C941F472574",
@@ -96927,6 +97067,41 @@
             "note": "Qualified states all stored customer data is securely encrypted.",
             "evidence_type": "security_trust",
             "source_section": "Data Storage"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-D874BBD034E197C790",
+      "agent_id": "AI-0103",
+      "path": "security.encryption.in_transit",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-540D903D3A0FB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "qualified_platform_data",
+        "note": "Qualified documents encryption in transit.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-540D903D3A0FB8",
+            "note": "Qualified documents encryption for customer data in motion over public networks.",
+            "evidence_type": "security_trust",
+            "source_section": "Encryption In Transit"
           }
         ]
       },
