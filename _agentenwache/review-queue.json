@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T03:54:29Z",
-  "open_count": 1,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -2809,7 +2809,7 @@
     },
     {
       "review_id": "REV-AE1F03095ACD6E0608",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:53:59Z",
       "last_detected": "2026-10-02T03:53:59Z",
       "occurrences": 1,
@@ -2845,9 +2845,11 @@
         "simhash_distance": 3,
         "old_token_count": 963,
         "new_token_count": 963,
-        "token_delta_pct": 0.0
+        "token_delta_pct": 0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Moveworks Agent Studio RBAC content remained substantively stable, but the official renderer repeatedly changed hashes with unchanged token count and near-identical SimHash. The source is now explicitly manual_only in AgentenWache while remaining the canonical editorial primary evidence.",
+      "reviewed_at": "2026-10-02T06:01:00+02:00"
     },
     {
       "review_id": "REV-AE7747ECB75004230A",
