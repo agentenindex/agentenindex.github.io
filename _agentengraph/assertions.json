@@ -83781,19 +83781,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-A394799F343C5E"
+          "SRC-5293B0EF6C614A"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "slack_enterprise",
-        "note": "Slack exposes Enterprise audit events through API.",
+        "note": "Slack Enterprise provides a documented RESTful Audit Logs API for programmatic monitoring.",
         "evidence_items": [
           {
-            "source_id": "SRC-A394799F343C5E",
-            "note": "Slack documents the Audit Logs API for programmatic monitoring.",
+            "source_id": "SRC-5293B0EF6C614A",
+            "note": "Slack documents programmatic monitoring of Enterprise audit events and explicitly describes feeding Slack access data into SIEM and other auditing tools.",
             "evidence_type": "api_docs",
-            "source_section": "Use the Audit Logs API"
+            "source_section": "What the Audit Logs API can do"
           }
         ]
       },
@@ -83801,7 +83801,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -83816,19 +83816,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-A394799F343C5E"
+          "SRC-5293B0EF6C614A"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "slack_enterprise",
-        "note": "Slack Enterprise provides audit logs.",
+        "note": "Slack Enterprise exposes organization-wide audit events through its documented Audit Logs API.",
         "evidence_items": [
           {
-            "source_id": "SRC-A394799F343C5E",
-            "note": "Slack documents Enterprise audit logs for organization changes and usage.",
-            "evidence_type": "technical_docs",
-            "source_section": "Audit logs"
+            "source_id": "SRC-5293B0EF6C614A",
+            "note": "Slack documents programmatic monitoring of Enterprise audit events and explicitly describes feeding Slack access data into SIEM and other auditing tools.",
+            "evidence_type": "api_docs",
+            "source_section": "What the Audit Logs API can do"
           }
         ]
       },
@@ -83836,7 +83836,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -83870,7 +83870,7 @@
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
-      "valid_to": null,
+      "valid_to": "2026-10-02",
       "last_verified": "2026-10-01",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
@@ -83886,19 +83886,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-A394799F343C5E"
+          "SRC-5293B0EF6C614A"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "slack_enterprise",
-        "note": "Slack audit logs can feed SIEM tooling.",
+        "note": "Slack explicitly documents feeding Audit Logs API data into SIEM and other auditing tools.",
         "evidence_items": [
           {
-            "source_id": "SRC-A394799F343C5E",
-            "note": "Slack explicitly documents sending Audit Logs API data to SIEM tools.",
-            "evidence_type": "technical_docs",
-            "source_section": "Use the Audit Logs API"
+            "source_id": "SRC-5293B0EF6C614A",
+            "note": "Slack documents programmatic monitoring of Enterprise audit events and explicitly describes feeding Slack access data into SIEM and other auditing tools.",
+            "evidence_type": "api_docs",
+            "source_section": "What the Audit Logs API can do"
           }
         ]
       },
@@ -83906,7 +83906,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
