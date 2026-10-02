@@ -41426,7 +41426,7 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-9172020652E3C9",
+          "SRC-12CD61F4D353A0",
           "SRC-C24AACE565E1EB"
         ],
         "field_level_verified": true,
@@ -41436,7 +41436,7 @@
         "note": "Gorgias provides AI-action event logs and account audit logs.",
         "evidence_items": [
           {
-            "source_id": "SRC-9172020652E3C9",
+            "source_id": "SRC-12CD61F4D353A0",
             "note": "Gorgias documents per-action event logs whenever AI Agent makes an HTTP request to a connected app.",
             "evidence_type": "technical_docs",
             "source_section": "View an Action's event logs"
@@ -43613,19 +43613,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-DB7170B5A59F4E"
+          "SRC-07B829F526DDEA"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "salesforce_shield_platform_encryption",
         "note": "Salesforce supports customer-managed encryption keys through Shield Platform Encryption.",
         "evidence_items": [
           {
-            "source_id": "SRC-DB7170B5A59F4E",
-            "note": "Salesforce documents Platform Encryption with AES-256 field/file encryption at rest and customer-managed keys.",
-            "evidence_type": "security_trust",
-            "source_section": "Shield FAQ"
+            "source_id": "SRC-07B829F526DDEA",
+            "note": "Salesforce documents customer-supplied and customer-managed key options for Shield Platform Encryption, including EKM, BYOK, and Cache-Only Keys.",
+            "evidence_type": "technical_docs",
+            "source_section": "Customer Managed Key Options"
           }
         ]
       },
@@ -43633,7 +43633,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -83921,19 +83921,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-B969F44FC88CEF"
+          "SRC-05859068524F3E"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "slack_business_enterprise",
-        "note": "Slack supports SCIM provisioning.",
+        "note": "Slack supports SCIM provisioning and management through its documented SCIM API.",
         "evidence_items": [
           {
-            "source_id": "SRC-B969F44FC88CEF",
-            "note": "Slack documents SCIM-based member and group provisioning.",
-            "evidence_type": "technical_docs",
-            "source_section": "Manage members"
+            "source_id": "SRC-05859068524F3E",
+            "note": "Slack documents SCIM 1.1 and 2.0 for provisioning and managing users and groups on Business+ and Enterprise plans.",
+            "evidence_type": "api_docs",
+            "source_section": "Using the Slack SCIM API"
           }
         ]
       },
@@ -83941,7 +83941,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
