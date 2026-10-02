@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:22:56Z",
+  "updated_at": "2026-10-02T04:25:33Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -3039,6 +3039,25 @@
         "token_delta_pct": 25.0
       },
       "previous_checked_at": "2026-10-02T04:00:55Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-25632B08FF98EBB217",
+      "detected_at": "2026-10-02T04:25:07Z",
+      "source_id": "SRC-8E2694301752D3",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – Enterprise",
+      "url": "https://slack.com/enterprise",
+      "change_type": "status_change",
+      "severity": "high",
+      "metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "previous_checked_at": "2026-10-02T04:22:16Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }

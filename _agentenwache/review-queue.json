@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:22:56Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T04:25:33Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -484,6 +484,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Slack Data Residency remained documented, but the Help Center source returned a transient HTTP 429. Residency evidence was moved to Slack's stable Trust Security page.",
       "reviewed_at": "2026-10-02T05:54:00+02:00"
+    },
+    {
+      "review_id": "REV-2022626EA5094C815D",
+      "status": "open",
+      "first_detected": "2026-10-02T04:25:07Z",
+      "last_detected": "2026-10-02T04:25:07Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-8E2694301752D3",
+      "source_title": "Slack – Enterprise",
+      "url": "https://slack.com/enterprise",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/enterprise",
+        "text_hash": "b38e31845ab97dc2bcda2ff6317c26f113d361849565cc8457099cfaf51bb18b",
+        "simhash64": "161b830885ea8797",
+        "token_count": 1990,
+        "text_sample": "Eine intelligentere KI beginnt mit Kontext Das beste Zuhause für jeden Agenten Sicher, skalierbar, ohne Silos Die Suchfunktion, die genau weiß, wo sie suchen muss KI Agenten Plattform Suche Pläne Kund:innen Wirkung Slack und Salesforce Eine intelligentere KI beginnt mit Kontext Was ist das Besondere an unserer KI? Sie basiert auf Wissen aus Daten und Unterhaltungen deines Unternehmens. Die KI in Slack bezieht den jeweiligen Kontext ein und ist daher zuverlässiger und effektiver, weil sie dir personalisierte Erkenntnisse in Echtzeit direkt in der Umgebung zur Verfügung stellt, in der du arbeitest. Mehr über die KI in Slack erfahren Vorhang auf für den Slackbot Der Slackbot ist dein persönlicher KI-Agent für die Arbeit, der sich auf Daten und Kontext deiner Organisation stützt. Er lernt aus deinen Unterhaltungen und Dateien, kennt deinen Stil und ist immer für dich da, wenn du Hilfe brauchst. Mehr über den Slackbot erfahren Arbeiten mit KI-Geschwindigkeit Verfasse einen Entwurf, mache Meeting-Notizen und fasse Unterhaltungen sofort zusammen. Mit KI in Slack findet der Kontext dich – so geht die Arbeit schneller voran und du brauchst weniger Zeit, um auf den neuesten Stand zu kommen. "
+      },
+      "current": {
+        "status_code": 429,
+        "final_url": "https://slack.com/intl/de-de/enterprise",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-204DFA87F15A057E4B",
@@ -3865,7 +3903,9 @@
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The monitored Zoom page returned a transient localized/loading snippet, while the current official role-management page still documents RBAC, custom roles, permissions, and role scopes. No indexed ZoomMate governance fact changed.",
-      "reviewed_at": "2026-10-02T05:49:00+02:00"
+      "reviewed_at": "2026-10-02T05:49:00+02:00",
+      "last_seen_after_review": "2026-10-02T04:25:13Z",
+      "suppressed_reoccurrences": 1
     },
     {
       "review_id": "REV-EAE8D697875A437E7D",
