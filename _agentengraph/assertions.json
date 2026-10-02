@@ -29091,18 +29091,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-9426998C9F7364"
+          "SRC-5F16545C51AB09"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "rovo_admin_and_user_actions",
-        "note": "Rovo actions are recorded in the Atlassian audit log with plan-dependent access.",
+        "note": "Rovo admin and user actions are recorded in Atlassian organization audit logs.",
         "evidence_items": [
           {
-            "source_id": "SRC-9426998C9F7364",
-            "note": "Atlassian documents Rovo admin and user actions in the organization audit log, with availability depending on Atlassian Guard plan.",
-            "evidence_type": "security_trust"
+            "source_id": "SRC-5F16545C51AB09",
+            "note": "Atlassian documents Rovo admin and user actions among organization audit-log activities, including agent creation, updates, deletion, chat starts, and connector changes.",
+            "evidence_type": "security_trust",
+            "source_section": "Rovo audit activities"
           }
         ]
       },
@@ -29110,7 +29111,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -29321,18 +29322,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-9426998C9F7364"
+          "SRC-C7796AE5743B6F"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "rovo_in_scope_data",
-        "note": "Organizations can select the supported Rovo data region through Atlassian data-residency controls.",
+        "note": "Organizations can pin in-scope Rovo data to supported geographic regions through Atlassian data-residency controls.",
         "evidence_items": [
           {
-            "source_id": "SRC-9426998C9F7364",
-            "note": "Atlassian states customers can pin Rovo data to the same selected region as Jira or Confluence data.",
-            "evidence_type": "security_trust"
+            "source_id": "SRC-C7796AE5743B6F",
+            "note": "Atlassian documents data-residency controls for Rovo and pinning in-scope Rovo data to supported geographic locations.",
+            "evidence_type": "security_trust",
+            "source_section": "Data residency for Rovo"
           }
         ]
       },
@@ -29340,7 +29342,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -87770,19 +87772,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-EE7AF67DAA67D2"
+          "SRC-FADC05613BAF36"
         ],
         "field_level_verified": true,
-        "verified_at": "2026-10-01",
+        "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "moveworks_agent_studio",
-        "note": "Agent Studio uses role-based access controls.",
+        "note": "Agent Studio uses explicit role-based access controls for assets and runtime permissions.",
         "evidence_items": [
           {
-            "source_id": "SRC-EE7AF67DAA67D2",
-            "note": "Moveworks documents Agent Studio User, Agent Studio Analytics Viewer, Log Viewer, and Elevated Log Viewer roles with distinct permissions.",
+            "source_id": "SRC-FADC05613BAF36",
+            "note": "Moveworks documents four Agent Studio asset roles—Manager, Developer, Operator, and Viewer—with explicit editing and runtime permission mappings.",
             "evidence_type": "technical_docs",
-            "source_section": "Agent Studio roles"
+            "source_section": "The Four Roles / Permission Matrix"
           }
         ]
       },
@@ -87790,7 +87792,7 @@
       "last_seen": "2026-10-02",
       "valid_from": "2026-10-01",
       "valid_to": null,
-      "last_verified": "2026-10-01",
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
