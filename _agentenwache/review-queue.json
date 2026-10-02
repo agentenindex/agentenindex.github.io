@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T03:24:46Z",
-  "open_count": 3,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1414,7 +1414,7 @@
     },
     {
       "review_id": "REV-67ECC4323C29FC9219",
-      "status": "open",
+      "status": "reviewed_no_product_change",
       "first_detected": "2026-10-02T03:23:49Z",
       "last_detected": "2026-10-02T03:23:49Z",
       "occurrences": 1,
@@ -1452,7 +1452,9 @@
         "new_token_count": 822,
         "token_delta_pct": 0.12
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Reviewed the current Workday A2A administration guide. It still documents external agents discovering and invoking Workday Self-Service Agent through the Agent2Agent (A2A) protocol; the one-token change does not alter the indexed fact.",
+      "reviewed_at": "2026-10-02T03:27:00Z"
     },
     {
       "review_id": "REV-695A05C6DF4AD15A42",
@@ -1833,7 +1835,7 @@
     },
     {
       "review_id": "REV-8DD648536F4AAF1287",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:24:23Z",
       "last_detected": "2026-10-02T03:24:23Z",
       "occurrences": 1,
@@ -1871,7 +1873,9 @@
         "new_token_count": 10,
         "token_delta_pct": 66.67
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The monitored Advanced SAML Mapping page returned unstable unrelated rendered content. Replaced it with stable official Zoom SSO and Role Management documentation: SAML 2.0 support and custom-role management remain directly documented.",
+      "reviewed_at": "2026-10-02T03:27:00Z"
     },
     {
       "review_id": "REV-91C81ED1F805341CE6",
@@ -2314,7 +2318,7 @@
     },
     {
       "review_id": "REV-AB34D4FEB9603F19DF",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:24:21Z",
       "last_detected": "2026-10-02T03:24:21Z",
       "occurrences": 1,
@@ -2352,7 +2356,9 @@
         "new_token_count": 1857,
         "token_delta_pct": -0.21
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The Slack agents blog continued to drift dynamically. Replaced it as both profile and field evidence with the current official Slackbot help page, which documents Slackbot as Slack's personal work agent available natively in Slack.",
+      "reviewed_at": "2026-10-02T03:27:00Z"
     },
     {
       "review_id": "REV-AB6B43EF3E9CE311A2",
