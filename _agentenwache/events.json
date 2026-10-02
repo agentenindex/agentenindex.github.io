@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:57:48Z",
+  "updated_at": "2026-10-02T06:01:24Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -3618,6 +3618,29 @@
         "new_status": 503
       },
       "previous_checked_at": "2026-10-02T05:54:39Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-5BD8E7B82E276901AE",
+      "detected_at": "2026-10-02T06:00:21Z",
+      "source_id": "SRC-78C111BF205ABB",
+      "agent_ids": [
+        "AI-0016"
+      ],
+      "source_title": "Cline – Official Site",
+      "url": "https://cline.bot/",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "5ba1606f6f046aaca8fb32e70c25a28b7751c936d9906fab1bbd060ad7c957f0",
+        "new_hash": "317ecbdcf27b8fa39ce1931afcf3f192d14ba77c285a51cba96a392834272efc",
+        "simhash_distance": 3,
+        "old_token_count": 448,
+        "new_token_count": 448,
+        "token_delta_pct": 0.0
+      },
+      "previous_checked_at": "2026-10-02T05:56:46Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
