@@ -2299,3 +2299,43 @@ p{color:inherit}
 @media(max-width:1020px){.security-hero-grid{grid-template-columns:1fr}.security-summary{max-width:720px}.security-snapshot-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:900px){.security-article .article-grid{grid-template-columns:1fr!important}.security-toc{display:none}}
 @media(max-width:700px){.security-hero{padding:28px 0 20px}.security-hero-grid{padding:27px 20px;border-radius:24px;gap:28px}.security-hero h1{font-size:clamp(2.7rem,14vw,4.4rem)}.security-snapshot-grid,.security-risk-grid,.security-action-table,.security-related{grid-template-columns:1fr}.security-cta{grid-template-columns:1fr}.security-checklist li{padding-left:54px}}
+
+
+/* Security guide mobile reading comfort v1 */
+@media(max-width:700px){
+  .security-article>.container,
+  .security-article .article-grid{
+    width:calc(100% - 48px);
+    max-width:calc(100% - 48px);
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .security-article .article-grid{
+    padding-left:0;
+    padding-right:0;
+  }
+  .security-article .article-grid>article{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+  .security-direct{
+    padding:22px 20px;
+    margin-left:0;
+    margin-right:0;
+  }
+  .security-section{
+    margin-top:42px;
+  }
+  .security-section>p,
+  .security-direct p{
+    line-height:1.72;
+  }
+}
+@media(max-width:390px){
+  .security-article>.container,
+  .security-article .article-grid{
+    width:calc(100% - 40px);
+    max-width:calc(100% - 40px);
+  }
+}
