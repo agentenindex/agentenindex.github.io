@@ -2339,3 +2339,35 @@ p{color:inherit}
     max-width:calc(100% - 40px);
   }
 }
+
+
+/* Mobile reading width for AgentenProfile and long-form articles v8.7.2 */
+@media(max-width:700px){
+  .article>.container,
+  .article .article-grid{
+    width:calc(100% - 48px);
+    max-width:calc(100% - 48px);
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .article .article-grid{
+    padding-left:0;
+    padding-right:0;
+  }
+  .article .article-grid>article{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+  .article .article-grid>article>p,
+  .article .article-grid>article li{
+    line-height:1.72;
+  }
+}
+@media(max-width:390px){
+  .article>.container,
+  .article .article-grid{
+    width:calc(100% - 40px);
+    max-width:calc(100% - 40px);
+  }
+}
