@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T04:22:56Z",
-  "open_count": 3,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1335,7 +1335,7 @@
     },
     {
       "review_id": "REV-5D38F000DEA7A677F2",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:21:47Z",
       "last_detected": "2026-10-02T04:21:47Z",
       "occurrences": 1,
@@ -1373,7 +1373,9 @@
         "new_token_count": 3953,
         "token_delta_pct": 10.11
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Claude Code's setup documentation was expanded/retitled, but the indexed product facts remain unchanged: supported local installation and execution are still documented. No product-data update required.",
+      "reviewed_at": "2026-10-02T05:49:00+02:00"
     },
     {
       "review_id": "REV-5DE9D6CE4D3DBD8310",
@@ -1695,7 +1697,7 @@
     },
     {
       "review_id": "REV-73D9645D9EEC2EAE2D",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:21:45Z",
       "last_detected": "2026-10-02T04:21:45Z",
       "occurrences": 1,
@@ -1733,7 +1735,9 @@
         "new_token_count": 15984,
         "token_delta_pct": 0.16
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The Claude Code MCP page changed only marginally; it still explicitly documents Claude Code connecting to MCP servers for tools, databases, and APIs. No indexed MCP product fact changed.",
+      "reviewed_at": "2026-10-02T05:49:00+02:00"
     },
     {
       "review_id": "REV-745F3171F22424BA6E",
@@ -3821,7 +3825,7 @@
     },
     {
       "review_id": "REV-EA22CAA3666EBDA111",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:22:22Z",
       "last_detected": "2026-10-02T04:22:22Z",
       "occurrences": 1,
@@ -3857,9 +3861,11 @@
         "simhash_distance": 32,
         "old_token_count": 4,
         "new_token_count": 5,
-        "token_delta_pct": 25.0
+        "token_delta_pct": 25
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The monitored Zoom page returned a transient localized/loading snippet, while the current official role-management page still documents RBAC, custom roles, permissions, and role scopes. No indexed ZoomMate governance fact changed.",
+      "reviewed_at": "2026-10-02T05:49:00+02:00"
     },
     {
       "review_id": "REV-EAE8D697875A437E7D",
