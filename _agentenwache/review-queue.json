@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T05:19:34Z",
-  "open_count": 2,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -527,7 +527,7 @@
     },
     {
       "review_id": "REV-2022626EA5094C815D",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T05:18:56Z",
       "last_detected": "2026-10-02T05:18:56Z",
       "occurrences": 1,
@@ -561,7 +561,9 @@
         "old_status": 200,
         "new_status": 429
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Transient HTTP 429 rate limit from Slack. The official Slack Enterprise page is currently reachable and continues to document Slackbot, enterprise agents, SAML/SCIM, and security controls. No indexed product fact changed.",
+      "reviewed_at": "2026-10-02T05:21:00Z"
     },
     {
       "review_id": "REV-204DFA87F15A057E4B",
@@ -2439,7 +2441,7 @@
     },
     {
       "review_id": "REV-97E100E1E93EA37537",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T05:19:10Z",
       "last_detected": "2026-10-02T05:19:10Z",
       "occurrences": 1,
@@ -2473,7 +2475,9 @@
         "previous_result": "fetched",
         "current_result": "network_error"
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Transient network timeout from Google Support. The official Gemini Apps work/school account page is currently reachable and still documents Workspace access and enterprise-grade data protections. No indexed product fact changed.",
+      "reviewed_at": "2026-10-02T05:21:00Z"
     },
     {
       "review_id": "REV-9B47DCE975C527BF77",
