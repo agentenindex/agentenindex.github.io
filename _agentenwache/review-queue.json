@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:58:54Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T04:01:27Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1535,8 +1535,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Reviewed the current Workday A2A administration guide. It still documents external agents discovering and invoking Workday Self-Service Agent through the Agent2Agent (A2A) protocol; the one-token change does not alter the indexed fact.",
       "reviewed_at": "2026-10-02T03:27:00Z",
-      "last_seen_after_review": "2026-10-02T03:57:53Z",
-      "suppressed_reoccurrences": 3
+      "last_seen_after_review": "2026-10-02T04:00:23Z",
+      "suppressed_reoccurrences": 4
     },
     {
       "review_id": "REV-695A05C6DF4AD15A42",
@@ -3916,8 +3916,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Lindy homepage changed promotional trial wording, but the indexed profile only states platform access is plan-dependent; no indexed product fact changed.",
       "reviewed_at": "2026-10-01T15:18:00Z",
-      "last_seen_after_review": "2026-10-02T03:54:12Z",
-      "suppressed_reoccurrences": 8
+      "last_seen_after_review": "2026-10-02T04:01:03Z",
+      "suppressed_reoccurrences": 9
     },
     {
       "review_id": "REV-F5E8FCA8A32DF6BA03",
@@ -3976,6 +3976,48 @@
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
       "resolution": "Replaced the retired Kore.ai MCP-tools page with current official Kore.ai ABL material documenting agent connectivity through MCP.",
       "reviewed_at": "2026-10-02T03:19:00Z"
+    },
+    {
+      "review_id": "REV-F8176852186C9A30CA",
+      "status": "open",
+      "first_detected": "2026-10-02T04:00:19Z",
+      "last_detected": "2026-10-02T04:00:19Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "content_change",
+      "source_id": "SRC-A253520D56D6F5",
+      "source_title": "Salesforce Compliance – SOC 2 Report: Einstein Platform and Agentforce on Hyperforce",
+      "url": "https://compliance.salesforce.com/en/documents/a006e0000115nJkAAI",
+      "agent_ids": [
+        "AI-0029"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://compliance.salesforce.com/en/documents/a006e0000115nJkAAI",
+        "text_hash": "d1ce37d44c769935a1aebf5bec330b7218c744a09d01b3d2743479a7cb5e1b26",
+        "simhash64": "518dcc637dd9bff6",
+        "token_count": 235,
+        "text_sample": "SOC 2 Report - Einstein Platform and Agentforce on Hyperforce The American Institute of Certified Public Accountants (AICPA) Service Organization Controls (SOC) reports give assurance over control environments as they relate to the retrieval, storage, processing, and transfer of data. The reports cover IT General controls and controls around availability, confidentiality and security of customer data. The SOC 2 reports cover controls around security, availability, and confidentiality of customer data. Files Available versions for download Reporting Start Date Reporting End Date Updated On Notes Actions 2026-01-01 2026-05-31 2026-07-14 - Login to download 2025-09-01 2026-01-31 2026-03-13 - Login to download 2025-05-01 2025-09-30 2025-11-12 - Login to download 2025-01-01 2025-05-31 2025-07-16 - Login to download Reporting Start Date 2026-01-01 Reporting End Date 2026-05-31 Updated On 2026-07-14 Notes - Actions Login to download Reporting Start Date 2025-09-01 Reporting End Date 2026-01-31 Updated On 2026-03-13 Notes - Actions Login to download Reporting Start Date 2025-05-01 Reporting End Date 2025-09-30 Updated On 2025-11-12 Notes - Actions Login to download Reporting Start Date 202"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://compliance.salesforce.com/en/documents/a006e0000115nJkAAI",
+        "text_hash": "834e8ece5a73f95679aad7f7ba26c57e86b11e9613037f3770eda77316b386e0",
+        "simhash64": "b9e94c659e6aa4e0",
+        "token_count": 186,
+        "text_sample": "SOC 2 Report - Einstein Platform and Agentforce on Hyperforce The American Institute of Certified Public Accountants (AICPA) Service Organization Controls (SOC) reports give assurance over control environments as they relate to the retrieval, storage, processing, and transfer of data. The reports cover IT General controls and controls around availability, confidentiality and security of customer data. The SOC 2 reports cover controls around security, availability, and confidentiality of customer data. files.title files.availableVersions files.reportingStartDate files.reportingEndDate documents.lastupdated files.notes files.actions 2026-01-01 2026-05-31 2026-07-14 - files.loginToDownload 2025-09-01 2026-01-31 2026-03-13 - files.loginToDownload 2025-05-01 2025-09-30 2025-11-12 - files.loginToDownload 2025-01-01 2025-05-31 2025-07-16 - files.loginToDownload files.reportingStartDate 2026-01-01 files.reportingEndDate 2026-05-31 documents.lastupdated 2026-07-14 files.notes - files.actions files.loginToDownload files.reportingStartDate 2025-09-01 files.reportingEndDate 2026-01-31 documents.lastupdated 2026-03-13 files.notes - files.actions files.loginToDownload files.reportingStartDate 20",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "d1ce37d44c769935a1aebf5bec330b7218c744a09d01b3d2743479a7cb5e1b26",
+        "new_hash": "834e8ece5a73f95679aad7f7ba26c57e86b11e9613037f3770eda77316b386e0",
+        "simhash_distance": 27,
+        "old_token_count": 235,
+        "new_token_count": 186,
+        "token_delta_pct": -20.85
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-FCE2FF2F1439740BD2",

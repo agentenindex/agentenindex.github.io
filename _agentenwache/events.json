@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:58:54Z",
+  "updated_at": "2026-10-02T04:01:27Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -2947,6 +2947,29 @@
         "token_delta_pct": -3.07
       },
       "previous_checked_at": "2026-10-02T03:53:59Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-13BFA5DDB9E914E08D",
+      "detected_at": "2026-10-02T04:00:19Z",
+      "source_id": "SRC-A253520D56D6F5",
+      "agent_ids": [
+        "AI-0029"
+      ],
+      "source_title": "Salesforce Compliance – SOC 2 Report: Einstein Platform and Agentforce on Hyperforce",
+      "url": "https://compliance.salesforce.com/en/documents/a006e0000115nJkAAI",
+      "change_type": "content_change",
+      "severity": "high",
+      "metrics": {
+        "old_hash": "d1ce37d44c769935a1aebf5bec330b7218c744a09d01b3d2743479a7cb5e1b26",
+        "new_hash": "834e8ece5a73f95679aad7f7ba26c57e86b11e9613037f3770eda77316b386e0",
+        "simhash_distance": 27,
+        "old_token_count": 235,
+        "new_token_count": 186,
+        "token_delta_pct": -20.85
+      },
+      "previous_checked_at": "2026-10-02T03:57:49Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
