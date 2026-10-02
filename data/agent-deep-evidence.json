@@ -5679,16 +5679,17 @@
           "value": true,
           "scope": "rovo_admin_and_user_actions",
           "confidence": "high",
-          "verified_at": "2026-10-01",
+          "verified_at": "2026-10-02",
           "evidence": [
             {
-              "title": "Atlassian – Rovo security, privacy, and data use",
-              "url": "https://www.atlassian.com/software/rovo/guides/admin-guide/rovo-data-usage-privacy",
-              "note": "Atlassian documents Rovo admin and user actions in the organization audit log, with availability depending on Atlassian Guard plan.",
-              "evidence_type": "security_trust"
+              "title": "Atlassian Support – Audit log activities",
+              "url": "https://support.atlassian.com/security-and-access-policies/docs/accessing-audit-log-activities/",
+              "note": "Atlassian documents Rovo admin and user actions among organization audit-log activities, including agent creation, updates, deletion, chat starts, and connector changes.",
+              "evidence_type": "security_trust",
+              "source_section": "Rovo audit activities"
             }
           ],
-          "note": "Rovo actions are recorded in the Atlassian audit log with plan-dependent access."
+          "note": "Rovo admin and user actions are recorded in Atlassian organization audit logs."
         },
         {
           "path": "governance.rbac",
@@ -5771,16 +5772,17 @@
           "value": true,
           "scope": "rovo_in_scope_data",
           "confidence": "high",
-          "verified_at": "2026-10-01",
+          "verified_at": "2026-10-02",
           "evidence": [
             {
-              "title": "Atlassian – Rovo security, privacy, and data use",
-              "url": "https://www.atlassian.com/software/rovo/guides/admin-guide/rovo-data-usage-privacy",
-              "note": "Atlassian states customers can pin Rovo data to the same selected region as Jira or Confluence data.",
-              "evidence_type": "security_trust"
+              "title": "Atlassian Support – Understand data residency",
+              "url": "https://support.atlassian.com/security-and-access-policies/docs/understand-data-residency/",
+              "note": "Atlassian documents data-residency controls for Rovo and pinning in-scope Rovo data to supported geographic locations.",
+              "evidence_type": "security_trust",
+              "source_section": "Data residency for Rovo"
             }
           ],
-          "note": "Organizations can select the supported Rovo data region through Atlassian data-residency controls."
+          "note": "Organizations can pin in-scope Rovo data to supported geographic regions through Atlassian data-residency controls."
         },
         {
           "path": "protocols.mcp.client",
@@ -16946,17 +16948,17 @@
           "value": true,
           "scope": "moveworks_agent_studio",
           "confidence": "high",
-          "verified_at": "2026-10-01",
+          "verified_at": "2026-10-02",
           "evidence": [
             {
-              "title": "Moveworks – Roles and Permissions",
-              "url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications",
-              "note": "Moveworks documents Agent Studio User, Agent Studio Analytics Viewer, Log Viewer, and Elevated Log Viewer roles with distinct permissions.",
+              "title": "Moveworks – Agent Studio Roles and Permissions",
+              "url": "https://help.moveworks.com/agent-studio/access-control/roles-and-permissions",
+              "note": "Moveworks documents four Agent Studio asset roles—Manager, Developer, Operator, and Viewer—with explicit editing and runtime permission mappings.",
               "evidence_type": "technical_docs",
-              "source_section": "Agent Studio roles"
+              "source_section": "The Four Roles / Permission Matrix"
             }
           ],
-          "note": "Agent Studio uses role-based access controls."
+          "note": "Agent Studio uses explicit role-based access controls for assets and runtime permissions."
         },
         {
           "path": "governance.sso.oidc",
