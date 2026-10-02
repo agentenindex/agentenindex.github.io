@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:11:39Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T05:14:05Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -130,6 +130,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:26:37Z",
       "resolution": "Source is healthy again; technical recovery acknowledged without asserting a product change."
+    },
+    {
+      "review_id": "REV-0261E6ABFAFDED9239",
+      "status": "open",
+      "first_detected": "2026-10-02T05:13:26Z",
+      "last_detected": "2026-10-02T05:13:26Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "availability_change",
+      "source_id": "SRC-39A94098B32A0D",
+      "source_title": "Google Gemini Apps Help – Use Deep Research in Gemini Apps",
+      "url": "https://support.google.com/gemini/answer/15719111?hl=en",
+      "agent_ids": [
+        "AI-0002"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://support.google.com/gemini/answer/15719111?hl=en",
+        "text_hash": "752bbf759dd83a319e004393d6ab376ad723c2799b2162324c218e1cd4335d57",
+        "simhash64": "13ec2469406aadf7",
+        "token_count": 830,
+        "text_sample": "Use Deep Research in Gemini Apps You can conduct in-depth and real-time research on almost any subject with Deep Research in Gemini Apps. By default, Gemini includes Google Search as a source for your research. You can change or add other sources, like your personal Gmail or Drive, for your research. You can also upload files and add NotebookLM notebooks. Learn more about Deep Research . Tip: If you have a Google AI Ultra plan, Deep Research reports may include visuals like charts, diagrams, schematics, and interactive simulators. Learn more about visuals and animations . What you need To use Deep Research, you need to: Be 18 or over. Be signed in to the Gemini app. Learn how to sign in to Gemini Apps . About Deep Research models & limits Deep Research models Google AI Pro and Google AI Ultra users can generate reports using Pro for even higher quality. All users can use Thinking for their reports. Learn how to switch between models . Deep Research limits In Gemini Apps, there are limits for: Daily research requests Number of research requests you can run at the same time If you’re close to your limit, Gemini Apps notifies you how many research requests are left for the day. Google"
+      },
+      "current": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "network_error",
+        "error": "The read operation timed out"
+      },
+      "latest_metrics": {
+        "previous_result": "fetched",
+        "current_result": "network_error"
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-02F3E9D4A59B08535B",
@@ -4287,8 +4325,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Lindy homepage changed promotional trial wording, but the indexed profile only states platform access is plan-dependent; no indexed product fact changed.",
       "reviewed_at": "2026-10-01T15:18:00Z",
-      "last_seen_after_review": "2026-10-02T05:11:21Z",
-      "suppressed_reoccurrences": 12
+      "last_seen_after_review": "2026-10-02T05:13:37Z",
+      "suppressed_reoccurrences": 13
     },
     {
       "review_id": "REV-F5E8FCA8A32DF6BA03",
