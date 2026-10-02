@@ -171,6 +171,23 @@ def registrableish(host: str) -> str:
     common_second_level={"co.uk","org.uk","ac.uk","com.au","net.au","co.jp","co.nz","com.br"}
     return ".".join(parts[-3:]) if two in common_second_level and len(parts)>=3 else two
 
+def monitoring_url(url: str) -> tuple[str, str]:
+    """Return a stable fetch target while preserving the canonical evidence URL.
+
+    GitHub blob pages are presentation HTML and can intermittently return 503
+    under automated monitoring. For public repository files, monitor the
+    corresponding raw.githubusercontent.com file instead. The source registry
+    and editorial evidence continue to use the canonical github.com/blob URL.
+    """
+    parsed = urlparse(url)
+    if parsed.netloc.lower() == "github.com":
+        m = re.match(r"^/([^/]+)/([^/]+)/blob/([^/]+)/(.*)$", parsed.path)
+        if m:
+            owner, repo, ref, file_path = m.groups()
+            return f"https://raw.githubusercontent.com/{owner}/{repo}/{ref}/{file_path}", "github_raw"
+    return url, "canonical"
+
+
 def robots_rule_matches(target: str, rule: str) -> bool:
     """Match Google-style robots patterns with * wildcards and optional trailing $."""
     if not rule:
@@ -239,10 +256,12 @@ def robots_allows(url: str, cache: dict[str, list[tuple[str, str]]]) -> bool:
 
 def fetch_source(source: dict, previous: dict | None, robots_cache: dict[str, list[tuple[str, str]]]) -> dict:
     url=source["url"]
+    fetch_url, monitor_transport = monitoring_url(url)
     checked=now_iso()
-    if not robots_allows(url, robots_cache):
+    if not robots_allows(fetch_url, robots_cache):
         return {
             "source_id":source["source_id"],"checked_at":checked,"url":url,
+            "monitor_url":fetch_url,"monitor_transport":monitor_transport,
             "result":"robots_disallowed","ok":False,"error":"robots.txt disallows monitoring path"
         }
 
@@ -252,16 +271,18 @@ def fetch_source(source: dict, previous: dict | None, robots_cache: dict[str, li
         "Accept-Language":"de,en;q=0.7",
         "Cache-Control":"no-cache",
     }
-    if previous and previous.get("etag"):
+    same_transport = previous and previous.get("monitor_transport", "canonical") == monitor_transport
+    if same_transport and previous.get("etag"):
         headers["If-None-Match"]=previous["etag"]
-    if previous and previous.get("last_modified"):
+    if same_transport and previous.get("last_modified"):
         headers["If-Modified-Since"]=previous["last_modified"]
 
-    req=Request(url,headers=headers,method="GET")
+    req=Request(fetch_url,headers=headers,method="GET")
     try:
         with build_opener().open(req, timeout=TIMEOUT) as resp:
             status=getattr(resp,"status",200)
-            final_url=resp.geturl()
+            fetched_final_url=resp.geturl()
+            final_url=url if monitor_transport == "github_raw" else fetched_final_url
             ct=resp.headers.get("Content-Type","")
             etag=resp.headers.get("ETag")
             lm=resp.headers.get("Last-Modified")
@@ -274,6 +295,7 @@ def fetch_source(source: dict, previous: dict | None, robots_cache: dict[str, li
             raw=raw[:MAX_BYTES]
             record={
                 "source_id":source["source_id"],"checked_at":checked,"url":url,
+                "monitor_url":fetched_final_url,"monitor_transport":monitor_transport,
                 "result":"fetched","ok":200 <= status < 400,"status_code":status,
                 "final_url":final_url,"content_type":ct,"etag":etag,"last_modified":lm,
                 "bytes_read":len(raw),"truncated":truncated,
@@ -301,23 +323,34 @@ def fetch_source(source: dict, previous: dict | None, robots_cache: dict[str, li
             return result
         return {
             "source_id":source["source_id"],"checked_at":checked,"url":url,
+            "monitor_url":fetch_url,"monitor_transport":monitor_transport,
             "result":"http_error","ok":False,"status_code":e.code,
-            "final_url":getattr(e,"url",url),"error":str(e),
+            "final_url":url if monitor_transport == "github_raw" else getattr(e,"url",url),"error":str(e),
         }
     except (URLError, socket.timeout, TimeoutError, ssl.SSLError) as e:
         return {
             "source_id":source["source_id"],"checked_at":checked,"url":url,
+            "monitor_url":fetch_url,"monitor_transport":monitor_transport,
             "result":"network_error","ok":False,"error":str(e),
         }
     except Exception as e:
         return {
             "source_id":source["source_id"],"checked_at":checked,"url":url,
+            "monitor_url":fetch_url,"monitor_transport":monitor_transport,
             "result":"error","ok":False,"error":f"{type(e).__name__}: {e}",
         }
 
 def classify(previous: dict | None, current: dict) -> tuple[str | None, str | None, dict]:
     if previous is None:
         return "baseline", None, {}
+    old_transport=previous.get("monitor_transport", "canonical")
+    new_transport=current.get("monitor_transport", "canonical")
+    if old_transport != new_transport and new_transport == "github_raw":
+        return "baseline", None, {
+            "monitor_transport_changed": True,
+            "old_monitor_transport": old_transport,
+            "new_monitor_transport": new_transport,
+        }
     metrics={}
     old_status=previous.get("status_code")
     new_status=current.get("status_code")
