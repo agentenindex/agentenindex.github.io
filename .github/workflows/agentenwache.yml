@@ -10,6 +10,9 @@ on:
       - "_agentengraph/sources.json"
       - "_agentenwache/monitoring-overrides.json"
       - "_agentenwache-v1/trigger"
+      - ".github/scripts/run-agentenwache.py"
+      - ".github/scripts/validate-agentenwache.py"
+      - ".github/workflows/agentenwache.yml"
 
 permissions:
   contents: write
