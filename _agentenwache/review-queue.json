@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:52:34Z",
-  "open_count": 2,
+  "updated_at": "2026-10-02T05:54:00Z",
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1603,7 +1603,7 @@
     },
     {
       "review_id": "REV-65F2D11B5B524B2D8F",
-      "status": "open",
+      "status": "reviewed_no_product_change",
       "first_detected": "2026-10-02T05:51:59Z",
       "last_detected": "2026-10-02T05:51:59Z",
       "occurrences": 1,
@@ -1641,7 +1641,9 @@
         "new_token_count": 465,
         "token_delta_pct": 0.43
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Reviewed the current official Manus Cloud Computer article. It still documents a dedicated persistent cloud-hosted virtual machine and the standard temporary sandbox; the low-severity 2-token/SimHash-3 change does not alter the indexed managed-hosting fact.",
+      "reviewed_at": "2026-10-02T05:54:00Z"
     },
     {
       "review_id": "REV-66484F39574C8E3200",
@@ -4339,7 +4341,7 @@
     },
     {
       "review_id": "REV-F0754CC584FF25C263",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T05:52:01Z",
       "last_detected": "2026-10-02T05:52:01Z",
       "occurrences": 1,
@@ -4377,7 +4379,9 @@
         "new_token_count": 236,
         "token_delta_pct": -1.26
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Repeated small Intercom-render/text-normalization drift on the official Manus Compliance APIs page. Across consecutive checks the visible substantive documentation remains unchanged: secure, auditable compliance APIs for e-discovery, legal hold, investigations and SIEM integration. No indexed product fact changed; recurring transport/render noise is handled via a documented manual_only override.",
+      "reviewed_at": "2026-10-02T05:54:00Z"
     },
     {
       "review_id": "REV-F101298E3B1703A2B5",
