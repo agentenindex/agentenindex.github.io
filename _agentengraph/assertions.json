@@ -41610,7 +41610,7 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-8EA13B30C102B5"
+          "SRC-935A75487A6F9B"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-01",
@@ -41619,7 +41619,7 @@
         "note": "Gorgias AI Agent is delivered on Gorgias-managed GCP infrastructure.",
         "evidence_items": [
           {
-            "source_id": "SRC-8EA13B30C102B5",
+            "source_id": "SRC-935A75487A6F9B",
             "note": "Gorgias states AI Agent data is maintained on Google Cloud Platform with globally distributed servers.",
             "evidence_type": "technical_docs",
             "source_section": "Regional hosting"
@@ -55624,19 +55624,19 @@
       "evidence": {
         "binding": "field_level",
         "source_ids": [
-          "SRC-16F8BE542DFFCB"
+          "SRC-1450A79CCE67F7"
         ],
         "field_level_verified": true,
         "verified_at": "2026-10-02",
         "confidence": "high",
         "scope": "notebooklm_workspace_core_service",
-        "note": "NotebookLM used as a Google Workspace core service is covered by Workspace SOC compliance.",
+        "note": "Gemini Notebook (formerly NotebookLM), including its Deep Research capability in Workspace, is covered by the current Google Workspace compliance documentation that explicitly lists SOC 2.",
         "evidence_items": [
           {
-            "source_id": "SRC-16F8BE542DFFCB",
-            "note": "Google's current Workspace documentation states NotebookLM/Gemini Notebook is covered by Workspace security and compliance controls including SOC reports.",
+            "source_id": "SRC-1450A79CCE67F7",
+            "note": "Google's current Workspace documentation states Gemini Notebook supports SOC 1, SOC 2, SOC 3 and other compliance certifications.",
             "evidence_type": "security_trust",
-            "source_section": "Security and compliance"
+            "source_section": "Gemini Notebook availability & compliance"
           }
         ]
       },
