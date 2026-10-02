@@ -48917,6 +48917,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-A1FD88281105F0F7ED",
+      "agent_id": "AI-0052",
+      "path": "governance.audit_logs.api",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-FBAB1386BE7F79"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "manus_enterprise_compliance_api",
+        "note": "Manus exposes approved compliance/audit-oriented APIs for enterprise governance.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-FBAB1386BE7F79",
+            "note": "Manus documents secure compliance APIs for e-discovery, legal hold, investigations, and SIEM-oriented governance use cases.",
+            "evidence_type": "api_docs",
+            "source_section": "Available APIs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-FFECEFF37CAD46FD21",
       "agent_id": "AI-0052",
       "path": "governance.audit_logs.available",
@@ -48983,6 +49018,41 @@
       "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-2EF8D71B63E7D5BE6E",
+      "agent_id": "AI-0052",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-46F4E0D5DE3531"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "manus_team_enterprise",
+        "note": "Manus documents SCIM as an enterprise/team capability.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-46F4E0D5DE3531",
+            "note": "Manus explicitly lists SCIM as a distinct Team/Enterprise subscription capability in its service-change documentation.",
+            "evidence_type": "technical_docs",
+            "source_section": "Subscriptions Covered"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -51467,6 +51537,41 @@
             "note": "Perplexity explicitly states its Enterprise foundation includes SAML SSO, audit logs, and administrative controls.",
             "evidence_type": "official_release",
             "source_section": "Computer for Enterprise / Enterprise infrastructure"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9EFC77191508EB8577",
+      "agent_id": "AI-0055",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-620C444A0C6661"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "perplexity_comet_cloud_processing",
+        "note": "Comet combines local browser execution with Perplexity-managed server-side processing.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-620C444A0C6661",
+            "note": "Perplexity documents Comet Assistant sending relevant context to Perplexity servers and processing local data on Perplexity servers to fulfill requested tasks.",
+            "evidence_type": "security_trust",
+            "source_section": "What data is transferred between Comet and Perplexity? / Does Comet store email content?"
           }
         ]
       },
@@ -54547,6 +54652,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-A0C94AA6C96A4DA357",
+      "agent_id": "AI-0058",
+      "path": "hosting.managed",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3BBC763ADCEDE1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "you_com_ari",
+        "note": "You.com ARI is delivered on You.com's managed AWS service.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3BBC763ADCEDE1",
+            "note": "You.com documents its Managed Service architecture as running in the provider's AWS account with customer data stored in provider-controlled services.",
+            "evidence_type": "security_trust",
+            "source_section": "Architecture / Managed Service"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-2F84EF523999FB2AF4",
       "agent_id": "AI-0058",
       "path": "identity.name",
@@ -54645,6 +54785,76 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-E7E101D0F6D75D34E1",
+      "agent_id": "AI-0058",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-3BBC763ADCEDE1"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "you_com_enterprise_services",
+        "note": "You.com documents encryption at rest.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-3BBC763ADCEDE1",
+            "note": "You.com states stored customer data is protected with industry-standard encryption at rest.",
+            "evidence_type": "security_trust",
+            "source_section": "Security Controls / Data Encryption"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-76EDB0140E49FEE333",
+      "agent_id": "AI-0058",
+      "path": "security.encryption.in_transit",
+      "value": "TLS",
+      "value_hash": "91fa68ecb3b75c03",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C31C9604DE0B8A"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "you_com_services",
+        "note": "You.com documents TLS encryption for communications.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C31C9604DE0B8A",
+            "note": "You.com states all communications and websites are encrypted using TLS.",
+            "evidence_type": "security_trust",
+            "source_section": "General Security"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-B304B947F2208D10FE",
@@ -79987,6 +80197,111 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-A237C5A51FA8D763D3",
+      "agent_id": "AI-0085",
+      "path": "protocols.a2a.client",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C8C6E017B782B8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "strands_agents_sdk",
+        "note": "Strands Agents can act as an A2A client.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C8C6E017B782B8",
+            "note": "Strands documents consuming remote A2A agents through the A2AAgent client class.",
+            "evidence_type": "technical_docs",
+            "source_section": "Consuming Remote Agents"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-9EE0D4358BB0062F4B",
+      "agent_id": "AI-0085",
+      "path": "protocols.a2a.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C8C6E017B782B8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "strands_agents_sdk",
+        "note": "Strands Agents can act as an A2A server.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C8C6E017B782B8",
+            "note": "Strands documents serving Strands agents over A2A using A2AServer/A2AExpressServer.",
+            "evidence_type": "technical_docs",
+            "source_section": "Serving an Agent over A2A"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-22919C11010836EF94",
+      "agent_id": "AI-0085",
+      "path": "protocols.a2a.supported",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C8C6E017B782B8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "strands_agents_sdk",
+        "note": "Strands Agents natively supports A2A.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C8C6E017B782B8",
+            "note": "Strands explicitly documents native A2A support on both consuming and serving sides.",
+            "evidence_type": "technical_docs",
+            "source_section": "Agent-to-Agent (A2A) Protocol"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-7BA5A8ED01443766C0",
       "agent_id": "AI-0085",
       "path": "protocols.mcp.client",
@@ -80018,6 +80333,41 @@
       "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-35C5C05F928B3237F7",
+      "agent_id": "AI-0085",
+      "path": "protocols.mcp.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-E1BDF940AD3283"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "strands_shell",
+        "note": "Strands includes an MCP server mode.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-E1BDF940AD3283",
+            "note": "Strands documents a built-in MCP server exposing a sandboxed shell over JSON-RPC on stdio.",
+            "evidence_type": "technical_docs",
+            "source_section": "Run the MCP server"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
@@ -96419,6 +96769,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-36ADF3DF111D75423D",
+      "agent_id": "AI-0103",
+      "path": "governance.sso.saml",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-540D903D3A0FB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "qualified_enterprise",
+        "note": "Qualified Enterprise supports SAML 2.0 SSO.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-540D903D3A0FB8",
+            "note": "Qualified explicitly documents SAML 2.0-based SSO for Enterprise customers.",
+            "evidence_type": "security_trust",
+            "source_section": "Application Security / Single Sign-On"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-4524C359CFA7F0894E",
       "agent_id": "AI-0103",
       "path": "identity.name",
@@ -96517,6 +96902,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-37AC538307ABAA4D24",
+      "agent_id": "AI-0103",
+      "path": "security.encryption.at_rest",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-540D903D3A0FB8"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "qualified_platform_data",
+        "note": "Qualified documents encryption for stored customer data.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-540D903D3A0FB8",
+            "note": "Qualified states all stored customer data is securely encrypted.",
+            "evidence_type": "security_trust",
+            "source_section": "Data Storage"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-5FE381C85FBD0CC403",
