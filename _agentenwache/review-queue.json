@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T05:11:39Z",
-  "open_count": 1,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -4064,7 +4064,7 @@
     },
     {
       "review_id": "REV-EBBE862F3231EAE55F",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T05:10:32Z",
       "last_detected": "2026-10-02T05:10:32Z",
       "occurrences": 1,
@@ -4102,7 +4102,9 @@
         "new_token_count": 17664,
         "token_delta_pct": 1.09
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The Claude Code monitoring documentation expanded slightly, but the indexed product fact is unchanged: Claude Code still documents OpenTelemetry event/log export through OTLP and explicitly supports sending security events to SIEM systems. No AgentenIndex product claim changed.",
+      "reviewed_at": "2026-10-02T05:13:00Z"
     },
     {
       "review_id": "REV-EC047C5B38B83AC950",
