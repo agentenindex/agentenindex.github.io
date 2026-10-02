@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:01:27Z",
+  "updated_at": "2026-10-02T04:22:56Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -2970,6 +2970,75 @@
         "token_delta_pct": -20.85
       },
       "previous_checked_at": "2026-10-02T03:57:49Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-E1D0F3078430339E27",
+      "detected_at": "2026-10-02T04:21:45Z",
+      "source_id": "SRC-E8ECDAFBF282BC",
+      "agent_ids": [
+        "AI-0007"
+      ],
+      "source_title": "Claude Code Docs – Connect Claude Code to tools via MCP",
+      "url": "https://code.claude.com/docs/en/mcp",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "76246dbed88c273dd04bafacf0375576ba2589d7bdebf544029410385dbd973b",
+        "new_hash": "1604092e81c5d3fc717a054b1b4715a89dc692964a8e54623b8a1b09ea9ac736",
+        "simhash_distance": 1,
+        "old_token_count": 15958,
+        "new_token_count": 15984,
+        "token_delta_pct": 0.16
+      },
+      "previous_checked_at": "2026-10-02T04:00:20Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-9C1D19AE74D0E7F4B1",
+      "detected_at": "2026-10-02T04:21:47Z",
+      "source_id": "SRC-4C73906E2D2586",
+      "agent_ids": [
+        "AI-0007"
+      ],
+      "source_title": "Anthropic Docs – Claude Code",
+      "url": "https://docs.anthropic.com/en/docs/claude-code/getting-started",
+      "change_type": "content_change",
+      "severity": "medium",
+      "metrics": {
+        "old_hash": "83fb6b846ef1861e8cc8294ee727bd410cbc74254b102bae325a65c2c053df0b",
+        "new_hash": "66a57fe9405f49f86febc2289ea31d3ddfc77e425545148a785c9f546f853257",
+        "simhash_distance": 10,
+        "old_token_count": 3590,
+        "new_token_count": 3953,
+        "token_delta_pct": 10.11
+      },
+      "previous_checked_at": "2026-10-02T04:00:22Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-7CC490C1BF76FBA037",
+      "detected_at": "2026-10-02T04:22:22Z",
+      "source_id": "SRC-557C4F5647E44A",
+      "agent_ids": [
+        "AI-0096"
+      ],
+      "source_title": "Zoom Support – Using role management",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064983",
+      "change_type": "content_change",
+      "severity": "high",
+      "metrics": {
+        "old_hash": "73661044aca3e20d23edf523a486e1994c5375a9491ce5ee2b2972debd82b83e",
+        "new_hash": "1f251f5bf7cb3367c98940b493f7a33888d4cd5285bd71bb613e825c89e84b95",
+        "simhash_distance": 32,
+        "old_token_count": 4,
+        "new_token_count": 5,
+        "token_delta_pct": 25.0
+      },
+      "previous_checked_at": "2026-10-02T04:00:55Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
