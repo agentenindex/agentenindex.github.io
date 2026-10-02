@@ -24,6 +24,80 @@
   },
   "items": [
     {
+      "id": "NEWS-2026-10-02-009",
+      "slug": "github-copilot-coding-agent-gpt-6-1-sol",
+      "headline": "GitHub Copilot Coding Agent erhält GPT‑6.1 Sol als auswählbares Modell",
+      "description": "GitHub macht GPT‑6.1 Sol in GitHub Copilot allgemein verfügbar und nennt den Copilot Coding Agent ausdrücklich als unterstützte Oberfläche. Der Rollout erfolgt schrittweise und kann in Unternehmen per Model Policy gesteuert werden.",
+      "date_published": "2026-10-02T22:52:00+02:00",
+      "date_modified": "2026-10-02T22:52:00+02:00",
+      "section": "Coding & Modelle",
+      "change_type": "new_capability",
+      "agent_id": "AI-0008",
+      "agent_name": "GitHub Copilot Coding Agent",
+      "agent_slug": "github-copilot-coding-agent",
+      "provider": "GitHub",
+      "source": {
+        "title": "GitHub Changelog – GPT-6.1 Sol in GitHub Copilot",
+        "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot/"
+      },
+      "tags": [
+        "GitHub Copilot Coding Agent",
+        "GPT‑6.1 Sol",
+        "GitHub Copilot",
+        "Coding-Agent",
+        "Model Picker"
+      ],
+      "summary": "GitHub hat GPT‑6.1 Sol allgemein verfügbar gemacht und unterstützt das Modell ausdrücklich im GitHub Copilot Coding Agent. Damit erweitert sich die auswählbare Modellbasis für delegierte Coding-Aufgaben; Enterprise-Zugriff kann über die Copilot Model Policy gesteuert werden.",
+      "body": [
+        "GitHub hat am 29. September 2026 GPT‑6.1 Sol in GitHub Copilot allgemein verfügbar gemacht und nennt den GitHub Copilot Coding Agent ausdrücklich als unterstützte Oberfläche. Das Modell kann dort über den Model Picker gewählt werden. GitHub beschreibt GPT‑6.1 Sol für agentisches Coding und Terminal-Workflows und berichtet aus eigenen frühen Tests von weniger benötigten Tokens und Schritten als bei früheren GPT‑6- und GPT‑5.6-Modellen.",
+        "Für den AgentenIndex ist nicht die allgemeine Modellveröffentlichung entscheidend, sondern die direkte Produktverknüpfung zum Coding Agent. Delegierte Aufgaben können damit auf einer neuen Modelloption laufen, ohne dass sich der grundsätzliche Arbeitsablauf ändert: Der Agent arbeitet asynchron an Repository-Aufgaben und liefert Änderungen zur Prüfung zurück. Die Modellwahl erweitert also die Ausführungsoptionen, nicht automatisch die Berechtigungen des Agenten.",
+        "GitHub nennt Copilot Pro+, Max, Business und Enterprise als unterstützte Pläne. Der Rollout erfolgt schrittweise. Für Business und Enterprise kann der Zugriff über die Model Policy administriert werden; neue Modelle sind dort standardmäßig aktiviert, sofern Administratoren die globale Voreinstellung nicht abgeschaltet oder GPT‑6.1 Sol ausdrücklich deaktiviert haben.",
+        "Die von GitHub genannten Leistungsverbesserungen behandelt AgentenIndex als Herstellerangaben, nicht als unabhängigen Produkttest. Aus der Modellfreigabe folgt insbesondere keine neue Aussage zu Repository-Rechten, Netzwerkzugriff, Sandbox-Grenzen oder Freigabeprozessen. Solche Eigenschaften bleiben getrennte Claims und benötigen eigene Evidenz.",
+        "Für Teams ist die Änderung trotzdem relevant, weil die Modellpolitik nun direkt beeinflusst, welche Engine ein delegierter Coding-Agent-Task verwenden darf. Bei reproduzierbaren Entwicklungsprozessen sollten Modellwahl, Kostenmodell und organisatorische Freigaben deshalb zusammen dokumentiert werden."
+      ],
+      "before_after": {
+        "before": "Der Copilot Coding Agent unterstützte bereits eine auswählbare Modellbasis für delegierte Coding-Aufgaben.",
+        "after": "GPT‑6.1 Sol ist als allgemein verfügbare Modelloption ausdrücklich auch für den GitHub Copilot Coding Agent dokumentiert."
+      }
+    },
+    {
+      "id": "NEWS-2026-10-02-008",
+      "slug": "n8n-agents-wiederverwendbarer-agententyp",
+      "headline": "n8n führt wiederverwendbare Agents als eigenen Produkttyp neben Workflows ein",
+      "description": "n8n führt einen eigenen Agententyp ein, der mit Modell, Tools und bestehenden Workflows konfiguriert wird und über Slack, Zeitplan oder andere Workflows aufgerufen werden kann.",
+      "date_published": "2026-10-02T22:51:00+02:00",
+      "date_modified": "2026-10-02T22:51:00+02:00",
+      "section": "Automatisierung & Orchestrierung",
+      "change_type": "new_capability",
+      "agent_id": "AI-0018",
+      "agent_name": "n8n Agents",
+      "agent_slug": "n8n-agents",
+      "provider": "n8n",
+      "source": {
+        "title": "n8n – Introducing n8n Agents",
+        "url": "https://blog.n8n.io/introducing-n8n-agents/"
+      },
+      "tags": [
+        "n8n Agents",
+        "n8n",
+        "Automatisierung",
+        "Tool-Orchestrierung",
+        "Workflows"
+      ],
+      "summary": "n8n führt Agents als eigenständige, wiederverwendbare Einheit neben klassischen Workflows ein. Ein Agent erhält ein Modell sowie freigegebene Tools und Workflows und kann unter anderem über Slack, Zeitpläne oder den neuen Message-an-Agent-Node angesprochen werden.",
+      "body": [
+        "n8n hat am 25. September 2026 einen neuen Produkttyp namens Agents vorgestellt. Ein Agent wird mit einer Aufgabe, einem Modell sowie den Tools und Workflows konfiguriert, die er verwenden darf. n8n beschreibt Agents als wiederverwendbare Einheiten für offene oder dialogartige Aufgaben, bei denen ein fest verdrahteter Workflow schnell unübersichtlich werden kann.",
+        "Die neue Struktur sitzt bewusst neben den bestehenden Workflows. Ein Agent kann vorhandene n8n-Workflows als Tools verwenden; umgekehrt kann ein Workflow mit dem neuen „Message an Agent“-Node einen Agenten aus einem laufenden Prozess heraus aufrufen. Damit wird die Trennung zwischen deterministischer Workflow-Logik und agentischer Entscheidung expliziter.",
+        "Der gleiche konfigurierte Agent kann laut n8n über mehrere Einstiegspunkte genutzt werden: im Slack-Dialog, nach Zeitplan oder aus einem anderen Workflow heraus. Für AgentenIndex ist das eine relevante Architekturänderung, weil der Agent nicht nur als einzelner Schritt in einem Workflow gedacht ist, sondern als eigenständig adressierbare Einheit mit festgelegtem Modell- und Tool-Umfang.",
+        "Die Ankündigung macht zugleich deutlich, wo Governance ansetzen muss. Welche Aktionen ein Agent tatsächlich ausführen kann, hängt von den freigegebenen Tools, Workflows und Credentials ab. AgentenIndex leitet aus dem Launch daher keine pauschale Aussage zu Hosting, Datenresidenz oder menschlicher Freigabe ab. Diese Eigenschaften müssen weiterhin feldgenau durch separate Primärquellen belegt werden.",
+        "Für Teams kann das neue Modell die Wiederverwendung vereinfachen: Statt agentische Logik mehrfach in verschiedenen Automationen nachzubauen, lässt sich ein definierter Agent an mehreren Stellen ansprechen. Entscheidend bleibt, seine Werkzeuge klein zu halten, Credentials nach Least-Privilege zu vergeben und Fehler- beziehungsweise Eskalationspfade klar zu definieren."
+      ],
+      "before_after": {
+        "before": "AgentenIndex führte n8n bereits als Plattform für agentische Workflow-Automation; ein eigener wiederverwendbarer Agententyp war noch nicht als separates Produktkonzept beschrieben.",
+        "after": "n8n dokumentiert Agents als eigenständige, wiederverwendbare Einheit neben Workflows, mit Modell, Tools, Workflows und mehreren Aufrufwegen."
+      }
+    },
+    {
       "id": "NEWS-2026-10-02-007",
       "slug": "copilot-studio-human-approval-tool-calls",
       "headline": "Microsoft Copilot Studio führt Human Approval vor ausgewählten Tool-Aufrufen ein",
