@@ -7851,6 +7851,54 @@
       "agent_id": "AI-0041",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "forethought_ai_agents_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "note": "Forethought's current solutions documentation explicitly lists audit trails as a built-in governance safeguard for its agentic AI platform.",
+          "evidence": [
+            {
+              "title": "Forethought – AI Solutions for Customer Support Automation",
+              "url": "https://forethought.ai/solutions",
+              "note": "Forethought states that its enterprise-ready agentic AI uses built-in encryption, access controls, and audit trails for governance.",
+              "evidence_type": "official_product_page",
+              "source_section": "Built for trust, backed by standards"
+            },
+            {
+              "title": "Zendesk – Announcing Forethought AI agents by Zendesk for customers",
+              "url": "https://support.zendesk.com/hc/en-us/articles/10850639885082-Announcing-Forethought-AI-agents-by-Zendesk-for-customers",
+              "note": "Zendesk documents Forethought AI agents by Zendesk as the acquired Forethought product and its current autonomous support-agent suite.",
+              "evidence_type": "official_release",
+              "source_section": "What's changing?"
+            }
+          ]
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "forethought_ai_agents_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "note": "Forethought's current platform documentation explicitly identifies role-based access as a control protecting sensitive data; Zendesk documents Forethought AI Agents by Zendesk as the Forethought product suite.",
+          "evidence": [
+            {
+              "title": "Forethought – Multi-Agent System",
+              "url": "https://forethought.ai/platform",
+              "note": "Forethought states its platform protects PII and sensitive data with encryption, role-based access, and enterprise-grade safeguards.",
+              "evidence_type": "official_product_page",
+              "source_section": "Leading the pack on security and trust"
+            },
+            {
+              "title": "Zendesk – Announcing Forethought AI agents by Zendesk for customers",
+              "url": "https://support.zendesk.com/hc/en-us/articles/10850639885082-Announcing-Forethought-AI-agents-by-Zendesk-for-customers",
+              "note": "Zendesk documents Forethought AI agents by Zendesk as the acquired Forethought product and its current autonomous support-agent suite.",
+              "evidence_type": "official_release",
+              "source_section": "What's changing?"
+            }
+          ]
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "forethought_ai_agents_by_zendesk",
@@ -7866,6 +7914,30 @@
             }
           ],
           "note": "Forethought AI agents are delivered as a managed Zendesk add-on service."
+        },
+        {
+          "path": "security.soc2_type2",
+          "value": true,
+          "scope": "forethought_ai_agents_platform",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "note": "Forethought's current platform documentation states that the platform meets SOC 2 Type II; Zendesk documents Forethought AI Agents by Zendesk as the current Forethought product suite.",
+          "evidence": [
+            {
+              "title": "Forethought – Multi-Agent System",
+              "url": "https://forethought.ai/platform",
+              "note": "Forethought states its platform meets SOC 2 Type II among its current enterprise security and privacy standards.",
+              "evidence_type": "security_trust",
+              "source_section": "Leading the pack on security and trust"
+            },
+            {
+              "title": "Zendesk – Announcing Forethought AI agents by Zendesk for customers",
+              "url": "https://support.zendesk.com/hc/en-us/articles/10850639885082-Announcing-Forethought-AI-agents-by-Zendesk-for-customers",
+              "note": "Zendesk documents Forethought AI agents by Zendesk as the acquired Forethought product and its current autonomous support-agent suite.",
+              "evidence_type": "official_release",
+              "source_section": "What's changing?"
+            }
+          ]
         }
       ]
     },
@@ -9413,6 +9485,23 @@
           "note": "CoCounsel Legal is delivered as a managed Thomson Reuters service."
         },
         {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "cocounsel_legal",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "note": "Thomson Reuters explicitly documents data-residency controls for CoCounsel Legal that keep information within required geographic boundaries.",
+          "evidence": [
+            {
+              "title": "Thomson Reuters – Consumer vs. professional AI privacy standards for legal work",
+              "url": "https://legal.thomsonreuters.com/blog/the-consumer-vs-professional-ai-privacy-standards-for-legal-work/",
+              "note": "Thomson Reuters states that CoCounsel Legal provides data residency controls to keep information within required geographic boundaries.",
+              "evidence_type": "security_trust",
+              "source_section": "CoCounsel Legal addresses these corporate-specific needs"
+            }
+          ]
+        },
+        {
           "path": "security.encryption.at_rest",
           "value": "AES-256",
           "scope": "cocounsel_legal_user_content",
@@ -10792,6 +10881,40 @@
       "agent_id": "AI-0058",
       "claims": [
         {
+          "path": "governance.audit_logs.available",
+          "value": true,
+          "scope": "ari_enterprise_you_com_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "note": "You.com documents audit logs as an enterprise security capability in the same enterprise platform context that includes ARI as a pre-built workflow agent.",
+          "evidence": [
+            {
+              "title": "You.com – You.com vs. Glean",
+              "url": "https://about.you.com/resources/you-com-vs-glean",
+              "note": "The official comparison lists audit logs under You.com Enterprise security and pre-built workflow agents including ARI under the same enterprise offering.",
+              "evidence_type": "official_product_page",
+              "source_section": "Features at a Glance"
+            }
+          ]
+        },
+        {
+          "path": "governance.scim",
+          "value": true,
+          "scope": "ari_enterprise_you_com_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "note": "You.com identifies ARI Enterprise as its enterprise research agent and documents SCIM as an enterprise security capability of the You.com platform used for enterprise agents.",
+          "evidence": [
+            {
+              "title": "You.com – You.com vs. Glean",
+              "url": "https://about.you.com/resources/you-com-vs-glean",
+              "note": "The official comparison describes You.com Enterprise as offering pre-built workflow agents including ARI and lists SCIM among You.com Enterprise security and privacy controls.",
+              "evidence_type": "official_product_page",
+              "source_section": "Features at a Glance / Workflow Automation"
+            }
+          ]
+        },
+        {
           "path": "hosting.managed",
           "value": true,
           "scope": "you_com_ari",
@@ -10807,6 +10930,23 @@
             }
           ],
           "note": "You.com ARI is delivered on You.com's managed AWS service."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "ari_enterprise_you_com_enterprise",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "note": "You.com documents regional hosting for its Enterprise offering and separately identifies ARI Enterprise as the enterprise research agent using that platform.",
+          "evidence": [
+            {
+              "title": "You.com – You.com vs. OpenAI",
+              "url": "https://you.com/resources/best-ai-for-enterprise-you-vs-openai",
+              "note": "You.com identifies ARI Enterprise in its enterprise offering and states that You.com Enterprise provides regional hosting for regulated data-residency requirements.",
+              "evidence_type": "official_product_page",
+              "source_section": "Security & data privacy"
+            }
+          ]
         },
         {
           "path": "security.encryption.at_rest",
@@ -10880,6 +11020,30 @@
             }
           ],
           "note": "NotebookLM Deep Research is delivered as a managed NotebookLM service."
+        },
+        {
+          "path": "privacy.residency.available",
+          "value": true,
+          "scope": "gemini_notebook_enterprise_deep_research",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "note": "Deep Research runs directly inside Gemini Notebook, and Google's Enterprise documentation states that Gemini Notebook honors data regionalization for enterprise deployments.",
+          "evidence": [
+            {
+              "title": "Google Gemini Notebook Help – Add or discover new sources for your notebook",
+              "url": "https://support.google.com/gemininotebook/answer/16215270",
+              "note": "Google explicitly documents Gemini Deep Research as an agentic feature used directly within Gemini Notebook.",
+              "evidence_type": "technical_docs",
+              "source_section": "Deep Research"
+            },
+            {
+              "title": "Google Gemini Notebook Help – Upgrade Gemini Notebook",
+              "url": "https://support.google.com/gemininotebook/answer/16213268?hl=en",
+              "note": "Google states that Gemini Notebook for Enterprise keeps uploaded files within the customer's GCP project and honors data regionalization.",
+              "evidence_type": "technical_docs",
+              "source_section": "Applicable Terms of Services & data handling"
+            }
+          ]
         },
         {
           "path": "security.soc2_type2",
@@ -11337,6 +11501,30 @@
             }
           ],
           "note": "Gemini CLI acts as an A2A client when delegating to remote subagents."
+        },
+        {
+          "path": "protocols.a2a.server",
+          "value": true,
+          "scope": "gemini_cli_a2a_server",
+          "confidence": "high",
+          "verified_at": "2026-10-02",
+          "note": "Gemini CLI ships a dedicated A2A server package that uses the official A2A JavaScript SDK; the current development-tool specification builds on the A2A protocol for clients communicating with the Gemini CLI agent.",
+          "evidence": [
+            {
+              "title": "Google Gemini CLI – A2A server package",
+              "url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/package.json",
+              "note": "The official Gemini CLI repository contains the packages/a2a-server package and declares @a2a-js/sdk as a runtime dependency.",
+              "evidence_type": "official_github",
+              "source_section": "packages/a2a-server/package.json"
+            },
+            {
+              "title": "Google Gemini CLI – A2A Development-Tool Extension RFC",
+              "url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/development-extension-rfc.md",
+              "note": "Google documents client-to-agent and server-to-client communication for the Gemini CLI agent as an extension built on the existing A2A protocol, including Agent Card and message/stream semantics.",
+              "evidence_type": "official_github",
+              "source_section": "Overview / Communication Flow"
+            }
+          ]
         },
         {
           "path": "protocols.a2a.supported",
