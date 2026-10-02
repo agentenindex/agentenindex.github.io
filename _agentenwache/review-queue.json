@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:25:33Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T04:42:30Z",
+  "open_count": 2,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1090,6 +1090,75 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Reviewed the current GitLab AI audit-event documentation; unified audit artifacts for Duo agent activity remain documented.",
       "reviewed_at": "2026-10-02T03:19:00Z"
+    },
+    {
+      "review_id": "REV-498192E7907A906B32",
+      "status": "open",
+      "first_detected": "2026-10-02T04:42:30Z",
+      "last_detected": "2026-10-02T04:42:30Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "source_unavailable",
+      "source_id": "SRC-C97EA523717B08",
+      "source_title": "Luminance – Master Hosted Terms",
+      "url": "https://www.luminance.com/legal/terms-conditions",
+      "agent_ids": [
+        "AI-0109"
+      ],
+      "previous": null,
+      "current": {
+        "status_code": 404,
+        "final_url": "https://www.luminance.com/legal/terms-conditions",
+        "result": "http_error",
+        "error": "HTTP Error 404: Not Found"
+      },
+      "latest_metrics": {
+        "status_code": 404,
+        "baseline_health": true
+      },
+      "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone."
+    },
+    {
+      "review_id": "REV-5177CDF329A3D642E2",
+      "status": "open",
+      "first_detected": "2026-10-02T04:42:05Z",
+      "last_detected": "2026-10-02T04:42:05Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "content_change",
+      "source_id": "SRC-4E0976E0FCB064",
+      "source_title": "Zoom Support – Quick start guide for single sign-on (SSO)",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060673",
+      "agent_ids": [
+        "AI-0096"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060673",
+        "text_hash": "e7f91f16c400ed69406bacf2b4910ae19be412f81ec0adbd4c769fc6cd725751",
+        "simhash64": "9f893bea72b05a7e",
+        "token_count": 8,
+        "text_sample": "Quick start guide for single sign-on (SSO) Loading..."
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060673",
+        "text_hash": "b2ff78fd1c21f7dc3d5c72cff20d884b5f44552541c3ccbb89acead3e4b849e1",
+        "simhash64": "fdebd7377b6f5f7f",
+        "token_count": 4,
+        "text_sample": "加入和参加 Zoom Webinars Loading...",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "e7f91f16c400ed69406bacf2b4910ae19be412f81ec0adbd4c769fc6cd725751",
+        "new_hash": "b2ff78fd1c21f7dc3d5c72cff20d884b5f44552541c3ccbb89acead3e4b849e1",
+        "simhash_distance": 29,
+        "old_token_count": 8,
+        "new_token_count": 4,
+        "token_delta_pct": -50.0
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-5224C43C4FE1DC7E75",

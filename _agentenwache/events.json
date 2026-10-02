@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T04:25:33Z",
+  "updated_at": "2026-10-02T04:42:30Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -3058,6 +3058,48 @@
         "new_status": 429
       },
       "previous_checked_at": "2026-10-02T04:22:16Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-CCE83472C6B3BB1BC2",
+      "detected_at": "2026-10-02T04:42:05Z",
+      "source_id": "SRC-4E0976E0FCB064",
+      "agent_ids": [
+        "AI-0096"
+      ],
+      "source_title": "Zoom Support – Quick start guide for single sign-on (SSO)",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060673",
+      "change_type": "content_change",
+      "severity": "high",
+      "metrics": {
+        "old_hash": "e7f91f16c400ed69406bacf2b4910ae19be412f81ec0adbd4c769fc6cd725751",
+        "new_hash": "b2ff78fd1c21f7dc3d5c72cff20d884b5f44552541c3ccbb89acead3e4b849e1",
+        "simhash_distance": 29,
+        "old_token_count": 8,
+        "new_token_count": 4,
+        "token_delta_pct": -50.0
+      },
+      "previous_checked_at": "2026-10-02T04:25:11Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-36EBEE9904966923D8",
+      "detected_at": "2026-10-02T04:42:30Z",
+      "source_id": "SRC-C97EA523717B08",
+      "agent_ids": [
+        "AI-0109"
+      ],
+      "source_title": "Luminance – Master Hosted Terms",
+      "url": "https://www.luminance.com/legal/terms-conditions",
+      "change_type": "source_unavailable",
+      "severity": "medium",
+      "metrics": {
+        "status_code": 404,
+        "baseline_health": true
+      },
+      "previous_checked_at": null,
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
