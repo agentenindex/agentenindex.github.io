@@ -24,6 +24,224 @@
   },
   "items": [
     {
+      "id": "NEWS-2026-10-02-007",
+      "slug": "copilot-studio-human-approval-tool-calls",
+      "headline": "Microsoft Copilot Studio führt Human Approval vor ausgewählten Tool-Aufrufen ein",
+      "description": "Microsoft beschreibt für Copilot Studio eine neue Human-Approval-Funktion: Maker können bestimmte Tools so konfigurieren, dass der Agent vor der Ausführung eine menschliche Freigabe einholen muss.",
+      "date_published": "2026-10-02T08:55:00+02:00",
+      "date_modified": "2026-10-02T08:55:00+02:00",
+      "section": "Governance & Kontrolle",
+      "change_type": "security_governance",
+      "agent_id": "AI-0025",
+      "agent_name": "Microsoft Copilot Studio",
+      "agent_slug": "microsoft-copilot-studio",
+      "provider": "Microsoft",
+      "source": {
+        "title": "Microsoft 365 Roadmap – Human approval for Copilot Studio tool calls",
+        "url": "https://learn.microsoft.com/en-gb/power-platform/release-plan/2025wave1/microsoft-copilot-studio/publish-connect-agents-sharepoint-sites"
+      },
+      "tags": [
+        "Microsoft Copilot Studio",
+        "Human Approval",
+        "Tool Calls",
+        "Governance",
+        "Enterprise"
+      ],
+      "summary": "Microsoft dokumentiert für Copilot Studio einen Human-Approval-Mechanismus für Tool Calls. Pro Tool und Agent kann eine Freigabe erzwungen werden, bevor sensible Aktionen tatsächlich ausgeführt werden; der Rollout ist ab September 2026 vorgesehen.",
+      "body": [
+        "Microsoft erweitert Copilot Studio um eine gezielte Human-Approval-Funktion für Tool-Aufrufe. Laut Microsoft-Roadmap können Maker pro Agent und pro Tool festlegen, dass eine Aktion erst nach menschlicher Freigabe ausgeführt wird. Sobald ein entsprechend geschützter Tool Call ansteht, pausiert der Agent und zeigt eine Anfrage an, die beschreibt, welche Aktion ausgeführt werden soll.",
+        "Die Person kann den Aufruf genehmigen, für die laufende Sitzung freigeben oder ablehnen. Microsoft nennt als Beispiele sensible Aktionen wie das Versenden von E-Mails, das Schließen von Tickets oder das Auslösen von Zahlungen. Die Freigabeanfrage soll direkt in dem Kanal erscheinen, in dem der Agent genutzt wird, unter anderem Microsoft Teams und Microsoft 365 Copilot.",
+        "Für Unternehmen ist das eine wichtige Governance-Erweiterung, weil sich die Kontrolle nicht nur über Prompt-Instruktionen ausdrückt. Der Freigabeschritt wird als eigener technischer Guardrail für bestimmte Tools konfiguriert. Dadurch lässt sich Autonomie differenzierter steuern: Ein Agent kann selbstständig recherchieren oder planen, während ausgewählte externe Aktionen ausdrücklich an einen Menschen gebunden bleiben.",
+        "Microsoft führt die Funktion in der Roadmap mit einem Rollout-Start im September 2026. AgentenIndex behandelt das deshalb als dokumentierte Einführung und nicht als Aussage, dass die Funktion bereits in jedem Tenant oder jeder Region vollständig ausgerollt ist."
+      ],
+      "before_after": {
+        "before": "Tool-Nutzung in Copilot Studio konnte über Berechtigungen und Agentenkonfiguration begrenzt werden.",
+        "after": "Für ausgewählte Tool Calls ist zusätzlich ein expliziter menschlicher Freigabeschritt pro Tool und Agent dokumentiert."
+      }
+    },
+    {
+      "id": "NEWS-2026-10-02-006",
+      "slug": "salesforce-agentforce-multi-agent-orchestration",
+      "headline": "Salesforce Agentforce führt Multi-Agent Orchestration für koordinierte Agenten-Teams ein",
+      "description": "Salesforce dokumentiert Multi-Agent Orchestration in Agentforce als allgemein verfügbar. Spezialisierte Agenten können Aufgaben über Rollen, Systeme und Prozessschritte hinweg koordiniert bearbeiten.",
+      "date_published": "2026-10-02T08:54:00+02:00",
+      "date_modified": "2026-10-02T08:54:00+02:00",
+      "section": "Enterprise & Orchestrierung",
+      "change_type": "new_capability",
+      "agent_id": "AI-0029",
+      "agent_name": "Salesforce Agentforce",
+      "agent_slug": "salesforce-agentforce",
+      "provider": "Salesforce",
+      "source": {
+        "title": "Salesforce – New portfolio of AI agents built for high-value work",
+        "url": "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/"
+      },
+      "tags": [
+        "Salesforce Agentforce",
+        "Multi-Agent",
+        "Orchestrierung",
+        "Enterprise",
+        "Agenten-Teams"
+      ],
+      "summary": "Salesforce führt Multi-Agent Orchestration in Agentforce als allgemein verfügbar. Die Funktion soll spezialisierte Agenten über Rollen, Systeme und Prozessstufen hinweg koordinieren, wenn ein Auftrag mehrere Zuständigkeiten überschreitet.",
+      "body": [
+        "Salesforce hat im September 2026 eine neue Ausbaustufe von Agentforce vorgestellt. Besonders relevant für die Agentenarchitektur ist Multi-Agent Orchestration. Salesforce beschreibt die Funktion als allgemein verfügbar und dafür gedacht, Arbeit zwischen spezialisierten Agenten zu verteilen, wenn eine Aufgabe mehrere Rollen, Systeme oder Schritte einer Customer Journey umfasst.",
+        "Für das AgentenProfil von Salesforce Agentforce verändert das die Einordnung von Orchestrierung deutlich. Statt ausschließlich einzelne Agenten mit Tools und Geschäftsdaten auszustatten, kann die Plattform mehrere spezialisierte Agenten als koordiniertes Team einsetzen. Das ist vor allem für komplexere Enterprise-Prozesse relevant, in denen beispielsweise Service, Vertrieb, Datenzugriff oder Freigaben nicht von einem einzigen Agenten sinnvoll abgedeckt werden.",
+        "Salesforce kündigt daneben AI Skills für Agentforce Coworker und einen Agent Optimizer an. Für diese Funktionen nennt der Anbieter Pilot- beziehungsweise Oktober-Verfügbarkeit. AgentenIndex trennt deshalb klar zwischen der bereits als allgemein verfügbar beschriebenen Multi-Agent Orchestration und Funktionen, deren vollständige Verfügbarkeit noch vom angekündigten Rollout abhängt.",
+        "Die Meldung bedeutet außerdem nicht, dass Multi-Agent-Orchestrierung automatisch für jeden Prozess sinnvoll ist. Rollen, Berechtigungen, Zuständigkeiten und Eskalationswege müssen weiterhin so definiert werden, dass mehrere Agenten nicht lediglich mehr Komplexität erzeugen. Für den AgentenIndex ist die Änderung deshalb primär ein belegtes Plattformmerkmal."
+      ],
+      "before_after": {
+        "before": "Agentforce war als Enterprise-Plattform für einzelne und spezialisierte Agenten dokumentiert.",
+        "after": "Multi-Agent Orchestration ist als allgemein verfügbare Fähigkeit dokumentiert, um spezialisierte Agenten koordiniert zusammenarbeiten zu lassen."
+      }
+    },
+    {
+      "id": "NEWS-2026-10-02-005",
+      "slug": "claude-code-sonnet-5-5",
+      "headline": "Claude Sonnet 5.5 ist verfügbar und adressiert schnellere agentische Coding-Aufgaben in Claude Code",
+      "description": "Anthropic hat Claude Sonnet 5.5 veröffentlicht. Das Modell ist auf allen Plattformen verfügbar und wird auch für Claude Code beschrieben; Anthropic nennt deutlich höhere Geschwindigkeit und starke agentische Coding-Werte.",
+      "date_published": "2026-10-02T08:53:00+02:00",
+      "date_modified": "2026-10-02T08:53:00+02:00",
+      "section": "Coding & Modelle",
+      "change_type": "new_capability",
+      "agent_id": "AI-0007",
+      "agent_name": "Claude Code",
+      "agent_slug": "claude-code",
+      "provider": "Anthropic",
+      "source": {
+        "title": "Anthropic – Claude Sonnet 5.5",
+        "url": "https://www.anthropic.com/claude-sonnet-5-5"
+      },
+      "tags": [
+        "Claude Code",
+        "Claude Sonnet 5.5",
+        "Anthropic",
+        "Coding-Agent",
+        "Agentic Coding"
+      ],
+      "summary": "Anthropic hat Claude Sonnet 5.5 am 28. September 2026 veröffentlicht. Das Modell ist laut Anbieter auf allen Plattformen verfügbar; Anthropic beschreibt für Claude Code standardmäßig Medium Effort und hebt Geschwindigkeit, geringeren Tokenverbrauch und starke agentische Coding-Leistung hervor.",
+      "body": [
+        "Anthropic hat Claude Sonnet 5.5 am 28. September 2026 veröffentlicht. Der Anbieter beschreibt das Modell als deutlich schnelleres und effizienteres Update gegenüber Sonnet 5. Laut Anthropic generiert Sonnet 5.5 Ausgaben mehr als 30 Prozent schneller und benötigt für viele Aufgaben weniger Tokens. Das Modell ist auf allen Plattformen verfügbar, einschließlich der Cloud-Angebote von AWS, Google Cloud und Microsoft Azure.",
+        "Für Claude Code ist die Veröffentlichung besonders relevant, weil Anthropic die Nutzung des neuen Modells ausdrücklich im Coding-Kontext beschreibt. In Claude Code und den Claude-Apps ist der Standard-Effort laut Anbieter auf Medium gesetzt. Niedrigere Effort-Stufen sollen schnellere Antworten und geringeren Tokenverbrauch ermöglichen, während höhere Einstellungen längere Prüfung und mehr Rechenaufwand zulassen.",
+        "Anthropic berichtet außerdem deutliche Verbesserungen in agentischen Coding-Evaluationen und beschreibt eine effizientere Nutzung von Tool-Aufrufen. Solche Benchmarkwerte sind für AgentenIndex ein Hinweis auf das vom Hersteller dokumentierte Leistungsprofil, aber kein eigener unabhängiger Produkttest. Sie werden deshalb nicht als allgemeine Qualitätswertung übernommen.",
+        "Für die praktische Auswahl ändert sich vor allem die Modelloption innerhalb von Claude Code. Sicherheitsmechanismen bleiben relevant: Anthropic weist darauf hin, dass bestimmte höher riskante Cybersecurity-Anfragen auf ein anderes Modell zurückfallen können. Modellverfügbarkeit, Effort-Einstellungen und konkrete Safeguards sollten deshalb getrennt betrachtet werden."
+      ],
+      "before_after": {
+        "before": "Claude Code wurde mit bisherigen Claude-Modellen und bestehenden Effort-/Agentenfunktionen geführt.",
+        "after": "Claude Sonnet 5.5 ist als aktuelle Modelloption verfügbar und wird von Anthropic ausdrücklich für schnelle agentische Coding-Arbeit eingeordnet."
+      }
+    },
+    {
+      "id": "NEWS-2026-10-02-004",
+      "slug": "chatgpt-work-data-agent",
+      "headline": "ChatGPT Work erhält einen Data Agent für Unternehmensdaten, Dashboards und Folgeaktionen",
+      "description": "OpenAI hat einen Data Agent für ChatGPT Work eingeführt. Er verbindet freigegebene Unternehmensdaten, untersucht Veränderungen, erstellt interaktive Dashboards und kann genehmigte Folgeaktionen anstoßen.",
+      "date_published": "2026-10-02T08:52:00+02:00",
+      "date_modified": "2026-10-02T08:52:00+02:00",
+      "section": "Enterprise & Daten",
+      "change_type": "new_capability",
+      "agent_id": "AI-0051",
+      "agent_name": "ChatGPT Work",
+      "agent_slug": "chatgpt-work",
+      "provider": "OpenAI",
+      "source": {
+        "title": "OpenAI – Now everyone can put data to work",
+        "url": "https://openai.com/index/put-data-to-work/"
+      },
+      "tags": [
+        "ChatGPT Work",
+        "Data Agent",
+        "Enterprise",
+        "Datenanalyse",
+        "Dashboards",
+        "Plugins"
+      ],
+      "summary": "OpenAI erweitert ChatGPT Work um einen installierbaren Data Agent, der freigegebene Datenquellen und Geschäftskontext nutzt, Analysen und interaktive Dashboards erstellt und auf Wunsch genehmigte Folgeaktionen über verbundene Tools ausführen kann.",
+      "body": [
+        "OpenAI hat am 10. September 2026 einen neuen Data Agent für ChatGPT Work vorgestellt. Der Agent verbindet sich mit freigegebenen Unternehmensdaten, untersucht Veränderungen und erstellt daraus Antworten sowie interaktive Dashboards. Unterstützte Datenquellen umfassen nach OpenAI unter anderem Redshift, BigQuery, Databricks, Snowflake, MongoDB und weitere Systeme; zusätzlich können Dateien und Dokumente aus Google Drive oder SharePoint in die Analyse einfließen.",
+        "Für Unternehmen ist besonders relevant, dass der Data Agent bestehenden Geschäftskontext verwenden kann. OpenAI nennt dafür unter anderem semantische Schichten, Metrikdefinitionen, benutzerdefinierte Berechnungen und Datenbeziehungen. Abfragen sollen dabei die Berechtigungen des verbundenen Kontos respektieren, einschließlich Tabellen-, Zeilen- und Spaltenrechten. Administratoren können außerdem steuern, welche Datenverbindungen verfügbar sind und welche Rollen den Agenten nutzen dürfen.",
+        "Der Agent beschränkt sich nicht auf Analyse. Ergebnisse können über verbundene Werkzeuge weitergegeben werden, beispielsweise per Slack oder E-Mail, und genehmigte Folgeaktionen können ausgeführt werden. Genau diese Verbindung aus Analyse und Aktion macht die Erweiterung für das ChatGPT-Work-Profil relevant.",
+        "AgentenIndex übernimmt daraus jedoch keine pauschale Aussage, dass jede angeschlossene Datenquelle oder jede Aktion in jedem Tarif verfügbar ist. Verbindungen, Rollen, Workspace-Konfiguration und konkrete Zugriffsrechte bleiben separat zu prüfen."
+      ],
+      "before_after": {
+        "before": "ChatGPT Work war als allgemeiner Arbeitsagent für Dateien, Apps und mehrstufige Aufgaben dokumentiert.",
+        "after": "Zusätzlich ist ein spezialisierter Data Agent für Unternehmensdaten, interaktive Dashboards und genehmigte Folgeaktionen verfügbar."
+      }
+    },
+    {
+      "id": "NEWS-2026-10-02-003",
+      "slug": "openai-codex-cloud-ga",
+      "headline": "OpenAI Codex Cloud ist allgemein verfügbar und führt Coding-Aufgaben geräteübergreifend fort",
+      "description": "OpenAI hat Codex Cloud allgemein verfügbar gemacht. Coding-Aufgaben laufen in isolierten Cloud-Workspaces weiter und können von Desktop, Web oder Mobilgerät gestartet und fortgesetzt werden.",
+      "date_published": "2026-10-02T08:51:00+02:00",
+      "date_modified": "2026-10-02T08:51:00+02:00",
+      "section": "Coding & Cloud-Ausführung",
+      "change_type": "availability",
+      "agent_id": "AI-0006",
+      "agent_name": "OpenAI Codex",
+      "agent_slug": "openai-codex",
+      "provider": "OpenAI",
+      "source": {
+        "title": "OpenAI – Product Release Notes: Codex Cloud",
+        "url": "https://openai.com/products/release-notes/"
+      },
+      "tags": [
+        "OpenAI Codex",
+        "Codex Cloud",
+        "Coding-Agent",
+        "Cloud",
+        "Softwareentwicklung"
+      ],
+      "summary": "OpenAI führt Codex Cloud seit dem 29. September 2026 als allgemein verfügbare Funktion. Aufgaben erhalten isolierte Cloud-Workspaces, können geräteübergreifend gestartet und fortgeführt werden und laufen weiter, wenn der lokale Rechner schläft.",
+      "body": [
+        "OpenAI hat Codex Cloud am 29. September 2026 als allgemein verfügbare Funktion veröffentlicht. Laut den offiziellen Product Release Notes können Coding-Aufgaben aus Desktop, Web oder Mobilgerät gestartet und später auf einem anderen Gerät fortgesetzt werden. Jede Aufgabe erhält dabei einen eigenen isolierten Cloud-Workspace mit dem jeweiligen Repository, den benötigten Tools und Abhängigkeiten. Aufgaben können außerdem weiterlaufen, während der lokale Rechner schläft.",
+        "Für die Einordnung von OpenAI Codex ist das relevant, weil sich der Agent damit stärker von einem ausschließlich lokal gebundenen Coding-Assistenten zu einem geräteübergreifenden Ausführungsmodell entwickelt. Der Arbeitszustand liegt in einem wiederverwendbaren Cloud-Umfeld, statt vollständig an eine einzelne lokale Sitzung gekoppelt zu sein. In verwalteten Workspaces gelten dabei die Cloud-Zugriffsregeln des jeweiligen Workspace.",
+        "OpenAI dokumentiert zusätzlich, dass autorisierte Mitglieder in ChatGPT Enterprise wiederverwendbare Cloud-Umgebungen teilen können. Welche Repositories, Tools oder Netzwerkziele ein Codex-Task tatsächlich erreichen darf, hängt deshalb weiterhin von der konkreten Workspace-Konfiguration und den gesetzten Zugriffsregeln ab.",
+        "AgentenIndex behandelt Codex Cloud als relevante Änderung an Ausführungs- und Betriebsmodell, nicht als allgemeine Aussage über Self-Hosting oder private Netzwerke. Diese Eigenschaften bleiben getrennte Kriterien und werden nur dann bestätigt, wenn sie feldgenau belegt sind."
+      ],
+      "before_after": {
+        "before": "Codex wurde im AgentenProfil primär als Coding-Agent mit lokalen und verwalteten Ausführungswegen beschrieben.",
+        "after": "Codex Cloud ist als allgemein verfügbare, isolierte Cloud-Ausführung dokumentiert, die geräteübergreifend fortgesetzt werden kann."
+      }
+    },
+    {
+      "id": "NEWS-2026-10-02-002",
+      "slug": "relay-app-eingestellt-september-2026",
+      "headline": "Relay.app wurde eingestellt: Agenten- und Workflow-Plattform seit September 2026 offline",
+      "description": "Relay.app bestätigt die Einstellung des Dienstes im September 2026. Accounts, Workflows und Run-Historie wurden laut Anbieter dauerhaft gelöscht.",
+      "date_published": "2026-10-02T08:36:00+02:00",
+      "date_modified": "2026-10-02T08:36:00+02:00",
+      "section": "Lifecycle & Verfügbarkeit",
+      "change_type": "lifecycle",
+      "agent_id": "AI-0022",
+      "agent_name": "Relay.app",
+      "agent_slug": "relay-app",
+      "provider": "Relay.app",
+      "source": {
+        "title": "Relay.app – Shutdown notice",
+        "url": "https://relay.app/"
+      },
+      "tags": [
+        "Relay.app",
+        "Lifecycle",
+        "Einstellung",
+        "Automatisierung",
+        "Agenten-Plattform"
+      ],
+      "summary": "Relay.app bestätigt auf der eigenen Website die Einstellung des Dienstes im September 2026. AgentenIndex führt das Produkt deshalb nicht mehr als aktiven Kandidaten in Research-Priorität oder AgentenFit.",
+      "body": [
+        "Relay.app ist nicht mehr als aktiver Dienst verfügbar. Der Anbieter bestätigt auf der offiziellen Website, dass Relay.app im September 2026 eingestellt wurde. Nach der Mitteilung wurden sämtliche Accounts, Workflows und die Run-Historie dauerhaft gelöscht. Die frühere Plattform hatte Unternehmen dabei unterstützt, Arbeitsabläufe mit KI, SaaS-Verbindungen und menschlichen Freigabeschritten zu automatisieren.",
+        "Für AgentenIndex ist das mehr als eine normale Produktänderung. Ein eingestellter Agent darf weder als aktuell verfügbare Option im Finder noch als gewöhnliche Research-Lücke behandelt werden. Das Profil von Relay.app trägt deshalb inzwischen den Lifecycle-Status „discontinued“. In AgentenGraph bleibt der historische Produktkontext erhalten, während die Research-Priorität auf „P3_discontinued“ gesetzt ist. AgentenFit schließt eingestellte Produkte aus dem aktiven Anforderungsabgleich aus.",
+        "Die offizielle Shutdown-Seite enthält außerdem einen wichtigen Datenhinweis: Relay.app erklärt, dass Accounts, Workflows und Run-Historie dauerhaft gelöscht wurden. Daraus folgt jedoch keine allgemeine Aussage über frühere Aufbewahrungsfristen oder andere historische Datenschutzmerkmale. Solche nicht ausdrücklich belegten Eigenschaften bleiben im AgentenIndex weiterhin unbekannt.",
+        "Für bestehende Vergleiche und frühere Empfehlungen ist dieser Lifecycle-Wechsel besonders wichtig: Eine historische Funktionsbeschreibung kann weiterhin korrekt sein, darf aber nicht mehr wie eine aktuelle Kauf- oder Einsatzoption erscheinen. Deshalb trennt AgentenIndex den historischen Wissensstand von der heutigen Verfügbarkeit und lässt den früheren Produktkontext sichtbar, ohne daraus eine aktive Empfehlung abzuleiten.",
+        "Die Lifecycle-Änderung wurde am 1. Oktober redaktionell übernommen und am 2. Oktober 2026 erneut gegen die offizielle Anbieter-Mitteilung geprüft. Das frühere AgentenProfil bleibt als historischer Referenzpunkt erreichbar."
+      ],
+      "before_after": {
+        "before": "Relay.app wurde als aktive Agenten- und Workflow-Plattform geführt.",
+        "after": "Relay.app ist als „discontinued“ markiert und wird aus aktiven Fit- und Research-Workflows ausgeschlossen."
+      }
+    },
+    {
       "id": "NEWS-2026-10-02-001",
       "slug": "gemini-cli-a2a-server",
       "headline": "Gemini CLI dokumentiert eigenen A2A-Server für Agenten-Interoperabilität",
@@ -63,43 +281,6 @@
       "before_after": {
         "before": "A2A-Unterstützung und A2A-Client waren dokumentiert; eine Server-Rolle war im AgentenIndex noch nicht feldgenau belegt.",
         "after": "A2A-Server ist durch das offizielle Gemini-CLI-Repository und den zugehörigen RFC als dokumentierter Claim bestätigt."
-      }
-    },
-    {
-      "id": "NEWS-2026-10-02-002",
-      "slug": "relay-app-eingestellt-september-2026",
-      "headline": "Relay.app wurde eingestellt: Agenten- und Workflow-Plattform seit September 2026 offline",
-      "description": "Relay.app bestätigt die Einstellung des Dienstes im September 2026. Accounts, Workflows und Run-Historie wurden laut Anbieter dauerhaft gelöscht.",
-      "date_published": "2026-10-02T08:36:00+02:00",
-      "date_modified": "2026-10-02T08:36:00+02:00",
-      "section": "Lifecycle & Verfügbarkeit",
-      "change_type": "lifecycle",
-      "agent_id": "AI-0022",
-      "agent_name": "Relay.app",
-      "agent_slug": "relay-app",
-      "provider": "Relay.app",
-      "source": {
-        "title": "Relay.app – Shutdown notice",
-        "url": "https://relay.app/"
-      },
-      "tags": [
-        "Relay.app",
-        "Lifecycle",
-        "Einstellung",
-        "Automatisierung",
-        "Agenten-Plattform"
-      ],
-      "summary": "Relay.app bestätigt auf der eigenen Website die Einstellung des Dienstes im September 2026. AgentenIndex führt das Produkt deshalb nicht mehr als aktiven Kandidaten in Research-Priorität oder AgentenFit.",
-      "body": [
-        "Relay.app ist nicht mehr als aktiver Dienst verfügbar. Der Anbieter bestätigt auf der offiziellen Website, dass Relay.app im September 2026 eingestellt wurde. Nach der Mitteilung wurden sämtliche Accounts, Workflows und die Run-Historie dauerhaft gelöscht. Die frühere Plattform hatte Unternehmen dabei unterstützt, Arbeitsabläufe mit KI, SaaS-Verbindungen und menschlichen Freigabeschritten zu automatisieren.",
-        "Für AgentenIndex ist das mehr als eine normale Produktänderung. Ein eingestellter Agent darf weder als aktuell verfügbare Option im Finder noch als gewöhnliche Research-Lücke behandelt werden. Das Profil von Relay.app trägt deshalb inzwischen den Lifecycle-Status „discontinued“. In AgentenGraph bleibt der historische Produktkontext erhalten, während die Research-Priorität auf „P3_discontinued“ gesetzt ist. AgentenFit schließt eingestellte Produkte aus dem aktiven Anforderungsabgleich aus.",
-        "Die offizielle Shutdown-Seite enthält außerdem einen wichtigen Datenhinweis: Relay.app erklärt, dass Accounts, Workflows und Run-Historie dauerhaft gelöscht wurden. Daraus folgt jedoch keine allgemeine Aussage über frühere Aufbewahrungsfristen oder andere historische Datenschutzmerkmale. Solche nicht ausdrücklich belegten Eigenschaften bleiben im AgentenIndex weiterhin unbekannt.",
-        "Für bestehende Vergleiche und frühere Empfehlungen ist dieser Lifecycle-Wechsel besonders wichtig: Eine historische Funktionsbeschreibung kann weiterhin korrekt sein, darf aber nicht mehr wie eine aktuelle Kauf- oder Einsatzoption erscheinen. Deshalb trennt AgentenIndex den historischen Wissensstand von der heutigen Verfügbarkeit und lässt den früheren Produktkontext sichtbar, ohne daraus eine aktive Empfehlung abzuleiten.",
-        "Die Lifecycle-Änderung wurde am 1. Oktober redaktionell übernommen und am 2. Oktober 2026 erneut gegen die offizielle Anbieter-Mitteilung geprüft. Das frühere AgentenProfil bleibt als historischer Referenzpunkt erreichbar."
-      ],
-      "before_after": {
-        "before": "Relay.app wurde als aktive Agenten- und Workflow-Plattform geführt.",
-        "after": "Relay.app ist als „discontinued“ markiert und wird aus aktiven Fit- und Research-Workflows ausgeschlossen."
       }
     }
   ]
