@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:47:21Z",
-  "open_count": 2,
+  "updated_at": "2026-10-02T05:50:00Z",
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1852,7 +1852,7 @@
     },
     {
       "review_id": "REV-70AEB84FE19A730775",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-02T05:46:27Z",
       "last_detected": "2026-10-02T05:46:27Z",
       "occurrences": 1,
@@ -1886,7 +1886,9 @@
         "old_final_url": "https://help.manus.im/de/articles/11711128-was-sind-die-unterschiede-zwischen-dem-chat-modus-und-dem-agent-modus",
         "new_final_url": "https://help.manus.im/en/articles/11711128-what-are-the-differences-between-chat-mode-and-agent-mode"
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Official Manus Help now redirects the former German article URL to the canonical English article. Updated data/agents.json to the canonical English URL and title; the underlying Chat mode vs Agent mode product description remains substantively unchanged.",
+      "reviewed_at": "2026-10-02T05:50:00Z"
     },
     {
       "review_id": "REV-73D9645D9EEC2EAE2D",
@@ -4295,7 +4297,7 @@
     },
     {
       "review_id": "REV-F0754CC584FF25C263",
-      "status": "open",
+      "status": "reviewed_no_product_change",
       "first_detected": "2026-10-02T05:46:31Z",
       "last_detected": "2026-10-02T05:46:31Z",
       "occurrences": 1,
@@ -4333,7 +4335,9 @@
         "new_token_count": 239,
         "token_delta_pct": -0.42
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Reviewed the current official Manus Compliance APIs page. The monitored text changed by one token with a small SimHash delta, while the page still documents secure, auditable compliance APIs for e-discovery, legal hold, investigations, and SIEM integration. No indexed product fact changed.",
+      "reviewed_at": "2026-10-02T05:50:00Z"
     },
     {
       "review_id": "REV-F101298E3B1703A2B5",
