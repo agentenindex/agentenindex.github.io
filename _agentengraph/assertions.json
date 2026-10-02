@@ -39055,6 +39055,90 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-EEF9FECC1458261F71",
+      "agent_id": "AI-0041",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-9B5C701800A854",
+          "SRC-A595E4B887AD7F"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "forethought_ai_agents_platform",
+        "note": "Forethought's current solutions documentation explicitly lists audit trails as a built-in governance safeguard for its agentic AI platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-A595E4B887AD7F",
+            "note": "Forethought states that its enterprise-ready agentic AI uses built-in encryption, access controls, and audit trails for governance.",
+            "evidence_type": "official_product_page",
+            "source_section": "Built for trust, backed by standards"
+          },
+          {
+            "source_id": "SRC-9B5C701800A854",
+            "note": "Zendesk documents Forethought AI agents by Zendesk as the acquired Forethought product and its current autonomous support-agent suite.",
+            "evidence_type": "official_release",
+            "source_section": "What's changing?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-216B4E14DA2758184D",
+      "agent_id": "AI-0041",
+      "path": "governance.rbac",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-501DD62D4BD101",
+          "SRC-9B5C701800A854"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "forethought_ai_agents_platform",
+        "note": "Forethought's current platform documentation explicitly identifies role-based access as a control protecting sensitive data; Zendesk documents Forethought AI Agents by Zendesk as the Forethought product suite.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-501DD62D4BD101",
+            "note": "Forethought states its platform protects PII and sensitive data with encryption, role-based access, and enterprise-grade safeguards.",
+            "evidence_type": "official_product_page",
+            "source_section": "Leading the pack on security and trust"
+          },
+          {
+            "source_id": "SRC-9B5C701800A854",
+            "note": "Zendesk documents Forethought AI agents by Zendesk as the acquired Forethought product and its current autonomous support-agent suite.",
+            "evidence_type": "official_release",
+            "source_section": "What's changing?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-3FDD796C2CAFA175FD",
       "agent_id": "AI-0041",
       "path": "hosting.managed",
@@ -39184,6 +39268,48 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-3467FAB278D22D905D",
+      "agent_id": "AI-0041",
+      "path": "security.soc2_type2",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-501DD62D4BD101",
+          "SRC-9B5C701800A854"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "forethought_ai_agents_platform",
+        "note": "Forethought's current platform documentation states that the platform meets SOC 2 Type II; Zendesk documents Forethought AI Agents by Zendesk as the current Forethought product suite.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-501DD62D4BD101",
+            "note": "Forethought states its platform meets SOC 2 Type II among its current enterprise security and privacy standards.",
+            "evidence_type": "security_trust",
+            "source_section": "Leading the pack on security and trust"
+          },
+          {
+            "source_id": "SRC-9B5C701800A854",
+            "note": "Zendesk documents Forethought AI agents by Zendesk as the acquired Forethought product and its current autonomous support-agent suite.",
+            "evidence_type": "official_release",
+            "source_section": "What's changing?"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-116A2F96EAC0D146A8",
@@ -47218,6 +47344,41 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-BFDA4B32497AE6D188",
+      "agent_id": "AI-0050",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-C611F0B0EB42BA"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "cocounsel_legal",
+        "note": "Thomson Reuters explicitly documents data-residency controls for CoCounsel Legal that keep information within required geographic boundaries.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-C611F0B0EB42BA",
+            "note": "Thomson Reuters states that CoCounsel Legal provides data residency controls to keep information within required geographic boundaries.",
+            "evidence_type": "security_trust",
+            "source_section": "CoCounsel Legal addresses these corporate-specific needs"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-31DFEC72288C05162E",
       "agent_id": "AI-0050",
       "path": "profile.depth",
@@ -54757,6 +54918,76 @@
       "origin": "data/agents.json"
     },
     {
+      "assertion_id": "AST-4F9CAD1C10A7921794",
+      "agent_id": "AI-0058",
+      "path": "governance.audit_logs.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-599931324121FC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "ari_enterprise_you_com_enterprise",
+        "note": "You.com documents audit logs as an enterprise security capability in the same enterprise platform context that includes ARI as a pre-built workflow agent.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-599931324121FC",
+            "note": "The official comparison lists audit logs under You.com Enterprise security and pre-built workflow agents including ARI under the same enterprise offering.",
+            "evidence_type": "official_product_page",
+            "source_section": "Features at a Glance"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C95CAD25FEBC39B3AB",
+      "agent_id": "AI-0058",
+      "path": "governance.scim",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-599931324121FC"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "ari_enterprise_you_com_enterprise",
+        "note": "You.com identifies ARI Enterprise as its enterprise research agent and documents SCIM as an enterprise security capability of the You.com platform used for enterprise agents.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-599931324121FC",
+            "note": "The official comparison describes You.com Enterprise as offering pre-built workflow agents including ARI and lists SCIM among You.com Enterprise security and privacy controls.",
+            "evidence_type": "official_product_page",
+            "source_section": "Features at a Glance / Workflow Automation"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
       "assertion_id": "AST-A0C94AA6C96A4DA357",
       "agent_id": "AI-0058",
       "path": "hosting.managed",
@@ -54840,6 +55071,41 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-80134AD094E0271685",
+      "agent_id": "AI-0058",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-23094D421F95FB"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "ari_enterprise_you_com_enterprise",
+        "note": "You.com documents regional hosting for its Enterprise offering and separately identifies ARI Enterprise as the enterprise research agent using that platform.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-23094D421F95FB",
+            "note": "You.com identifies ARI Enterprise in its enterprise offering and states that You.com Enterprise provides regional hosting for regulated data-residency requirements.",
+            "evidence_type": "official_product_page",
+            "source_section": "Security & data privacy"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-B64CB3CA55ED6EAC9C",
@@ -55564,6 +55830,48 @@
       "last_verified": "2026-09-30",
       "profile_version": "2.0",
       "origin": "data/agents.json"
+    },
+    {
+      "assertion_id": "AST-E0C90700524F30361A",
+      "agent_id": "AI-0059",
+      "path": "privacy.residency.available",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-0EC3C4DA916413",
+          "SRC-B76D6C74AE3D67"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "gemini_notebook_enterprise_deep_research",
+        "note": "Deep Research runs directly inside Gemini Notebook, and Google's Enterprise documentation states that Gemini Notebook honors data regionalization for enterprise deployments.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-B76D6C74AE3D67",
+            "note": "Google explicitly documents Gemini Deep Research as an agentic feature used directly within Gemini Notebook.",
+            "evidence_type": "technical_docs",
+            "source_section": "Deep Research"
+          },
+          {
+            "source_id": "SRC-0EC3C4DA916413",
+            "note": "Google states that Gemini Notebook for Enterprise keeps uploaded files within the customer's GCP project and honors data regionalization.",
+            "evidence_type": "technical_docs",
+            "source_section": "Applicable Terms of Services & data handling"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
     },
     {
       "assertion_id": "AST-835C6ABB71B8FA9CA5",
@@ -59324,6 +59632,48 @@
       "valid_from": "2026-10-01",
       "valid_to": null,
       "last_verified": "2026-10-01",
+      "profile_version": "2.0",
+      "origin": "data/agent-deep-evidence.json"
+    },
+    {
+      "assertion_id": "AST-C69CB0ABB2E5036E07",
+      "agent_id": "AI-0064",
+      "path": "protocols.a2a.server",
+      "value": true,
+      "value_hash": "b5bea41b6c623f7c",
+      "claim_nature": "structured_statement",
+      "review_status": "editorially_reviewed",
+      "evidence": {
+        "binding": "field_level",
+        "source_ids": [
+          "SRC-38583F3127037A",
+          "SRC-47DCD1D3FC47F4"
+        ],
+        "field_level_verified": true,
+        "verified_at": "2026-10-02",
+        "confidence": "high",
+        "scope": "gemini_cli_a2a_server",
+        "note": "Gemini CLI ships a dedicated A2A server package that uses the official A2A JavaScript SDK; the current development-tool specification builds on the A2A protocol for clients communicating with the Gemini CLI agent.",
+        "evidence_items": [
+          {
+            "source_id": "SRC-47DCD1D3FC47F4",
+            "note": "The official Gemini CLI repository contains the packages/a2a-server package and declares @a2a-js/sdk as a runtime dependency.",
+            "evidence_type": "official_github",
+            "source_section": "packages/a2a-server/package.json"
+          },
+          {
+            "source_id": "SRC-38583F3127037A",
+            "note": "Google documents client-to-agent and server-to-client communication for the Gemini CLI agent as an extension built on the existing A2A protocol, including Agent Card and message/stream semantics.",
+            "evidence_type": "official_github",
+            "source_section": "Overview / Communication Flow"
+          }
+        ]
+      },
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "valid_from": "2026-10-02",
+      "valid_to": null,
+      "last_verified": "2026-10-02",
       "profile_version": "2.0",
       "origin": "data/agent-deep-evidence.json"
     },
