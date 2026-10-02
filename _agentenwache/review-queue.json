@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:20:32Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T03:24:46Z",
+  "open_count": 3,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1413,6 +1413,48 @@
       "reviewed_at": "2026-10-02T03:19:00Z"
     },
     {
+      "review_id": "REV-67ECC4323C29FC9219",
+      "status": "open",
+      "first_detected": "2026-10-02T03:23:49Z",
+      "last_detected": "2026-10-02T03:23:49Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-8BF8CFF592BF16",
+      "source_title": "Workday Admin Guide – Connect External Agents to Workday Using A2A",
+      "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/external-agents/connect-external-agent-to-workday-using-a2a.html?toc=0.8.2",
+      "agent_ids": [
+        "AI-0091"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/external-agents/connect-external-agent-to-workday-using-a2a.html?toc=0.8.2",
+        "text_hash": "e1fa0dbc70dc45455fd1bd2e0c76ab081dae6086f8515d9fd6dbb0f6bb0c6fb3",
+        "simhash64": "3b42f083c5949603",
+        "token_count": 821,
+        "text_sample": "Administrator Guide Last Updated: 2026-09-18 Download PDF Connect External Agents to Workday Using A2A Connect External Agents to Workday Using A2A Set Up Agent System of Record . Register and Configure the Self-Service Agent . Register your external agent . Ensure that you include a body payload containing the target 3P agent metadata, platform ID, and the Self-Service Agent tool skill configuration (ssa-agent-as-a-tool / resource ID 6bfadd7c014610000dffae8d77c00000). You can connect AI assistants that run outside Workday, such as Google Gemini Enterprise, to invoke the Self-Service Agent using the industry Agent2Agent (A2A) protocol. When you register a third-party client in Workday's Agent System of Record, you can enable that agent to discover and call Self-Service Agent on behalf of an authorized user. For detailed instructions for how to connect Workday to Gemini Enterprise, see Set Up Sana From Workday for Gemini Enterprise . Configure your external agent in Workday. Example POST Agent Definition.yaml to register your 3P Agent with Self-Service Agent as a tool info: name: POST Agent Definition type: http seq: 5 http: method: POST url: https://{{hostname}}/asor/v1/agentDefini"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/external-agents/connect-external-agent-to-workday-using-a2a.html?toc=0.8.2",
+        "text_hash": "8af12142262cd0b33578b87f0f4c3a4e3a696467e33b07f9f308b3035e5970d5",
+        "simhash64": "3b52f0a3c59c9603",
+        "token_count": 822,
+        "text_sample": "Administrator Guide Last Updated: 2026-09-18 Download PDF Connect External Agents to Workday Using A2A Connect External Agents to Workday Using A2A Set Up Agent System of Record . Register and Configure the Self-Service Agent . Register your external agent . Ensure that you include a body payload containing the target 3P agent metadata, platform ID, and the Self-Service Agent tool skill configuration (ssa-agent-as-a-tool / resource ID 6bfadd7c014610000dffae8d77c00000). You can connect AI assistants that run outside Workday, such as Google Gemini Enterprise, to invoke the Self-Service Agent using the industry Agent2Agent (A2A) protocol. When you register a third-party client in Workday's Agent System of Record, you can enable that agent to discover and call Self-Service Agent on behalf of an authorized user. For detailed instructions for how to connect Workday to Gemini Enterprise, see Set Up Sana From Workday for Gemini Enterprise . Configure your external agent in Workday. Example POST Agent Definition.yaml to register your 3P Agent with Self-Service Agent as a tool info: name: POST Agent Definition type: http seq: 5 http: method: POST url: https://{{hostname}}/asor/v1/agentDefini",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "e1fa0dbc70dc45455fd1bd2e0c76ab081dae6086f8515d9fd6dbb0f6bb0c6fb3",
+        "new_hash": "8af12142262cd0b33578b87f0f4c3a4e3a696467e33b07f9f308b3035e5970d5",
+        "simhash_distance": 3,
+        "old_token_count": 821,
+        "new_token_count": 822,
+        "token_delta_pct": 0.12
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-695A05C6DF4AD15A42",
       "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:06:14Z",
@@ -1788,6 +1830,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Gemini CLI GitHub render changed repository activity metadata/commit count, not an indexed product fact.",
       "reviewed_at": "2026-10-02T03:19:00Z"
+    },
+    {
+      "review_id": "REV-8DD648536F4AAF1287",
+      "status": "open",
+      "first_detected": "2026-10-02T03:24:23Z",
+      "last_detected": "2026-10-02T03:24:23Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "content_change",
+      "source_id": "SRC-27B452DAA444AF",
+      "source_title": "Zoom Support – Advanced SAML mapping",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061497",
+      "agent_ids": [
+        "AI-0096"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061497",
+        "text_hash": "0ecae22dee307660d8b0cd9c9a309327887e8b096119bad86edb5b400c530d0b",
+        "simhash64": "bd5c89bafdf6febb",
+        "token_count": 6,
+        "text_sample": "Setting up advanced SAML mapping Loading..."
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061497",
+        "text_hash": "5fc500869df85a3253655f882516d47b91d293d7fe669feb86d9d3f30a3af92e",
+        "simhash64": "a7bbfca07374d38a",
+        "token_count": 10,
+        "text_sample": "Como entrar em uma reunião de teste do Zoom Loading...",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "0ecae22dee307660d8b0cd9c9a309327887e8b096119bad86edb5b400c530d0b",
+        "new_hash": "5fc500869df85a3253655f882516d47b91d293d7fe669feb86d9d3f30a3af92e",
+        "simhash_distance": 30,
+        "old_token_count": 6,
+        "new_token_count": 10,
+        "token_delta_pct": 66.67
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-91C81ED1F805341CE6",
@@ -2230,9 +2314,9 @@
     },
     {
       "review_id": "REV-AB34D4FEB9603F19DF",
-      "status": "reviewed_no_product_change",
-      "first_detected": "2026-10-02T03:19:56Z",
-      "last_detected": "2026-10-02T03:19:56Z",
+      "status": "open",
+      "first_detected": "2026-10-02T03:24:21Z",
+      "last_detected": "2026-10-02T03:24:21Z",
       "occurrences": 1,
       "severity": "low",
       "change_type": "content_change",
@@ -2245,32 +2329,30 @@
       "previous": {
         "status_code": 200,
         "final_url": "https://slack.com/intl/de-de/blog/news/slack-is-where-agents-work",
-        "text_hash": "12b863f2f3a8d5ce516eb3feae3ce1b4aaf4ce27fb00e74cc0508df08b369540",
-        "simhash64": "ba436095e5c9bc56",
-        "token_count": 1820,
+        "text_hash": "e9a48ed3dd01828093dd37c569e4eff1233bc376f18488c4b7dc186f30570354",
+        "simhash64": "be426095e5c9bc16",
+        "token_count": 1861,
         "text_sample": "7 Min. Lesezeit Build, deploy, and manage agents on the world’s most flexible AI-powered platform for work. Organizations are investing heavily in AI, yet adoption often stalls because agents live in isolated browser tabs, disconnected from where teams work. When an agent is siloed from work, it lacks the shared context of your team’s conversations. That leads to generic results, limited ROI, and employees bouncing between fragmented tools just to get a simple answer. The Slack platform powers the most flexible, agent-first workspace. We amplify your software investment by bringing every app and automation into a single interface. While other platforms offer isolated utilities, Slack grounds your agents in the real-time conversational context of your company’s history and decisions. This ensures every deplo yment is more relevant, actionable, and secure—maximizing the value of your AI investment w ithout leaving the flow of work. Today, we’re announcing new capabilities that make it easier than ever to build and manage all your agents in Slack—so agents aren’t just siloed tools, but integrated teammates that work where your team already collaborates. Orchestrate work with Slackbot:"
       },
       "current": {
         "status_code": 200,
         "final_url": "https://slack.com/intl/de-de/blog/news/slack-is-where-agents-work",
-        "text_hash": "e9a48ed3dd01828093dd37c569e4eff1233bc376f18488c4b7dc186f30570354",
-        "simhash64": "be426095e5c9bc16",
-        "token_count": 1861,
+        "text_hash": "4478bb55971bdf2e1b1ca8bcda7872110c3f85c43beb50f15f63d58c0e7927b1",
+        "simhash64": "b6436015e5c9b416",
+        "token_count": 1857,
         "text_sample": "7 Min. Lesezeit Build, deploy, and manage agents on the world’s most flexible AI-powered platform for work. Organizations are investing heavily in AI, yet adoption often stalls because agents live in isolated browser tabs, disconnected from where teams work. When an agent is siloed from work, it lacks the shared context of your team’s conversations. That leads to generic results, limited ROI, and employees bouncing between fragmented tools just to get a simple answer. The Slack platform powers the most flexible, agent-first workspace. We amplify your software investment by bringing every app and automation into a single interface. While other platforms offer isolated utilities, Slack grounds your agents in the real-time conversational context of your company’s history and decisions. This ensures every deplo yment is more relevant, actionable, and secure—maximizing the value of your AI investment w ithout leaving the flow of work. Today, we’re announcing new capabilities that make it easier than ever to build and manage all your agents in Slack—so agents aren’t just siloed tools, but integrated teammates that work where your team already collaborates. Orchestrate work with Slackbot:",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "12b863f2f3a8d5ce516eb3feae3ce1b4aaf4ce27fb00e74cc0508df08b369540",
-        "new_hash": "e9a48ed3dd01828093dd37c569e4eff1233bc376f18488c4b7dc186f30570354",
-        "simhash_distance": 3,
-        "old_token_count": 1820,
-        "new_token_count": 1861,
-        "token_delta_pct": 2.25
+        "old_hash": "e9a48ed3dd01828093dd37c569e4eff1233bc376f18488c4b7dc186f30570354",
+        "new_hash": "4478bb55971bdf2e1b1ca8bcda7872110c3f85c43beb50f15f63d58c0e7927b1",
+        "simhash_distance": 4,
+        "old_token_count": 1861,
+        "new_token_count": 1857,
+        "token_delta_pct": -0.21
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "resolution": "Reviewed the current Slack agents article. The added/changed copy does not alter the indexed fact that Slackbot and agents are deployed and managed in Slack's agent-first workspace.",
-      "reviewed_at": "2026-10-02T03:24:00Z"
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-AB6B43EF3E9CE311A2",
@@ -3494,8 +3576,8 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Lindy homepage changed promotional trial wording, but the indexed profile only states platform access is plan-dependent; no indexed product fact changed.",
       "reviewed_at": "2026-10-01T15:18:00Z",
-      "last_seen_after_review": "2026-10-02T03:05:45Z",
-      "suppressed_reoccurrences": 6
+      "last_seen_after_review": "2026-10-02T03:24:33Z",
+      "suppressed_reoccurrences": 7
     },
     {
       "review_id": "REV-F5E8FCA8A32DF6BA03",

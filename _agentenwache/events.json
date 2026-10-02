@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:20:32Z",
+  "updated_at": "2026-10-02T03:24:46Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -2649,6 +2649,75 @@
         "new_status": 200
       },
       "previous_checked_at": "2026-10-02T03:05:35Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-CD989A48D2D805D173",
+      "detected_at": "2026-10-02T03:23:49Z",
+      "source_id": "SRC-8BF8CFF592BF16",
+      "agent_ids": [
+        "AI-0091"
+      ],
+      "source_title": "Workday Admin Guide – Connect External Agents to Workday Using A2A",
+      "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/external-agents/connect-external-agent-to-workday-using-a2a.html?toc=0.8.2",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "e1fa0dbc70dc45455fd1bd2e0c76ab081dae6086f8515d9fd6dbb0f6bb0c6fb3",
+        "new_hash": "8af12142262cd0b33578b87f0f4c3a4e3a696467e33b07f9f308b3035e5970d5",
+        "simhash_distance": 3,
+        "old_token_count": 821,
+        "new_token_count": 822,
+        "token_delta_pct": 0.12
+      },
+      "previous_checked_at": "2026-10-02T03:19:21Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-7C0B3E0C5CCEEED0E6",
+      "detected_at": "2026-10-02T03:24:21Z",
+      "source_id": "SRC-26305AD6DE013F",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – Slack is where your team works. Now it’s where your agents work too.",
+      "url": "https://slack.com/blog/news/slack-is-where-agents-work",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "e9a48ed3dd01828093dd37c569e4eff1233bc376f18488c4b7dc186f30570354",
+        "new_hash": "4478bb55971bdf2e1b1ca8bcda7872110c3f85c43beb50f15f63d58c0e7927b1",
+        "simhash_distance": 4,
+        "old_token_count": 1861,
+        "new_token_count": 1857,
+        "token_delta_pct": -0.21
+      },
+      "previous_checked_at": "2026-10-02T03:19:56Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-0FC26B7544937A7C2E",
+      "detected_at": "2026-10-02T03:24:23Z",
+      "source_id": "SRC-27B452DAA444AF",
+      "agent_ids": [
+        "AI-0096"
+      ],
+      "source_title": "Zoom Support – Advanced SAML mapping",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061497",
+      "change_type": "content_change",
+      "severity": "high",
+      "metrics": {
+        "old_hash": "0ecae22dee307660d8b0cd9c9a309327887e8b096119bad86edb5b400c530d0b",
+        "new_hash": "5fc500869df85a3253655f882516d47b91d293d7fe669feb86d9d3f30a3af92e",
+        "simhash_distance": 30,
+        "old_token_count": 6,
+        "new_token_count": 10,
+        "token_delta_pct": 66.67
+      },
+      "previous_checked_at": "2026-10-02T03:19:58Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
