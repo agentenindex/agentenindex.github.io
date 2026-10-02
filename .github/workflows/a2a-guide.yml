@@ -1,0 +1,25 @@
+name: Validate A2A Guide
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "wissen/a2a/**"
+      - "assets/styles.css"
+      - ".github/scripts/validate-a2a-guide.py"
+      - ".github/workflows/a2a-guide.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate A2A authority guide
+        run: python .github/scripts/validate-a2a-guide.py
