@@ -16170,17 +16170,17 @@
           "value": true,
           "scope": "slackbot_ai_teammate",
           "confidence": "high",
-          "verified_at": "2026-10-01",
+          "verified_at": "2026-10-02",
           "evidence": [
             {
-              "title": "Slack – Slack is where your team works. Now it’s where your agents work too.",
-              "url": "https://slack.com/blog/news/slack-is-where-agents-work",
-              "note": "Slack documents Slackbot and agents as capabilities deployed and managed on the Slack agent-first workspace.",
-              "evidence_type": "official_release",
-              "source_section": "Build, deploy, and manage agents"
+              "title": "Slack Help – How to work with Slackbot",
+              "url": "https://slack.com/help/articles/202026038-How-to-work-with-Slackbot",
+              "note": "Slack documents Slackbot as its personal agent for work, available directly inside Slack workspaces and Enterprise organizations with access controlled by Slack plan and admins.",
+              "evidence_type": "technical_docs",
+              "source_section": "How to work with Slackbot / What to expect"
             }
           ],
-          "note": "Slackbot AI teammate is delivered as a managed Slack workspace capability."
+          "note": "Slackbot is delivered as a native managed capability inside Slack."
         },
         {
           "path": "privacy.residency.available",
@@ -17286,17 +17286,17 @@
           "value": true,
           "scope": "zoom_account_including_zoommate",
           "confidence": "high",
-          "verified_at": "2026-10-01",
+          "verified_at": "2026-10-02",
           "evidence": [
             {
-              "title": "Zoom Support – Advanced SAML mapping",
-              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061497",
-              "note": "Zoom documents mapping users to Zoom user roles and groups and supports custom administrative role models.",
+              "title": "Zoom Support – Using role management",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064983",
+              "note": "Zoom documents adding custom user roles, assigning members, and configuring role permissions and scope through role management.",
               "evidence_type": "technical_docs",
-              "source_section": "Advanced SAML mapping"
+              "source_section": "How to add additional user roles / How to change permissions for a role"
             }
           ],
-          "note": "Zoom supports administrator-defined/custom role assignments."
+          "note": "Zoom supports administrator-defined custom roles with configurable permissions."
         },
         {
           "path": "governance.rbac",
@@ -17320,17 +17320,17 @@
           "value": true,
           "scope": "zoom_account_including_zoommate",
           "confidence": "high",
-          "verified_at": "2026-10-01",
+          "verified_at": "2026-10-02",
           "evidence": [
             {
-              "title": "Zoom Support – Advanced SAML mapping",
-              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061497",
-              "note": "Zoom documents SAML SSO and SAML-based assignment of licenses, add-ons, user roles, and groups.",
+              "title": "Zoom Support – Quick start guide for single sign-on (SSO)",
+              "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060673",
+              "note": "Zoom states its SSO is based on SAML 2.0 and documents setup for Business, Education, and Enterprise accounts.",
               "evidence_type": "technical_docs",
-              "source_section": "Advanced SAML mapping"
+              "source_section": "Quick start guide for single sign-on (SSO)"
             }
           ],
-          "note": "Zoom accounts support SAML SSO."
+          "note": "Zoom supports SAML 2.0 SSO."
         },
         {
           "path": "hosting.managed",
