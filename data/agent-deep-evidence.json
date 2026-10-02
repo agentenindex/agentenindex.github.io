@@ -16156,16 +16156,16 @@
           "scope": "slack_business_enterprise",
           "evidence": [
             {
-              "title": "Slack Help – Set up SAML single sign-on",
-              "url": "https://slack.com/help/articles/203772216-Set-up-SAML-single-sign-on-for-Slack",
-              "note": "Slack documents SAML 2.0 SSO for Business+ and Enterprise organizations.",
-              "evidence_type": "technical_docs",
-              "source_section": "Set up SAML SSO"
+              "title": "Slack – Enterprise",
+              "url": "https://slack.com/enterprise",
+              "note": "Slack explicitly lists SAML-based single sign-on for Business+ and multiple SAML configurations for Enterprise plans.",
+              "evidence_type": "official_product_page",
+              "source_section": "Business+ / Enterprise+ features"
             }
           ],
-          "note": "Slack supports SAML SSO.",
+          "note": "Slack supports SAML-based SSO on eligible business and enterprise plans.",
           "confidence": "high",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-02"
         },
         {
           "path": "hosting.managed",
@@ -16175,11 +16175,11 @@
           "verified_at": "2026-10-02",
           "evidence": [
             {
-              "title": "Slack Help – How to work with Slackbot",
-              "url": "https://slack.com/help/articles/202026038-How-to-work-with-Slackbot",
-              "note": "Slack documents Slackbot as its personal agent for work, available directly inside Slack workspaces and Enterprise organizations with access controlled by Slack plan and admins.",
-              "evidence_type": "technical_docs",
-              "source_section": "How to work with Slackbot / What to expect"
+              "title": "Slack – Meet Slackbot: Your Personal AI Agent for Work",
+              "url": "https://slack.com/blog/news/slackbot-context-aware-ai-agent-for-work",
+              "note": "Slack documents Slackbot as a personal AI agent built directly into Slack and available inside Slack workspaces.",
+              "evidence_type": "official_release",
+              "source_section": "Key takeaways / Meet Slackbot"
             }
           ],
           "note": "Slackbot is delivered as a native managed capability inside Slack."
@@ -16224,16 +16224,16 @@
           "scope": "slack_enterprise_key_management",
           "evidence": [
             {
-              "title": "Slack Help – Slack Enterprise Key Management",
-              "url": "https://slack.com/help/articles/360019110974-Slack-Enterprise-Key-Management",
-              "note": "Slack documents customer-controlled encryption keys stored in the customer's AWS account for messages, Slackbot conversations, files, and other data.",
+              "title": "Slack – Enterprise Key Management",
+              "url": "https://slack.com/enterprise-key-management",
+              "note": "Slack documents using customer-owned keys stored in AWS KMS to encrypt Slack messages and files, with granular key-access revocation.",
               "evidence_type": "security_trust",
-              "source_section": "Data encrypted with customer-controlled keys"
+              "source_section": "Bring your own keys"
             }
           ],
-          "note": "Slack Enterprise supports customer-controlled encryption keys.",
+          "note": "Slack Enterprise supports customer-controlled encryption keys through Slack EKM.",
           "confidence": "high",
-          "verified_at": "2026-10-01"
+          "verified_at": "2026-10-02"
         },
         {
           "path": "security.encryption.at_rest",
