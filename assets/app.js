@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded',()=>{
   const b=document.querySelector('.menu'),n=document.querySelector('.nav');
+  if(n&&!n.querySelector('a[href="/fit/"]')){
+    const finder=n.querySelector('a[href="/finder/"]');
+    const fit=document.createElement('a');fit.href='/fit/';fit.textContent='Fit';fit.className='nav-fit';
+    if(finder&&finder.nextSibling)n.insertBefore(fit,finder.nextSibling);else n.appendChild(fit);
+  }
   if(b&&n)b.addEventListener('click',()=>{n.classList.toggle('nav-open');b.setAttribute('aria-expanded',n.classList.contains('nav-open')?'true':'false')});
   const q=document.getElementById('agent-search'),c=document.getElementById('agent-search-clear');
   const category=document.getElementById('filter-category'),audience=document.getElementById('filter-audience'),provider=document.getElementById('filter-provider'),counter=document.getElementById('filter-count');
