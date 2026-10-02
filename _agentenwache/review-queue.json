@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:14:05Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T05:17:01Z",
+  "open_count": 1,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -4214,6 +4214,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Gorgias moved the same AI Agent article from docs.gorgias.com to helpcenter.gorgias.com. The old source is inactive in the current AgentenGraph registry and the canonical replacement is already registered. No supported product fact changed.",
       "reviewed_at": "2026-10-02T05:05:00Z"
+    },
+    {
+      "review_id": "REV-F101298E3B1703A2B5",
+      "status": "open",
+      "first_detected": "2026-10-02T05:16:13Z",
+      "last_detected": "2026-10-02T05:16:13Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "content_change",
+      "source_id": "SRC-40FA5E5B2DCA0D",
+      "source_title": "Zoom Support – Admin Activity Logs",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
+      "agent_ids": [
+        "AI-0096"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
+        "text_hash": "e7614c8e0ae4a6ea6f0841c9cce9a88ae95b3e491294f7ec9e731ddb161fd6c4",
+        "simhash64": "2ad64e5bf02067de",
+        "token_count": 5,
+        "text_sample": "Using Admin Activity Logs Loading..."
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
+        "text_hash": "568fccb3df1f4fc074cd0ec4f046923de99b2880166d32a9dcc54b58a1b8168f",
+        "simhash64": "d349078c81a11120",
+        "token_count": 5,
+        "text_sample": "Присоединение к конференции Zoom Loading...",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "e7614c8e0ae4a6ea6f0841c9cce9a88ae95b3e491294f7ec9e731ddb161fd6c4",
+        "new_hash": "568fccb3df1f4fc074cd0ec4f046923de99b2880166d32a9dcc54b58a1b8168f",
+        "simhash_distance": 39,
+        "old_token_count": 5,
+        "new_token_count": 5,
+        "token_delta_pct": 0.0
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-F16A35606537B686F6",

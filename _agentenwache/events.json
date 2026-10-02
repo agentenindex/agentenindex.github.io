@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:14:05Z",
+  "updated_at": "2026-10-02T05:17:01Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -3203,6 +3203,29 @@
         "current_result": "network_error"
       },
       "previous_checked_at": "2026-10-02T05:11:07Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-AE376A0AF319241F66",
+      "detected_at": "2026-10-02T05:16:13Z",
+      "source_id": "SRC-40FA5E5B2DCA0D",
+      "agent_ids": [
+        "AI-0096"
+      ],
+      "source_title": "Zoom Support – Admin Activity Logs",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067251",
+      "change_type": "content_change",
+      "severity": "high",
+      "metrics": {
+        "old_hash": "e7614c8e0ae4a6ea6f0841c9cce9a88ae95b3e491294f7ec9e731ddb161fd6c4",
+        "new_hash": "568fccb3df1f4fc074cd0ec4f046923de99b2880166d32a9dcc54b58a1b8168f",
+        "simhash_distance": 39,
+        "old_token_count": 5,
+        "new_token_count": 5,
+        "token_delta_pct": 0.0
+      },
+      "previous_checked_at": "2026-10-02T05:13:27Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
