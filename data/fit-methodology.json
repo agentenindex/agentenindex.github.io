@@ -1,0 +1,171 @@
+{
+  "name": "AgentenFit",
+  "version": "1.0",
+  "updated": "2026-10-02",
+  "url": "https://agentenindex.de/fit/",
+  "engine": "deterministic_client_side",
+  "source_datasets": [
+    "https://agentenindex.de/data/agents.json",
+    "https://agentenindex.de/data/agent-deep-evidence.json",
+    "https://agentenindex.de/data/agent-deep-taxonomy.json"
+  ],
+  "purpose": "Anforderungsbezogener Fit-Check für konkrete KI-Agenten auf Basis kuratierter feldgenauer Primärquellen-Evidenz. Keine allgemeine Qualitätsbewertung.",
+  "state_model": {
+    "confirmed": "Für den ausgewählten Feldpfad liegt kuratierte Field-Level-Evidenz mit true oder einem dokumentierten Wert vor.",
+    "documented_false": "false wird ausschließlich gezeigt, wenn der kuratierte Claim ausdrücklich false ist und Primärquellen-Evidenz trägt.",
+    "unknown": "Kein kuratierter Field-Level-Claim für den ausgewählten Feldpfad. Unknown wird niemals als false behandelt."
+  },
+  "ranking": {
+    "primary": "Weniger dokumentierte Widersprüche zuerst.",
+    "secondary": "Mehr bestätigte ausgewählte Anforderungen.",
+    "tertiary": "Weniger unbekannte ausgewählte Anforderungen.",
+    "final_tie_breaker": "Alphabetisch nach Agentenname.",
+    "note": "Die Reihenfolge ist nur ein Fit zur aktuellen Auswahl und kein Qualitätsranking."
+  },
+  "filters": {
+    "category": "data/agents.json: category",
+    "audience": "data/agents.json: filters.audience",
+    "lifecycle": "Produkte mit lifecycle_status=discontinued werden aus dem aktiven Fit ausgeschlossen."
+  },
+  "requirements": [
+    {
+      "id": "mcp_client",
+      "group": "Protokolle & APIs",
+      "label": "MCP-Client",
+      "path": "protocols.mcp.client"
+    },
+    {
+      "id": "mcp_server",
+      "group": "Protokolle & APIs",
+      "label": "MCP-Server",
+      "path": "protocols.mcp.server"
+    },
+    {
+      "id": "a2a",
+      "group": "Protokolle & APIs",
+      "label": "A2A-Unterstützung",
+      "path": "protocols.a2a.supported"
+    },
+    {
+      "id": "rest",
+      "group": "Protokolle & APIs",
+      "label": "REST API",
+      "path": "api.rest"
+    },
+    {
+      "id": "webhooks",
+      "group": "Protokolle & APIs",
+      "label": "Webhooks",
+      "path": "api.webhooks"
+    },
+    {
+      "id": "managed",
+      "group": "Hosting",
+      "label": "Managed Hosting",
+      "path": "hosting.managed"
+    },
+    {
+      "id": "self_hosted",
+      "group": "Hosting",
+      "label": "Self-hosted",
+      "path": "hosting.self_hosted"
+    },
+    {
+      "id": "private_network",
+      "group": "Hosting",
+      "label": "Private Network / VPC",
+      "path": "hosting.private_network"
+    },
+    {
+      "id": "residency",
+      "group": "Datenschutz",
+      "label": "Datenresidenz verfügbar",
+      "path": "privacy.residency.available"
+    },
+    {
+      "id": "region_select",
+      "group": "Datenschutz",
+      "label": "Region durch Kunden wählbar",
+      "path": "privacy.residency.customer_region_selectable"
+    },
+    {
+      "id": "saml",
+      "group": "Identity & Governance",
+      "label": "SAML SSO",
+      "path": "governance.sso.saml"
+    },
+    {
+      "id": "oidc",
+      "group": "Identity & Governance",
+      "label": "OIDC SSO",
+      "path": "governance.sso.oidc"
+    },
+    {
+      "id": "scim",
+      "group": "Identity & Governance",
+      "label": "SCIM",
+      "path": "governance.scim"
+    },
+    {
+      "id": "rbac",
+      "group": "Identity & Governance",
+      "label": "RBAC",
+      "path": "governance.rbac"
+    },
+    {
+      "id": "custom_roles",
+      "group": "Identity & Governance",
+      "label": "Custom Roles",
+      "path": "governance.custom_roles"
+    },
+    {
+      "id": "audit_logs",
+      "group": "Audit & Observability",
+      "label": "Audit Logs",
+      "path": "governance.audit_logs.available"
+    },
+    {
+      "id": "audit_api",
+      "group": "Audit & Observability",
+      "label": "Audit-Log API",
+      "path": "governance.audit_logs.api"
+    },
+    {
+      "id": "siem",
+      "group": "Audit & Observability",
+      "label": "SIEM-Export",
+      "path": "governance.audit_logs.siem_export"
+    },
+    {
+      "id": "encrypt_rest",
+      "group": "Security",
+      "label": "Verschlüsselung at rest",
+      "path": "security.encryption.at_rest"
+    },
+    {
+      "id": "encrypt_transit",
+      "group": "Security",
+      "label": "Verschlüsselung in transit",
+      "path": "security.encryption.in_transit"
+    },
+    {
+      "id": "cmk",
+      "group": "Security",
+      "label": "Customer-Managed Key",
+      "path": "security.customer_managed_key"
+    },
+    {
+      "id": "soc2",
+      "group": "Security",
+      "label": "SOC 2 Type II",
+      "path": "security.soc2_type2"
+    }
+  ],
+  "privacy": "Alle Auswahlen und Berechnungen erfolgen im Browser. Es werden keine Fit-Eingaben an einen Empfehlungsdienst gesendet.",
+  "limitations": [
+    "AgentenFit bewertet nur die ausgewählten strukturierten Anforderungen; nicht ausgewählte Anforderungen beeinflussen die Reihenfolge nicht.",
+    "Unknown ist eine Evidenzlücke und kein negatives Produkturteil.",
+    "Ein bestätigtes Plattformmerkmal gilt nur dann als Produktmerkmal, wenn die kuratierte Field-Level-Evidenz die Verbindung zum Agenten ausreichend trägt.",
+    "Preise, Vertragsbedingungen, konkrete Workloads und organisatorische Risiken müssen separat geprüft werden."
+  ]
+}
