@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:28:19Z",
+  "updated_at": "2026-10-02T03:45:16Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -2802,6 +2802,48 @@
         "token_delta_pct": -36.34
       },
       "previous_checked_at": "2026-10-02T03:24:40Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-A1E1013283571698D6",
+      "detected_at": "2026-10-02T03:44:44Z",
+      "source_id": "SRC-EE7AF67DAA67D2",
+      "agent_ids": [
+        "AI-0094"
+      ],
+      "source_title": "Moveworks – Roles and Permissions",
+      "url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "14fb6a69709e54ff7d98772a8a0d7229712131d5bffb7d3373d613efa30b7f42",
+        "new_hash": "71784c52fa8cb01e0eab98b4524d9891b8d8df6fcbbd41d92801abc55acaa4bb",
+        "simhash_distance": 0,
+        "old_token_count": 2617,
+        "new_token_count": 2617,
+        "token_delta_pct": 0.0
+      },
+      "previous_checked_at": "2026-10-02T03:27:51Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-2E9065C0597A57B203",
+      "detected_at": "2026-10-02T03:44:55Z",
+      "source_id": "SRC-9426998C9F7364",
+      "agent_ids": [
+        "AI-0031"
+      ],
+      "source_title": "Atlassian – Rovo security, privacy, and data use",
+      "url": "https://www.atlassian.com/software/rovo/guides/admin-guide/rovo-data-usage-privacy",
+      "change_type": "availability_change",
+      "severity": "high",
+      "metrics": {
+        "previous_result": "fetched",
+        "current_result": "error"
+      },
+      "previous_checked_at": "2026-10-02T03:28:01Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }

@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:28:19Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T03:45:16Z",
+  "open_count": 2,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -334,9 +334,9 @@
     },
     {
       "review_id": "REV-13BE2EDD5C4E5D6A03",
-      "status": "dismissed_noise",
-      "first_detected": "2026-10-02T03:27:51Z",
-      "last_detected": "2026-10-02T03:27:51Z",
+      "status": "open",
+      "first_detected": "2026-10-02T03:44:44Z",
+      "last_detected": "2026-10-02T03:44:44Z",
       "occurrences": 1,
       "severity": "low",
       "change_type": "content_change",
@@ -349,7 +349,7 @@
       "previous": {
         "status_code": 200,
         "final_url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications.md",
-        "text_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
+        "text_hash": "14fb6a69709e54ff7d98772a8a0d7229712131d5bffb7d3373d613efa30b7f42",
         "simhash64": "8922960d552d0bd8",
         "token_count": 2617,
         "text_sample": "> For clean Markdown of any page, append .md to the page URL. > For a complete documentation index, see https://help.moveworks.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://help.moveworks.com/_mcp/server. # Roles and Permissions > **Info** > > ️ Pre-requisite: Please ask your single-sign on (SSO) Admin to follow [these instructions (link)](/service-management/administration/my-moveworks-overview) to configure Moveworks for your organization ([link](/service-management/administration/my-moveworks-overview)) and enable this application for you MyMoveworks is your one-stop portal to access all Moveworks applications. Within MyMoveworks there are a variety of applications (Moveworks Setup, Analytics, Agent Studio, Knowledge Studio, etc.) This guide will explain how to grant users access to specific applications. # Roles and Permissions for Administrators Moveworks provides Role-based Access Control (RBAC) capabilities for all Moveworks developed applications. As an administrator, learn to manage access to applications through the “Roles and Permissions” application in this section. There are three types of access you can con"
@@ -357,7 +357,7 @@
       "current": {
         "status_code": 200,
         "final_url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications.md",
-        "text_hash": "14fb6a69709e54ff7d98772a8a0d7229712131d5bffb7d3373d613efa30b7f42",
+        "text_hash": "71784c52fa8cb01e0eab98b4524d9891b8d8df6fcbbd41d92801abc55acaa4bb",
         "simhash64": "8922960d552d0bd8",
         "token_count": 2617,
         "text_sample": "> For clean Markdown of any page, append .md to the page URL. > For a complete documentation index, see https://help.moveworks.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://help.moveworks.com/_mcp/server. # Roles and Permissions > **Info** > > ️ Pre-requisite: Please ask your single-sign on (SSO) Admin to follow [these instructions (link)](/service-management/administration/my-moveworks-overview) to configure Moveworks for your organization ([link](/service-management/administration/my-moveworks-overview)) and enable this application for you MyMoveworks is your one-stop portal to access all Moveworks applications. Within MyMoveworks there are a variety of applications (Moveworks Setup, Analytics, Agent Studio, Knowledge Studio, etc.) This guide will explain how to grant users access to specific applications. # Roles and Permissions for Administrators Moveworks provides Role-based Access Control (RBAC) capabilities for all Moveworks developed applications. As an administrator, learn to manage access to applications through the “Roles and Permissions” application in this section. There are three types of access you can con",
@@ -365,16 +365,14 @@
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
-        "new_hash": "14fb6a69709e54ff7d98772a8a0d7229712131d5bffb7d3373d613efa30b7f42",
+        "old_hash": "14fb6a69709e54ff7d98772a8a0d7229712131d5bffb7d3373d613efa30b7f42",
+        "new_hash": "71784c52fa8cb01e0eab98b4524d9891b8d8df6fcbbd41d92801abc55acaa4bb",
         "simhash_distance": 0,
         "old_token_count": 2617,
         "new_token_count": 2617,
-        "token_delta_pct": 0
+        "token_delta_pct": 0.0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "resolution": "Moveworks Roles and Permissions content remained identical in token count and SimHash; only the rendered content hash changed. No indexed product fact changed.",
-      "reviewed_at": "2026-10-02T05:45:00+02:00"
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-19E755BE20CCF1EEFE",
@@ -1524,6 +1522,44 @@
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
       "resolution": "Replaced the retired Windsurf Analytics API URL with the current canonical Windsurf Analytics API documentation; programmatic Cascade analytics remain documented.",
       "reviewed_at": "2026-10-02T03:19:00Z"
+    },
+    {
+      "review_id": "REV-6C9412258C5C225D96",
+      "status": "open",
+      "first_detected": "2026-10-02T03:44:55Z",
+      "last_detected": "2026-10-02T03:44:55Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "availability_change",
+      "source_id": "SRC-9426998C9F7364",
+      "source_title": "Atlassian – Rovo security, privacy, and data use",
+      "url": "https://www.atlassian.com/software/rovo/guides/admin-guide/rovo-data-usage-privacy",
+      "agent_ids": [
+        "AI-0031"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://www.atlassian.com/software/rovo/guides/admin-guide/rovo-data-usage-privacy",
+        "text_hash": "f6d489d91ea5e0acb163bb3115c2e38cf194f88251b6d33fc4b9860c51ff06d2",
+        "simhash64": "f684e94ff37bcbed",
+        "token_count": 495,
+        "text_sample": "Rovo security, privacy, and data use How does Rovo address my security and compliance requirements? Rovo is thoughtfully designed to ensure your data is protected and your compliance needs are met, so you can stay in control. Large language models (LLMs) Atlassian uses a diverse range of open models, including models from the Gemma series, GPT-oss series, Llama series and Nemotron series, alongside third-party hosted LLMs from OpenAI's GPT series of models, Anthropic's Claude series of models, and Google's Gemini series of models, to deliver the best outcomes for customers. Our AI features use dynamic routing to select the appropriate mix of models that can deliver the best experience and accuracy for each scenario. The third-party LLM providers Atlassian uses do not retain your inputs and outputs, or use them to improve their services. Please refer to our list of data sub-processors for more information on our third-party hosted LLM providers. You can also learn more about how each feature uses LLMs on our transparency page. How Rovo is designed for transparency Third-Party Sub-Processors used by Atlassian Security and regulatory compliance Rovo is designed responsibly to address "
+      },
+      "current": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "error",
+        "error": "IncompleteRead: IncompleteRead(661912 bytes read)"
+      },
+      "latest_metrics": {
+        "previous_result": "fetched",
+        "current_result": "error"
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-6D8E1264AB85F24B94",
