@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T03:28:19Z",
-  "open_count": 4,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -177,7 +177,7 @@
     },
     {
       "review_id": "REV-069EB2C36E7175D6C1",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:27:55Z",
       "last_detected": "2026-10-02T03:27:55Z",
       "occurrences": 1,
@@ -211,7 +211,9 @@
         "old_status": 200,
         "new_status": 429
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The Slack Help page returned a transient HTTP 429. The SCIM claim remains supported by Slack's current official Developer SCIM API documentation, and the evidence source was hardened to that stable primary source.",
+      "reviewed_at": "2026-10-02T05:45:00+02:00"
     },
     {
       "review_id": "REV-088A8B24E5A2A8E8AE",
@@ -332,7 +334,7 @@
     },
     {
       "review_id": "REV-13BE2EDD5C4E5D6A03",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T03:27:51Z",
       "last_detected": "2026-10-02T03:27:51Z",
       "occurrences": 1,
@@ -368,9 +370,11 @@
         "simhash_distance": 0,
         "old_token_count": 2617,
         "new_token_count": 2617,
-        "token_delta_pct": 0.0
+        "token_delta_pct": 0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Moveworks Roles and Permissions content remained identical in token count and SimHash; only the rendered content hash changed. No indexed product fact changed.",
+      "reviewed_at": "2026-10-02T05:45:00+02:00"
     },
     {
       "review_id": "REV-19E755BE20CCF1EEFE",
@@ -1166,7 +1170,7 @@
     },
     {
       "review_id": "REV-56814C638C3DA18ECF",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:27:28Z",
       "last_detected": "2026-10-02T03:27:28Z",
       "occurrences": 1,
@@ -1200,7 +1204,9 @@
         "old_final_url": "https://docs.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
         "new_final_url": "https://helpcenter.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784"
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Gorgias moved the AI Agent Action event-log article from docs.gorgias.com to helpcenter.gorgias.com. The product fact is unchanged; the field-level evidence URL was updated to the current canonical official Help Center URL.",
+      "reviewed_at": "2026-10-02T05:45:00+02:00"
     },
     {
       "review_id": "REV-56D597CD8834F0D2CA",
@@ -3364,7 +3370,7 @@
     },
     {
       "review_id": "REV-E55A27E74A9DFAA578",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:28:12Z",
       "last_detected": "2026-10-02T03:28:12Z",
       "occurrences": 1,
@@ -3402,7 +3408,9 @@
         "new_token_count": 1163,
         "token_delta_pct": -36.34
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Salesforce Shield marketing content changed, but customer-managed key support remains explicitly documented in current Salesforce Help. The claim was retained and its evidence replaced with the stable Customer Managed Key Options documentation.",
+      "reviewed_at": "2026-10-02T05:45:00+02:00"
     },
     {
       "review_id": "REV-E5D74BB58A9399C244",
