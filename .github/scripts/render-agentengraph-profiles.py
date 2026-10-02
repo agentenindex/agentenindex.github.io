@@ -16,7 +16,9 @@ ASSERTIONS = json.loads((GRAPH / "assertions.json").read_text(encoding="utf-8"))
 EVENTS = json.loads((GRAPH / "events.json").read_text(encoding="utf-8"))["events"]
 MANIFEST = json.loads((GRAPH / "manifest.json").read_text(encoding="utf-8"))
 
-BASELINE = MANIFEST["as_of"]
+# The public history baseline is the fixed start of AgentenGraph tracking; it must not drift with each daily snapshot.
+BASELINE = "2026-10-01"
+SNAPSHOT = MANIFEST["as_of"]
 
 PATH_LABELS = {
     "identity.name": "Produktname",
