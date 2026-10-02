@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:17:01Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T05:19:34Z",
+  "open_count": 2,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -527,9 +527,9 @@
     },
     {
       "review_id": "REV-2022626EA5094C815D",
-      "status": "dismissed_noise",
-      "first_detected": "2026-10-02T04:25:07Z",
-      "last_detected": "2026-10-02T04:25:07Z",
+      "status": "open",
+      "first_detected": "2026-10-02T05:18:56Z",
+      "last_detected": "2026-10-02T05:18:56Z",
       "occurrences": 1,
       "severity": "high",
       "change_type": "status_change",
@@ -561,9 +561,7 @@
         "old_status": 200,
         "new_status": 429
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "resolution": "Transient HTTP 429 rate-limit response from slack.com. The current official Slack Enterprise/help/news pages remain reachable and continue to document Slackbot as a personal AI agent for work. No indexed product fact changed.",
-      "reviewed_at": "2026-10-02T05:51:00+02:00"
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-204DFA87F15A057E4B",
@@ -2438,6 +2436,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Reviewed the current Gemini Enterprise Agent Platform overview; the platform remains documented for building, deploying, governing, and optimizing enterprise agents with integrated security/governance.",
       "reviewed_at": "2026-10-02T03:19:00Z"
+    },
+    {
+      "review_id": "REV-97E100E1E93EA37537",
+      "status": "open",
+      "first_detected": "2026-10-02T05:19:10Z",
+      "last_detected": "2026-10-02T05:19:10Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "availability_change",
+      "source_id": "SRC-725719AD056111",
+      "source_title": "Google Gemini Apps Help – Use Gemini Apps with a work or school Google Account",
+      "url": "https://support.google.com/gemini/answer/14620100?co=DASHER._Family%3DBusiness-Enterprise&hl=en",
+      "agent_ids": [
+        "AI-0002"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://support.google.com/gemini/answer/14620100?co=DASHER._Family%3DBusiness-Enterprise&hl=en",
+        "text_hash": "dfb08b658b4965d3e3fe576fc220c2a9befdaea53775b0ba27d6ceb02da2f7c1",
+        "simhash64": "604f448795dbaf8f",
+        "token_count": 2421,
+        "text_sample": "Use Gemini Apps with a work or school Google Account Most users with a work or school Google Account have access to Gemini Apps. Feature availability and how your data is handled depends on your Workspace license. In the help center, you will find important notifications and tips about info that differs depending on whether work or school users have enterprise-grade data protections. Learn how to check your level of access and data protections below. Important: The information in this article is only applicable if your access to Gemini is through a Workspace license from your work, school, or other organization. If you are using Gemini with a personal Google Account, your feature availability and limits will be different. Learn about Gemini Apps limits & upgrades for personal accounts . Gemini Apps by Workspace editions Important: Gemini is AI and can make mistakes, including about people. Some content may not be suitable for everyone. Gemini Apps limits may change. Learn more about limit changes . There are separate limits when you use Gemini in Workspace apps. Learn about usage limits for Gemini with Google Workspace . To use Gemini Apps with a work account, you must be 18 or ove"
+      },
+      "current": {
+        "status_code": null,
+        "final_url": null,
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "network_error",
+        "error": "The read operation timed out"
+      },
+      "latest_metrics": {
+        "previous_result": "fetched",
+        "current_result": "network_error"
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-9B47DCE975C527BF77",

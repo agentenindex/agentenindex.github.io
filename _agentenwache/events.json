@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:17:01Z",
+  "updated_at": "2026-10-02T05:19:34Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -3226,6 +3226,44 @@
         "token_delta_pct": 0.0
       },
       "previous_checked_at": "2026-10-02T05:13:27Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-3713919F8147C768C1",
+      "detected_at": "2026-10-02T05:18:56Z",
+      "source_id": "SRC-8E2694301752D3",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – Enterprise",
+      "url": "https://slack.com/enterprise",
+      "change_type": "status_change",
+      "severity": "high",
+      "metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "previous_checked_at": "2026-10-02T05:16:11Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-0CE0FA45D1F8D95D5F",
+      "detected_at": "2026-10-02T05:19:10Z",
+      "source_id": "SRC-725719AD056111",
+      "agent_ids": [
+        "AI-0002"
+      ],
+      "source_title": "Google Gemini Apps Help – Use Gemini Apps with a work or school Google Account",
+      "url": "https://support.google.com/gemini/answer/14620100?co=DASHER._Family%3DBusiness-Enterprise&hl=en",
+      "change_type": "availability_change",
+      "severity": "high",
+      "metrics": {
+        "previous_result": "fetched",
+        "current_result": "network_error"
+      },
+      "previous_checked_at": "2026-10-02T05:16:13Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }
