@@ -1,0 +1,25 @@
+name: Validate Human-in-the-loop Guide
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "wissen/human-in-the-loop/**"
+      - "assets/styles.css"
+      - ".github/scripts/validate-hitl-guide.py"
+      - ".github/workflows/hitl-guide.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate Human-in-the-loop guide
+        run: python .github/scripts/validate-hitl-guide.py
