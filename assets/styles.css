@@ -2147,3 +2147,41 @@ p{color:inherit}
 
 @media(max-width:1000px){.fit-requirements{grid-template-columns:1fr 1fr}.fit-hero-grid{grid-template-columns:1fr}.fit-principle-card{max-width:650px}}
 @media(max-width:700px){.fit-form{padding:22px}.fit-form-intro{grid-template-columns:1fr;gap:14px}.fit-filter-row,.fit-requirements{grid-template-columns:1fr}.fit-action-bar{align-items:stretch;flex-direction:column}.fit-run-modern{justify-content:space-between;width:100%}.fit-results{padding:0 20px 20px}.finder-results-head{padding:26px 20px 18px}.fit-result-head,.fit-result-bottom{display:block}.fit-score{text-align:left;margin-top:12px;width:max-content}.fit-evidence-row{grid-template-columns:1fr}.fit-requirement-card{min-height:0}}
+
+
+/* Mobile article regression fix v8.5.1
+   Must stay after the desktop article-system overrides above. */
+@media(max-width:900px){
+  .article-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:24px;
+    width:100%;
+    max-width:100%;
+  }
+  .article-grid>article{
+    grid-column:1;
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+  .article-grid>.toc,
+  .article-grid>.v7p-toc{
+    display:none;
+  }
+}
+@media(max-width:600px){
+  .article{
+    padding:34px 0 64px;
+  }
+  .article-grid{
+    gap:0;
+  }
+  .article-grid>article{
+    overflow:visible;
+  }
+  .v7p-direct-answer{
+    width:100%;
+    max-width:100%;
+  }
+}
