@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:57:00Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T05:57:48Z",
+  "open_count": 6,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1242,9 +1242,9 @@
     },
     {
       "review_id": "REV-4FD360762AF33DA6D2",
-      "status": "dismissed_noise",
-      "first_detected": "2026-10-02T05:54:31Z",
-      "last_detected": "2026-10-02T05:54:31Z",
+      "status": "open",
+      "first_detected": "2026-10-02T05:57:18Z",
+      "last_detected": "2026-10-02T05:57:18Z",
       "occurrences": 1,
       "severity": "high",
       "change_type": "status_change",
@@ -1276,9 +1276,7 @@
         "old_status": 200,
         "new_status": 503
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "reviewed_at": "2026-10-02T05:57:00Z",
-      "resolution": "Transient GitHub HTTP 503 during a clustered availability incident affecting multiple official GitHub documentation sources in the same AgentenWache run. The exact repository file has been re-read through the GitHub connection and remains present with the expected substantive documentation. No indexed product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-5177CDF329A3D642E2",
@@ -1369,6 +1367,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Dynamic site metadata changed while the indexed Cline product facts remained unchanged; no product update applied.",
       "reviewed_at": "2026-10-01T14:47:00Z"
+    },
+    {
+      "review_id": "REV-54C79F3D1CBDD6427A",
+      "status": "open",
+      "first_detected": "2026-10-02T05:57:22Z",
+      "last_detected": "2026-10-02T05:57:22Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-E61E1B88E97A77",
+      "source_title": "SAP Samples – Joule Studio MCP agent configuration",
+      "url": "https://github.com/SAP-samples/btp-agentic-ai-use-cases/blob/main/10-escalation-assistant-joule-studio/agent-builder/WEB_SEARCHER.md",
+      "agent_ids": [
+        "AI-0030"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/SAP-samples/btp-agentic-ai-use-cases/blob/main/10-escalation-assistant-joule-studio/agent-builder/WEB_SEARCHER.md",
+        "text_hash": "77eb70e0ad9cb2d4f99d158e52b40097c24a9a4f99a6d08e68d40e8a61439236",
+        "simhash64": "900c88270aeb1863",
+        "token_count": 283,
+        "text_sample": "SAP-samples / btp-agentic-ai-use-cases Public Notifications You must be signed in to change notification settings Fork 7 Star 16 Files Expand file tree main / WEB_SEARCHER.md Copy path Blame More file actions Blame More file actions Latest commit History History History 59 lines (37 loc) · 1.53 KB main / WEB_SEARCHER.md Copy path Top File metadata and controls Preview Code Blame 59 lines (37 loc) · 1.53 KB Raw Copy raw file Download raw file Outline Edit and raw actions Web Searcher Here you have the configuration of the AI Agent Web Searcher in Joule Studio Agent Builder. Description AI agent to retrieve and summarize any kind of information from the internet. Expertise and Instructions Expertise You are an expert in retrieving and summarizing information from any internet site using mock-web-search-1 and mock-web-search-2 tools. Instruction Here's what you must do to accomplish your task: ## Step-by-step process ## STEP 1: based on the input you receive, you must search the internet for related topics in two steps: 1. First do a search using the mock-web-search-1 MCP server tools; 2. Then do a second search using the mock-web-search-2 MCP server tools. STEP 2: analyze the informa"
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://github.com/SAP-samples/btp-agentic-ai-use-cases/blob/main/10-escalation-assistant-joule-studio/agent-builder/WEB_SEARCHER.md",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-54DE68D061583AB44D",
@@ -1566,6 +1602,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Kiro IDE page changed only marginally; the current content still supports the indexed agentic IDE capabilities and no indexed product fact changed.",
       "reviewed_at": "2026-10-01T16:38:00Z"
+    },
+    {
+      "review_id": "REV-5726074BB2ADE4EFE5",
+      "status": "open",
+      "first_detected": "2026-10-02T05:57:06Z",
+      "last_detected": "2026-10-02T05:57:06Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-06269DC8C7B3F5",
+      "source_title": "Browser Use GitHub – README",
+      "url": "https://github.com/browser-use/browser-use/blob/main/README.md",
+      "agent_ids": [
+        "AI-0056"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://github.com/browser-use/browser-use/blob/main/README.md",
+        "text_hash": "1e6c9e5ad8356f4d2b5a198c704a2faa101c5a4fdb599782fa391f6f52e50453",
+        "simhash64": "dea3cf869fdfdf05",
+        "token_count": 1498,
+        "text_sample": "browser-use / browser-use Public Notifications You must be signed in to change notification settings Fork 12.9k Star 117k Files Expand file tree main / README.md Copy path Blame More file actions Blame More file actions Latest commit History History History 365 lines (252 loc) · 16.1 KB main / README.md Copy path Top File metadata and controls Preview Code Blame 365 lines (252 loc) · 16.1 KB Raw Copy raw file Download raw file Outline Edit and raw actions Navigate the web like a human does. Find an available slot, pick a date and time, handle the CAPTCHA, and book a driving test. Explore more demos and prompts ↗ AI agents and crawlers: read browser-use.com/llms.txt for the product map (open source, Browser Harness, Cloud browsers, Agents API, pricing) and docs.browser-use.com/llms.txt for the documentation index. Browser Use is the open-source browser agent (Python and TypeScript), a $0.02 per browser-hour cloud browser with stealth, CAPTCHA solving and residential proxies, and a hosted agent API. Which Browser Use do I need? Path 1: Fully Hosted Cloud : Scale up with a fully hosted agent and browser. Path 2: CLI : Automate your own browser tasks. Path 3: Python Library : Run the o"
+      },
+      "current": {
+        "status_code": 503,
+        "final_url": "https://github.com/browser-use/browser-use/blob/main/README.md",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 503: Service Unavailable"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 503
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-59B27F06C14C38F7B8",
@@ -1803,7 +1877,9 @@
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Reviewed the current official Manus Cloud Computer article. It still documents a dedicated persistent cloud-hosted virtual machine and the standard temporary sandbox; the low-severity 2-token/SimHash-3 change does not alter the indexed managed-hosting fact.",
-      "reviewed_at": "2026-10-02T05:54:00Z"
+      "reviewed_at": "2026-10-02T05:54:00Z",
+      "last_seen_after_review": "2026-10-02T05:57:08Z",
+      "suppressed_reoccurrences": 1
     },
     {
       "review_id": "REV-66484F39574C8E3200",
@@ -2612,9 +2688,9 @@
     },
     {
       "review_id": "REV-94DE871525D1121DDF",
-      "status": "dismissed_noise",
-      "first_detected": "2026-10-02T05:54:11Z",
-      "last_detected": "2026-10-02T05:54:11Z",
+      "status": "open",
+      "first_detected": "2026-10-02T05:57:08Z",
+      "last_detected": "2026-10-02T05:57:08Z",
       "occurrences": 1,
       "severity": "high",
       "change_type": "status_change",
@@ -2646,9 +2722,7 @@
         "old_status": 200,
         "new_status": 503
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "reviewed_at": "2026-10-02T05:57:00Z",
-      "resolution": "Transient GitHub HTTP 503 during a clustered availability incident affecting multiple official GitHub documentation sources in the same AgentenWache run. The exact repository file has been re-read through the GitHub connection and remains present with the expected substantive documentation. No indexed product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-95E664B028E0749FC5",
@@ -2963,9 +3037,9 @@
     },
     {
       "review_id": "REV-A8363314915B5BFACB",
-      "status": "dismissed_noise",
-      "first_detected": "2026-10-02T05:54:22Z",
-      "last_detected": "2026-10-02T05:54:22Z",
+      "status": "open",
+      "first_detected": "2026-10-02T05:57:16Z",
+      "last_detected": "2026-10-02T05:57:16Z",
       "occurrences": 1,
       "severity": "high",
       "change_type": "status_change",
@@ -2997,9 +3071,7 @@
         "old_status": 200,
         "new_status": 503
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "reviewed_at": "2026-10-02T05:57:00Z",
-      "resolution": "Transient GitHub HTTP 503 during a clustered availability incident affecting multiple official GitHub documentation sources in the same AgentenWache run. The exact repository file has been re-read through the GitHub connection and remains present with the expected substantive documentation. No indexed product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-A87CF1518304704FA4",
@@ -3657,9 +3729,9 @@
     },
     {
       "review_id": "REV-BA104B430AEFC6A4D0",
-      "status": "dismissed_noise",
-      "first_detected": "2026-10-02T05:54:40Z",
-      "last_detected": "2026-10-02T05:54:40Z",
+      "status": "open",
+      "first_detected": "2026-10-02T05:57:22Z",
+      "last_detected": "2026-10-02T05:57:22Z",
       "occurrences": 1,
       "severity": "high",
       "change_type": "status_change",
@@ -3691,9 +3763,7 @@
         "old_status": 200,
         "new_status": 503
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "reviewed_at": "2026-10-02T05:57:00Z",
-      "resolution": "Transient GitHub HTTP 503 during a clustered availability incident affecting multiple official GitHub documentation sources in the same AgentenWache run. The exact repository file has been re-read through the GitHub connection and remains present with the expected substantive documentation. No indexed product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-BACFDA33C59D1C7836",
