@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:06:14Z",
+  "updated_at": "2026-10-02T03:20:32Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -2565,6 +2565,90 @@
         "baseline_health": true
       },
       "previous_checked_at": null,
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-A64C01D4CFD382721C",
+      "detected_at": "2026-10-02T03:19:53Z",
+      "source_id": "SRC-EE7AF67DAA67D2",
+      "agent_ids": [
+        "AI-0094"
+      ],
+      "source_title": "Moveworks – Roles and Permissions",
+      "url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "0af85d776dc42741ac86d50af8809943e33313daaeeb296c503d8cdcb17207e1",
+        "new_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
+        "simhash_distance": 1,
+        "old_token_count": 2617,
+        "new_token_count": 2617,
+        "token_delta_pct": 0.0
+      },
+      "previous_checked_at": "2026-10-02T03:05:31Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-B0751C8AFE34F5E6E0",
+      "detected_at": "2026-10-02T03:19:56Z",
+      "source_id": "SRC-26305AD6DE013F",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack – Slack is where your team works. Now it’s where your agents work too.",
+      "url": "https://slack.com/blog/news/slack-is-where-agents-work",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "12b863f2f3a8d5ce516eb3feae3ce1b4aaf4ce27fb00e74cc0508df08b369540",
+        "new_hash": "e9a48ed3dd01828093dd37c569e4eff1233bc376f18488c4b7dc186f30570354",
+        "simhash_distance": 3,
+        "old_token_count": 1820,
+        "new_token_count": 1861,
+        "token_delta_pct": 2.25
+      },
+      "previous_checked_at": "2026-10-02T03:05:32Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-D843E7A23C07D7710D",
+      "detected_at": "2026-10-02T03:19:58Z",
+      "source_id": "SRC-A394799F343C5E",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack Help – Audit logs in Slack",
+      "url": "https://slack.com/help/articles/360000394286-Audit-logs-in-Slack",
+      "change_type": "status_change",
+      "severity": "high",
+      "metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "previous_checked_at": "2026-10-02T03:05:34Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-FCC128FCF843BCCCA2",
+      "detected_at": "2026-10-02T03:19:59Z",
+      "source_id": "SRC-B969F44FC88CEF",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack Help – Manage members with SCIM provisioning",
+      "url": "https://slack.com/help/articles/212572638-Manage-members-with-SCIM-provisioning/1000",
+      "change_type": "status_change",
+      "severity": "medium",
+      "metrics": {
+        "old_status": 429,
+        "new_status": 200
+      },
+      "previous_checked_at": "2026-10-02T03:05:35Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }

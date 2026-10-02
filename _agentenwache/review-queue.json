@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:06:14Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T03:20:32Z",
+  "open_count": 3,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -176,6 +176,46 @@
       "reviewed_at": "2026-10-02T03:19:00Z"
     },
     {
+      "review_id": "REV-069EB2C36E7175D6C1",
+      "status": "acknowledged",
+      "first_detected": "2026-10-02T03:19:59Z",
+      "last_detected": "2026-10-02T03:19:59Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "status_change",
+      "source_id": "SRC-B969F44FC88CEF",
+      "source_title": "Slack Help – Manage members with SCIM provisioning",
+      "url": "https://slack.com/help/articles/212572638-Manage-members-with-SCIM-provisioning/1000",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "previous": {
+        "status_code": 429,
+        "final_url": "https://slack.com/intl/de-de/help/articles/212572638-Manage-members-with-SCIM-provisioning/1000",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/help/articles/212572638-Mitglieder-mit-SCIM-Zugriffsrechten-verwalten",
+        "text_hash": "e17a3e56625a118ccf494804f24285a487c52938efed5b397296d280b5356f8f",
+        "simhash64": "e42256677e089c51",
+        "token_count": 800,
+        "text_sample": "Workspace-Management Du möchtest mehr darüber wissen, wie du dein Team einrichten kannst? Dann bist du hier richtig! Weiter Zurück Aktionen,Aktivität,Zugriffs-Logs,Barrierefreiheit,hinzufügen,App hinzufügen,Mitglieder hinzufügen,Zu Slack hinzufügen,Administratoren,alle Passwörter,Analytik,Android,Mitteilung,Mitteilungen,App-Verzeichnis,App-Symbol,Apple Watch,Apps genehmigen,archivieren,Asana,Atlassian,Automatisierungs-Apps,Badge,Rechnungsdaten,Rechnungsstellung,Bitbucket,Bot-Benutzer,Box,Durchsuchen,Anrufe,Anrufe:,abbrechen,Änderungen,Channels,Channel sofort,Channel-Management,Channel-Benachrichtigung,Channel-Vorschläge,Domains beanspruchen,schließen,Unternehmenskultur,Compliance-Exporte,verfassen,Computer,Unterhaltungen,konvertierenverbinden,verknüpfte Accounts,Verbindung,verbinden,Nachrichten kopieren,erstellen,Anpassung,anpassen,Benutzerdefinierte SAML,benutzerdefiniert,Kunden-Support-Teams,Datenexporte,Datensicherheit,deaktivieren,Standard-Channels,löschen,Löschung,Slack bereitstellen,Desktop,Direktnachrichten,Verzeichnis,deaktivieren,entdecken und beitreten,Ermittlungs-APIs,Anzeigename,DMs,Bitte nicht stören,Domain,Domains,Downgrade,Dropbox,doppelte Accounts,bearbeiten,Bearbei",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_status": 429,
+        "new_status": 200
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "acknowledged_at": "2026-10-02T03:20:32Z",
+      "resolution": "Source is healthy again; technical recovery acknowledged without asserting a product change."
+    },
+    {
       "review_id": "REV-088A8B24E5A2A8E8AE",
       "status": "reviewed_no_product_change",
       "first_detected": "2026-10-02T03:05:29Z",
@@ -291,6 +331,48 @@
       "editorial_action": "Check whether the official source moved or was retired. Replace the source in data/agents.json only with a current authoritative source; do not infer any product change from the broken URL alone.",
       "acknowledged_at": "2026-10-01T13:21:10Z",
       "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
+    },
+    {
+      "review_id": "REV-13BE2EDD5C4E5D6A03",
+      "status": "open",
+      "first_detected": "2026-10-02T03:19:53Z",
+      "last_detected": "2026-10-02T03:19:53Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-EE7AF67DAA67D2",
+      "source_title": "Moveworks – Roles and Permissions",
+      "url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications",
+      "agent_ids": [
+        "AI-0094"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications.md",
+        "text_hash": "0af85d776dc42741ac86d50af8809943e33313daaeeb296c503d8cdcb17207e1",
+        "simhash64": "8922964d552d0bd8",
+        "token_count": 2617,
+        "text_sample": "> For clean Markdown of any page, append .md to the page URL. > For a complete documentation index, see https://help.moveworks.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://help.moveworks.com/_mcp/server. # Roles and Permissions > **Info** > > ️ Pre-requisite: Please ask your single-sign on (SSO) Admin to follow [these instructions (link)](/service-management/administration/my-moveworks-overview) to configure Moveworks for your organization ([link](/service-management/administration/my-moveworks-overview)) and enable this application for you MyMoveworks is your one-stop portal to access all Moveworks applications. Within MyMoveworks there are a variety of applications (Moveworks Setup, Analytics, Agent Studio, Knowledge Studio, etc.) This guide will explain how to grant users access to specific applications. # Roles and Permissions for Administrators Moveworks provides Role-based Access Control (RBAC) capabilities for all Moveworks developed applications. As an administrator, learn to manage access to applications through the “Roles and Permissions” application in this section. There are three types of access you can con"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications.md",
+        "text_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
+        "simhash64": "8922960d552d0bd8",
+        "token_count": 2617,
+        "text_sample": "> For clean Markdown of any page, append .md to the page URL. > For a complete documentation index, see https://help.moveworks.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://help.moveworks.com/_mcp/server. # Roles and Permissions > **Info** > > ️ Pre-requisite: Please ask your single-sign on (SSO) Admin to follow [these instructions (link)](/service-management/administration/my-moveworks-overview) to configure Moveworks for your organization ([link](/service-management/administration/my-moveworks-overview)) and enable this application for you MyMoveworks is your one-stop portal to access all Moveworks applications. Within MyMoveworks there are a variety of applications (Moveworks Setup, Analytics, Agent Studio, Knowledge Studio, etc.) This guide will explain how to grant users access to specific applications. # Roles and Permissions for Administrators Moveworks provides Role-based Access Control (RBAC) capabilities for all Moveworks developed applications. As an administrator, learn to manage access to applications through the “Roles and Permissions” application in this section. There are three types of access you can con",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "0af85d776dc42741ac86d50af8809943e33313daaeeb296c503d8cdcb17207e1",
+        "new_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
+        "simhash_distance": 1,
+        "old_token_count": 2617,
+        "new_token_count": 2617,
+        "token_delta_pct": 0.0
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-19E755BE20CCF1EEFE",
@@ -2065,6 +2147,44 @@
       "reviewed_at": "2026-10-02T03:19:00Z"
     },
     {
+      "review_id": "REV-A8BA3B7DD3B4032DC7",
+      "status": "open",
+      "first_detected": "2026-10-02T03:19:58Z",
+      "last_detected": "2026-10-02T03:19:58Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "status_change",
+      "source_id": "SRC-A394799F343C5E",
+      "source_title": "Slack Help – Audit logs in Slack",
+      "url": "https://slack.com/help/articles/360000394286-Audit-logs-in-Slack",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/help/articles/360000394286-Audit-logs-in-Slack",
+        "text_hash": "e757183b9c79180b8f94928aff1bc85c2abdb8198c890806fe4eefa6ea0cec17",
+        "simhash64": "0a66df9376989d19",
+        "token_count": 1028,
+        "text_sample": "Workspace-Management Du möchtest mehr darüber wissen, wie du dein Team einrichten kannst? Dann bist du hier richtig! Weiter Zurück Aktionen,Aktivität,Zugriffs-Logs,Barrierefreiheit,hinzufügen,App hinzufügen,Mitglieder hinzufügen,Zu Slack hinzufügen,Administratoren,alle Passwörter,Analytik,Android,Mitteilung,Mitteilungen,App-Verzeichnis,App-Symbol,Apple Watch,Apps genehmigen,archivieren,Asana,Atlassian,Automatisierungs-Apps,Badge,Rechnungsdaten,Rechnungsstellung,Bitbucket,Bot-Benutzer,Box,Durchsuchen,Anrufe,Anrufe:,abbrechen,Änderungen,Channels,Channel sofort,Channel-Management,Channel-Benachrichtigung,Channel-Vorschläge,Domains beanspruchen,schließen,Unternehmenskultur,Compliance-Exporte,verfassen,Computer,Unterhaltungen,konvertierenverbinden,verknüpfte Accounts,Verbindung,verbinden,Nachrichten kopieren,erstellen,Anpassung,anpassen,Benutzerdefinierte SAML,benutzerdefiniert,Kunden-Support-Teams,Datenexporte,Datensicherheit,deaktivieren,Standard-Channels,löschen,Löschung,Slack bereitstellen,Desktop,Direktnachrichten,Verzeichnis,deaktivieren,entdecken und beitreten,Ermittlungs-APIs,Anzeigename,DMs,Bitte nicht stören,Domain,Domains,Downgrade,Dropbox,doppelte Accounts,bearbeiten,Bearbei"
+      },
+      "current": {
+        "status_code": 429,
+        "final_url": "https://slack.com/intl/de-de/help/articles/360000394286-Audit-logs-in-Slack",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      "latest_metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-A966C5A91D2E3C060C",
       "status": "acknowledged",
       "first_detected": "2026-10-01T13:16:13Z",
@@ -2103,6 +2223,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:21:10Z",
       "resolution": "Source is inactive or explicitly manual_only; no automated availability action remains."
+    },
+    {
+      "review_id": "REV-AB34D4FEB9603F19DF",
+      "status": "open",
+      "first_detected": "2026-10-02T03:19:56Z",
+      "last_detected": "2026-10-02T03:19:56Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-26305AD6DE013F",
+      "source_title": "Slack – Slack is where your team works. Now it’s where your agents work too.",
+      "url": "https://slack.com/blog/news/slack-is-where-agents-work",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/blog/news/slack-is-where-agents-work",
+        "text_hash": "12b863f2f3a8d5ce516eb3feae3ce1b4aaf4ce27fb00e74cc0508df08b369540",
+        "simhash64": "ba436095e5c9bc56",
+        "token_count": 1820,
+        "text_sample": "7 Min. Lesezeit Build, deploy, and manage agents on the world’s most flexible AI-powered platform for work. Organizations are investing heavily in AI, yet adoption often stalls because agents live in isolated browser tabs, disconnected from where teams work. When an agent is siloed from work, it lacks the shared context of your team’s conversations. That leads to generic results, limited ROI, and employees bouncing between fragmented tools just to get a simple answer. The Slack platform powers the most flexible, agent-first workspace. We amplify your software investment by bringing every app and automation into a single interface. While other platforms offer isolated utilities, Slack grounds your agents in the real-time conversational context of your company’s history and decisions. This ensures every deplo yment is more relevant, actionable, and secure—maximizing the value of your AI investment w ithout leaving the flow of work. Today, we’re announcing new capabilities that make it easier than ever to build and manage all your agents in Slack—so agents aren’t just siloed tools, but integrated teammates that work where your team already collaborates. Orchestrate work with Slackbot:"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://slack.com/intl/de-de/blog/news/slack-is-where-agents-work",
+        "text_hash": "e9a48ed3dd01828093dd37c569e4eff1233bc376f18488c4b7dc186f30570354",
+        "simhash64": "be426095e5c9bc16",
+        "token_count": 1861,
+        "text_sample": "7 Min. Lesezeit Build, deploy, and manage agents on the world’s most flexible AI-powered platform for work. Organizations are investing heavily in AI, yet adoption often stalls because agents live in isolated browser tabs, disconnected from where teams work. When an agent is siloed from work, it lacks the shared context of your team’s conversations. That leads to generic results, limited ROI, and employees bouncing between fragmented tools just to get a simple answer. The Slack platform powers the most flexible, agent-first workspace. We amplify your software investment by bringing every app and automation into a single interface. While other platforms offer isolated utilities, Slack grounds your agents in the real-time conversational context of your company’s history and decisions. This ensures every deplo yment is more relevant, actionable, and secure—maximizing the value of your AI investment w ithout leaving the flow of work. Today, we’re announcing new capabilities that make it easier than ever to build and manage all your agents in Slack—so agents aren’t just siloed tools, but integrated teammates that work where your team already collaborates. Orchestrate work with Slackbot:",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "12b863f2f3a8d5ce516eb3feae3ce1b4aaf4ce27fb00e74cc0508df08b369540",
+        "new_hash": "e9a48ed3dd01828093dd37c569e4eff1233bc376f18488c4b7dc186f30570354",
+        "simhash_distance": 3,
+        "old_token_count": 1820,
+        "new_token_count": 1861,
+        "token_delta_pct": 2.25
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-AB6B43EF3E9CE311A2",
