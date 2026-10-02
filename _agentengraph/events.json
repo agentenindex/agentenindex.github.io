@@ -18259,6 +18259,15 @@
       "origin": "graph_diff"
     },
     {
+      "event_id": "EVT-29498B64B33FFB9D42",
+      "agent_id": "AI-0052",
+      "date": "2026-10-02",
+      "event_type": "source_maintenance",
+      "scope": "profile",
+      "description": "Kanonischen Manus-Help-Link nach offiziellem Redirect von der deutschen auf die englische Artikel-URL aktualisiert; der dokumentierte Unterschied zwischen Chat- und Agent-Modus bleibt inhaltlich bestehen.",
+      "origin": "profile_changelog"
+    },
+    {
       "event_id": "EVT-6B13AC81C242827CFD",
       "agent_id": "AI-0052",
       "date": "2026-10-02",
@@ -18284,6 +18293,25 @@
         true
       ],
       "description": "Strukturierter Wert für governance.audit_logs.api hat sich geändert.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-EAE9D545726D723C29",
+      "agent_id": "AI-0052",
+      "date": "2026-10-02",
+      "event_type": "source_set_change",
+      "scope": "evidence",
+      "before": [
+        "SRC-0B0B36A69C0601",
+        "SRC-20975F305415B3",
+        "SRC-578474CD295572"
+      ],
+      "after": [
+        "SRC-0B0B36A69C0601",
+        "SRC-578474CD295572",
+        "SRC-FA0B4B4F4D49E4"
+      ],
+      "description": "Das Quellen-Set des AgentenProfils hat sich geändert.",
       "origin": "graph_diff"
     },
     {
