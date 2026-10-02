@@ -8,7 +8,7 @@
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://agentenindex.de/fit/"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-<link rel="stylesheet" href="/assets/styles.css?v=8.4.0"/>
+<link rel="stylesheet" href="/assets/styles.css?v=8.5.0"/>
 <meta property="og:type" content="website"/><meta property="og:locale" content="de_DE"/><meta property="og:site_name" content="AgentenIndex"/>
 <meta property="og:title" content="AgentenFit – Anforderungen evidenzbasiert abgleichen"/>
 <meta property="og:description" content="Deterministischer Fit-Check auf Basis kuratierter Field-Level-Evidenz. Unknown wird niemals als false behandelt."/>
@@ -42,49 +42,59 @@
 <div class="container">
   <div class="fit-shell">
     <div class="fit-form">
-      <div class="finder-form-head"><div><p class="kicker">Fit definieren</p><h2>Welche Anforderungen sind für deinen Einsatz wichtig?</h2></div><button id="fit-reset" class="finder-reset" type="button">Auswahl zurücksetzen</button></div>
+      <div class="fit-form-intro">
+        <div>
+          <p class="kicker">Fit definieren</p>
+          <h2>Was muss dein Agent können?</h2>
+          <p class="fit-form-lead">Wähle nur die Kriterien, die für deinen konkreten Einsatz wirklich relevant sind. Unbekannte Merkmale bleiben neutral.</p>
+        </div>
+        <button id="fit-reset" class="fit-reset-modern" type="button"><span>↺</span> Zurücksetzen</button>
+      </div>
       <div class="fit-filter-row">
         <label><span>Bereich <small>optional</small></span><select id="fit-category"><option value="">Alle Bereiche</option><option value="recherche">Recherche</option><option value="coding">Coding</option><option value="automatisierung">Automatisierung</option><option value="unternehmen">Unternehmen</option><option value="service-sales">Service &amp; Sales</option><option value="recht">Recht</option></select></label>
         <label><span>Zielgruppe <small>optional</small></span><select id="fit-audience"><option value="">Alle Zielgruppen</option><option value="privatpersonen">Privatpersonen</option><option value="unternehmen">Unternehmen</option></select></label>
       </div>
 
       <div class="fit-requirements">
-        <fieldset><legend>Protokolle &amp; APIs</legend>
+        <fieldset class="fit-requirement-card"><legend><span>01</span><b>Protokolle &amp; APIs</b><small>Schnittstellen & Interoperabilität</small></legend>
           <label><input type="checkbox" data-fit-path="protocols.mcp.client" data-fit-label="MCP-Client"/> MCP-Client</label>
           <label><input type="checkbox" data-fit-path="protocols.mcp.server" data-fit-label="MCP-Server"/> MCP-Server</label>
           <label><input type="checkbox" data-fit-path="protocols.a2a.supported" data-fit-label="A2A-Unterstützung"/> A2A-Unterstützung</label>
           <label><input type="checkbox" data-fit-path="api.rest" data-fit-label="REST API"/> REST API</label>
           <label><input type="checkbox" data-fit-path="api.webhooks" data-fit-label="Webhooks"/> Webhooks</label>
         </fieldset>
-        <fieldset><legend>Hosting</legend>
+        <fieldset class="fit-requirement-card"><legend><span>02</span><b>Hosting</b><small>Betriebs- & Deploymentmodell</small></legend>
           <label><input type="checkbox" data-fit-path="hosting.managed" data-fit-label="Managed Hosting"/> Managed Hosting</label>
           <label><input type="checkbox" data-fit-path="hosting.self_hosted" data-fit-label="Self-hosted"/> Self-hosted</label>
           <label><input type="checkbox" data-fit-path="hosting.private_network" data-fit-label="Private Network / VPC"/> Private Network / VPC</label>
         </fieldset>
-        <fieldset><legend>Datenschutz</legend>
+        <fieldset class="fit-requirement-card"><legend><span>03</span><b>Datenschutz</b><small>Region & Datenhaltung</small></legend>
           <label><input type="checkbox" data-fit-path="privacy.residency.available" data-fit-label="Datenresidenz verfügbar"/> Datenresidenz verfügbar</label>
           <label><input type="checkbox" data-fit-path="privacy.residency.customer_region_selectable" data-fit-label="Region durch Kunden wählbar"/> Region durch Kunden wählbar</label>
         </fieldset>
-        <fieldset><legend>Identity &amp; Governance</legend>
+        <fieldset class="fit-requirement-card"><legend><span>04</span><b>Identity &amp; Governance</b><small>Zugriff & Administration</small></legend>
           <label><input type="checkbox" data-fit-path="governance.sso.saml" data-fit-label="SAML SSO"/> SAML SSO</label>
           <label><input type="checkbox" data-fit-path="governance.sso.oidc" data-fit-label="OIDC SSO"/> OIDC SSO</label>
           <label><input type="checkbox" data-fit-path="governance.scim" data-fit-label="SCIM"/> SCIM</label>
           <label><input type="checkbox" data-fit-path="governance.rbac" data-fit-label="RBAC"/> RBAC</label>
           <label><input type="checkbox" data-fit-path="governance.custom_roles" data-fit-label="Custom Roles"/> Custom Roles</label>
         </fieldset>
-        <fieldset><legend>Audit &amp; Observability</legend>
+        <fieldset class="fit-requirement-card"><legend><span>05</span><b>Audit &amp; Observability</b><small>Nachvollziehbarkeit & Export</small></legend>
           <label><input type="checkbox" data-fit-path="governance.audit_logs.available" data-fit-label="Audit Logs"/> Audit Logs</label>
           <label><input type="checkbox" data-fit-path="governance.audit_logs.api" data-fit-label="Audit-Log API"/> Audit-Log API</label>
           <label><input type="checkbox" data-fit-path="governance.audit_logs.siem_export" data-fit-label="SIEM-Export"/> SIEM-Export</label>
         </fieldset>
-        <fieldset><legend>Security</legend>
+        <fieldset class="fit-requirement-card"><legend><span>06</span><b>Security</b><small>Verschlüsselung & Nachweise</small></legend>
           <label><input type="checkbox" data-fit-path="security.encryption.at_rest" data-fit-label="Verschlüsselung at rest"/> Verschlüsselung at rest</label>
           <label><input type="checkbox" data-fit-path="security.encryption.in_transit" data-fit-label="Verschlüsselung in transit"/> Verschlüsselung in transit</label>
           <label><input type="checkbox" data-fit-path="security.customer_managed_key" data-fit-label="Customer-Managed Key"/> Customer-Managed Key</label>
           <label><input type="checkbox" data-fit-path="security.soc2_type2" data-fit-label="SOC 2 Type II"/> SOC 2 Type II</label>
         </fieldset>
       </div>
-      <div class="finder-form-actions"><button id="fit-run" class="finder-submit" type="button" disabled>AgentenFit berechnen →</button><span id="fit-status" role="status" aria-live="polite">Evidenzdaten werden geladen …</span></div>
+      <div class="fit-action-bar">
+        <div class="fit-action-copy"><small>Bereit für den Abgleich</small><span id="fit-status" role="status" aria-live="polite">Evidenzdaten werden geladen …</span></div>
+        <button id="fit-run" class="fit-run-modern" type="button" disabled><span>AgentenFit berechnen</span><b>→</b></button>
+      </div>
     </div>
 
     <div class="finder-results-head"><div><p class="kicker">Fit-Ergebnis</p><h2>Anforderungen gegen Evidenz geprüft</h2></div><p>Die Reihenfolge berücksichtigt ausschließlich deine Auswahl. Unknown zählt weder als erfüllt noch als nicht erfüllt.</p></div>
