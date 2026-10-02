@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:24:46Z",
+  "updated_at": "2026-10-02T03:28:19Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -2718,6 +2718,90 @@
         "token_delta_pct": 66.67
       },
       "previous_checked_at": "2026-10-02T03:19:58Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-5DBBC90D238DC12303",
+      "detected_at": "2026-10-02T03:27:28Z",
+      "source_id": "SRC-9172020652E3C9",
+      "agent_ids": [
+        "AI-0044"
+      ],
+      "source_title": "Gorgias Help – View event logs for AI Agent Actions",
+      "url": "https://docs.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
+      "change_type": "redirect_change",
+      "severity": "medium",
+      "metrics": {
+        "old_final_url": "https://docs.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
+        "new_final_url": "https://helpcenter.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784"
+      },
+      "previous_checked_at": "2026-10-02T03:23:53Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-FCD2D8CBCA501BAD94",
+      "detected_at": "2026-10-02T03:27:51Z",
+      "source_id": "SRC-EE7AF67DAA67D2",
+      "agent_ids": [
+        "AI-0094"
+      ],
+      "source_title": "Moveworks – Roles and Permissions",
+      "url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
+        "new_hash": "14fb6a69709e54ff7d98772a8a0d7229712131d5bffb7d3373d613efa30b7f42",
+        "simhash_distance": 0,
+        "old_token_count": 2617,
+        "new_token_count": 2617,
+        "token_delta_pct": 0.0
+      },
+      "previous_checked_at": "2026-10-02T03:24:14Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-4E241BE3EEFA77B2F1",
+      "detected_at": "2026-10-02T03:27:55Z",
+      "source_id": "SRC-B969F44FC88CEF",
+      "agent_ids": [
+        "AI-0090"
+      ],
+      "source_title": "Slack Help – Manage members with SCIM provisioning",
+      "url": "https://slack.com/help/articles/212572638-Manage-members-with-SCIM-provisioning/1000",
+      "change_type": "status_change",
+      "severity": "high",
+      "metrics": {
+        "old_status": 200,
+        "new_status": 429
+      },
+      "previous_checked_at": "2026-10-02T03:24:23Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-AD2C80975FDA3C8D93",
+      "detected_at": "2026-10-02T03:28:12Z",
+      "source_id": "SRC-DB7170B5A59F4E",
+      "agent_ids": [
+        "AI-0046"
+      ],
+      "source_title": "Salesforce Shield",
+      "url": "https://www.salesforce.com/platform/shield/",
+      "change_type": "content_change",
+      "severity": "high",
+      "metrics": {
+        "old_hash": "82c6300d2d91d2b59cda639b916b62c313af62e287ff43a0ffec389671a0f5d9",
+        "new_hash": "5a7bf3a8fcf1ddafcf7a0811f4affe5f26c9d467d772882852bcbb0c325c78ae",
+        "simhash_distance": 13,
+        "old_token_count": 1827,
+        "new_token_count": 1163,
+        "token_delta_pct": -36.34
+      },
+      "previous_checked_at": "2026-10-02T03:24:40Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }

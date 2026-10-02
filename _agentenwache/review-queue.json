@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T03:24:46Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T03:28:19Z",
+  "open_count": 4,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -177,11 +177,11 @@
     },
     {
       "review_id": "REV-069EB2C36E7175D6C1",
-      "status": "acknowledged",
-      "first_detected": "2026-10-02T03:19:59Z",
-      "last_detected": "2026-10-02T03:19:59Z",
+      "status": "open",
+      "first_detected": "2026-10-02T03:27:55Z",
+      "last_detected": "2026-10-02T03:27:55Z",
       "occurrences": 1,
-      "severity": "medium",
+      "severity": "high",
       "change_type": "status_change",
       "source_id": "SRC-B969F44FC88CEF",
       "source_title": "Slack Help – Manage members with SCIM provisioning",
@@ -190,30 +190,28 @@
         "AI-0090"
       ],
       "previous": {
-        "status_code": 429,
-        "final_url": "https://slack.com/intl/de-de/help/articles/212572638-Manage-members-with-SCIM-provisioning/1000",
-        "text_hash": null,
-        "simhash64": null,
-        "token_count": null,
-        "text_sample": null
-      },
-      "current": {
         "status_code": 200,
         "final_url": "https://slack.com/intl/de-de/help/articles/212572638-Mitglieder-mit-SCIM-Zugriffsrechten-verwalten",
         "text_hash": "e17a3e56625a118ccf494804f24285a487c52938efed5b397296d280b5356f8f",
         "simhash64": "e42256677e089c51",
         "token_count": 800,
-        "text_sample": "Workspace-Management Du möchtest mehr darüber wissen, wie du dein Team einrichten kannst? Dann bist du hier richtig! Weiter Zurück Aktionen,Aktivität,Zugriffs-Logs,Barrierefreiheit,hinzufügen,App hinzufügen,Mitglieder hinzufügen,Zu Slack hinzufügen,Administratoren,alle Passwörter,Analytik,Android,Mitteilung,Mitteilungen,App-Verzeichnis,App-Symbol,Apple Watch,Apps genehmigen,archivieren,Asana,Atlassian,Automatisierungs-Apps,Badge,Rechnungsdaten,Rechnungsstellung,Bitbucket,Bot-Benutzer,Box,Durchsuchen,Anrufe,Anrufe:,abbrechen,Änderungen,Channels,Channel sofort,Channel-Management,Channel-Benachrichtigung,Channel-Vorschläge,Domains beanspruchen,schließen,Unternehmenskultur,Compliance-Exporte,verfassen,Computer,Unterhaltungen,konvertierenverbinden,verknüpfte Accounts,Verbindung,verbinden,Nachrichten kopieren,erstellen,Anpassung,anpassen,Benutzerdefinierte SAML,benutzerdefiniert,Kunden-Support-Teams,Datenexporte,Datensicherheit,deaktivieren,Standard-Channels,löschen,Löschung,Slack bereitstellen,Desktop,Direktnachrichten,Verzeichnis,deaktivieren,entdecken und beitreten,Ermittlungs-APIs,Anzeigename,DMs,Bitte nicht stören,Domain,Domains,Downgrade,Dropbox,doppelte Accounts,bearbeiten,Bearbei",
-        "result": "fetched",
-        "error": null
+        "text_sample": "Workspace-Management Du möchtest mehr darüber wissen, wie du dein Team einrichten kannst? Dann bist du hier richtig! Weiter Zurück Aktionen,Aktivität,Zugriffs-Logs,Barrierefreiheit,hinzufügen,App hinzufügen,Mitglieder hinzufügen,Zu Slack hinzufügen,Administratoren,alle Passwörter,Analytik,Android,Mitteilung,Mitteilungen,App-Verzeichnis,App-Symbol,Apple Watch,Apps genehmigen,archivieren,Asana,Atlassian,Automatisierungs-Apps,Badge,Rechnungsdaten,Rechnungsstellung,Bitbucket,Bot-Benutzer,Box,Durchsuchen,Anrufe,Anrufe:,abbrechen,Änderungen,Channels,Channel sofort,Channel-Management,Channel-Benachrichtigung,Channel-Vorschläge,Domains beanspruchen,schließen,Unternehmenskultur,Compliance-Exporte,verfassen,Computer,Unterhaltungen,konvertierenverbinden,verknüpfte Accounts,Verbindung,verbinden,Nachrichten kopieren,erstellen,Anpassung,anpassen,Benutzerdefinierte SAML,benutzerdefiniert,Kunden-Support-Teams,Datenexporte,Datensicherheit,deaktivieren,Standard-Channels,löschen,Löschung,Slack bereitstellen,Desktop,Direktnachrichten,Verzeichnis,deaktivieren,entdecken und beitreten,Ermittlungs-APIs,Anzeigename,DMs,Bitte nicht stören,Domain,Domains,Downgrade,Dropbox,doppelte Accounts,bearbeiten,Bearbei"
+      },
+      "current": {
+        "status_code": 429,
+        "final_url": "https://slack.com/intl/de-de/help/articles/212572638-Mitglieder-mit-SCIM-Zugriffsrechten-verwalten",
+        "text_hash": null,
+        "simhash64": null,
+        "token_count": null,
+        "text_sample": null,
+        "result": "http_error",
+        "error": "HTTP Error 429: Too Many Requests"
       },
       "latest_metrics": {
-        "old_status": 429,
-        "new_status": 200
+        "old_status": 200,
+        "new_status": 429
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "acknowledged_at": "2026-10-02T03:20:32Z",
-      "resolution": "Source is healthy again; technical recovery acknowledged without asserting a product change."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-088A8B24E5A2A8E8AE",
@@ -334,9 +332,9 @@
     },
     {
       "review_id": "REV-13BE2EDD5C4E5D6A03",
-      "status": "reviewed_no_product_change",
-      "first_detected": "2026-10-02T03:19:53Z",
-      "last_detected": "2026-10-02T03:19:53Z",
+      "status": "open",
+      "first_detected": "2026-10-02T03:27:51Z",
+      "last_detected": "2026-10-02T03:27:51Z",
       "occurrences": 1,
       "severity": "low",
       "change_type": "content_change",
@@ -349,15 +347,15 @@
       "previous": {
         "status_code": 200,
         "final_url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications.md",
-        "text_hash": "0af85d776dc42741ac86d50af8809943e33313daaeeb296c503d8cdcb17207e1",
-        "simhash64": "8922964d552d0bd8",
+        "text_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
+        "simhash64": "8922960d552d0bd8",
         "token_count": 2617,
         "text_sample": "> For clean Markdown of any page, append .md to the page URL. > For a complete documentation index, see https://help.moveworks.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://help.moveworks.com/_mcp/server. # Roles and Permissions > **Info** > > ️ Pre-requisite: Please ask your single-sign on (SSO) Admin to follow [these instructions (link)](/service-management/administration/my-moveworks-overview) to configure Moveworks for your organization ([link](/service-management/administration/my-moveworks-overview)) and enable this application for you MyMoveworks is your one-stop portal to access all Moveworks applications. Within MyMoveworks there are a variety of applications (Moveworks Setup, Analytics, Agent Studio, Knowledge Studio, etc.) This guide will explain how to grant users access to specific applications. # Roles and Permissions for Administrators Moveworks provides Role-based Access Control (RBAC) capabilities for all Moveworks developed applications. As an administrator, learn to manage access to applications through the “Roles and Permissions” application in this section. There are three types of access you can con"
       },
       "current": {
         "status_code": 200,
         "final_url": "https://help.moveworks.com/service-management/administration/manage-roles-and-permissions-for-moveworks-applications.md",
-        "text_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
+        "text_hash": "14fb6a69709e54ff7d98772a8a0d7229712131d5bffb7d3373d613efa30b7f42",
         "simhash64": "8922960d552d0bd8",
         "token_count": 2617,
         "text_sample": "> For clean Markdown of any page, append .md to the page URL. > For a complete documentation index, see https://help.moveworks.com/llms.txt. > For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://help.moveworks.com/_mcp/server. # Roles and Permissions > **Info** > > ️ Pre-requisite: Please ask your single-sign on (SSO) Admin to follow [these instructions (link)](/service-management/administration/my-moveworks-overview) to configure Moveworks for your organization ([link](/service-management/administration/my-moveworks-overview)) and enable this application for you MyMoveworks is your one-stop portal to access all Moveworks applications. Within MyMoveworks there are a variety of applications (Moveworks Setup, Analytics, Agent Studio, Knowledge Studio, etc.) This guide will explain how to grant users access to specific applications. # Roles and Permissions for Administrators Moveworks provides Role-based Access Control (RBAC) capabilities for all Moveworks developed applications. As an administrator, learn to manage access to applications through the “Roles and Permissions” application in this section. There are three types of access you can con",
@@ -365,16 +363,14 @@
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "0af85d776dc42741ac86d50af8809943e33313daaeeb296c503d8cdcb17207e1",
-        "new_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
-        "simhash_distance": 1,
+        "old_hash": "04b85e1a5c603c6eb15d48e53f3b8d1d86e3080e0b15e8f0f179c57f1fc442c5",
+        "new_hash": "14fb6a69709e54ff7d98772a8a0d7229712131d5bffb7d3373d613efa30b7f42",
+        "simhash_distance": 0,
         "old_token_count": 2617,
         "new_token_count": 2617,
-        "token_delta_pct": 0
+        "token_delta_pct": 0.0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "resolution": "Reviewed the current Moveworks Roles and Permissions documentation. It still explicitly documents RBAC across Moveworks applications including Agent Studio; the low-severity render change does not alter an indexed product fact.",
-      "reviewed_at": "2026-10-02T03:24:00Z"
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-19E755BE20CCF1EEFE",
@@ -1167,6 +1163,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "The Luminance Legal page changed only marginally; the current content still supports the indexed legal contract-intelligence capabilities and no indexed product fact changed.",
       "reviewed_at": "2026-10-01T16:38:00Z"
+    },
+    {
+      "review_id": "REV-56814C638C3DA18ECF",
+      "status": "open",
+      "first_detected": "2026-10-02T03:27:28Z",
+      "last_detected": "2026-10-02T03:27:28Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "redirect_change",
+      "source_id": "SRC-9172020652E3C9",
+      "source_title": "Gorgias Help – View event logs for AI Agent Actions",
+      "url": "https://docs.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
+      "agent_ids": [
+        "AI-0044"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://docs.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
+        "text_hash": "17f3f8ea7839a6a6d5d686ac0aa28e60c13e4df4c3aa4f96dbdae9da9e902700",
+        "simhash64": "a6b8732ab9abc8b3",
+        "token_count": 409,
+        "text_sample": "View event logs for AI Agent Actions Updated 2 months ago AI Agent uses Actions to make changes in the apps that you use to run your store and resolve shoppers’ tickets. Admins and Team Leads can see an event log for each Action that AI Agent uses to respond to shoppers’ tickets. Each log provides a record of when the Action was used, the result of the Action (whether it succeeded or failed), and any errors that occurred. The event log is especially useful for troubleshooting. A technical audience can use logs to investigate and fix errors that prevent an Action from working, including the Gorgias Support Team. Requirements You must have an active AI Agent subscription You must be a Lead , Admin or Account Owner to view event logs View an Action’s event logs A new entry is created in an event log whenever AI Agent uses an Action and makes an HTTP request to a connected app. Each entry shows when the Action was attempted (Last Updated), the status of the Action (Success or Error), and a link to the ticket where the Action was used (Ticket ID). To view the event log for an Action: Open the dropdown menu in the top-left corner, then select AI Agent . Click Actions . If you have more t"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://helpcenter.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
+        "text_hash": "5da0c0f9af335d36814882c945576625585cc781dbc15cac8577675a2dc456be",
+        "simhash64": "26b8736ab9ebc8b3",
+        "token_count": 446,
+        "text_sample": "View event logs for AI Agent Actions | Gorgias Help Center Ask anything Browse topics Get Started AI Agent & Automation Productivity Channels Integrations Account Setup Daily Operations Reporting & Analytics Resources View event logs for AI Agent Actions Updated July 22, 2026 AI Agent uses Actions to make changes in the apps that you use to run your store and resolve shoppers’ tickets. Admins and Team Leads can see an event log for each Action that AI Agent uses to respond to shoppers’ tickets. Each log provides a record of when the Action was used, the result of the Action (whether it succeeded or failed), and any errors that occurred. The event log is especially useful for troubleshooting. A technical audience can use logs to investigate and fix errors that prevent an Action from working, including the Gorgias Support Team. Requirements You must have an active AI Agent subscription You must be a Lead , Admin or Account Owner to view event logs View an Action’s event logs A new entry is created in an event log whenever AI Agent uses an Action and makes an HTTP request to a connected app. Each entry shows when the Action was attempted (Last Updated), the status of the Action (Succe",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_final_url": "https://docs.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784",
+        "new_final_url": "https://helpcenter.gorgias.com/en-US/view-event-logs-for-ai-agent-actions-1059784"
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-56D597CD8834F0D2CA",
@@ -3327,6 +3361,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "acknowledged_at": "2026-10-01T13:26:37Z",
       "resolution": "Source is explicitly manual_only; automated availability review is not actionable."
+    },
+    {
+      "review_id": "REV-E55A27E74A9DFAA578",
+      "status": "open",
+      "first_detected": "2026-10-02T03:28:12Z",
+      "last_detected": "2026-10-02T03:28:12Z",
+      "occurrences": 1,
+      "severity": "high",
+      "change_type": "content_change",
+      "source_id": "SRC-DB7170B5A59F4E",
+      "source_title": "Salesforce Shield",
+      "url": "https://www.salesforce.com/platform/shield/",
+      "agent_ids": [
+        "AI-0046"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://www.salesforce.com/platform/shield/?bc=DB",
+        "text_hash": "82c6300d2d91d2b59cda639b916b62c313af62e287ff43a0ffec389671a0f5d9",
+        "simhash64": "98223a87121828b3",
+        "token_count": 1827,
+        "text_sample": "Watch demo Get the datasheet Watch demo Get the datasheet Block risky behavior before it creates a problem Proactively protect your sensitive data from internal and external risks. Instantly block and get alerted to suspicious activity like bulk exports or unauthorized logins using customizable security policies. Surface unknown anomalies before they become breaches. Monitor who, when, and where data was accessed or changed Gain deep visibility into user behavior. Track a broad range of events to see exactly what data your users—both humans and AI agents—are accessing. Easily connect and stream real-time events to your SIEM or SSPM so your security team has the full picture. Visualize activity across security, performance, and adoption use cases Turn event data into actionable insights. Monitor security, performance, and adoption at a glance with pre-built dashboards, empowering you to eliminate bottlenecks before they impact users. Watch demo Get Datasheet Protect your most sensitive data without sacrificing functionality Set encryption policies to protect your most sensitive data and maintain regulatory compliance. Easily point and click to select the data you’d like to encrypt, "
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://www.salesforce.com/platform/shield/?bc=DB",
+        "text_hash": "5a7bf3a8fcf1ddafcf7a0811f4affe5f26c9d467d772882852bcbb0c325c78ae",
+        "simhash64": "b8263a011a102c65",
+        "token_count": 1163,
+        "text_sample": "Watch demo Get the datasheet Having that single source of truth helps you master your data and know how to share your data. Only the member or the entity that needs their data can access it. Brian Cahill VP, Pharmacy Segment CIO, Humana Read the story Learn more Sign up now Datasheet How to gain visibility and insights into Salesforce data with Event Monitoring Get the datasheet Datasheet How to encrypt data and maintain business functionality with Platform Encryption Get the datasheet Datasheet How to track changes to sensitive data with Field Audit Trail Get the datasheet Datasheet How to find and classify sensitive data with Data Detect Get the datasheet Start your trial. Try Salesforce Platform Services for 30 days. No credit card, no installations. Try for free Talk to an expert. Tell us a bit more so the right person can reach out faster. Request a call Stay up to date. Get the latest research, industry insights, and product news delivered straight to your inbox. Sign up for newsletter Shield FAQs Data loss prevention solutions What is Salesforce Shield? Salesforce Shield is a suite of four products that exist for organizations who need a level of security and protection abov",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "82c6300d2d91d2b59cda639b916b62c313af62e287ff43a0ffec389671a0f5d9",
+        "new_hash": "5a7bf3a8fcf1ddafcf7a0811f4affe5f26c9d467d772882852bcbb0c325c78ae",
+        "simhash_distance": 13,
+        "old_token_count": 1827,
+        "new_token_count": 1163,
+        "token_delta_pct": -36.34
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-E5D74BB58A9399C244",
