@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-10-02",
+  "principle": "Nur redaktionell bestätigte, für KI-Agenten relevante Änderungen mit Primärquelle. Keine Meldung wird allein aus einem Monitoring-Signal veröffentlicht.",
+  "editorial_rules": {
+    "target_words": "200-400",
+    "primary_sources_required": true,
+    "agent_profile_link_required": true,
+    "states": [
+      "new_capability",
+      "security_governance",
+      "availability",
+      "pricing",
+      "lifecycle",
+      "integration",
+      "protocol"
+    ],
+    "exclude": [
+      "Gerüchte",
+      "reine Finanzierungsnews ohne Produktänderung",
+      "allgemeine KI-News ohne Agentenbezug",
+      "unbestätigte Social-Media-Claims"
+    ]
+  },
+  "items": [
+    {
+      "id": "NEWS-2026-10-02-001",
+      "slug": "gemini-cli-a2a-server",
+      "headline": "Gemini CLI dokumentiert eigenen A2A-Server für Agenten-Interoperabilität",
+      "description": "Google dokumentiert im offiziellen Gemini-CLI-Repository einen A2A-Server. Damit kann Gemini CLI nicht nur A2A-Subagenten ansprechen, sondern selbst als A2A-Server auftreten.",
+      "date_published": "2026-10-02T08:35:00+02:00",
+      "date_modified": "2026-10-02T08:35:00+02:00",
+      "section": "Protokolle & Interoperabilität",
+      "change_type": "protocol",
+      "agent_id": "AI-0064",
+      "agent_name": "Gemini CLI",
+      "agent_slug": "gemini-cli",
+      "provider": "Google",
+      "source": {
+        "title": "Google Gemini CLI – A2A server package",
+        "url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/package.json"
+      },
+      "secondary_source": {
+        "title": "Google Gemini CLI – A2A Development-Tool Extension RFC",
+        "url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/development-extension-rfc.md"
+      },
+      "tags": [
+        "Gemini CLI",
+        "Google",
+        "A2A",
+        "Agent-to-Agent",
+        "Coding-Agenten",
+        "Interoperabilität"
+      ],
+      "summary": "Gemini CLI ist im AgentenIndex bereits als A2A-Client dokumentiert. Neu belegt ist zusätzlich die Server-Rolle: Das offizielle Repository enthält ein eigenes A2A-Server-Paket mit der A2A-JavaScript-SDK als Laufzeitabhängigkeit.",
+      "body": [
+        "Google dokumentiert für Gemini CLI jetzt auch eine eigene A2A-Server-Komponente. Im offiziellen Repository liegt unter „packages/a2a-server“ ein separates Paket, das die offizielle A2A-JavaScript-SDK als Laufzeitabhängigkeit nutzt. Zusätzlich beschreibt ein Development-Tool-RFC die Kommunikation zwischen Clients und dem Gemini-CLI-Agenten auf Basis des Agent-to-Agent-Protokolls, einschließlich Agent Card sowie Nachrichten- und Streaming-Mechanismen.",
+        "Für die Einordnung von Gemini CLI ist das relevant, weil damit zwei unterschiedliche Rollen belegt sind. Gemini CLI kann bereits dokumentiert als A2A-Client Aufgaben an kompatible Remote-Subagenten delegieren. Mit dem A2A-Server-Paket kommt nun die Gegenrichtung hinzu: Externe A2A-Clients können Gemini CLI als Agenten-Endpunkt ansprechen. AgentenIndex führt deshalb neben „A2A unterstützt“ und „A2A Client“ auch „A2A Server“ als bestätigten Field-Level-Claim.",
+        "Für Unternehmen und Entwickler ist das vor allem ein Interoperabilitätssignal. A2A soll Agenten unterschiedlicher Systeme über eine standardisierte Schnittstelle miteinander kommunizieren lassen. Die neue Evidenz bedeutet jedoch nicht automatisch, dass jede Gemini-CLI-Installation ohne weitere Konfiguration produktiv als öffentlich erreichbarer A2A-Dienst betrieben werden sollte. Authentifizierung, Netzwerkfreigaben und Betriebsmodell müssen weiterhin separat bewertet werden.",
+        "Die Änderung wurde am 2. Oktober 2026 anhand des offiziellen Google-GitHub-Repositories geprüft und in AgentenGraph sowie im Gemini-CLI-AgentenProfil nachvollziehbar hinterlegt."
+      ],
+      "before_after": {
+        "before": "A2A-Unterstützung und A2A-Client waren dokumentiert; eine Server-Rolle war im AgentenIndex noch nicht feldgenau belegt.",
+        "after": "A2A-Server ist durch das offizielle Gemini-CLI-Repository und den zugehörigen RFC als dokumentierter Claim bestätigt."
+      }
+    },
+    {
+      "id": "NEWS-2026-10-02-002",
+      "slug": "relay-app-eingestellt-september-2026",
+      "headline": "Relay.app wurde eingestellt: Agenten- und Workflow-Plattform seit September 2026 offline",
+      "description": "Relay.app bestätigt die Einstellung des Dienstes im September 2026. Accounts, Workflows und Run-Historie wurden laut Anbieter dauerhaft gelöscht.",
+      "date_published": "2026-10-02T08:36:00+02:00",
+      "date_modified": "2026-10-02T08:36:00+02:00",
+      "section": "Lifecycle & Verfügbarkeit",
+      "change_type": "lifecycle",
+      "agent_id": "AI-0022",
+      "agent_name": "Relay.app",
+      "agent_slug": "relay-app",
+      "provider": "Relay.app",
+      "source": {
+        "title": "Relay.app – Shutdown notice",
+        "url": "https://relay.app/"
+      },
+      "tags": [
+        "Relay.app",
+        "Lifecycle",
+        "Einstellung",
+        "Automatisierung",
+        "Agenten-Plattform"
+      ],
+      "summary": "Relay.app bestätigt auf der eigenen Website die Einstellung des Dienstes im September 2026. AgentenIndex führt das Produkt deshalb nicht mehr als aktiven Kandidaten in Research-Priorität oder AgentenFit.",
+      "body": [
+        "Relay.app ist nicht mehr als aktiver Dienst verfügbar. Der Anbieter bestätigt auf der offiziellen Website, dass Relay.app im September 2026 eingestellt wurde. Nach der Mitteilung wurden sämtliche Accounts, Workflows und die Run-Historie dauerhaft gelöscht. Die frühere Plattform hatte Unternehmen dabei unterstützt, Arbeitsabläufe mit KI, SaaS-Verbindungen und menschlichen Freigabeschritten zu automatisieren.",
+        "Für AgentenIndex ist das mehr als eine normale Produktänderung. Ein eingestellter Agent darf weder als aktuell verfügbare Option im Finder noch als gewöhnliche Research-Lücke behandelt werden. Das Profil von Relay.app trägt deshalb inzwischen den Lifecycle-Status „discontinued“. In AgentenGraph bleibt der historische Produktkontext erhalten, während die Research-Priorität auf „P3_discontinued“ gesetzt ist. AgentenFit schließt eingestellte Produkte aus dem aktiven Anforderungsabgleich aus.",
+        "Die offizielle Shutdown-Seite enthält außerdem einen wichtigen Datenhinweis: Relay.app erklärt, dass Accounts, Workflows und Run-Historie dauerhaft gelöscht wurden. Daraus folgt jedoch keine allgemeine Aussage über frühere Aufbewahrungsfristen oder andere historische Datenschutzmerkmale. Solche nicht ausdrücklich belegten Eigenschaften bleiben im AgentenIndex weiterhin unbekannt.",
+        "Die Lifecycle-Änderung wurde am 1. Oktober redaktionell übernommen und am 2. Oktober 2026 erneut gegen die offizielle Anbieter-Mitteilung geprüft. Das frühere AgentenProfil bleibt als historischer Referenzpunkt erreichbar."
+      ],
+      "before_after": {
+        "before": "Relay.app wurde als aktive Agenten- und Workflow-Plattform geführt.",
+        "after": "Relay.app ist als „discontinued“ markiert und wird aus aktiven Fit- und Research-Workflows ausgeschlossen."
+      }
+    }
+  ]
+}
