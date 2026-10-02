@@ -1,4 +1,213 @@
 <!DOCTYPE html>
-<html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>KI-Agenten sicher einsetzen: Rechte, Daten und Kontrolle | AgentenIndex</title><meta content="Je mehr ein Agent handeln darf, desto wichtiger sind minimale Berechtigungen, getrennte Umgebungen, Freigaben, Protokollierung und ein klarer Umgang mit se" name="description"/><meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><link href="https://agentenindex.de/wissen/ki-agenten-sicherheit/" rel="canonical"/><link href="/assets/styles.css?v=8.2.0" rel="stylesheet"/><meta content="article" property="og:type"/><meta content="de_DE" property="og:locale"/><meta content="AgentenIndex" property="og:site_name"/><meta content="KI-Agenten sicher einsetzen: Rechte, Daten und Kontrolle | AgentenIndex" property="og:title"/><meta content="Je mehr ein Agent handeln darf, desto wichtiger sind minimale Berechtigungen, getrennte Umgebungen, Freigaben, Protokollierung und ein klarer Umgang mit se" property="og:description"/><meta content="https://agentenindex.de/wissen/ki-agenten-sicherheit/" property="og:url"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://agentenindex.de/#organization","name":"AgentenIndex","url":"https://agentenindex.de/","description":"Unabhängige deutschsprachige Referenz für KI-Agenten.","logo":{"@type":"ImageObject","url":"https://agentenindex.de/assets/agentenindex-profile-1024.png","width":1024,"height":1024},"sameAs":["https://github.com/agentenindex"]},{"@type":"WebSite","@id":"https://agentenindex.de/#website","name":"AgentenIndex","url":"https://agentenindex.de/","inLanguage":"de-DE","publisher":{"@id":"https://agentenindex.de/#organization"}},{"@type":"Article","@id":"https://agentenindex.de/wissen/ki-agenten-sicherheit/#article","headline":"KI-Agenten sicher einsetzen: Rechte, Daten und Kontrolle","description":"Je mehr ein Agent handeln darf, desto wichtiger sind minimale Berechtigungen, getrennte Umgebungen, Freigaben, Protokollierung und ein klarer Umgang mit se","dateModified":"2026-10-01","inLanguage":"de-DE","author":{"@type":"Organization","name":"AgentenIndex","url":"https://agentenindex.de/ueber/"},"publisher":{"@id":"https://agentenindex.de/#organization"},"mainEntityOfPage":"https://agentenindex.de/wissen/ki-agenten-sicherheit/"},{"@type":"BreadcrumbList","@id":"https://agentenindex.de/wissen/ki-agenten-sicherheit/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Start","item":"https://agentenindex.de/"},{"@type":"ListItem","position":2,"name":"Wissen","item":"https://agentenindex.de/wissen/"},{"@type":"ListItem","position":3,"name":"KI-Agenten sicher einsetzen: Rechte, Daten und Kontrolle","item":"https://agentenindex.de/wissen/ki-agenten-sicherheit/"}]}]}</script><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="manifest" href="/site.webmanifest"/><meta name="theme-color" content="#f7f9fc"/><meta content="https://agentenindex.de/assets/agentenindex-og-1200x630.jpg" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="AgentenIndex – KI-Agenten verstehen, finden und vergleichen" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="https://agentenindex.de/assets/agentenindex-og-1200x630.jpg" name="twitter:image"/></head><body><a class="skip" href="#main">Zum Inhalt springen</a>
-<div class="topnote"><div class="container"><span>Stand: 30. September 2026 · Source-first Referenz</span><span>110 dokumentierte Agenten &amp; Plattformen · Keine bezahlten Rankings</span></div></div>
-<header class="site-header"><div class="container header"><a class="brand" href="/" aria-label="AgentenIndex Startseite"><img alt="" aria-hidden="true" class="brand-symbol-v2" height="40" src="/assets/agentenindex-symbol-v2.svg" width="40"/><span class="brand-wordmark-v2"><span class="brand-main-v2">Agenten</span><span class="brand-accent-v2">Index</span></span></a><nav aria-label="Hauptnavigation" class="nav"><a href="/agenten/">Agenten</a><a class="nav-finder" href="/finder/">Finder</a><a href="/anwendungen/">Anwendungen</a><a href="/privatpersonen/">Privat</a><a href="/unternehmen/">Unternehmen</a><a href="/wissen/">Wissen</a><a href="/methodik/">Methodik</a><a class="nav-check" href="https://check.agentenindex.de/">Agenten-Check</a></nav><button aria-label="Menü öffnen" class="menu">Menü</button></div></header><main id="main"><section class="subhero"><div class="container"><div class="breadcrumbs"><a href="/">Start</a><span>›</span><a href="/wissen/">Wissen</a><span>›</span>KI-Agenten sicher einsetzen: Rechte, Daten und Kontrolle</div><p class="kicker">AgentenIndex Wissen</p><h1>KI-Agenten sicher einsetzen: Rechte, Daten und Kontrolle</h1><p class="lead">Je mehr ein Agent handeln darf, desto wichtiger sind minimale Berechtigungen, getrennte Umgebungen, Freigaben, Protokollierung und ein klarer Umgang mit sensiblen Daten. Sicherheit ist Teil des Agentendesigns, nicht nur eine spätere Einstellung.</p></div></section><section class="article"><div class="container article-grid"><article><div class="meta"><span>Redaktion: <a href="/ueber/">AgentenIndex</a></span></div><div class="answerbox"><strong>Kurzantwort</strong><p>Je mehr ein Agent handeln darf, desto wichtiger sind minimale Berechtigungen, getrennte Umgebungen, Freigaben, Protokollierung und ein klarer Umgang mit sensiblen Daten. Sicherheit ist Teil des Agentendesigns, nicht nur eine spätere Einstellung.</p></div><h2>Least Privilege</h2><p>Ein Agent sollte nur die Daten und Werkzeuge erhalten, die für seine Aufgabe wirklich nötig sind.</p><h2>Human-in-the-loop</h2><p>Irreversible, finanzielle, rechtliche oder öffentlich sichtbare Aktionen sollten klar definierte Freigabepunkte haben.</p><h2>Prompt Injection und externe Inhalte</h2><p>Agenten können manipulierte Inhalte aus Webseiten, E-Mails oder Dokumenten lesen. Externe Instruktionen dürfen nicht automatisch als vertrauenswürdig gelten.</p><h2>Logs und Observability</h2><p>Organisationen sollten nachvollziehen können, welche Tools ein Agent genutzt und welche Aktionen er ausgelöst hat.</p><h2>Tests</h2><p>Agenten brauchen Tests mit realistischen Grenzfällen, nicht nur Demo-Prompts.</p><div class="callout"><h2>Agenten konkret ansehen</h2><p>Die Theorie wird verständlicher, wenn man reale Produkte vergleicht. AgentenIndex dokumentiert 110 Agenten und Plattformen mit offiziellen Quellen.</p><a class="more" href="/agenten/">Alle Agentenprofile →</a></div></article><aside class="toc"><strong>Weiterlesen</strong><a href="/wissen/was-ist-ein-ki-agent/">Was ist ein KI-Agent?</a><a href="/wissen/agentic-ai/">Was ist Agentic AI?</a><a href="/wissen/mcp/">MCP erklärt</a><a href="/wissen/a2a/">A2A erklärt</a><a href="/glossar/">Glossar</a></aside></div></section></main><footer class="footer"><div class="container footer-grid"><div><a class="brand" href="/" aria-label="AgentenIndex Startseite"><img alt="" aria-hidden="true" class="brand-symbol-v2" height="40" src="/assets/agentenindex-symbol-v2.svg" width="40"/><span class="brand-wordmark-v2"><span class="brand-main-v2">Agenten</span><span class="brand-accent-v2">Index</span></span></a><p>KI-Agenten verstehen, finden und vergleichen.</p><p class="footer-small">Unabhängige deutschsprachige Referenz · Quellenbasiert · Stand 1. Oktober 2026</p></div><div class="footer-links"><a href="/agenten/">Agenten</a><a href="/finder/">AgentenFinder</a><a href="/wissen/">Wissen</a><a href="/privatpersonen/">Privatpersonen</a><a href="/unternehmen/">Unternehmen</a><a href="/methodik/">Methodik</a><a href="/ueber/">Über</a><a class="footer-check" href="https://check.agentenindex.de/">Agenten-Check</a></div></div><div class="container foot-bottom"><span>© 2026 AgentenIndex</span><span class="legal-links"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></span></div><div class="container footer-note">Funktionen, Preise und Verfügbarkeit können sich kurzfristig ändern. Entscheidend sind die auf den Profilseiten verlinkten Primärquellen.</div></footer><script defer="" src="/assets/app.js"></script></body></html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>KI-Agenten Sicherheit: Risiken, Schutzmaßnahmen & Checkliste 2026 | AgentenIndex</title>
+<meta name="description" content="KI-Agenten sicher einsetzen: Risiken wie Prompt Injection, Tool-Missbrauch und Datenabfluss verstehen. Mit Schutzmaßnahmen, Unternehmens-Checkliste, MCP/A2A-Hinweisen und Primärquellen."/>
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/>
+<link rel="canonical" href="https://agentenindex.de/wissen/ki-agenten-sicherheit/"/>
+<link rel="stylesheet" href="/assets/styles.css?v=8.7.0"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="de_DE"/>
+<meta property="og:site_name" content="AgentenIndex"/>
+<meta property="og:title" content="KI-Agenten Sicherheit: Risiken, Schutzmaßnahmen & Checkliste 2026"/>
+<meta property="og:description" content="Source-first Referenz zu Sicherheit bei KI-Agenten: Identität, Least Privilege, Prompt Injection, Tool Approval, Daten, Logs, Memory, MCP/A2A und praktische Prüfschritte."/>
+<meta property="og:url" content="https://agentenindex.de/wissen/ki-agenten-sicherheit/"/>
+<meta property="og:image" content="https://agentenindex.de/assets/agentenindex-og-1200x630.jpg"/>
+<meta property="article:published_time" content="2026-09-30T10:00:00+02:00"/>
+<meta property="article:modified_time" content="2026-10-02T09:05:00+02:00"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://agentenindex.de/#organization","name":"AgentenIndex","url":"https://agentenindex.de/","description":"Unabhängige deutschsprachige Referenz für KI-Agenten.","logo":{"@type":"ImageObject","url":"https://agentenindex.de/assets/agentenindex-profile-1024.png","width":1024,"height":1024},"sameAs":["https://github.com/agentenindex"]},{"@type":"WebSite","@id":"https://agentenindex.de/#website","name":"AgentenIndex","url":"https://agentenindex.de/","inLanguage":"de-DE","publisher":{"@id":"https://agentenindex.de/#organization"}},{"@type":"Article","@id":"https://agentenindex.de/wissen/ki-agenten-sicherheit/#article","headline":"KI-Agenten Sicherheit: Risiken, Schutzmaßnahmen & Checkliste 2026","description":"Source-first Referenz zu Sicherheitsrisiken und Schutzmaßnahmen für KI-Agenten.","datePublished":"2026-09-30T10:00:00+02:00","dateModified":"2026-10-02T09:05:00+02:00","inLanguage":"de-DE","author":{"@type":"Organization","name":"AgentenIndex Redaktion","url":"https://agentenindex.de/ueber/"},"publisher":{"@id":"https://agentenindex.de/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://agentenindex.de/wissen/ki-agenten-sicherheit/"},"image":["https://agentenindex.de/assets/agentenindex-og-1200x630.jpg"],"articleSection":"KI-Agenten Sicherheit","about":[{"@type":"Thing","name":"KI-Agenten Sicherheit"},{"@type":"Thing","name":"Prompt Injection"},{"@type":"Thing","name":"Least Privilege"},{"@type":"Thing","name":"Human-in-the-loop"},{"@type":"Thing","name":"MCP"},{"@type":"Thing","name":"A2A"}],"citation":["https://www.nist.gov/news-events/news/2026/02/new-concept-paper-identity-and-authority-software-agents","https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html","https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents","https://learn.microsoft.com/en-us/security/zero-trust/sfi/manage-agentic-risk","https://developers.openai.com/api/docs/guides/agent-builder-safety"],"isBasedOn":["https://www.nist.gov/news-events/news/2026/02/new-concept-paper-identity-and-authority-software-agents","https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html","https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents","https://developers.openai.com/api/docs/guides/agent-builder-safety"]},{"@type":"FAQPage","@id":"https://agentenindex.de/wissen/ki-agenten-sicherheit/#faq","mainEntity":[{"@type":"Question","name":"Sind KI-Agenten sicher?","acceptedAnswer":{"@type":"Answer","text":"KI-Agenten können sicherer betrieben werden, wenn Identitäten, Datenzugriffe, Werkzeuge und Aktionen begrenzt, kritische Schritte freigegeben und Aktivitäten protokolliert werden. Das Risiko steigt mit Datenzugriff, Tool-Rechten und Autonomie."}},{"@type":"Question","name":"Was ist das größte Sicherheitsrisiko bei KI-Agenten?","acceptedAnswer":{"@type":"Answer","text":"Es gibt kein einzelnes größtes Risiko. Besonders relevant sind Prompt Injection, übermäßige Berechtigungen, Tool-Missbrauch, Datenabfluss, unsichere externe Inhalte, Memory Poisoning und fehlende Nachvollziehbarkeit."}},{"@type":"Question","name":"Wie schützt man KI-Agenten vor Prompt Injection?","acceptedAnswer":{"@type":"Answer","text":"Externe Inhalte sollten als nicht vertrauenswürdig behandelt, Tool-Rechte begrenzt, strukturierte Übergaben bevorzugt und kritische Aktionen durch deterministische Regeln oder menschliche Freigaben geschützt werden."}},{"@type":"Question","name":"Wann braucht ein KI-Agent menschliche Freigaben?","acceptedAnswer":{"@type":"Answer","text":"Vor allem bei irreversiblen, finanziellen, rechtlich relevanten oder öffentlich sichtbaren Aktionen sowie bei Zugriff auf besonders sensible Daten."}},{"@type":"Question","name":"Sind MCP und A2A Sicherheitsfunktionen?","acceptedAnswer":{"@type":"Answer","text":"Nein. MCP und A2A sind Protokolle für Tool- beziehungsweise Agenten-Interoperabilität. Sicherheit hängt weiterhin von Authentifizierung, Autorisierung, Berechtigungen, Netzwerkgrenzen und der konkreten Implementierung ab."}},{"@type":"Question","name":"Welche Logs sollte ein Agent erzeugen?","acceptedAnswer":{"@type":"Answer","text":"Mindestens sollten relevante Identität, Rolle, Zielressource, Tool-Aufruf, Aktion, Ergebnis und Korrelation nachvollziehbar sein. Für sensible Umgebungen sind zusätzliche Audit- und Aufbewahrungsregeln erforderlich."}},{"@type":"Question","name":"Was bedeutet Least Privilege bei KI-Agenten?","acceptedAnswer":{"@type":"Answer","text":"Ein Agent erhält nur die Daten, Tools, Rollen und Aktionen, die er für seine konkrete Aufgabe benötigt, und Rechte werden so eng und kurzlebig wie praktikabel vergeben."}},{"@type":"Question","name":"Reicht ein Sicherheitszertifikat des Anbieters aus?","acceptedAnswer":{"@type":"Answer","text":"Nein. Zertifizierungen können wichtige Hinweise liefern, ersetzen aber nicht die Prüfung des konkreten Agenten, seiner Datenflüsse, Berechtigungen, Tools, Regionen, Vertragsbedingungen und des eigenen Einsatzszenarios."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Start","item":"https://agentenindex.de/"},{"@type":"ListItem","position":2,"name":"Wissen","item":"https://agentenindex.de/wissen/"},{"@type":"ListItem","position":3,"name":"KI-Agenten Sicherheit","item":"https://agentenindex.de/wissen/ki-agenten-sicherheit/"}]}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<div class="topnote"><div class="container"><span>Stand 2. Oktober 2026 · Source-first Referenz</span><span>Primärquellen: NIST · OWASP · Microsoft · OpenAI</span></div></div>
+<header class="site-header"><div class="container header"><a class="brand" href="/" aria-label="AgentenIndex Startseite"><img alt="" aria-hidden="true" class="brand-symbol-v2" height="40" src="/assets/agentenindex-symbol-v2.svg" width="40"/><span class="brand-wordmark-v2"><span class="brand-main-v2">Agenten</span><span class="brand-accent-v2">Index</span></span></a><nav aria-label="Hauptnavigation" class="nav"><a href="/agenten/">Agenten</a><a href="/finder/">Finder</a><a href="/fit/">Fit</a><a href="/aktuelles/">Aktuelles</a><a href="/anwendungen/">Anwendungen</a><a aria-current="page" href="/wissen/">Wissen</a><a href="/methodik/">Methodik</a><a class="nav-check" href="https://check.agentenindex.de/">Agenten-Check</a></nav><button aria-label="Menü öffnen" aria-expanded="false" class="menu">Menü</button></div></header>
+
+<main id="main">
+<section class="security-hero"><div class="container security-hero-grid"><div>
+<nav class="breadcrumbs"><a href="/">Start</a><span>›</span><a href="/wissen/">Wissen</a><span>›</span>KI-Agenten Sicherheit</nav>
+<p class="eyebrow">AgentenIndex Wissen · Sicherheit</p>
+<h1>KI-Agenten Sicherheit: Risiken, Schutzmaßnahmen &amp; Checkliste 2026</h1>
+<p class="security-lead">KI-Agenten können Daten lesen, Werkzeuge nutzen und Aktionen ausführen. Genau deshalb reicht klassischer „Chatbot-Schutz“ nicht aus: Identität, Berechtigungen, Tool-Zugriff, externe Inhalte, Memory, Freigaben und Auditierbarkeit müssen als gemeinsames Sicherheitsmodell betrachtet werden.</p>
+<div class="finder-trust"><span>✓ Primärquellen</span><span>✓ Unternehmens-Checkliste</span><span>✓ MCP &amp; A2A eingeordnet</span><span>✓ Stand Oktober 2026</span></div>
+</div><aside class="security-summary">
+<span>Direktantwort</span>
+<strong>Sind KI-Agenten sicher?</strong>
+<p>Sie können kontrolliert eingesetzt werden, wenn ihr Handlungsspielraum technisch begrenzt wird. Das Risiko steigt, sobald ein Agent sensible Daten, privilegierte Tools oder irreversible Aktionen erhält. Gute Sicherheit kombiniert Least Privilege, eindeutige Identitäten, Tool-Grenzen, menschliche Freigaben, Logging und kontinuierliche Tests.</p>
+<a href="#checkliste">Zur Sicherheits-Checkliste →</a>
+</aside></div></section>
+
+<section class="security-snapshot"><div class="container security-snapshot-grid">
+<div><span>01</span><b>Identität</b><p>Wer handelt – Nutzer, Agent oder Dienstkonto?</p></div>
+<div><span>02</span><b>Berechtigungen</b><p>Welche Daten, Tools und Aktionen sind wirklich nötig?</p></div>
+<div><span>03</span><b>Kontrolle</b><p>Welche Schritte brauchen deterministische Regeln oder Freigaben?</p></div>
+<div><span>04</span><b>Nachvollziehbarkeit</b><p>Können Tool-Aufrufe und Aktionen später rekonstruiert werden?</p></div>
+</div></section>
+
+<section class="article security-article"><div class="container article-grid"><article>
+<div class="security-direct" id="kurzantwort">
+<p class="kicker">Kurz erklärt</p>
+<h2>Warum sind KI-Agenten sicherheitsrelevanter als reine Chatbots?</h2>
+<p>Ein Chatbot beantwortet typischerweise Anfragen. Ein KI-Agent kann darüber hinaus <strong>planen, Daten abrufen, externe Inhalte verarbeiten, Tools aufrufen und Aktionen in anderen Systemen auslösen</strong>. Damit vergrößert sich nicht nur die Funktionalität, sondern auch die Angriffs- und Fehlerfläche. NIST hebt bei Software- und KI-Agenten insbesondere Identifikation, Autorisierung, Auditing, Nichtabstreitbarkeit und den Umgang mit Prompt Injection als zentrale Themen hervor. OWASP nennt zusätzlich Tool-Missbrauch, Datenabfluss und Memory Poisoning als agentenspezifische Risiken.</p>
+<p>Entscheidend ist deshalb nicht nur, ob das Sprachmodell „sicher“ antwortet. Ein Sicherheitskonzept muss festlegen, <strong>wer der Agent ist, worauf er zugreifen darf, welche Aktionen er ausführen kann, welche externen Inhalte er als Kontext erhält und wo ein Mensch oder eine deterministische Regel eingreifen muss.</strong></p>
+</div>
+
+<section id="risiken" class="security-section">
+<p class="kicker">Risikomodell</p>
+<h2>Die wichtigsten Sicherheitsrisiken bei KI-Agenten</h2>
+<div class="security-risk-grid">
+<div><span>01</span><h3>Prompt Injection</h3><p>Manipulierte Anweisungen können direkt vom Nutzer oder indirekt aus Websites, E-Mails, Dokumenten und anderen Datenquellen in den Agentenkontext gelangen. Gefährlich wird das vor allem dann, wenn solche Inhalte Tool-Aufrufe beeinflussen.</p></div>
+<div><span>02</span><h3>Übermäßige Berechtigungen</h3><p>Ein Agent mit breiten Rollen, langlebigen Tokens oder Zugriff auf mehrere Systeme kann bei Fehlverhalten einen deutlich größeren Schaden verursachen. Microsoft empfiehlt deshalb eindeutige Agentenidentitäten und Least Privilege.</p></div>
+<div><span>03</span><h3>Tool-Missbrauch</h3><p>Ein legitimes Tool kann für eine falsche Aktion verwendet werden. Schreibende, kaufende, löschende oder kommunizierende Tools sind deshalb riskanter als reine Lesezugriffe.</p></div>
+<div><span>04</span><h3>Datenabfluss</h3><p>Sensible Informationen können über Agentenantworten, Tool-Aufrufe, API-Anfragen, Logs oder falsch konfigurierte externe Systeme abfließen. Datenzugriff und Output-Kanäle müssen gemeinsam betrachtet werden.</p></div>
+<div><span>05</span><h3>Memory Poisoning</h3><p>Persistente Erinnerungen oder Wissensspeicher können falsche oder manipulierte Informationen dauerhaft übernehmen. Langzeit-Memory braucht daher klare Schreibrechte, Herkunft und Löschregeln.</p></div>
+<div><span>06</span><h3>Supply-Chain-Risiken</h3><p>Modelle, Plugins, MCP-Server, APIs, Datenquellen und Bibliotheken sind Teil der Sicherheitsgrenze. Eine Änderung an einer Abhängigkeit kann das Verhalten eines Agenten verändern, ohne dass sich der eigentliche Prompt ändert.</p></div>
+</div>
+</section>
+
+<section id="least-privilege" class="security-section">
+<p class="kicker">Grundprinzip</p>
+<h2>Least Privilege: Agenten nur die Rechte geben, die sie wirklich brauchen</h2>
+<p>Least Privilege bedeutet bei Agenten mehr als eine einzelne Rollenberechtigung. Es betrifft <strong>Identität, Datenquellen, Tools, Zielsysteme, Aktionen und Zeitdauer der Berechtigung</strong>. Microsoft beschreibt als sinnvolle Praxis eine eindeutige Agentenidentität mit verantwortlichem Owner, klar dokumentiertem Zweck und überprüfbarem Berechtigungsumfang. Höhere Rechte sollten, wo möglich, nur temporär oder nach zusätzlicher Freigabe aktiviert werden.</p>
+<p>Ein Recherche-Agent braucht beispielsweise nicht automatisch Schreibzugriff auf CRM-Daten. Ein Ticket-Agent muss möglicherweise Tickets schließen dürfen, aber keine Benutzerrollen verändern. Ein Coding-Agent kann Repository-Zugriff benötigen, sollte deshalb aber nicht zwangsläufig Produktions-Secrets oder unternehmensweite Cloud-Administratorrechte sehen.</p>
+<div class="security-rule"><b>Praktische Regel</b><p>Rechte nicht nach dem maximal denkbaren Workflow vergeben, sondern nach dem kleinsten real benötigten Handlungsschritt. Neue Tools oder Datenquellen sollten eine erneute Berechtigungsprüfung auslösen.</p></div>
+</section>
+
+<section id="prompt-injection" class="security-section">
+<p class="kicker">Externe Inhalte</p>
+<h2>Prompt Injection: Warum Webseiten, E-Mails und Dokumente nicht vertrauenswürdig sind</h2>
+<p>Indirect Prompt Injection ist für Agenten besonders relevant, weil Agenten fremde Inhalte häufig selbstständig abrufen. Eine Website kann Text enthalten, der wie eine Anweisung an das Modell formuliert ist; dasselbe gilt für E-Mails, Tickets, PDFs oder Dateien. Wenn ein Agent solche Inhalte ungeprüft mit privilegierten Tools kombiniert, kann aus einer Textmanipulation eine reale Aktion werden.</p>
+<p>OpenAI empfiehlt für Agenten-Workflows, nicht vertrauenswürdige Daten nicht direkt das Verhalten kritischer Schritte steuern zu lassen. Strukturierte Übergaben – etwa validierte JSON-Felder oder klar definierte Enums – können den Einfluss freier Texte begrenzen. Zusätzlich sollten Tool Approvals, Guardrails und Evals kombiniert werden. Auch OWASP empfiehlt, Prompt Injection nicht isoliert zu betrachten, sondern gemeinsam mit Tool-Rechten, Datenzugriff und Memory.</p>
+<p>Wichtig: Prompt Injection lässt sich nicht allein durch einen „besseren System-Prompt“ lösen. Je höher die Auswirkung eines Tool-Aufrufs, desto stärker sollte die Absicherung außerhalb des Sprachmodells sein.</p>
+</section>
+
+<section id="human-approval" class="security-section">
+<p class="kicker">Kontrollpunkte</p>
+<h2>Human-in-the-loop: Welche Aktionen sollten Menschen freigeben?</h2>
+<p>Eine menschliche Freigabe ist besonders sinnvoll, wenn eine Aktion <strong>irreversibel, finanziell, rechtlich relevant, öffentlich sichtbar oder sicherheitskritisch</strong> ist. Microsoft nennt beispielsweise Änderungen an Daten, Kommunikation, Käufe, Löschvorgänge und andere Aktionen mit Nebenwirkungen als typische Kandidaten für Approval-Gates.</p>
+<div class="security-action-table">
+<div><b>Meist ohne Einzel-Freigabe möglich</b><span>Lesen freigegebener Daten</span><span>Recherche</span><span>Entwürfe</span><span>Analyse</span></div>
+<div><b>Häufig Freigabe sinnvoll</b><span>E-Mail senden</span><span>Ticket schließen</span><span>CRM-Daten verändern</span><span>Dateien extern teilen</span></div>
+<div><b>Starke Kontrolle erforderlich</b><span>Zahlungen</span><span>Löschen</span><span>Rechte ändern</span><span>Produktivsystem deployen</span></div>
+</div>
+<p>Human Approval ersetzt jedoch keine technische Autorisierung. Ein Mensch sollte nicht regelmäßig Aktionen bestätigen müssen, die der Agent technisch gar nicht ausführen dürfte. Gute Systeme kombinieren deshalb <strong>Least Privilege + Approval Gates</strong>.</p>
+</section>
+
+<section id="identitaet" class="security-section">
+<p class="kicker">Identity &amp; Access</p>
+<h2>Agenten brauchen nachvollziehbare Identitäten</h2>
+<p>Wenn ein Agent unter einem gemeinsam genutzten Servicekonto oder den dauerhaften Rechten eines Menschen arbeitet, wird schwer nachvollziehbar, wer eine Aktion tatsächlich ausgelöst hat. NIST arbeitet deshalb ausdrücklich an Identitäts- und Autorisierungsfragen für Software- und KI-Agenten. Microsoft empfiehlt eindeutige, lifecycle-fähige Agentenidentitäten, damit Zugriffe geprüft, entzogen und protokolliert werden können.</p>
+<p>Für die Produktauswahl sind daher Funktionen wie <strong>SSO, SAML/OIDC, SCIM, RBAC, Custom Roles und Audit Logs</strong> relevant – aber nicht austauschbar. SSO allein bedeutet beispielsweise nicht automatisch SCIM-Provisioning oder granulare Rollen. AgentenIndex behandelt diese Merkmale deshalb getrennt und setzt unbekannte Felder nicht automatisch auf „Nein“.</p>
+</section>
+
+<section id="daten" class="security-section">
+<p class="kicker">Daten &amp; Datenschutz</p>
+<h2>Sensible Daten: Zugriff, Training, Speicherung und Region getrennt prüfen</h2>
+<p>„Der Anbieter ist sicher“ ist für Datenfragen zu grob. Unternehmen sollten mindestens unterscheiden: Welche Daten darf der Agent lesen? Werden Eingaben zum Training verwendet? Wie lange werden Inhalte gespeichert? Gibt es Löschoptionen? In welchen Regionen werden Daten verarbeitet? Welche Daten verlassen das eigene Netzwerk? Welche verbundenen Tools erhalten Kontext?</p>
+<p>Bei personenbezogenen, vertraulichen oder regulierten Daten steigt der Prüfbedarf. Microsoft empfiehlt für regulierte Daten explizite Zugriffsfreigaben, engere Scopes, stärkere Auditierung und eine Kontrolle externer beziehungsweise mandantenübergreifender Datenbewegungen. Unabhängig vom Anbieter bleibt das Unternehmen dafür verantwortlich, seinen konkreten Einsatz und die eigenen Verpflichtungen zu bewerten.</p>
+<div class="security-rule"><b>Wichtig für AgentenIndex</b><p>„Datenresidenz verfügbar“, „Region durch Kunden wählbar“, „Private Network“ und Verschlüsselungsmerkmale sind separate Felder. Eine generische Enterprise- oder Security-Seite reicht nicht automatisch als Beleg für jede einzelne Eigenschaft.</p></div>
+</section>
+
+<section id="mcp-a2a" class="security-section">
+<p class="kicker">Interoperabilität</p>
+<h2>Sind MCP und A2A sicher?</h2>
+<p><strong>MCP und A2A sind keine Sicherheitszertifikate.</strong> Sie standardisieren Interoperabilität: MCP verbindet Modelle oder Agenten mit Tools und Datenquellen; A2A beschreibt Kommunikation zwischen Agenten. Ob eine konkrete Verbindung sicher ist, hängt von Authentifizierung, Autorisierung, Token-Scope, Netzwerkgrenzen, Serververtrauen und der Implementierung ab.</p>
+<p>Ein MCP-Server kann beispielsweise sehr mächtige Tools anbieten. Die Tatsache, dass ein Agent MCP unterstützt, sagt deshalb noch nichts darüber aus, ob einzelne Tool-Aufrufe genehmigt werden müssen oder wie Credentials geschützt werden. OpenAI empfiehlt bei MCP-basierten Agenten-Workflows ausdrücklich Tool Approvals. Für A2A gilt dasselbe Prinzip: Agent Card und Protokollfähigkeit schaffen Interoperabilität, ersetzen aber keine Vertrauensentscheidung zwischen zwei Agenten.</p>
+<p>Für Unternehmen sollten MCP-Server und A2A-Endpunkte deshalb wie andere externe Abhängigkeiten inventarisiert, versioniert und überwacht werden.</p>
+</section>
+
+<section id="memory" class="security-section">
+<p class="kicker">Memory &amp; Kontext</p>
+<h2>Memory kann Nutzen erhöhen – und Sicherheitsgrenzen verwischen</h2>
+<p>Persistentes Memory kann Agenten produktiver machen, weil Präferenzen, Aufgabenstatus oder Organisationswissen über eine einzelne Sitzung hinaus verfügbar bleiben. Gleichzeitig entsteht ein zusätzlicher Speicherort für sensible oder manipulierte Informationen. Microsoft nennt Memory-Design, Isolation und Schutz vor Poisoning ausdrücklich als Teil der Agentensicherheit.</p>
+<p>Organisationen sollten deshalb festlegen, <strong>welche Informationen gespeichert werden dürfen, wer Memory schreiben oder lesen kann, wie lange Einträge bestehen und wie sie korrigiert oder gelöscht werden</strong>. Besonders kritisch ist gemeinsam genutztes Memory, wenn Inhalte eines Nutzers spätere Aktionen für andere Nutzer beeinflussen können.</p>
+</section>
+
+<section id="logs" class="security-section">
+<p class="kicker">Audit &amp; Observability</p>
+<h2>Logs müssen zeigen, was der Agent tatsächlich getan hat</h2>
+<p>Bei klassischen Anwendungen reicht ein Login-Log allein nicht aus. Bei Agenten sollte nachvollziehbar sein, unter welcher Identität und Rolle eine Aktion erfolgte, welches Tool aufgerufen wurde, welche Zielressource betroffen war und ob die Aktion im Namen eines Nutzers ausgeführt wurde. Microsoft empfiehlt außerdem Korrelations-IDs, damit mehrstufige Abläufe später rekonstruiert werden können.</p>
+<p>Audit Logs sind trotzdem kein Selbstzweck. Organisationen brauchen eine klare Aufbewahrung, Zugriffskontrolle und Auswertung. Logs können selbst sensible Daten enthalten und müssen entsprechend geschützt werden. Für produktive Agenten sollte außerdem ein Abschalt- und Revocation-Pfad getestet sein: Agent deaktivieren, Tokens ungültig machen, Credentials rotieren und veraltete Rechte entfernen.</p>
+</section>
+
+<section id="multi-agent" class="security-section">
+<p class="kicker">Mehrere Agenten</p>
+<h2>Multi-Agent-Systeme erhöhen die Zahl der Vertrauensbeziehungen</h2>
+<p>Wenn mehrere Agenten Aufgaben übergeben, entstehen zusätzliche Grenzen zwischen Identitäten, Tools, Daten und Verantwortlichkeiten. Microsoft weist darauf hin, dass Multi-Agent-Systeme die Komplexität erhöhen und mehr Möglichkeiten für unerwartete Interaktionen schaffen. Jede Übergabe sollte deshalb als eigene Vertrauensentscheidung betrachtet werden – nicht automatisch als sicher, nur weil beide Agenten zum selben Workflow gehören.</p>
+<p>Besonders wichtig sind klare Rollen, erlaubte Datenweitergabe, definierte Endpunkte und nachvollziehbare Übergaben. Ein Agent sollte nicht allein deshalb auf alle Daten eines anderen Agenten zugreifen dürfen, weil beide in derselben Orchestrierung vorkommen.</p>
+</section>
+
+<section id="checkliste" class="security-section security-checklist">
+<p class="kicker">Unternehmens-Checkliste</p>
+<h2>KI-Agenten vor dem produktiven Einsatz prüfen</h2>
+<ol>
+<li><b>Zweck definieren.</b><p>Welche konkrete Aufgabe soll der Agent übernehmen – und was ausdrücklich nicht?</p></li>
+<li><b>Identität klären.</b><p>Arbeitet der Agent mit eigener Identität, im Namen eines Nutzers oder mit gemeinsam genutzten Credentials?</p></li>
+<li><b>Daten inventarisieren.</b><p>Welche personenbezogenen, vertraulichen oder regulierten Daten können in den Agentenkontext gelangen?</p></li>
+<li><b>Tools klassifizieren.</b><p>Welche Tools lesen nur, welche verändern Daten und welche lösen irreversible Aktionen aus?</p></li>
+<li><b>Least Privilege anwenden.</b><p>Rollen, Tokens, API-Scopes und Netzwerkzugriffe auf das Minimum begrenzen.</p></li>
+<li><b>Approval Gates setzen.</b><p>Finanzielle, irreversible, rechtlich relevante und öffentlich sichtbare Aktionen gezielt freigeben lassen.</p></li>
+<li><b>Externe Inhalte als untrusted behandeln.</b><p>Webseiten, E-Mails, Dateien und Tool-Antworten dürfen kritische Aktionen nicht ungeprüft steuern.</p></li>
+<li><b>Memory regeln.</b><p>Speicherung, Schreibrechte, Löschung und Isolation dauerhaft gespeicherter Informationen festlegen.</p></li>
+<li><b>Logging testen.</b><p>Tool Calls, Identität, Zielressource, Aktion und Ergebnis müssen nachvollziehbar sein.</p></li>
+<li><b>Revocation üben.</b><p>Agenten abschalten, Tokens entziehen, Credentials rotieren und Berechtigungen entfernen können.</p></li>
+<li><b>Grenzfälle evaluieren.</b><p>Nicht nur Demo-Prompts testen, sondern Manipulation, fehlerhafte Tools, unerwartete Daten und Abbruchpfade.</p></li>
+<li><b>Änderungen überwachen.</b><p>Neue Tools, Modelle, Datenquellen oder Anbieteränderungen können eine erneute Prüfung erforderlich machen.</p></li>
+</ol>
+</section>
+
+<section id="agentenindex" class="security-section">
+<p class="kicker">AgentenIndex in der Praxis</p>
+<h2>Welche Sicherheitsmerkmale dokumentiert AgentenIndex?</h2>
+<p>AgentenIndex versucht nicht, einen eigenen Penetrationstest oder eine juristische Freigabe zu ersetzen. Die AgentenPassports und Deep-Evidence-Daten strukturieren öffentlich belegbare Eigenschaften, die für eine Vorprüfung relevant sind. Dazu gehören unter anderem:</p>
+<div class="security-field-grid">
+<span>SAML / OIDC</span><span>SCIM</span><span>RBAC</span><span>Custom Roles</span><span>Audit Logs</span><span>Audit API</span><span>SIEM Export</span><span>Verschlüsselung at rest</span><span>Verschlüsselung in transit</span><span>Customer-Managed Key</span><span>Datenresidenz</span><span>Private Network</span><span>MCP / A2A</span><span>Hosting</span><span>Lifecycle</span>
+</div>
+<p>Fehlt für ein Feld eine belastbare Primärquelle, bleibt es <strong>unknown</strong>. Das ist ein zentraler Sicherheitsgrundsatz: Eine nicht gefundene Funktion ist nicht dasselbe wie eine dokumentiert nicht vorhandene Funktion.</p>
+<div class="security-cta"><div><p class="kicker">Anforderungen prüfen</p><h3>Security-Kriterien direkt gegen Agenten-Evidenz abgleichen.</h3><p>AgentenFit kann unter anderem SSO, SCIM, RBAC, Audit Logs, Datenresidenz, Verschlüsselung, CMK, MCP/A2A und Hosting anhand der dokumentierten Field-Level-Evidenz vergleichen.</p></div><a class="btn primary" href="/fit/">AgentenFit öffnen →</a></div>
+</section>
+
+<section id="quellen" class="security-section">
+<p class="kicker">Primärquellen</p>
+<h2>Grundlage dieser Sicherheitsreferenz</h2>
+<ul class="security-sources">
+<li><a href="https://www.nist.gov/news-events/news/2026/02/new-concept-paper-identity-and-authority-software-agents" rel="noopener noreferrer">NIST NCCoE – Identity and Authority of Software and AI Agents ↗</a><span>Identifikation, Autorisierung, Auditing, Non-Repudiation und Prompt Injection als zentrale Themen für Agenten.</span></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html" rel="noopener noreferrer">OWASP – AI Agent Security Cheat Sheet ↗</a><span>Agentenspezifische Risiken wie Prompt Injection, Tool Abuse, Data Exfiltration und Memory Poisoning.</span></li>
+<li><a href="https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents" rel="noopener noreferrer">Microsoft – Least privilege for AI agents ↗</a><span>Agentenidentität, Scoping, Tool-Zugriff, Auditierbarkeit und zeitlich begrenzte Rechte.</span></li>
+<li><a href="https://learn.microsoft.com/en-us/security/zero-trust/sfi/manage-agentic-risk" rel="noopener noreferrer">Microsoft – Reduce autonomous agentic AI risk ↗</a><span>Agent Hijacking, Memory, Supply Chain, Agent Sprawl, Human Oversight und Monitoring.</span></li>
+<li><a href="https://developers.openai.com/api/docs/guides/agent-builder-safety" rel="noopener noreferrer">OpenAI – Safety in building agents ↗</a><span>Tool Approvals, Guardrails, strukturierte Übergaben, Evals und Schutz vor Prompt Injection in Agenten-Workflows.</span></li>
+</ul>
+<p class="security-source-note">Letzte redaktionelle Prüfung dieser Seite: 2. Oktober 2026. Hersteller- und Standarddokumentation kann sich ändern; für konkrete Produkte gelten zusätzlich die im jeweiligen AgentenProfil verlinkten Primärquellen.</p>
+</section>
+
+<section id="faq" class="security-section">
+<p class="kicker">FAQ</p>
+<h2>Häufige Fragen zur Sicherheit von KI-Agenten</h2>
+<div class="faq-item"><h3>Sind KI-Agenten sicher?</h3><p>KI-Agenten können kontrolliert eingesetzt werden, wenn Identitäten, Berechtigungen, Datenzugriffe, Tools und Aktionen technisch begrenzt werden. Eine pauschale Sicherheitsgarantie gibt es nicht; das konkrete Risiko hängt vom Agenten, seinen Rechten und dem Einsatzszenario ab.</p></div>
+<div class="faq-item"><h3>Was ist das größte Sicherheitsrisiko bei KI-Agenten?</h3><p>Es gibt kein einzelnes größtes Risiko. Besonders relevant sind Prompt Injection, übermäßige Berechtigungen, Tool-Missbrauch, Datenabfluss, Memory Poisoning und fehlende Nachvollziehbarkeit.</p></div>
+<div class="faq-item"><h3>Wie schützt man KI-Agenten vor Prompt Injection?</h3><p>Externe Inhalte sollten als nicht vertrauenswürdig behandelt werden. Tool-Rechte werden begrenzt, strukturierte Übergaben bevorzugt und kritische Aktionen zusätzlich durch deterministische Regeln oder menschliche Freigaben geschützt.</p></div>
+<div class="faq-item"><h3>Wann braucht ein KI-Agent menschliche Freigaben?</h3><p>Vor allem bei irreversiblen, finanziellen, rechtlich relevanten, öffentlich sichtbaren oder besonders sicherheitskritischen Aktionen. Reine Lese- und Analyseaufgaben benötigen häufig weniger Eingriffe.</p></div>
+<div class="faq-item"><h3>Sind MCP und A2A Sicherheitsfunktionen?</h3><p>Nein. Beide Protokolle schaffen Interoperabilität. Sicherheit hängt weiterhin von Authentifizierung, Autorisierung, Scopes, Netzwerkgrenzen und der konkreten Implementierung ab.</p></div>
+<div class="faq-item"><h3>Welche Logs sollte ein Agent erzeugen?</h3><p>Mindestens relevante Identität, Rolle, Tool-Aufruf, Zielressource, Aktion und Ergebnis sollten rekonstruierbar sein. In sensiblen Umgebungen kommen Aufbewahrungs- und Compliance-Anforderungen hinzu.</p></div>
+<div class="faq-item"><h3>Was bedeutet Least Privilege bei KI-Agenten?</h3><p>Der Agent erhält nur die Daten, Tools, Rollen und Aktionen, die für seine konkrete Aufgabe erforderlich sind. Rechte sollten so eng und so kurzlebig wie praktikabel vergeben werden.</p></div>
+<div class="faq-item"><h3>Reicht ein SOC-2- oder ISO-Nachweis des Anbieters aus?</h3><p>Nein. Solche Nachweise können wichtige Informationen liefern, ersetzen aber nicht die Prüfung des konkreten Agenten, seiner Datenflüsse, Berechtigungen, Tools, Regionen und des eigenen Einsatzszenarios.</p></div>
+</section>
+
+<div class="security-related">
+<a href="/wissen/human-in-the-loop/"><span>Weiterlesen</span><b>Human-in-the-loop bei KI-Agenten</b></a>
+<a href="/wissen/mcp/"><span>Protokoll</span><b>MCP verständlich erklärt</b></a>
+<a href="/wissen/a2a/"><span>Protokoll</span><b>A2A und Agenten-Kommunikation</b></a>
+<a href="/aktuelles/"><span>Aktuell</span><b>Wichtige Änderungen bei KI-Agenten</b></a>
+</div>
+</article>
+<aside class="toc security-toc"><strong>Auf dieser Seite</strong><a href="#kurzantwort">Kurzantwort</a><a href="#risiken">Risiken</a><a href="#least-privilege">Least Privilege</a><a href="#prompt-injection">Prompt Injection</a><a href="#human-approval">Human Approval</a><a href="#identitaet">Identität &amp; Zugriff</a><a href="#daten">Daten &amp; Datenschutz</a><a href="#mcp-a2a">MCP &amp; A2A</a><a href="#memory">Memory</a><a href="#logs">Logs</a><a href="#multi-agent">Multi-Agent</a><a href="#checkliste">Checkliste</a><a href="#agentenindex">AgentenIndex-Felder</a><a href="#quellen">Quellen</a><a href="#faq">FAQ</a></aside>
+</div></section>
+</main>
+
+<footer class="footer"><div class="container footer-grid"><div><a class="brand" href="/"><img alt="" aria-hidden="true" class="brand-symbol-v2" height="40" src="/assets/agentenindex-symbol-v2.svg" width="40"/><span class="brand-wordmark-v2"><span class="brand-main-v2">Agenten</span><span class="brand-accent-v2">Index</span></span></a><p>KI-Agenten verstehen, finden und vergleichen.</p><p class="footer-small">Unabhängige deutschsprachige Referenz · Quellenbasiert · Stand 2. Oktober 2026</p></div><div class="footer-links"><a href="/agenten/">Agenten</a><a href="/finder/">AgentenFinder</a><a href="/fit/">AgentenFit</a><a href="/aktuelles/">Aktuelles</a><a href="/wissen/">Wissen</a><a href="/methodik/">Methodik</a><a href="/ueber/">Über</a></div></div><div class="container foot-bottom"><span>© 2026 AgentenIndex</span><span class="legal-links"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></span></div><div class="container footer-note">AgentenIndex ist eine redaktionelle Referenz und kein Sicherheits-Audit oder Rechtsberatung.</div></footer>
+<script defer src="/assets/app.js"></script>
+</body>
+</html>
