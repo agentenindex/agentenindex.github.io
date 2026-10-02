@@ -1,6 +1,6 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:22:15Z",
+  "updated_at": "2026-10-02T05:47:21Z",
   "events": [
     {
       "event_id": "WAT-CD722095F514FD3251",
@@ -3264,6 +3264,48 @@
         "current_result": "network_error"
       },
       "previous_checked_at": "2026-10-02T05:16:13Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-9E9DF9821E6E36CC8B",
+      "detected_at": "2026-10-02T05:46:27Z",
+      "source_id": "SRC-20975F305415B3",
+      "agent_ids": [
+        "AI-0052"
+      ],
+      "source_title": "Manus Help – Unterschiede zwischen Chat-Modus und Agent-Modus",
+      "url": "https://help.manus.im/de/articles/11711128-was-sind-die-unterschiede-zwischen-dem-chat-modus-und-dem-agent-modus",
+      "change_type": "redirect_change",
+      "severity": "medium",
+      "metrics": {
+        "old_final_url": "https://help.manus.im/de/articles/11711128-was-sind-die-unterschiede-zwischen-dem-chat-modus-und-dem-agent-modus",
+        "new_final_url": "https://help.manus.im/en/articles/11711128-what-are-the-differences-between-chat-mode-and-agent-mode"
+      },
+      "previous_checked_at": "2026-10-02T05:21:41Z",
+      "status": "needs_review",
+      "policy": "Never auto-publish as product fact."
+    },
+    {
+      "event_id": "WAT-CDDD84B7CB3B793D53",
+      "detected_at": "2026-10-02T05:46:31Z",
+      "source_id": "SRC-FBAB1386BE7F79",
+      "agent_ids": [
+        "AI-0052"
+      ],
+      "source_title": "Manus Help – Manus Compliance APIs",
+      "url": "https://help.manus.im/en/articles/13644620-manus-compliance-apis",
+      "change_type": "content_change",
+      "severity": "low",
+      "metrics": {
+        "old_hash": "c80265f146098cf6a4e3e29704168e5db43e9b6fa4c61db82ff303aecee4de5b",
+        "new_hash": "feb57d7fe27831b8aff8c641b500fce68d79446abf785d9c852a9da00c952c07",
+        "simhash_distance": 7,
+        "old_token_count": 240,
+        "new_token_count": 239,
+        "token_delta_pct": -0.42
+      },
+      "previous_checked_at": "2026-10-02T05:21:45Z",
       "status": "needs_review",
       "policy": "Never auto-publish as product fact."
     }

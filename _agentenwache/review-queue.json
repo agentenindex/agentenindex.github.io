@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-02T05:22:15Z",
-  "open_count": 0,
+  "updated_at": "2026-10-02T05:47:21Z",
+  "open_count": 2,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -1849,6 +1849,44 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Current UiPath MCP Servers documentation still supports adding UiPath-hosted and external MCP servers as agent tools; the observed documentation change does not alter an indexed product fact.",
       "reviewed_at": "2026-10-01T15:14:00Z"
+    },
+    {
+      "review_id": "REV-70AEB84FE19A730775",
+      "status": "open",
+      "first_detected": "2026-10-02T05:46:27Z",
+      "last_detected": "2026-10-02T05:46:27Z",
+      "occurrences": 1,
+      "severity": "medium",
+      "change_type": "redirect_change",
+      "source_id": "SRC-20975F305415B3",
+      "source_title": "Manus Help – Unterschiede zwischen Chat-Modus und Agent-Modus",
+      "url": "https://help.manus.im/de/articles/11711128-was-sind-die-unterschiede-zwischen-dem-chat-modus-und-dem-agent-modus",
+      "agent_ids": [
+        "AI-0052"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://help.manus.im/de/articles/11711128-was-sind-die-unterschiede-zwischen-dem-chat-modus-und-dem-agent-modus",
+        "text_hash": "07d47c5a78dd6dedb06b278a4e198916bb0f7aac62477c4f6e3387d5e64e6be4",
+        "simhash64": "b76a0322b1f24c14",
+        "token_count": 462,
+        "text_sample": "Was sind die Unterschiede zwischen dem Chat-Modus und dem Agent-Modus? Verstehen Sie die Unterschiede zwischen den beiden Modi von Manus: Chat-Modus und Agent-Modus. Gestern aktualisiert Inhaltsübersicht Chat-Modus: Für sofortige Antworten und vertiefende Diskussionen Der Chat-Modus ist ein leichtgewichtiger Modus, den wir anbieten und der es Benutzern ermöglicht, in diesem Modus sofortige Antworten zu erhalten. Im Chat-Modus unterstützt Manus die Erkennung von Bildern, PDFs und Textdateien. Er unterstützt auch Online-Suchen, um Benutzern bessere Antworten zu bieten. Zudem verbrauchen in diesem Modus geführte Gespräche keine Credits. Mit der Veröffentlichung von Manus 2.0 wurde der Chat-Modus durch die Integration von branchenweit schnellen und effizienten Chat-Modellen erheblich verbessert. Dies ermöglicht es ihm, verschiedene komplexe Aufgaben wie tägliche Gespräche, vertiefende Diskussionen und Brainstorming mühelos zu bewältigen und genauere sowie umfassendere Antworten zu liefern. Agent-Modus: Für komplexe Aufgaben und autonome Workflows Der Agent-Modus unterstützt Benutzer bei der Durchführung komplexerer Aufgaben, einschließlich der Erstellung von Websites, Slides, Videos un"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://help.manus.im/en/articles/11711128-what-are-the-differences-between-chat-mode-and-agent-mode",
+        "text_hash": "66aabf4fcd22edaa55f96d739d81052940040431b55561521300d873a5acf255",
+        "simhash64": "c2ed0f10f4e2c411",
+        "token_count": 477,
+        "text_sample": "What are the differences between Chat mode and Agent mode? Understand the differences between Manus's two modes: Chat mode and Agent mode. Updated today Table of contents Chat Mode: For Instant Answers and In-depth Discussions Chat mode is a lightweight mode we offer, allowing users to get instant answers under this mode. In chat mode, Manus supports recognizing images, PDFs, and text files. It also supports online searches to provide users with better answers. And conversations conducted in this mode will not consume credits. With the release of Manus 2.0, Chat Mode has been significantly enhanced with the integration of fast and efficient chat models in the industry. This allows it to easily handle various complex tasks such as daily conversations, in-depth discussions, and brainstorming, providing more accurate and comprehensive responses. Agent Mode: For Complex Tasks and Autonomous Workflows Agent mode supports users in performing more complex tasks, including creating websites, slides, videos, and so on (visit https://manus.im/docs/features/projects for more information about our features). In this mode, Manus will autonomously plan and complete tasks based on your instructio",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_final_url": "https://help.manus.im/de/articles/11711128-was-sind-die-unterschiede-zwischen-dem-chat-modus-und-dem-agent-modus",
+        "new_final_url": "https://help.manus.im/en/articles/11711128-what-are-the-differences-between-chat-mode-and-agent-mode"
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-73D9645D9EEC2EAE2D",
@@ -4254,6 +4292,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Gorgias moved the same AI Agent article from docs.gorgias.com to helpcenter.gorgias.com. The old source is inactive in the current AgentenGraph registry and the canonical replacement is already registered. No supported product fact changed.",
       "reviewed_at": "2026-10-02T05:05:00Z"
+    },
+    {
+      "review_id": "REV-F0754CC584FF25C263",
+      "status": "open",
+      "first_detected": "2026-10-02T05:46:31Z",
+      "last_detected": "2026-10-02T05:46:31Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-FBAB1386BE7F79",
+      "source_title": "Manus Help – Manus Compliance APIs",
+      "url": "https://help.manus.im/en/articles/13644620-manus-compliance-apis",
+      "agent_ids": [
+        "AI-0052"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://help.manus.im/en/articles/13644620-manus-compliance-apis",
+        "text_hash": "c80265f146098cf6a4e3e29704168e5db43e9b6fa4c61db82ff303aecee4de5b",
+        "simhash64": "1ebd452f6674dcfd",
+        "token_count": 240,
+        "text_sample": "Manus Compliance APIs August 21, 2026 Table of contents Overview Manus Compliance APIs are secure, auditable interfaces specifically designed to support regulatory, legal, and security workflows including e-discovery, legal hold, and SIEM integration. Important Notice: These APIs are not intended for general product access and are only exposed under approved compliance and governance use cases. Available APIs E-Discovery API Activation Required : Please contact our customer success team for activation before use Functionality : Provides controlled access to content metadata Enables access to preserved data snapshots Designed to support: Legal discovery processes Internal investigations Regulatory inquiries Getting Started Assess Requirements : Ensure your use case meets compliance and governance criteria Contact Support : Submit an activation request to our customer success team Obtain Approval : Wait for compliance review and API access authorization Review Documentation : Download relevant API documentation for integration development Support & Assistance For E-Discovery API activation or to learn more about our compliance APIs, please reach out to our customer success team. This"
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://help.manus.im/en/articles/13644620-manus-compliance-apis",
+        "text_hash": "feb57d7fe27831b8aff8c641b500fce68d79446abf785d9c852a9da00c952c07",
+        "simhash64": "1eb4452e6a54dcf5",
+        "token_count": 239,
+        "text_sample": "Manus Compliance APIs August 21, 2026 Table of contents Overview Manus Compliance APIs are secure, auditable interfaces specifically designed to support regulatory, legal, and security workflows including e-discovery, legal hold, and SIEM integration. Important Notice: These APIs are not intended for general product access and are only exposed under approved compliance and governance use cases. Available APIs E-Discovery API Activation Required : Please contact our customer success team for activation before use Functionality : Provides controlled access to content metadata Enables access to preserved data snapshots Designed to support: Legal discovery processes Internal investigations Regulatory inquiries Getting Started Assess Requirements : Ensure your use case meets compliance and governance criteria Contact Support : Submit an activation request to our customer success team Obtain Approval : Wait for compliance review and API access authorization Review Documentation : Download relevant API documentation for integration development Support & Assistance For E-Discovery API activation or to learn more about our compliance APIs, please reach out to our customer success team. This",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "c80265f146098cf6a4e3e29704168e5db43e9b6fa4c61db82ff303aecee4de5b",
+        "new_hash": "feb57d7fe27831b8aff8c641b500fce68d79446abf785d9c852a9da00c952c07",
+        "simhash_distance": 7,
+        "old_token_count": 240,
+        "new_token_count": 239,
+        "token_delta_pct": -0.42
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-F101298E3B1703A2B5",
