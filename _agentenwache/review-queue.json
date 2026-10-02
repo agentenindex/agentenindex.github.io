@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T03:20:32Z",
-  "open_count": 3,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -334,7 +334,7 @@
     },
     {
       "review_id": "REV-13BE2EDD5C4E5D6A03",
-      "status": "open",
+      "status": "reviewed_no_product_change",
       "first_detected": "2026-10-02T03:19:53Z",
       "last_detected": "2026-10-02T03:19:53Z",
       "occurrences": 1,
@@ -370,9 +370,11 @@
         "simhash_distance": 1,
         "old_token_count": 2617,
         "new_token_count": 2617,
-        "token_delta_pct": 0.0
+        "token_delta_pct": 0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Reviewed the current Moveworks Roles and Permissions documentation. It still explicitly documents RBAC across Moveworks applications including Agent Studio; the low-severity render change does not alter an indexed product fact.",
+      "reviewed_at": "2026-10-02T03:24:00Z"
     },
     {
       "review_id": "REV-19E755BE20CCF1EEFE",
@@ -2148,7 +2150,7 @@
     },
     {
       "review_id": "REV-A8BA3B7DD3B4032DC7",
-      "status": "open",
+      "status": "applied_to_agents",
       "first_detected": "2026-10-02T03:19:58Z",
       "last_detected": "2026-10-02T03:19:58Z",
       "occurrences": 1,
@@ -2182,7 +2184,9 @@
         "old_status": 200,
         "new_status": 429
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Replaced the rate-limit-prone Slack Help audit source with stable official Slack Developer Audit Logs API documentation for audit availability, API access, and SIEM export. The exact 730-day retention claim was removed and returned to unknown rather than relying on a brittle source.",
+      "reviewed_at": "2026-10-02T03:24:00Z"
     },
     {
       "review_id": "REV-A966C5A91D2E3C060C",
@@ -2226,7 +2230,7 @@
     },
     {
       "review_id": "REV-AB34D4FEB9603F19DF",
-      "status": "open",
+      "status": "reviewed_no_product_change",
       "first_detected": "2026-10-02T03:19:56Z",
       "last_detected": "2026-10-02T03:19:56Z",
       "occurrences": 1,
@@ -2264,7 +2268,9 @@
         "new_token_count": 1861,
         "token_delta_pct": 2.25
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Reviewed the current Slack agents article. The added/changed copy does not alter the indexed fact that Slackbot and agents are deployed and managed in Slack's agent-first workspace.",
+      "reviewed_at": "2026-10-02T03:24:00Z"
     },
     {
       "review_id": "REV-AB6B43EF3E9CE311A2",
