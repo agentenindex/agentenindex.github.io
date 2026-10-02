@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
   "updated_at": "2026-10-02T04:51:05Z",
-  "open_count": 3,
+  "open_count": 0,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -3213,7 +3213,7 @@
     },
     {
       "review_id": "REV-BACFDA33C59D1C7836",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:44:44Z",
       "last_detected": "2026-10-02T04:44:44Z",
       "occurrences": 1,
@@ -3247,7 +3247,9 @@
         "old_final_url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users?hl=en&visit_id=639265129216073421-3406380721&rd=1",
         "new_final_url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-notebook/turn-gemini-notebook-on-or-off-for-users?hl=en&visit_id=639265130851319033-1105462791&rd=1"
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The old NotebookLM source is inactive in the current AgentenGraph registry. The observed redirect change only changed a transient Google visit_id; status, content hash, SimHash, and token count were identical. No product fact changed.",
+      "reviewed_at": "2026-10-02T05:05:00Z"
     },
     {
       "review_id": "REV-BAF0F1D6D5755D8E3A",
@@ -3978,7 +3980,7 @@
     },
     {
       "review_id": "REV-EA22CAA3666EBDA111",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:50:43Z",
       "last_detected": "2026-10-02T04:50:43Z",
       "occurrences": 1,
@@ -4014,9 +4016,11 @@
         "simhash_distance": 24,
         "old_token_count": 4,
         "new_token_count": 4,
-        "token_delta_pct": 0.0
+        "token_delta_pct": 0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "The Zoom source remains substantively valid: the official role-management page still documents Zoom RBAC and custom roles. AgentenWache only received unstable four-token JavaScript/loading shells in different languages. The source is now manual_only to prevent recurring false positives; no product fact changed.",
+      "reviewed_at": "2026-10-02T05:05:00Z"
     },
     {
       "review_id": "REV-EAE8D697875A437E7D",
@@ -4089,7 +4093,7 @@
     },
     {
       "review_id": "REV-EC91298C7FACF981C6",
-      "status": "open",
+      "status": "dismissed_noise",
       "first_detected": "2026-10-02T04:44:15Z",
       "last_detected": "2026-10-02T04:44:15Z",
       "occurrences": 1,
@@ -4123,7 +4127,9 @@
         "old_final_url": "https://docs.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817",
         "new_final_url": "https://helpcenter.gorgias.com/en-US/how-gorgiass-ai-agent-works-1997817"
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
+      "resolution": "Gorgias moved the same AI Agent article from docs.gorgias.com to helpcenter.gorgias.com. The old source is inactive in the current AgentenGraph registry and the canonical replacement is already registered. No supported product fact changed.",
+      "reviewed_at": "2026-10-02T05:05:00Z"
     },
     {
       "review_id": "REV-F16A35606537B686F6",
