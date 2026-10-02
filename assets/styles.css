@@ -2263,7 +2263,7 @@ p{color:inherit}
    ========================================================= */
 .security-hero{padding:46px 0 30px}
 .security-hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(340px,.68fr);gap:46px;align-items:center;padding:48px;border:1px solid #e2e8f1;border-radius:32px;background:radial-gradient(circle at 90% 12%,rgba(23,105,255,.12),transparent 27%),radial-gradient(circle at 5% 95%,rgba(0,169,143,.08),transparent 24%),#fff;box-shadow:0 20px 62px rgba(34,61,98,.06)}
-.security-hero h1{margin:14px 0 22px;font-size:clamp(3rem,5.9vw,5.8rem);line-height:.95;letter-spacing:-.064em}
+.security-hero h1{margin:14px 0 22px;font-size:clamp(3rem,5vw,5.1rem);line-height:.95;letter-spacing:-.058em;max-width:100%}
 .security-lead{font-size:1.08rem;line-height:1.68;color:#58667e;max-width:880px}
 .security-summary{padding:26px;border:1px solid #dbe7f4;border-radius:22px;background:linear-gradient(145deg,#f8fbff,#eef6ff)}
 .security-summary>span{display:inline-block;padding:5px 8px;border-radius:999px;background:#e6f0ff;color:#1764dc;font-size:.65rem;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
@@ -2378,4 +2378,10 @@ p{color:inherit}
 .nav a[href="/privatpersonen/"],
 .nav a[href="/unternehmen/"]{
   display:none;
+}
+
+/* Security hero large-desktop overflow guard v8.7.4 */
+@media(min-width:1400px){
+  .security-hero-grid{grid-template-columns:minmax(0,1.22fr) minmax(340px,.58fr)}
+  .security-hero h1{font-size:clamp(4.4rem,4.8vw,5.1rem)}
 }
