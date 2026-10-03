@@ -56,4 +56,6 @@ jobs:
             exit 0
           fi
           git commit -m "Update AgentenGraph history [skip ci]"
-          git push origin main
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
