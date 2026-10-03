@@ -1,9 +1,19 @@
 name: Audit Live Domain
 
 on:
-  workflow_run:
-    workflows: ["pages build and deployment"]
-    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "**/*.html"
+      - "robots.txt"
+      - "sitemap.xml"
+      - "news-sitemap.xml"
+      - "llms.txt"
+      - "CNAME"
+      - "security.txt"
+      - ".well-known/security.txt"
+      - ".github/scripts/audit-live-domain.py"
+      - ".github/workflows/live-domain-audit.yml"
   schedule:
     - cron: "17 5 * * *"
   workflow_dispatch:
@@ -13,15 +23,14 @@ permissions:
 
 jobs:
   audit:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Wait briefly for Pages edge propagation
-        if: ${{ github.event_name == 'workflow_run' }}
-        run: sleep 20
+      - name: Wait for Pages edge propagation
+        if: ${{ github.event_name == 'push' }}
+        run: sleep 50
       - name: Audit live HTTPS, canonical host and crawler access
         run: python .github/scripts/audit-live-domain.py
