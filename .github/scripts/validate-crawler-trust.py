@@ -39,6 +39,15 @@ for sm in (f"{BASE}/sitemap.xml",f"{BASE}/news-sitemap.xml"):
     if f"Sitemap: {sm}" not in robots:
         errors.append(f"robots.txt missing {sm}")
 
+# --- Jekyll publication of .well-known ---
+config=ROOT/"_config.yml"
+if not config.exists():
+    errors.append("_config.yml missing; .well-known would be excluded by Jekyll")
+else:
+    config_text=config.read_text(encoding="utf-8")
+    if ".well-known" not in config_text or "include:" not in config_text:
+        errors.append("_config.yml must explicitly include .well-known")
+
 # --- security.txt ---
 well=ROOT/".well-known"/"security.txt"
 legacy=ROOT/"security.txt"
