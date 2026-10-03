@@ -1,3 +1,18 @@
+(()=>{
+  const host=window.location.hostname.toLowerCase();
+  if(host!=='agentenindex.de'&&host!=='www.agentenindex.de')return;
+  if(document.querySelector('script[data-website-id="4fb73149-d914-4ff4-acef-04b982c3b8d7"]'))return;
+  const analytics=document.createElement('script');
+  analytics.defer=true;
+  analytics.src='https://cloud.umami.is/script.js';
+  analytics.dataset.websiteId='4fb73149-d914-4ff4-acef-04b982c3b8d7';
+  analytics.dataset.domains='agentenindex.de,www.agentenindex.de';
+  analytics.dataset.excludeSearch='true';
+  analytics.dataset.excludeHash='true';
+  analytics.dataset.doNotTrack='true';
+  document.head.appendChild(analytics);
+})();
+
 document.addEventListener('DOMContentLoaded',()=>{
   const b=document.querySelector('.menu'),n=document.querySelector('.nav');
   if(n&&!n.querySelector('a[href="/fit/"]')){
