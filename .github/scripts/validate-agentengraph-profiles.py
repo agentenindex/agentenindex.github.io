@@ -24,6 +24,26 @@ for agent in DATA["agents"]:
         errors.append(f"Missing profile {p}")
         continue
     s=p.read_text(encoding="utf-8")
+    # Every real AgentenProfil uses the same two-column profile hero.
+    if s.count("<h1") != 1:
+        errors.append(f"{agent['slug']}: page must contain exactly one h1")
+    for marker in (
+        'class="v7p-hero"',
+        'class="container v7p-hero-grid"',
+        'class="v7p-hero-copy"',
+        'class="v7p-passport-card"',
+        'class="v7p-passport-top"',
+        'class="v7p-quickfacts"',
+        'class="v7p-evidence-strip"',
+        'id="passport"',
+    ):
+        if marker not in s:
+            errors.append(f"{agent['slug']}: profile layout missing {marker}")
+    if f'class="v7p-passport-id">{agent["profile_id"]}<' not in s:
+        errors.append(f"{agent['slug']}: hero passport id mismatch")
+    if '/assets/styles.css?v=' not in s:
+        errors.append(f"{agent['slug']}: versioned stylesheet link missing")
+
     if s.count('class="agentengraph-history"') != 1:
         errors.append(f"{agent['slug']}: graph section count != 1")
     if s.count('href="#agentengraph"') != 1:
@@ -35,8 +55,6 @@ for agent in DATA["agents"]:
     expected=f'{agent["profile_id"]} · {active_by_agent.get(agent["profile_id"],0)} aktive Aussagen'
     if expected not in s:
         errors.append(f"{agent['slug']}: assertion count mismatch expected {expected}")
-    if '/assets/styles.css?v=8.3.0' not in s:
-        errors.append(f"{agent['slug']}: stylesheet cache version not 8.3.0")
     # Editorial changelog and graph history must stay separate.
     gi=s.find('class="agentengraph-history"')
     ci=s.find('class="changelog" id="changelog"')
@@ -57,5 +75,5 @@ print(json.dumps({
     "status":"AGENTENGRAPH_PROFILES_VALID",
     "profiles":len(DATA["agents"]),
     "baseline":baseline,
-    "stylesheet":"8.3.0",
+    "layout":"v7p two-column hero + passport card",
 },ensure_ascii=False))
