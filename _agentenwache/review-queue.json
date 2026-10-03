@@ -1,7 +1,7 @@
 {
   "watch_version": "1.0",
-  "updated_at": "2026-10-03T03:33:58Z",
-  "open_count": 57,
+  "updated_at": "2026-10-03T14:50:16Z",
+  "open_count": 60,
   "items": [
     {
       "review_id": "REV-007F58E4E8685F14EA",
@@ -299,9 +299,9 @@
     },
     {
       "review_id": "REV-088A8B24E5A2A8E8AE",
-      "status": "reviewed_no_product_change",
-      "first_detected": "2026-10-02T03:05:29Z",
-      "last_detected": "2026-10-02T03:05:29Z",
+      "status": "open",
+      "first_detected": "2026-10-03T14:49:48Z",
+      "last_detected": "2026-10-03T14:49:48Z",
       "occurrences": 1,
       "severity": "low",
       "change_type": "content_change",
@@ -314,32 +314,30 @@
       "previous": {
         "status_code": 200,
         "final_url": "https://www.openhands.dev/",
-        "text_hash": "cda9f62b29c5956e357b2a7b28854bcd9dfc9cdff4aff029984e5f172d70b9d3",
-        "simhash64": "028e00c98f3bc7ca",
+        "text_hash": "28fa1a5cc3d31016fdec3af3134f9470ac9576224b0adcf315338230f2d025b5",
+        "simhash64": "028e40c98f3bc7ca",
         "token_count": 2319,
         "text_sample": "How mature is your agentic SDLC? Take the 2-minute quiz The open platform for agentic software development Get OpenHands Try it now Cloud Try OpenHands Cloud Talk to us Bring your own agent Let's Start Building! What do you want to build? Model Open Workspace Plugins Recommended automations Slack channel monitor Watch a channel for mentions and open a conversation with the message context. Slack standup digest Collect standup replies and post a weekday digest to the team channel. PR Review on Open Review newly opened pull requests and post findings as inline comments. Pinned automations PR Triage Digest Review newly opened pull requests in acme/frontend-app, identify risky changes, summarize likely impact, and prepare a concise digest with priority ordering for the engineering review channel. acme/frontend-app Weekdays at 09:00 triage-fast Successful just now Nightly Security Pass Scan the acme/backend-api repository for known security vulnerabilities, outdated dependencies, and insecure code patterns. Produce a prioritized remediation summary. acme/backend-api Daily at 01:30 security-careful Running just now Recent Automation Activity Add Nightly Security Pass Daily at 01:30 · jus"
       },
       "current": {
         "status_code": 200,
         "final_url": "https://www.openhands.dev/",
-        "text_hash": "28fa1a5cc3d31016fdec3af3134f9470ac9576224b0adcf315338230f2d025b5",
-        "simhash64": "028e40c98f3bc7ca",
+        "text_hash": "17883187e3001756cada2dc9aacdd2388e05340f4c23baa6d84909c97c1a9423",
+        "simhash64": "028e00c98f7bc7ea",
         "token_count": 2319,
         "text_sample": "How mature is your agentic SDLC? Take the 2-minute quiz The open platform for agentic software development Get OpenHands Try it now Cloud Try OpenHands Cloud Talk to us Bring your own agent Let's Start Building! What do you want to build? Model Open Workspace Plugins Recommended automations Slack channel monitor Watch a channel for mentions and open a conversation with the message context. Slack standup digest Collect standup replies and post a weekday digest to the team channel. PR Review on Open Review newly opened pull requests and post findings as inline comments. Pinned automations PR Triage Digest Review newly opened pull requests in acme/frontend-app, identify risky changes, summarize likely impact, and prepare a concise digest with priority ordering for the engineering review channel. acme/frontend-app Weekdays at 09:00 triage-fast Successful just now Nightly Security Pass Scan the acme/backend-api repository for known security vulnerabilities, outdated dependencies, and insecure code patterns. Produce a prioritized remediation summary. acme/backend-api Daily at 01:30 security-careful Running just now Recent Automation Activity Add Nightly Security Pass Daily at 01:30 · jus",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "cda9f62b29c5956e357b2a7b28854bcd9dfc9cdff4aff029984e5f172d70b9d3",
-        "new_hash": "28fa1a5cc3d31016fdec3af3134f9470ac9576224b0adcf315338230f2d025b5",
-        "simhash_distance": 1,
+        "old_hash": "28fa1a5cc3d31016fdec3af3134f9470ac9576224b0adcf315338230f2d025b5",
+        "new_hash": "17883187e3001756cada2dc9aacdd2388e05340f4c23baa6d84909c97c1a9423",
+        "simhash_distance": 3,
         "old_token_count": 2319,
         "new_token_count": 2319,
-        "token_delta_pct": 0
+        "token_delta_pct": 0.0
       },
-      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
-      "resolution": "Reviewed the current OpenHands homepage; the low-severity dynamic page change does not alter indexed product facts.",
-      "reviewed_at": "2026-10-02T03:19:00Z"
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-0954ACA5D383D971A7",
@@ -1349,8 +1347,8 @@
       "review_id": "REV-3493B3225601CA6BC1",
       "status": "open",
       "first_detected": "2026-10-03T03:33:06Z",
-      "last_detected": "2026-10-03T03:33:06Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-03T14:49:41Z",
+      "occurrences": 2,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-B6A803A2C827C8",
@@ -1370,7 +1368,7 @@
       "current": {
         "status_code": 200,
         "final_url": "https://github.com/microsoft/agent-framework",
-        "text_hash": "0078b183d35b1c049980906bed0a57e3b306beedce4a03994ece476931ca181a",
+        "text_hash": "9c8227628eebc94e1edc23a2eec2cc84afa10389372d12923243ec34a2779541",
         "simhash64": "c71385828937adc6",
         "token_count": 1426,
         "text_sample": "microsoft / agent-framework Public Notifications You must be signed in to change notification settings Fork 2.4k Star 13.9k main Branches Tags Go to file Code Open more actions menu Latest commit History 3,412 Commits 3,412 Commits Folders and files Name Name Last commit message Last commit date .devcontainer .devcontainer .github .github .vscode .vscode declarative-agents declarative-agents docs docs dotnet dotnet go go python python .gitattributes .gitattributes .gitignore .gitignore CODE_OF_CONDUCT.md CODE_OF_CONDUCT.md COMMUNITY.md COMMUNITY.md CONTRIBUTING.md CONTRIBUTING.md LICENSE LICENSE README.md README.md SECURITY.md SECURITY.md SUPPORT.md SUPPORT.md TRANSPARENCY_FAQ.md TRANSPARENCY_FAQ.md es-metadata.yml es-metadata.yml View all files Repository files navigation Welcome to Microsoft Agent Framework! Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python . Microsoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python, .NET and Go, while keepin",
@@ -1378,8 +1376,8 @@
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "95316521614efbc316ed84936270d830eb06a87f47b1d280a46f886b53465363",
-        "new_hash": "0078b183d35b1c049980906bed0a57e3b306beedce4a03994ece476931ca181a",
+        "old_hash": "0078b183d35b1c049980906bed0a57e3b306beedce4a03994ece476931ca181a",
+        "new_hash": "9c8227628eebc94e1edc23a2eec2cc84afa10389372d12923243ec34a2779541",
         "simhash_distance": 0,
         "old_token_count": 1426,
         "new_token_count": 1426,
@@ -1391,8 +1389,8 @@
       "review_id": "REV-387BEBF78AE938F63D",
       "status": "open",
       "first_detected": "2026-10-03T03:33:06Z",
-      "last_detected": "2026-10-03T03:33:06Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-03T14:49:41Z",
+      "occurrences": 2,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-FA0B4B4F4D49E4",
@@ -1412,20 +1410,20 @@
       "current": {
         "status_code": 200,
         "final_url": "https://help.manus.im/en/articles/11711128-what-are-the-differences-between-chat-mode-and-agent-mode",
-        "text_hash": "4275cd4dc21aedd3b2e179f371f55ec31034cf20ad2b0d5831d83e693b4d304d",
-        "simhash64": "c2ed0f10f4e2c411",
-        "token_count": 477,
-        "text_sample": "What are the differences between Chat mode and Agent mode? Understand the differences between Manus's two modes: Chat mode and Agent mode. Updated yesterday Table of contents Chat Mode: For Instant Answers and In-depth Discussions Chat mode is a lightweight mode we offer, allowing users to get instant answers under this mode. In chat mode, Manus supports recognizing images, PDFs, and text files. It also supports online searches to provide users with better answers. And conversations conducted in this mode will not consume credits. With the release of Manus 2.0, Chat Mode has been significantly enhanced with the integration of fast and efficient chat models in the industry. This allows it to easily handle various complex tasks such as daily conversations, in-depth discussions, and brainstorming, providing more accurate and comprehensive responses. Agent Mode: For Complex Tasks and Autonomous Workflows Agent mode supports users in performing more complex tasks, including creating websites, slides, videos, and so on (visit https://manus.im/docs/features/projects for more information about our features). In this mode, Manus will autonomously plan and complete tasks based on your instru",
+        "text_hash": "e6d4cec0844c409673e0b91a19b969dbf03c50f0543a48dd030909a8c65b0633",
+        "simhash64": "c2fd0f10fee2c411",
+        "token_count": 478,
+        "text_sample": "What are the differences between Chat mode and Agent mode? Understand the differences between Manus's two modes: Chat mode and Agent mode. Updated this week Table of contents Chat Mode: For Instant Answers and In-depth Discussions Chat mode is a lightweight mode we offer, allowing users to get instant answers under this mode. In chat mode, Manus supports recognizing images, PDFs, and text files. It also supports online searches to provide users with better answers. And conversations conducted in this mode will not consume credits. With the release of Manus 2.0, Chat Mode has been significantly enhanced with the integration of fast and efficient chat models in the industry. This allows it to easily handle various complex tasks such as daily conversations, in-depth discussions, and brainstorming, providing more accurate and comprehensive responses. Agent Mode: For Complex Tasks and Autonomous Workflows Agent mode supports users in performing more complex tasks, including creating websites, slides, videos, and so on (visit https://manus.im/docs/features/projects for more information about our features). In this mode, Manus will autonomously plan and complete tasks based on your instru",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "66aabf4fcd22edaa55f96d739d81052940040431b55561521300d873a5acf255",
-        "new_hash": "4275cd4dc21aedd3b2e179f371f55ec31034cf20ad2b0d5831d83e693b4d304d",
-        "simhash_distance": 0,
+        "old_hash": "4275cd4dc21aedd3b2e179f371f55ec31034cf20ad2b0d5831d83e693b4d304d",
+        "new_hash": "e6d4cec0844c409673e0b91a19b969dbf03c50f0543a48dd030909a8c65b0633",
+        "simhash_distance": 3,
         "old_token_count": 477,
-        "new_token_count": 477,
-        "token_delta_pct": 0.0
+        "new_token_count": 478,
+        "token_delta_pct": 0.21
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -1787,8 +1785,8 @@
       "review_id": "REV-4BA9DCF90A3051DBFB",
       "status": "open",
       "first_detected": "2026-10-03T03:33:10Z",
-      "last_detected": "2026-10-03T03:33:10Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-03T14:49:45Z",
+      "occurrences": 2,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-D7AC715E61B5BE",
@@ -1808,20 +1806,20 @@
       "current": {
         "status_code": 200,
         "final_url": "https://knowledge.hubspot.com/ai/use-the-company-research-agent",
-        "text_hash": "2e23595f3a94166f5a8439ceec446adad9ccd7cf3476ae0da4f9a88a0358a2b0",
-        "simhash64": "2c27d53e3ffe86e8",
-        "token_count": 715,
+        "text_hash": "5314cbce9f509ce837b6163ef6e01cd24829fecbbb015b8acb2041d2d268dc74",
+        "simhash64": "6ca7d53e3ffe86e8",
+        "token_count": 700,
         "text_sample": "Knowledge Base AI AI Set up and use the company research agent Set up and use the company research agent Last updated: September 16, 2026 Available with any of the following subscriptions , except where noted: Smart CRM Professional, Enterprise HubSpot Credits required Additional subscriptions required for certain features With the company research agent, you can view important information about a companies funding signals, changes in the company's structure, tech stack, and more. The agent consolidates company research from your CRM data, public web sources, and industry trends into one structured summary, reducing the manual research needed before outreach or meetings. For example, sales reps can prepare for a meeting with a prospect's latest news and company overview. Please note : you can manage AI feature access in your AI settings and configure what data is shared. Review HubSpot's AI Trust FAQs and AI Model Cards for detailed information on AI security controls, data use, and compliance. Set up the company research agent Permissions required Super Admin permissions are required to set up the company research agent. In your HubSpot account, click More , then navigate to Agent",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "5314cbce9f509ce837b6163ef6e01cd24829fecbbb015b8acb2041d2d268dc74",
-        "new_hash": "2e23595f3a94166f5a8439ceec446adad9ccd7cf3476ae0da4f9a88a0358a2b0",
+        "old_hash": "2e23595f3a94166f5a8439ceec446adad9ccd7cf3476ae0da4f9a88a0358a2b0",
+        "new_hash": "5314cbce9f509ce837b6163ef6e01cd24829fecbbb015b8acb2041d2d268dc74",
         "simhash_distance": 2,
-        "old_token_count": 700,
-        "new_token_count": 715,
-        "token_delta_pct": 2.14
+        "old_token_count": 715,
+        "new_token_count": 700,
+        "token_delta_pct": -2.1
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -1957,8 +1955,8 @@
       "review_id": "REV-5224C43C4FE1DC7E75",
       "status": "open",
       "first_detected": "2026-10-03T03:32:40Z",
-      "last_detected": "2026-10-03T03:32:40Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-03T14:49:19Z",
+      "occurrences": 2,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-78C111BF205ABB",
@@ -1978,16 +1976,16 @@
       "current": {
         "status_code": 200,
         "final_url": "https://cline.bot/",
-        "text_hash": "70471cc2ecc6e1a87be2c4df0d9a9f41d62b98850e26e4c89e1d522766ff0877",
-        "simhash64": "ea6f155e689954bf",
+        "text_hash": "3e2fc3a5607d9936603e0f693812adfccaa3007971f45304777cdc7ec0b1bf4e",
+        "simhash64": "6a6f155e689954bf",
         "token_count": 448,
-        "text_sample": "Cline - AI Coding, Open Source and Open Choice The Open Coding Agent Ship securely w/ Claude in VS Code One open source agent runtime. Use it in your editor, your terminal, or embed it in your own products. Trusted by 11M + developers . Desktop New CLI Terminal IDE Extension SDK Embed Cline for Desktop: the coding agent as a native desktop app. No editor required. Download for Mac Download for Windows Download for Linux v 0.0.43 · macOS, Windows & Linux Explore Cline for Desktop Ready to experience AI coding without limits? Get Started 11M + installs across all platforms marketplace + open vsx registry 69.7k stars Trusted by developers and leaders at See Cline at work One agent across your IDE, terminal, and SDK. Pick a task and watch it run. Understand Refactor Automate Your browser does not support the video tag. Understand your codebase See how a codebase is structured and ask Cline questions about files, dependencies, and behavior. Refactor large codebases Make coordinated changes across large codebases while Cline keeps imports, types, and behavior consistent. Automate with Cline CLI Use Cline CLI in scripts, cron jobs, and CI pipelines to run recurring checks, updates, and cu",
+        "text_sample": "Cline - AI Coding, Open Source and Open Choice The Open Coding Agent Ship securely w/ Claude in VS Code One open source agent runtime. Use it in your editor, your terminal, or embed it in your own products. Trusted by 11M + developers . Desktop New CLI Terminal IDE Extension SDK Embed Cline for Desktop: the coding agent as a native desktop app. No editor required. Download for Mac Download for Windows Download for Linux v 0.0.43 · macOS, Windows & Linux Explore Cline for Desktop Ready to experience AI coding without limits? Get Started 11M + installs across all platforms marketplace + open vsx registry 69.8k stars Trusted by developers and leaders at See Cline at work One agent across your IDE, terminal, and SDK. Pick a task and watch it run. Understand Refactor Automate Your browser does not support the video tag. Understand your codebase See how a codebase is structured and ask Cline questions about files, dependencies, and behavior. Refactor large codebases Make coordinated changes across large codebases while Cline keeps imports, types, and behavior consistent. Automate with Cline CLI Use Cline CLI in scripts, cron jobs, and CI pipelines to run recurring checks, updates, and cu",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "317ecbdcf27b8fa39ce1931afcf3f192d14ba77c285a51cba96a392834272efc",
-        "new_hash": "70471cc2ecc6e1a87be2c4df0d9a9f41d62b98850e26e4c89e1d522766ff0877",
+        "old_hash": "70471cc2ecc6e1a87be2c4df0d9a9f41d62b98850e26e4c89e1d522766ff0877",
+        "new_hash": "3e2fc3a5607d9936603e0f693812adfccaa3007971f45304777cdc7ec0b1bf4e",
         "simhash_distance": 1,
         "old_token_count": 448,
         "new_token_count": 448,
@@ -2041,8 +2039,8 @@
       "review_id": "REV-537262F81B1362AAB2",
       "status": "open",
       "first_detected": "2026-10-03T03:33:32Z",
-      "last_detected": "2026-10-03T03:33:32Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-03T14:50:04Z",
+      "occurrences": 2,
       "severity": "medium",
       "change_type": "content_change",
       "source_id": "SRC-FEA6E98594B255",
@@ -2062,20 +2060,20 @@
       "current": {
         "status_code": 200,
         "final_url": "https://www.lindy.ai/pricing",
-        "text_hash": "94232e84f36b55145bcda5443bed4ba2f641c3f3fe28f67286be6a05d33ff3c9",
-        "simhash64": "a6f8bdc21768f3f8",
-        "token_count": 926,
-        "text_sample": "The teammate that punches above its price. Free Give Lindy real work before you pay. $ 0 $50 in credits for free Try for free Everything you need to get started No credit card required Setup in 2 minutes Free credits last 7 days Team Buy the credits you need. $ 29.99 /mo 3,000 credits / mo 3,000 credits $29.99 4,000 credits $39.99 5,000 credits $49.99 6,000 credits $59.99 8,000 credits $79.99 15,000 credits $99.99 20,000 credits $149.99 35,000 credits $199.99 45,000 credits $299.99 Small teams 70,000 credits $399.98 105,000 credits $599.97 175,000 credits $999.95 Growing teams 350,000 credits $1,999.90 700,000 credits $3,999.80 1,750,000 credits $9,999.50 Need more? Top up anytime at $10 per 1,000 credits, or talk to sales . Try for free Everything in Free, and: 3,000 credits every month Credits pooled across your whole team Top up anytime, $10 per 1,000 credits Choose your model for each task Computer use Live onboarding Enterprise Security, compliance, and control. Custom Custom credits and billing Book a demo Everything in Team, and: HIPAA compliance & signed BAA SSO & SCIM Audit logs Shared usage + bonus credits Dedicated support Onboarding & enablement Every active user in you",
+        "text_hash": "3bab0363dfee328331efe3c01720fd6eefb208ecf74228015be150d9b9cda069",
+        "simhash64": "86fab602155df0fa",
+        "token_count": 783,
+        "text_sample": "The teammate that punches above its price. Plus Start with $50 in free credits. Then enough for everyday usage. $ 29.99 /mo per user 3k credits / user / mo Standard usage Try for free Pro More usage, more power. $ 99.99 /mo per user 15k credits / user / mo 5x more than Plus Try for free Max For the heaviest workloads. $ 199.99 /mo per user 35k credits / user / mo ~12x more than Plus Try for free Enterprise Everything in Max, plus the controls your security review will ask about. Everything in Max HIPAA compliance & signed BAA Shared usage + bonus credits Dedicated support Audit logs Onboarding & enablement Book a demo Everything included right out of the box. Slack-native teammate in threads + mentions Scheduled routines Persistent workspace context 40+ skills, plus create your own Shared meeting library and folders Meeting recording and notes Meeting scheduling, prep and follow-up Daily briefs, nudges, and catch-ups Inbox management Drafts replies in your voice Connect 2 to 5 inboxes, depending on plan iMessage with your assistant 24/7 Team files with version history Computer use on Pro and Max 1,500+ integrations MCP support, connect any tool Model selection, all models Approvals",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "59c5140d4a5199af512a275b1670b9248af562f04224353c83a5c5c83090ffbb",
-        "new_hash": "94232e84f36b55145bcda5443bed4ba2f641c3f3fe28f67286be6a05d33ff3c9",
-        "simhash_distance": 14,
-        "old_token_count": 765,
-        "new_token_count": 926,
-        "token_delta_pct": 21.05
+        "old_hash": "94232e84f36b55145bcda5443bed4ba2f641c3f3fe28f67286be6a05d33ff3c9",
+        "new_hash": "3bab0363dfee328331efe3c01720fd6eefb208ecf74228015be150d9b9cda069",
+        "simhash_distance": 15,
+        "old_token_count": 926,
+        "new_token_count": 783,
+        "token_delta_pct": -15.44
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -2552,8 +2550,8 @@
       "review_id": "REV-659995B9DB71389173",
       "status": "open",
       "first_detected": "2026-10-03T03:32:52Z",
-      "last_detected": "2026-10-03T03:32:52Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-03T14:49:28Z",
+      "occurrences": 2,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-72D0664BACD6BC",
@@ -2573,17 +2571,17 @@
       "current": {
         "status_code": 200,
         "final_url": "https://docs.n8n.io/administer/manage-users-and-access/verify-user-identity/use-oidc/set-up-oidc",
-        "text_hash": "b9235a10025e031301daccbcebbebbcbd52ca563ac3474d37866035051c94f7d",
-        "simhash64": "78e32c1ffbdd73d5",
+        "text_hash": "c69d7cd9099852b541ca011152f9f93a55248396194412d0cc6d294ec6e33935",
+        "simhash64": "78e32c1ffbddf3d5",
         "token_count": 1519,
         "text_sample": "For the complete documentation index, see llms.txt . This page is also available as Markdown . Feature availability Available on Enterprise plans. You need to be an instance owner or admin to enable and configure OIDC. Feature availability Configuring OIDC using environment variables instead of the UI is available from n8n 2.18.0. See SSO environment variables . Setting up and enabling OIDC In n8n, go to Settings > SSO . Under Select Authentication Protocol , choose OIDC from the dropdown. Copy the redirect URL shown (for example, https://yourworkspace.app.n8n.cloud/rest/sso/oidc/callback ). Extra configuration for load balancers or proxies If you are running n8n behind a load balancer, make sure you set the N8N_EDITOR_BASE_URL environment variable . Set up OIDC with your identity provider (IdP). You'll need to: Create a new OIDC client/application in your IdP. Configure the redirect URL from the previous step. Note down the Client ID and Client Secret provided by your IdP. In your IdP, locate the Discovery Endpoint (also called the well-known configuration endpoint). It typically has the following format: Copy https://your-idp-domain/.well-known/openid-configuration In n8n, comple",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "95863aa108583974d091ae01d261dad166b12441cd890b579024e149e8ecefa9",
-        "new_hash": "b9235a10025e031301daccbcebbebbcbd52ca563ac3474d37866035051c94f7d",
-        "simhash_distance": 2,
+        "old_hash": "b9235a10025e031301daccbcebbebbcbd52ca563ac3474d37866035051c94f7d",
+        "new_hash": "c69d7cd9099852b541ca011152f9f93a55248396194412d0cc6d294ec6e33935",
+        "simhash_distance": 1,
         "old_token_count": 1519,
         "new_token_count": 1519,
         "token_delta_pct": 0.0
@@ -3522,8 +3520,8 @@
       "review_id": "REV-8E70AF184E09063613",
       "status": "open",
       "first_detected": "2026-10-03T03:33:11Z",
-      "last_detected": "2026-10-03T03:33:11Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-03T14:49:46Z",
+      "occurrences": 2,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-D95746AD5DEBCE",
@@ -3546,20 +3544,20 @@
       "current": {
         "status_code": 200,
         "final_url": "https://knowledge.hubspot.com/account-management/view-and-export-account-activity-history",
-        "text_hash": "c0df6896e854b1c4b229facee6aec8b5fbf5d2ea8f3d8a9777173388137a5278",
+        "text_hash": "12fddafc6d2fa7963f64cf66579c238824485d05748bafefeb21a7ac47dbd74e",
         "simhash64": "6bc2efd1e63c330d",
-        "token_count": 2101,
+        "token_count": 2087,
         "text_sample": "Knowledge Base Account & Setup Account Management View and export account activity history View and export account activity history Last updated: September 23, 2026 Available with any of the following subscriptions , except where noted: Marketing Hub Starter, Professional, Enterprise Sales Hub Starter, Professional, Enterprise Service Hub Starter, Professional, Enterprise Data Hub Starter, Professional, Enterprise Content Hub Starter, Professional, Enterprise Use audit logs to review, filter, and export a record of user actions in a HubSpot account. This helps troubleshoot unexpected changes and monitor security-related activity. Learn what audit log data is available based on your subscription. Permissions required Super Admin permissions are required to view and export audit logs. View, filter, and export a centralized audit log In the centralized audit log, you can view user actions in your account. The log only records HubSpot-user based actions. Updates to properties not made by a user (e.g., a form submission) won't display in the audit log. To view, filter, and export a centralized log of account activity on your Audit Logs page: In your HubSpot account, click the settings i",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "12fddafc6d2fa7963f64cf66579c238824485d05748bafefeb21a7ac47dbd74e",
-        "new_hash": "c0df6896e854b1c4b229facee6aec8b5fbf5d2ea8f3d8a9777173388137a5278",
+        "old_hash": "c0df6896e854b1c4b229facee6aec8b5fbf5d2ea8f3d8a9777173388137a5278",
+        "new_hash": "12fddafc6d2fa7963f64cf66579c238824485d05748bafefeb21a7ac47dbd74e",
         "simhash_distance": 0,
-        "old_token_count": 2087,
-        "new_token_count": 2101,
-        "token_delta_pct": 0.67
+        "old_token_count": 2101,
+        "new_token_count": 2087,
+        "token_delta_pct": -0.67
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
@@ -4975,6 +4973,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
+      "review_id": "REV-B17E3C46059BB7A93E",
+      "status": "open",
+      "first_detected": "2026-10-03T14:49:32Z",
+      "last_detected": "2026-10-03T14:49:32Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-61CAB655413813",
+      "source_title": "Snowflake Docs – Federated authentication and SSO",
+      "url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-overview",
+      "agent_ids": [
+        "AI-0105"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-overview",
+        "text_hash": "b8d7d470c006f1a8cf4391c2ed422b241941823afe7d65881a6e6c6634dfc47f",
+        "simhash64": "c421694f89721e84",
+        "token_count": 1627,
+        "text_sample": "Overview of federated authentication and SSO ¶ This topic describes the components that make up a federated environment for authenticating users, and the SSO (single sign-on) workflows supported by Snowflake. What is a federated environment? ¶ In a federated environment, user authentication is separated from user access through the use of one or more external entities that provide independent authentication of user credentials. The authentication is then passed to one or more services, enabling users to access the services through SSO. A federated environment consists of the following components: Service provider (SP): In a Snowflake federated environment, Snowflake serves as the SP. Identity provider (IdP): The external, independent entity responsible for providing the following services to the SP: Creating and maintaining user credentials and other profile information. Authenticating users for SSO access to the SP. Snowflake supports federated authentication through SAML 2.0 and OpenID Connect (OIDC) security integrations. For SAML, Snowflake supports most SAML 2.0-compliant vendors as an IdP; however, certain vendors include native support for Snowflake (see below for details). "
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-overview",
+        "text_hash": "d9d05a544eed6500db7c85ed2f4b4265ee092aaeb3a193849136e6f810833f9d",
+        "simhash64": "cc316d4f89721e84",
+        "token_count": 1626,
+        "text_sample": "Overview of federated authentication and SSO ¶ This topic describes the components that make up a federated environment for authenticating users, and the SSO (single sign-on) workflows supported by Snowflake. What is a federated environment? ¶ In a federated environment, user authentication is separated from user access through the use of one or more external entities that provide independent authentication of user credentials. The authentication is then passed to one or more services, enabling users to access the services through SSO. A federated environment consists of the following components: Service provider (SP): In a Snowflake federated environment, Snowflake serves as the SP. Identity provider (IdP): The external, independent entity responsible for providing the following services to the SP: Creating and maintaining user credentials and other profile information. Authenticating users for SSO access to the SP. Snowflake supports federated authentication through SAML 2.0 and OpenID Connect (OIDC) security integrations. For SAML, Snowflake supports most SAML 2.0-compliant vendors as an IdP; however, certain vendors include native support for Snowflake (see below for details). ",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "b8d7d470c006f1a8cf4391c2ed422b241941823afe7d65881a6e6c6634dfc47f",
+        "new_hash": "d9d05a544eed6500db7c85ed2f4b4265ee092aaeb3a193849136e6f810833f9d",
+        "simhash_distance": 3,
+        "old_token_count": 1627,
+        "new_token_count": 1626,
+        "token_delta_pct": -0.06
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
+    },
+    {
       "review_id": "REV-B49A73E210A6A4B4DF",
       "status": "open",
       "first_detected": "2026-10-03T03:32:55Z",
@@ -5535,6 +5575,48 @@
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed.",
       "resolution": "Reviewed the current Claude Code Security documentation; SOC 2 Type 2, Anthropic-managed cloud VMs, self-hosted cloud environments, and cloud-session audit logging remain explicitly documented.",
       "reviewed_at": "2026-10-02T03:19:00Z"
+    },
+    {
+      "review_id": "REV-C3CD8C65FEF4A3E11A",
+      "status": "open",
+      "first_detected": "2026-10-03T14:49:39Z",
+      "last_detected": "2026-10-03T14:49:39Z",
+      "occurrences": 1,
+      "severity": "low",
+      "change_type": "content_change",
+      "source_id": "SRC-A6D839CA139670",
+      "source_title": "Snowflake Docs – Federated authentication and SSO",
+      "url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth",
+      "agent_ids": [
+        "AI-0098"
+      ],
+      "previous": {
+        "status_code": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-overview",
+        "text_hash": "b8d7d470c006f1a8cf4391c2ed422b241941823afe7d65881a6e6c6634dfc47f",
+        "simhash64": "c421694f89721e84",
+        "token_count": 1627,
+        "text_sample": "Overview of federated authentication and SSO ¶ This topic describes the components that make up a federated environment for authenticating users, and the SSO (single sign-on) workflows supported by Snowflake. What is a federated environment? ¶ In a federated environment, user authentication is separated from user access through the use of one or more external entities that provide independent authentication of user credentials. The authentication is then passed to one or more services, enabling users to access the services through SSO. A federated environment consists of the following components: Service provider (SP): In a Snowflake federated environment, Snowflake serves as the SP. Identity provider (IdP): The external, independent entity responsible for providing the following services to the SP: Creating and maintaining user credentials and other profile information. Authenticating users for SSO access to the SP. Snowflake supports federated authentication through SAML 2.0 and OpenID Connect (OIDC) security integrations. For SAML, Snowflake supports most SAML 2.0-compliant vendors as an IdP; however, certain vendors include native support for Snowflake (see below for details). "
+      },
+      "current": {
+        "status_code": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-overview",
+        "text_hash": "d9d05a544eed6500db7c85ed2f4b4265ee092aaeb3a193849136e6f810833f9d",
+        "simhash64": "cc316d4f89721e84",
+        "token_count": 1626,
+        "text_sample": "Overview of federated authentication and SSO ¶ This topic describes the components that make up a federated environment for authenticating users, and the SSO (single sign-on) workflows supported by Snowflake. What is a federated environment? ¶ In a federated environment, user authentication is separated from user access through the use of one or more external entities that provide independent authentication of user credentials. The authentication is then passed to one or more services, enabling users to access the services through SSO. A federated environment consists of the following components: Service provider (SP): In a Snowflake federated environment, Snowflake serves as the SP. Identity provider (IdP): The external, independent entity responsible for providing the following services to the SP: Creating and maintaining user credentials and other profile information. Authenticating users for SSO access to the SP. Snowflake supports federated authentication through SAML 2.0 and OpenID Connect (OIDC) security integrations. For SAML, Snowflake supports most SAML 2.0-compliant vendors as an IdP; however, certain vendors include native support for Snowflake (see below for details). ",
+        "result": "fetched",
+        "error": null
+      },
+      "latest_metrics": {
+        "old_hash": "b8d7d470c006f1a8cf4391c2ed422b241941823afe7d65881a6e6c6634dfc47f",
+        "new_hash": "d9d05a544eed6500db7c85ed2f4b4265ee092aaeb3a193849136e6f810833f9d",
+        "simhash_distance": 3,
+        "old_token_count": 1627,
+        "new_token_count": 1626,
+        "token_delta_pct": -0.06
+      },
+      "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
     {
       "review_id": "REV-C56824BA5F983001EF",
@@ -6289,8 +6371,8 @@
       "review_id": "REV-EBBE862F3231EAE55F",
       "status": "open",
       "first_detected": "2026-10-03T03:32:39Z",
-      "last_detected": "2026-10-03T03:32:39Z",
-      "occurrences": 1,
+      "last_detected": "2026-10-03T14:49:18Z",
+      "occurrences": 2,
       "severity": "low",
       "change_type": "content_change",
       "source_id": "SRC-72C46F3DC865F4",
@@ -6310,20 +6392,20 @@
       "current": {
         "status_code": 200,
         "final_url": "https://code.claude.com/docs/en/monitoring-usage",
-        "text_hash": "08823d72a29cd5303fef14fcca6e9ad0b4605a11ea3be08f624d4c019a1ac661",
+        "text_hash": "438127c3f2de085240450e834e331c3117e0e997e62595f288a45e2673853fb2",
         "simhash64": "06483251fbd7cc3c",
-        "token_count": 17684,
+        "token_count": 17692,
         "text_sample": "Track Claude Code usage, costs, and tool activity across your organization by exporting telemetry data through OpenTelemetry (OTel). Claude Code exports metrics as time series data via the standard metrics protocol, events via the logs/events protocol, and optionally distributed traces via the traces protocol . Quick start Configure OpenTelemetry using environment variables: # 1. Enable telemetry export CLAUDE_CODE_ENABLE_TELEMETRY = 1 # 2. Choose exporters (both are optional - configure only what you need) export OTEL_METRICS_EXPORTER = otlp # Options: otlp, prometheus, console, none export OTEL_LOGS_EXPORTER = otlp # Options: otlp, console, none # 3. Configure OTLP endpoint (for OTLP exporter) export OTEL_EXPORTER_OTLP_PROTOCOL = grpc export OTEL_EXPORTER_OTLP_ENDPOINT = http :// localhost : 4317 # 4. Set authentication (if required) export OTEL_EXPORTER_OTLP_HEADERS = \"Authorization=Bearer your-token\" # 5. For debugging: reduce export intervals, and reset them for production use export OTEL_METRIC_EXPORT_INTERVAL = 10000 # 10 seconds (default: 60000ms) export OTEL_LOGS_EXPORT_INTERVAL = 5000 # 5 seconds (default: 5000ms) # 6. Run Claude Code claude To verify a setup that exports",
         "result": "fetched",
         "error": null
       },
       "latest_metrics": {
-        "old_hash": "229dbe6053b7c5dd9a0f5673c109001ca64daa1221a0ad452f452af7aca07ab8",
-        "new_hash": "08823d72a29cd5303fef14fcca6e9ad0b4605a11ea3be08f624d4c019a1ac661",
-        "simhash_distance": 1,
-        "old_token_count": 17664,
-        "new_token_count": 17684,
-        "token_delta_pct": 0.11
+        "old_hash": "08823d72a29cd5303fef14fcca6e9ad0b4605a11ea3be08f624d4c019a1ac661",
+        "new_hash": "438127c3f2de085240450e834e331c3117e0e997e62595f288a45e2673853fb2",
+        "simhash_distance": 0,
+        "old_token_count": 17684,
+        "new_token_count": 17692,
+        "token_delta_pct": 0.05
       },
       "editorial_action": "Open the official source, assess the change, then update data/agents.json only if a supported product fact changed."
     },
