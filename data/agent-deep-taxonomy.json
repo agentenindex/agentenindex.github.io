@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "updated": "2026-10-01",
+  "schema_version": "1.1",
+  "updated": "2026-10-03",
   "principle": "Canonical field paths for curated AgentenGraph deep evidence. Missing fields are unknown; false requires explicit primary-source evidence.",
   "domains": {
     "protocols": "Interoperability and agent/tool protocols such as MCP and A2A.",
@@ -12,7 +12,10 @@
     "governance": "Administration, access control, audit, observability and policy controls.",
     "privacy": "Data residency, training and privacy controls.",
     "security": "Encryption, key management and security attestations/capabilities.",
-    "tools": "External tool integration capabilities that are not protocol-specific."
+    "tools": "External tool integration capabilities that are not protocol-specific.",
+    "composition": "Documented technical composition of an agent or agentic system.",
+    "orchestration": "Delegation, routing, handoffs and multi-agent coordination.",
+    "memory": "Agent state and memory behavior, including persistence and sharing."
   },
   "paths": {
     "api.async": {
@@ -500,6 +503,108 @@
       "value_kind": "boolean",
       "cardinality": "single",
       "status": "active"
+    },
+    "composition.component": {
+      "domain": "composition",
+      "value_kind": "string",
+      "cardinality": "multi",
+      "status": "active"
+    },
+    "composition.model": {
+      "domain": "composition",
+      "value_kind": "string",
+      "cardinality": "multi",
+      "status": "active"
+    },
+    "composition.tool": {
+      "domain": "composition",
+      "value_kind": "string",
+      "cardinality": "multi",
+      "status": "active"
+    },
+    "memory.persistent": {
+      "domain": "memory",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "memory.shared_across_agents": {
+      "domain": "memory",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "orchestration.multi_agent": {
+      "domain": "orchestration",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "orchestration.delegation": {
+      "domain": "orchestration",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "orchestration.handoffs": {
+      "domain": "orchestration",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "orchestration.parallel_agents": {
+      "domain": "orchestration",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "orchestration.agent_to_agent": {
+      "domain": "orchestration",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.approval.pre_action": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.delegation_controls": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.rollback": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.kill_switch": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.tool_permissions": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.audit_logs.action_level": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
+    },
+    "governance.tracing.agent_handoffs": {
+      "domain": "governance",
+      "value_kind": "boolean",
+      "cardinality": "single",
+      "status": "active"
     }
   },
   "deprecated_aliases": {
@@ -591,5 +696,34 @@
       "official_release"
     ],
     "note": "Evidence type ranks source classes only; it does not replace claim-level confidence or editorial review."
+  },
+  "system_profile": {
+    "version": "0.1",
+    "purpose": "Candidate fields for composition, orchestration and AgentenFreigabe. This profile does not alter the current deep-completeness target until evidence coverage is mature.",
+    "fields": [
+      "composition.component",
+      "composition.model",
+      "composition.tool",
+      "memory.persistent",
+      "memory.shared_across_agents",
+      "orchestration.multi_agent",
+      "orchestration.delegation",
+      "orchestration.handoffs",
+      "orchestration.parallel_agents",
+      "orchestration.agent_to_agent",
+      "governance.approval.pre_action",
+      "governance.delegation_controls",
+      "governance.rollback",
+      "governance.kill_switch",
+      "governance.tool_permissions",
+      "governance.audit_logs.action_level",
+      "governance.tracing.agent_handoffs"
+    ],
+    "state_model": [
+      "documented_true_or_value",
+      "documented_false",
+      "unknown"
+    ],
+    "note": "Unknown remains a first-class state; no product relationship or control is inferred."
   }
 }

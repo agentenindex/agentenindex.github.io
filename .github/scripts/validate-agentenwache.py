@@ -7,6 +7,9 @@ import sys
 ROOT=Path(__file__).resolve().parents[2]
 GRAPH=json.loads((ROOT/"_agentengraph"/"sources.json").read_text(encoding="utf-8"))
 WATCH=ROOT/"_agentenwache"
+SYSTEM_SCHEMA_PATH=ROOT/"data"/"agent-system-schema.json"
+SYSTEM_SCHEMA=json.loads(SYSTEM_SCHEMA_PATH.read_text(encoding="utf-8")) if SYSTEM_SCHEMA_PATH.exists() else {"watch_change_categories":[]}
+VALID_SYSTEM_SIGNALS=set(SYSTEM_SCHEMA.get("watch_change_categories") or [])
 
 def load(name):
     return json.loads((WATCH/name).read_text(encoding="utf-8"))
@@ -48,6 +51,8 @@ for item in queue_doc.get("items",[]):
         errors.append(f"{rid}: invalid change type {item.get('change_type')}")
     if item.get("severity") not in {"low","medium","high"}:
         errors.append(f"{rid}: invalid severity {item.get('severity')}")
+    if item.get("system_signal") is not None and item.get("system_signal") not in VALID_SYSTEM_SIGNALS:
+        errors.append(f"{rid}: invalid system_signal {item.get('system_signal')}")
     if "auto" in str(item.get("editorial_action","")).lower() and "not" not in str(item.get("editorial_action","")).lower():
         errors.append(f"{rid}: editorial action looks like auto-publication")
 

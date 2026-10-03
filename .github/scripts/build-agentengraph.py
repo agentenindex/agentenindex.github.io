@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build AgentenGraph v1 from data/agents.json plus curated field-level deep evidence.
+Build AgentenGraph v1.1 from product data, curated field-level evidence and explicit system relations.
 
 AgentenGraph is the internal, versioned evidence/history layer behind AgentenIndex.
 It intentionally does NOT invent field-level evidence. Existing AgentenProfile
@@ -30,11 +30,13 @@ ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "data" / "agents.json"
 DEEP_INPUT = ROOT / "data" / "agent-deep-evidence.json"
 TAXONOMY_INPUT = ROOT / "data" / "agent-deep-taxonomy.json"
+SYSTEM_SCHEMA_INPUT = ROOT / "data" / "agent-system-schema.json"
+SYSTEM_RELATIONS_INPUT = ROOT / "data" / "agent-system-relations.json"
 OUT = ROOT / "_agentengraph"
 SNAP = OUT / "snapshots"
 
-GRAPH_VERSION = "1.0"
-SCHEMA_VERSION = "1.0"
+GRAPH_VERSION = "1.1"
+SCHEMA_VERSION = "1.1"
 
 SINGLE_FIELDS = {
     "identity.name",
@@ -66,6 +68,8 @@ PLANNED_DOMAINS = [
     "api",
     "integrations",
     "memory",
+    "composition",
+    "orchestration",
     "deployment",
     "hosting",
     "privacy.data_usage",
@@ -223,6 +227,8 @@ def main():
     agents = data["agents"]
     deep = load(DEEP_INPUT, {"schema_version":"1.0","updated":data.get("updated"),"agents":[]})
     taxonomy = load(TAXONOMY_INPUT, {"schema_version":"1.0","paths":{},"completeness_profile":{"fields":[]}})
+    system_schema = load(SYSTEM_SCHEMA_INPUT, {"schema_version":"1.0","entity_types":{},"relation_types":{}})
+    system_relations_source = load(SYSTEM_RELATIONS_INPUT, {"schema_version":"1.0","updated":data.get("updated"),"entities":[],"relations":[]})
     deep_by_agent, deep_by_key = deep_claim_index(deep)
     known_agent_ids = {a["profile_id"] for a in agents}
     unknown_deep_agents = sorted(set(deep_by_agent) - known_agent_ids)
@@ -722,6 +728,15 @@ def main():
         "agents": research_agents,
     }
 
+    system_graph = {
+        "graph_version": GRAPH_VERSION,
+        "as_of": as_of,
+        "schema_version": system_relations_source.get("schema_version"),
+        "principle": system_relations_source.get("principle", "Only explicitly evidenced relations are stored."),
+        "entities": system_relations_source.get("entities", []),
+        "relations": system_relations_source.get("relations", []),
+    }
+
     coverage = {
         "graph_version": GRAPH_VERSION,
         "as_of": as_of,
@@ -759,6 +774,8 @@ def main():
             "assertions_total": len(assertions),
             "assertions_active": len(active_assertions),
             "events": len(event_map),
+            "system_entities": len(system_graph["entities"]),
+            "system_relations": len(system_graph["relations"]),
         },
         "principles": [
             "Keine unbekannten Merkmale ergänzen.",
@@ -766,6 +783,7 @@ def main():
             "Historische Werte nicht überschreiben, sondern schließen und versionieren.",
             "Redaktionelle Einordnung von dokumentierten Produkteigenschaften trennen.",
             "Stabile IDs für Agenten, Anbieter, Quellen, Aussagen und Ereignisse verwenden.",
+            "Systembeziehungen nie transitiv oder aus Plattformmerkmalen ableiten; jede Relation benötigt explizite Evidenz.",
         ],
         "storage_note": "_agentengraph/ beginnt mit Unterstrich und ist als interner Datenkern gedacht, nicht als öffentliche API. Das GitHub-Repository selbst ist öffentlich.",
     }
@@ -823,7 +841,7 @@ Wenn sich ein strukturiertes Feld ändert, wird die alte Assertion geschlossen u
 eine neue Assertion mit neuem Gültigkeitsbeginn erzeugt. Zusätzlich entsteht ein
 field_change-Event.
 
-## Evidenz in v1
+## Evidenz in v1.1
 
 Die bestehenden AgentenProfile besitzen Quellenlisten auf Profilebene. Deshalb
 werden Profil-Assertions nicht künstlich als feldgenau verifiziert. Kuratierte Deep-Evidence-Claims werden dagegen explizit feldgenau gebunden.
@@ -846,6 +864,8 @@ manuelle Zuordnung bei späteren Builds.
 - coverage.json — Abdeckung und Evidenz-Reife
 - deep-coverage.json — explizite Kernfeld-Matrix mit documented/false/unknown
 - research-priority.json — automatisch priorisierte Recherche-Lücken pro Agent und Feld
+- system-schema.json — Entitäts-, Relations-, Freigabe- und Monitoring-Taxonomie für Agentensysteme
+- relations.json — explizit kuratierte, evidence-first Systembeziehungen; fehlende Relationen bleiben unbekannt
 - schema.json — Schema für Assertions
 - snapshots/YYYY-MM-DD.json — beobachteter Datenzustand
 - snapshots/current.json — letzter Datenzustand
@@ -871,6 +891,8 @@ Infrastruktur, aber kein vertraulicher Datenspeicher.
     dump(OUT / "coverage.json", coverage)
     dump(OUT / "deep-coverage.json", deep_coverage)
     dump(OUT / "research-priority.json", research_priority)
+    dump(OUT / "system-schema.json", system_schema)
+    dump(OUT / "relations.json", system_graph)
     dump(OUT / "schema.json", schema)
     dump(SNAP / f"{as_of}.json", current_snapshot)
     dump(SNAP / "current.json", current_snapshot)
@@ -886,6 +908,7 @@ Infrastruktur, aber kein vertraulicher Datenspeicher.
         "assertions_historical":len(assertions)-len(active_assertions),
         "events":len(event_map),
         "field_level_evidence":field_level,
+        "system_relations":len(system_graph["relations"]),
         "closed_now":len(closed_now),
     }, ensure_ascii=False))
 

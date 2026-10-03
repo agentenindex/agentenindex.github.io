@@ -1,0 +1,33 @@
+name: Validate Agent Systems Strategy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "wissen/artificial-symbiotic-intelligence/**"
+      - "wissen/multi-agent-systeme/**"
+      - "wissen/index.html"
+      - "freigabe/**"
+      - "unternehmen/**"
+      - "methodik/**"
+      - "index.html"
+      - "sitemap.xml"
+      - "llms.txt"
+      - "data/agent-deep-taxonomy.json"
+      - "data/agent-system-schema.json"
+      - "data/agent-system-relations.json"
+      - "_agentenwache/README.md"
+      - ".github/scripts/validate-agent-systems-strategy.py"
+      - ".github/workflows/agent-systems-strategy.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate system strategy, GEO/SEO pages and data contracts
+        run: python .github/scripts/validate-agent-systems-strategy.py

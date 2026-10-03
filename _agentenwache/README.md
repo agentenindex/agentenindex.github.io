@@ -46,6 +46,35 @@ python .github/scripts/review-agentenwache.py \
 
 Mögliche Status: `reviewed_no_product_change`, `applied_to_agents`, `dismissed_noise`, `acknowledged`.
 
+
+## Systemsignale ab v1.1
+
+AgentenWache bleibt ein Detektor für Quellenänderungen. Bei der menschlichen Review kann eine Änderung jetzt zusätzlich als strukturiertes Systemsignal klassifiziert werden, zum Beispiel:
+
+- model_change
+- tool_permission_change
+- memory_change
+- delegation_change
+- protocol_change
+- human_approval_change
+- hosting_change
+- audit_change
+- identity_change
+- rollback_change
+- operational_limit_change
+
+Die Klassifikation ist bewusst **manuell**. Ein geänderter Webseiteninhalt beweist noch keinen Modellwechsel oder eine neue Delegationsfähigkeit. Erst die redaktionelle Prüfung darf ein Systemsignal setzen; ein Produktfakt entsteht weiterhin ausschließlich über belegte Datenänderungen im AgentenGraph.
+
+Beispiel:
+
+```bash
+python .github/scripts/review-agentenwache.py \
+  --id REV-... \
+  --status applied_to_agents \
+  --system-signal delegation_change \
+  --note "Offizielle Dokumentation belegt neue Agent-zu-Agent-Delegation; Deep Evidence aktualisiert."
+```
+
 ## Frequenz
 
 Der GitHub-Workflow läuft einmal täglich und zusätzlich, wenn sich das AgentenGraph-Quellenregister ändert. Der Abruf erfolgt pro Host seriell mit kurzer Pause, damit Anbieter nicht unnötig belastet werden.

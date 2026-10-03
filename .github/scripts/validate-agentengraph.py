@@ -11,6 +11,10 @@ DEEP_PATH=ROOT/"data"/"agent-deep-evidence.json"
 DEEP=json.loads(DEEP_PATH.read_text(encoding="utf-8")) if DEEP_PATH.exists() else {"schema_version":"1.0","agents":[]}
 TAXONOMY_PATH=ROOT/"data"/"agent-deep-taxonomy.json"
 TAXONOMY=json.loads(TAXONOMY_PATH.read_text(encoding="utf-8")) if TAXONOMY_PATH.exists() else {"paths":{},"deprecated_aliases":{}}
+SYSTEM_SCHEMA_PATH=ROOT/"data"/"agent-system-schema.json"
+SYSTEM_RELATIONS_PATH=ROOT/"data"/"agent-system-relations.json"
+SYSTEM_SCHEMA_SOURCE=json.loads(SYSTEM_SCHEMA_PATH.read_text(encoding="utf-8")) if SYSTEM_SCHEMA_PATH.exists() else {"entity_types":{},"relation_types":{}}
+SYSTEM_RELATIONS_SOURCE=json.loads(SYSTEM_RELATIONS_PATH.read_text(encoding="utf-8")) if SYSTEM_RELATIONS_PATH.exists() else {"entities":[],"relations":[]}
 
 def load(name):
     return json.loads((OUT/name).read_text(encoding="utf-8"))
@@ -23,6 +27,8 @@ events=load("events.json")
 coverage=load("coverage.json")
 deep_coverage=load("deep-coverage.json")
 research_priority=load("research-priority.json")
+system_schema=load("system-schema.json")
+relations=load("relations.json")
 snapshot=json.loads((OUT/"snapshots"/"current.json").read_text(encoding="utf-8"))
 
 errors=[]
@@ -51,6 +57,63 @@ if len(entities["providers"]) != len(provider_names):
     errors.append("Provider entity count does not match unique source providers")
 if len(snapshot["agents"]) != DATA["count"]:
     errors.append("Snapshot agent count mismatch")
+
+
+# Agent-system layer: exact source copy plus explicit, evidence-bound relations only.
+if system_schema != SYSTEM_SCHEMA_SOURCE:
+    errors.append("Generated system-schema.json differs from data/agent-system-schema.json")
+if relations.get("schema_version") != SYSTEM_RELATIONS_SOURCE.get("schema_version"):
+    errors.append("System relation schema version mismatch")
+if relations.get("entities") != SYSTEM_RELATIONS_SOURCE.get("entities",[]):
+    errors.append("Generated system entities differ from curated source")
+if relations.get("relations") != SYSTEM_RELATIONS_SOURCE.get("relations",[]):
+    errors.append("Generated system relations differ from curated source")
+
+valid_entity_types=set((system_schema.get("entity_types") or {}).keys())
+relation_types=system_schema.get("relation_types") or {}
+valid_relation_states=set(system_schema.get("relation_state_model") or [])
+allowed_system_evidence=set((system_schema.get("evidence_requirements") or {}).get("evidence_types") or [])
+system_entities=relations.get("entities") or []
+system_relations=relations.get("relations") or []
+system_entity_ids=set()
+for entity in system_entities:
+    eid=entity.get("entity_id")
+    if not eid or eid in system_entity_ids:
+        errors.append(f"Invalid/duplicate system entity id {eid}")
+        continue
+    system_entity_ids.add(eid)
+    if entity.get("entity_type") not in valid_entity_types:
+        errors.append(f"{eid}: invalid system entity type {entity.get('entity_type')}")
+    if entity.get("entity_type")=="agent_component" and entity.get("component_type") not in set(system_schema.get("component_types") or []):
+        errors.append(f"{eid}: invalid component_type {entity.get('component_type')}")
+
+known_relation_refs=agent_ids | system_entity_ids
+relation_ids=set()
+for rel in system_relations:
+    rid=rel.get("relation_id")
+    if not rid or rid in relation_ids:
+        errors.append(f"Invalid/duplicate relation id {rid}")
+        continue
+    relation_ids.add(rid)
+    predicate=rel.get("predicate")
+    if predicate not in relation_types:
+        errors.append(f"{rid}: unknown relation predicate {predicate}")
+    if rel.get("subject_id") not in known_relation_refs:
+        errors.append(f"{rid}: unknown subject {rel.get('subject_id')}")
+    if rel.get("object_id") not in known_relation_refs:
+        errors.append(f"{rid}: unknown object {rel.get('object_id')}")
+    if rel.get("state") not in valid_relation_states:
+        errors.append(f"{rid}: invalid relation state {rel.get('state')}")
+    if not rel.get("verified_at"):
+        errors.append(f"{rid}: missing verified_at")
+    evidence=rel.get("evidence") or []
+    if not evidence:
+        errors.append(f"{rid}: relation has no explicit evidence")
+    for ev in evidence:
+        if not ev.get("title") or not ev.get("url"):
+            errors.append(f"{rid}: relation evidence missing title/url")
+        if allowed_system_evidence and ev.get("evidence_type") not in allowed_system_evidence:
+            errors.append(f"{rid}: invalid relation evidence_type {ev.get('evidence_type')}")
 
 # Deep completeness report must preserve unknown semantics.
 expected_completeness_fields=list((TAXONOMY.get("completeness_profile") or {}).get("fields") or [])
@@ -275,6 +338,8 @@ expected={
     "assertions_total":len(assertions["assertions"]),
     "assertions_active":len(active),
     "events":len(events["events"]),
+    "system_entities":len(system_entities),
+    "system_relations":len(system_relations),
 }
 for k,v in expected.items():
     if manifest["counts"].get(k) != v:
@@ -309,5 +374,7 @@ print(json.dumps({
     "events":len(events["events"]),
     "field_level_evidence":field_exact,
     "curated_deep_claims":len(deep_claims),
+    "system_entities":len(system_entities),
+    "system_relations":len(system_relations),
     "snapshot":snapshot.get("observed_at"),
 },ensure_ascii=False))

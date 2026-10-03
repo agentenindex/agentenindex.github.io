@@ -217,7 +217,7 @@ def render_profile(agent: dict) -> bool:
         s = s.replace('<a href="#changelog">Changelog</a>', '<a href="#agentengraph">AgentenGraph</a><a href="#changelog">Changelog</a>', 1)
 
     # Cache-bust the visual layer.
-    s = re.sub(r'/assets/styles\.css\?v=[^"\']+', '/assets/styles.css?v=8.3.0', s)
+    s = re.sub(r'/assets/styles\.css\?v=[^"\']+', '/assets/styles.css?v=9.3.0', s)
 
     if s != old:
         path.write_text(s, encoding="utf-8")
@@ -236,7 +236,7 @@ for agent in DATA["agents"]:
     assert s.count('href="#agentengraph"') == 1, path
     assert f'Strukturierte Historie von {agent["name"]}' in s, path
     assert 'Baseline seit 1. Oktober 2026' in s, path
-    assert '/assets/styles.css?v=8.3.0' in s, path
+    assert '/assets/styles.css?v=9.3.0' in s, path
 
 print(json.dumps({
     "status":"AGENTENGRAPH_PROFILES_RENDERED",
