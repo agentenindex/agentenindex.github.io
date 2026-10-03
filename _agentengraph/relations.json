@@ -2,7 +2,1727 @@
   "graph_version": "1.1",
   "as_of": "2026-10-03",
   "schema_version": "1.0",
-  "principle": "Only explicitly evidenced product/system relations belong here. An empty relation set means not yet researched, not that no relations exist.",
-  "entities": [],
-  "relations": []
+  "principle": "Only explicit curated relations and deterministic projections of field-level-verified claims are stored. Unknown remains unknown.",
+  "entities": [
+    {
+      "entity_id": "COMP-PROTOCOL-A2A",
+      "entity_type": "agent_component",
+      "component_type": "protocol",
+      "name": "Agent2Agent (A2A)",
+      "canonical_url": "https://a2a-protocol.org/"
+    },
+    {
+      "entity_id": "COMP-PROTOCOL-MCP",
+      "entity_type": "agent_component",
+      "component_type": "protocol",
+      "name": "Model Context Protocol (MCP)",
+      "canonical_url": "https://modelcontextprotocol.io/"
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "REL-042D9DCEF8C0DCD6AB",
+      "subject_id": "AI-0021",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "relevance_ai_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Relevance AI – Product",
+          "url": "https://relevanceai.com/product",
+          "note": "Relevance AI documents that agents can access native connectors plus MCP support and MCP servers.",
+          "evidence_type": "official_product_page",
+          "source_section": "All of your agents on one stack / What can my agents access?"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-06E06344646A23DAD1",
+      "subject_id": "AI-0028",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "uipath_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "UiPath Docs – MCP Servers",
+          "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide/mcp-servers",
+          "note": "UiPath documents adding UiPath-hosted and external MCP servers as tools in Agents.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-074700FBC0EE97A5C8",
+      "subject_id": "AI-0026",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "watsonx_orchestrate_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "IBM Docs – Importing tools from an MCP server",
+          "url": "https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=servers-importing-from-mcp-server",
+          "note": "IBM documents importing local or remote MCP server tools into watsonx Orchestrate agents.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-0C7D5BB95B51E3210D",
+      "subject_id": "AI-0106",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "microsoft_fabric_data_agent_published",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "MicrosoftDocs – Data agent as Model Context Protocol server",
+          "url": "https://github.com/MicrosoftDocs/fabric-docs/blob/main/docs/data-science/data-agent-mcp-server.md",
+          "note": "Microsoft documents a published Fabric data agent acting as an MCP server with an MCP endpoint that exposes enterprise data and queries to MCP clients.",
+          "evidence_type": "official_github",
+          "source_section": "Data agent as Model Context Protocol server"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-0CFB3B76B138F3024B",
+      "subject_id": "AI-0086",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "microsoft_agent_framework_a2a_hosting",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "Microsoft Learn – A2A Hosting",
+          "url": "https://learn.microsoft.com/en-us/agent-framework/hosting/agent-to-agent",
+          "note": "Microsoft documents hosting packages that expose Agent Framework agents through the A2A protocol for discovery and communication by A2A clients.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-0EE8BCEE126EBAD14C",
+      "subject_id": "AI-0012",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "devin_sessions",
+      "verified_at": "2026-10-02",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Devin Docs – Devin MCP servers and marketplace",
+          "url": "https://docs.devin.ai/work-with-devin/mcp",
+          "note": "Cognition documents Devin connecting to external tools and data sources through configured MCP servers using stdio, SSE, or HTTP transports.",
+          "evidence_type": "technical_docs",
+          "source_section": "Devin MCP servers and marketplace"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-16F19C289A51B8A35D",
+      "subject_id": "AI-0030",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "joule_studio_agent_builder",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "SAP Samples – Joule Studio MCP agent configuration",
+          "url": "https://github.com/SAP-samples/btp-agentic-ai-use-cases/blob/main/10-escalation-assistant-joule-studio/agent-builder/WEB_SEARCHER.md",
+          "note": "SAP's official sample shows a Joule Studio Agent Builder configuration using Tavily and Exa MCP server tools.",
+          "evidence_type": "official_github"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-20F41234D6809459D4",
+      "subject_id": "AI-0029",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "agentforce_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Salesforce Help – MCP for Agentforce",
+          "url": "https://help.salesforce.com/s/articleView?id=ai.agent_mcp.htm&language=en_US&type=5",
+          "note": "Agentforce can register and use third-party MCP tools.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-21CD116C03B65B6D9C",
+      "subject_id": "AI-0017",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "make_ai_agent_new",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Make Help – Create your first AI agent",
+          "url": "https://help.make.com/create-your-first-ai-agent",
+          "note": "Make documents adding MCP servers and selecting MCP tools for Make AI Agent (New), which then uses those tools during tasks.",
+          "evidence_type": "technical_docs",
+          "source_section": "Add MCP servers"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-269B138B5196805BFA",
+      "subject_id": "AI-0038",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "perplexity_computer",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Perplexity – Introducing Perplexity Computer workshop",
+          "url": "https://www.perplexity.ai/de/hub/workshops/introducing-perplexity-computer",
+          "note": "Perplexity explicitly states Computer supports custom local and remote MCP servers/connectors.",
+          "evidence_type": "technical_docs",
+          "source_section": "Connectors and integrations"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-2EC36773F5218864A0",
+      "subject_id": "AI-0067",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "openhands_agent_sessions",
+      "verified_at": "2026-10-02",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "OpenHands Docs – MCP Servers",
+          "url": "https://docs.openhands.dev/openhands/usage/cli/mcp-servers",
+          "note": "OpenHands documents adding HTTP, SSE, and stdio MCP servers; enabled server tools are automatically available to the agent.",
+          "evidence_type": "technical_docs",
+          "source_section": "Overview / Adding Servers / Workflow"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-2F002C0D8A4A3AE502",
+      "subject_id": "AI-0003",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "claude_research_remote_connectors",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Claude Help – Get started with custom connectors using remote MCP",
+          "url": "https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp",
+          "note": "Anthropic states Research can automatically invoke tools from custom connectors backed by remote MCP servers.",
+          "evidence_type": "technical_docs",
+          "source_section": "Using Claude with Research"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-318CC4E2EFA66D3546",
+      "subject_id": "AI-0085",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "strands_agents_sdk",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Strands Agents – Connect your agent to MCP tools",
+          "url": "https://strandsagents.com/docs/user-guide/sdk/tools/mcp-tools/",
+          "note": "Strands documents MCPClient loading tools from external MCP servers and handing them to the agent.",
+          "evidence_type": "technical_docs",
+          "source_section": "Quick Start"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-35D4606271E678EDC8",
+      "subject_id": "AI-0065",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "gitlab_instance_with_duo_agent_platform_toolset",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "GitLab Docs – GitLab MCP server",
+          "url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+          "note": "GitLab documents its MCP server and an opt-in duo_agent_platform toolset for exposing Duo Agent Platform operations to MCP-compatible clients.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-3A76B0D567CA7957A0",
+      "subject_id": "AI-0083",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "kore_ai_agent_platform_agents",
+      "verified_at": "2026-10-02",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Kore.ai – Introducing Agent Blueprint Language (ABL)",
+          "url": "https://www.kore.ai/blog/introducing-agent-blueprint-language-abl",
+          "note": "Kore.ai documents enterprise agents connecting to existing enterprise systems through MCP alongside HTTP, OpenAPI, A2A, Lambda, and webhooks.",
+          "evidence_type": "official_release",
+          "source_section": "Deployment options / enterprise-system connectivity"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-3BD39F8341A4DD76F9",
+      "subject_id": "AI-0085",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "strands_agents_sdk",
+      "verified_at": "2026-10-02",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "Strands Agents – Agent-to-Agent (A2A) Protocol",
+          "url": "https://strandsagents.com/docs/user-guide/sdk/multi-agent/agent-to-agent/",
+          "note": "Strands documents serving Strands agents over A2A using A2AServer/A2AExpressServer.",
+          "evidence_type": "technical_docs",
+          "source_section": "Serving an Agent over A2A"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-3FF7E04F8A172C3628",
+      "subject_id": "AI-0031",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "rovo_out_of_box_third_party_mcp_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Atlassian Support – Out-of-the-box third-party MCP agents",
+          "url": "https://support.atlassian.com/rovo/docs/out-of-the-box-third-party-mcp-agents/",
+          "note": "Atlassian documents Rovo agents using vendor-provided MCP servers for tool invocation, with admins enabling each server in Rovo Admin Hub.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-46F6F9C301CCCE9841",
+      "subject_id": "AI-0007",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "claude_code_stdio",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "Claude Code Docs – Connect Claude Code to tools via MCP",
+          "url": "https://code.claude.com/docs/en/mcp",
+          "note": "Anthropic documents `claude mcp serve`, which runs Claude Code itself as a stdio MCP server for other applications.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-48A19B7BF29A8FEF91",
+      "subject_id": "AI-0077",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "adk_agents_built_with_agents_cli",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "Google Agents CLI – Use Cases",
+          "url": "https://google.github.io/agents-cli/guide/use-cases/",
+          "note": "Google states the ADK template exposes the A2A protocol out of the box so other agents can communicate with deployed ADK agents.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-4FBC414A7B90F2DEC0",
+      "subject_id": "AI-0054",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "claude_cowork_remote_connectors",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Claude Help – Get started with custom connectors using remote MCP",
+          "url": "https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp",
+          "note": "Anthropic states custom connectors using remote MCP are available in Cowork and let Claude connect to and use existing remote MCP servers.",
+          "evidence_type": "technical_docs",
+          "source_section": "Custom connectors / Remote MCP servers"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-50D4A866BC4A00750B",
+      "subject_id": "AI-0070",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "warp_agent_cli",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Warp Docs – MCP servers CLI reference",
+          "url": "https://docs.warp.dev/reference/cli/mcp-servers",
+          "note": "Warp documents connecting Agent CLI agents to external MCP servers via the --mcp flag.",
+          "evidence_type": "technical_docs",
+          "source_section": "MCP servers"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-530B7D31404276E442",
+      "subject_id": "AI-0027",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "a2a",
+      "scope": "fusion_ai_agent_studio_26c",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.client",
+      "evidence": [
+        {
+          "title": "Oracle Docs – Collaborate across platforms using A2A",
+          "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26c/aiaas/collaborate-with-ai-agents-across-platforms-using-agent2agent-a2a-protocol.html",
+          "note": "Oracle's example states that an Oracle AI agent can reach out to a third-party agent using A2A.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-56CF1E1312642D0B50",
+      "subject_id": "AI-0085",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "strands_shell",
+      "verified_at": "2026-10-02",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "Strands Agents – Run the MCP server",
+          "url": "https://strandsagents.com/docs/user-guide/shell/mcp-server/",
+          "note": "Strands documents a built-in MCP server exposing a sandboxed shell over JSON-RPC on stdio.",
+          "evidence_type": "technical_docs",
+          "source_section": "Run the MCP server"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-5747933058528587AC",
+      "subject_id": "AI-0057",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "business_and_enterprise",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Dust – Enterprise AI Agents",
+          "url": "https://dust.tt/home/enterprise",
+          "note": "Dust states agents can connect to company tools through MCP servers.",
+          "evidence_type": "official_product_page"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-5C5F6D900D3AFB620F",
+      "subject_id": "AI-0078",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "agent_endpoint_preview",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "Microsoft Learn – Configure and share your Foundry agent",
+          "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+          "note": "Microsoft lists an MCP (preview) protocol endpoint that a Foundry agent can expose.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-5D6E0E04C5CB8DDE06",
+      "subject_id": "AI-0035",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "a2a",
+      "scope": "servicenow_ai_platform",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.client",
+      "evidence": [
+        {
+          "title": "ServiceNow Docs – Integrating external AI agents",
+          "url": "https://www.servicenow.com/docs/r/intelligent-experiences/external-agent-protocols.html",
+          "note": "ServiceNow documents allowing the ServiceNow AI Platform to access external agents through A2A.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-5F21D598972946560E",
+      "subject_id": "AI-0065",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "gitlab_duo_agent_platform",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "GitLab Docs – GitLab MCP clients",
+          "url": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_clients/",
+          "note": "GitLab documents Duo Agentic Chat and Software Development Flow as MCP clients that connect to external MCP servers.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-5FB113E4CF24321D4E",
+      "subject_id": "AI-0105",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "cortex_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Snowflake Docs – Use app-created Cortex Agents and MCP servers",
+          "url": "https://docs.snowflake.com/en/developer-guide/native-apps/ui-consumer-agents-mcp",
+          "note": "Snowflake documents connecting multiple MCP servers to a Cortex Agent and monitoring resulting tool activity.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-6B84B47B18A64B7694",
+      "subject_id": "AI-0014",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "google_jules_sessions",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Jules Docs – MCP support comes to Jules",
+          "url": "https://jules.google/docs/changelog/2026-02-02",
+          "note": "Google documents Jules connecting to supported MCP servers and invoking their tools during sessions.",
+          "evidence_type": "official_release",
+          "source_section": "MCP support comes to Jules"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-6F546BC0171745087E",
+      "subject_id": "AI-0086",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "a2a",
+      "scope": "microsoft_agent_framework_remote_a2a_agent_service",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.client",
+      "evidence": [
+        {
+          "title": "Microsoft Learn – A2A agent service",
+          "url": "https://learn.microsoft.com/en-us/agent-framework/agents/providers/agent-to-agent",
+          "note": "Microsoft documents A2AAgent as a client wrapper that connects Agent Framework applications to remote A2A-compliant agent endpoints.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-74E665E508DCF396F5",
+      "subject_id": "AI-0008",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "copilot_cloud_agent",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "GitHub Docs – Configure MCP servers for your repository",
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers",
+          "note": "GitHub documents repository MCP server configuration that gives Copilot cloud agent access to external tools and data sources.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-77DF154A89DA9934C1",
+      "subject_id": "AI-0018",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "n8n_ai_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "n8n Docs – MCP Client Tool",
+          "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolmcp",
+          "note": "n8n documents the MCP Client Tool as an MCP client that exposes external MCP server tools to n8n AI Agents.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-7908738DE0857C00A4",
+      "subject_id": "AI-0091",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "workday_agents_managed_in_asor_exposed_via_agent_gateway",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "Workday Admin Guide – Connect External Agents to Workday Using A2A",
+          "url": "https://doc.workday.com/admin-guide/en-us/workday-ai/agents/external-agents/connect-external-agent-to-workday-using-a2a.html?toc=0.8.2",
+          "note": "Workday documents external A2A clients retrieving the Workday agent card and invoking Self-Service Agent through regional Agent Gateway A2A endpoints.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-7CCCD0A75366D1D638",
+      "subject_id": "AI-0035",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "servicenow_ai_platform",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "ServiceNow Docs – Integrating external AI agents",
+          "url": "https://www.servicenow.com/docs/r/intelligent-experiences/external-agent-protocols.html",
+          "note": "ServiceNow documents allowing third parties to access ServiceNow AI agents through A2A.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-82E1E18D20E008162B",
+      "subject_id": "AI-0081",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "workato_agentic_and_enterprise_mcp",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "Workato Docs – MCP servers",
+          "url": "https://docs.workato.com/en/mcp/mcp-servers",
+          "note": "Workato documents authenticated remote MCP servers that expose Workato endpoints and tools to AI agents and clients.",
+          "evidence_type": "technical_docs",
+          "source_section": "MCP servers"
+        },
+        {
+          "title": "Workato Docs – Chat interface",
+          "url": "https://docs.workato.com/agentic/agent-studio/chat-interface/chat-interface",
+          "note": "Workato documents exposing a genie as an MCP server for external AI clients.",
+          "evidence_type": "technical_docs",
+          "source_section": "Using an external AI client?"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-84E19784630C98E07F",
+      "subject_id": "AI-0079",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "agentcore_runtime",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "AWS Docs – Deploy MCP servers in AgentCore Runtime",
+          "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-mcp.html",
+          "note": "AgentCore Runtime can host streamable-HTTP MCP servers.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-853CAE31DB89009E93",
+      "subject_id": "AI-0081",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "workato_agent_studio_genies",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Workato Docs – Genies as MCP clients",
+          "url": "https://docs.workato.com/en/mcp/genies-as-mcp-clients.html",
+          "note": "Workato documents Agent Studio genies consuming Workato-hosted and external MCP servers as tools.",
+          "evidence_type": "technical_docs",
+          "source_section": "Genies as MCP clients"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-878C76E55780718016",
+      "subject_id": "AI-0086",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "framework",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Microsoft Learn – Using MCP tools with Agents",
+          "url": "https://learn.microsoft.com/en-us/agent-framework/user-guide/model-context-protocol/using-mcp-tools",
+          "note": "Microsoft documents connecting Agent Framework agents to MCP servers and using their tools.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-8EF9157F5CAB3CF252",
+      "subject_id": "AI-0064",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "gemini_cli_a2a_server",
+      "verified_at": "2026-10-02",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "Google Gemini CLI – A2A server package",
+          "url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/package.json",
+          "note": "The official Gemini CLI repository contains the packages/a2a-server package and declares @a2a-js/sdk as a runtime dependency.",
+          "evidence_type": "official_github",
+          "source_section": "packages/a2a-server/package.json"
+        },
+        {
+          "title": "Google Gemini CLI – A2A Development-Tool Extension RFC",
+          "url": "https://github.com/google-gemini/gemini-cli/blob/main/packages/a2a-server/development-extension-rfc.md",
+          "note": "Google documents client-to-agent and server-to-client communication for the Gemini CLI agent as an extension built on the existing A2A protocol, including Agent Card and message/stream semantics.",
+          "evidence_type": "official_github",
+          "source_section": "Overview / Communication Flow"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-91BCB785EF2DAD99AF",
+      "subject_id": "AI-0076",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "crewai_amp_enterprise",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "CrewAI – Pricing",
+          "url": "https://crewai.com/pricing",
+          "note": "CrewAI lists 'Export as MCP server' as a supported capability.",
+          "evidence_type": "official_product_page",
+          "source_section": "Build and integrate"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-9430FCADC69EFC6936",
+      "subject_id": "AI-0023",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "gumloop_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Gumloop Docs – Gamma MCP",
+          "url": "https://docs.gumloop.com/nodes/mcp/gamma",
+          "note": "Gumloop documents adding MCP tools to an agent via Add tools → Connect an app with MCP.",
+          "evidence_type": "technical_docs",
+          "source_section": "In Agents (Recommended)"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-9445B072AB6B08FBAD",
+      "subject_id": "AI-0013",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "amazon_q_developer_cli_and_ide",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "AWS Docs – Using MCP with Amazon Q Developer",
+          "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/qdev-mcp.html",
+          "note": "AWS documents Amazon Q Developer CLI as an MCP host/client connecting to local and remote MCP servers; IDE support is also documented.",
+          "evidence_type": "technical_docs",
+          "source_section": "MCP configuration"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-944AD13443C1175CD6",
+      "subject_id": "AI-0064",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "gemini_cli",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Gemini CLI Docs – MCP servers",
+          "url": "https://geminicli.com/docs/tools/mcp-server/",
+          "note": "Google documents Gemini CLI discovering, connecting to, and executing tools from configured MCP servers.",
+          "evidence_type": "technical_docs",
+          "source_section": "Core integration architecture / MCP server configuration"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-989362A51C0E967B92",
+      "subject_id": "AI-0025",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "copilot_studio_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Microsoft Learn – Add MCP tools to Copilot Studio agents",
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent",
+          "note": "Copilot Studio can connect an existing MCP server and add its tools/resources to an agent.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-99FC6C517DE169B1A9",
+      "subject_id": "AI-0009",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "cursor_agent",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Cursor Docs – Model Context Protocol (MCP)",
+          "url": "https://cursor.com/docs/mcp",
+          "note": "Cursor documents that MCP enables Cursor to connect to external tools and data sources and that the Agent automatically uses available MCP tools.",
+          "evidence_type": "technical_docs",
+          "source_section": "What is MCP? / Using MCP in chat"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-9D994CF483DA71EA8E",
+      "subject_id": "AI-0085",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "a2a",
+      "scope": "strands_agents_sdk",
+      "verified_at": "2026-10-02",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.client",
+      "evidence": [
+        {
+          "title": "Strands Agents – Agent-to-Agent (A2A) Protocol",
+          "url": "https://strandsagents.com/docs/user-guide/sdk/multi-agent/agent-to-agent/",
+          "note": "Strands documents consuming remote A2A agents through the A2AAgent client class.",
+          "evidence_type": "technical_docs",
+          "source_section": "Consuming Remote Agents"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-9E76B6702387A057DF",
+      "subject_id": "AI-0026",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "watsonx_orchestrate_published_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "IBM API Hub – Agent-to-Agent (A2A) Protocol",
+          "url": "https://developer.ibm.com/apis/catalog/watsonorchestrate--custom-assistants/api/API--watsonorchestrate--agent-to-agent-a2a-protocol",
+          "note": "IBM exposes A2A discovery and agent-specific interaction endpoints for watsonx Orchestrate agents.",
+          "evidence_type": "api_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-A1BE94359DB9274B72",
+      "subject_id": "AI-0016",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "cline_ide_cli_and_desktop",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Cline Docs – MCP",
+          "url": "https://docs.cline.bot/mcp/mcp-overview",
+          "note": "Cline documents adding local and remote MCP servers and using their external tools and data sources from Cline.",
+          "evidence_type": "technical_docs",
+          "source_section": "MCP / Add servers"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-AC822F8C938C20E458",
+      "subject_id": "AI-0076",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "crewai_framework_deployed_in_amp",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "CrewAI Docs – Using Annotations in crew.py",
+          "url": "https://docs.crewai.com/learn/using-annotations",
+          "note": "CrewAI documents MCP integration through mcp_server_params and get_mcp_tools(), which starts an MCP adapter and hydrates tools from configured MCP servers.",
+          "evidence_type": "technical_docs",
+          "source_section": "MCP integration"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-ACECBBAD946E7FD030",
+      "subject_id": "AI-0007",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "claude_code",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Claude Code Docs – Connect Claude Code to tools via MCP",
+          "url": "https://code.claude.com/docs/en/mcp",
+          "note": "Anthropic documents Claude Code connecting to remote and local MCP servers to access tools, databases, and APIs.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-B1740261AA5E3A6F46",
+      "subject_id": "AI-0082",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "agent_designer",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Boomi Docs – Using MCP with Agent Designer",
+          "url": "https://help.boomi.com/docs/Atomsphere/Platform/Using_MCP_with_Agent_Designer",
+          "note": "Boomi Agent Designer connects to remote MCP servers and imports their tools.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-B41136C707D5998C30",
+      "subject_id": "AI-0092",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "gemini_enterprise_apps_via_agent_gateway",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Google Cloud – Import MCP servers from Agent Registry",
+          "url": "https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/import-govern-mcp-server-agent-registry",
+          "note": "Google documents importing governed MCP servers into Gemini Enterprise apps through Agent Registry and Agent Gateway.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-B837DABD797052B51B",
+      "subject_id": "AI-0011",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "replit_enterprise_agent",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Replit Enterprise",
+          "url": "https://replit.com/enterprise",
+          "note": "Replit lists connectors and MCP together with Agent 4 as included Enterprise platform capabilities.",
+          "evidence_type": "official_product_page",
+          "source_section": "Self-Serve Enterprise"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-BA95D9D2C55EED08D5",
+      "subject_id": "AI-0057",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "platform",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "Dust – MCP and Enterprise Agents",
+          "url": "https://dust.tt/blog/mcp-and-enterprise-agents-building-the-ai-operating-system-for-work",
+          "note": "Dust explicitly describes its approach as both an MCP client and server.",
+          "evidence_type": "official_release"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-BB80314B4F3AFAA011",
+      "subject_id": "AI-0015",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "kiro_ide_cli_web",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Kiro Docs – MCP",
+          "url": "https://kiro.dev/docs/mcp/",
+          "note": "Kiro documents configuring MCP servers whose tools become available to the Kiro agent.",
+          "evidence_type": "technical_docs",
+          "source_section": "MCP / Configuration"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-BE5E3D99D6E8A8B796",
+      "subject_id": "AI-0079",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "agentcore_runtime",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "AWS Docs – Deploy A2A servers in AgentCore Runtime",
+          "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-a2a.html",
+          "note": "AWS documents deploying and running A2A servers in AgentCore Runtime.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-BE7C190ED6F778D5A1",
+      "subject_id": "AI-0010",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "windsurf_cascade",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Devin Docs – Cascade",
+          "url": "https://docs.devin.ai/desktop/cascade/cascade",
+          "note": "The current official Cascade documentation describes MCP servers as extensions to the agent's capabilities.",
+          "evidence_type": "technical_docs",
+          "source_section": "Cascade / MCP"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-C186360589C9B1BAEA",
+      "subject_id": "AI-0086",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "framework",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "Microsoft GitHub – Agent Framework MCP examples",
+          "url": "https://github.com/microsoft/agent-framework/blob/main/python/samples/02-agents/mcp/README.md",
+          "note": "The official MCP examples include exposing an Agent Framework agent as an MCP server.",
+          "evidence_type": "official_github"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-C58F1E2D577D8341A7",
+      "subject_id": "AI-0077",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "adk_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Google MCP Security – Remote MCP Server with ADK",
+          "url": "https://google.github.io/mcp-security/remote_server.html",
+          "note": "Google documents configuring an ADK agent with McpToolset and a remote MCP server over Streamable HTTP.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-C7A4AE73A7F6D8FA27",
+      "subject_id": "AI-0018",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "n8n_workflows_and_tools",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "n8n Docs – MCP Server Trigger",
+          "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.mcptrigger",
+          "note": "n8n documents an MCP Server Trigger that makes n8n tools and workflows available to MCP clients over SSE or streamable HTTP.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-C9A6E8029E6DAFFA7C",
+      "subject_id": "AI-0006",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "codex_cli_and_ide",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "OpenAI Developers – Docs MCP",
+          "url": "https://developers.openai.com/learn/docs-mcp",
+          "note": "OpenAI documents connecting Codex CLI/IDE to remote MCP servers.",
+          "evidence_type": "api_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-CCBCA7B58C844966D4",
+      "subject_id": "AI-0066",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "augment_code_agent",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Augment Code – Meet Augment Agent",
+          "url": "https://www.augmentcode.com/blog/meet-augment-agent",
+          "note": "Augment states the Agent embraces MCP to access external tools and systems, with examples of infrastructure MCP integrations.",
+          "evidence_type": "official_release",
+          "source_section": "The Power of Context – Memories & Tools"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-D0CCEE1F5564AEEDCD",
+      "subject_id": "AI-0092",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "a2a",
+      "scope": "gemini_enterprise_invoking_registered_a2a_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.client",
+      "evidence": [
+        {
+          "title": "Google Cloud – Register and manage A2A agents",
+          "url": "https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-a2a-agent",
+          "note": "Google documents Gemini Enterprise invoking registered A2A agents with service IAM and optional end-user OAuth credentials.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-D1A0F4D57BD6178E49",
+      "subject_id": "AI-0035",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "servicenow_ai_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "ServiceNow Docs – Add an MCP server tool to an AI agent",
+          "url": "https://www.servicenow.com/docs/r/intelligent-experiences/add-mcp-server-tool.html",
+          "note": "ServiceNow documents adding authenticated MCP server tools to AI agents, establishing the AI agent as a consumer of MCP server capabilities.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-D2964DBB512FF27FF2",
+      "subject_id": "AI-0027",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "fusion_ai_agent_studio_26c",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "Oracle Docs – Collaborate across platforms using A2A",
+          "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26c/aiaas/collaborate-with-ai-agents-across-platforms-using-agent2agent-a2a-protocol.html",
+          "note": "Oracle documents third-party platforms calling Fusion Applications agents through authenticated A2A endpoints and Agent Cards.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-D2B8B99BA3E33E356D",
+      "subject_id": "AI-0035",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "servicenow_ai_platform_action_fabric",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "ServiceNow Newsroom – Action Fabric and MCP Server",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-opens-its-full-system-of-action-to-every-AI-Agent-in-the-enterprise/default.aspx",
+          "note": "ServiceNow describes its generally available MCP Server exposing governed enterprise actions.",
+          "evidence_type": "official_release"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-DC98D9CD63D1EF7AAC",
+      "subject_id": "AI-0027",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "ai_agent_studio",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Oracle Docs – Add MCP Tool",
+          "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26b/aiaas/add-mcp-tool.html",
+          "note": "Oracle documents adding an MCP tool that connects AI Agent Studio agents and nodes to external MCP servers.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-E002DFADA4B0646181",
+      "subject_id": "AI-0056",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "mcp",
+      "scope": "browser_use_cloud_and_local_mcp",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.server",
+      "evidence": [
+        {
+          "title": "Browser Use – MCP server for browser automation",
+          "url": "https://browser-use.com/mcp",
+          "note": "Browser Use documents a hosted HTTP MCP server plus a local stdio MCP server that expose browser-agent tools to MCP clients.",
+          "evidence_type": "technical_docs",
+          "source_section": "Cloud, or your own Chrome / The six tools"
+        },
+        {
+          "title": "Browser Use – MCP Server changelog",
+          "url": "https://browser-use.com/changelog/21-11-2025",
+          "note": "Browser Use documents the hosted MCP server endpoint and free open-source local stdio MCP server.",
+          "evidence_type": "official_release",
+          "source_section": "Cloud MCP Server"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-E3A7D26AB3893C0616",
+      "subject_id": "AI-0071",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "factory_droid",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Factory Docs – Model Context Protocol",
+          "url": "https://docs.factory.ai/harness/mcp",
+          "note": "Factory documents Droid connecting to MCP servers over stdio, HTTP, and SSE and using their tools.",
+          "evidence_type": "technical_docs",
+          "source_section": "Model Context Protocol"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-E4322180646EC1559F",
+      "subject_id": "AI-0078",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "server",
+      "protocol": "a2a",
+      "scope": "prompt_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.server",
+      "evidence": [
+        {
+          "title": "Microsoft Learn – Enable incoming A2A on a Foundry agent",
+          "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+          "note": "Foundry prompt agents can expose an incoming A2A endpoint.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-EBA7697796059E15BD",
+      "subject_id": "AI-0081",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "a2a",
+      "scope": "workato_agent_studio_genies",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.client",
+      "evidence": [
+        {
+          "title": "Workato Docs – Agentic",
+          "url": "https://docs.workato.com/agentic/agentic.html",
+          "note": "Workato states genies can call any A2A Protocol-compliant agent and delegate tasks to external agents.",
+          "evidence_type": "technical_docs",
+          "source_section": "Workato Agent Registry"
+        },
+        {
+          "title": "Workato Docs – A2A Protocol",
+          "url": "https://docs.workato.com/en/connectors/a2a",
+          "note": "Workato documents invoking compliant A2A agent servers synchronously or asynchronously over HTTP/JSON-RPC.",
+          "evidence_type": "technical_docs",
+          "source_section": "A2A Protocol"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-ECA991D2BCE93E26D0",
+      "subject_id": "AI-0078",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "a2a",
+      "scope": "foundry_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.client",
+      "evidence": [
+        {
+          "title": "Microsoft Learn – Connect to an A2A endpoint from Foundry Agent Service",
+          "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/agent-to-agent",
+          "note": "Foundry agents can connect to remote A2A endpoints using A2A 1.0.",
+          "evidence_type": "technical_docs"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-EFE8F5257329909D37",
+      "subject_id": "AI-0064",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-A2A",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "a2a",
+      "scope": "gemini_cli_remote_subagents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.a2a.client",
+      "evidence": [
+        {
+          "title": "Gemini CLI Docs – Remote Subagents",
+          "url": "https://geminicli.com/docs/core/remote-agents/",
+          "note": "Google documents Gemini CLI connecting to compliant remote subagents using the Agent-to-Agent (A2A) protocol and delegating tasks to them.",
+          "evidence_type": "technical_docs",
+          "source_section": "Remote Subagents / Agent-to-Agent (A2A)"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-F19D04E7E5501C6348",
+      "subject_id": "AI-0063",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "jetbrains_junie_ide_cli",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Junie Documentation – Add and configure MCP servers",
+          "url": "https://junie.jetbrains.com/docs/junie-cli-mcp-configuration.html",
+          "note": "JetBrains documents Junie CLI connecting to local or remote MCP servers and using their tools.",
+          "evidence_type": "technical_docs",
+          "source_section": "Add an MCP server"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-F44AFD4D4337D52826",
+      "subject_id": "AI-0043",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "sierra_agents_integrations",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Sierra – Your agent, laid bare",
+          "url": "https://sierra.ai/jp/blog/your-agent-laid-bare-and-why-it-matters",
+          "note": "Sierra states agents connect existing systems through MCP, REST, GraphQL, or custom integrations and can call tools elsewhere in the customer's stack.",
+          "evidence_type": "official_release",
+          "source_section": "Build on what you already have"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-F5F6B5121784933DF4",
+      "subject_id": "AI-0073",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "opencode_agent",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "OpenCode Docs – MCP servers",
+          "url": "https://opencode.ai/docs/en/mcp-servers/",
+          "note": "OpenCode documents adding local and remote MCP servers whose tools become available to the agent.",
+          "evidence_type": "technical_docs",
+          "source_section": "MCP servers"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-FEA8360E0ED5C76DBE",
+      "subject_id": "AI-0020",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "lindy_hosted_mcp_integrations",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Lindy – Official Site",
+          "url": "https://www.lindy.ai/",
+          "note": "Lindy states that hosted MCP servers can plug into Lindy as integrations.",
+          "evidence_type": "official_product_page",
+          "source_section": "What does Lindy connect to?"
+        }
+      ]
+    },
+    {
+      "relation_id": "REL-FF6190C14F57FD8A8A",
+      "subject_id": "AI-0032",
+      "predicate": "communicates_via",
+      "object_id": "COMP-PROTOCOL-MCP",
+      "state": "documented_true",
+      "role": "client",
+      "protocol": "mcp",
+      "scope": "glean_agents",
+      "verified_at": "2026-10-01",
+      "origin": "deep_evidence_projection",
+      "source_path": "protocols.mcp.client",
+      "evidence": [
+        {
+          "title": "Glean Docs – Connect remote MCP servers to Glean",
+          "url": "https://docs.glean.com/administration/actions/connect-remote-mcp-servers-to-glean",
+          "note": "Glean documents itself as an MCP host that connects to remote MCP-compliant servers and exposes those tools to Assistant and Glean Agents.",
+          "evidence_type": "technical_docs",
+          "source_section": "Connect remote MCP servers / Security and hosting considerations"
+        }
+      ]
+    }
+  ]
 }
