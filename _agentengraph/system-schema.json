@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-10-03",
+  "purpose": "Evidence-first schema for composition, relations, orchestration and governance of agentic systems.",
+  "principles": [
+    "Unknown is not false.",
+    "A platform capability is not inherited by an agent without agent-specific evidence.",
+    "Relations are never inferred transitively.",
+    "A relation is only documented when its scope and source are explicit.",
+    "System composition and governance are versioned because models, tools, permissions and delegation can change independently."
+  ],
+  "entity_types": {
+    "agent": {
+      "description": "A distinct agentic actor or product with its own task role."
+    },
+    "agent_framework": {
+      "description": "Framework, harness or runtime that builds, executes or orchestrates agents."
+    },
+    "agent_component": {
+      "description": "A composable technical component used by an agent or system."
+    },
+    "agent_system": {
+      "description": "A coordinated set of agents and components working toward a task or workflow."
+    },
+    "agent_institution": {
+      "description": "A rule-bound agent system with explicit roles, procedures, escalation and governance."
+    },
+    "human_role": {
+      "description": "A human role participating in supervision, approval, operation or adjudication."
+    },
+    "organization": {
+      "description": "Provider, operator or customer organization."
+    }
+  },
+  "component_types": [
+    "model",
+    "tool",
+    "memory",
+    "skill",
+    "connector",
+    "runtime",
+    "knowledge_base",
+    "protocol",
+    "data_source"
+  ],
+  "relation_types": {
+    "uses_component": {
+      "from": [
+        "agent",
+        "agent_framework",
+        "agent_system",
+        "agent_institution"
+      ],
+      "to": [
+        "agent_component"
+      ]
+    },
+    "uses_model": {
+      "from": [
+        "agent",
+        "agent_framework",
+        "agent_system"
+      ],
+      "to": [
+        "agent_component"
+      ]
+    },
+    "uses_tool": {
+      "from": [
+        "agent",
+        "agent_framework",
+        "agent_system"
+      ],
+      "to": [
+        "agent_component"
+      ]
+    },
+    "uses_memory": {
+      "from": [
+        "agent",
+        "agent_framework",
+        "agent_system"
+      ],
+      "to": [
+        "agent_component"
+      ]
+    },
+    "communicates_via": {
+      "from": [
+        "agent",
+        "agent_framework",
+        "agent_system"
+      ],
+      "to": [
+        "agent_component"
+      ]
+    },
+    "delegates_to": {
+      "from": [
+        "agent",
+        "agent_system",
+        "agent_institution"
+      ],
+      "to": [
+        "agent",
+        "agent_system"
+      ]
+    },
+    "hands_off_to": {
+      "from": [
+        "agent",
+        "agent_system",
+        "agent_institution"
+      ],
+      "to": [
+        "agent",
+        "human_role"
+      ]
+    },
+    "supervises": {
+      "from": [
+        "agent",
+        "human_role"
+      ],
+      "to": [
+        "agent",
+        "agent_system"
+      ]
+    },
+    "requires_approval_from": {
+      "from": [
+        "agent",
+        "agent_system"
+      ],
+      "to": [
+        "human_role",
+        "agent"
+      ]
+    },
+    "member_of": {
+      "from": [
+        "agent",
+        "agent_framework"
+      ],
+      "to": [
+        "agent_system",
+        "agent_institution"
+      ]
+    },
+    "governed_by": {
+      "from": [
+        "agent",
+        "agent_system"
+      ],
+      "to": [
+        "agent_institution",
+        "organization"
+      ]
+    },
+    "operated_by": {
+      "from": [
+        "agent",
+        "agent_framework",
+        "agent_system",
+        "agent_institution"
+      ],
+      "to": [
+        "organization",
+        "human_role"
+      ]
+    }
+  },
+  "relation_state_model": [
+    "documented_true",
+    "documented_false"
+  ],
+  "freigabe_dimensions": [
+    "identity",
+    "tool_permissions",
+    "delegation",
+    "human_approval",
+    "audit_and_tracing",
+    "rollback_and_stop",
+    "memory_and_state",
+    "data_and_hosting",
+    "security_controls",
+    "operational_limits"
+  ],
+  "watch_change_categories": [
+    "model_change",
+    "tool_permission_change",
+    "memory_change",
+    "delegation_change",
+    "protocol_change",
+    "human_approval_change",
+    "hosting_change",
+    "audit_change",
+    "identity_change",
+    "rollback_change",
+    "operational_limit_change"
+  ],
+  "evidence_requirements": {
+    "required": [
+      "title",
+      "url",
+      "evidence_type"
+    ],
+    "evidence_types": [
+      "technical_docs",
+      "api_docs",
+      "security_trust",
+      "official_github",
+      "official_product_page",
+      "official_release"
+    ],
+    "note": "Concept essays can motivate taxonomy design but cannot establish product relations."
+  }
+}

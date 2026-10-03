@@ -1,7 +1,7 @@
 {
   "name": "AgentenGraph",
-  "graph_version": "1.0",
-  "schema_version": "1.0",
+  "graph_version": "1.1",
+  "schema_version": "1.1",
   "as_of": "2026-10-03",
   "purpose": "Interne, versionierte Evidenz- und Historienbasis für AgentenIndex.",
   "source_dataset": "data/agents.json",
@@ -13,14 +13,17 @@
     "active_sources": 737,
     "assertions_total": 3757,
     "assertions_active": 3730,
-    "events": 1433
+    "events": 1433,
+    "system_entities": 0,
+    "system_relations": 0
   },
   "principles": [
     "Keine unbekannten Merkmale ergänzen.",
     "Feldgenaue Evidenz nur behaupten, wenn sie explizit zugeordnet wurde.",
     "Historische Werte nicht überschreiben, sondern schließen und versionieren.",
     "Redaktionelle Einordnung von dokumentierten Produkteigenschaften trennen.",
-    "Stabile IDs für Agenten, Anbieter, Quellen, Aussagen und Ereignisse verwenden."
+    "Stabile IDs für Agenten, Anbieter, Quellen, Aussagen und Ereignisse verwenden.",
+    "Systembeziehungen nie transitiv oder aus Plattformmerkmalen ableiten; jede Relation benötigt explizite Evidenz."
   ],
   "storage_note": "_agentengraph/ beginnt mit Unterstrich und ist als interner Datenkern gedacht, nicht als öffentliche API. Das GitHub-Repository selbst ist öffentlich."
 }

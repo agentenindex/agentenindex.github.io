@@ -1,4 +1,4 @@
-# AgentenGraph v1.0
+# AgentenGraph v1.1
 
 AgentenGraph ist der interne, versionierte Datenkern von AgentenIndex.
 
@@ -13,7 +13,7 @@ Wenn sich ein strukturiertes Feld ändert, wird die alte Assertion geschlossen u
 eine neue Assertion mit neuem Gültigkeitsbeginn erzeugt. Zusätzlich entsteht ein
 field_change-Event.
 
-## Evidenz in v1
+## Evidenz in v1.1
 
 Die bestehenden AgentenProfile besitzen Quellenlisten auf Profilebene. Deshalb
 werden Profil-Assertions nicht künstlich als feldgenau verifiziert. Kuratierte Deep-Evidence-Claims werden dagegen explizit feldgenau gebunden.
@@ -36,6 +36,8 @@ manuelle Zuordnung bei späteren Builds.
 - coverage.json — Abdeckung und Evidenz-Reife
 - deep-coverage.json — explizite Kernfeld-Matrix mit documented/false/unknown
 - research-priority.json — automatisch priorisierte Recherche-Lücken pro Agent und Feld
+- system-schema.json — Entitäts-, Relations-, Freigabe- und Monitoring-Taxonomie für Agentensysteme
+- relations.json — explizit kuratierte, evidence-first Systembeziehungen; fehlende Relationen bleiben unbekannt
 - schema.json — Schema für Assertions
 - snapshots/YYYY-MM-DD.json — beobachteter Datenzustand
 - snapshots/current.json — letzter Datenzustand
