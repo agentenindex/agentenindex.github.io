@@ -13,6 +13,9 @@ required=[
   'rel="canonical" href="https://agentenindex.de/ueber/"',
   '"@type":"AboutPage"',
   '"@type":"Organization"',
+  '"@type":"Person"',
+  '"accountablePerson":{"@id":"https://agentenindex.de/ueber/#kai-schiller"}',
+  '"sameAs":["https://www.linkedin.com/in/kaischiller/"]',
   '"@type":"FAQPage"',
   '"dateModified":"2026-10-03"',
   'id="mission"',
@@ -36,7 +39,11 @@ required=[
   '/wissen/',
   '/methodik/',
   '/data/agent-deep-evidence.json',
-  'https://github.com/agentenindex/agentenindex.github.io'
+  'https://github.com/agentenindex/agentenindex.github.io',
+  'id="kai-schiller"',
+  'Kooperation &amp; fachlicher Austausch',
+  'https://www.linkedin.com/in/kaischiller/',
+  'rel="me noopener noreferrer"'
 ]
 for marker in required:
     if marker not in html:
@@ -79,6 +86,6 @@ if errors:
 print(json.dumps({
     "status":"ABOUT_PAGE_VALID",
     "visible_faqs":html.count('class="faq-item"'),
-    "schema":["Organization","WebSite","AboutPage","FAQPage","BreadcrumbList"],
+    "schema":["Organization","Person","WebSite","AboutPage","FAQPage","BreadcrumbList"],
     "corpus_count":111
 },ensure_ascii=False))
