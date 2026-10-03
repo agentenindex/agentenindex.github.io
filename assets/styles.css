@@ -2564,3 +2564,77 @@ p{color:inherit}
 .rss-news-callout{padding:4px 0 30px}.rss-news-callout>.container{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;padding:20px 22px;border:1px solid #e3e7ef;border-radius:18px;background:linear-gradient(135deg,#fffaf1,#f8fbff)}.rss-news-callout span{display:inline-block;margin-right:8px;padding:4px 7px;border-radius:999px;background:#fff0d7;color:#a15d00;font-size:.62rem;font-weight:900;letter-spacing:.08em}.rss-news-callout b{font-size:1rem}.rss-news-callout p{margin:5px 0 0;color:#68758a;font-size:.83rem}.rss-news-actions{display:flex;gap:8px;flex-wrap:wrap}
 @media(max-width:900px){.rss-hero-grid,.rss-grid{grid-template-columns:1fr}.rss-direct{max-width:720px}.rss-news-callout>.container{grid-template-columns:1fr}.rss-news-actions{justify-content:flex-start}}
 @media(max-width:700px){.rss-hero{padding:28px 0 20px}.rss-hero-grid{padding:27px 20px;border-radius:24px}.rss-hero h1{font-size:clamp(2.7rem,14vw,4.4rem)}.rss-feature-grid{grid-template-columns:1fr}}
+
+
+/* =========================================================
+   Heading typography refinement v1
+   More breathing room for large display headings
+   ========================================================= */
+h1,h2,h3{
+  font-kerning:normal;
+  text-rendering:optimizeLegibility;
+}
+h1{
+  letter-spacing:-.035em;
+  line-height:1.03;
+}
+h2{
+  letter-spacing:-.025em;
+  line-height:1.10;
+}
+h3{
+  letter-spacing:-.01em;
+  line-height:1.30;
+}
+
+/* Large display/hero headings: preserve impact without over-tight tracking */
+.v73home-copy h1,
+.v7home-hero h1,
+.v7p-hero h1,
+.v73agentindex-hero h1,
+.finder-hero h1,
+.news-article-head h1,
+.hitl-hero h1,
+.a2a-hero h1,
+.memory-hero h1,
+.about-hero h1,
+.rss-hero h1{
+  letter-spacing:-.038em;
+  line-height:1.02;
+}
+
+/* Long authority-page headlines benefit from a touch more line space */
+.memory-hero h1,
+.hitl-hero h1,
+.a2a-hero h1,
+.about-hero h1,
+.news-article-head h1{
+  line-height:1.035;
+}
+
+/* Section headlines: avoid the compressed editorial look */
+.v73head h2,
+.about-section>h2,
+.rss-grid h2{
+  letter-spacing:-.028em;
+  line-height:1.09;
+}
+
+@media(max-width:700px){
+  h1{letter-spacing:-.028em;line-height:1.045}
+  h2{letter-spacing:-.02em;line-height:1.11}
+  .v73home-copy h1,
+  .v7home-hero h1,
+  .v7p-hero h1,
+  .v73agentindex-hero h1,
+  .finder-hero h1,
+  .news-article-head h1,
+  .hitl-hero h1,
+  .a2a-hero h1,
+  .memory-hero h1,
+  .about-hero h1,
+  .rss-hero h1{
+    letter-spacing:-.03em;
+    line-height:1.045;
+  }
+}
