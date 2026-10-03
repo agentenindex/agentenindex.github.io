@@ -1,6 +1,6 @@
 {
   "graph_version": "1.0",
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-03",
   "events": [
     {
       "event_id": "EVT-EA987D8D93F155CA0D",
@@ -19061,6 +19061,24 @@
       ],
       "description": "Strukturierter Wert für privacy.residency.customer_region_selectable hat sich geändert.",
       "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-48DF2536E091325110",
+      "agent_id": "AI-0111",
+      "date": "2026-10-03",
+      "event_type": "agent_added",
+      "scope": "entity",
+      "description": "Agent erstmals im AgentenGraph beobachtet.",
+      "origin": "graph_diff"
+    },
+    {
+      "event_id": "EVT-F8196F475BA7A87FCC",
+      "agent_id": "AI-0111",
+      "date": "2026-10-03",
+      "event_type": "new_profile",
+      "scope": "profile",
+      "description": "Neu in den AgentenIndex aufgenommen; AgentenProfil 2.0 mit OpenAI-Primärquellen, regionaler Verfügbarkeit, Governance-Hinweisen und feldgenauer Deep Evidence erstellt.",
+      "origin": "profile_changelog"
     }
   ]
 }
