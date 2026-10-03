@@ -1,0 +1,27 @@
+name: Validate ChatGPT dots Guide
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "wissen/chatgpt-dots/**"
+      - "agenten/chatgpt-dots/**"
+      - "data/agents.json"
+      - "data/agent-deep-evidence.json"
+      - ".github/scripts/validate-dots-guide.py"
+      - ".github/workflows/dots-guide.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate ChatGPT dots authority guide and profile
+        run: python .github/scripts/validate-dots-guide.py

@@ -1,7 +1,7 @@
 {
   "schema_version": "5.2",
-  "updated": "2026-10-02",
-  "count": 110,
+  "updated": "2026-10-03",
+  "count": 111,
   "agents": [
     {
       "name": "ChatGPT Deep Research",
@@ -8238,6 +8238,87 @@
         }
       ],
       "provider_logo": "/assets/provider-logos/rogo.png",
+      "provider_logo_type": "favicon"
+    },
+    {
+      "name": "ChatGPT dots",
+      "slug": "chatgpt-dots",
+      "provider": "OpenAI",
+      "category": "unternehmen",
+      "category_name": "Enterprise & Produktivität",
+      "type": "Always-on Agent / persönlicher Daueragent",
+      "audience_short": "Professionals & Unternehmen",
+      "summary": "Dauerhaft aktiver Agent in ChatGPT, der zwischen Unterhaltungen weiterarbeitet, einen eigenen Cloud-Computer nutzt, verbundene Apps einbezieht, Kontext behält und geplante oder proaktive Aufgaben übernehmen kann.",
+      "access": "Rollout in ChatGPT: Pro außerhalb von EWR, Schweiz und UK; Business Premium in unterstützten Regionen; Enterprise, Edu und Healthcare als adminaktivierte Beta. Stand 3. Oktober 2026.",
+      "uses": [
+        "Laufende Aufgaben und Monitoring",
+        "Proaktive Recherche über verbundene Apps",
+        "Geplante und wiederkehrende Aufgaben",
+        "Mehrstufige Arbeit mit Cloud-Computer"
+      ],
+      "strengths": [
+        "Arbeitet zwischen Unterhaltungen weiter",
+        "Eigener Cloud-Computer",
+        "Memory und proaktive Recherche",
+        "Feingranulare Action Rules und Freigaben"
+      ],
+      "checks": [
+        "Regionale und tarifliche Verfügbarkeit vor Einsatz prüfen",
+        "Plugin- und Computerrechte nach Least-Privilege begrenzen",
+        "Memory, verbundene Apps und Datenweitergabe bewusst konfigurieren",
+        "Konsequente Aktionen über Custom Rules und Freigaben absichern"
+      ],
+      "how": "Ein dot erhält ein Ziel und kann zwischen Unterhaltungen weiterarbeiten. OpenAI dokumentiert einen eigenen Cloud-Computer, verbundene Apps, Memory, proaktive Recherche sowie geplante Aufgaben. Für unterstützte Aktionen gelten Standardregeln, Custom Rules, Freigaben und bei besonders sensiblen Schritten die Übergabe an den Menschen.",
+      "private": "Für Professionals kann ein dot laufende Verantwortung übernehmen: etwa Kalender- und Informationschecks, wiederkehrende Recherche, Erinnerungen oder mehrstufige Aufgaben. Die Verfügbarkeit ist regional und tarifabhängig; der Pro-Rollout schließt den EWR, die Schweiz und das Vereinigte Königreich zum Prüfzeitpunkt aus.",
+      "enterprise": "In ChatGPT Enterprise ist dots während der Beta standardmäßig deaktiviert. Workspace Owner können den Zugriff per Permissions und Custom Roles steuern sowie unter anderem Slack/Teams, lokalen Computerzugriff und Custom Rules separat erlauben. App-Berechtigungen und Website-Sitzungen bleiben eigenständige Kontrollschichten.",
+      "sources": [
+        [
+          "OpenAI Help – Getting started with your dot",
+          "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot"
+        ],
+        [
+          "OpenAI Help – Dots privacy, security, and safety FAQs",
+          "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs"
+        ],
+        [
+          "OpenAI Help – Manage dots in ChatGPT workspaces",
+          "https://help.openai.com/en/articles/20001554-manage-dots-in-chatgpt-workspaces"
+        ]
+      ],
+      "profile_depth": "reference",
+      "last_verified": "2026-10-03",
+      "profile_version": "2.0",
+      "profile_id": "AI-0111",
+      "source_status": "primary_sources_documented",
+      "source_count": 3,
+      "verification_status": "editorially_reviewed",
+      "filters": {
+        "category": "unternehmen",
+        "provider": "OpenAI",
+        "audience": [
+          "privatpersonen",
+          "unternehmen"
+        ],
+        "product_type": "Always-on Agent / persönlicher Daueragent",
+        "use_cases": [
+          "Laufende Aufgaben und Monitoring",
+          "Proaktive Recherche über verbundene Apps",
+          "Geplante und wiederkehrende Aufgaben",
+          "Mehrstufige Arbeit mit Cloud-Computer"
+        ],
+        "source_status": "primary_sources_documented",
+        "verification_status": "editorially_reviewed",
+        "profile_depth": "reference",
+        "last_verified": "2026-10-03"
+      },
+      "changelog": [
+        {
+          "date": "2026-10-03",
+          "type": "new_profile",
+          "change": "Neu in den AgentenIndex aufgenommen; AgentenProfil 2.0 mit OpenAI-Primärquellen, regionaler Verfügbarkeit, Governance-Hinweisen und feldgenauer Deep Evidence erstellt."
+        }
+      ],
+      "provider_logo": "/assets/provider-logos/openai.png",
       "provider_logo_type": "favicon"
     }
   ],

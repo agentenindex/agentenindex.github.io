@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "field_model": {
     "principle": "Only explicitly supported values are stored. Absence of evidence is unknown, not false.",
     "evidence_binding": "field_level",
@@ -20145,6 +20145,130 @@
             }
           ],
           "note": "Rogo documents SOC 2 Type 2 compliance for the platform providing its AI Analyst."
+        }
+      ]
+    },
+    {
+      "agent_id": "AI-0111",
+      "claims": [
+        {
+          "path": "governance.human_approval",
+          "value": true,
+          "scope": "chatgpt_dots_actions",
+          "confidence": "high",
+          "verified_at": "2026-10-03",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Getting started with your dot",
+              "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+              "note": "OpenAI documents action behaviors that can require approval, pre-approval, autonomous action, or handoff to the user.",
+              "evidence_type": "technical_docs",
+              "source_section": "Controls and approvals / How do I manage confirmations and custom rules?"
+            }
+          ],
+          "note": "Dots support explicit action rules with approval and handoff behaviors."
+        },
+        {
+          "path": "governance.custom_roles",
+          "value": true,
+          "scope": "chatgpt_enterprise_dots_access",
+          "confidence": "high",
+          "verified_at": "2026-10-03",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Manage dots in ChatGPT workspaces",
+              "url": "https://help.openai.com/en/articles/20001554-manage-dots-in-chatgpt-workspaces",
+              "note": "OpenAI documents enabling dots through workspace permissions and custom roles for selected members or groups.",
+              "evidence_type": "technical_docs",
+              "source_section": "Access and permissions / How do I enable dots for members?"
+            }
+          ],
+          "note": "Enterprise dots access can be assigned through custom roles."
+        },
+        {
+          "path": "governance.rbac",
+          "value": true,
+          "scope": "chatgpt_enterprise_dots_access",
+          "confidence": "high",
+          "verified_at": "2026-10-03",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Manage dots in ChatGPT workspaces",
+              "url": "https://help.openai.com/en/articles/20001554-manage-dots-in-chatgpt-workspaces",
+              "note": "Dots access is controlled through Permissions & roles, including workspace defaults, custom roles, members and groups.",
+              "evidence_type": "technical_docs",
+              "source_section": "Access and permissions / Managing access"
+            }
+          ],
+          "note": "OpenAI documents role- and group-based permission assignment for dots in Enterprise."
+        },
+        {
+          "path": "privacy.training.customer_data",
+          "value": false,
+          "scope": "chatgpt_business_enterprise_edu_dots",
+          "confidence": "high",
+          "verified_at": "2026-10-03",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Dots privacy, security, and safety FAQs",
+              "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+              "note": "OpenAI states that data from ChatGPT Business, Enterprise and Edu workspaces is not used to train models by default, including dots activity under those workspaces.",
+              "evidence_type": "security_trust",
+              "source_section": "Data use, memory, and privacy / Does OpenAI use information from my dot to improve its models?"
+            }
+          ],
+          "note": "For Business, Enterprise and Edu workspaces, dot data is documented as not used for model training by default."
+        },
+        {
+          "path": "identity.agent_identity",
+          "value": true,
+          "scope": "chatgpt_dots_supported_messaging_channels",
+          "confidence": "high",
+          "verified_at": "2026-10-03",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Manage dots in ChatGPT workspaces",
+              "url": "https://help.openai.com/en/articles/20001554-manage-dots-in-chatgpt-workspaces",
+              "note": "OpenAI documents that a dot can join supported Slack or Microsoft Teams workspaces and post with its own identity, where available.",
+              "evidence_type": "technical_docs",
+              "source_section": "Access and permissions / What do the dots permissions control?"
+            }
+          ],
+          "note": "Dots can have their own identity in supported messaging channels."
+        },
+        {
+          "path": "security.encryption.at_rest",
+          "value": "encrypted",
+          "scope": "chatgpt_dots_content",
+          "confidence": "high",
+          "verified_at": "2026-10-03",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Dots privacy, security, and safety FAQs",
+              "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+              "note": "OpenAI states that dot content is encrypted while stored.",
+              "evidence_type": "security_trust",
+              "source_section": "Data use, memory, and privacy / What information does my dot retain, and how is it protected?"
+            }
+          ],
+          "note": "OpenAI documents encryption of dot content while stored; no algorithm is asserted here."
+        },
+        {
+          "path": "security.encryption.in_transit",
+          "value": "encrypted",
+          "scope": "chatgpt_dots_content",
+          "confidence": "high",
+          "verified_at": "2026-10-03",
+          "evidence": [
+            {
+              "title": "OpenAI Help – Dots privacy, security, and safety FAQs",
+              "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+              "note": "OpenAI states that dot content is encrypted while traveling between the user, OpenAI and service providers.",
+              "evidence_type": "security_trust",
+              "source_section": "Data use, memory, and privacy / What information does my dot retain, and how is it protected?"
+            }
+          ],
+          "note": "OpenAI documents encryption of dot content in transit; no protocol version is asserted here."
         }
       ]
     }

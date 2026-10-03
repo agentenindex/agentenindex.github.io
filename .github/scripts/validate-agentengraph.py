@@ -41,8 +41,8 @@ canonical_deep_paths=set((TAXONOMY.get("paths") or {}).keys())
 deprecated_deep_paths=set((TAXONOMY.get("deprecated_aliases") or {}).keys())
 allowed_evidence_types=set((TAXONOMY.get("evidence_model") or {}).get("evidence_types") or [])
 
-if DATA["count"] != 110:
-    errors.append(f"Expected 110 source agents, got {DATA['count']}")
+if DATA["count"] != len(DATA.get("agents", [])):
+    errors.append(f"Source count field differs from agents array: {DATA['count']} vs {len(DATA.get('agents', []))}")
 if len(agent_ids) != DATA["count"]:
     errors.append("Source profile IDs are not unique")
 if entity_ids != agent_ids:
