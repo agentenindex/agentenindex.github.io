@@ -41,6 +41,11 @@ document.addEventListener('DOMContentLoaded',()=>{
       const news=document.createElement('a');news.href='/aktuelles/';news.textContent='Aktuelles';
       if(fit&&fit.nextSibling)footer.insertBefore(news,fit.nextSibling);else footer.appendChild(news);
     }
+    if(!footer.querySelector('a[href="/rss/"]')){
+      const news=footer.querySelector('a[href="/aktuelles/"]');
+      const rss=document.createElement('a');rss.href='/rss/';rss.textContent='RSS';
+      if(news&&news.nextSibling)footer.insertBefore(rss,news.nextSibling);else footer.appendChild(rss);
+    }
     const footerExtras=[
       ['/anwendungen/','Anwendungen'],
       ['/privatpersonen/','Privatpersonen'],

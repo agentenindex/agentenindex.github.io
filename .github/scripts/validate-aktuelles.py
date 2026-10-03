@@ -44,8 +44,30 @@ for slug in slugs:
 rss=(ROOT/"aktuelles/feed.xml").read_text(encoding="utf-8")
 for slug in slugs:
     if f"https://agentenindex.de/aktuelles/{slug}/" not in rss: errors.append(f"RSS missing {slug}")
+for item in items:
+    source_url=item.get("source",{}).get("url","")
+    if source_url and source_url not in rss: errors.append(f"RSS missing primary source for {item.get('slug')}")
+for marker in ('xmlns:dc="http://purl.org/dc/elements/1.1/"','xmlns:content="http://purl.org/rss/1.0/modules/content/"','<generator>AgentenIndex Source-first Redaktion</generator>','<dc:creator>AgentenIndex Redaktion</dc:creator>','<content:encoded>','<image>','<ttl>60</ttl>'):
+    if marker not in rss: errors.append(f"RSS missing quality marker {marker}")
+if rss.count("<item>") != len(items): errors.append(f"RSS item count differs from data: {rss.count('<item>')} vs {len(items)}")
 try: ET.fromstring(rss)
 except Exception as e: errors.append(f"RSS XML invalid: {e}")
+
+rss_page=(ROOT/"rss/index.html")
+if not rss_page.exists():
+    errors.append("RSS landing page missing")
+else:
+    rss_html=rss_page.read_text(encoding="utf-8")
+    for marker in ("https://agentenindex.de/aktuelles/feed.xml",'type="application/rss+xml"',"Signal statt Masse"):
+        if marker not in rss_html: errors.append(f"RSS landing page missing {marker}")
+
+home=(ROOT/"index.html").read_text(encoding="utf-8")
+if not ('rel="alternate" type="application/rss+xml"' in home and "https://agentenindex.de/aktuelles/feed.xml" in home):
+    errors.append("homepage missing RSS autodiscovery")
+
+app=(ROOT/"assets/app.js").read_text(encoding="utf-8")
+if 'href=\'/rss/\'' not in app and 'href="/rss/"' not in app:
+    errors.append("shared footer JavaScript missing RSS link")
 
 sitemap=(ROOT/"sitemap.xml").read_text(encoding="utf-8")
 if "https://agentenindex.de/aktuelles/" not in sitemap: errors.append("canonical sitemap missing Aktuelles hub")
@@ -67,7 +89,7 @@ robots=(ROOT/"robots.txt").read_text(encoding="utf-8")
 if "https://agentenindex.de/news-sitemap.xml" not in robots: errors.append("robots.txt missing News sitemap")
 
 llms=(ROOT/"llms.txt").read_text(encoding="utf-8")
-for marker in ("https://agentenindex.de/aktuelles/","https://agentenindex.de/data/aktuelles.json"):
+for marker in ("https://agentenindex.de/aktuelles/","https://agentenindex.de/data/aktuelles.json","https://agentenindex.de/aktuelles/feed.xml","https://agentenindex.de/rss/"):
     if marker not in llms: errors.append(f"llms.txt missing {marker}")
 
 if errors:
