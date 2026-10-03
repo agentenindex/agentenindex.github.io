@@ -40,8 +40,17 @@ for marker in [
 # The shared app.js is the single site-wide analytics integration point.
 # Every public HTML page should load it; otherwise pageview coverage would silently be incomplete.
 html_pages=[p for p in ROOT.rglob("*.html") if ".git" not in p.parts and "_site" not in p.parts]
-missing=[]
+excluded_exact={"google76153e357fd68b75.html"}
+excluded_prefixes=("design-next/","design-hell/","design-modern/")
+tracked_pages=[]
 for p in html_pages:
+    rel=str(p.relative_to(ROOT))
+    if rel in excluded_exact or rel.startswith(excluded_prefixes):
+        continue
+    tracked_pages.append(p)
+
+missing=[]
+for p in tracked_pages:
     text=p.read_text(encoding="utf-8")
     if "/assets/app.js" not in text:
         missing.append(str(p.relative_to(ROOT)))
@@ -67,6 +76,8 @@ if errors:
 print({
     "status":"ANALYTICS_VALID",
     "html_pages":len(html_pages),
+    "tracked_pages":len(tracked_pages),
+    "excluded_nonproduction_pages":len(html_pages)-len(tracked_pages),
     "integration":"assets/app.js",
     "cookies":False,
     "exclude_search":True,
