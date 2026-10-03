@@ -1,0 +1,31 @@
+name: Validate Crawler Trust
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.html"
+      - "robots.txt"
+      - "sitemap.xml"
+      - "news-sitemap.xml"
+      - "llms.txt"
+      - "CNAME"
+      - "security.txt"
+      - ".well-known/security.txt"
+      - ".github/scripts/validate-crawler-trust.py"
+      - ".github/workflows/crawler-trust.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate crawler, canonical, sitemap and trust layer
+        run: python .github/scripts/validate-crawler-trust.py

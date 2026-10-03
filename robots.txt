@@ -1,3 +1,31 @@
+# AgentenIndex crawler policy
+# Search and user-initiated AI retrieval are explicitly allowed.
+# Training-specific crawlers continue to follow the general open rule below.
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
 User-agent: *
 Allow: /
 
