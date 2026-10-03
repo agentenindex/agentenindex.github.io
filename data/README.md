@@ -12,6 +12,6 @@ Maschinenlesbarer Startbestand der verifizierten Agentenprofile. Angaben sind mi
 ## Agentensysteme v1.1
 
 - data/agent-system-schema.json definiert Entitätstypen, Beziehungen, Freigabe-Dimensionen und manuelle Systemsignale für AgentenWache.
-- data/agent-system-relations.json ist der kuratierte Eingang für explizit belegte Beziehungen zwischen Agenten, Frameworks, Komponenten, Systemen, Institutionen, Menschen und Organisationen.
+- data/agent-system-relations.json ist der kuratierte Eingang für explizit belegte Beziehungen zwischen Agenten, Frameworks, Komponenten, Systemen, Institutionen, Menschen und Organisationen. Zusätzlich projiziert der AgentenGraph MCP-/A2A-Beziehungen deterministisch aus bereits feldgenau verifizierten Deep-Evidence-Claims; dabei wird die Originalevidenz unverändert an die Relation gebunden.
 - Fehlende Beziehungen bedeuten unbekannt, nicht „existiert nicht“. Plattformmerkmale werden nicht auf Agenten vererbt und Relationen nicht transitiv abgeleitet.
 - Konzeptquellen wie der DeepMind-Institute-Essay dürfen die Taxonomie motivieren, aber niemals einen Produktclaim oder eine Produktrelation belegen.

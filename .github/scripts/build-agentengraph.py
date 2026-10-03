@@ -728,13 +728,70 @@ def main():
         "agents": research_agents,
     }
 
+    # System graph starts with manually curated relations and adds only deterministic
+    # projections from already field-level-verified protocol claims. This is not
+    # inference: every projected relation carries the exact evidence of its source claim.
+    system_entities = deepcopy(system_relations_source.get("entities", []))
+    entity_ids = {entity.get("entity_id") for entity in system_entities}
+    protocol_components = [
+        {
+            "entity_id": "COMP-PROTOCOL-MCP",
+            "entity_type": "agent_component",
+            "component_type": "protocol",
+            "name": "Model Context Protocol (MCP)",
+            "canonical_url": "https://modelcontextprotocol.io/",
+        },
+        {
+            "entity_id": "COMP-PROTOCOL-A2A",
+            "entity_type": "agent_component",
+            "component_type": "protocol",
+            "name": "Agent2Agent (A2A)",
+            "canonical_url": "https://a2a-protocol.org/",
+        },
+    ]
+    for entity in protocol_components:
+        if entity["entity_id"] not in entity_ids:
+            system_entities.append(entity)
+            entity_ids.add(entity["entity_id"])
+
+    system_relations = deepcopy(system_relations_source.get("relations", []))
+    projection = {
+        "protocols.mcp.client": ("COMP-PROTOCOL-MCP", "mcp", "client"),
+        "protocols.mcp.server": ("COMP-PROTOCOL-MCP", "mcp", "server"),
+        "protocols.a2a.client": ("COMP-PROTOCOL-A2A", "a2a", "client"),
+        "protocols.a2a.server": ("COMP-PROTOCOL-A2A", "a2a", "server"),
+    }
+    for aid, claims in sorted(deep_by_agent.items()):
+        for claim in claims:
+            path = claim.get("path")
+            if path not in projection or claim.get("value") is not True:
+                continue
+            component_id, protocol, role = projection[path]
+            scope = claim.get("scope", "documented")
+            system_relations.append({
+                "relation_id": "REL-" + digest(aid, path, scope, length=18).upper(),
+                "subject_id": aid,
+                "predicate": "communicates_via",
+                "object_id": component_id,
+                "state": "documented_true",
+                "role": role,
+                "protocol": protocol,
+                "scope": scope,
+                "verified_at": claim.get("verified_at"),
+                "origin": "deep_evidence_projection",
+                "source_path": path,
+                "evidence": deepcopy(claim.get("evidence", [])),
+            })
+
+    system_entities.sort(key=lambda item: item.get("entity_id", ""))
+    system_relations.sort(key=lambda item: item.get("relation_id", ""))
     system_graph = {
         "graph_version": GRAPH_VERSION,
         "as_of": as_of,
         "schema_version": system_relations_source.get("schema_version"),
-        "principle": system_relations_source.get("principle", "Only explicitly evidenced relations are stored."),
-        "entities": system_relations_source.get("entities", []),
-        "relations": system_relations_source.get("relations", []),
+        "principle": "Only explicit curated relations and deterministic projections of field-level-verified claims are stored. Unknown remains unknown.",
+        "entities": system_entities,
+        "relations": system_relations,
     }
 
     coverage = {

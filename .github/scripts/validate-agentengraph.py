@@ -64,10 +64,17 @@ if system_schema != SYSTEM_SCHEMA_SOURCE:
     errors.append("Generated system-schema.json differs from data/agent-system-schema.json")
 if relations.get("schema_version") != SYSTEM_RELATIONS_SOURCE.get("schema_version"):
     errors.append("System relation schema version mismatch")
-if relations.get("entities") != SYSTEM_RELATIONS_SOURCE.get("entities",[]):
-    errors.append("Generated system entities differ from curated source")
-if relations.get("relations") != SYSTEM_RELATIONS_SOURCE.get("relations",[]):
-    errors.append("Generated system relations differ from curated source")
+
+# Manually curated source entries must survive generation exactly. Generated output may
+# additionally contain deterministic projections from field-level-verified deep evidence.
+generated_entities=relations.get("entities") or []
+generated_relations=relations.get("relations") or []
+for entity in SYSTEM_RELATIONS_SOURCE.get("entities",[]):
+    if entity not in generated_entities:
+        errors.append(f"Curated system entity missing from generated graph: {entity.get('entity_id')}")
+for relation in SYSTEM_RELATIONS_SOURCE.get("relations",[]):
+    if relation not in generated_relations:
+        errors.append(f"Curated system relation missing from generated graph: {relation.get('relation_id')}")
 
 valid_entity_types=set((system_schema.get("entity_types") or {}).keys())
 relation_types=system_schema.get("relation_types") or {}
@@ -86,6 +93,37 @@ for entity in system_entities:
         errors.append(f"{eid}: invalid system entity type {entity.get('entity_type')}")
     if entity.get("entity_type")=="agent_component" and entity.get("component_type") not in set(system_schema.get("component_types") or []):
         errors.append(f"{eid}: invalid component_type {entity.get('component_type')}")
+
+# Verify the protocol relation projection is a lossless view of explicit deep claims.
+protocol_projection={
+    "protocols.mcp.client":("COMP-PROTOCOL-MCP","mcp","client"),
+    "protocols.mcp.server":("COMP-PROTOCOL-MCP","mcp","server"),
+    "protocols.a2a.client":("COMP-PROTOCOL-A2A","a2a","client"),
+    "protocols.a2a.server":("COMP-PROTOCOL-A2A","a2a","server"),
+}
+expected_projection=set()
+for entry in DEEP.get("agents",[]):
+    aid=entry.get("agent_id")
+    for claim in entry.get("claims",[]):
+        path=claim.get("path")
+        if path in protocol_projection and claim.get("value") is True:
+            expected_projection.add((aid,path,claim.get("scope","documented")))
+generated_projection=set()
+for rel in system_relations:
+    if rel.get("origin")=="deep_evidence_projection":
+        generated_projection.add((rel.get("subject_id"),rel.get("source_path"),rel.get("scope","documented")))
+        spec=protocol_projection.get(rel.get("source_path"))
+        if not spec:
+            errors.append(f"{rel.get('relation_id')}: projection uses unsupported source_path {rel.get('source_path')}")
+        else:
+            component_id,protocol,role=spec
+            if rel.get("object_id")!=component_id or rel.get("protocol")!=protocol or rel.get("role")!=role:
+                errors.append(f"{rel.get('relation_id')}: protocol projection metadata mismatch")
+if generated_projection != expected_projection:
+    errors.append(f"Protocol projection mismatch: generated={len(generated_projection)} expected={len(expected_projection)}")
+for required_component in ("COMP-PROTOCOL-MCP","COMP-PROTOCOL-A2A"):
+    if required_component not in system_entity_ids:
+        errors.append(f"Missing protocol component entity {required_component}")
 
 known_relation_refs=agent_ids | system_entity_ids
 relation_ids=set()
