@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       .sort((x,y) => y.score - x.score || x.a.name.localeCompare(y.a.name,'de'));
 
     if (!ranked.length) {
-      results.innerHTML = '<div class="finder-empty"><b>Keine eindeutigen Treffer.</b><p>Formuliere die Aufgabe etwas allgemeiner oder entferne einen Filter. Du kannst alternativ alle 110 AgentenProfile durchsuchen.</p><a href="/agenten/">Alle Agenten durchsuchen →</a></div>';
+      results.innerHTML = '<div class="finder-empty"><b>Keine eindeutigen Treffer.</b><p>Formuliere die Aufgabe etwas allgemeiner oder entferne einen Filter. Du kannst alternativ alle 111 AgentenProfile durchsuchen.</p><a href="/agenten/">Alle Agenten durchsuchen →</a></div>';
       status.textContent = 'Keine eindeutigen Treffer';
       more.hidden = true;
       return;
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     updatePressed(categoryButtons,'');
     updatePressed(audienceButtons,'');
     refreshProviders();
-    results.innerHTML='<div class="finder-placeholder"><span>01</span><b>Aufgabe wählen oder beschreiben</b><p>Der Finder durchsucht anschließend die 110 strukturierten AgentenProfile.</p></div>';
+    results.innerHTML='<div class="finder-placeholder"><span>01</span><b>Aufgabe wählen oder beschreiben</b><p>Der Finder durchsucht anschließend die 111 strukturierten AgentenProfile.</p></div>';
     status.textContent='Noch keine Auswahl';
     more.hidden=true;
   });

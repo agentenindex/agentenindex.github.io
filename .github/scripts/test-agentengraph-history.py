@@ -5,6 +5,7 @@ import json
 import shutil
 import subprocess
 import tempfile
+from datetime import date, timedelta
 
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -24,11 +25,13 @@ with tempfile.TemporaryDirectory(prefix="agentengraph-test-") as td:
 
     data_path=dst/"data/agents.json"
     data=json.loads(data_path.read_text(encoding="utf-8"))
-    data["updated"]="2026-10-02"
+    baseline_date=date.fromisoformat(data["updated"])
+    test_date=(baseline_date+timedelta(days=1)).isoformat()
+    data["updated"]=test_date
     target=data["agents"][0]
     old_summary=target["summary"]
     target["summary"]=old_summary+" [HISTORY-TEST]"
-    target["last_verified"]="2026-10-02"
+    target["last_verified"]=test_date
     data_path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
     subprocess.run(["python",str(build)],cwd=dst,check=True,capture_output=True,text=True)
@@ -40,10 +43,10 @@ with tempfile.TemporaryDirectory(prefix="agentengraph-test-") as td:
     aid=target["profile_id"]
     old=[a for a in after["assertions"] if a["agent_id"]==aid and a["path"]=="description.summary" and a["value"]==old_summary]
     new=[a for a in after["assertions"] if a["agent_id"]==aid and a["path"]=="description.summary" and a["value"]==target["summary"]]
-    changes=[e for e in after_events["events"] if e["agent_id"]==aid and e.get("event_type")=="field_change" and e.get("path")=="description.summary" and e.get("date")=="2026-10-02"]
+    changes=[e for e in after_events["events"] if e["agent_id"]==aid and e.get("event_type")=="field_change" and e.get("path")=="description.summary" and e.get("date")==test_date]
 
-    assert old and old[-1]["valid_to"]=="2026-10-02", old
-    assert new and new[-1]["valid_from"]=="2026-10-02" and new[-1]["valid_to"] is None, new
+    assert old and old[-1]["valid_to"]==test_date, old
+    assert new and new[-1]["valid_from"]==test_date and new[-1]["valid_to"] is None, new
     assert changes, "No field_change event generated"
     assert len(after["assertions"]) > len(before["assertions"])
     assert len(after_events["events"]) > len(before_events["events"])
