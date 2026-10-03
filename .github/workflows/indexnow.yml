@@ -1,0 +1,39 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.html"
+      - "sitemap.xml"
+      - "news-sitemap.xml"
+      - "e90779b71f2941be8fbdad1a3138950e.txt"
+      - ".github/scripts/indexnow-submit.py"
+      - ".github/workflows/indexnow.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-agentenindex
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Wait for GitHub Pages edge propagation
+        run: sleep 65
+      - name: Submit bootstrap URLs
+        if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[indexnow-bootstrap]') }}
+        run: python .github/scripts/indexnow-submit.py --bootstrap
+      - name: Submit changed URLs
+        if: ${{ github.event_name == 'push' && !contains(github.event.head_commit.message, '[indexnow-bootstrap]') }}
+        run: python .github/scripts/indexnow-submit.py --before "${{ github.event.before }}" --after "${{ github.sha }}"

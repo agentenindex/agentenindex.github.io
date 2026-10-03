@@ -77,6 +77,25 @@ if well.exists():
         except Exception:
             errors.append("security.txt Expires is not valid ISO 8601")
 
+# --- IndexNow ownership / automation ---
+indexnow_key="e90779b71f2941be8fbdad1a3138950e"
+indexnow_file=ROOT/f"{indexnow_key}.txt"
+if not indexnow_file.exists():
+    errors.append(f"IndexNow key file missing: {indexnow_file.name}")
+elif indexnow_file.read_text(encoding="utf-8").strip()!=indexnow_key:
+    errors.append("IndexNow key file content mismatch")
+indexnow_script=ROOT/".github"/"scripts"/"indexnow-submit.py"
+indexnow_workflow=ROOT/".github"/"workflows"/"indexnow.yml"
+if not indexnow_script.exists():
+    errors.append("IndexNow submit script missing")
+if not indexnow_workflow.exists():
+    errors.append("IndexNow workflow missing")
+else:
+    iw=indexnow_workflow.read_text(encoding="utf-8")
+    for marker in ("Notify IndexNow",indexnow_key,"workflow_dispatch","indexnow-bootstrap"):
+        if marker not in iw:
+            errors.append(f"IndexNow workflow missing {marker}")
+
 # --- pages / canonical / robots meta ---
 excluded_dirs={"design-next","design-modern","design-hell"}
 production=[]

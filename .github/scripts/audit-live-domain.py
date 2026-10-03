@@ -53,6 +53,7 @@ resources={
     "news_sitemap":"/news-sitemap.xml",
     "llms":"/llms.txt",
     "security":"/.well-known/security.txt",
+    "indexnow_key":"/e90779b71f2941be8fbdad1a3138950e.txt",
 }
 for key,path in resources.items():
     r=curl(BASE+path,follow=True)
@@ -71,6 +72,9 @@ for key,path in resources.items():
             errors.append("live security.txt contact missing")
         if not re.search(r"(?mi)^content-type:\s*text/plain(?:;|\s|$)",r["headers"]):
             warnings.append("security.txt is not served with an explicit text/plain Content-Type")
+    if key=="indexnow_key":
+        if r["body"].strip()!="e90779b71f2941be8fbdad1a3138950e":
+            errors.append("live IndexNow key content mismatch")
 
 # AI/search fetchers should receive the public page normally.
 for agent in ("OAI-SearchBot","Claude-SearchBot","PerplexityBot","bingbot","Googlebot"):
